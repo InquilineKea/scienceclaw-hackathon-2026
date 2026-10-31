@@ -1,39 +1,711 @@
 'use strict';
-(function(){
-const A=AtlasAging,D=ATLAS_AGING_DATA,$=id=>document.getElementById(id),names={aligned:'Aligned bundles',isotropic:'Disordered',hierarchical:'Hierarchical',modular:'Modular',loops:'Loop-rich geometry',bottleneck:'Bottlenecked',heterogeneous:'Degree heterogeneous'};
-const sensitive=r=>D.checks.some(c=>c.family===r.family&&c.seed===r.seed&&c.pattern===r.pattern&&c.angle===(r.angle%180)&&Math.abs(c.workRelativeChange)>=.05);
-const isDefault=p=>p.count===12&&Math.abs(p.stiffness-.2)<1e-12&&Math.abs(p.rupture-.3)<1e-12;
-const currentSensitive=()=>current&&isDefault(current.parameters)&&sensitive({...current,pattern:current.parameters.pattern});
-const fmt=v=>Number.isFinite(v)?Number(v.toPrecision(3)).toString():'—',gray='#697d75',purple='#805ba5';
-let pair=null,sweep=null,worker=null,serial=0,progress=0,playing=false,lastTime=0,current=null,angleMax=1,bounds=[-.12,-.12,1.12,1.12],forceMax=1;
-for(const[f,n]of Object.entries(names)){const o=document.createElement('option');o.value=f;o.textContent=n;$('ageFamily').append(o);}
-const q=new URLSearchParams(location.search);$('ageFamily').value=Object.hasOwn(names,q.get('network'))?q.get('network'):'aligned';if(['17','29','43'].includes(q.get('seed')))$('ageSeed').value=q.get('seed');if(['distributed','clustered'].includes(q.get('pattern')))$('agePattern').value=q.get('pattern');
-for(const[id,key]of [['ageCount','count'],['ageStiffness','stiffness'],['ageRupture','rupture'],['ageAngle','angle']])if(q.has(key)){const v=Number(q.get(key));if(Number.isFinite(v))$(id).value=String(Math.max(Number($(id).min),Math.min(Number($(id).max),v)));}
-function config(){return{family:$('ageFamily').value,seed:Number($('ageSeed').value),angle:Number($('ageAngle').value),parameters:{count:Number($('ageCount').value),stiffness:Number($('ageStiffness').value),rupture:Number($('ageRupture').value),pattern:$('agePattern').value}};}
-function outputs(){$('ageCountOut').value=$('ageCount').value;$('ageStiffnessOut').value=Number($('ageStiffness').value).toFixed(2);$('ageRuptureOut').value=Math.round(Number($('ageRupture').value)*100)+'%';$('ageAngleOut').value=$('ageAngle').value+'°';}
-function surface(id){const el=$(id),r=el.getBoundingClientRect(),w=Math.max(1,r.width),h=Math.max(1,r.height),d=Math.min(devicePixelRatio||1,2);el.width=Math.round(w*d);el.height=Math.round(h*d);const c=el.getContext('2d');c.scale(d,d);return{c,w,h};}
-function axes(id,xmax,ymax,xlabel,ylabel){const{c,w,h}=surface(id),left=57,right=18,top=25,bottom=38,x=v=>left+v/xmax*(w-left-right),y=v=>h-bottom-v/ymax*(h-top-bottom);c.font='10px system-ui';c.strokeStyle='#dce2da';c.fillStyle='#64736e';for(let i=0;i<=4;i++){const v=ymax*i/4;c.beginPath();c.moveTo(left,y(v));c.lineTo(w-right,y(v));c.stroke();c.fillText(fmt(v),3,y(v)+3);c.fillText(fmt(xmax*i/4),x(xmax*i/4)-6,h-19);}c.fillText(ylabel,left,12);c.fillText(xlabel,left,h-3);return{c,w,h,x,y};}
-function lines(p,rows,key,color,scale=1,dashed=false){p.c.strokeStyle=color;p.c.fillStyle=color;p.c.lineWidth=2;p.c.setLineDash(dashed?[4,4]:[]);let prev=null;for(const r of rows){if(!r.valid){prev=null;continue;}const X=p.x(r.q??r.angle),Y=p.y(r[key]*scale);if(prev&&!r.censored&&!prev.censored){p.c.beginPath();p.c.moveTo(prev.X,prev.Y);p.c.lineTo(X,Y);p.c.stroke();}p.c.beginPath();p.c.arc(X,Y,r.censored?4:2,0,Math.PI*2);if(r.censored){p.c.fillStyle='#f4f3ee';p.c.fill();p.c.stroke();p.c.fillStyle=color;}else p.c.fill();prev={X,Y,censored:r.censored};}p.c.setLineDash([]);}
-function frameAt(r,strain){let f=r.frames[0];for(const x of r.frames){if(x.q>strain+1e-8)break;f=x;}return f;}
-function drawNetwork(id,r,frame){const{c,w,h}=surface(id),net=r.net,X=frame?.x||net.X,sc=Math.min((w-65)/(bounds[2]-bounds[0]),(h-55)/(bounds[3]-bounds[1])),px=x=>(w-sc*(bounds[2]-bounds[0]))/2+(x-bounds[0])*sc,py=y=>h-(h-sc*(bounds[3]-bounds[1]))/2-(y-bounds[1])*sc;
-function line(e,color,width,dashed){c.strokeStyle=color;c.lineWidth=width;c.setLineDash(dashed?[3,4]:[]);c.beginPath();c.moveTo(px(X[2*e.i]),py(X[2*e.i+1]));c.lineTo(px(X[2*e.j]),py(X[2*e.j+1]));c.stroke();}
-net.edges.forEach((e,k)=>{const alive=frame?.alive[k]??true,f=frame?.forces[k]||0;line(e,!alive?'#d87584':f<0?'#78b6df':'#dfac78',alive?1+2*Math.abs(f)/forceMax:1,!alive);});net.links.forEach((e,k)=>line(e,(frame?.linkAlive[k]??true)?'#c699ef':'#856b91',2,!(frame?.linkAlive[k]??true)));c.setLineDash([]);
-const b=AtlasDirectional.boundary(net,current?.angle??config().angle,.1);for(let i=0;i<net.N;i++){const x=px(X[2*i]),y=py(X[2*i+1]);c.fillStyle=b.fixed.has(2*i)?'#8bd9df':'#a3b9aa';c.fillRect(x-2,y-2,4,4);if(b.fixed.has(2*i)){const dx=b.deriv.get(2*i),dy=b.deriv.get(2*i+1),L=Math.hypot(dx,dy);if(L>1e-9){const xx=x+dx/L*13,yy=y-dy/L*13,a=Math.atan2(-dy,dx);c.strokeStyle='#b6dd8e';c.lineWidth=1;c.beginPath();c.moveTo(x,y);c.lineTo(xx,yy);c.lineTo(xx-4*Math.cos(a-.5),yy-4*Math.sin(a-.5));c.moveTo(xx,yy);c.lineTo(xx-4*Math.cos(a+.5),yy-4*Math.sin(a+.5));c.stroke();}}}c.fillStyle='#cbdcc8';c.font='11px system-ui';c.fillText('X →',w-45,h-12);c.fillText('Y ↑',12,18);}
-function summary(){if(!pair){$('ageMetrics').innerHTML='';return;}const [a,b]=pair.map(r=>r.metrics),ratio=(k,valid=true)=>valid&&a[k]>1e-12?fmt(b[k]/a[k])+'×':'unresolved';const rows=[['Initial stiffness × 10³',a.stiffnessValid?fmt(a.stiffness*1000):'invalid',b.stiffnessValid?fmt(b.stiffness*1000):'invalid',ratio('stiffness',a.stiffnessValid&&b.stiffnessValid)],['Peak reaction × 10³',a.valid?fmt(a.strength*1000):'invalid',b.valid?fmt(b.strength*1000):'invalid',ratio('strength',a.valid&&b.valid)],['Work to criterion × 10³',a.valid?fmt(a.work*1000)+(a.censored?' †':''):'invalid',b.valid?fmt(b.work*1000)+(b.censored?' †':''):'invalid',ratio('work',a.valid&&b.valid&&!a.censored&&!b.censored&&!currentSensitive())],['Strain to criterion',a.failureStrain===null?'unresolved':fmt(a.failureStrain*100)+'%',b.failureStrain===null?'unresolved':fmt(b.failureStrain*100)+'%',ratio('failureStrain',a.valid&&b.valid&&a.failureStrain!==null&&b.failureStrain!==null)],['Collagen volume ruptured',fmt(a.finalDamage*100)+'%',fmt(b.finalDamage*100)+'%','—'],['Added connectors broken','—',fmt(b.linkDamage*100)+'%','—']];$('ageMetrics').innerHTML='<table><caption>'+names[current.family]+' · seed '+current.seed+' · '+current.angle+'° · '+current.parameters.count+' '+current.parameters.pattern+' connectors · stiffness '+current.parameters.stiffness+' · rupture '+Math.round(current.parameters.rupture*100)+'%</caption><thead><tr><th>Metric</th><th>Reference</th><th>Added connectors</th><th>Modified / reference</th></tr></thead><tbody>'+rows.map(r=>'<tr>'+r.map(v=>'<td>'+v+'</td>').join('')+'</tr>').join('')+'</tbody></table>';}
-function benchmark(){const angle=(Math.round(config().angle/15)*15)%180;let html='<table><caption>Default hypothesis · nearest saved angle '+angle+'° · ratios of three-seed means</caption><thead><tr><th>Network</th><th>Distributed K ratio</th><th>Distributed W ratio</th><th>Clustered K ratio</th><th>Clustered W ratio</th></tr></thead><tbody>';for(const[f,n]of Object.entries(names)){const b=D.baseline.filter(r=>r.family===f&&r.angle===angle);html+='<tr><th>'+n+'</th>';for(const pattern of ['distributed','clustered']){const a=D.rows.filter(r=>r.family===f&&r.angle===angle&&r.pattern===pattern);for(const k of ['stiffness','work']){const valid=a.length===3&&b.length===3&&[...a,...b].every(r=>k==='stiffness'?r.stiffnessValid:r.valid&&!r.censored&&!sensitive(r));const den=b.reduce((s,r)=>s+r[k],0);html+='<td>'+(valid&&den>1e-12?fmt(a.reduce((s,r)=>s+r[k],0)/den)+'×':'unresolved')+'</td>';}}html+='</tr>';}$('ageBenchmark').innerHTML=html+'</tbody></table>';}
-function render(){outputs();benchmark();if(!pair){for(const id of ['ageReference','ageModified','ageReaction','ageDamage','ageK','ageW']){const{c,w,h}=surface(id);c.fillStyle='#64736e';c.font='13px system-ui';c.fillText('Preparing comparison…',20,h/2);}return;}
-const strain=progress*angleMax;$('ageStrain').value=strain.toFixed(3);pair.forEach((r,i)=>{const f=frameAt(r,strain);drawNetwork(i?'ageModified':'ageReference',r,f);$(i?'ageModifiedCaption':'ageReferenceCaption').textContent='ε = '+f.q.toFixed(3)+' · collagen damage '+Math.round(f.damage*100)+'% · stop criterion: '+r.metrics.criterion+(strain>r.curve.at(-1).q+.001?' · STOPPED':'');});
-const max=Math.max(1e-8,...pair.flatMap(r=>r.curve.map(p=>p.force*1000)));let p=axes('ageReaction',angleMax,max*1.1,'Applied strain','Conjugate reaction × 10³');pair.forEach((r,i)=>lines(p,r.curve.map(v=>({...v,valid:v.converged})), 'force',i?purple:gray,1000));p=axes('ageDamage',angleMax,100,'Applied strain','Broken volume / connector count (%)');pair.forEach((r,i)=>lines(p,r.curve.map(v=>({...v,valid:v.converged})),'damage',i?purple:gray,100));lines(p,pair[1].curve.map(v=>({...v,valid:v.converged})),'linkDamage',purple,100,true);
-const baseline=D.baseline.filter(r=>r.family===current.family&&r.seed===current.seed);for(const[id,key]of [['ageK','stiffness'],['ageW','work']]){if(!sweep){const{c,h}=surface(id);c.fillStyle='#64736e';c.font='13px system-ui';c.fillText('Solving current connector hypothesis across directions…',15,h/2);continue;}const series=[baseline,sweep].map(rs=>[...rs, {...rs.find(r=>r.angle===0),angle:180}].map(r=>({...r,valid:key==='stiffness'?r.stiffnessValid:r.valid&&!sensitive(r),censored:key==='work'&&r.censored})));const ymax=Math.max(1e-8,...series.flat().filter(r=>r.valid).map(r=>r[key]*1000))*1.1,plot=axes(id,180,ymax,'Load angle θ (degrees)',key==='stiffness'?'Stiffness × 10³':'Work to criterion × 10³');series.forEach((rs,i)=>lines(plot,rs,key,i?purple:gray,1000));plot.c.strokeStyle='#1d302e';plot.c.setLineDash([3,4]);plot.c.beginPath();plot.c.moveTo(plot.x(current.angle),25);plot.c.lineTo(plot.x(current.angle),plot.h-38);plot.c.stroke();}
-}
-function compute(){const id=++serial;if(worker)worker.terminate();playing=false;$('agePlay').textContent='▶ Play';current=config();pair=null;progress=0;$('ageReplay').value=0;$('ageExport').disabled=true;summary();const def=current.parameters.count===12&&Math.abs(current.parameters.stiffness-.2)<1e-12&&Math.abs(current.parameters.rupture-.3)<1e-12;sweep=def?D.rows.filter(r=>r.family===current.family&&r.seed===current.seed&&r.pattern===current.parameters.pattern):null;$('ageStatus').textContent='Computing the same skeleton with and without added connectors…';$('ageSweepLabel').textContent=def?'Saved default hypothesis · selected seed':'Custom controls · selected seed';render();worker=new Worker('aging-worker.js');worker.postMessage({...current,sweep:!def});worker.onmessage=({data})=>{if(id!==serial)return;if(data.type==='pair'){pair=data.pair;angleMax=Math.max(...pair.map(r=>r.curve.at(-1).q));bounds=[-.12,-.12,1.12,1.12];forceMax=1e-9;for(const r of pair)for(const f of r.frames){for(let i=0;i<f.x.length;i+=2){bounds[0]=Math.min(bounds[0],f.x[i]-.12);bounds[1]=Math.min(bounds[1],f.x[i+1]-.12);bounds[2]=Math.max(bounds[2],f.x[i]+.12);bounds[3]=Math.max(bounds[3],f.x[i+1]+.12);}forceMax=Math.max(forceMax,...f.forces.map(Math.abs));}summary();render();$('ageExport').disabled=false;}if(data.type==='progress')$('ageStatus').textContent='Pair ready. Solving custom direction '+data.done+' / '+data.total+'…';if(data.type==='sweep'){sweep=data.rows;render();}if(data.type==='done'){worker.terminate();worker=null;$('ageStatus').textContent=pair.some(r=>!r.metrics.valid)?'An equilibrium failed: affected work values are invalid and ratios are withheld.':pair.some(r=>r.metrics.censored)?'Comparison ready. † At least one run reached the strain cap; its failure work remains unresolved.':'Comparison ready. Both traces reached the stated criterion.';if(currentSensitive())$('ageStatus').textContent+=' ‡ This case changed by at least 5% under step refinement; its work ratio is withheld.';if(pair.some(r=>r.metrics.collapseUsed))$('ageStatus').textContent+=' Compression regularization was activated in a fiber; see model limits.';}if(data.type==='error'){$('ageStatus').textContent='Calculation failed: '+data.error;worker.terminate();worker=null;}};worker.onerror=()=>{$('ageStatus').textContent='The browser worker could not complete this comparison.';worker?.terminate();worker=null;};}
-function dirty(){if(worker){worker.terminate();worker=null;}++serial;pair=null;sweep=null;playing=false;$('ageExport').disabled=true;$('ageStatus').textContent='Release the slider to apply the new controls.';summary();render();}
-for(const id of ['ageCount','ageStiffness','ageRupture','ageAngle']){$(id).oninput=dirty;$(id).onchange=compute;}for(const id of ['ageFamily','ageSeed','agePattern'])$(id).onchange=compute;
-$('ageControls').onsubmit=e=>{e.preventDefault();compute();};$('ageReset').onclick=()=>{$('ageCount').value=12;$('ageStiffness').value=.2;$('ageRupture').value=.3;$('agePattern').value='distributed';compute();};$('ageReplay').oninput=()=>{playing=false;$('agePlay').textContent='▶ Play';progress=Number($('ageReplay').value)/1000;render();};$('agePlay').onclick=()=>{if(!pair)return;playing=!playing;if(playing&&progress>=1)progress=0;$('agePlay').textContent=playing?'Ⅱ Pause':'▶ Play';lastTime=0;};
-function tick(t){if(playing&&pair){if(lastTime)progress=Math.min(1,progress+(t-lastTime)/10000);$('ageReplay').value=Math.round(progress*1000);render();if(progress===1){playing=false;$('agePlay').textContent='▶ Play';}}lastTime=t;requestAnimationFrame(tick);}requestAnimationFrame(tick);
-$('ageShare').onclick=async()=>{const p=config(),u=new URL(location.href);u.search='';for(const[k,v]of Object.entries({network:p.family,seed:p.seed,angle:p.angle,...p.parameters}))u.searchParams.set(k,v);u.hash='experiment';try{await navigator.clipboard.writeText(u.href);$('ageStatus').textContent='Experiment link copied with all controls.';}catch{$('ageStatus').textContent=u.href;}};
-$('ageExport').onclick=()=>{if(!pair)return;const blob=new Blob([JSON.stringify({modelHash:D.modelHash,agingHash:D.agingHash,version:D.version,assumptions:'Hypothetical connectors; see AGING_METHODS.md',numericalChecks:{defaultStepChecks:D.checks,selectedPairHasKnownWorkSensitivity:!!currentSensitive(),customParametersFullyStepChecked:false},settings:current,pair,angularRows:sweep},null,2)],{type:'application/json'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='fracture-atlas-crosslink-comparison.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);};
-$('ageSensitivity').textContent=D.checks.some(r=>Math.abs(r.workRelativeChange)>=.05)?'Numerical sensitivity: the clustered, disordered seed-17 specimen at 0° changed work by 9.9% when the strain step was halved. Its angular work point and affected mean work ratio are withheld; source data retain both values. Other custom cases have not all been checked.':'';
-const validChecks=D.checks.filter(r=>r.valid);$('ageChecks').textContent=D.rows.length+' added-connector runs, '+D.baseline.length+' freshly paired baselines, '+D.seeds.length+' seeds, two placement patterns. '+D.rows.filter(r=>!r.valid).length+' invalid runs; '+D.rows.filter(r=>r.censored).length+' capped runs. In '+validChecks.length+' step-size spot checks, halving the strain step changed work by up to '+fmt(Math.max(...validChecks.map(r=>Math.abs(r.workRelativeChange)))*100)+'%. Large changes mark unresolved numerical sensitivity; they are not biological findings. All parameters remain hypothetical.';
-window.addEventListener('resize',render);requestAnimationFrame(compute);
+(function () {
+  const A = AtlasAging,
+    D = ATLAS_AGING_DATA,
+    $ = (id) => document.getElementById(id),
+    names = {
+      aligned: 'Aligned bundles',
+      isotropic: 'Disordered',
+      hierarchical: 'Hierarchical',
+      modular: 'Modular',
+      loops: 'Loop-rich geometry',
+      bottleneck: 'Bottlenecked',
+      heterogeneous: 'Degree heterogeneous',
+    };
+  const sensitive = (r) =>
+    D.checks.some(
+      (c) =>
+        c.family === r.family &&
+        c.seed === r.seed &&
+        c.pattern === r.pattern &&
+        c.angle === r.angle % 180 &&
+        Math.abs(c.workRelativeChange) >= 0.05,
+    );
+  const isDefault = (p) =>
+    p.count === 12 &&
+    Math.abs(p.stiffness - 0.2) < 1e-12 &&
+    Math.abs(p.rupture - 0.3) < 1e-12;
+  const currentSensitive = () =>
+    current &&
+    isDefault(current.parameters) &&
+    sensitive({ ...current, pattern: current.parameters.pattern });
+  const fmt = (v) =>
+      Number.isFinite(v) ? Number(v.toPrecision(3)).toString() : '—',
+    gray = '#697d75',
+    purple = '#805ba5';
+  let pair = null,
+    sweep = null,
+    worker = null,
+    serial = 0,
+    progress = 0,
+    playing = false,
+    lastTime = 0,
+    current = null,
+    angleMax = 1,
+    bounds = [-0.12, -0.12, 1.12, 1.12],
+    forceMax = 1;
+  for (const [f, n] of Object.entries(names)) {
+    const o = document.createElement('option');
+    o.value = f;
+    o.textContent = n;
+    $('ageFamily').append(o);
+  }
+  const q = new URLSearchParams(location.search);
+  $('ageFamily').value = Object.hasOwn(names, q.get('network'))
+    ? q.get('network')
+    : 'aligned';
+  if (['17', '29', '43'].includes(q.get('seed')))
+    $('ageSeed').value = q.get('seed');
+  if (['distributed', 'clustered'].includes(q.get('pattern')))
+    $('agePattern').value = q.get('pattern');
+  for (const [id, key] of [
+    ['ageCount', 'count'],
+    ['ageStiffness', 'stiffness'],
+    ['ageRupture', 'rupture'],
+    ['ageAngle', 'angle'],
+  ])
+    if (q.has(key)) {
+      const v = Number(q.get(key));
+      if (Number.isFinite(v))
+        $(id).value = String(
+          Math.max(Number($(id).min), Math.min(Number($(id).max), v)),
+        );
+    }
+  function config() {
+    return {
+      family: $('ageFamily').value,
+      seed: Number($('ageSeed').value),
+      angle: Number($('ageAngle').value),
+      parameters: {
+        count: Number($('ageCount').value),
+        stiffness: Number($('ageStiffness').value),
+        rupture: Number($('ageRupture').value),
+        pattern: $('agePattern').value,
+      },
+    };
+  }
+  function outputs() {
+    $('ageCountOut').value = $('ageCount').value;
+    $('ageStiffnessOut').value = Number($('ageStiffness').value).toFixed(2);
+    $('ageRuptureOut').value =
+      Math.round(Number($('ageRupture').value) * 100) + '%';
+    $('ageAngleOut').value = $('ageAngle').value + '°';
+  }
+  function surface(id) {
+    const el = $(id),
+      r = el.getBoundingClientRect(),
+      w = Math.max(1, r.width),
+      h = Math.max(1, r.height),
+      d = Math.min(devicePixelRatio || 1, 2);
+    el.width = Math.round(w * d);
+    el.height = Math.round(h * d);
+    const c = el.getContext('2d');
+    c.scale(d, d);
+    return { c, w, h };
+  }
+  function axes(id, xmax, ymax, xlabel, ylabel) {
+    const { c, w, h } = surface(id),
+      left = 57,
+      right = 18,
+      top = 25,
+      bottom = 38,
+      x = (v) => left + (v / xmax) * (w - left - right),
+      y = (v) => h - bottom - (v / ymax) * (h - top - bottom);
+    c.font = '10px system-ui';
+    c.strokeStyle = '#dce2da';
+    c.fillStyle = '#64736e';
+    for (let i = 0; i <= 4; i++) {
+      const v = (ymax * i) / 4;
+      c.beginPath();
+      c.moveTo(left, y(v));
+      c.lineTo(w - right, y(v));
+      c.stroke();
+      c.fillText(fmt(v), 3, y(v) + 3);
+      c.fillText(fmt((xmax * i) / 4), x((xmax * i) / 4) - 6, h - 19);
+    }
+    c.fillText(ylabel, left, 12);
+    c.fillText(xlabel, left, h - 3);
+    return { c, w, h, x, y };
+  }
+  function lines(p, rows, key, color, scale = 1, dashed = false) {
+    p.c.strokeStyle = color;
+    p.c.fillStyle = color;
+    p.c.lineWidth = 2;
+    p.c.setLineDash(dashed ? [4, 4] : []);
+    let prev = null;
+    for (const r of rows) {
+      if (!r.valid) {
+        prev = null;
+        continue;
+      }
+      const X = p.x(r.q ?? r.angle),
+        Y = p.y(r[key] * scale);
+      if (prev && !r.censored && !prev.censored) {
+        p.c.beginPath();
+        p.c.moveTo(prev.X, prev.Y);
+        p.c.lineTo(X, Y);
+        p.c.stroke();
+      }
+      p.c.beginPath();
+      p.c.arc(X, Y, r.censored ? 4 : 2, 0, Math.PI * 2);
+      if (r.censored) {
+        p.c.fillStyle = '#f4f3ee';
+        p.c.fill();
+        p.c.stroke();
+        p.c.fillStyle = color;
+      } else p.c.fill();
+      prev = { X, Y, censored: r.censored };
+    }
+    p.c.setLineDash([]);
+  }
+  function frameAt(r, strain) {
+    let f = r.frames[0];
+    for (const x of r.frames) {
+      if (x.q > strain + 1e-8) break;
+      f = x;
+    }
+    return f;
+  }
+  function drawNetwork(id, r, frame) {
+    const { c, w, h } = surface(id),
+      net = r.net,
+      X = frame?.x || net.X,
+      sc = Math.min(
+        (w - 65) / (bounds[2] - bounds[0]),
+        (h - 55) / (bounds[3] - bounds[1]),
+      ),
+      px = (x) => (w - sc * (bounds[2] - bounds[0])) / 2 + (x - bounds[0]) * sc,
+      py = (y) =>
+        h - (h - sc * (bounds[3] - bounds[1])) / 2 - (y - bounds[1]) * sc;
+    function line(e, color, width, dashed) {
+      c.strokeStyle = color;
+      c.lineWidth = width;
+      c.setLineDash(dashed ? [3, 4] : []);
+      c.beginPath();
+      c.moveTo(px(X[2 * e.i]), py(X[2 * e.i + 1]));
+      c.lineTo(px(X[2 * e.j]), py(X[2 * e.j + 1]));
+      c.stroke();
+    }
+    net.edges.forEach((e, k) => {
+      const alive = frame?.alive[k] ?? true,
+        f = frame?.forces[k] || 0;
+      line(
+        e,
+        !alive ? '#d87584' : f < 0 ? '#78b6df' : '#dfac78',
+        alive ? 1 + (2 * Math.abs(f)) / forceMax : 1,
+        !alive,
+      );
+    });
+    net.links.forEach((e, k) =>
+      line(
+        e,
+        (frame?.linkAlive[k] ?? true) ? '#c699ef' : '#856b91',
+        2,
+        !(frame?.linkAlive[k] ?? true),
+      ),
+    );
+    c.setLineDash([]);
+    const b = AtlasDirectional.boundary(
+      net,
+      current?.angle ?? config().angle,
+      0.1,
+    );
+    for (let i = 0; i < net.N; i++) {
+      const x = px(X[2 * i]),
+        y = py(X[2 * i + 1]);
+      c.fillStyle = b.fixed.has(2 * i) ? '#8bd9df' : '#a3b9aa';
+      c.fillRect(x - 2, y - 2, 4, 4);
+      if (b.fixed.has(2 * i)) {
+        const dx = b.deriv.get(2 * i),
+          dy = b.deriv.get(2 * i + 1),
+          L = Math.hypot(dx, dy);
+        if (L > 1e-9) {
+          const xx = x + (dx / L) * 13,
+            yy = y - (dy / L) * 13,
+            a = Math.atan2(-dy, dx);
+          c.strokeStyle = '#b6dd8e';
+          c.lineWidth = 1;
+          c.beginPath();
+          c.moveTo(x, y);
+          c.lineTo(xx, yy);
+          c.lineTo(xx - 4 * Math.cos(a - 0.5), yy - 4 * Math.sin(a - 0.5));
+          c.moveTo(xx, yy);
+          c.lineTo(xx - 4 * Math.cos(a + 0.5), yy - 4 * Math.sin(a + 0.5));
+          c.stroke();
+        }
+      }
+    }
+    c.fillStyle = '#cbdcc8';
+    c.font = '11px system-ui';
+    c.fillText('X →', w - 45, h - 12);
+    c.fillText('Y ↑', 12, 18);
+  }
+  function summary() {
+    if (!pair) {
+      $('ageMetrics').innerHTML = '';
+      return;
+    }
+    const [a, b] = pair.map((r) => r.metrics),
+      ratio = (k, valid = true) =>
+        valid && a[k] > 1e-12 ? fmt(b[k] / a[k]) + '×' : 'unresolved';
+    const rows = [
+      [
+        'Initial stiffness × 10³',
+        a.stiffnessValid ? fmt(a.stiffness * 1000) : 'invalid',
+        b.stiffnessValid ? fmt(b.stiffness * 1000) : 'invalid',
+        ratio('stiffness', a.stiffnessValid && b.stiffnessValid),
+      ],
+      [
+        'Peak reaction × 10³',
+        a.valid ? fmt(a.strength * 1000) : 'invalid',
+        b.valid ? fmt(b.strength * 1000) : 'invalid',
+        ratio('strength', a.valid && b.valid),
+      ],
+      [
+        'Work to criterion × 10³',
+        a.valid ? fmt(a.work * 1000) + (a.censored ? ' †' : '') : 'invalid',
+        b.valid ? fmt(b.work * 1000) + (b.censored ? ' †' : '') : 'invalid',
+        ratio(
+          'work',
+          a.valid &&
+            b.valid &&
+            !a.censored &&
+            !b.censored &&
+            !currentSensitive(),
+        ),
+      ],
+      [
+        'Strain to criterion',
+        a.failureStrain === null
+          ? 'unresolved'
+          : fmt(a.failureStrain * 100) + '%',
+        b.failureStrain === null
+          ? 'unresolved'
+          : fmt(b.failureStrain * 100) + '%',
+        ratio(
+          'failureStrain',
+          a.valid &&
+            b.valid &&
+            a.failureStrain !== null &&
+            b.failureStrain !== null,
+        ),
+      ],
+      [
+        'Collagen volume ruptured',
+        fmt(a.finalDamage * 100) + '%',
+        fmt(b.finalDamage * 100) + '%',
+        '—',
+      ],
+      ['Added connectors broken', '—', fmt(b.linkDamage * 100) + '%', '—'],
+    ];
+    $('ageMetrics').innerHTML =
+      '<table><caption>' +
+      names[current.family] +
+      ' · seed ' +
+      current.seed +
+      ' · ' +
+      current.angle +
+      '° · ' +
+      current.parameters.count +
+      ' ' +
+      current.parameters.pattern +
+      ' connectors · stiffness ' +
+      current.parameters.stiffness +
+      ' · rupture ' +
+      Math.round(current.parameters.rupture * 100) +
+      '%</caption><thead><tr><th>Metric</th><th>Reference</th><th>Added connectors</th><th>Modified / reference</th></tr></thead><tbody>' +
+      rows
+        .map(
+          (r) => '<tr>' + r.map((v) => '<td>' + v + '</td>').join('') + '</tr>',
+        )
+        .join('') +
+      '</tbody></table>';
+  }
+  function benchmark() {
+    const angle = (Math.round(config().angle / 15) * 15) % 180;
+    let html =
+      '<table><caption>Default hypothesis · nearest saved angle ' +
+      angle +
+      '° · ratios of three-seed means</caption><thead><tr><th>Network</th><th>Distributed K ratio</th><th>Distributed W ratio</th><th>Clustered K ratio</th><th>Clustered W ratio</th></tr></thead><tbody>';
+    for (const [f, n] of Object.entries(names)) {
+      const b = D.baseline.filter((r) => r.family === f && r.angle === angle);
+      html += '<tr><th>' + n + '</th>';
+      for (const pattern of ['distributed', 'clustered']) {
+        const a = D.rows.filter(
+          (r) => r.family === f && r.angle === angle && r.pattern === pattern,
+        );
+        for (const k of ['stiffness', 'work']) {
+          const valid =
+            a.length === 3 &&
+            b.length === 3 &&
+            [...a, ...b].every((r) =>
+              k === 'stiffness'
+                ? r.stiffnessValid
+                : r.valid && !r.censored && !sensitive(r),
+            );
+          const den = b.reduce((s, r) => s + r[k], 0);
+          html +=
+            '<td>' +
+            (valid && den > 1e-12
+              ? fmt(a.reduce((s, r) => s + r[k], 0) / den) + '×'
+              : 'unresolved') +
+            '</td>';
+        }
+      }
+      html += '</tr>';
+    }
+    $('ageBenchmark').innerHTML = html + '</tbody></table>';
+  }
+  function render() {
+    outputs();
+    benchmark();
+    if (!pair) {
+      for (const id of [
+        'ageReference',
+        'ageModified',
+        'ageReaction',
+        'ageDamage',
+        'ageK',
+        'ageW',
+      ]) {
+        const { c, w, h } = surface(id);
+        c.fillStyle = '#64736e';
+        c.font = '13px system-ui';
+        c.fillText('Preparing comparison…', 20, h / 2);
+      }
+      return;
+    }
+    const strain = progress * angleMax;
+    $('ageStrain').value = strain.toFixed(3);
+    pair.forEach((r, i) => {
+      const f = frameAt(r, strain);
+      drawNetwork(i ? 'ageModified' : 'ageReference', r, f);
+      $(i ? 'ageModifiedCaption' : 'ageReferenceCaption').textContent =
+        'ε = ' +
+        f.q.toFixed(3) +
+        ' · collagen damage ' +
+        Math.round(f.damage * 100) +
+        '% · stop criterion: ' +
+        r.metrics.criterion +
+        (strain > r.curve.at(-1).q + 0.001 ? ' · STOPPED' : '');
+    });
+    const max = Math.max(
+      1e-8,
+      ...pair.flatMap((r) => r.curve.map((p) => p.force * 1000)),
+    );
+    let p = axes(
+      'ageReaction',
+      angleMax,
+      max * 1.1,
+      'Applied strain',
+      'Conjugate reaction × 10³',
+    );
+    pair.forEach((r, i) =>
+      lines(
+        p,
+        r.curve.map((v) => ({ ...v, valid: v.converged })),
+        'force',
+        i ? purple : gray,
+        1000,
+      ),
+    );
+    p = axes(
+      'ageDamage',
+      angleMax,
+      100,
+      'Applied strain',
+      'Broken volume / connector count (%)',
+    );
+    pair.forEach((r, i) =>
+      lines(
+        p,
+        r.curve.map((v) => ({ ...v, valid: v.converged })),
+        'damage',
+        i ? purple : gray,
+        100,
+      ),
+    );
+    lines(
+      p,
+      pair[1].curve.map((v) => ({ ...v, valid: v.converged })),
+      'linkDamage',
+      purple,
+      100,
+      true,
+    );
+    const baseline = D.baseline.filter(
+      (r) => r.family === current.family && r.seed === current.seed,
+    );
+    for (const [id, key] of [
+      ['ageK', 'stiffness'],
+      ['ageW', 'work'],
+    ]) {
+      if (!sweep) {
+        const { c, h } = surface(id);
+        c.fillStyle = '#64736e';
+        c.font = '13px system-ui';
+        c.fillText(
+          'Solving current connector hypothesis across directions…',
+          15,
+          h / 2,
+        );
+        continue;
+      }
+      const series = [baseline, sweep].map((rs) =>
+        [...rs, { ...rs.find((r) => r.angle === 0), angle: 180 }].map((r) => ({
+          ...r,
+          valid:
+            key === 'stiffness' ? r.stiffnessValid : r.valid && !sensitive(r),
+          censored: key === 'work' && r.censored,
+        })),
+      );
+      const ymax =
+          Math.max(
+            1e-8,
+            ...series
+              .flat()
+              .filter((r) => r.valid)
+              .map((r) => r[key] * 1000),
+          ) * 1.1,
+        plot = axes(
+          id,
+          180,
+          ymax,
+          'Load angle θ (degrees)',
+          key === 'stiffness' ? 'Stiffness × 10³' : 'Work to criterion × 10³',
+        );
+      series.forEach((rs, i) => lines(plot, rs, key, i ? purple : gray, 1000));
+      plot.c.strokeStyle = '#1d302e';
+      plot.c.setLineDash([3, 4]);
+      plot.c.beginPath();
+      plot.c.moveTo(plot.x(current.angle), 25);
+      plot.c.lineTo(plot.x(current.angle), plot.h - 38);
+      plot.c.stroke();
+    }
+  }
+  function compute() {
+    const id = ++serial;
+    if (worker) worker.terminate();
+    playing = false;
+    $('agePlay').textContent = '▶ Play';
+    current = config();
+    pair = null;
+    progress = 0;
+    $('ageReplay').value = 0;
+    $('ageExport').disabled = true;
+    summary();
+    const def =
+      current.parameters.count === 12 &&
+      Math.abs(current.parameters.stiffness - 0.2) < 1e-12 &&
+      Math.abs(current.parameters.rupture - 0.3) < 1e-12;
+    sweep = def
+      ? D.rows.filter(
+          (r) =>
+            r.family === current.family &&
+            r.seed === current.seed &&
+            r.pattern === current.parameters.pattern,
+        )
+      : null;
+    $('ageStatus').textContent =
+      'Computing the same skeleton with and without added connectors…';
+    $('ageSweepLabel').textContent = def
+      ? 'Saved default hypothesis · selected seed'
+      : 'Custom controls · selected seed';
+    render();
+    worker = new Worker('aging-worker.js');
+    worker.postMessage({ ...current, sweep: !def });
+    worker.onmessage = ({ data }) => {
+      if (id !== serial) return;
+      if (data.type === 'pair') {
+        pair = data.pair;
+        angleMax = Math.max(...pair.map((r) => r.curve.at(-1).q));
+        bounds = [-0.12, -0.12, 1.12, 1.12];
+        forceMax = 1e-9;
+        for (const r of pair)
+          for (const f of r.frames) {
+            for (let i = 0; i < f.x.length; i += 2) {
+              bounds[0] = Math.min(bounds[0], f.x[i] - 0.12);
+              bounds[1] = Math.min(bounds[1], f.x[i + 1] - 0.12);
+              bounds[2] = Math.max(bounds[2], f.x[i] + 0.12);
+              bounds[3] = Math.max(bounds[3], f.x[i + 1] + 0.12);
+            }
+            forceMax = Math.max(forceMax, ...f.forces.map(Math.abs));
+          }
+        summary();
+        render();
+        $('ageExport').disabled = false;
+      }
+      if (data.type === 'progress')
+        $('ageStatus').textContent =
+          'Pair ready. Solving custom direction ' +
+          data.done +
+          ' / ' +
+          data.total +
+          '…';
+      if (data.type === 'sweep') {
+        sweep = data.rows;
+        render();
+      }
+      if (data.type === 'done') {
+        worker.terminate();
+        worker = null;
+        $('ageStatus').textContent = pair.some((r) => !r.metrics.valid)
+          ? 'An equilibrium failed: affected work values are invalid and ratios are withheld.'
+          : pair.some((r) => r.metrics.censored)
+            ? 'Comparison ready. † At least one run reached the strain cap; its failure work remains unresolved.'
+            : 'Comparison ready. Both traces reached the stated criterion.';
+        if (currentSensitive())
+          $('ageStatus').textContent +=
+            ' ‡ This case changed by at least 5% under step refinement; its work ratio is withheld.';
+        if (pair.some((r) => r.metrics.collapseUsed))
+          $('ageStatus').textContent +=
+            ' Compression regularization was activated in a fiber; see model limits.';
+      }
+      if (data.type === 'error') {
+        $('ageStatus').textContent = 'Calculation failed: ' + data.error;
+        worker.terminate();
+        worker = null;
+      }
+    };
+    worker.onerror = () => {
+      $('ageStatus').textContent =
+        'The browser worker could not complete this comparison.';
+      worker?.terminate();
+      worker = null;
+    };
+  }
+  function dirty() {
+    if (worker) {
+      worker.terminate();
+      worker = null;
+    }
+    ++serial;
+    pair = null;
+    sweep = null;
+    playing = false;
+    $('ageExport').disabled = true;
+    $('ageStatus').textContent =
+      'Release the slider to apply the new controls.';
+    summary();
+    render();
+  }
+  for (const id of ['ageCount', 'ageStiffness', 'ageRupture', 'ageAngle']) {
+    $(id).oninput = dirty;
+    $(id).onchange = compute;
+  }
+  for (const id of ['ageFamily', 'ageSeed', 'agePattern'])
+    $(id).onchange = compute;
+  $('ageControls').onsubmit = (e) => {
+    e.preventDefault();
+    compute();
+  };
+  $('ageReset').onclick = () => {
+    $('ageCount').value = 12;
+    $('ageStiffness').value = 0.2;
+    $('ageRupture').value = 0.3;
+    $('agePattern').value = 'distributed';
+    compute();
+  };
+  $('ageReplay').oninput = () => {
+    playing = false;
+    $('agePlay').textContent = '▶ Play';
+    progress = Number($('ageReplay').value) / 1000;
+    render();
+  };
+  $('agePlay').onclick = () => {
+    if (!pair) return;
+    playing = !playing;
+    if (playing && progress >= 1) progress = 0;
+    $('agePlay').textContent = playing ? 'Ⅱ Pause' : '▶ Play';
+    lastTime = 0;
+  };
+  function tick(t) {
+    if (playing && pair) {
+      if (lastTime) progress = Math.min(1, progress + (t - lastTime) / 10000);
+      $('ageReplay').value = Math.round(progress * 1000);
+      render();
+      if (progress === 1) {
+        playing = false;
+        $('agePlay').textContent = '▶ Play';
+      }
+    }
+    lastTime = t;
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+  $('ageShare').onclick = async () => {
+    const p = config(),
+      u = new URL(location.href);
+    u.search = '';
+    for (const [k, v] of Object.entries({
+      network: p.family,
+      seed: p.seed,
+      angle: p.angle,
+      ...p.parameters,
+    }))
+      u.searchParams.set(k, v);
+    u.hash = 'experiment';
+    try {
+      await navigator.clipboard.writeText(u.href);
+      $('ageStatus').textContent = 'Experiment link copied with all controls.';
+    } catch {
+      $('ageStatus').textContent = u.href;
+    }
+  };
+  $('ageExport').onclick = () => {
+    if (!pair) return;
+    const blob = new Blob(
+        [
+          JSON.stringify(
+            {
+              modelHash: D.modelHash,
+              agingHash: D.agingHash,
+              version: D.version,
+              assumptions: 'Hypothetical connectors; see AGING_METHODS.md',
+              numericalChecks: {
+                defaultStepChecks: D.checks,
+                selectedPairHasKnownWorkSensitivity: !!currentSensitive(),
+                customParametersFullyStepChecked: false,
+              },
+              settings: current,
+              pair,
+              angularRows: sweep,
+            },
+            null,
+            2,
+          ),
+        ],
+        { type: 'application/json' },
+      ),
+      a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'fracture-atlas-crosslink-comparison.json';
+    a.click();
+    setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+  };
+  $('ageSensitivity').textContent = D.checks.some(
+    (r) => Math.abs(r.workRelativeChange) >= 0.05,
+  )
+    ? 'Numerical sensitivity: the clustered, disordered seed-17 specimen at 0° changed work by 9.9% when the strain step was halved. Its angular work point and affected mean work ratio are withheld; source data retain both values. Other custom cases have not all been checked.'
+    : '';
+  const validChecks = D.checks.filter((r) => r.valid);
+  $('ageChecks').textContent =
+    D.rows.length +
+    ' added-connector runs, ' +
+    D.baseline.length +
+    ' freshly paired baselines, ' +
+    D.seeds.length +
+    ' seeds, two placement patterns. ' +
+    D.rows.filter((r) => !r.valid).length +
+    ' invalid runs; ' +
+    D.rows.filter((r) => r.censored).length +
+    ' capped runs. In ' +
+    validChecks.length +
+    ' step-size spot checks, halving the strain step changed work by up to ' +
+    fmt(
+      Math.max(...validChecks.map((r) => Math.abs(r.workRelativeChange))) * 100,
+    ) +
+    '%. Large changes mark unresolved numerical sensitivity; they are not biological findings. All parameters remain hypothetical.';
+  window.addEventListener('resize', render);
+  requestAnimationFrame(compute);
 })();

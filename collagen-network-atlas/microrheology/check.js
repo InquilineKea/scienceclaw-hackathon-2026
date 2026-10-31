@@ -1,4 +1,45 @@
-const assert=require('node:assert/strict'),{solve,build,hessian}=require('./run.js'),A=require('../aging.js');
-let s=solve([[2,-1],[-1,2]],[1,0],1);for(const [v,e] of [[s.real[0],.4],[s.imag[0],-.3],[s.real[1],.1],[s.imag[1],-.2]])assert.ok(Math.abs(v-e)<1e-9);s=solve([[2,-1],[-1,2]],[1,0],0);assert.ok(Math.abs(s.real[0]-2/3)<1e-9);
-const a=build('modular',17,10,'distributed'),b=build('modular',17,10,'clustered');assert.deepEqual(a.net.X,b.net.X);assert.deepEqual(a.lesion,b.lesion);assert.deepEqual(a.probe,b.probe);assert.ok(Math.abs(a.net.edges.reduce((s,e)=>s+e.A*e.L,0)-a.net.p.phi)<1e-12);
-const {K}=hessian(a,A.state(a.net),5e-7),x=Array.from({length:K.length},(_,i)=>i===0?1:0),y=Array.from({length:K.length},(_,i)=>i===3?1:0),u=solve(K,x,.1),v=solve(K,y,.1);assert.ok(Math.hypot(u.real[3]-v.real[0],u.imag[3]-v.imag[0])<1e-6);console.log('Passed coupled analytic static/complex solutions, paired geometry/lesion, volume scaling, reciprocal response');
+const assert = require('node:assert/strict'),
+  { solve, build, hessian } = require('./run.js'),
+  A = require('../aging.js');
+let s = solve(
+  [
+    [2, -1],
+    [-1, 2],
+  ],
+  [1, 0],
+  1,
+);
+for (const [v, e] of [
+  [s.real[0], 0.4],
+  [s.imag[0], -0.3],
+  [s.real[1], 0.1],
+  [s.imag[1], -0.2],
+])
+  assert.ok(Math.abs(v - e) < 1e-9);
+s = solve(
+  [
+    [2, -1],
+    [-1, 2],
+  ],
+  [1, 0],
+  0,
+);
+assert.ok(Math.abs(s.real[0] - 2 / 3) < 1e-9);
+const a = build('modular', 17, 10, 'distributed'),
+  b = build('modular', 17, 10, 'clustered');
+assert.deepEqual(a.net.X, b.net.X);
+assert.deepEqual(a.lesion, b.lesion);
+assert.deepEqual(a.probe, b.probe);
+assert.ok(
+  Math.abs(a.net.edges.reduce((s, e) => s + e.A * e.L, 0) - a.net.p.phi) <
+    1e-12,
+);
+const { K } = hessian(a, A.state(a.net), 5e-7),
+  x = Array.from({ length: K.length }, (_, i) => (i === 0 ? 1 : 0)),
+  y = Array.from({ length: K.length }, (_, i) => (i === 3 ? 1 : 0)),
+  u = solve(K, x, 0.1),
+  v = solve(K, y, 0.1);
+assert.ok(Math.hypot(u.real[3] - v.real[0], u.imag[3] - v.imag[0]) < 1e-6);
+console.log(
+  'Passed coupled analytic static/complex solutions, paired geometry/lesion, volume scaling, reciprocal response',
+);

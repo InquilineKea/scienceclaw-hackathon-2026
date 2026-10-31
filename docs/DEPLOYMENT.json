@@ -18,20 +18,20 @@
       "sha256": "7a934411db6e996e36a37c0acd528ed4bd750ffa8080c2a85e6b4d5780dadd5e"
     },
     "app.js": {
-      "bytes": 20543,
-      "sha256": "37ca08684ed57654f167559b4e81393ae989943bde7505a22f33618671b27603"
+      "bytes": 25681,
+      "sha256": "c2671d381d545199fe325b3b51281762a5d97dabc0446eac11e39efb41a86d79"
     },
     "model.js": {
       "bytes": 18846,
       "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
     },
     "load-guide.js": {
-      "bytes": 5783,
-      "sha256": "9735a5df66d437fc31d7752d5a7bcff9d084805f09145226559522bf2b947eca"
+      "bytes": 7232,
+      "sha256": "c2a9d7004af7bc637e9c1e34d8ae85f8b1107f2744227eab7876af80d1228dd0"
     },
     "worker.js": {
-      "bytes": 298,
-      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+      "bytes": 377,
+      "sha256": "ef52741bd0c2b9b05a689351bceeff107c64a8b57b4bb561881a2854d2a4fcbe"
     },
     "METHODS.md": {
       "bytes": 15339,
@@ -70,12 +70,12 @@
       "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
     },
     "directional-ui.js": {
-      "bytes": 10525,
-      "sha256": "487aeb00868973470c9e0764ce833ec882f20e6630432e32a2d921127634d2d7"
+      "bytes": 14556,
+      "sha256": "4b6e31d3219cc8993609057a7782b05da52cc5c79aac7a1a8e4732692ae11d7b"
     },
     "directional-worker.js": {
-      "bytes": 276,
-      "sha256": "456ca8b15df426813dd7f6ec6de4e4f2e60bc00073f7c112b51c3a5c5ed535e0"
+      "bytes": 354,
+      "sha256": "b01e187501ae2c673943b600fc6e4e93092ae06bf996ce8c57c4c76ad65a7da7"
     },
     "DIRECTIONAL_METHODS.md": {
       "bytes": 5849,
@@ -106,12 +106,12 @@
       "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
     },
     "aging-ui.js": {
-      "bytes": 15510,
-      "sha256": "349bfe53dad708927dbc380b4c25c962d20ca7f65c55e865d049d3b6cd8f86d3"
+      "bytes": 22275,
+      "sha256": "af682e5f30833d772b339663dfd8fe7db876fbadeb3cf88ae7e2d65c98d947a9"
     },
     "aging-worker.js": {
-      "bytes": 735,
-      "sha256": "e20e0dc7de2022206b283b9ef1442451b1d70e4cee96b81aad6f08cea49821c3"
+      "bytes": 971,
+      "sha256": "d77db31c47235b9a60688d062f79b962f01298e72d4f4f76a73a9704a8882c00"
     },
     "AGING_METHODS.md": {
       "bytes": 8224,
@@ -130,8 +130,8 @@
       "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
     },
     "density-ui.js": {
-      "bytes": 6288,
-      "sha256": "16d82d29e56aed46d9a1dc4b3c37a0ce0d25b6fcc4f668a7650cecc6cafc396d"
+      "bytes": 8093,
+      "sha256": "e3b5239017e101fd27575ccf2d8cfcc671e930390a5f158733a9fd104bf5a276"
     },
     "density.css": {
       "bytes": 1197,
@@ -162,8 +162,8 @@
       "sha256": "1834840657960e9986043c91b321d2337e661d9c8801f7fe194a80f13ff7ba1a"
     },
     "species-ui.js": {
-      "bytes": 2684,
-      "sha256": "1f1af387668ca0cb8f9e25e1846efc26895ce61518c71eba03d22b97525383c4"
+      "bytes": 3660,
+      "sha256": "fc624a2065d06d5c7b992653f3d79165e72dc34172f432535b714613e6a6406d"
     },
     "SPECIES_METHODS.md": {
       "bytes": 6596,
@@ -194,12 +194,12 @@
       "sha256": "e53d4f2f8bd82b7cfd08c21aba40075b894e655043dbd64822e55627db4aca1b"
     },
     "topology-aging.js": {
-      "bytes": 2888,
-      "sha256": "11ef496616bed934769c3bdbeb7449f17c2e77f92653295426c06a0ed5870d41"
+      "bytes": 3537,
+      "sha256": "c28e5858b9e0e6288471fe43f76903ed46de246bbb0716f732cbbfddb57077aa"
     },
     "topology-figure.js": {
-      "bytes": 5063,
-      "sha256": "beb9dea2ea6fdb2165999fc8cf3a17897b4f8a51492ede79f84b312d4392431d"
+      "bytes": 6849,
+      "sha256": "d0f798571044bff2144d73d76e15642185143ceb1b7a0e845e72db9c18f379d5"
     },
     "data/topology-maps.js": {
       "bytes": 21467,
@@ -278,8 +278,8 @@
       "sha256": "c71c48d0645aad746c018280f26832f8e7f60f7c9201929c2b0fe041a39777aa"
     },
     "microrheology/ui.js": {
-      "bytes": 2722,
-      "sha256": "41fe3fcbb096940a50399f887d6d561977bc9ae50b5e7f8c41c52a78d970db46"
+      "bytes": 4190,
+      "sha256": "210ac297aa35a24687509c06c376b9ecec4a129fb0bf7e5b547a24c606e1b50c"
     },
     "microrheology/animation-data.js": {
       "bytes": 557764,
@@ -338,8 +338,8 @@
         "sha256": "318501f4a523746365c414dd50fbee654838d1a51beef6f6a58a86b2e928804e"
       },
       "app.js": {
-        "bytes": 4934,
-        "sha256": "d1a9dfc644558d1b1d82a817b4af6332395a0b2ea26456001185bd9492753af5"
+        "bytes": 6681,
+        "sha256": "7a1705e23b22ea878421c0a83a37e157d9980aacaf1066ff86439d25558ae82a"
       },
       "transition-view.json": {
         "bytes": 161643,
@@ -399,8 +399,8 @@
         "sha256": "86eff52d9e364031fe3f4601dba698d0a5680cd8d53505106a76474c7f3bc975"
       },
       "ui.js": {
-        "bytes": 4255,
-        "sha256": "ff6acb35b491e3330d3b9af2fe037c189d03ec158f321daaf8211163af803991"
+        "bytes": 5744,
+        "sha256": "e5474e5a542ed02621a3f8b6c44fb475b2ff5855592e84c85f8db7648c9f4b53"
       },
       "data.js": {
         "bytes": 858915,
