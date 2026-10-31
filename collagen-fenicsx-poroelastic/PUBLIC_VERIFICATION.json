@@ -1,0 +1,32 @@
+{
+  "validation.json": {
+    "bytes": 646,
+    "sha256": "179c78b3176309814638235c419166b2336f65f6a53499a08e527e1c1a9fba89",
+    "matchesLocal": true
+  },
+  "ui.js": {
+    "bytes": 4255,
+    "sha256": "ff6acb35b491e3330d3b9af2fe037c189d03ec158f321daaf8211163af803991",
+    "matchesLocal": true
+  },
+  "data.js": {
+    "bytes": 858915,
+    "sha256": "81d5c6931a9ee095f1115a8cc493d5e79c6f37c494f7c4c2ed66febb09240f69",
+    "matchesLocal": true
+  },
+  "index.html": {
+    "bytes": 7101,
+    "sha256": "15893bacd3b3ac624c65b5be5394a151f59e86fb0a87305d19f39cd6a0d67a28",
+    "matchesLocal": true
+  },
+  "wordpress/poro-versus-drag-motion.gif": {
+    "bytes": 10938626,
+    "sha256": "3b8c3422c8ec0bf23357752a689342f34536b07c9b94646d6286b0da4a13193b",
+    "matchesLocal": true
+  },
+  "wordpress/poro-damage-change.gif": {
+    "bytes": 9027549,
+    "sha256": "7bf1dcd8740aa6ed9a8ce9965cc1ab27e426dc9dc44c6e23019c389eccb4fde5",
+    "matchesLocal": true
+  }
+}

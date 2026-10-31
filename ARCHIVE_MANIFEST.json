@@ -73,9 +73,17 @@
       "bytes": 669506,
       "sha256": "858dc8af54880beea10e507f504304707c7c5270bf0ae20f8042320918d3582a"
     },
+    "collagen-fenicsx-poroelastic/PUBLICATION_AUDIT.json": {
+      "bytes": 2369,
+      "sha256": "4a2010266cabf9f324bda00c0f8db80a0d1329be6fde35acf6247e0154be53f0"
+    },
+    "collagen-fenicsx-poroelastic/PUBLIC_VERIFICATION.json": {
+      "bytes": 951,
+      "sha256": "478c1969da5e15849436fb0885faad60be538f4548b1fbf6963fb8910142c00d"
+    },
     "collagen-fenicsx-poroelastic/README.md": {
-      "bytes": 3075,
-      "sha256": "7cce3a90be04ab758e49ef8461a7939f8fd205d35b514e3d8dcdcbb53164cc64"
+      "bytes": 3616,
+      "sha256": "cd88f2e49a56fa7f499ee297d506dd62f6d24d587088de3234ada010b8d3c872"
     },
     "collagen-fenicsx-poroelastic/RUN_RECEIPT.json": {
       "bytes": 1073,

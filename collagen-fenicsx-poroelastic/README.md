@@ -17,3 +17,7 @@ DOLFINx 0.10.0.post2; 40 networks, 4160 systems and 4158 algebraically resolved.
 The successful numerical sweep took 11.4 seconds; with plots/animations the scientific child took 39.7 seconds. Provider UI showed a 40-second workload after startup. CPU-only, no GPU. The quoted resource estimate was $0.15/hour including ephemeral storage, billed per second including startup/shutdown; this is not a settled invoice. Both attempts completed/stopped within the approved $0.50 ceiling using about 6 minutes of combined provision-to-completion wall time. Temporary object storage is handled separately after verified download.
 
 The preserved result ZIP SHA-256 is `6efceca6cbde6461a938cd7bbf8568325a90334e1d51eb55dbd406189eebca73` (25,570,444 bytes). `RUN_RECEIPT.json` records the exact input/runtime/output hashes.
+
+## Publication readback
+
+The [WordPress article](https://humanavianaisymbiosis.wordpress.com/2026/10/31/collagen-aging-topology-crosslink-placement/) includes three plots, two byte-verified GIFs and the qualified seed table. The [visualization index](https://humanavianaisymbiosis.wordpress.com/2026/10/31/all-research-visualizations-interactive-explorers-animations-figures/) links the new replay. All 28 previous article blocks and all 47 previous index blocks were preserved. See `PUBLICATION_AUDIT.json` and `PUBLIC_VERIFICATION.json`.

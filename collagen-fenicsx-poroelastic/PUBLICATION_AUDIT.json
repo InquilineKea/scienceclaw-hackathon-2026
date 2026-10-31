@@ -1,0 +1,61 @@
+{
+  "date": "2026-10-31",
+  "scientificSnapshot": "aaf69867bf719bd15ced07b32442b222025db3bc",
+  "publicExplorer": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/poroelasticity/",
+  "article": {
+    "url": "https://humanavianaisymbiosis.wordpress.com/2026/10/31/collagen-aging-topology-crosslink-placement/",
+    "previousBlocks": 28,
+    "currentBlocks": 29,
+    "preservedPreviousBlocks": true,
+    "insertedIndex": 2,
+    "modified": "2026-10-31T19:02:51",
+    "contentHash": "bde876b80db4b0ce9dce80b3675127cdfd95927b"
+  },
+  "index": {
+    "url": "https://humanavianaisymbiosis.wordpress.com/2026/10/31/all-research-visualizations-interactive-explorers-animations-figures/",
+    "previousBlocks": 47,
+    "currentBlocks": 48,
+    "preservedPreviousBlocks": true,
+    "modified": "2026-10-31T19:03:09",
+    "contentHash": "ba26c56e6d610a603a4d4de6bc686762204ceaba"
+  },
+  "media": [
+    {
+      "id": 263,
+      "name": "local-poro-vs-drag.png",
+      "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-fenicsx-local-poro-vs-drag.png"
+    },
+    {
+      "id": 264,
+      "name": "remote-poro-vs-drag.png",
+      "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-fenicsx-remote-poro-vs-drag.png"
+    },
+    {
+      "id": 265,
+      "name": "damage-comparison.png",
+      "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-fenicsx-damage-comparison.png"
+    },
+    {
+      "id": 266,
+      "name": "poro-versus-drag-motion.gif",
+      "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-fenicsx-poro-versus-drag-motion.gif"
+    },
+    {
+      "id": 267,
+      "name": "poro-damage-change.gif",
+      "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-fenicsx-poro-damage-change.gif"
+    }
+  ],
+  "checks": {
+    "archiveSha256Verified": true,
+    "resultFileHashesVerified": true,
+    "publicDataAndCodeReadbackMatch": true,
+    "wordpressGifBytesMatch": true,
+    "browserControlsVerified": true,
+    "browserErrorsObserved": 0
+  },
+  "cleanup": {
+    "compute": "First job failed before solving; corrected CPU job completed; no running compute retained.",
+    "temporaryBucket": "Private temporary object store retained pending action-time deletion confirmation."
+  }
+}
