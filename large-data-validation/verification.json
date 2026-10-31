@@ -1,0 +1,49 @@
+{
+  "verifiedAt": "2026-10-31T16:19:42.499804+00:00",
+  "status": "passed",
+  "archiveBytes": 120412160,
+  "archiveSHA256": "c224b81867f51a1014c0d526ce6833e798afb3a42ec122c9e85914cf50f46298",
+  "memberFiles": 469,
+  "memberBytes": 119832656,
+  "allRecoveredMembersMatch": true,
+  "allFrozenSourceMembersUnchanged": true,
+  "publicDownloadUsedCredentials": false,
+  "tlsVerificationDisabled": false,
+  "offlineTestsPassed": 12,
+  "idempotentRetry": {
+    "status": "already_uploaded",
+    "commit": "12fd69596eb3cb0a380dfef1462c5ae0f493a35d",
+    "files": 7,
+    "largeFiles": 1,
+    "largeBytes": 120412160,
+    "releases": [
+      "https://github.com/InquilineKea/scienceclaw-hackathon-2026/releases/tag/data-archive-20261031-frozen-collagen-raw-bundle-v2-f95f1bfa45dd29bf961f-s0001"
+    ],
+    "datasetIndex": "https://github.com/InquilineKea/scienceclaw-hackathon-2026/blob/12fd69596eb3cb0a380dfef1462c5ae0f493a35d/datasets/20261031-frozen-collagen-raw-bundle-v2/_release/LARGE_DATASETS.json",
+    "runId": "20261031-frozen-collagen-raw-bundle-v2",
+    "kind": "archive",
+    "repository": "InquilineKea/scienceclaw-hackathon-2026",
+    "path": "datasets/20261031-frozen-collagen-raw-bundle-v2",
+    "manifestSHA256": "f95f1bfa45dd29bf961fccf355a57bdf1a41b2aa92ff3c197d429627c11b3413",
+    "verifiedAt": "2026-10-31T16:18:47.299166+00:00",
+    "url": "https://github.com/InquilineKea/scienceclaw-hackathon-2026/tree/12fd69596eb3cb0a380dfef1462c5ae0f493a35d/datasets/20261031-frozen-collagen-raw-bundle-v2"
+  },
+  "publication": {
+    "status": "uploaded",
+    "commit": "12fd69596eb3cb0a380dfef1462c5ae0f493a35d",
+    "files": 7,
+    "largeFiles": 1,
+    "largeBytes": 120412160,
+    "releases": [
+      "https://github.com/InquilineKea/scienceclaw-hackathon-2026/releases/tag/data-archive-20261031-frozen-collagen-raw-bundle-v2-f95f1bfa45dd29bf961f-s0001"
+    ],
+    "datasetIndex": "https://github.com/InquilineKea/scienceclaw-hackathon-2026/blob/12fd69596eb3cb0a380dfef1462c5ae0f493a35d/datasets/20261031-frozen-collagen-raw-bundle-v2/_release/LARGE_DATASETS.json",
+    "runId": "20261031-frozen-collagen-raw-bundle-v2",
+    "kind": "archive",
+    "repository": "InquilineKea/scienceclaw-hackathon-2026",
+    "path": "datasets/20261031-frozen-collagen-raw-bundle-v2",
+    "manifestSHA256": "f95f1bfa45dd29bf961fccf355a57bdf1a41b2aa92ff3c197d429627c11b3413",
+    "verifiedAt": "2026-10-31T16:17:46.609963+00:00",
+    "url": "https://github.com/InquilineKea/scienceclaw-hackathon-2026/tree/12fd69596eb3cb0a380dfef1462c5ae0f493a35d/datasets/20261031-frozen-collagen-raw-bundle-v2"
+  }
+}
