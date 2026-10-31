@@ -10,8 +10,8 @@
   "scope": "Original 450-run baseline, 252-run directional-strain experiment, and separate paired crosslink experiment. Static application and browser-local computation; no server or package installation. Density sweep uses 6,300 paired configurations at two resolutions. Separate CDSM species pilot contains backbone geometry only, without molecular mechanical calibration.",
   "files": {
     "index.html": {
-      "bytes": 16961,
-      "sha256": "f0c86301b202fbf0ca91704ef51e74848f5947feb0c46293cf9838af0f81c54d"
+      "bytes": 17017,
+      "sha256": "04e80dea52685a7e7be6dc3db466ce84770b9ff615c623ad17a6fae175c5e15a"
     },
     "style.css": {
       "bytes": 13374,
@@ -461,6 +461,59 @@
       "comparisons.csv": {
         "bytes": 211149,
         "sha256": "811a4688e4758b696ba2ac3c0f06f656d6f9901801872109a5da350a6f82080b"
+      }
+    }
+  },
+  "bovine_3d": {
+    "scope": "Bovine bulk-response calibration of synthetic periodic3D cells; conditional angular locking and damage, explicit step/energy/stability gates; measured-architecture validation data-gated.",
+    "files": {
+      "index.html": {
+        "bytes": 14844,
+        "sha256": "080751b20ed42a0d19d40f0dfd3b9c902d5ef7280b6b49b99218f8ce0c09bb51"
+      },
+      "page.js": {
+        "bytes": 10876,
+        "sha256": "ab16b95fb9748dee25e165c534716964c9fedcd719df0c88df806638b31dfd05"
+      },
+      "report-data.json": {
+        "bytes": 14031760,
+        "sha256": "4a380fa8b7fea9ff8eb822ac42e4a29106bc0ed03e218757dc88a7e219c69b36"
+      },
+      "bovine-calibration.svg": {
+        "bytes": 47317,
+        "sha256": "384a34f3b711f6fd1d4113b8a9985a88e8e5878345ed404e0dd9f59d5f815d14"
+      },
+      "bovine-calibration.jpg": {
+        "bytes": 76668,
+        "sha256": "fd87e62b01e7a783db5554d71b94030840ea3090ebc05338e11ceb0ffee82b02"
+      },
+      "mechanics-summary.svg": {
+        "bytes": 14598,
+        "sha256": "36f21300c6a16004b231987db9fa5bc0749e88e78749a2e70ba713a052f69cc3"
+      },
+      "mechanics-summary.jpg": {
+        "bytes": 111635,
+        "sha256": "be9686dab6b8340f866d07d4d96e1ce120e9ff18631a64629d02427c083b0bd2"
+      },
+      "force-damage-3d.gif": {
+        "bytes": 1532349,
+        "sha256": "9e5a172ca9b9842a42d78a5b767d5e2b95ca5112c05feca1d311e6390df32dc2"
+      },
+      "stiffness-summary.svg": {
+        "bytes": 6521,
+        "sha256": "d1592d3c030c0c8482c592ec88aa1c243e0999d129d525c2ccb87a95955b8219"
+      },
+      "stiffness-summary.jpg": {
+        "bytes": 88713,
+        "sha256": "16e8159feabada58853b732fcc15f4581ac6f72c681e6f3302958bbe5dcdebae"
+      },
+      "bovine-3d-results.zip": {
+        "bytes": 28095424,
+        "sha256": "55c493bf1d271e47632be6fffb580f48b1920e1b0a726ac506fff58a0931036a"
+      },
+      "README.md": {
+        "bytes": 435,
+        "sha256": "2f192bba6fb6c736a4d407c50c0fd9bf79d88af41e20c21a3db37914c206dd8e"
       }
     }
   }

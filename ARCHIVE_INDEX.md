@@ -48,3 +48,12 @@ Completed runs now upload automatically through the trusted host uploader, with 
 ## FEniCSx poroelastic microrheology
 
 [Completed result ZIP](collagen-fenicsx-poroelastic/poro-results-v2.zip): 25,570,444 bytes; SHA-256 `6efceca6cbde6461a938cd7bbf8568325a90334e1d51eb55dbd406189eebca73`. It contains the exact executed input sources, forty-network output, pressure/displacement fields, numerical validation, comparisons and generated publication assets. [Run receipt](collagen-fenicsx-poroelastic/RUN_RECEIPT.json), [input hashes](collagen-fenicsx-poroelastic/job/INPUT_MANIFEST.json), [review](collagen-fenicsx-poroelastic/review/SECURITY_REVIEW.md) and the failed-attempt archive are retained. This is a bounded hybrid-model experiment with explicit pressure-mesh exclusions, not an age/species/tissue calibration.
+
+
+## Bovine bulk-calibrated 3D collagen comparator
+
+[Open the interactive 3D explorer](https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/) for measured-versus-fit bovine G′/G″, matched-budget junction-locking stiffness, paired force/damage replay, and explicit numerical qualification. [Scientific source and audit](collagen-3d-bovine-calibration/README.md) and [three-campaign evidence gates](collagen-3d-bovine-calibration/campaigns/CAMPAIGN-STATUS.md).
+
+160/160 final cases, 160 complete trajectories, 80/80 load-step pairs, and 40 accepted small-strain states. This uses synthetic periodic networks with a bovine bulk-response scale; measured architecture, chemical aging and species-specific fracture are not validated. Marginal curvature and capped maxima remain explicitly conditional/censored.
+
+[Download the bounded source/results archive](https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/bovine-3d-results.zip), 28,095,424 bytes, SHA-256 `55c493bf1d271e47632be6fffb580f48b1920e1b0a726ac506fff58a0931036a`.

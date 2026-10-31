@@ -119,3 +119,12 @@ The [transition explorer](https://inquilinekea.github.io/scienceclaw-hackathon-2
 ## Fluid-coupled microrheology
 
 The [FEniCSx poroelastic comparison](https://inquilinekea.github.io/scienceclaw-hackathon-2026/poroelasticity/) retains the exact discrete solid and compares uniform drag with added Darcy/Biot pressure coupling before/after a local three-fiber cut. Forty networks, 4,160 systems (4,158 resolved), two mobilities and two pressure meshes; 1,341/1,600 paired observable comparisons pass the stated mesh screen. The explorer includes pressure/displacement phase playback, three plots, two GIFs, explicit coverage and downloads. [Source, inputs, review and result archive](collagen-fenicsx-poroelastic/) preserve both the failed startup attempt and completed result. These normalized outputs do not calibrate tissue permeability, frequency, age or species effects.
+
+
+## Bovine bulk-calibrated 3D collagen comparator
+
+[Open the interactive 3D explorer](https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/) for measured-versus-fit bovine G′/G″, matched-budget junction-locking stiffness, paired force/damage replay, and explicit numerical qualification. [Scientific source and audit](collagen-3d-bovine-calibration/README.md) and [three-campaign evidence gates](collagen-3d-bovine-calibration/campaigns/CAMPAIGN-STATUS.md).
+
+160/160 final cases, 160 complete trajectories, 80/80 load-step pairs, and 40 accepted small-strain states. This uses synthetic periodic networks with a bovine bulk-response scale; measured architecture, chemical aging and species-specific fracture are not validated. Marginal curvature and capped maxima remain explicitly conditional/censored.
+
+[Download the bounded source/results archive](https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/bovine-3d-results.zip), 28,095,424 bytes, SHA-256 `55c493bf1d271e47632be6fffb580f48b1920e1b0a726ac506fff58a0931036a`.

@@ -42,3 +42,12 @@ The publisher checks the baseline, directional and aging data against their curr
 ## Matched FEniCSx fluid coupling
 
 `/poroelasticity/` is a separate buildless public replay with pressure and displacement phase controls, size/mobility tables, figures, GIFs and raw results. The bounded publisher copies the explicit file list from `collagen-fenicsx-poroelastic/web/` and records it in `docs/DEPLOYMENT.json`. Scientific code and the immutable remote runtime/input receipts remain in the repository. Frequency plots show all algebraically resolved fine-mesh values; summary tables/ratio plots use only qualified seed pairs.
+
+
+## Bovine bulk-calibrated 3D collagen comparator
+
+[Open the interactive 3D explorer](https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/) for measured-versus-fit bovine G′/G″, matched-budget junction-locking stiffness, paired force/damage replay, and explicit numerical qualification. [Scientific source and audit](collagen-3d-bovine-calibration/README.md) and [three-campaign evidence gates](collagen-3d-bovine-calibration/campaigns/CAMPAIGN-STATUS.md).
+
+160/160 final cases, 160 complete trajectories, 80/80 load-step pairs, and 40 accepted small-strain states. This uses synthetic periodic networks with a bovine bulk-response scale; measured architecture, chemical aging and species-specific fracture are not validated. Marginal curvature and capped maxima remain explicitly conditional/censored.
+
+[Download the bounded source/results archive](https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/bovine-3d-results.zip), 28,095,424 bytes, SHA-256 `55c493bf1d271e47632be6fffb580f48b1920e1b0a726ac506fff58a0931036a`.

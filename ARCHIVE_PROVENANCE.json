@@ -822,10 +822,10 @@
     },
     {
       "path": "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/results.csv",
-      "source": "public-scienceclaw-collagen-results-complete.zip:pilot_run/results.csv",
-      "original_sha256": "a5d7e6f77b6c503c947743ac4090e62eaf3c5172772a5b962c7620e2845ee5d3",
-      "published_sha256": "a5d7e6f77b6c503c947743ac4090e62eaf3c5172772a5b962c7620e2845ee5d3",
-      "bytes": 1730,
+      "source": "molecular:pilot_run/results.csv",
+      "original_sha256": "0a3330c519116fe61cdb64de4eca2a9c2afa4d75f132f3c8b9c11cb0e8c3bbf7",
+      "published_sha256": "0a3330c519116fe61cdb64de4eca2a9c2afa4d75f132f3c8b9c11cb0e8c3bbf7",
+      "bytes": 1739,
       "privacy_edited": false
     },
     {
@@ -3267,6 +3267,2223 @@
       "published_sha256": "d0aa9885504bb129bd3f3e9afa5e23fd360ec64bdfabb9563acb1694ef649556",
       "bytes": 7251202,
       "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/PROTOCOL.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "68be2ae4401a081c2154201a8097fa9c1e94d5e63cedacedb24e82b2c9cf3bc3",
+      "published_sha256": "68be2ae4401a081c2154201a8097fa9c1e94d5e63cedacedb24e82b2c9cf3bc3",
+      "bytes": 7589,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/README.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "994603c689810c5657e23fe581840fff3e31ef5215d70ea34025d78ef8b15193",
+      "published_sha256": "994603c689810c5657e23fe581840fff3e31ef5215d70ea34025d78ef8b15193",
+      "bytes": 5727,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/REPORT.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d895ba8417b109f40ff57f1cf27b619662c56b7df065c1ad41d728937b51f53b",
+      "published_sha256": "d895ba8417b109f40ff57f1cf27b619662c56b7df065c1ad41d728937b51f53b",
+      "bytes": 4869,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/SOURCE_MANIFEST.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "33f568aca47af1794623e898860104378ad9beb276db876055892aec390e484f",
+      "published_sha256": "33f568aca47af1794623e898860104378ad9beb276db876055892aec390e484f",
+      "bytes": 65174,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/STATIC_WHEEL_SCAN.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "32c84589acf0f35452f1cd704445f669c875183a4f2e2d8c9c0d264c7152c045",
+      "published_sha256": "32c84589acf0f35452f1cd704445f669c875183a4f2e2d8c9c0d264c7152c045",
+      "bytes": 1870,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/VALIDATION.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "fbafd8445cc81f06cbd29f96739eb98a51a7f32fe3df04a72c74ccf19e727991",
+      "published_sha256": "fbafd8445cc81f06cbd29f96739eb98a51a7f32fe3df04a72c74ccf19e727991",
+      "bytes": 1256,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/WHEEL_REVIEW.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "eaba38a3809a7915a6a6142b8c87afca0176f61d6ea1913b277f53be84f11160",
+      "published_sha256": "eaba38a3809a7915a6a6142b8c87afca0176f61d6ea1913b277f53be84f11160",
+      "bytes": 2706,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/analysis/baseline-pairs.csv",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a69f4bae3e5347ff850cd40cf7882592f0ceb2040e5b4b81e44ac9d756a27ad9",
+      "published_sha256": "a69f4bae3e5347ff850cd40cf7882592f0ceb2040e5b4b81e44ac9d756a27ad9",
+      "bytes": 38693,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/analysis/input-hashes.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2c9b332607e2bd416d7c52199222cc906d140403f6cb2817663fa2610078479d",
+      "published_sha256": "2c9b332607e2bd416d7c52199222cc906d140403f6cb2817663fa2610078479d",
+      "bytes": 28051,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/analysis/placement-pairs.csv",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1c49f1abc4f5937a37872e62ace012c9445d7265bdc6d9b3bdd27097478cccc7",
+      "published_sha256": "1c49f1abc4f5937a37872e62ace012c9445d7265bdc6d9b3bdd27097478cccc7",
+      "bytes": 61105,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/analysis/resolution-pairs.csv",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "cc66f39d71f549e771d8d11ad165213734b1a413484bfa11593a42962d10fcf5",
+      "published_sha256": "cc66f39d71f549e771d8d11ad165213734b1a413484bfa11593a42962d10fcf5",
+      "bytes": 33999,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/analysis/runs.csv",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "f81124d320a665aa4411cc5c43748a4575bce683ffa3a8ec6718eea4aabd804a",
+      "published_sha256": "f81124d320a665aa4411cc5c43748a4575bce683ffa3a8ec6718eea4aabd804a",
+      "bytes": 92559,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/analysis/stiffness-pairs.csv",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "e0f86416fd46096b01f5cb3fb440810e7f3c8d4ab6ff214a2d4423490328de0b",
+      "published_sha256": "e0f86416fd46096b01f5cb3fb440810e7f3c8d4ab6ff214a2d4423490328de0b",
+      "bytes": 2426,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/analysis/summary.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4a7635bd206fe6628d4a4c25c6dfd636d3d943dd623275d0b5bfbf9a9ee9e4c2",
+      "published_sha256": "4a7635bd206fe6628d4a4c25c6dfd636d3d943dd623275d0b5bfbf9a9ee9e4c2",
+      "bytes": 416343,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/FINAL-NUMERICAL-SUMMARY.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "3f939c9d62e29d5b523b79a5169e1e9cba94655c76fe09c02410a85c4104db2d",
+      "published_sha256": "3f939c9d62e29d5b523b79a5169e1e9cba94655c76fe09c02410a85c4104db2d",
+      "bytes": 50201,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/FROZEN_REVIEW.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "fcaaae1d64130e9adf2af80fb9475bcfa1394351dcf1ae4faa0fc7a2ed2fe877",
+      "published_sha256": "fcaaae1d64130e9adf2af80fb9475bcfa1394351dcf1ae4faa0fc7a2ed2fe877",
+      "bytes": 3264,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/HESSIAN_HELPER.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c780a497fef1268125052dc4b3c7687e4a6ddb35024f2bfa57005cc25a228274",
+      "published_sha256": "c780a497fef1268125052dc4b3c7687e4a6ddb35024f2bfa57005cc25a228274",
+      "bytes": 2712,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/NUMERICAL_RESCUE_REVIEW.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "5fa92cb94b09f7aa07858a07e1dcfe9431679e04d1846bb5b65cbe99156995b7",
+      "published_sha256": "5fa92cb94b09f7aa07858a07e1dcfe9431679e04d1846bb5b65cbe99156995b7",
+      "bytes": 4189,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/OUTPUT_COMPARISON_PLAN.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d151422078eaf0b64cd863ea76a012689f38fa5f76e7b6e485f5f40f0bb60977",
+      "published_sha256": "d151422078eaf0b64cd863ea76a012689f38fa5f76e7b6e485f5f40f0bb60977",
+      "bytes": 5649,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/PUBLIC_DRAFT_REVIEW.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d7190061660a8712c26a74724a5e6824a6c96e23c739b36d4b9195d142d36b4b",
+      "published_sha256": "d7190061660a8712c26a74724a5e6824a6c96e23c739b36d4b9195d142d36b4b",
+      "bytes": 5068,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/REPORT.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "06ccfc1261cb8b512a0e4e38cbb576aa40c4c592ad0d7f00e9f23e8773991a94",
+      "published_sha256": "06ccfc1261cb8b512a0e4e38cbb576aa40c4c592ad0d7f00e9f23e8773991a94",
+      "bytes": 9937,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/RESUME_STATIC_REVIEW.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2fb2dc4ec3cbef38fd0f4d4342cf77782bedcc41a2dd0aa7e2b9939906707a1e",
+      "published_sha256": "2fb2dc4ec3cbef38fd0f4d4342cf77782bedcc41a2dd0aa7e2b9939906707a1e",
+      "bytes": 4842,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/audit-math.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "0c45a9866e67f12d4ade35517610ec806ba8af92d8da6628afe059dbd035e379",
+      "published_sha256": "0c45a9866e67f12d4ade35517610ec806ba8af92d8da6628afe059dbd035e379",
+      "bytes": 3177,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/check-hessian-blocks.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "763c56b2f88d979dd7de01a217decb45e8d128f4e919c522a66c02e9da3e57ea",
+      "published_sha256": "763c56b2f88d979dd7de01a217decb45e8d128f4e919c522a66c02e9da3e57ea",
+      "bytes": 2169,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/check_resume_preservation.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b693d1283b998d67e4fb6a8ad64c193212d7d809c88d486b5defe5a1406de808",
+      "published_sha256": "b693d1283b998d67e4fb6a8ad64c193212d7d809c88d486b5defe5a1406de808",
+      "bytes": 4835,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/equation-checks.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "416e8862322a2da7fbc1434cb2acfd9d094d74a902c01428d2683f16087c66f0",
+      "published_sha256": "416e8862322a2da7fbc1434cb2acfd9d094d74a902c01428d2683f16087c66f0",
+      "bytes": 3284,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/exact_hessian.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "de5aaaaf45aa221c6ad8b6232ef8be7f318c726e4f1fa5e5d82e5b7b393617e5",
+      "published_sha256": "de5aaaaf45aa221c6ad8b6232ef8be7f318c726e4f1fa5e5d82e5b7b393617e5",
+      "bytes": 6427,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/final-numerical-summary.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "61eabd0d8db674a598e84b82b472af691f5cfdd1d8502a4cc482916bb8907699",
+      "published_sha256": "61eabd0d8db674a598e84b82b472af691f5cfdd1d8502a4cc482916bb8907699",
+      "bytes": 3652,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/frozen-input-readback.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "33a625b71ffc703d7137f6b87d55892e41dda3dcb62940ed6902d1c0af601271",
+      "published_sha256": "33a625b71ffc703d7137f6b87d55892e41dda3dcb62940ed6902d1c0af601271",
+      "bytes": 1353,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/hessian-block-checks.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "579a9cce7ccea71eedfc045fb7a3f6389752cda156a5f0b4fe511d1092028e3d",
+      "published_sha256": "579a9cce7ccea71eedfc045fb7a3f6389752cda156a5f0b4fe511d1092028e3d",
+      "bytes": 3364,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/placement-budget-readback.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "13be4b9362fe2e7bd2acbe0d9b4d014a3fea6ece31a077bd6cde01430491f05a",
+      "published_sha256": "13be4b9362fe2e7bd2acbe0d9b4d014a3fea6ece31a077bd6cde01430491f05a",
+      "bytes": 5254,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/preserved-baseline-control-comparison.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b3a58829ea57ca18c9f1d2362d5dbc828ea0779596e4aebeb5bab4ae9232eeb3",
+      "published_sha256": "b3a58829ea57ca18c9f1d2362d5dbc828ea0779596e4aebeb5bab4ae9232eeb3",
+      "bytes": 16761,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/resume-function-identity-independent.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "bcee941b43582dd3647c10ae8f43e72717b2aab68a37e0c424a08997a0c8197e",
+      "published_sha256": "bcee941b43582dd3647c10ae8f43e72717b2aab68a37e0c424a08997a0c8197e",
+      "bytes": 681,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/resume-function-source-identity-independent.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d8084e5980acd0f73482a73d7fd94f3e9c848afe0d828c5d9da053d5504754fb",
+      "published_sha256": "d8084e5980acd0f73482a73d7fd94f3e9c848afe0d828c5d9da053d5504754fb",
+      "bytes": 465,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/resume-input-preservation-baseline.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "41da00d9a5b76c1e475fb59b4e57454248a5b1351a9e32d2fb5c5c5584da2436",
+      "published_sha256": "41da00d9a5b76c1e475fb59b4e57454248a5b1351a9e32d2fb5c5c5584da2436",
+      "bytes": 25459,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/resume-preservation-readback.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "49972c9950de4d09fa94a27949b6450ba6882b370bf3ac8ccf7f49681b2248fb",
+      "published_sha256": "49972c9950de4d09fa94a27949b6450ba6882b370bf3ac8ccf7f49681b2248fb",
+      "bytes": 25459,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/stiffness-independent-budget-readback.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "5740d51c416c4b3de2b82c87ddfecddb8f69714200fed758d99115b9971697e6",
+      "published_sha256": "5740d51c416c4b3de2b82c87ddfecddb8f69714200fed758d99115b9971697e6",
+      "bytes": 4219,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/audit/true_hessian_check.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4d5f4fb0ba074bd1e4bd919190d7e442cbc49f6792b5d272399edb1c86e5959f",
+      "published_sha256": "4d5f4fb0ba074bd1e4bd919190d7e442cbc49f6792b5d272399edb1c86e5959f",
+      "bytes": 5532,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/amplitude-calibration-final.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4cb0d684a56a922f4a26b856fa0f3d7c7b53040cf6895609931541279b2df6a3",
+      "published_sha256": "4cb0d684a56a922f4a26b856fa0f3d7c7b53040cf6895609931541279b2df6a3",
+      "bytes": 9667,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/amplitude-calibration.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2e1797ac1eb5f99c6564e352f6d6286560ad2b9a25222f211b5641839eef6d5e",
+      "published_sha256": "2e1797ac1eb5f99c6564e352f6d6286560ad2b9a25222f211b5641839eef6d5e",
+      "bytes": 2374,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/calibration-contract.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c8f2d66d6988c8c70f9636239dd9f28662b6fe0d280d814d6a9b2ce597acbe15",
+      "published_sha256": "c8f2d66d6988c8c70f9636239dd9f28662b6fe0d280d814d6a9b2ce597acbe15",
+      "bytes": 1751,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/checks.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "bc4f60a3219eec2b15b2eb5c0ec3c92e2d81187759b7ea17ee32d48ce4223b14",
+      "published_sha256": "bc4f60a3219eec2b15b2eb5c0ec3c92e2d81187759b7ea17ee32d48ce4223b14",
+      "bytes": 8062,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/frequency-measurements.csv",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "30be252027cfd7671f8cdeea4f4d7c4263c0188085cdd79d2a1d37a1f05e194c",
+      "published_sha256": "30be252027cfd7671f8cdeea4f4d7c4263c0188085cdd79d2a1d37a1f05e194c",
+      "bytes": 21550,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/provenance.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "79b806b471f1743a803ec9e93f4a1f2598d262c88d0f90c63623702767c52808",
+      "published_sha256": "79b806b471f1743a803ec9e93f4a1f2598d262c88d0f90c63623702767c52808",
+      "bytes": 1101,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/seed30-amplitude-continuation.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4a73aa712b05f22d07107f7481c9f0c56e80244bc8f82d8eb60c9a2dc6162f67",
+      "published_sha256": "4a73aa712b05f22d07107f7481c9f0c56e80244bc8f82d8eb60c9a2dc6162f67",
+      "bytes": 7145,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/stiffness-summary.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c673d52442c0360fb87c50d2d7f4042bff2cd3525ca4174219e597647b89522f",
+      "published_sha256": "c673d52442c0360fb87c50d2d7f4042bff2cd3525ca4174219e597647b89522f",
+      "bytes": 788,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/stiffness.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1883d72ae55ffb82fc7c142bf16a947637cd503ca9c8c2ecfd597a5217a65990",
+      "published_sha256": "1883d72ae55ffb82fc7c142bf16a947637cd503ca9c8c2ecfd597a5217a65990",
+      "bytes": 10568,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration/summary.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "246ea1915760dae361a6ea8ddde538a7dac667b70445362b6e4ce649de089d93",
+      "published_sha256": "246ea1915760dae361a6ea8ddde538a7dac667b70445362b6e4ce649de089d93",
+      "bytes": 10664,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/calibration-derived-diagnostics.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "aea8ddb03e80642e64e28642f63a5b3c4cf66a0323b153423c15d074c656d174",
+      "published_sha256": "aea8ddb03e80642e64e28642f63a5b3c4cf66a0323b153423c15d074c656d174",
+      "bytes": 1138,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/CAMPAIGN-STATUS.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2a0717ef24c5b474c47e0732b64dc3c0db1cc7511e175751f48ac7c33aaa11d5",
+      "published_sha256": "2a0717ef24c5b474c47e0732b64dc3c0db1cc7511e175751f48ac7c33aaa11d5",
+      "bytes": 6151,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/CAMPAIGN1.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "bfe1fdc6187623d1e2da674216bb3a631071d3c3b4ce1a816c22b374155b621f",
+      "published_sha256": "bfe1fdc6187623d1e2da674216bb3a631071d3c3b4ce1a816c22b374155b621f",
+      "bytes": 4206,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/CAMPAIGN2.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "5230612ad1bb9e9c0541d3e40a972883d218e9b82d355c30e64c9a87a33104ad",
+      "published_sha256": "5230612ad1bb9e9c0541d3e40a972883d218e9b82d355c30e64c9a87a33104ad",
+      "bytes": 13577,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/CAMPAIGN3.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "96201075d72ce6c6e020ef1281d8805a0aa197df3e34aa4c8081d32852258d1b",
+      "published_sha256": "96201075d72ce6c6e020ef1281d8805a0aa197df3e34aa4c8081d32852258d1b",
+      "bytes": 9874,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/CHEMICAL-PROVENANCE-AUDIT.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "3f61b521b568b8ab9c1455a364e5ca88c509659886a410e53f8b84dc360247a3",
+      "published_sha256": "3f61b521b568b8ab9c1455a364e5ca88c509659886a410e53f8b84dc360247a3",
+      "bytes": 12824,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/DATA-REQUEST-DRAFT-NOT-SENT.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9b3985b65422840c7efb15e68e76104f8a2eb13934a68fa555ef48bbca312c4b",
+      "published_sha256": "9b3985b65422840c7efb15e68e76104f8a2eb13934a68fa555ef48bbca312c4b",
+      "bytes": 4040,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/FIGURE-DATASET-INVENTORY.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "99103ca659d90d9887f47fadb0978f39ac59905dd8fe76af216722ebd27ba453",
+      "published_sha256": "99103ca659d90d9887f47fadb0978f39ac59905dd8fe76af216722ebd27ba453",
+      "bytes": 1181,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/FINAL-RESULTS-CHECK-PLAN.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "0f9912f275b2e120cb65a50a04b8d4094f84f10a6beaf376c6848ca342dc7c02",
+      "published_sha256": "0f9912f275b2e120cb65a50a04b8d4094f84f10a6beaf376c6848ca342dc7c02",
+      "bytes": 7878,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/MOLECULAR-REFERENCE-CONTRACT.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "41328edaf59a50d0f25c885a4727ff95eb66cd3aff9f3b7e3ebbd4e007f26d84",
+      "published_sha256": "41328edaf59a50d0f25c885a4727ff95eb66cd3aff9f3b7e3ebbd4e007f26d84",
+      "bytes": 2986,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/STATISTICAL-DESIGN.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9a48691a294511e21b46ad56b7d7711632a9763b1201a1c218a6ad0b13f18f28",
+      "published_sha256": "9a48691a294511e21b46ad56b7d7711632a9763b1201a1c218a6ad0b13f18f28",
+      "bytes": 13833,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/STIFFNESS-INTERPRETATION.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c31c9e68b26e4ef599003fdbb850f26de22fc1198bd6d498924d3311d20c31e8",
+      "published_sha256": "c31c9e68b26e4ef599003fdbb850f26de22fc1198bd6d498924d3311d20c31e8",
+      "bytes": 4323,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/TYPE-I-CALIBRATION-CONTRACT.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "67463e3ca9f6f1e9a819810aad8727e7e7f808f01b9589ef4729e877406fd7de",
+      "published_sha256": "67463e3ca9f6f1e9a819810aad8727e7e7f808f01b9589ef4729e877406fd7de",
+      "bytes": 2715,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/TYPE-I-COMPARISON-READINESS.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "7c2b2476b52a4a450cb91cc57645f6f1485473779607f1f32bed26277a978064",
+      "published_sha256": "7c2b2476b52a4a450cb91cc57645f6f1485473779607f1f32bed26277a978064",
+      "bytes": 9866,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/campaigns/bovine-architecture-statistics.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "eef75032cee07bec1815aa0c68e152f0b2ce617f36e7667013b21d4e8fa09d5a",
+      "published_sha256": "eef75032cee07bec1815aa0c68e152f0b2ce617f36e7667013b21d4e8fa09d5a",
+      "bytes": 3293,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/commission/s10-seed29-p1-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "909798526b91397f4f542a630b3f46412cea111ce22dc20cd75847424911e072",
+      "published_sha256": "909798526b91397f4f542a630b3f46412cea111ce22dc20cd75847424911e072",
+      "bytes": 357225,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/commission/s10-seed29-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c5301fe2bcb6015b88ef99c7135bbf5d6c599b0da7a85e0f5fe04a9998431512",
+      "published_sha256": "c5301fe2bcb6015b88ef99c7135bbf5d6c599b0da7a85e0f5fe04a9998431512",
+      "bytes": 358346,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/higher-resolution-controls/s100-seed29-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d2f9dfe82a7f2833d7cf5ab111d8f5c6e8733eb83a580ce27887525397bf3d05",
+      "published_sha256": "d2f9dfe82a7f2833d7cf5ab111d8f5c6e8733eb83a580ce27887525397bf3d05",
+      "bytes": 1451562,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/higher-resolution-controls/s100-seed30-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c0254b7f72ae6e734e02073a03784063794860c1bd68fc5577a0c4dfb54dd311",
+      "published_sha256": "c0254b7f72ae6e734e02073a03784063794860c1bd68fc5577a0c4dfb54dd311",
+      "bytes": 83360,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/higher-resolution-controls/s200-seed29-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "5c4127bdef725c8d239dcfcaf04ed41a446013e187232f3d55c92e79e075c3ca",
+      "published_sha256": "5c4127bdef725c8d239dcfcaf04ed41a446013e187232f3d55c92e79e075c3ca",
+      "bytes": 1220263,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s100-seed29-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ba5e63dea6aeb50ef4d3f956afa1d6947415eb1779c1ad87675459cd47fbe597",
+      "published_sha256": "ba5e63dea6aeb50ef4d3f956afa1d6947415eb1779c1ad87675459cd47fbe597",
+      "bytes": 700195,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s100-seed29-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b38a5ac5de1b07bb48fc47b223217ec792e52be845dcf228872b4245a1f74fcc",
+      "published_sha256": "b38a5ac5de1b07bb48fc47b223217ec792e52be845dcf228872b4245a1f74fcc",
+      "bytes": 617944,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s100-seed30-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "47663a9cb363b95c64072d8b83213d527a85150576d1646c164d278fced1e3a2",
+      "published_sha256": "47663a9cb363b95c64072d8b83213d527a85150576d1646c164d278fced1e3a2",
+      "bytes": 60037,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s100-seed30-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4513e88a3cf7309fec9ce12eee3f84232048dbee8b6309565813c2ff1e3c48d2",
+      "published_sha256": "4513e88a3cf7309fec9ce12eee3f84232048dbee8b6309565813c2ff1e3c48d2",
+      "bytes": 58764,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s100-seed31-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "82fec1616918144d12634b3684eaa27a03669230f90393124602de83a7f37f1b",
+      "published_sha256": "82fec1616918144d12634b3684eaa27a03669230f90393124602de83a7f37f1b",
+      "bytes": 64436,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s100-seed32-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "e7608e6c5af8fe020576a05a95097f35cbff4c3af4d3a814497aeca27125d75b",
+      "published_sha256": "e7608e6c5af8fe020576a05a95097f35cbff4c3af4d3a814497aeca27125d75b",
+      "bytes": 67607,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s200-seed29-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b1b701683a7272d685dc2da35f0f1b35392abbd30c207f07bf4cf31332943c50",
+      "published_sha256": "b1b701683a7272d685dc2da35f0f1b35392abbd30c207f07bf4cf31332943c50",
+      "bytes": 608639,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s200-seed29-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "84570338edfa2bfb0022446b7f5dc65eb32ad0ef6856574497d0b0923b36b94d",
+      "published_sha256": "84570338edfa2bfb0022446b7f5dc65eb32ad0ef6856574497d0b0923b36b94d",
+      "bytes": 294586,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s200-seed30-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "48edfd5b4a18ccaa47fded953414f39026339f1c74466403a015d6db83894a96",
+      "published_sha256": "48edfd5b4a18ccaa47fded953414f39026339f1c74466403a015d6db83894a96",
+      "bytes": 81329,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s200-seed30-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "e1ee76787b2ac5124f3b677d814a20bc4c98bce50b789b0111c24575005a9b56",
+      "published_sha256": "e1ee76787b2ac5124f3b677d814a20bc4c98bce50b789b0111c24575005a9b56",
+      "bytes": 65288,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s200-seed31-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c289fcf6ee12d393bb122e929c88f6e452bb05da58ba91dec7e1b418a11fb6ec",
+      "published_sha256": "c289fcf6ee12d393bb122e929c88f6e452bb05da58ba91dec7e1b418a11fb6ec",
+      "bytes": 77491,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/initial-energy-stop/s200-seed31-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2f52c8a3b09240c5f780b2425cd19eac4c684a279021fe9ed6f2608e78d4c6c5",
+      "published_sha256": "2f52c8a3b09240c5f780b2425cd19eac4c684a279021fe9ed6f2608e78d4c6c5",
+      "bytes": 63151,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/source/cpu-solver-energy-stop.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2c553fbd63b847dcfbc1dcdb6bda53381da8653dde6dc7a3be0222c5508d4c33",
+      "published_sha256": "2c553fbd63b847dcfbc1dcdb6bda53381da8653dde6dc7a3be0222c5508d4c33",
+      "bytes": 9164,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/source/cpu-solver-high-resolution.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1dd683a3fc1175dccdaffdc85044314f981a2d32bf6c0392dccdafb82b5f20d1",
+      "published_sha256": "1dd683a3fc1175dccdaffdc85044314f981a2d32bf6c0392dccdafb82b5f20d1",
+      "bytes": 10683,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/source/models-before-degree-control.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4eed59b636d0e41058eb159161825b611ec62c89cb12260feea8df0de37477aa",
+      "published_sha256": "4eed59b636d0e41058eb159161825b611ec62c89cb12260feea8df0de37477aa",
+      "bytes": 2561116,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/source/solver-before-degree-control.mjs",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "8fcedb54c569aa0c2cdb8f01390bfd0eaebe4d64b3f6eccb590c4375d8665d88",
+      "published_sha256": "8fcedb54c569aa0c2cdb8f01390bfd0eaebe4d64b3f6eccb590c4375d8665d88",
+      "bytes": 10196,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/source/solver-commission.mjs",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "078847b6c16dfe02ca0d197a26c5aebc3adcc0510ac116794b15b253f96ddda4",
+      "published_sha256": "078847b6c16dfe02ca0d197a26c5aebc3adcc0510ac116794b15b253f96ddda4",
+      "bytes": 8209,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/diagnostics/source/stiffness-site-only.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "6d6b84efdaf36e67245c621c12b6204761db6e50bca66c1d213ee8559cfdc7b7",
+      "published_sha256": "6d6b84efdaf36e67245c621c12b6204761db6e50bca66c1d213ee8559cfdc7b7",
+      "bytes": 10524,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/inputs/models.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "32df14e3ba4525b0326f115756540795d26a8825c9fe2c9ece806cd57a39d854",
+      "published_sha256": "32df14e3ba4525b0326f115756540795d26a8825c9fe2c9ece806cd57a39d854",
+      "bytes": 2561122,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/inputs/networks.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "0571f313072d57887299013e7e1ce7a243b358925202dd6368ee4bfd70dcd340",
+      "published_sha256": "0571f313072d57887299013e7e1ce7a243b358925202dd6368ee4bfd70dcd340",
+      "bytes": 165804,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/placement-controls.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "67bf1d34531004db9ade707d32f7cca60bb133bd340ec98bc27b1f9a83239e70",
+      "published_sha256": "67bf1d34531004db9ade707d32f7cca60bb133bd340ec98bc27b1f9a83239e70",
+      "bytes": 3814,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/placement-geometry-diagnostics.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "68482ba817594edc9467925477a9667dda979aa65294a01cee7eb80c86ef617d",
+      "published_sha256": "68482ba817594edc9467925477a9667dda979aa65294a01cee7eb80c86ef617d",
+      "bytes": 14342,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/python-image-provenance.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "698b90b0e6b4f7faec7faca9f1d9b8bf5eea34666b3dc7e8b1d4b3030114bb30",
+      "published_sha256": "698b90b0e6b4f7faec7faca9f1d9b8bf5eea34666b3dc7e8b1d4b3030114bb30",
+      "bytes": 8155,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/remote-checks.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "f07db92f75296e573619490afc55a8c9aaad72ea61908188d8157b6943a9cec8",
+      "published_sha256": "f07db92f75296e573619490afc55a8c9aaad72ea61908188d8157b6943a9cec8",
+      "bytes": 3773,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1c91255e97a3cae7eef6907e9482135daf9908f8a21c9cd9421b168c17ad4776",
+      "published_sha256": "1c91255e97a3cae7eef6907e9482135daf9908f8a21c9cd9421b168c17ad4776",
+      "bytes": 761455,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1a8fd6abe934bcac2f1a880ef91dcf1d6f4c08dddab95034cb6b536669a68a49",
+      "published_sha256": "1a8fd6abe934bcac2f1a880ef91dcf1d6f4c08dddab95034cb6b536669a68a49",
+      "bytes": 759656,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "da8735f4b461788d4e7e3f28bf885b7f42d7a640a50f27dea032c8e2a8f74919",
+      "published_sha256": "da8735f4b461788d4e7e3f28bf885b7f42d7a640a50f27dea032c8e2a8f74919",
+      "bytes": 759009,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "28ea269010820bf5a58dd8ee4d864518e09b76ec8953e6d06a75325fdcfe5ecf",
+      "published_sha256": "28ea269010820bf5a58dd8ee4d864518e09b76ec8953e6d06a75325fdcfe5ecf",
+      "bytes": 759386,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a1f6b98c5f681ab5674e87d3e2f5f7ccef2764a514dcbab44a19482cbb1b0b33",
+      "published_sha256": "a1f6b98c5f681ab5674e87d3e2f5f7ccef2764a514dcbab44a19482cbb1b0b33",
+      "bytes": 760742,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "6885fd30e4f22993014f1b084f32bd5cf6741772baa89caf2a482a6ee3fa58d7",
+      "published_sha256": "6885fd30e4f22993014f1b084f32bd5cf6741772baa89caf2a482a6ee3fa58d7",
+      "bytes": 762224,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "73afa4a5fd473d3c0f23ebb3b1ff5fe0d087582496cca6e46eb73d379fcf7d32",
+      "published_sha256": "73afa4a5fd473d3c0f23ebb3b1ff5fe0d087582496cca6e46eb73d379fcf7d32",
+      "bytes": 760498,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d0259836cbb9f7ae2198d0f28fd8cf7dabf20e0443c38643b63f45433d0eb1e0",
+      "published_sha256": "d0259836cbb9f7ae2198d0f28fd8cf7dabf20e0443c38643b63f45433d0eb1e0",
+      "bytes": 760572,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "7e7a3896edbaf86e58aa1073d0639b0789d8fe18e29eef7459823cb99b7a0d7b",
+      "published_sha256": "7e7a3896edbaf86e58aa1073d0639b0789d8fe18e29eef7459823cb99b7a0d7b",
+      "bytes": 760198,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p1-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "eb187b2bd2e306a5d7cb1f194ef69210e611d69f0061a02ab9bf1a0851ed8c87",
+      "published_sha256": "eb187b2bd2e306a5d7cb1f194ef69210e611d69f0061a02ab9bf1a0851ed8c87",
+      "bytes": 761615,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "8d75d753ec3341d50932a50d13a613157b81aaf5c2c1e97bea37183a7ba7e68f",
+      "published_sha256": "8d75d753ec3341d50932a50d13a613157b81aaf5c2c1e97bea37183a7ba7e68f",
+      "bytes": 763673,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b6973338607c46522b6a18541b07bf5b151dea4e61b162fd0927fed39eabd4cc",
+      "published_sha256": "b6973338607c46522b6a18541b07bf5b151dea4e61b162fd0927fed39eabd4cc",
+      "bytes": 762844,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "0b4045f3278fccf6c3d473feb1e2b452594afe927f4d8633dbd76163a2e991d9",
+      "published_sha256": "0b4045f3278fccf6c3d473feb1e2b452594afe927f4d8633dbd76163a2e991d9",
+      "bytes": 762197,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "60618272ebe3721a84507b4233f3f54de5ab91c441fc777b5f5ae365ec3cc9ff",
+      "published_sha256": "60618272ebe3721a84507b4233f3f54de5ab91c441fc777b5f5ae365ec3cc9ff",
+      "bytes": 763923,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "03c46a2d2d60fc19b57717d2e1f2871e897b801fa6edd7d01217884145d3c95d",
+      "published_sha256": "03c46a2d2d60fc19b57717d2e1f2871e897b801fa6edd7d01217884145d3c95d",
+      "bytes": 764023,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "5830da370d902178819cf76a473c62e3ffaaf286e6266bcc931668454e9830d8",
+      "published_sha256": "5830da370d902178819cf76a473c62e3ffaaf286e6266bcc931668454e9830d8",
+      "bytes": 764144,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a0e7f7c9e776df4b32bd3fae6dc0432ee7b0f2a980f1288ec534ab24f06cc316",
+      "published_sha256": "a0e7f7c9e776df4b32bd3fae6dc0432ee7b0f2a980f1288ec534ab24f06cc316",
+      "bytes": 763538,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "506936696e7da2684a57f55384c443d87264c91106cff78fc622d457895fb7dc",
+      "published_sha256": "506936696e7da2684a57f55384c443d87264c91106cff78fc622d457895fb7dc",
+      "bytes": 762751,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "7792c8268db3c6b163d859c797eee5ec19972e397b0d07e6227567e76ad2b8ec",
+      "published_sha256": "7792c8268db3c6b163d859c797eee5ec19972e397b0d07e6227567e76ad2b8ec",
+      "bytes": 764139,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed29-p2-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4c6bc1bc3f11cffaef0ab2a2b7da3c9b6279c09197bbe241e59a98545b02d44c",
+      "published_sha256": "4c6bc1bc3f11cffaef0ab2a2b7da3c9b6279c09197bbe241e59a98545b02d44c",
+      "bytes": 764201,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "788e38bc705febb00fa03e8335066e9b6e07cb0c88588ede9959e31cce0e4f19",
+      "published_sha256": "788e38bc705febb00fa03e8335066e9b6e07cb0c88588ede9959e31cce0e4f19",
+      "bytes": 59578,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "58aacc93464d2361684e9c32a7e047775a34f94ac86385c9b9c52a8215d969ec",
+      "published_sha256": "58aacc93464d2361684e9c32a7e047775a34f94ac86385c9b9c52a8215d969ec",
+      "bytes": 59818,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b6f32966a2270bdb285579a45be445e216bd32e1b72aa91f7a77e447ad410319",
+      "published_sha256": "b6f32966a2270bdb285579a45be445e216bd32e1b72aa91f7a77e447ad410319",
+      "bytes": 59921,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "6677c6f526752aa9dfa3d92b9372b2cb21193f2811ebe8c335455842a87a7902",
+      "published_sha256": "6677c6f526752aa9dfa3d92b9372b2cb21193f2811ebe8c335455842a87a7902",
+      "bytes": 59336,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4830611f6ee148a672b4035661f4be59440704983d7f8bf046868af49a8ddeee",
+      "published_sha256": "4830611f6ee148a672b4035661f4be59440704983d7f8bf046868af49a8ddeee",
+      "bytes": 59770,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "964d6a203c2ecf1b0120cb7f1a7c3244a0050b950ed4cf6467edaaa7d864bc71",
+      "published_sha256": "964d6a203c2ecf1b0120cb7f1a7c3244a0050b950ed4cf6467edaaa7d864bc71",
+      "bytes": 59073,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9a839450c97439a85bd99aa394502d3c0d87167a79d0fa97d6238a5ea099c420",
+      "published_sha256": "9a839450c97439a85bd99aa394502d3c0d87167a79d0fa97d6238a5ea099c420",
+      "bytes": 59329,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "da837d6a769b70f95824aec17677d3bc069efac4bad40151a4d883a86310b9ad",
+      "published_sha256": "da837d6a769b70f95824aec17677d3bc069efac4bad40151a4d883a86310b9ad",
+      "bytes": 59488,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "7812bd99be1a4f00cc3891036fe3a6ea1cc798d6add07d77d3b06e40a4182ae9",
+      "published_sha256": "7812bd99be1a4f00cc3891036fe3a6ea1cc798d6add07d77d3b06e40a4182ae9",
+      "bytes": 58963,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p1-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "dcc9b21d60a05b812efc50772aa5708964461bff9bc58120e7fcdcab27777fd7",
+      "published_sha256": "dcc9b21d60a05b812efc50772aa5708964461bff9bc58120e7fcdcab27777fd7",
+      "bytes": 59256,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "67a0b2e6fe0410053dce5d595e7e6361969f300bf6c0fa31010a0eb1a8e54bb2",
+      "published_sha256": "67a0b2e6fe0410053dce5d595e7e6361969f300bf6c0fa31010a0eb1a8e54bb2",
+      "bytes": 59574,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "40639a18bc8f3d0365d67e8c822e01cc3cfb3df68dd26c4bff6cc76454f80041",
+      "published_sha256": "40639a18bc8f3d0365d67e8c822e01cc3cfb3df68dd26c4bff6cc76454f80041",
+      "bytes": 59673,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9e5993339bb9cd5f732bedff6f7b6cfa39f00f0a222ad6b9da10154ce18b9a6a",
+      "published_sha256": "9e5993339bb9cd5f732bedff6f7b6cfa39f00f0a222ad6b9da10154ce18b9a6a",
+      "bytes": 59826,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2054755557df0fd6ed28101aeea71e8836008a069ed4a146ea340b4b207022b2",
+      "published_sha256": "2054755557df0fd6ed28101aeea71e8836008a069ed4a146ea340b4b207022b2",
+      "bytes": 59775,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "5d0fde823e8e2ef8fca84453456db8c825a68b0db9a995ff2fb24b38e18e6cc4",
+      "published_sha256": "5d0fde823e8e2ef8fca84453456db8c825a68b0db9a995ff2fb24b38e18e6cc4",
+      "bytes": 59798,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "482e80789f64cc57edcc951ae2ae04f0075d5252aacfcb405acd5818a3b0ea53",
+      "published_sha256": "482e80789f64cc57edcc951ae2ae04f0075d5252aacfcb405acd5818a3b0ea53",
+      "bytes": 59431,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "81facae037e8bbc45cfd92be78a55a51d4b4f31782887466b719593a7e5de329",
+      "published_sha256": "81facae037e8bbc45cfd92be78a55a51d4b4f31782887466b719593a7e5de329",
+      "bytes": 59484,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a793e6cf319bbc14d4bb979fc04be2e8a925c9c469e62c0d01654e51e24fafd4",
+      "published_sha256": "a793e6cf319bbc14d4bb979fc04be2e8a925c9c469e62c0d01654e51e24fafd4",
+      "bytes": 59537,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "0fb97d6a0a5768ad58f6f32f0c9a5a8871b8123806040e3402956c13c047b0ea",
+      "published_sha256": "0fb97d6a0a5768ad58f6f32f0c9a5a8871b8123806040e3402956c13c047b0ea",
+      "bytes": 59650,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed30-p2-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "8742818765d8507d529131ae043841a90f1897c46c0896d12b71b7c522f626b9",
+      "published_sha256": "8742818765d8507d529131ae043841a90f1897c46c0896d12b71b7c522f626b9",
+      "bytes": 59725,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a2bc8f06e66aaa70758f6aaa055cf4e1fcd68139750f7c52f81b4f1e841eba5c",
+      "published_sha256": "a2bc8f06e66aaa70758f6aaa055cf4e1fcd68139750f7c52f81b4f1e841eba5c",
+      "bytes": 60881,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c92e0da496698e203a78d4bd49d165fbc156f6ff8428db45aba18edc93b9ecb5",
+      "published_sha256": "c92e0da496698e203a78d4bd49d165fbc156f6ff8428db45aba18edc93b9ecb5",
+      "bytes": 60960,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "0afb15a59e521c92fb96d3f252c4468c2ad2c83af8609fe907f075567a717d69",
+      "published_sha256": "0afb15a59e521c92fb96d3f252c4468c2ad2c83af8609fe907f075567a717d69",
+      "bytes": 61086,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c8d7e211e237d29a3b3be0cdb6372396a207dbb78d70ca7365e4ec6af17b84eb",
+      "published_sha256": "c8d7e211e237d29a3b3be0cdb6372396a207dbb78d70ca7365e4ec6af17b84eb",
+      "bytes": 61086,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "db35a70e43662118ebfb6741664c06c292bb4219f1357531abf6bed1cc70acef",
+      "published_sha256": "db35a70e43662118ebfb6741664c06c292bb4219f1357531abf6bed1cc70acef",
+      "bytes": 61255,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c7d233ef0bc48bd049e248258a77c2da5310e70e852afaca57f0a602b8d4c0e7",
+      "published_sha256": "c7d233ef0bc48bd049e248258a77c2da5310e70e852afaca57f0a602b8d4c0e7",
+      "bytes": 60546,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "e58f6eca38816c57a0153304921bdcc37774b574fd18a93e1bbde5a1ee51ba71",
+      "published_sha256": "e58f6eca38816c57a0153304921bdcc37774b574fd18a93e1bbde5a1ee51ba71",
+      "bytes": 60555,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ddb98f1151e721dee511dff0b03c4a2a2b1dde43aedb1497dabd2435a0e9bc34",
+      "published_sha256": "ddb98f1151e721dee511dff0b03c4a2a2b1dde43aedb1497dabd2435a0e9bc34",
+      "bytes": 60713,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1acec0ffe45eec92e4258540acf075dc26b6507b9262bc775338eaf183b1aac8",
+      "published_sha256": "1acec0ffe45eec92e4258540acf075dc26b6507b9262bc775338eaf183b1aac8",
+      "bytes": 60667,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p1-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "20c02fd40b5aa72fd312dc56cbceaa93efcc8ed96b6686ab1232259114de6d45",
+      "published_sha256": "20c02fd40b5aa72fd312dc56cbceaa93efcc8ed96b6686ab1232259114de6d45",
+      "bytes": 60870,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9828889964883f943ec905fb48873a3357957d850bd3df2fc0abe7a3f90636bd",
+      "published_sha256": "9828889964883f943ec905fb48873a3357957d850bd3df2fc0abe7a3f90636bd",
+      "bytes": 60788,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "815cc1c931ba45e60025940d5d25235d1468dedeb722c79129a6a838e6ca607c",
+      "published_sha256": "815cc1c931ba45e60025940d5d25235d1468dedeb722c79129a6a838e6ca607c",
+      "bytes": 60888,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a80648248f1b16106f7456ff0d7e203ecf778ee85337e5582af156d5a9ede639",
+      "published_sha256": "a80648248f1b16106f7456ff0d7e203ecf778ee85337e5582af156d5a9ede639",
+      "bytes": 61001,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "49d68b66e6dcdd0350b5a5e25b76fcc5528c76b9a6823d588c57ff701231bb2c",
+      "published_sha256": "49d68b66e6dcdd0350b5a5e25b76fcc5528c76b9a6823d588c57ff701231bb2c",
+      "bytes": 60948,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d2b63065d4596d37654316a14078bc096ebcab7950617fc82f832252e5cadb1b",
+      "published_sha256": "d2b63065d4596d37654316a14078bc096ebcab7950617fc82f832252e5cadb1b",
+      "bytes": 61057,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "88a542151eab6814a44c44cdda62b1afe51a4a808fe26d1ff4d11db14eaee415",
+      "published_sha256": "88a542151eab6814a44c44cdda62b1afe51a4a808fe26d1ff4d11db14eaee415",
+      "bytes": 60396,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "f7af0dcbd075bf6446ff98e3d025c0f6487761db490f2845bae11acaa03aed6d",
+      "published_sha256": "f7af0dcbd075bf6446ff98e3d025c0f6487761db490f2845bae11acaa03aed6d",
+      "bytes": 60559,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a85ae18e1c026dfc5997259d2aecb6435d79b130901307025ad42681047dfdc9",
+      "published_sha256": "a85ae18e1c026dfc5997259d2aecb6435d79b130901307025ad42681047dfdc9",
+      "bytes": 60643,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9aa4d37616a45d647473ac3210bf3b9819d4ac6e0ef3ea27d688046d75ce9e9f",
+      "published_sha256": "9aa4d37616a45d647473ac3210bf3b9819d4ac6e0ef3ea27d688046d75ce9e9f",
+      "bytes": 60444,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed31-p2-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "77c1b7ab2fc8abcca5f36bc04c05716f0af9dfbe186c0af61349d60f28f39940",
+      "published_sha256": "77c1b7ab2fc8abcca5f36bc04c05716f0af9dfbe186c0af61349d60f28f39940",
+      "bytes": 60595,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "8fb3ff4e87d71590fee7c1291db5da91b1780a1c7ab82479c35dcacfc576cec6",
+      "published_sha256": "8fb3ff4e87d71590fee7c1291db5da91b1780a1c7ab82479c35dcacfc576cec6",
+      "bytes": 62663,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "48670975eb4ed3a98820d034ebefb6b1f55ef3992966855eba9d3596d76a1ff3",
+      "published_sha256": "48670975eb4ed3a98820d034ebefb6b1f55ef3992966855eba9d3596d76a1ff3",
+      "bytes": 62638,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "0417e43d95a4494b1393ac52081caa2b980b5be0406f723079c387606e086aba",
+      "published_sha256": "0417e43d95a4494b1393ac52081caa2b980b5be0406f723079c387606e086aba",
+      "bytes": 62811,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c0d404fb1288230823cb55032a36b731f59dd2f45f7520e15c0050801d60b278",
+      "published_sha256": "c0d404fb1288230823cb55032a36b731f59dd2f45f7520e15c0050801d60b278",
+      "bytes": 62945,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "dbb7df66341ac4269ed7958a54a93829799610b5df1ca789bf9bfd24520d4b6b",
+      "published_sha256": "dbb7df66341ac4269ed7958a54a93829799610b5df1ca789bf9bfd24520d4b6b",
+      "bytes": 62921,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "7fe394f52795b04b56f65824ee3c8daa11703c072f8abd57b7facf4c633b81ca",
+      "published_sha256": "7fe394f52795b04b56f65824ee3c8daa11703c072f8abd57b7facf4c633b81ca",
+      "bytes": 62620,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ef17ec8cb2023cd8fe053cece5553e7546039808df094095da740873d58bd7d4",
+      "published_sha256": "ef17ec8cb2023cd8fe053cece5553e7546039808df094095da740873d58bd7d4",
+      "bytes": 62635,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "6d11778f642d3f9693d8b6e760f1dfa69bef98d0fa8cb09d88c6235ab906fa0b",
+      "published_sha256": "6d11778f642d3f9693d8b6e760f1dfa69bef98d0fa8cb09d88c6235ab906fa0b",
+      "bytes": 62563,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "6d74a52eedf294c82f4f602e0c05eabe649efb65d2ad121a307826a635babf8a",
+      "published_sha256": "6d74a52eedf294c82f4f602e0c05eabe649efb65d2ad121a307826a635babf8a",
+      "bytes": 62764,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p1-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "71ea84f798f0423bdf1e7aa1d0a51994dd9ee687f2acef1ecbb1498e1c7bfde6",
+      "published_sha256": "71ea84f798f0423bdf1e7aa1d0a51994dd9ee687f2acef1ecbb1498e1c7bfde6",
+      "bytes": 62817,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "714287c9a6cc3f7f1856880431a0f90c6dc2ebcb8662281df1c2d423bde6268a",
+      "published_sha256": "714287c9a6cc3f7f1856880431a0f90c6dc2ebcb8662281df1c2d423bde6268a",
+      "bytes": 62171,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c1ddcc1359c6865377a2a5f7665167f32e60452c01721e4b9552ec15564ea45b",
+      "published_sha256": "c1ddcc1359c6865377a2a5f7665167f32e60452c01721e4b9552ec15564ea45b",
+      "bytes": 62833,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "bac6ccbecfbf616d9b13183bd97833029fa4bd587cdab10c4556359213064e65",
+      "published_sha256": "bac6ccbecfbf616d9b13183bd97833029fa4bd587cdab10c4556359213064e65",
+      "bytes": 62931,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c51072b817fa6805644b67cc236a4ddc3d342d4a33f713c693bf81d95932f442",
+      "published_sha256": "c51072b817fa6805644b67cc236a4ddc3d342d4a33f713c693bf81d95932f442",
+      "bytes": 62643,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c003d3c5737e4edb0fda7878f5dea0204e6431f0227c7df9d8fb28f466d7db42",
+      "published_sha256": "c003d3c5737e4edb0fda7878f5dea0204e6431f0227c7df9d8fb28f466d7db42",
+      "bytes": 62867,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "87ad86ac4b2cfc30a517bbeb5266ba7890eb9ba6d5bc957d30095ecb11f30fb5",
+      "published_sha256": "87ad86ac4b2cfc30a517bbeb5266ba7890eb9ba6d5bc957d30095ecb11f30fb5",
+      "bytes": 62496,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9b07e61eb2916f3fdedc580d986cf02f7baac392585255e8d06919b856a2403e",
+      "published_sha256": "9b07e61eb2916f3fdedc580d986cf02f7baac392585255e8d06919b856a2403e",
+      "bytes": 62678,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d3349800fd8736a7bc61062c165e78efa64e03a47d62b23033dda7cf2683e87b",
+      "published_sha256": "d3349800fd8736a7bc61062c165e78efa64e03a47d62b23033dda7cf2683e87b",
+      "bytes": 62928,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "97ce098a03d89e4bc2e81e4984093c7df9575e6e512355d7e2b6d0e8c6a7dbd7",
+      "published_sha256": "97ce098a03d89e4bc2e81e4984093c7df9575e6e512355d7e2b6d0e8c6a7dbd7",
+      "bytes": 62570,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s25-seed32-p2-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "186ec2e5d1458f61c8f314b4e4fbaeeba5fa7ac54756cf8f17e96ece3d6d6f4e",
+      "published_sha256": "186ec2e5d1458f61c8f314b4e4fbaeeba5fa7ac54756cf8f17e96ece3d6d6f4e",
+      "bytes": 62885,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1ecbf84a1f46bd1519f9af2dcd64a802e0ee038c4c9a41fd55501831e1defdc9",
+      "published_sha256": "1ecbf84a1f46bd1519f9af2dcd64a802e0ee038c4c9a41fd55501831e1defdc9",
+      "bytes": 1437132,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ac939251759404ece56fc838888cb6ae64fdd4572fab91f05acaf6953355d726",
+      "published_sha256": "ac939251759404ece56fc838888cb6ae64fdd4572fab91f05acaf6953355d726",
+      "bytes": 1433625,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "02af61783248e7a2ce2e6ff8e9c7d9351697758d3a9981d699db9e624f1d373b",
+      "published_sha256": "02af61783248e7a2ce2e6ff8e9c7d9351697758d3a9981d699db9e624f1d373b",
+      "bytes": 1432646,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ee2526316f606a62aa971ddb8e691fea82e43365352f181bd00bb4cc3864abe8",
+      "published_sha256": "ee2526316f606a62aa971ddb8e691fea82e43365352f181bd00bb4cc3864abe8",
+      "bytes": 1432521,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "cf1af9f44896ec55ef312368ce8a0e6a76d76af88f46443a647fbc8b46b94371",
+      "published_sha256": "cf1af9f44896ec55ef312368ce8a0e6a76d76af88f46443a647fbc8b46b94371",
+      "bytes": 1434835,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "188b6ab08421b7c2062c596d22d630c731392ca136a38f585ab1adad7d888a4b",
+      "published_sha256": "188b6ab08421b7c2062c596d22d630c731392ca136a38f585ab1adad7d888a4b",
+      "bytes": 1437959,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a4942dd8c1ebfe3cfda15df43add80cbf2806426a6aacaed43fcd1861102ca52",
+      "published_sha256": "a4942dd8c1ebfe3cfda15df43add80cbf2806426a6aacaed43fcd1861102ca52",
+      "bytes": 1434616,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "f0d15213376b04243c00a99476885cb751ed3c36ab4f58578e57f4d1e799f399",
+      "published_sha256": "f0d15213376b04243c00a99476885cb751ed3c36ab4f58578e57f4d1e799f399",
+      "bytes": 1434139,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "865e23ef5ce56464fb6c280c43e8c1a9a489eac72e245abbbbaad7812dedc4fb",
+      "published_sha256": "865e23ef5ce56464fb6c280c43e8c1a9a489eac72e245abbbbaad7812dedc4fb",
+      "bytes": 1433770,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p1-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b15fe84e8ed9a9d3dbe8ad8e98db25e19eeb556bdbe95d8a38abe25fe5becfb9",
+      "published_sha256": "b15fe84e8ed9a9d3dbe8ad8e98db25e19eeb556bdbe95d8a38abe25fe5becfb9",
+      "bytes": 1436400,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ea8d935d570267d04d929357292768c548768fe6a79776ab48b97ac3a1b76be2",
+      "published_sha256": "ea8d935d570267d04d929357292768c548768fe6a79776ab48b97ac3a1b76be2",
+      "bytes": 1441071,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2433e6e6d444b4331110dbb1768508b9ef8a4928b4c73ab7d18ca2d7c13992ec",
+      "published_sha256": "2433e6e6d444b4331110dbb1768508b9ef8a4928b4c73ab7d18ca2d7c13992ec",
+      "bytes": 1439334,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "f764c1415a76367997309e3db80539e30f5196ab626936e41110b5faabe28b5e",
+      "published_sha256": "f764c1415a76367997309e3db80539e30f5196ab626936e41110b5faabe28b5e",
+      "bytes": 1438058,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "aea2c5552de630c6d86c8893e573add8cbb67bc01a476638529adf28a39254a3",
+      "published_sha256": "aea2c5552de630c6d86c8893e573add8cbb67bc01a476638529adf28a39254a3",
+      "bytes": 1440849,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "80329b6468a5b423fc240fae43f865ec3548a268ab877e390c89e38518f0b621",
+      "published_sha256": "80329b6468a5b423fc240fae43f865ec3548a268ab877e390c89e38518f0b621",
+      "bytes": 1441167,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b6cf1598c60ca518e6f168a6d81ff9947faa93041f8a5299cfd3f3e253ca1a47",
+      "published_sha256": "b6cf1598c60ca518e6f168a6d81ff9947faa93041f8a5299cfd3f3e253ca1a47",
+      "bytes": 1441653,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "23e4bdf889cbfe6cff998cc519ab76884249c29f249307e1d2609f3147b4949f",
+      "published_sha256": "23e4bdf889cbfe6cff998cc519ab76884249c29f249307e1d2609f3147b4949f",
+      "bytes": 1440088,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "93af94fd0b4adcf38257e4d262fa9be101268cd1faa4736c475c12813c141cc1",
+      "published_sha256": "93af94fd0b4adcf38257e4d262fa9be101268cd1faa4736c475c12813c141cc1",
+      "bytes": 1438925,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1e2f4686932b520c830aa0d74d1adee828057fa390a5eddf342e5468afe4cb21",
+      "published_sha256": "1e2f4686932b520c830aa0d74d1adee828057fa390a5eddf342e5468afe4cb21",
+      "bytes": 1441307,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed29-p2-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1cbc24339416fb2f966783fb73380b131b028ba8674a8b066ad914f38ae4686c",
+      "published_sha256": "1cbc24339416fb2f966783fb73380b131b028ba8674a8b066ad914f38ae4686c",
+      "bytes": 1441363,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "49b1114c6967fb320cff7d4149c781e71bcb984d475e13a684017a16fe59174a",
+      "published_sha256": "49b1114c6967fb320cff7d4149c781e71bcb984d475e13a684017a16fe59174a",
+      "bytes": 70657,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "03c23678eb779dd033b9c88f7e209992afcc8c84b8fbb5c62397da77d4cb41b5",
+      "published_sha256": "03c23678eb779dd033b9c88f7e209992afcc8c84b8fbb5c62397da77d4cb41b5",
+      "bytes": 70840,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "53e805fba0f6e26122e4b55c3fe43298f960ea63d2f71e7f92750585a45730ce",
+      "published_sha256": "53e805fba0f6e26122e4b55c3fe43298f960ea63d2f71e7f92750585a45730ce",
+      "bytes": 70954,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "58d27ffe294c21f387d03912bef0c388ae097594af0390a97b9a8b06102862e3",
+      "published_sha256": "58d27ffe294c21f387d03912bef0c388ae097594af0390a97b9a8b06102862e3",
+      "bytes": 70366,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "533f6e7a2afbed24d1412758e8d4038ead602c813e7d2a47a9430080d657f510",
+      "published_sha256": "533f6e7a2afbed24d1412758e8d4038ead602c813e7d2a47a9430080d657f510",
+      "bytes": 70679,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b6248c530f495170688f8bed681ec98548b79c5fb6e7fb89801b42b90ce41862",
+      "published_sha256": "b6248c530f495170688f8bed681ec98548b79c5fb6e7fb89801b42b90ce41862",
+      "bytes": 69907,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "847a2c65d8114619091eef250cd774ad8b02de0759ff0fc5f32f4e31d6101092",
+      "published_sha256": "847a2c65d8114619091eef250cd774ad8b02de0759ff0fc5f32f4e31d6101092",
+      "bytes": 70073,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "3d0c64cabc3f0036b80eafadfe47825ed1fcf57b489b0060a794ac7fff8f7e86",
+      "published_sha256": "3d0c64cabc3f0036b80eafadfe47825ed1fcf57b489b0060a794ac7fff8f7e86",
+      "bytes": 70203,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "dd83e8d728527e2f5bd23614ccdde7102dcc225c397d9b15dde67eed50b44bae",
+      "published_sha256": "dd83e8d728527e2f5bd23614ccdde7102dcc225c397d9b15dde67eed50b44bae",
+      "bytes": 69733,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p1-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "6b52198eaf1b5f657b91b1535a94e4269dd10a0406e4d3d718658fed4dda0883",
+      "published_sha256": "6b52198eaf1b5f657b91b1535a94e4269dd10a0406e4d3d718658fed4dda0883",
+      "bytes": 69899,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "c5923c7d2a3ace7f670f9baac547f933bd0e7ad86af86e8f6f03afada081c26e",
+      "published_sha256": "c5923c7d2a3ace7f670f9baac547f933bd0e7ad86af86e8f6f03afada081c26e",
+      "bytes": 70513,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "5aefbb216fe333a485843ef3431e339cd0a137320e66593b0cdeecf35db573d8",
+      "published_sha256": "5aefbb216fe333a485843ef3431e339cd0a137320e66593b0cdeecf35db573d8",
+      "bytes": 70604,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9e7ab21dcf569789c1b3488e704bbb6b38358215a003ad2b877812ac71d175e3",
+      "published_sha256": "9e7ab21dcf569789c1b3488e704bbb6b38358215a003ad2b877812ac71d175e3",
+      "bytes": 70749,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "354e8b0800b47dfb16fd21475bb71c985565306f2a1bc70599d8e45d8d1b3e21",
+      "published_sha256": "354e8b0800b47dfb16fd21475bb71c985565306f2a1bc70599d8e45d8d1b3e21",
+      "bytes": 70635,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "cb27ea68baaad8b6f2a134d7650dff8215df3c384f87177720fe28d1d396dadf",
+      "published_sha256": "cb27ea68baaad8b6f2a134d7650dff8215df3c384f87177720fe28d1d396dadf",
+      "bytes": 70841,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "822162e45e5bed39ea91ad0370480a98012bf559b5b5779c2251a1fe07638b3a",
+      "published_sha256": "822162e45e5bed39ea91ad0370480a98012bf559b5b5779c2251a1fe07638b3a",
+      "bytes": 70107,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a3b9b8566829a867825e3384769b7e4377a49bc0d0b24f39ca9e2b346a5485fe",
+      "published_sha256": "a3b9b8566829a867825e3384769b7e4377a49bc0d0b24f39ca9e2b346a5485fe",
+      "bytes": 70257,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "3f236a72ffb21adc89e3df503fa4d1cc1f5b2c800d1851505342d88d8f42e139",
+      "published_sha256": "3f236a72ffb21adc89e3df503fa4d1cc1f5b2c800d1851505342d88d8f42e139",
+      "bytes": 70257,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "13292a5c0a887f4d456ed2db6a777ba527738702e9969d9916500970ac9fc499",
+      "published_sha256": "13292a5c0a887f4d456ed2db6a777ba527738702e9969d9916500970ac9fc499",
+      "bytes": 70387,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed30-p2-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "45eaedfc03b5401cfefb4b818730f90ddc81a53fca9e2dd79dafb7ab50790efe",
+      "published_sha256": "45eaedfc03b5401cfefb4b818730f90ddc81a53fca9e2dd79dafb7ab50790efe",
+      "bytes": 70405,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "516b788b86bba8d5a9f6f8e04d5624b63d33e0a7a3e30108f358f2998dfb1f76",
+      "published_sha256": "516b788b86bba8d5a9f6f8e04d5624b63d33e0a7a3e30108f358f2998dfb1f76",
+      "bytes": 71997,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ca3ad830f8f1cd478a60c6860401b011ff23a6b9d0e87a439c28ba8dc54dd7dd",
+      "published_sha256": "ca3ad830f8f1cd478a60c6860401b011ff23a6b9d0e87a439c28ba8dc54dd7dd",
+      "bytes": 72061,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "057eaac6f27f09f6e8a68dc41e1662d2522418795f1faee18c91015740846222",
+      "published_sha256": "057eaac6f27f09f6e8a68dc41e1662d2522418795f1faee18c91015740846222",
+      "bytes": 72142,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "11a974d540eb8da50ce733ab38e549da5749bc71f38dc0059ef632be129bf15f",
+      "published_sha256": "11a974d540eb8da50ce733ab38e549da5749bc71f38dc0059ef632be129bf15f",
+      "bytes": 72062,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "47249e3f99a4dd11ac2dc8428373d526532dd3c82d13d32b5ddd9b1b0e03780b",
+      "published_sha256": "47249e3f99a4dd11ac2dc8428373d526532dd3c82d13d32b5ddd9b1b0e03780b",
+      "bytes": 72233,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "60b2804e8d7c4518a605c0a27989733a1ae2046b450ba7119de5c7b69ac36ee3",
+      "published_sha256": "60b2804e8d7c4518a605c0a27989733a1ae2046b450ba7119de5c7b69ac36ee3",
+      "bytes": 71217,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "91cb102999dcf5100a203fba399a23b0531083f43aac0250928dd23ae8506a90",
+      "published_sha256": "91cb102999dcf5100a203fba399a23b0531083f43aac0250928dd23ae8506a90",
+      "bytes": 71299,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "bbfa5dac36ca93b7a90bf805acc638214e6e06ea83f775c18ef9bd1629537b37",
+      "published_sha256": "bbfa5dac36ca93b7a90bf805acc638214e6e06ea83f775c18ef9bd1629537b37",
+      "bytes": 71320,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "634697c4417da8665715148d022f624b0961b93ca0ef3a7f43a10cf35042ab29",
+      "published_sha256": "634697c4417da8665715148d022f624b0961b93ca0ef3a7f43a10cf35042ab29",
+      "bytes": 71384,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p1-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9bdc325de34e8bfec92b1bea274ffbbfb6302c8471a87f5a933fd570281fd636",
+      "published_sha256": "9bdc325de34e8bfec92b1bea274ffbbfb6302c8471a87f5a933fd570281fd636",
+      "bytes": 71503,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "6e6303a46f09f4a28f86a217467ad12cc163f2f72c532182c443ba271be6a1e3",
+      "published_sha256": "6e6303a46f09f4a28f86a217467ad12cc163f2f72c532182c443ba271be6a1e3",
+      "bytes": 71888,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b7ad6aa5ee0b055a02b901579cc1f17591e69e43caf4b3d2c3164f416294de54",
+      "published_sha256": "b7ad6aa5ee0b055a02b901579cc1f17591e69e43caf4b3d2c3164f416294de54",
+      "bytes": 71982,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "f9323f04de28f4edebb59ed5898deac2f9cfe1fadef69abf257eb0b103ffdd60",
+      "published_sha256": "f9323f04de28f4edebb59ed5898deac2f9cfe1fadef69abf257eb0b103ffdd60",
+      "bytes": 72190,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ca095ace23bbcdf8ca5e86aa21ebdd6f24676146999ddcfd6ed5a5e4c9cdc065",
+      "published_sha256": "ca095ace23bbcdf8ca5e86aa21ebdd6f24676146999ddcfd6ed5a5e4c9cdc065",
+      "bytes": 71984,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "acbc04c02568e0defb20ec27d7cc3d845019d441a41a00106a7875b1af157484",
+      "published_sha256": "acbc04c02568e0defb20ec27d7cc3d845019d441a41a00106a7875b1af157484",
+      "bytes": 72192,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "e531b0ef43f4ab33524f266d42c9acfea76dc4cbd3fa5e2d113ba2e9ce826714",
+      "published_sha256": "e531b0ef43f4ab33524f266d42c9acfea76dc4cbd3fa5e2d113ba2e9ce826714",
+      "bytes": 71019,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2a1ca8a35b7597bb54f5ad643d3cfb0c0ee5afa85c4835f332520024affa43eb",
+      "published_sha256": "2a1ca8a35b7597bb54f5ad643d3cfb0c0ee5afa85c4835f332520024affa43eb",
+      "bytes": 71170,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "68fb818b07b046bbf3a4b921af7b5174e2a9947262a3f8fb0526c107bf9d47d3",
+      "published_sha256": "68fb818b07b046bbf3a4b921af7b5174e2a9947262a3f8fb0526c107bf9d47d3",
+      "bytes": 71308,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1e6db370e3bb04b7d8be8ebd378482795f49da4cce916f7ac8712d369be912bc",
+      "published_sha256": "1e6db370e3bb04b7d8be8ebd378482795f49da4cce916f7ac8712d369be912bc",
+      "bytes": 71178,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed31-p2-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "3ea7a13f3a8601fc31de887856515b12c153a47ae4f6ae3ed637a3b821a62ab9",
+      "published_sha256": "3ea7a13f3a8601fc31de887856515b12c153a47ae4f6ae3ed637a3b821a62ab9",
+      "bytes": 71247,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "616b1cfad0acd7f5be37d68d2a3aad89a675b9d8494b00ba42765f6c44f48609",
+      "published_sha256": "616b1cfad0acd7f5be37d68d2a3aad89a675b9d8494b00ba42765f6c44f48609",
+      "bytes": 73827,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "1398e8d119b56f453d0518aaf7c7e70a13bcfe77e9b0d2b1a9bc89349b3e0a66",
+      "published_sha256": "1398e8d119b56f453d0518aaf7c7e70a13bcfe77e9b0d2b1a9bc89349b3e0a66",
+      "bytes": 73808,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "a41b5fd0b442254e80a3fd9f08320b3ba02e671f9787147039c1de6913f6f8ea",
+      "published_sha256": "a41b5fd0b442254e80a3fd9f08320b3ba02e671f9787147039c1de6913f6f8ea",
+      "bytes": 73844,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ac91347aa5a905d95e04fcfb0f75163eed0a00cd8201a0bbe85b54e2957cddbc",
+      "published_sha256": "ac91347aa5a905d95e04fcfb0f75163eed0a00cd8201a0bbe85b54e2957cddbc",
+      "bytes": 74112,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2f4bdfb3125d3e8fc171a5211ee77c3a8de4a3d6555b237dfca3871e25821049",
+      "published_sha256": "2f4bdfb3125d3e8fc171a5211ee77c3a8de4a3d6555b237dfca3871e25821049",
+      "bytes": 74221,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9e3ba334938dd7e62d17f54e3098ae660a0bb5a822e35e38c5a4bc12dc955580",
+      "published_sha256": "9e3ba334938dd7e62d17f54e3098ae660a0bb5a822e35e38c5a4bc12dc955580",
+      "bytes": 73330,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "7e3ba899592b56b4822b79cbc9aafd9f95639746f72c62a951b204d650b2e8f1",
+      "published_sha256": "7e3ba899592b56b4822b79cbc9aafd9f95639746f72c62a951b204d650b2e8f1",
+      "bytes": 73349,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "08f25d109557633896e0cdf3ffafd6bb1698e234814947387bd04f25209c05ed",
+      "published_sha256": "08f25d109557633896e0cdf3ffafd6bb1698e234814947387bd04f25209c05ed",
+      "bytes": 73331,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "68ff6cc96333c892cd55c4e4c27e10305c68da967f83007f4f144e7834d51566",
+      "published_sha256": "68ff6cc96333c892cd55c4e4c27e10305c68da967f83007f4f144e7834d51566",
+      "bytes": 73451,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p1-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d141a48679248fda4d01376f6ebf3a17fd4411c4a6d1339638f54238420d1922",
+      "published_sha256": "d141a48679248fda4d01376f6ebf3a17fd4411c4a6d1339638f54238420d1922",
+      "bytes": 73521,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.1-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "34afe8568a07bbf1dc83e1ee55e53f017131bd99fc52f7901df27d4b56c27991",
+      "published_sha256": "34afe8568a07bbf1dc83e1ee55e53f017131bd99fc52f7901df27d4b56c27991",
+      "bytes": 73438,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.1-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "93889538bc9fe4be47b65bd1951e07192182eb26529d7810adb0fc11383b0ce7",
+      "published_sha256": "93889538bc9fe4be47b65bd1951e07192182eb26529d7810adb0fc11383b0ce7",
+      "bytes": 73753,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.1-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "35009036901169393bdbff38683e223e5e8642851dae165250345dc4982fd8f3",
+      "published_sha256": "35009036901169393bdbff38683e223e5e8642851dae165250345dc4982fd8f3",
+      "bytes": 74008,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.1-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "e88d1ceaeea0410b4ca9edc9f97a3d6dd2249d5af74892c8df7f7305d40df16b",
+      "published_sha256": "e88d1ceaeea0410b4ca9edc9f97a3d6dd2249d5af74892c8df7f7305d40df16b",
+      "bytes": 73625,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.1-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "eb61ebedae0ecf4903f621720491977bda1c32cd11a45089f34e65adfd240ee1",
+      "published_sha256": "eb61ebedae0ecf4903f621720491977bda1c32cd11a45089f34e65adfd240ee1",
+      "bytes": 73816,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.2-baseline-0.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "27de0d3f3a7ea490f1270fcd0226dd19f95422e4736c2fdf0cf1bbb07fe0f3b5",
+      "published_sha256": "27de0d3f3a7ea490f1270fcd0226dd19f95422e4736c2fdf0cf1bbb07fe0f3b5",
+      "bytes": 73147,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.2-clustered-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "6902f095bc740197412c3452288d63b02cafbe3b25cb8121b2b46b36644904ef",
+      "published_sha256": "6902f095bc740197412c3452288d63b02cafbe3b25cb8121b2b46b36644904ef",
+      "bytes": 73294,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.2-clustered-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "cafa93a8d24dffbec08e1d45fd915d9e092cff4a1bb8cc16507275aa71d8826a",
+      "published_sha256": "cafa93a8d24dffbec08e1d45fd915d9e092cff4a1bb8cc16507275aa71d8826a",
+      "bytes": 73500,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.2-distributed-0.15.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9f385dec1f310ca8493f9f014984d03007cc3bc78e01781961ee78cadf7ab22f",
+      "published_sha256": "9f385dec1f310ca8493f9f014984d03007cc3bc78e01781961ee78cadf7ab22f",
+      "bytes": 73346,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/results/s50-seed32-p2-t0.2-distributed-0.3.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2f45379219058249d2c84415334c2c5df30ca38f864b8423e2b91d130ec4619c",
+      "published_sha256": "2f45379219058249d2c84415334c2c5df30ca38f864b8423e2b91d130ec4619c",
+      "bytes": 73574,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/resume-provenance.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "e9001156d805bed8ca047381d8e600e8afe60b60bb30d557cc2f05fa0a45853a",
+      "published_sha256": "e9001156d805bed8ca047381d8e600e8afe60b60bb30d557cc2f05fa0a45853a",
+      "bytes": 7375,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/amplitude-continuation.mjs",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "3db2c532336576c03100ac4be33fdc07a249f14a8c064191f39a7d4312e073e5",
+      "published_sha256": "3db2c532336576c03100ac4be33fdc07a249f14a8c064191f39a7d4312e073e5",
+      "bytes": 1022,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/analyze-results.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "e81f847c9560ee262371289f5cc84bec350fe3f03ba5053c4e035e75db907dee",
+      "published_sha256": "e81f847c9560ee262371289f5cc84bec350fe3f03ba5053c4e035e75db907dee",
+      "bytes": 41111,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/calibration-amplitude.mjs",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "b12ba0df66668f166c6b06d4f10c9a2c44c8559d2ef240a03ea1d800e2394706",
+      "published_sha256": "b12ba0df66668f166c6b06d4f10c9a2c44c8559d2ef240a03ea1d800e2394706",
+      "bytes": 1155,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/checks.mjs",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "092cfdb250d79860245419826f6b7bb44224dfe044099349bfb9b8f5f9c9e7c3",
+      "published_sha256": "092cfdb250d79860245419826f6b7bb44224dfe044099349bfb9b8f5f9c9e7c3",
+      "bytes": 2171,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/commission-solver.mjs",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "88cd6549ffb36026c82d94ec01f323eef80458179b37f050ecd1ff6f43a65019",
+      "published_sha256": "88cd6549ffb36026c82d94ec01f323eef80458179b37f050ecd1ff6f43a65019",
+      "bytes": 10564,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/cpu-solver-pre-continuation.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "7c457fe9efde0ddae2c08436699c5a2af167f68d9b2faa0fee2c9e672aee8bc7",
+      "published_sha256": "7c457fe9efde0ddae2c08436699c5a2af167f68d9b2faa0fee2c9e672aee8bc7",
+      "bytes": 10666,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/cpu-solver.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "199ca60a34651fe0c0f16f8131e1f842b5f5e7d18fc8c5794ac9fdd7484e2604",
+      "published_sha256": "199ca60a34651fe0c0f16f8131e1f842b5f5e7d18fc8c5794ac9fdd7484e2604",
+      "bytes": 11283,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/exact_hessian.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "de5aaaaf45aa221c6ad8b6232ef8be7f318c726e4f1fa5e5d82e5b7b393617e5",
+      "published_sha256": "de5aaaaf45aa221c6ad8b6232ef8be7f318c726e4f1fa5e5d82e5b7b393617e5",
+      "bytes": 6427,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/placement-geometry.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "286310593bd111c894e200095fec3d17e4a5ba1969ba52ed969c2b81667623e4",
+      "published_sha256": "286310593bd111c894e200095fec3d17e4a5ba1969ba52ed969c2b81667623e4",
+      "bytes": 1997,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/stiffness.mjs",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9b07fcb8708b6f5d2504778931b9a82c90a37c788401ea852f6b98485a02b8b1",
+      "published_sha256": "9b07fcb8708b6f5d2504778931b9a82c90a37c788401ea852f6b98485a02b8b1",
+      "bytes": 876,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source/true_hessian_check.py",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4d5f4fb0ba074bd1e4bd919190d7e442cbc49f6792b5d272399edb1c86e5959f",
+      "published_sha256": "4d5f4fb0ba074bd1e4bd919190d7e442cbc49f6792b5d272399edb1c86e5959f",
+      "bytes": 5532,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/source-geometry.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "be742069d1bc0296f8296abcd06ff3d4075095bf2e33473fe7a23c2957e3ffb7",
+      "published_sha256": "be742069d1bc0296f8296abcd06ff3d4075095bf2e33473fe7a23c2957e3ffb7",
+      "bytes": 292,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/README.md",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "2f192bba6fb6c736a4d407c50c0fd9bf79d88af41e20c21a3db37914c206dd8e",
+      "published_sha256": "2f192bba6fb6c736a4d407c50c0fd9bf79d88af41e20c21a3db37914c206dd8e",
+      "bytes": 435,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/bovine-3d-results.zip",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "55c493bf1d271e47632be6fffb580f48b1920e1b0a726ac506fff58a0931036a",
+      "published_sha256": "55c493bf1d271e47632be6fffb580f48b1920e1b0a726ac506fff58a0931036a",
+      "bytes": 28095424,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/bovine-calibration.jpg",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "fd87e62b01e7a783db5554d71b94030840ea3090ebc05338e11ceb0ffee82b02",
+      "published_sha256": "fd87e62b01e7a783db5554d71b94030840ea3090ebc05338e11ceb0ffee82b02",
+      "bytes": 76668,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/bovine-calibration.svg",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "384a34f3b711f6fd1d4113b8a9985a88e8e5878345ed404e0dd9f59d5f815d14",
+      "published_sha256": "384a34f3b711f6fd1d4113b8a9985a88e8e5878345ed404e0dd9f59d5f815d14",
+      "bytes": 47317,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/force-damage-3d.gif",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "9e5a172ca9b9842a42d78a5b767d5e2b95ca5112c05feca1d311e6390df32dc2",
+      "published_sha256": "9e5a172ca9b9842a42d78a5b767d5e2b95ca5112c05feca1d311e6390df32dc2",
+      "bytes": 1532349,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/index.html",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "080751b20ed42a0d19d40f0dfd3b9c902d5ef7280b6b49b99218f8ce0c09bb51",
+      "published_sha256": "080751b20ed42a0d19d40f0dfd3b9c902d5ef7280b6b49b99218f8ce0c09bb51",
+      "bytes": 14844,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/mechanics-summary.jpg",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "be9686dab6b8340f866d07d4d96e1ce120e9ff18631a64629d02427c083b0bd2",
+      "published_sha256": "be9686dab6b8340f866d07d4d96e1ce120e9ff18631a64629d02427c083b0bd2",
+      "bytes": 111635,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/mechanics-summary.svg",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "36f21300c6a16004b231987db9fa5bc0749e88e78749a2e70ba713a052f69cc3",
+      "published_sha256": "36f21300c6a16004b231987db9fa5bc0749e88e78749a2e70ba713a052f69cc3",
+      "bytes": 14598,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/page.js",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "ab16b95fb9748dee25e165c534716964c9fedcd719df0c88df806638b31dfd05",
+      "published_sha256": "ab16b95fb9748dee25e165c534716964c9fedcd719df0c88df806638b31dfd05",
+      "bytes": 10876,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/report-data.json",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "4a380fa8b7fea9ff8eb822ac42e4a29106bc0ed03e218757dc88a7e219c69b36",
+      "published_sha256": "4a380fa8b7fea9ff8eb822ac42e4a29106bc0ed03e218757dc88a7e219c69b36",
+      "bytes": 14031760,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/stiffness-summary.jpg",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "16e8159feabada58853b732fcc15f4581ac6f72c681e6f3302958bbe5dcdebae",
+      "published_sha256": "16e8159feabada58853b732fcc15f4581ac6f72c681e6f3302958bbe5dcdebae",
+      "bytes": 88713,
+      "privacy_edited": false
+    },
+    {
+      "path": "collagen-3d-bovine-calibration/web/stiffness-summary.svg",
+      "source": "bovine-3d-calibration-campaigns original scientific output / bounded public export",
+      "original_sha256": "d1592d3c030c0c8482c592ec88aa1c243e0999d129d525c2ccb87a95955b8219",
+      "published_sha256": "d1592d3c030c0c8482c592ec88aa1c243e0999d129d525c2ccb87a95955b8219",
+      "bytes": 6521,
+      "privacy_edited": false
     }
-  ]
+  ],
+  "updatedAt": "2026-10-31T21:55:52.058884+00:00"
 }
