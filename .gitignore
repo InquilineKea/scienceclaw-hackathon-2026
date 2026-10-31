@@ -3,4 +3,7 @@ __pycache__/
 .pytest_cache/
 *.log
 *.key
+
+# output
 swarm/work/
+collagen-network-atlas/runs/
