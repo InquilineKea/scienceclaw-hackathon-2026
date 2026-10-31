@@ -1,0 +1,15 @@
+{
+  "run_id": "defaults-regression-20261031T231435Z-2c1d2519",
+  "timeout_seconds": 60,
+  "python_executable": "/Library/Frameworks/Python.framework/Versions/3.9/bin/python3.9",
+  "python_version": "3.9.13 (v3.9.13:6de2ca5339, May 17 2022, 11:37:23) \n[Clang 13.0.0 (clang-1300.0.29.30)]",
+  "source_hashes": {
+    "patched_cell.py": "95cf52191996a2942d2b1f7908d4f8bb2763e92e2b747577eec031d086bbc4ac",
+    "baseline_physio.py": "da8fbe7e73afe44b4988c8185916875c816020aa15bcb5ed86ce33dfec62df11",
+    "baseline_cell.py": "9a7e8e32b11dc2e9a14aa6632aafa2adca5b52c5335773b95a696e3e8dfc6805",
+    "python-regression.py": "b98665a07abc2d1c74f8c4487bf5f2ad700cb5a6b3c6cf30f870e6269967efd0",
+    "patched_physio.py": "25ff7bee745ceee7c54bd2670037db80a4b3810ab4773bc6efa4f43574a3517c"
+  },
+  "new_packages": 0,
+  "cloud_cost": 0
+}
