@@ -23,7 +23,9 @@ bovine_source=root/'collagen-3d-bovine-calibration/web'
 bovine_files=['index.html','page.js','report-data.json','bovine-calibration.svg','bovine-calibration.jpg','mechanics-summary.svg','mechanics-summary.jpg','force-damage-3d.gif','stiffness-summary.svg','stiffness-summary.jpg','bovine-3d-results.zip','README.md']
 measured_source=root/'collagen-measured-3d-validation/web'
 measured_files=['index.html','page.js','report-data.json','bulk-validation.svg','bulk-validation.jpg','spatial-validation.svg','spatial-validation.jpg','measured-predicted-3d.gif','measured-3d-results.zip','README.md']
-allowed={'measured-3d/'+name for name in measured_files}|set(files)|{'bovine-3d/'+name for name in bovine_files}|{'.nojekyll','DEPLOYMENT.json'}|{'transitions/'+name for name in transition_files}|{'poroelasticity/'+name for name in poro_files}
+nonlinear_source=root/'collagen-nonlinear-heldout/web'
+nonlinear_files=['index.html','page.js','results.json','fields.json','numerical-controls.json','comparison.svg','selection.svg','comparison.jpg','selection.jpg','nonlinear-prediction-3d.gif','REPORT.md','nonlinear-3d-results.zip']
+allowed={'nonlinear-3d/'+name for name in nonlinear_files}|{'measured-3d/'+name for name in measured_files}|set(files)|{'bovine-3d/'+name for name in bovine_files}|{'.nojekyll','DEPLOYMENT.json'}|{'transitions/'+name for name in transition_files}|{'poroelasticity/'+name for name in poro_files}
 unexpected=[str(p.relative_to(dest)) for p in dest.rglob('*') if p.is_file() and str(p.relative_to(dest)) not in allowed]
 if unexpected:raise SystemExit('Unexpected files in Pages directory; review before replacing: '+str(unexpected))
 density=json.loads((source/'data/density.json').read_text())
@@ -50,6 +52,9 @@ for name in bovine_files:
 for name in measured_files:
     target=dest/'measured-3d'/name;target.parent.mkdir(parents=True,exist_ok=True)
     shutil.copyfile(measured_source/name,target)
+for name in nonlinear_files:
+    target=dest/'nonlinear-3d'/name;target.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copyfile(nonlinear_source/name,target)
 (dest/'.nojekyll').write_text('')
 data=json.loads((source/'data/results.json').read_text())
 model_hash=hashlib.sha256((source/'model.js').read_bytes()).hexdigest()
@@ -67,5 +72,6 @@ metadata['transitions']={'scope':'Separate finite-network mechanism study; per-s
 metadata['poroelasticity']={'scope':'Matched discrete-solid and FEniCSx Darcy-Biot fluid coupling; uncalibrated harmonic response with pressure-mesh screening.', 'files':{name:{'bytes':(dest/'poroelasticity'/name).stat().st_size,'sha256':hashlib.sha256((dest/'poroelasticity'/name).read_bytes()).hexdigest()} for name in poro_files}}
 metadata['bovine_3d']={'scope':'Bovine bulk-response calibration of synthetic periodic3D cells; conditional angular locking and damage, explicit step/energy/stability gates; measured-architecture validation data-gated.', 'files':{name:{'bytes':(dest/'bovine-3d'/name).stat().st_size,'sha256':hashlib.sha256((dest/'bovine-3d'/name).read_bytes()).hexdigest()} for name in bovine_files}}
 metadata['measured_3d']={'scope':'Measured image-derived3D PIV field, conditional partial-Dirichlet prediction and separate held-out nonlinear batch summaries; no measured fiber connectivity or joint specimen calibration.', 'files':{name:{'bytes':(dest/'measured-3d'/name).stat().st_size,'sha256':hashlib.sha256((dest/'measured-3d'/name).read_bytes()).hexdigest()} for name in measured_files}}
+metadata['nonlinear_3d']={'scope':'Adaptively reused measured-boundary-conditioned3D surrogate prediction comparison; fixed masks and explicit numerical qualification, no measured fiber graph or chemical aging validation.', 'files':{name:{'bytes':(dest/'nonlinear-3d'/name).stat().st_size,'sha256':hashlib.sha256((dest/'nonlinear-3d'/name).read_bytes()).hexdigest()} for name in nonlinear_files}}
 (dest/'DEPLOYMENT.json').write_text(json.dumps(metadata,indent=2)+'\n')
 print(json.dumps({'pages_source':'docs','files':len(files)+2,'bytes':sum(r['bytes'] for r in metadata['files'].values()),'model_sha256':model_hash}))

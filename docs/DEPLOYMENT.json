@@ -561,5 +561,59 @@
         "sha256": "86fb50bc331a44c1552c89ae6501ae6dbe874cec19e626056c96d7d8debafe61"
       }
     }
+  },
+  "nonlinear_3d": {
+    "scope": "Adaptively reused measured-boundary-conditioned 3D continuum surrogate comparison, fixed masks and honest numerical gates; no measured fiber graph or chemical aging validation.",
+    "scientific_commit": "ebc91b58da34dfc6f341266759d5cf2b123fc206",
+    "files": {
+      "comparison.svg": {
+        "bytes": 6475,
+        "sha256": "50f470a0de09badd59e810d186a9d36cb38c76dbfeb122e5f70fe6f9ce2e2dbc"
+      },
+      "index.html": {
+        "bytes": 3453,
+        "sha256": "162c817efb38dadbf6646379564ff3308def7430ba7a0b2256253c3425ec4f1e"
+      },
+      "selection.jpg": {
+        "bytes": 101317,
+        "sha256": "2df310f0686355a009acd3afdfb52772ab012033952a70da805a2c7fadd63a0c"
+      },
+      "page.js": {
+        "bytes": 2945,
+        "sha256": "5e07eb20dca8fb1a17a11f0d7ab23ce1e67f86ca64fbac984300b684d252babf"
+      },
+      "nonlinear-prediction-3d.gif": {
+        "bytes": 1626524,
+        "sha256": "975e5b3b2c88d76808234f1709fe524c87861a5c354ae4f1270e7dfeb3008297"
+      },
+      "REPORT.md": {
+        "bytes": 4596,
+        "sha256": "86f6c2a0bf78680f6470b4b5d3df991a2e9b7bcb8b66e50820585f5d990d204a"
+      },
+      "selection.svg": {
+        "bytes": 3219,
+        "sha256": "6b7c2aafa6b5c56e6b6598f3aec78951842276b8c601a33bb94183111bdb4746"
+      },
+      "results.json": {
+        "bytes": 42809,
+        "sha256": "a39b1db36b423870957c85072f075ea464205ffc8e71fd3b022a96a1964297c9"
+      },
+      "comparison.jpg": {
+        "bytes": 124417,
+        "sha256": "27547f2f0bd5760cc9a6e950e90bd0e23969299e062a4fa0a4e84dca44436023"
+      },
+      "nonlinear-3d-results.zip": {
+        "bytes": 4333153,
+        "sha256": "6da495a872d03d657074e5c71ea8b2620451f5ae5c084f62f8d1dd9504407960"
+      },
+      "fields.json": {
+        "bytes": 6135017,
+        "sha256": "2aebff46d2fdbbf495f999792c6f2cff8ab99c1d54da23bfc3a6f7bedf8f54d9"
+      },
+      "numerical-controls.json": {
+        "bytes": 35173,
+        "sha256": "c354fb0a5ecd651ecdf728f91b481f20de6b0f3e35dfe2d6ef901e942f099b90"
+      }
+    }
   }
 }

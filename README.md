@@ -137,3 +137,8 @@ The [FEniCSx poroelastic comparison](https://inquilinekea.github.io/scienceclaw-
 BatchC1.2mg/mL stress NRMSE0.686; selected elasticity on held-out position008 displacement RMSE1.174µm, versus1.062µm for harmonic interpolation. Substantial errors remain. This is separate batch-summary and internal boundary-conditioned field testing, not measured fiber-connectivity or joint specimen validation.
 
 [Download bounded derived results/source](https://inquilinekea.github.io/scienceclaw-hackathon-2026/measured-3d/measured-3d-results.zip): 2,169,094bytes; SHA256 `0c6db7a02c6c3d0dd44c389fe4e3402932a644da956c41def28740afec061c0b`. Raw authors images/spreadsheets are linked, not redistributed.
+
+
+## Nonlinear buckling and sliding prediction test
+
+[Open the nonlinear 3D comparison](https://inquilinekea.github.io/scienceclaw-hackathon-2026/nonlinear-3d/) for the twelve-arm selection, harmonic baseline, guarded displacement/local-strain scores, numerical qualification and interactive final-field comparison. [Report](collagen-nonlinear-heldout/REPORT.md). This is an adaptively reused conditional benchmark, not a fresh biological validation.
