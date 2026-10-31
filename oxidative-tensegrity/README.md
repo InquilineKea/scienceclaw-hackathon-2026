@@ -8,7 +8,7 @@ scrambling, peroxidasin sulfilimine) accumulate on top of a healthy, enzymatical
  atomistic        crosslink chemistry stiffness            alchemi_crosslinks.py   (ALCHEMI/MACE)        CPU pilot; GPU pending
  fibre network    branching z, iso vs aniso crosslinks,    oxt/network.py          (PyTorch, CPU/GPU)    RUN
                   collagen I / IV / VII, rupture
- viscoelastic     G', G'' under oscillatory shear          remote/lammps/*.in      (LAMMPS)              prepared
+ viscoelastic     G', G'' under oscillatory shear          remote/lammps/*.in      (LAMMPS CPU reference) validated; GPU pending
  cell             motor-clutch adhesions + 6-strut         oxt/cell.py             (NumPy/SciPy)         RUN
                   tensegrity + YAP + myosin feedback,
                   recovery rate, entropy
@@ -83,7 +83,7 @@ stiffness (Engler et al. 2008); arterial PWV by Moens–Korteweg.
 | NVIDIA Brev ($150) | same GPU script on an L40S/H100 instance; ALCHEMI tutorials | `remote/gpu_run.sh` ready |
 | NVIDIA ALCHEMI Toolkit | batched stretch scans of 8 crosslink chemistries → `k_rel` feeds the network | 101 example run (Docker, CPU); scan piloted on CPU; full run on Brev GPU |
 | MACE / MACE-OFF | MLIP inside ALCHEMI; ASE cross-check backend | same |
-| LAMMPS | viscoelastic G′, G″ by oscillatory shear | decks in `remote/lammps/` |
+| LAMMPS | reduced-network oscillatory shear CPU reference; no calibrated chemistry | exact CPU library driver required; see `remote/lammps/README.md` |
 | Nebius Token Factory | four independent critics (mechanobiologist, network-mechanics skeptic, geroscientist, statistician) | `agents/critic_swarm.py` ready |
 | Nebius Scientific AI platform (MCP) | optional: OpenMM/AMBER steered MD of crosslinked collagen peptides as a second atomistic check | needs team API key |
 | Claude / OpenAI / Gemini credits | agents that drive the above | — |
@@ -207,6 +207,39 @@ none failed, ~15 min on 4 CPUs. Full tables: `results/alchemi_brev/crosslink_mod
   "glucosepane is no stiffer than pyridinoline" are withdrawn.
 - Next: conformer ensembles (≥20 seeds) or pre-extended fragments, so the covalent regime is measured
   separately from unfolding; ultimately crosslinks inside a triple helix (Brev job B6).
+
+## Phase map: connectivity × LOX locking × AGE dose (`run_phase.py`, `analyze_phase.py`, `analyze_fss.py`)
+
+Run 2026-10-31 on the GCP 32-vCPU VM. The main map is Col I, 2D, W=12, z_target 2.2–6.0, 4 seeds per point (`results/phase/cpu32.csv`, about 62 min). A follow-up added 8 more seeds at z 3.1–5.0 with a finer strain grid, for healthy and AGE dose 1 (`tough.csv`, about 41 min). A finite-size check at W=16 used 6 seeds and measured stiffness only (`fss_W16.csv`, about 12 min). Figures: `results/phase/phase.png` and `fss.png`. Tables: `phase_summary.md` and `fss_summary.md`. Every comparison uses the *realised* connectivity, because AGE bridging crosslinks themselves raise z.
+
+| regime (healthy) | realised z | what the model shows |
+|---|---|---|
+| disconnected (sol) | < 2.4 | the largest cluster holds < 90% of nodes |
+| connected but floppy | 2.4 – ~3.0 | G < 1% of the dense network's; ε at peak 0.4–0.6 |
+| bending-stabilised rigid, critical | ~3.0 – 3.9 | G rises ~30× over this range (log-slope peak near z 2.8); seed-to-seed CV of G stays 0.5–0.8 at W=16 until z ≈ 3.8, then falls to ≈ 0.25; ε at peak 0.16–0.30; native Col I (z ≈ 3.4–3.5) sits here |
+| stretching-dominated | 3.9 – ~4.8 | G is linear in z and extrapolates to 0 at z ≈ 3.8–3.9, close to the 2D Maxwell count of 4; ε at peak 0.08–0.13 |
+| brittle | ≳ 5 | the largest single-step rupture avalanche grows from ≈ 3% of bonds to 4–13% |
+
+What changes, and what doesn't:
+- **Strength and extensibility trade off; energy to peak is roughly fixed.** From z 3.2 to 5.1, peak stress rises about 3× (0.016 → 0.046) while strain at peak falls about 4.6× (0.29 → 0.064). Work to peak stays at 0.0015–0.0019 (sd ±0.0006), with no significant optimum. The 4-seed map suggested a work optimum at z ≈ 3.5; the 12-seed pool does not support it, so that claim is withdrawn.
+- **AGE dose, compared at matched realised z:**
+  - G is 2–3× higher (e.g. 0.025 vs 0.009 at z ≈ 3.5).
+  - Strain at peak is 10–35% lower.
+  - Rupture avalanches are about 1.5× larger at z ≥ 4.8.
+  - The "useful window" is where G ≥ 1% of the stiffest network *and* ε at peak ≥ 0.15 (both thresholds chosen, not derived). Healthy it is z 3.5–3.8 (z 3.2 just misses the G threshold). At dose 1 it shifts left to 3.2–3.55: the G threshold is met earlier and the extensibility threshold is lost earlier.
+  - With 12 seeds the brittle-onset shift is small (≈ 5.2 → 4.85); the 4-seed estimate of 4.1 was noise.
+- **LOX-type junction locking** stiffens the floppy and critical regimes 2–5× (largest at z ≈ 2.9) and lowers the seed-to-seed spread there (CV ≈ 0.35–0.4 vs 0.5–0.8). It does nothing above z ≈ 4.
+
+Interpretation, as a hypothesis: native collagen sits in the critical, bending-stabilised regime. There, small changes in connectivity or crosslinking produce large stiffness changes, which gives cells mechanical leverage, and failure stays diffuse. AGE accumulation moves a network along this map in three ways at once: it adds bridges (raising z), stiffens at fixed z, and shortens extensibility.
+
+This agrees with Burla et al. 2020 (PNAS; collagen fracture strain falls with connectivity, optimum 3–4), Driscoll et al. 2016 (PNAS; failure turns diffuse near the rigidity transition) and Sharma et al. 2016 (Nature Physics; sub-isostatic collagen networks are critical).
+
+Limits:
+- 2D, W ≤ 16, and only two sizes, so no critical exponents.
+- Quasi-static rupture with no fibril sliding or viscoelasticity.
+- Strain grid steps of 0.026–0.041 set the resolution of ε at peak.
+- The window thresholds are choices.
+- Next: W=24/32 finite-size runs and a 3D lattice.
 
 ## Caveats
 

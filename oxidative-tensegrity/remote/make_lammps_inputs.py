@@ -1,7 +1,9 @@
 #!/usr/bin/env python3
 """Write LAMMPS decks (oscillatory shear -> G', G'') for healthy vs oxidised networks.
-Run each on a Brev/Nebius box with LAMMPS installed:  cd remote/lammps && lmp -in <name>.in
-then: python3 -c "from oxt.lammps_export import fit_viscoelastic; print(fit_viscoelastic('<name>_stress.txt', 200))"
+Run remotely in the reviewed single-rank CPU environment:
+  python -m oxt.lammps_export remote/lammps/<name>.in
+Bare lmp lacks the mandatory exact angular callback. This is not GPU-ready.
+then: python3 -c "from oxt.lammps_export import fit_viscoelastic; print(fit_viscoelastic('remote/lammps/<name>_stress.txt', 200))"
 """
 import sys
 from pathlib import Path

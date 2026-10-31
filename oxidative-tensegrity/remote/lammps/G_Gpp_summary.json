@@ -1,0 +1,32 @@
+{
+  "colI_aniso_stress.txt": {
+    "G_storage": 0.08121622116477115,
+    "G_loss": 0.3192647446581996,
+    "tan_delta": 3.9310465333086175
+  },
+  "colI_iso_stress.txt": {
+    "G_storage": 0.12890997405118357,
+    "G_loss": 0.4223231069938811,
+    "tan_delta": 3.276108851175458
+  },
+  "colI_none_stress.txt": {
+    "G_storage": 0.05543009279298142,
+    "G_loss": 0.2524038393345853,
+    "tan_delta": 4.553552531063863
+  },
+  "colVII_aniso_stress.txt": {
+    "G_storage": 0.02932775519710432,
+    "G_loss": 0.09896129604452186,
+    "tan_delta": 3.374322220689186
+  },
+  "colVII_iso_stress.txt": {
+    "G_storage": 0.038324607645030116,
+    "G_loss": 0.15365197481744275,
+    "tan_delta": 4.009224993001804
+  },
+  "colVII_none_stress.txt": {
+    "G_storage": 0.022372476336325497,
+    "G_loss": 0.08334940222768113,
+    "tan_delta": 3.725533149513238
+  }
+}

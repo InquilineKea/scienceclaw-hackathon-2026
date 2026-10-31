@@ -1,0 +1,11 @@
+{
+ "E_lo_Pa": 120.02074044497539,
+ "E_hi_Pa": 284.3760852132727,
+ "G_lo": 0.0031583574233566324,
+ "G_hi": 0.007483384258658264,
+ "S_pa": 12667.0,
+ "Y_min": 3.7569175424122405e-10,
+ "Y_max": 0.8664780933098728,
+ "clutch_T": 40.0,
+ "note": "E where steady YAP crosses 25%..75% of its range in oxt/cell.py; model assumption"
+}

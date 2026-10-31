@@ -1,0 +1,92 @@
+{
+  "bonds_unit_length": true,
+  "volume": 76.36753236814715,
+  "full_G": 0.7071067811865478,
+  "full_G_analytic": 0.7071067811865475,
+  "full_Cx": 1.4142135623730954,
+  "full_C_analytic": 1.4142135623730951,
+  "full_lattice_ok": true,
+  "onset": {
+    "G_kappa0": 4.019766028334467e-07,
+    "G_kappa0.003": 0.0002446652954529567,
+    "bending_stabilises": true,
+    "G_z8_kappa0": 0.2511470448367863,
+    "above_isostatic_stiff": true
+  },
+  "z_stats_target_3.4": {
+    "uniform": {
+      "mean": 3.390625,
+      "std": 0.09407495764681481,
+      "min": 3.1953125,
+      "max": 3.515625,
+      "z_active_mean": 3.447922737731654
+    },
+    "random": {
+      "mean": 3.4208984375,
+      "std": 0.10722193751409897,
+      "min": 3.265625,
+      "max": 3.546875,
+      "z_active_mean": 3.473236375089865
+    },
+    "aligned": {
+      "mean": 3.4228515625,
+      "std": 0.07249620098815415,
+      "min": 3.3125,
+      "max": 3.5234375,
+      "z_active_mean": 3.5021218472121833
+    },
+    "aligned_nolock": {
+      "mean": 3.396484375,
+      "std": 0.09133861680539002,
+      "min": 3.2421875,
+      "max": 3.5078125,
+      "z_active_mean": 3.453762289713756
+    }
+  },
+  "z_stats_ok": true,
+  "energy_grad_max_rel_err": 1.408622959012757,
+  "energy_conservation_ok": false,
+  "rescale_G_ratio": 2.2999999961794857,
+  "rescale_exact": false,
+  "irreversibility": {
+    "alive_monotone": true,
+    "locks_monotone": true,
+    "alive_hist": [
+      176,
+      176,
+      176,
+      176
+    ],
+    "lock_hist": [
+      7128,
+      7098,
+      7097,
+      7097
+    ],
+    "undamaged_stress": 0.00016918810505468418,
+    "damaged_stress": 0.00016912192146974957,
+    "damage_softens": true
+  },
+  "cohesive_sanity": {
+    "T_curve": [
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "deltas": [
+      0.01,
+      0.02,
+      0.03,
+      0.04,
+      0.05,
+      0.06
+    ],
+    "peak": 0.0,
+    "broken": 0,
+    "T_rises_then_falls": false,
+    "positive_Gc": false
+  }
+}
