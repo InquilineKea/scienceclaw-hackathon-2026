@@ -3096,7 +3096,7 @@
     },
     "docs/DEPLOYMENT.json": {
       "bytes": 12691,
-      "sha256": "ad8412f330905be93228ba996b7e75793e83b348b16601029e8ce6ca9e25c2f5"
+      "sha256": "32507d2c6320d1f5257022a3b660932824cf074396caf5d60c61e1d3b636733a"
     },
     "docs/DIRECTIONAL_METHODS.md": {
       "bytes": 5849,
@@ -3903,8 +3903,8 @@
       "sha256": "d4cb4375fba10d7471b1fd95e80805f81ca20483bcb92775cd56a6666cc788c3"
     },
     "collagen-transition-atlas/web/style.css": {
-      "bytes": 3532,
-      "sha256": "5623b24d8082bf41386d83dffc5c89c6b33596c9a41df8b3db9fb89963a91b01"
+      "bytes": 3590,
+      "sha256": "318501f4a523746365c414dd50fbee654838d1a51beef6f6a58a86b2e928804e"
     },
     "collagen-transition-atlas/web/transition-view.json": {
       "bytes": 161643,
@@ -3959,8 +3959,8 @@
       "sha256": "d4cb4375fba10d7471b1fd95e80805f81ca20483bcb92775cd56a6666cc788c3"
     },
     "docs/transitions/style.css": {
-      "bytes": 3532,
-      "sha256": "5623b24d8082bf41386d83dffc5c89c6b33596c9a41df8b3db9fb89963a91b01"
+      "bytes": 3590,
+      "sha256": "318501f4a523746365c414dd50fbee654838d1a51beef6f6a58a86b2e928804e"
     },
     "docs/transitions/transition-view.json": {
       "bytes": 161643,
