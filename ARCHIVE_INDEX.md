@@ -26,7 +26,7 @@ The separate workflow-verification run reproduces the numerical records exactly,
 
 ## Provenance and completeness
 
-ARCHIVE_MANIFEST.json contains sizes and SHA-256 hashes of the files added by this update. Run-level manifests provide more focused verification. `python3 -I verify-archives.py` verifies the full added package without executing any scientific model or installing software.
+Each frozen run folder contains its own MANIFEST.json with sizes and SHA-256 hashes, verifiable with Python's standard library alone and without executing any scientific model or installing software. `ARCHIVE_VALIDATION.json` records the validation results captured when this index was sealed.
 
 The archive includes all available saved scientific raw data, code, logs and visuals in scope. It does not contain credentials, unrelated account records, GPU environment binaries or model weights. One local user-directory prefix in a scientific text record was replaced with `/Users/LOCAL_USER`; source and published hashes are retained in ARCHIVE_PROVENANCE.json. Original privacy-reviewed public packages and numerical records retain their bytes.
 
