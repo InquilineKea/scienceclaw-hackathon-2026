@@ -1,0 +1,42 @@
+{
+  "protocol": "affine-perimeter-tension-v1",
+  "runs": 252,
+  "files": {
+    "DIRECTIONAL_METHODS.md": {
+      "bytes": 5849,
+      "sha256": "6f7139912438dc881ddbd1d3f0310ec96bef355bc415d43980e276f81793261b"
+    },
+    "directional-data.js": {
+      "bytes": 126583,
+      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
+    },
+    "directional.csv": {
+      "bytes": 60148,
+      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
+    },
+    "check-directional.js": {
+      "bytes": 2860,
+      "sha256": "6f927cc1e00ae95faac753811b9772577cbff9fb52b0b36b42d9523e7cc8aed4"
+    },
+    "directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "directional.json": {
+      "bytes": 171432,
+      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
+    },
+    "benchmark-directional.js": {
+      "bytes": 2568,
+      "sha256": "bb8b5d9db044103d172ab20f6c8ba7e2f3edaa2d92ca8ce37c75640e4fbd860c"
+    },
+    "CHECKS.json": {
+      "bytes": 1124,
+      "sha256": "1db024e0f0de87f3ae17fb920042130214243e8948b53aed582dbbfd72e15008"
+    }
+  }
+}

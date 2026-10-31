@@ -1,10 +1,10 @@
 {
   "createdAt": "2026-10-31T12:54:28.640114+00:00",
-  "scope": "Files added or updated by the completed collagen archival upload; manifest excludes itself.",
+  "scope": "Published research archives, live static application and separate directional-strain dataset; manifest excludes itself.",
   "files": {
     "ARCHIVE_INDEX.md": {
-      "bytes": 4833,
-      "sha256": "87c24784501be6ca1f89ea69c7a3401e8858a3dcb8b44c9e356a7b53cd089557"
+      "bytes": 5057,
+      "sha256": "afd5a5b6a8a4c1eb482fb7d9ad21f4801a155b28bac10a60db0a8516e46ed10d"
     },
     "ARCHIVE_PROVENANCE.json": {
       "bytes": 188852,
@@ -1415,8 +1415,8 @@
       "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
     },
     "collagen-network-atlas/index.html": {
-      "bytes": 12164,
-      "sha256": "c543c932d7f3487a324fff99a3b64623355c021d765583f4870c18802429f58d"
+      "bytes": 16674,
+      "sha256": "70f7a85ed0655aa8c00f3c9e51ba2ff3bee4cc8ff12f90e427a838a160fb150e"
     },
     "collagen-network-atlas/make-archive.py": {
       "bytes": 1205,
@@ -1927,8 +1927,8 @@
       "sha256": "5d6699cbaa683fa8d7ea7e5bd84b52c2409e4939e6dbb2f6f3a7e97e1686796c"
     },
     "collagen-network-atlas/style.css": {
-      "bytes": 11893,
-      "sha256": "8b33805914aca42ede32c702014f878fb2af2c470de2a27d8501176d63ea790f"
+      "bytes": 13374,
+      "sha256": "7a934411db6e996e36a37c0acd528ed4bd750ffa8080c2a85e6b4d5780dadd5e"
     },
     "collagen-network-atlas/test_run_storage.py": {
       "bytes": 2943,
@@ -1999,12 +1999,12 @@
       "sha256": "d67faff8d33fe2cc776a80f61090a7d99aea23dc053e06c7c71336d0f590c83e"
     },
     "PAGES.md": {
-      "bytes": 3484,
-      "sha256": "7e8131f3681a60674c4641972aae576247cfd30bb518f3a951cc45090763751f"
+      "bytes": 4731,
+      "sha256": "d037b5c61e0011ff14e9171bc4be114641c0d3ff08e6bd6d416856255afeddf6"
     },
     "publish-pages.py": {
-      "bytes": 1764,
-      "sha256": "0641dd7a6caf0fec39dafc0bf41f10522ef0cfca8cda399c3db8c403f9a436ef"
+      "bytes": 2071,
+      "sha256": "0ecceef673785bc826c14154fb3d93055ec61ad179a832709a78bbc696307286"
     },
     "collagen-network-atlas/load-guide.js": {
       "bytes": 5783,
@@ -2019,12 +2019,12 @@
       "sha256": "5c29a8aef134048f7f5e88a3101adf39b77cfc3e5946cb9c295a4a606d3b615f"
     },
     "docs/index.html": {
-      "bytes": 12164,
-      "sha256": "c543c932d7f3487a324fff99a3b64623355c021d765583f4870c18802429f58d"
+      "bytes": 16674,
+      "sha256": "70f7a85ed0655aa8c00f3c9e51ba2ff3bee4cc8ff12f90e427a838a160fb150e"
     },
     "docs/DEPLOYMENT.json": {
-      "bytes": 2273,
-      "sha256": "5cb7d23ece2790b1aadbae04e634ed5077df21d60b4442103e7a880dda925b59"
+      "bytes": 3419,
+      "sha256": "683e52effc67cff0202c130a3048faa571876d89e7f735b1ead2bc3fe49c4c9a"
     },
     "docs/load-guide.js": {
       "bytes": 5783,
@@ -2047,8 +2047,8 @@
       "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
     },
     "docs/style.css": {
-      "bytes": 11893,
-      "sha256": "8b33805914aca42ede32c702014f878fb2af2c470de2a27d8501176d63ea790f"
+      "bytes": 13374,
+      "sha256": "7a934411db6e996e36a37c0acd528ed4bd750ffa8080c2a85e6b4d5780dadd5e"
     },
     "docs/model.js": {
       "bytes": 18846,
@@ -2097,6 +2097,114 @@
     "collagen-molecular-pilot/upload-run.py": {
       "bytes": 11361,
       "sha256": "2bf9bd93d125f6caed8e554ef61d2effd9a7890ff6ca59a600960f1b11b4850d"
+    },
+    "collagen-network-atlas/DIRECTIONAL_METHODS.md": {
+      "bytes": 5849,
+      "sha256": "6f7139912438dc881ddbd1d3f0310ec96bef355bc415d43980e276f81793261b"
+    },
+    "collagen-network-atlas/benchmark-directional.js": {
+      "bytes": 2568,
+      "sha256": "bb8b5d9db044103d172ab20f6c8ba7e2f3edaa2d92ca8ce37c75640e4fbd860c"
+    },
+    "collagen-network-atlas/check-directional.js": {
+      "bytes": 2860,
+      "sha256": "6f927cc1e00ae95faac753811b9772577cbff9fb52b0b36b42d9523e7cc8aed4"
+    },
+    "collagen-network-atlas/data/directional-data.js": {
+      "bytes": 126583,
+      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
+    },
+    "collagen-network-atlas/data/directional.csv": {
+      "bytes": 60148,
+      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
+    },
+    "collagen-network-atlas/data/directional.json": {
+      "bytes": 171432,
+      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/CHECKS.json": {
+      "bytes": 1124,
+      "sha256": "1db024e0f0de87f3ae17fb920042130214243e8948b53aed582dbbfd72e15008"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/DIRECTIONAL_METHODS.md": {
+      "bytes": 5849,
+      "sha256": "6f7139912438dc881ddbd1d3f0310ec96bef355bc415d43980e276f81793261b"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/MANIFEST.json": {
+      "bytes": 1324,
+      "sha256": "ee5fccb31ac756cf3c69ef0a4f23807706be28ae96f1b5906555558bad787d56"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/benchmark-directional.js": {
+      "bytes": 2568,
+      "sha256": "bb8b5d9db044103d172ab20f6c8ba7e2f3edaa2d92ca8ce37c75640e4fbd860c"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/check-directional.js": {
+      "bytes": 2860,
+      "sha256": "6f927cc1e00ae95faac753811b9772577cbff9fb52b0b36b42d9523e7cc8aed4"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional-data.js": {
+      "bytes": 126583,
+      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional.csv": {
+      "bytes": 60148,
+      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional.json": {
+      "bytes": 171432,
+      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-network-atlas/directional-ui.js": {
+      "bytes": 10525,
+      "sha256": "487aeb00868973470c9e0764ce833ec882f20e6630432e32a2d921127634d2d7"
+    },
+    "collagen-network-atlas/directional-worker.js": {
+      "bytes": 276,
+      "sha256": "456ca8b15df426813dd7f6ec6de4e4f2e60bc00073f7c112b51c3a5c5ed535e0"
+    },
+    "collagen-network-atlas/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "collagen-network-atlas/publication/directional-ui-checks.json": {
+      "bytes": 1124,
+      "sha256": "1db024e0f0de87f3ae17fb920042130214243e8948b53aed582dbbfd72e15008"
+    },
+    "docs/DIRECTIONAL_METHODS.md": {
+      "bytes": 5849,
+      "sha256": "6f7139912438dc881ddbd1d3f0310ec96bef355bc415d43980e276f81793261b"
+    },
+    "docs/data/directional-data.js": {
+      "bytes": 126583,
+      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
+    },
+    "docs/data/directional.csv": {
+      "bytes": 60148,
+      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
+    },
+    "docs/data/directional.json": {
+      "bytes": 171432,
+      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
+    },
+    "docs/directional-ui.js": {
+      "bytes": 10525,
+      "sha256": "487aeb00868973470c9e0764ce833ec882f20e6630432e32a2d921127634d2d7"
+    },
+    "docs/directional-worker.js": {
+      "bytes": 276,
+      "sha256": "456ca8b15df426813dd7f6ec6de4e4f2e60bc00073f7c112b51c3a5c5ed535e0"
+    },
+    "docs/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
     }
   },
   "note": "Updated live workflow files for automatic publication; frozen run files remain unchanged.",

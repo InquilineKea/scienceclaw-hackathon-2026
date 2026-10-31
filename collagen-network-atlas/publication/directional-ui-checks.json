@@ -1,0 +1,38 @@
+{
+  "status": "passed",
+  "directional_runs": 252,
+  "sensitivity_runs": 18,
+  "invalid_runs": 0,
+  "capped_runs": 5,
+  "browser_export_agrees_with_saved_row": {
+    "family": "isotropic",
+    "seed": 29,
+    "angle": 45,
+    "relative_tolerance": 1e-07,
+    "absolute_tolerance": 1e-12,
+    "maximum_absolute_metric_difference": 5.783134388037681e-16
+  },
+  "browser_checks": [
+    "off-grid 38-degree solve",
+    "aligned 90-degree censored state",
+    "seed 29 selection",
+    "replay scrub to final state",
+    "exact-angle JSON export",
+    "copy share link",
+    "no console errors or warnings"
+  ],
+  "solver_checks": [
+    "prescribed-coordinate derivatives",
+    "zero reference energy",
+    "virtual work",
+    "180-degree periodicity",
+    "analytical single-fiber stiffness",
+    "rotation covariance",
+    "expected aligned anisotropy",
+    "censoring"
+  ],
+  "legacy_model_checks": 9,
+  "legacy_boundary_coordinates_checked": 576,
+  "model_sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+  "directional_sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+}
