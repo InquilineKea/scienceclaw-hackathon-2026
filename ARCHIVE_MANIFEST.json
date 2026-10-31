@@ -51,8 +51,8 @@
       "sha256": "b887f14880c5f218cd788d6d80c7e005a39f61605a7cd875f46d1d731f7b337e"
     },
     "collagen-molecular-pilot/README.md": {
-      "bytes": 2490,
-      "sha256": "fac75436301110a43b6e2c85675025d785f2c0902bba58e3c549636655477554"
+      "bytes": 3131,
+      "sha256": "690ffd8117da46bb384e0a82e4ae8d1c6f97325b50bb751e840134a020785658"
     },
     "collagen-molecular-pilot/SECURITY_REVIEW.md": {
       "bytes": 9434,
@@ -563,8 +563,8 @@
       "sha256": "56c9567770379ea42c2662686f9b4534563b607d1a14870f6090abfd1f32a765"
     },
     "collagen-molecular-pilot/run_pilot.sh": {
-      "bytes": 3109,
-      "sha256": "72aca1e6e58fecccc6ce5480578e16400e658513437b7a525ee6e57d3eb10142"
+      "bytes": 3233,
+      "sha256": "dfa08a8a298b2b0dd397279e09571cfd4ac3dce49b1571572ec79f946f3180ee"
     },
     "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/FROZEN_MANIFEST.json": {
       "bytes": 27829,
