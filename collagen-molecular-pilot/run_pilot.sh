@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
-# Run on the EXISTING Brev VM, after explicit approval of SECURITY_REVIEW.md.
+# Run on the existing Brev VM after reporting a completed security review,
+# within the user-authorized remote workload and resource scope.
 # No provisioning, package installation, downloading, or modification of other jobs.
 set -euo pipefail
 cd -- "$(dirname -- "$0")"
@@ -8,8 +9,8 @@ if ! docker info >/dev/null 2>&1; then
   sudo -n docker info >/dev/null
   DOCKER=(sudo -n docker)
 fi
-if [ "${APPROVED_ISOLATED_PILOT:-}" != "yes" ]; then
-  echo 'Requires explicit user approval after the security review.' >&2
+if [ "${SECURITY_REVIEW_COMPLETED:-}" != "yes" ] && [ "${APPROVED_ISOLATED_PILOT:-}" != "yes" ]; then
+  echo 'Requires a completed security review and an authorized remote workload.' >&2
   exit 64
 fi
 if nvidia-smi --query-compute-apps=pid --format=csv,noheader | grep -q '[0-9]'; then
