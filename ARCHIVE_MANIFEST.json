@@ -1794,6 +1794,54 @@
       "bytes": 2965,
       "sha256": "e3e044074d1ff9f9b0c926a23cc23d90fed42c1514938faea3a7e28efe6ae152"
     },
+    "collagen-network-atlas/force-replay/.force-redistribution.gif-Pxye": {
+      "bytes": 270336,
+      "sha256": "8c34371323fdfb694d7b0cf43c0e362de0513bd1b16e90fdef771f3fda594c94"
+    },
+    "collagen-network-atlas/force-replay/README.md": {
+      "bytes": 2102,
+      "sha256": "88ad98922032f293a2964146150a7c842585937f6d258cbd3fb3acb4c8f01329"
+    },
+    "collagen-network-atlas/force-replay/VALIDATION.json": {
+      "bytes": 477,
+      "sha256": "59217177011c00b5206739dc4c32f6a0d765476de0c734ee6bd924f4968abbe0"
+    },
+    "collagen-network-atlas/force-replay/build.js": {
+      "bytes": 1536,
+      "sha256": "a2142f16ce2af069646f350d7cf78c88e059336e7f0910cd9da711fd482c5195"
+    },
+    "collagen-network-atlas/force-replay/force-redistribution-still.png": {
+      "bytes": 304844,
+      "sha256": "e8f461ade2d807317995054495b8f99d008ac616a8e3f88eeb5bace1fa9d5770"
+    },
+    "collagen-network-atlas/force-replay/force-redistribution.gif": {
+      "bytes": 3997820,
+      "sha256": "02ed87c975707283cd30bfdd2dcbc5b3a225a87f5b924918305361d93a471e75"
+    },
+    "collagen-network-atlas/force-replay/index.html": {
+      "bytes": 1726,
+      "sha256": "ef18e400e2eb4c754548dbc23e426797a6bda56c825a6a7e0d075342bcd8ea60"
+    },
+    "collagen-network-atlas/force-replay/render.swift": {
+      "bytes": 5456,
+      "sha256": "8ed5fe46037afd947aee8a9163c19e141d5ce53cf9363558aad0201ca5c2f259"
+    },
+    "collagen-network-atlas/force-replay/replay-data.js": {
+      "bytes": 5511695,
+      "sha256": "3ce1257a7b164caea3ce6b826562dc92b3f19864169b4581f6340a572c616ff0"
+    },
+    "collagen-network-atlas/force-replay/replay-ui.js": {
+      "bytes": 2265,
+      "sha256": "3913590e2e6aa44e601ef3309c49af16895425265f02966609c20d144b178bcd"
+    },
+    "collagen-network-atlas/force-replay/replay.json": {
+      "bytes": 5511669,
+      "sha256": "42e2a28650530d2358796903c1327f49fda53e365fb23dec6c28604a3e5f44e8"
+    },
+    "collagen-network-atlas/force-replay/validate.js": {
+      "bytes": 1072,
+      "sha256": "11cbd15059be49f4e6444f366561f3c9de2d4df87fb1b761be8c2cce2911a061"
+    },
     "collagen-network-atlas/index.html": {
       "bytes": 16852,
       "sha256": "49de08b75873e5c335076f4f300af3eb78ba9fcb5a1d850df4dae0bb061aa279"
@@ -2655,8 +2703,8 @@
       "sha256": "e53d4f2f8bd82b7cfd08c21aba40075b894e655043dbd64822e55627db4aca1b"
     },
     "collagen-network-atlas/topology-aging.html": {
-      "bytes": 6616,
-      "sha256": "db7b2f7914e5ff92b578852b4a99fec00e7428894e2b1c48fa93e6d2b7748894"
+      "bytes": 6717,
+      "sha256": "98a2cafb0dfbacf316efbd1ec24fa2ba16d2f9cf73811cb2673fadab25f35b2d"
     },
     "collagen-network-atlas/topology-aging.js": {
       "bytes": 2888,
@@ -2995,8 +3043,8 @@
       "sha256": "c64859609c4dca8481daa89305ebf299c6d2905ffee91774565bd0e27fa612b3"
     },
     "docs/DEPLOYMENT.json": {
-      "bytes": 8231,
-      "sha256": "c23dd607752efadfcb6322e612be7c3a5a5619546544aae23f1b92ead2e81cb3"
+      "bytes": 9438,
+      "sha256": "12a65692bfb28b0242b02351eda261ae5fdfc28e88d993e0fd0e8df77a247cfe"
     },
     "docs/DIRECTIONAL_METHODS.md": {
       "bytes": 5849,
@@ -3150,6 +3198,38 @@
       "bytes": 2965,
       "sha256": "e3e044074d1ff9f9b0c926a23cc23d90fed42c1514938faea3a7e28efe6ae152"
     },
+    "docs/force-replay/README.md": {
+      "bytes": 2102,
+      "sha256": "88ad98922032f293a2964146150a7c842585937f6d258cbd3fb3acb4c8f01329"
+    },
+    "docs/force-replay/VALIDATION.json": {
+      "bytes": 477,
+      "sha256": "59217177011c00b5206739dc4c32f6a0d765476de0c734ee6bd924f4968abbe0"
+    },
+    "docs/force-replay/force-redistribution-still.png": {
+      "bytes": 304844,
+      "sha256": "e8f461ade2d807317995054495b8f99d008ac616a8e3f88eeb5bace1fa9d5770"
+    },
+    "docs/force-replay/force-redistribution.gif": {
+      "bytes": 3997820,
+      "sha256": "02ed87c975707283cd30bfdd2dcbc5b3a225a87f5b924918305361d93a471e75"
+    },
+    "docs/force-replay/index.html": {
+      "bytes": 1726,
+      "sha256": "ef18e400e2eb4c754548dbc23e426797a6bda56c825a6a7e0d075342bcd8ea60"
+    },
+    "docs/force-replay/replay-data.js": {
+      "bytes": 5511695,
+      "sha256": "3ce1257a7b164caea3ce6b826562dc92b3f19864169b4581f6340a572c616ff0"
+    },
+    "docs/force-replay/replay-ui.js": {
+      "bytes": 2265,
+      "sha256": "3913590e2e6aa44e601ef3309c49af16895425265f02966609c20d144b178bcd"
+    },
+    "docs/force-replay/replay.json": {
+      "bytes": 5511669,
+      "sha256": "42e2a28650530d2358796903c1327f49fda53e365fb23dec6c28604a3e5f44e8"
+    },
     "docs/index.html": {
       "bytes": 16852,
       "sha256": "49de08b75873e5c335076f4f300af3eb78ba9fcb5a1d850df4dae0bb061aa279"
@@ -3183,8 +3263,8 @@
       "sha256": "e53d4f2f8bd82b7cfd08c21aba40075b894e655043dbd64822e55627db4aca1b"
     },
     "docs/topology-aging.html": {
-      "bytes": 6616,
-      "sha256": "db7b2f7914e5ff92b578852b4a99fec00e7428894e2b1c48fa93e6d2b7748894"
+      "bytes": 6717,
+      "sha256": "98a2cafb0dfbacf316efbd1ec24fa2ba16d2f9cf73811cb2673fadab25f35b2d"
     },
     "docs/topology-aging.js": {
       "bytes": 2888,
@@ -3619,8 +3699,8 @@
       "sha256": "80e5000bb346f2493609b2fe5a8f3d63ff9374e31a632411589ef679b6ea98b1"
     },
     "publish-pages.py": {
-      "bytes": 4595,
-      "sha256": "507a89314310812ece3c78c947e2a702d7102573f3c4efc05d5dff0f6e01a28f"
+      "bytes": 4784,
+      "sha256": "f9633600c5c14c3e705e311fb394fff06ccde5121b4b145d9553b8a092e07b5e"
     },
     "verify-archives.py": {
       "bytes": 786,

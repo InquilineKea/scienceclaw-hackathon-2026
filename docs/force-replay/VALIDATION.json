@@ -1,0 +1,12 @@
+{
+  "frames": 1310,
+  "cases": 4,
+  "status": "passed",
+  "checks": [
+    "960-step rerun endpoint metrics match saved density results within 1e-12",
+    "Every recorded force recomputed from exported coordinates and alive flags within 1e-12",
+    "All equilibrium frames converged; strictly increasing strain",
+    "Shared force normalization across fibers and connectors in all four cases"
+  ],
+  "sha256": "42e2a28650530d2358796903c1327f49fda53e365fb23dec6c28604a3e5f44e8"
+}
