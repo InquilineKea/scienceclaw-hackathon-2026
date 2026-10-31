@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="780" viewBox="0 0 1240 780"><rect width="100%" height="100%" fill="#f7f9fc"/>
+<text x="30" y="42" fill="#172b42" font-family="Arial,sans-serif" font-size="29" text-anchor="start">Measured 3D collagen: withheld interior field, position 008</text>
+<text x="30" y="78" fill="#172b42" font-family="Arial,sans-serif" font-size="18" text-anchor="start">Boundary-conditioned prediction · 4,355 valid score vectors · one held-out position, not 4,355 replicates</text>
+<path d="M85,455.0H585" stroke="#dce4ed"/>
+<text x="75" y="460.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">0</text>
+<text x="85.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">0</text>
+<path d="M85,380.0H585" stroke="#dce4ed"/>
+<text x="75" y="385.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">0.88</text>
+<text x="210.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">1</text>
+<path d="M85,305.0H585" stroke="#dce4ed"/>
+<text x="75" y="310.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">1.8</text>
+<text x="335.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">2</text>
+<path d="M85,230.0H585" stroke="#dce4ed"/>
+<text x="75" y="235.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">2.6</text>
+<text x="460.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">3</text>
+<path d="M85,155.0H585" stroke="#dce4ed"/>
+<text x="75" y="160.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">3.5</text>
+<text x="585.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">4</text>
+<text x="335.0" y="509" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">Predictor</text>
+<text x="85" y="142" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="start">Displacement RMSE (µm), equal octant weight</text>
+<rect x="95" y="198.69177128397183" width="75" height="256.30822871602817" fill="#a6b0ba"/>
+<text x="133" y="188.69177128397183" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">2.990</text>
+<text x="133" y="485" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">Zero</text>
+<rect x="220" y="309.87320193961057" width="75" height="145.12679806038943" fill="#7691ae"/>
+<text x="258" y="299.87320193961057" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">1.693</text>
+<text x="258" y="485" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">Affine</text>
+<rect x="345" y="363.9595950864014" width="75" height="91.04040491359859" fill="#22878d"/>
+<text x="383" y="353.9595950864014" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">1.062</text>
+<text x="383" y="485" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">Harmonic</text>
+<rect x="470" y="354.41201626395934" width="75" height="100.58798373604066" fill="#bf762d"/>
+<text x="508" y="344.41201626395934" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">1.174</text>
+<text x="508" y="485" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">Elastic ν=0</text>
+<path d="M695,455.0H1195" stroke="#dce4ed"/>
+<text x="685" y="460.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">0</text>
+<text x="695.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">0</text>
+<path d="M695,380.0H1195" stroke="#dce4ed"/>
+<text x="685" y="385.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">0.28</text>
+<text x="820.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">1</text>
+<path d="M695,305.0H1195" stroke="#dce4ed"/>
+<text x="685" y="310.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">0.55</text>
+<text x="945.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">2</text>
+<path d="M695,230.0H1195" stroke="#dce4ed"/>
+<text x="685" y="235.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">0.83</text>
+<text x="1070.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">3</text>
+<path d="M695,155.0H1195" stroke="#dce4ed"/>
+<text x="685" y="160.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">1.1</text>
+<text x="1195.0" y="479" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">4</text>
+<text x="945.0" y="509" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">Predictor</text>
+<text x="695" y="142" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="start">Raw P1 strain relative error, volume weighted</text>
+<rect x="705" y="182.2727272727273" width="75" height="272.7272727272727" fill="#a6b0ba"/>
+<text x="743" y="172.2727272727273" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">1.000</text>
+<text x="743" y="485" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">Zero</text>
+<rect x="830" y="210.8119619488526" width="75" height="244.1880380511474" fill="#7691ae"/>
+<text x="868" y="200.8119619488526" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">0.895</text>
+<text x="868" y="485" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">Affine</text>
+<rect x="955" y="252.61654884819396" width="75" height="202.38345115180604" fill="#22878d"/>
+<text x="993" y="242.61654884819396" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">0.742</text>
+<text x="993" y="485" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">Harmonic</text>
+<rect x="1080" y="244.6126037917156" width="75" height="210.3873962082844" fill="#bf762d"/>
+<text x="1118" y="234.6126037917156" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">0.771</text>
+<text x="1118" y="485" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">Elastic ν=0</text>
+<text x="30" y="557" fill="#172b42" font-family="Arial,sans-serif" font-size="18" text-anchor="start">Harmonic interpolation beats the selected isotropic elastic baseline. Displacement input is supplied only at known nodes.</text>
+<text x="30" y="592" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="start">No inverse-model cell forces are used as targets. Absolute stiffness cancels from the homogeneous Dirichlet operator.</text>
+<text x="30" y="627" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="start">Raw P1 strains amplify image-correlation noise. Post-test 61×61×59 µm averaging retains 303 complete guarded stencils:</text>
+<text x="30" y="660" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="start">averaged strain NRMSE: harmonic 0.605; elastic 0.658. No model reselection.</text>
+<text x="30" y="704" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="start">This is an internal measured-field test on a PIV sampling mesh; measured fiber connectivity and matched specimen rheology remain missing.</text>
+<text x="30" y="745" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="start">Source: public Saenopy ClassicSingleCellTFM v0.7.4 images/PIV fields, linked to Böhringer et al. (2024).</text>
+</svg>

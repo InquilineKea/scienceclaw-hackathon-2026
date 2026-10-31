@@ -51,3 +51,12 @@ The publisher checks the baseline, directional and aging data against their curr
 160/160 final cases, 160 complete trajectories, 80/80 load-step pairs, and 40 accepted small-strain states. This uses synthetic periodic networks with a bovine bulk-response scale; measured architecture, chemical aging and species-specific fracture are not validated. Marginal curvature and capped maxima remain explicitly conditional/censored.
 
 [Download the bounded source/results archive](https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/bovine-3d-results.zip), 28,095,424 bytes, SHA-256 `55c493bf1d271e47632be6fffb580f48b1920e1b0a726ac506fff58a0931036a`.
+
+
+## Measured 3D collagen held-out benchmark
+
+[Open the measured-data benchmark](https://inquilinekea.github.io/scienceclaw-hackathon-2026/measured-3d/) for held-out batch shear curves, guarded3D displacement/strain comparisons and a rotating vector view. [Scientific report](collagen-measured-3d-validation/REPORT.md) and [frozen protocol/audits](collagen-measured-3d-validation/PROTOCOL-FROZEN.md).
+
+BatchC1.2mg/mL stress NRMSE0.686; selected elasticity on held-out position008 displacement RMSE1.174µm, versus1.062µm for harmonic interpolation. Substantial errors remain. This is separate batch-summary and internal boundary-conditioned field testing, not measured fiber-connectivity or joint specimen validation.
+
+[Download bounded derived results/source](https://inquilinekea.github.io/scienceclaw-hackathon-2026/measured-3d/measured-3d-results.zip): 2,169,094bytes; SHA256 `0c6db7a02c6c3d0dd44c389fe4e3402932a644da956c41def28740afec061c0b`. Raw authors images/spreadsheets are linked, not redistributed.
