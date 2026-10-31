@@ -7,6 +7,7 @@ files=['index.html','style.css','app.js','model.js','load-guide.js','worker.js',
 files += ['density-ui.js','density.css','DENSITY_METHODS.md','data/density-data.js','data/density.json','data/density.csv','species.html','species.css','species-ui.js','SPECIES_METHODS.md','data/species-data.js','data/species-inputs.json','data/species-backbones.json']
 files += ['TOPOLOGY_AGING_FIGURE.md','topology-aging.html','topology-aging.css','topology-aging.js','topology-figure.js','data/topology-maps.js','figures/topology-aging-overview.svg','figures/topology-aging-overview.png','figures/topology-aging-values.json']
 files += ['force-replay/'+n for n in ['index.html','replay-ui.js','replay-data.js','replay.json','force-redistribution.gif','force-redistribution-still.png','README.md','VALIDATION.json']]
+files += ['force-robustness/'+n for n in ['index.html','comparison.svg','METHODS.md','results.csv','summary.json','checked-results.json']]
 dest.mkdir(exist_ok=True)
 allowed=set(files)|{'.nojekyll','DEPLOYMENT.json'}
 unexpected=[str(p.relative_to(dest)) for p in dest.rglob('*') if p.is_file() and str(p.relative_to(dest)) not in allowed]

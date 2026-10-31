@@ -1794,6 +1794,10 @@
       "bytes": 2965,
       "sha256": "e3e044074d1ff9f9b0c926a23cc23d90fed42c1514938faea3a7e28efe6ae152"
     },
+    "collagen-network-atlas/force-replay/.gitignore": {
+      "bytes": 9,
+      "sha256": "19cdf786219845799ddf3f2a6f7acf16e3b09e28636d5be411354988b6ed64d3"
+    },
     "collagen-network-atlas/force-replay/README.md": {
       "bytes": 2102,
       "sha256": "88ad98922032f293a2964146150a7c842585937f6d258cbd3fb3acb4c8f01329"
@@ -1815,8 +1819,8 @@
       "sha256": "02ed87c975707283cd30bfdd2dcbc5b3a225a87f5b924918305361d93a471e75"
     },
     "collagen-network-atlas/force-replay/index.html": {
-      "bytes": 1726,
-      "sha256": "ef18e400e2eb4c754548dbc23e426797a6bda56c825a6a7e0d075342bcd8ea60"
+      "bytes": 1815,
+      "sha256": "19519ef59de77ecd7decbc72bea3a3a292f1f4daca995702da13347c075c322f"
     },
     "collagen-network-atlas/force-replay/render.swift": {
       "bytes": 5456,
@@ -1837,6 +1841,58 @@
     "collagen-network-atlas/force-replay/validate.js": {
       "bytes": 1072,
       "sha256": "11cbd15059be49f4e6444f366561f3c9de2d4df87fb1b761be8c2cce2911a061"
+    },
+    "collagen-network-atlas/force-robustness/METHODS.md": {
+      "bytes": 3327,
+      "sha256": "3481aabac5a16d918d5630ef6f33f81f31ee9abe3ab0c09d5e440a98345551f6"
+    },
+    "collagen-network-atlas/force-robustness/analyze.py": {
+      "bytes": 2905,
+      "sha256": "29148699798968a333fd3c7805cf957c1fe5a60c3f946886d4550a61bf0d49e4"
+    },
+    "collagen-network-atlas/force-robustness/check.js": {
+      "bytes": 1037,
+      "sha256": "2fc060e6b2a4d476754488d4acaea2f97bc11856a761049feeaa1af558417862"
+    },
+    "collagen-network-atlas/force-robustness/checked-results.json": {
+      "bytes": 313589,
+      "sha256": "b015e61c8f4ee1769fa04bac0dd5c311713beb16e3ca2c53159242c6c13d3676"
+    },
+    "collagen-network-atlas/force-robustness/comparison.svg": {
+      "bytes": 3220,
+      "sha256": "a0680f8f03e5f0992dde984fbb41a610b9bbb6116c04d5db6b1d2580fc4c2e88"
+    },
+    "collagen-network-atlas/force-robustness/index.html": {
+      "bytes": 3740,
+      "sha256": "f8bd321a61e5369b469dc84321f421a66a57b7eeea675ff5008b998b51910c7f"
+    },
+    "collagen-network-atlas/force-robustness/page.py": {
+      "bytes": 4119,
+      "sha256": "fedf2b35c318d08a91d257a0c0ebccb90cec7100ec735cfb29d9d0c7a5755124"
+    },
+    "collagen-network-atlas/force-robustness/results.csv": {
+      "bytes": 75591,
+      "sha256": "42af228e68c78a6d518858a8f638b23a157f05e8bad72184466046dc8ded594d"
+    },
+    "collagen-network-atlas/force-robustness/results.json": {
+      "bytes": 313594,
+      "sha256": "9441f0ffac07d8e3b0d8b9daf06a47e0914c9692113c7d8d8502a9822c2c0344"
+    },
+    "collagen-network-atlas/force-robustness/run.js": {
+      "bytes": 2799,
+      "sha256": "d69e1cec940bb387b199364205f39d7059368afd343969c40a341559c9ef4ce2"
+    },
+    "collagen-network-atlas/force-robustness/run.log": {
+      "bytes": 94,
+      "sha256": "1186f9258f236e14cc827ccb89b6e6d0b6b1eda5ec0d82a268e6771831b12363"
+    },
+    "collagen-network-atlas/force-robustness/summary.json": {
+      "bytes": 3765,
+      "sha256": "b0c31c2e9192d74fe7c6c5de74a2d999116f8e5e6479e404dd2cd07b727bf6e4"
+    },
+    "collagen-network-atlas/force-robustness/table.html": {
+      "bytes": 1426,
+      "sha256": "173f9598b7ca1191122b9c5374fcdfb0fce341e22313642e363dfcada6e42e52"
     },
     "collagen-network-atlas/index.html": {
       "bytes": 16852,
@@ -3039,8 +3095,8 @@
       "sha256": "c64859609c4dca8481daa89305ebf299c6d2905ffee91774565bd0e27fa612b3"
     },
     "docs/DEPLOYMENT.json": {
-      "bytes": 9438,
-      "sha256": "12a65692bfb28b0242b02351eda261ae5fdfc28e88d993e0fd0e8df77a247cfe"
+      "bytes": 10346,
+      "sha256": "947d3b9836612922c113fa1d9780f3516f478ecaa497602c14d05c4fd18c93d9"
     },
     "docs/DIRECTIONAL_METHODS.md": {
       "bytes": 5849,
@@ -3211,8 +3267,8 @@
       "sha256": "02ed87c975707283cd30bfdd2dcbc5b3a225a87f5b924918305361d93a471e75"
     },
     "docs/force-replay/index.html": {
-      "bytes": 1726,
-      "sha256": "ef18e400e2eb4c754548dbc23e426797a6bda56c825a6a7e0d075342bcd8ea60"
+      "bytes": 1815,
+      "sha256": "19519ef59de77ecd7decbc72bea3a3a292f1f4daca995702da13347c075c322f"
     },
     "docs/force-replay/replay-data.js": {
       "bytes": 5511695,
@@ -3225,6 +3281,30 @@
     "docs/force-replay/replay.json": {
       "bytes": 5511669,
       "sha256": "42e2a28650530d2358796903c1327f49fda53e365fb23dec6c28604a3e5f44e8"
+    },
+    "docs/force-robustness/METHODS.md": {
+      "bytes": 3327,
+      "sha256": "3481aabac5a16d918d5630ef6f33f81f31ee9abe3ab0c09d5e440a98345551f6"
+    },
+    "docs/force-robustness/checked-results.json": {
+      "bytes": 313589,
+      "sha256": "b015e61c8f4ee1769fa04bac0dd5c311713beb16e3ca2c53159242c6c13d3676"
+    },
+    "docs/force-robustness/comparison.svg": {
+      "bytes": 3220,
+      "sha256": "a0680f8f03e5f0992dde984fbb41a610b9bbb6116c04d5db6b1d2580fc4c2e88"
+    },
+    "docs/force-robustness/index.html": {
+      "bytes": 3740,
+      "sha256": "f8bd321a61e5369b469dc84321f421a66a57b7eeea675ff5008b998b51910c7f"
+    },
+    "docs/force-robustness/results.csv": {
+      "bytes": 75591,
+      "sha256": "42af228e68c78a6d518858a8f638b23a157f05e8bad72184466046dc8ded594d"
+    },
+    "docs/force-robustness/summary.json": {
+      "bytes": 3765,
+      "sha256": "b0c31c2e9192d74fe7c6c5de74a2d999116f8e5e6479e404dd2cd07b727bf6e4"
     },
     "docs/index.html": {
       "bytes": 16852,
@@ -3695,16 +3775,12 @@
       "sha256": "80e5000bb346f2493609b2fe5a8f3d63ff9374e31a632411589ef679b6ea98b1"
     },
     "publish-pages.py": {
-      "bytes": 4784,
-      "sha256": "f9633600c5c14c3e705e311fb394fff06ccde5121b4b145d9553b8a092e07b5e"
+      "bytes": 4923,
+      "sha256": "ebd2fe61f579c443b63c920e262e27283ed6b2f9118921a823740ad6b9c61cc9"
     },
     "verify-archives.py": {
       "bytes": 786,
       "sha256": "73bafdb189f65dbfa495068582dd9057faa7a429badc8112b0c3c9f04406e6e8"
-    },
-    "collagen-network-atlas/force-replay/.gitignore": {
-      "bytes": 9,
-      "sha256": "19cdf786219845799ddf3f2a6f7acf16e3b09e28636d5be411354988b6ed64d3"
     }
   }
 }

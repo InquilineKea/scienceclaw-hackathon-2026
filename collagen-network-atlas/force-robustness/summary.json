@@ -1,0 +1,226 @@
+[
+  {
+    "family": "isotropic",
+    "metric": "participation",
+    "meanDelta": -0.05784873476618494,
+    "ci": [
+      -0.06956114958611066,
+      -0.04474882966113004
+    ],
+    "resolvedPairs": 120,
+    "totalPairs": 120,
+    "seeds": 10,
+    "anglesPerSeed": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "positivePairs": 7,
+    "negativePairs": 113,
+    "positiveSeedMeans": 0,
+    "negativeSeedMeans": 10
+  },
+  {
+    "family": "isotropic",
+    "metric": "maxShare",
+    "meanDelta": 0.011425708753060416,
+    "ci": [
+      0.006134752008607957,
+      0.01615829682455836
+    ],
+    "resolvedPairs": 120,
+    "totalPairs": 120,
+    "seeds": 10,
+    "anglesPerSeed": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "positivePairs": 99,
+    "negativePairs": 21,
+    "positiveSeedMeans": 9,
+    "negativeSeedMeans": 1
+  },
+  {
+    "family": "isotropic",
+    "metric": "spread",
+    "meanDelta": -0.022401674782714685,
+    "ci": [
+      -0.030301121480669387,
+      -0.015485062543607212
+    ],
+    "resolvedPairs": 86,
+    "totalPairs": 120,
+    "seeds": 10,
+    "anglesPerSeed": [
+      8,
+      7,
+      8,
+      10,
+      8,
+      11,
+      6,
+      8,
+      9,
+      11
+    ],
+    "positivePairs": 23,
+    "negativePairs": 59,
+    "positiveSeedMeans": 0,
+    "negativeSeedMeans": 10
+  },
+  {
+    "family": "isotropic",
+    "metric": "patch",
+    "meanDelta": 0.05567611954073794,
+    "ci": [
+      0.026987790452681886,
+      0.08131745703853599
+    ],
+    "resolvedPairs": 81,
+    "totalPairs": 120,
+    "seeds": 8,
+    "anglesPerSeed": [
+      8,
+      5,
+      8,
+      9,
+      8,
+      10,
+      4,
+      9,
+      9,
+      11
+    ],
+    "positivePairs": 53,
+    "negativePairs": 24,
+    "positiveSeedMeans": 6,
+    "negativeSeedMeans": 2
+  },
+  {
+    "family": "modular",
+    "metric": "participation",
+    "meanDelta": -0.026944148729928043,
+    "ci": [
+      -0.04029489289737025,
+      -0.013058713931226458
+    ],
+    "resolvedPairs": 120,
+    "totalPairs": 120,
+    "seeds": 10,
+    "anglesPerSeed": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "positivePairs": 27,
+    "negativePairs": 93,
+    "positiveSeedMeans": 1,
+    "negativeSeedMeans": 9
+  },
+  {
+    "family": "modular",
+    "metric": "maxShare",
+    "meanDelta": 0.00319162199212514,
+    "ci": [
+      -0.0017799711495857064,
+      0.00770180199120022
+    ],
+    "resolvedPairs": 120,
+    "totalPairs": 120,
+    "seeds": 10,
+    "anglesPerSeed": [
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12,
+      12
+    ],
+    "positivePairs": 74,
+    "negativePairs": 46,
+    "positiveSeedMeans": 7,
+    "negativeSeedMeans": 3
+  },
+  {
+    "family": "modular",
+    "metric": "spread",
+    "meanDelta": -0.03681903357801634,
+    "ci": [
+      -0.04857535559978522,
+      -0.024776069414702763
+    ],
+    "resolvedPairs": 81,
+    "totalPairs": 120,
+    "seeds": 7,
+    "anglesPerSeed": [
+      10,
+      11,
+      5,
+      7,
+      9,
+      10,
+      4,
+      5,
+      11,
+      9
+    ],
+    "positivePairs": 13,
+    "negativePairs": 68,
+    "positiveSeedMeans": 0,
+    "negativeSeedMeans": 7
+  },
+  {
+    "family": "modular",
+    "metric": "patch",
+    "meanDelta": -0.021812249680114165,
+    "ci": [
+      -0.05186215651179219,
+      0.008447169887826617
+    ],
+    "resolvedPairs": 73,
+    "totalPairs": 120,
+    "seeds": 7,
+    "anglesPerSeed": [
+      9,
+      10,
+      5,
+      7,
+      8,
+      9,
+      4,
+      3,
+      11,
+      7
+    ],
+    "positivePairs": 30,
+    "negativePairs": 43,
+    "positiveSeedMeans": 3,
+    "negativeSeedMeans": 4
+  }
+]
