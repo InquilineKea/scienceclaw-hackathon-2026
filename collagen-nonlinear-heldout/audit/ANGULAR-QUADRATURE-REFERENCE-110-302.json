@@ -1,0 +1,1072 @@
+{
+  "scope": "Controlled local energy/tangent integration, not full FE re-equilibration or experimental scoring",
+  "reference_grid": "64polar Gauss-Legendre x128azimuth =8192 positive sphere points; comparison2048checks reference convergence",
+  "records": [
+    {
+      "probe": "mixed_6pct",
+      "d0": null,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.011645535394030687,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 5.736442052429872e-05,
+          "Piola_relative_difference_vs8192": 0.0005653657585811239,
+          "right_rotation_energy_relative_difference": 0.00010344344048194117
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 3.640145867828164e-06,
+          "Piola_relative_difference_vs8192": 8.656272748627761e-05,
+          "right_rotation_energy_relative_difference": 1.0080039500873655e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.0117473139446862e-07,
+          "Piola_relative_difference_vs8192": 7.672364605869292e-06,
+          "right_rotation_energy_relative_difference": 2.463410942824721e-07
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 2.6292356348112068e-08
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": null,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.005607583800283648,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0009024244682987325,
+          "Piola_relative_difference_vs8192": 0.01375039330205349,
+          "right_rotation_energy_relative_difference": 0.0018728059052552908
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 9.57910729457326e-06,
+          "Piola_relative_difference_vs8192": 0.004572914142088031,
+          "right_rotation_energy_relative_difference": 0.0002733276828767477
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.0569287853911573e-05,
+          "Piola_relative_difference_vs8192": 0.0004783236791643055,
+          "right_rotation_energy_relative_difference": 1.0044800178972952e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 2.815327714677274e-06
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": null,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.01028367121967691,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0006340181773949967,
+          "Piola_relative_difference_vs8192": 0.003988782590056352,
+          "right_rotation_energy_relative_difference": 0.0005578188226277657
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 5.1059003936524785e-05,
+          "Piola_relative_difference_vs8192": 0.000659070652882486,
+          "right_rotation_energy_relative_difference": 2.1223680660027344e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.0142260400886181e-05,
+          "Piola_relative_difference_vs8192": 0.00010896361352839654,
+          "right_rotation_energy_relative_difference": 1.331644726670891e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 2.0459471624652403e-07
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": 0.0025,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.009763596924369938,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.00039248633983633924,
+          "Piola_relative_difference_vs8192": 0.002591661653719234,
+          "right_rotation_energy_relative_difference": 0.0008084960854758852
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.00010495486156858458,
+          "Piola_relative_difference_vs8192": 0.0009630816056394377,
+          "right_rotation_energy_relative_difference": 0.00020888228882310364
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 4.158251019822334e-06,
+          "Piola_relative_difference_vs8192": 0.0001232176528366178,
+          "right_rotation_energy_relative_difference": 3.258033508861374e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 5.767381711866803e-07
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": 0.0025,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.0037256453306228963,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0005086140319986776,
+          "Piola_relative_difference_vs8192": 0.0309730381080743,
+          "right_rotation_energy_relative_difference": 0.0010247747789752593
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.0002780890479389919,
+          "Piola_relative_difference_vs8192": 0.010351758504594003,
+          "right_rotation_energy_relative_difference": 0.0009268558437828102
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 4.6947546568932955e-06,
+          "Piola_relative_difference_vs8192": 0.000248653062618219,
+          "right_rotation_energy_relative_difference": 5.810865495054805e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 2.643831064888085e-06
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": 0.0025,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.008401732750016162,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0003992663474830064,
+          "Piola_relative_difference_vs8192": 0.0056036159591370755,
+          "right_rotation_energy_relative_difference": 0.00011385745359580163
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 5.44226660449693e-05,
+          "Piola_relative_difference_vs8192": 0.0014671230725745437,
+          "right_rotation_energy_relative_difference": 0.000202784947776809
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 7.44162483070151e-06,
+          "Piola_relative_difference_vs8192": 0.0002755864668758796,
+          "right_rotation_energy_relative_difference": 2.0426839435001098e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 4.562442664424107e-07
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": 0.01,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.010329733701435423,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 1.8073151475603312e-05,
+          "Piola_relative_difference_vs8192": 0.0022899758431741525,
+          "right_rotation_energy_relative_difference": 3.3378695616564504e-05
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 4.5849209659495204e-05,
+          "Piola_relative_difference_vs8192": 0.00019532406136424537,
+          "right_rotation_energy_relative_difference": 8.384207409651189e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 2.1680248443942745e-07,
+          "Piola_relative_difference_vs8192": 4.4556815898711994e-05,
+          "right_rotation_energy_relative_difference": 2.128818908205915e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.6479831917406737e-07
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": 0.01,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.0042917821076883965,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0012912594786483366,
+          "Piola_relative_difference_vs8192": 0.032519699350870374,
+          "right_rotation_energy_relative_difference": 0.0026461321293695652
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.00011299136661542627,
+          "Piola_relative_difference_vs8192": 0.0072539603453521,
+          "right_rotation_energy_relative_difference": 0.0005314501587754096
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.301331698408182e-05,
+          "Piola_relative_difference_vs8192": 0.0005395354319107573,
+          "right_rotation_energy_relative_difference": 7.3323100541872946e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 3.210478678655391e-06
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": 0.01,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.008967869527081649,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0007807225517622177,
+          "Piola_relative_difference_vs8192": 0.006260197215878438,
+          "right_rotation_energy_relative_difference": 0.0007355381730689142
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 1.0468613381227912e-05,
+          "Piola_relative_difference_vs8192": 0.000594829320606237,
+          "right_rotation_energy_relative_difference": 5.914510317613684e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.1249254696708179e-05,
+          "Piola_relative_difference_vs8192": 0.00017042458522290445,
+          "right_rotation_energy_relative_difference": 1.804223805295695e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.0646218128542411e-08
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": 0.04,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.011079598849210648,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 1.3355763060597015e-05,
+          "Piola_relative_difference_vs8192": 0.0006136214247183515,
+          "right_rotation_energy_relative_difference": 1.0540137333395574e-06
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 1.4274794190801496e-05,
+          "Piola_relative_difference_vs8192": 8.770254357468463e-05,
+          "right_rotation_energy_relative_difference": 2.6486561260730227e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.0865396788276211e-07,
+          "Piola_relative_difference_vs8192": 9.517300286406933e-06,
+          "right_rotation_energy_relative_difference": 3.9754220457957366e-07
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.9885416151490293e-08
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": 0.04,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.005041647255463581,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.001106884275451119,
+          "Piola_relative_difference_vs8192": 0.021176863529248868,
+          "right_rotation_energy_relative_difference": 0.0023234951108949717
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 3.3616630442739725e-05,
+          "Piola_relative_difference_vs8192": 0.005880713601719667,
+          "right_rotation_energy_relative_difference": 0.000338910316995571
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.176078014391409e-05,
+          "Piola_relative_difference_vs8192": 0.0005828759828422209,
+          "right_rotation_energy_relative_difference": 9.72971326167231e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 3.0269220661937397e-06
+        }
+      }
+    },
+    {
+      "probe": "mixed_6pct",
+      "d0": 0.04,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.009717734674856864,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.00072446243484073,
+          "Piola_relative_difference_vs8192": 0.004743452471199134,
+          "right_rotation_energy_relative_difference": 0.0007154396160958368
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 4.212051954941284e-05,
+          "Piola_relative_difference_vs8192": 0.0006469492520924628,
+          "right_rotation_energy_relative_difference": 4.341637028520778e-06
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.0735549097230022e-05,
+          "Piola_relative_difference_vs8192": 0.00012631674296969473,
+          "right_rotation_energy_relative_difference": 1.4840412354089768e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.6232939465362584e-07
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": null,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.021372340056140623,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 5.6596036931603654e-05,
+          "Piola_relative_difference_vs8192": 0.0008065607185671494,
+          "right_rotation_energy_relative_difference": 2.8171731378250133e-05
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 6.997014543049145e-07,
+          "Piola_relative_difference_vs8192": 9.213721562061892e-05,
+          "right_rotation_energy_relative_difference": 7.807789780252174e-07
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 7.427976485570821e-07,
+          "Piola_relative_difference_vs8192": 2.5173666276829022e-05,
+          "right_rotation_energy_relative_difference": 6.076337388412386e-07
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 3.1241915882428435e-08
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": null,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.011933399423978587,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.000517178798853023,
+          "Piola_relative_difference_vs8192": 0.0038676019181420815,
+          "right_rotation_energy_relative_difference": 0.0001223819621525987
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 7.498320531907923e-05,
+          "Piola_relative_difference_vs8192": 0.0018626808368844968,
+          "right_rotation_energy_relative_difference": 8.257628446321313e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 4.1697326260345696e-05,
+          "Piola_relative_difference_vs8192": 0.0013381142769496614,
+          "right_rotation_energy_relative_difference": 2.8241969053106093e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.0626005112360511e-05
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": null,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.017663451997296693,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0008031040440659822,
+          "Piola_relative_difference_vs8192": 0.00506162969729852,
+          "right_rotation_energy_relative_difference": 0.0012315118843218636
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 4.3100664664779064e-05,
+          "Piola_relative_difference_vs8192": 0.0013089666346270264,
+          "right_rotation_energy_relative_difference": 1.6609354035575717e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 3.149460237272794e-05,
+          "Piola_relative_difference_vs8192": 0.0003518959087292535,
+          "right_rotation_energy_relative_difference": 3.099059738553039e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 5.243582605360101e-06
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": 0.0025,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.013732857735554525,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 2.3178441806411917e-05,
+          "Piola_relative_difference_vs8192": 0.0029676260148275044,
+          "right_rotation_energy_relative_difference": 0.0011315815112299054
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 4.0927911844495706e-05,
+          "Piola_relative_difference_vs8192": 0.0008767508705573688,
+          "right_rotation_energy_relative_difference": 0.0001964952883093144
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 5.826111857674817e-05,
+          "Piola_relative_difference_vs8192": 0.0005226240422442548,
+          "right_rotation_energy_relative_difference": 6.690130564910206e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.2302891532705703e-05
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": 0.0025,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.004293917103392715,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0017931565626452504,
+          "Piola_relative_difference_vs8192": 0.0332048731001093,
+          "right_rotation_energy_relative_difference": 0.00313864399014438
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 8.098445630995917e-05,
+          "Piola_relative_difference_vs8192": 0.010928786607092634,
+          "right_rotation_energy_relative_difference": 0.00039494882199539764
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 7.414101925001262e-05,
+          "Piola_relative_difference_vs8192": 0.00807080661090698,
+          "right_rotation_energy_relative_difference": 0.00013849023616145499
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 6.871899239261093e-05
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": 0.0025,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.010023969676710645,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0015675979368335073,
+          "Piola_relative_difference_vs8192": 0.005723563552174349,
+          "right_rotation_energy_relative_difference": 0.003655263784271537
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 2.13719544677158e-05,
+          "Piola_relative_difference_vs8192": 0.0016470887960826305,
+          "right_rotation_energy_relative_difference": 0.00023824526447143227
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 0.00013689889635886015,
+          "Piola_relative_difference_vs8192": 0.0007134227736017937,
+          "right_rotation_energy_relative_difference": 0.00014755885615467322
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 2.6027781184380627e-05
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": 0.01,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.015288240211501764,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.00011681842091056312,
+          "Piola_relative_difference_vs8192": 0.0008923038147452408,
+          "right_rotation_energy_relative_difference": 0.000599646492268976
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 3.15285287440071e-05,
+          "Piola_relative_difference_vs8192": 0.0002173510669657663,
+          "right_rotation_energy_relative_difference": 5.92013036296531e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 2.5071953348766044e-05,
+          "Piola_relative_difference_vs8192": 4.234331581597842e-05,
+          "right_rotation_energy_relative_difference": 2.6908922282203598e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 3.440359185455079e-06
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": 0.01,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.005849299579339875,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0009565594269126312,
+          "Piola_relative_difference_vs8192": 0.016132862101126445,
+          "right_rotation_energy_relative_difference": 0.0012156059425967474
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 7.31333526089764e-05,
+          "Piola_relative_difference_vs8192": 0.007421561102800486,
+          "right_rotation_energy_relative_difference": 1.659358649583546e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.6827409734578795e-05,
+          "Piola_relative_difference_vs8192": 0.0052097552272348325,
+          "right_rotation_energy_relative_difference": 1.4931337032349327e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 3.055575327536614e-05
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": 0.01,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.011579352152657861,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0011752895174774046,
+          "Piola_relative_difference_vs8192": 0.007173394391683461,
+          "right_rotation_energy_relative_difference": 0.0026158886619700866
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 2.5413372833137856e-05,
+          "Piola_relative_difference_vs8192": 0.0016970960769062409,
+          "right_rotation_energy_relative_difference": 5.138325933563055e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 8.251625528734872e-05,
+          "Piola_relative_difference_vs8192": 0.0003680084777527816,
+          "right_rotation_energy_relative_difference": 8.392323345190018e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.2483250760656684e-05
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": 0.04,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.018184422019301098,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 7.706647667413212e-05,
+          "Piola_relative_difference_vs8192": 0.0009989966620316878,
+          "right_rotation_energy_relative_difference": 0.0001301815818098522
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 8.025228988150651e-06,
+          "Piola_relative_difference_vs8192": 0.00010069010596159231,
+          "right_rotation_energy_relative_difference": 6.698802161802007e-06
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 4.9651602693766214e-06,
+          "Piola_relative_difference_vs8192": 2.4106692533067943e-05,
+          "right_rotation_energy_relative_difference": 5.451786852837934e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 7.566562641956998e-07
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": 0.04,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.008745481387139178,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0006837636236745687,
+          "Piola_relative_difference_vs8192": 0.007564292109645681,
+          "right_rotation_energy_relative_difference": 3.5005704441371156e-05
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 8.733939213112279e-05,
+          "Piola_relative_difference_vs8192": 0.0036729118059861156,
+          "right_rotation_energy_relative_difference": 0.00010065611513907359
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 4.475799042947372e-05,
+          "Piola_relative_difference_vs8192": 0.002616296599619481,
+          "right_rotation_energy_relative_difference": 2.5716420684569685e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.5996275193541763e-05
+        }
+      }
+    },
+    {
+      "probe": "simple_shear_20pct",
+      "d0": 0.04,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.014475533960457112,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0009667160211818668,
+          "Piola_relative_difference_vs8192": 0.0070671889845458575,
+          "right_rotation_energy_relative_difference": 0.0016242728271919588
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 4.354464541740997e-05,
+          "Piola_relative_difference_vs8192": 0.0017415401050708882,
+          "right_rotation_energy_relative_difference": 1.300514142389563e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 4.5764619420941816e-05,
+          "Piola_relative_difference_vs8192": 0.00046663288158398797,
+          "right_rotation_energy_relative_difference": 4.556135855599139e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 7.302745308269211e-06
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": null,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.04044798066944247,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.00012401261014268307,
+          "Piola_relative_difference_vs8192": 0.0004974964896070105,
+          "right_rotation_energy_relative_difference": 0.00023071290031334536
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 1.281863695067729e-05,
+          "Piola_relative_difference_vs8192": 8.254323386218076e-05,
+          "right_rotation_energy_relative_difference": 2.359832944958545e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.429042842117429e-06,
+          "Piola_relative_difference_vs8192": 8.319843304500513e-06,
+          "right_rotation_energy_relative_difference": 1.2391125551538498e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.1211384930353913e-07
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": null,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.012685197891958894,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.002828344327139045,
+          "Piola_relative_difference_vs8192": 0.008670441279907301,
+          "right_rotation_energy_relative_difference": 0.00027428367191881014
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.0004053241662049208,
+          "Piola_relative_difference_vs8192": 0.0043086973797814695,
+          "right_rotation_energy_relative_difference": 0.0005247556964908675
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 6.382785793521001e-05,
+          "Piola_relative_difference_vs8192": 0.00022641183339725606,
+          "right_rotation_energy_relative_difference": 5.449160259672867e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.0344668100946751e-05
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": null,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.022752722706987402,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0005790456408475962,
+          "Piola_relative_difference_vs8192": 0.01266812073633529,
+          "right_rotation_energy_relative_difference": 0.0012107774762935366
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.00016158718444744805,
+          "Piola_relative_difference_vs8192": 0.0034499549392639594,
+          "right_rotation_energy_relative_difference": 0.00012896147511833554
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.636313102918914e-05,
+          "Piola_relative_difference_vs8192": 0.0008619780201259857,
+          "right_rotation_energy_relative_difference": 6.993770868327203e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 4.360784630335982e-07
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": 0.0025,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.034198838524524475,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 9.821836231789849e-05,
+          "Piola_relative_difference_vs8192": 0.0036129573322939337,
+          "right_rotation_energy_relative_difference": 0.0010355906922902885
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 3.0225063019793447e-05,
+          "Piola_relative_difference_vs8192": 0.0009619056773860025,
+          "right_rotation_energy_relative_difference": 7.2620345074716136e-06
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 2.3699098542472757e-05,
+          "Piola_relative_difference_vs8192": 0.00014636326711556946,
+          "right_rotation_energy_relative_difference": 2.3739034523609663e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 3.3136231216222213e-06
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": 0.0025,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.006436055747040923,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.005304554364473476,
+          "Piola_relative_difference_vs8192": 0.01965224935950799,
+          "right_rotation_energy_relative_difference": 0.0034922658225291317
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.0007188282347845414,
+          "Piola_relative_difference_vs8192": 0.022961462598730595,
+          "right_rotation_energy_relative_difference": 0.0012216307678225681
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 0.00024270149667176736,
+          "Piola_relative_difference_vs8192": 0.00223075605849204,
+          "right_rotation_energy_relative_difference": 0.0002257089228227016
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 3.486321283980211e-06
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": 0.0025,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.016503580562069572,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0008987299924711219,
+          "Piola_relative_difference_vs8192": 0.026069223194718633,
+          "right_rotation_energy_relative_difference": 0.0032518527626326514
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.00019155538532121555,
+          "Piola_relative_difference_vs8192": 0.0012868005090030793,
+          "right_rotation_energy_relative_difference": 0.0002506997357874089
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 2.304859362238535e-05,
+          "Piola_relative_difference_vs8192": 0.0007011244767671887,
+          "right_rotation_energy_relative_difference": 3.651372781240602e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 7.192939449042692e-06
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": 0.01,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.0356751885614024,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0004023673364321297,
+          "Piola_relative_difference_vs8192": 0.0023084461458828427,
+          "right_rotation_energy_relative_difference": 0.0008133549550322037
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 2.215383148465206e-05,
+          "Piola_relative_difference_vs8192": 0.0004503587385702604,
+          "right_rotation_energy_relative_difference": 4.8521783426928485e-05
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 5.5197285311626855e-06,
+          "Piola_relative_difference_vs8192": 8.974310200194389e-05,
+          "right_rotation_energy_relative_difference": 5.386562125956978e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 9.837764281681643e-07
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": 0.01,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.007912405783918634,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0056955315119625064,
+          "Piola_relative_difference_vs8192": 0.014819157328517222,
+          "right_rotation_energy_relative_difference": 0.002036394284480254
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.0008152329615240633,
+          "Piola_relative_difference_vs8192": 0.017378192146045458,
+          "right_rotation_energy_relative_difference": 0.0011813191867546269
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 0.00011990327749000293,
+          "Piola_relative_difference_vs8192": 0.001707367532177049,
+          "right_rotation_energy_relative_difference": 0.0001053066535320216
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.2722124097140143e-05
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": 0.01,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.017979930598947185,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.0002130841357782431,
+          "Piola_relative_difference_vs8192": 0.022154363842189117,
+          "right_rotation_energy_relative_difference": 0.0026272538035661663
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.00027727499361462714,
+          "Piola_relative_difference_vs8192": 0.0021781765934307416,
+          "right_rotation_energy_relative_difference": 0.00031261711466991723
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.2969422682277472e-05,
+          "Piola_relative_difference_vs8192": 0.0007387622990939811,
+          "right_rotation_energy_relative_difference": 9.498387962197644e-07
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 2.251599510490205e-06
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": 0.04,
+      "yield_force": null,
+      "zero_previous_slip": true,
+      "reference_energy": 0.03811967241018108,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.00031874318734907334,
+          "Piola_relative_difference_vs8192": 0.0008261887751176346,
+          "right_rotation_energy_relative_difference": 0.00039807169070659744
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 4.9343115876220425e-06,
+          "Piola_relative_difference_vs8192": 7.642490647048925e-05,
+          "right_rotation_energy_relative_difference": 3.7722256937486246e-07
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.9211194288234468e-06,
+          "Piola_relative_difference_vs8192": 2.184491704156619e-05,
+          "right_rotation_energy_relative_difference": 1.773543494778441e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 3.1081342825308064e-07
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": 0.04,
+      "yield_force": 0.01,
+      "zero_previous_slip": true,
+      "reference_energy": 0.010356889632697722,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.004145905748281125,
+          "Piola_relative_difference_vs8192": 0.01440547591349213,
+          "right_rotation_energy_relative_difference": 0.000226538665246203
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.0005646681999644334,
+          "Piola_relative_difference_vs8192": 0.008063232748814174,
+          "right_rotation_energy_relative_difference": 0.0007364332256380787
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 7.966538110635216e-05,
+          "Piola_relative_difference_vs8192": 0.0005571243953573007,
+          "right_rotation_energy_relative_difference": 6.842901692097729e-05
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 1.1964085181906416e-05
+        }
+      }
+    },
+    {
+      "probe": "stretch_compression",
+      "d0": 0.04,
+      "yield_force": 0.04,
+      "zero_previous_slip": true,
+      "reference_energy": 0.02042441444772624,
+      "grids": {
+        "110": {
+          "energy_relative_difference_vs8192": 0.00029559166721311033,
+          "Piola_relative_difference_vs8192": 0.016079943630765793,
+          "right_rotation_energy_relative_difference": 0.0016347383757357441
+        },
+        "302": {
+          "energy_relative_difference_vs8192": 0.00021460284109224047,
+          "Piola_relative_difference_vs8192": 0.0036710272345090132,
+          "right_rotation_energy_relative_difference": 0.00019111966849145472
+        },
+        "2048": {
+          "energy_relative_difference_vs8192": 1.7472969912573547e-05,
+          "Piola_relative_difference_vs8192": 0.0009445909445151084,
+          "right_rotation_energy_relative_difference": 6.9348365716896355e-06
+        },
+        "8192": {
+          "energy_relative_difference_vs8192": 0.0,
+          "Piola_relative_difference_vs8192": 0.0,
+          "right_rotation_energy_relative_difference": 8.438577083125825e-07
+        }
+      }
+    }
+  ],
+  "max_errors": {
+    "110": {
+      "energy": 0.0056955315119625064,
+      "Piola": 0.0332048731001093,
+      "right_rotation_energy": 0.003655263784271537
+    },
+    "302": {
+      "energy": 0.0008152329615240633,
+      "Piola": 0.022961462598730595,
+      "right_rotation_energy": 0.0012216307678225681
+    },
+    "2048": {
+      "energy": 0.00024270149667176736,
+      "Piola": 0.00807080661090698,
+      "right_rotation_energy": 0.0002257089228227016
+    },
+    "8192": {
+      "energy": 0.0,
+      "Piola": 0.0,
+      "right_rotation_energy": 6.871899239261093e-05
+    }
+  }
+}

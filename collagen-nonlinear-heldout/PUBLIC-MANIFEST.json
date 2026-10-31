@@ -1,0 +1,330 @@
+{
+  "scope": "Bounded source/audit export; no upload performed",
+  "bytes": 576946,
+  "files": [
+    {
+      "file": "FINAL-DESIGN-AUDIT.md",
+      "bytes": 6819,
+      "sha256": "4081bd10b7d9554dbecdda767ae67b918b906a47fd5dcfb56578483d3eadc655"
+    },
+    {
+      "file": "NUMERICAL-AMENDMENT.md",
+      "bytes": 718,
+      "sha256": "44842b266c93f9c2fdcf85d70475c0838ee5a6d1af14cd1034f5abc3c0a65512"
+    },
+    {
+      "file": "PROTOCOL-DRAFT.md",
+      "bytes": 12109,
+      "sha256": "cf14235b2d78ec89c9354258ce47df845d2f73548c42a1847471677447cb924a"
+    },
+    {
+      "file": "PROTOCOL-FROZEN.md",
+      "bytes": 3071,
+      "sha256": "135dbd89d3f7662ddd2a0a7b5093794754cc55608f8a53283f90ab85262757b2"
+    },
+    {
+      "file": "README.md",
+      "bytes": 3871,
+      "sha256": "29ffc3f06d0ea8e2d6b74d5278d12794bc57db804a7677df8506f4822508182a"
+    },
+    {
+      "file": "REPORT.md",
+      "bytes": 4596,
+      "sha256": "86f6c2a0bf78680f6470b4b5d3df991a2e9b7bcb8b66e50820585f5d990d204a"
+    },
+    {
+      "file": "SELECTION.json",
+      "bytes": 131999,
+      "sha256": "b83ef7d6c60aea534a8a09c9b7a255192f379fcfc63d04544b2fe915a4083ed3"
+    },
+    {
+      "file": "analyze.mjs",
+      "bytes": 3028,
+      "sha256": "57f0535247fb3674713b900f7485205763b687d029f945b3be67a58b8990d0e1"
+    },
+    {
+      "file": "archive-to-microSD.py",
+      "bytes": 18435,
+      "sha256": "3ef719cd084c06e3a7cf1e1a0a1c23a29929d713c24b8eebe830c2c0c4cf82f5"
+    },
+    {
+      "file": "audit/ANGULAR-QUADRATURE-REFERENCE-110-302.json",
+      "bytes": 41963,
+      "sha256": "8f008849f88d5e64d9fa605e3f6f614cf0a2eef0cee2febcd30e7b755e950986"
+    },
+    {
+      "file": "audit/ANGULAR-QUADRATURE-REFERENCE-EXTENDED.json",
+      "bytes": 68401,
+      "sha256": "b39b7027611066e49e5bb490b2714c88723ca6e6ba10422060b1cc4ff81c1a4f"
+    },
+    {
+      "file": "audit/ANGULAR-QUADRATURE-REFERENCE.json",
+      "bytes": 41604,
+      "sha256": "725ac9768252b30a1a3be5ae5757765ce4d320de5c0d203638401060ceb91c64"
+    },
+    {
+      "file": "audit/CHECK-SCOPE.md",
+      "bytes": 960,
+      "sha256": "4ba599e38d28fc0de39a01acaa18960a218cf0c02a923b3cc61e222e0ff2a5bd"
+    },
+    {
+      "file": "audit/CHECKS.json",
+      "bytes": 8340,
+      "sha256": "14e3303def17491e31c56d1706e788225852478fa8ed0d4ccf6786bb14bc6c96"
+    },
+    {
+      "file": "audit/COMMISSION.json",
+      "bytes": 230,
+      "sha256": "a935ad51e669faca00defd4781fcca3a6b366b50df9bf65a2a0b35d07ac60fbb"
+    },
+    {
+      "file": "audit/CPP-JS-CROSSCHECK.json",
+      "bytes": 2832,
+      "sha256": "67c46fa97d10e0204a668e85a68171e8d9583f0396a238102c3b3e5aa3a0c518"
+    },
+    {
+      "file": "audit/GEOMETRY-PREFLIGHT.json",
+      "bytes": 581,
+      "sha256": "71f44496e520008cfeb92ee2be2a23bdc0079e731d65affcf36c97ccfeae46f1"
+    },
+    {
+      "file": "audit/HESSIAN-angular.json",
+      "bytes": 469,
+      "sha256": "12b4d6ba22bbecb0c97c5794b3070830b8cbe3e50ea58daa2bca7a732bebad9a"
+    },
+    {
+      "file": "audit/HESSIAN-primary.json",
+      "bytes": 470,
+      "sha256": "5e8e71bd76222aabf6f8c454b17210d3e0a418ccceefb3e288706c43765e735b"
+    },
+    {
+      "file": "audit/HESSIAN-step.json",
+      "bytes": 470,
+      "sha256": "ae4daf53d085440eefef4b060037175ece4d258eaadf79f174079be321772615"
+    },
+    {
+      "file": "audit/HVP-AND-RITZ-REVIEW.md",
+      "bytes": 6330,
+      "sha256": "5b998c1fce7d65ebe30109a84bc5a20203e33a94ff9adc55ef67e1e9f55500ff"
+    },
+    {
+      "file": "audit/HVP-AUDIT-HASHES.json",
+      "bytes": 847,
+      "sha256": "f1408db609694ca94edd085dbc8ab40db083d3dfb70693aeb2b076e7a40b883f"
+    },
+    {
+      "file": "audit/HVP-CONTROLLED-READBACK.json",
+      "bytes": 468,
+      "sha256": "540d64af69d27d474cf507e722955752704439ce8ad832aa48d485e2ddfe6faf"
+    },
+    {
+      "file": "audit/HVP-GUARD-READBACK.json",
+      "bytes": 459,
+      "sha256": "07f748c9ea19696218d88639c8763a36ebec70ddb858b5f0526b63f45b8e638b"
+    },
+    {
+      "file": "audit/INDEPENDENT-MATERIAL-REFERENCE.json",
+      "bytes": 13471,
+      "sha256": "d96f075170b383e6d71962c2f4e37f6bcd113995effad6399ceeab2ac6cf68af"
+    },
+    {
+      "file": "audit/NONLINEAR-CONSTITUTIVE-SOLVER-REVIEW.md",
+      "bytes": 8335,
+      "sha256": "89154a5fd11d391944a09bbe60a3157efd53f860ab8c3c43d9557beaec9523cb"
+    },
+    {
+      "file": "audit/NONLINEAR-STATIC-SOURCE-HASHES.json",
+      "bytes": 651,
+      "sha256": "16679fa0ab389e746cf5ce890b41d3f93c100b49bb7780dba379270ada0e6c2a"
+    },
+    {
+      "file": "audit/NUMERICAL-AMENDMENT-HASH.json",
+      "bytes": 207,
+      "sha256": "14565fa19c833e22e9f17776df6f5ee721941c3279cb8d728530a6147617111f"
+    },
+    {
+      "file": "audit/NUMERICAL-CONTROLS-REVIEW-HASH.json",
+      "bytes": 174,
+      "sha256": "c3d51d4698268735fffb81851a962f628d2538095a89fe81be871a270dc8af85"
+    },
+    {
+      "file": "audit/PRODUCTION-HASHES.json",
+      "bytes": 446,
+      "sha256": "c79edd042e6a93dfe082af8d1bbce141f711b46f948ea8fbfc8201afec0d3809"
+    },
+    {
+      "file": "audit/QUADRATURE-PROVENANCE.json",
+      "bytes": 791,
+      "sha256": "b9aa317915f5fb2ecbfff4ad804fb9390d42e096e77dad0e5bb0bac904fc5a91"
+    },
+    {
+      "file": "audit/SELECTION-FREEZE-RECEIPT.json",
+      "bytes": 367,
+      "sha256": "91001aa3f7c0a70b9170244d147ded88406d8de93003891dbc6ce5691e2531ed"
+    },
+    {
+      "file": "audit/angular-quadrature-audit-110-302.py",
+      "bytes": 4774,
+      "sha256": "c71d63b927974a89b99ab3351dfc48faf02ae58f6ada92bd4f6d4b8e7080f05f"
+    },
+    {
+      "file": "audit/angular-quadrature-audit-extended.py",
+      "bytes": 4454,
+      "sha256": "1a02f3dc895f8cb09a087e2fcbd9e421c574724b30f15f79257e81608ddc5045"
+    },
+    {
+      "file": "audit/angular-quadrature-audit.py",
+      "bytes": 4373,
+      "sha256": "4596f75f67ad97f5f3d223446419ae6e1b3d7d0fa0f739b36bd37b56d67e891b"
+    },
+    {
+      "file": "audit/check-ritz.cpp",
+      "bytes": 1737,
+      "sha256": "a0249a466261033c64101bbb1fd1a6276e36a37b5ee5b06d95747454741005b0"
+    },
+    {
+      "file": "audit/independent-material-audit.py",
+      "bytes": 6965,
+      "sha256": "cb27a1e35860fc7a92cbc581bd9d3260ec311bfe54275ee6258d7f1453b842e2"
+    },
+    {
+      "file": "benchmark.mjs",
+      "bytes": 2593,
+      "sha256": "9696ca73d48544f3e2c0efd3f0837c47f8de5535aae90ffab9f537db780f32da"
+    },
+    {
+      "file": "checks.mjs",
+      "bytes": 2915,
+      "sha256": "aef8eac0ac07e02b77a37c7310b7d90174656e8ae0bd588ada5956477712ee26"
+    },
+    {
+      "file": "collect-test.mjs",
+      "bytes": 3082,
+      "sha256": "31605723a74efdff07da608b4473f34d861414779c20d32d1f36ccb578f4db80"
+    },
+    {
+      "file": "commission.mjs",
+      "bytes": 1016,
+      "sha256": "d359b77bff9dd76ad468af555d1886188d89737c4406269e1d7685c0f725e8d4"
+    },
+    {
+      "file": "crosscheck.mjs",
+      "bytes": 2284,
+      "sha256": "3d5a855429a90b8c2e6e88aa85315a0334eefb8129b7f6e8f3e5c7677929838b"
+    },
+    {
+      "file": "finish-compute.mjs",
+      "bytes": 620,
+      "sha256": "a9ae0fd855198dfd5a11f76b700da048c5abc1970cb26dbcdb2fe3636ca2ee05"
+    },
+    {
+      "file": "gif-helpers.py",
+      "bytes": 4076,
+      "sha256": "4d9935f78c6754ae97d410ad7364f59d7e7d67370b35aa1cb1aaa6a201b28d88"
+    },
+    {
+      "file": "hvp-audit.cpp",
+      "bytes": 4778,
+      "sha256": "52107e5ec8d77e6f6a99f77ce86b0101a5ddf72d2b0d9cace96697ea00c59a00"
+    },
+    {
+      "file": "linear-fe-base.mjs",
+      "bytes": 4837,
+      "sha256": "25a1683c95bd81506f24ab4c74dd6f7a76fdee3b7adb9b15abad6485decdb09e"
+    },
+    {
+      "file": "make-animation.py",
+      "bytes": 2076,
+      "sha256": "7aa2d827168c16fc57f8b8f306d785476b73b7727d709dccec3056152aed6bb1"
+    },
+    {
+      "file": "make-plots.py",
+      "bytes": 3442,
+      "sha256": "9a2b4672c269e2fdc05ce4b164a395f790a8d97897664328bb1aa1eeba550a42"
+    },
+    {
+      "file": "material.mjs",
+      "bytes": 2921,
+      "sha256": "4774f42a6df28ab16364bb6e9b36b779779e8d63d36c01bf0184bbb8ab64a15d"
+    },
+    {
+      "file": "nonlinear-fe.mjs",
+      "bytes": 4907,
+      "sha256": "39a5fcb26c581c8abd58e0dba5f6287e8411a33e33ed610d154f0d22d22b7997"
+    },
+    {
+      "file": "numerical-controls.json",
+      "bytes": 35173,
+      "sha256": "c354fb0a5ecd651ecdf728f91b481f20de6b0f3e35dfe2d6ef901e942f099b90"
+    },
+    {
+      "file": "numerical-controls.mjs",
+      "bytes": 5417,
+      "sha256": "34415526759b2af906c693f210ed8208225add8656836ac33051b1f55047a057"
+    },
+    {
+      "file": "preflight.mjs",
+      "bytes": 1128,
+      "sha256": "0b9b6bc2af4d8749e49e3aeb42ab2a78cce1280fda8bf76c193a7b2c29670bb3"
+    },
+    {
+      "file": "prepare-input.mjs",
+      "bytes": 1535,
+      "sha256": "d5e4b994c19f197e0e46f61c149006dafa025343a57359f30fe967321ee4fdcc"
+    },
+    {
+      "file": "prepare-public-web.py",
+      "bytes": 2461,
+      "sha256": "a5c5a9153af4f4de6e0372866c3036e30c5a326eaf50285654d84bb3417bcb4f"
+    },
+    {
+      "file": "prepare-wordpress.py",
+      "bytes": 6638,
+      "sha256": "3694e7d1596ebd6074f21ba9d2bb1b5c1f0ec973659addd6351b0418058c3c9f"
+    },
+    {
+      "file": "public-audit-summary.json",
+      "bytes": 9935,
+      "sha256": "b153ab1adfefc25dd42889a20fc1a9b5dba0d827e20f2cd0ea07e8343b459938"
+    },
+    {
+      "file": "report-and-stage-public.py",
+      "bytes": 13269,
+      "sha256": "85eb9869ce9d90fb972c13aea207f4d6a3a5f5f13ee1a76e63e59c4359f93235"
+    },
+    {
+      "file": "results.json",
+      "bytes": 42809,
+      "sha256": "a39b1db36b423870957c85072f075ea464205ffc8e71fd3b022a96a1964297c9"
+    },
+    {
+      "file": "run-refinements.mjs",
+      "bytes": 933,
+      "sha256": "7188c034f937ca9deb941ff3b8b5f3386e54cea95f89828fc1ac61ce9030a67a"
+    },
+    {
+      "file": "run-sweep.mjs",
+      "bytes": 1349,
+      "sha256": "50410b410eff5e5e9b952adda74ae0ee7ef68613d67f0a8d3220a5d3dd0fc734"
+    },
+    {
+      "file": "run-test.mjs",
+      "bytes": 1003,
+      "sha256": "ab0a1953b3bf11dd825d153ab8f8ceb7cb67ad275e7984cd3e4139809c7c2bdb"
+    },
+    {
+      "file": "solver.cpp",
+      "bytes": 9934,
+      "sha256": "f409620b8d5b0fd39ead6b12572a78781448a8851711ac9993f027114a8d1476"
+    }
+  ],
+  "exclusions": [
+    "binaries",
+    "inputs",
+    "raw image/archive files",
+    "fields.json",
+    "Lebedev raw tables",
+    "probes",
+    "run/test binary states"
+  ]
+}

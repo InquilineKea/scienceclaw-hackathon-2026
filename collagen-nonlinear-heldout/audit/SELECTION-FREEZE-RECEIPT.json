@@ -1,0 +1,10 @@
+{
+  "selection_sha256": "b83ef7d6c60aea534a8a09c9b7a255192f379fcfc63d04544b2fe915a4083ed3",
+  "selection_frozen_at": "2026-10-31T23:35:28.301Z",
+  "primary_parameters": {
+    "b": 0.0025,
+    "y": 0.04
+  },
+  "all_twelve_selection_cases_terminal_and_converged": true,
+  "final_benchmark_scoring": "Not yet performed; collect-test follows completed prediction jobs."
+}

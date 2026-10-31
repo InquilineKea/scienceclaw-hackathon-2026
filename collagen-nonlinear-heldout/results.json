@@ -1,0 +1,1404 @@
+{
+  "created": "2026-10-31T23:50:00.569Z",
+  "test": [
+    {
+      "label": "Harmonic",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.1281372528187985,
+        "balanced_vector_RMSE_um": 1.062138057325317,
+        "balanced_vector_NRMSE": 0.35519891565582584,
+        "pooled_vector_RMSE_um": 1.0527192782089794,
+        "pooled_vector_NRMSE": 0.37761843357236113,
+        "strain_Frobenius_RMSE": 0.028444507154249617,
+        "strain_Frobenius_NRMSE": 0.7420726542232889,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.5520255377436184,
+            "NRMSE": 0.47948228399001863
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.6819991316940712,
+            "NRMSE": 0.31762231282201053
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 0.9714998777181602,
+            "NRMSE": 0.22268135008928555
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.5753513181013099,
+            "NRMSE": 0.4311864385733489
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 0.8797902581339482,
+            "NRMSE": 0.37554270463391987
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.3629604527376813,
+            "NRMSE": 0.3156217917637003
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.5110537355012468,
+            "NRMSE": 0.4753353772845897
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.4371591336187859,
+            "NRMSE": 0.4426409954045803
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.6047619794239361
+      }
+    },
+    {
+      "label": "control",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.6017885791974857,
+        "balanced_vector_RMSE_um": 1.2656178646011147,
+        "balanced_vector_NRMSE": 0.42324638500667955,
+        "pooled_vector_RMSE_um": 1.2547619385390527,
+        "pooled_vector_NRMSE": 0.450092676694837,
+        "strain_Frobenius_RMSE": 0.0302476143247996,
+        "strain_Frobenius_NRMSE": 0.7891128970597399,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.5063249772166161,
+            "NRMSE": 0.43978736474646685
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.7989992993888896,
+            "NRMSE": 0.3721119186540327
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 1.1541169256975607,
+            "NRMSE": 0.26453972982360613
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.5163976743401313,
+            "NRMSE": 0.38700471708500334
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 1.233187759752993,
+            "NRMSE": 0.5263921285072632
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.665285439573688,
+            "NRMSE": 0.3856314195914583
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.7883491331091426,
+            "NRMSE": 0.5625647784266384
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.6818950818657208,
+            "NRMSE": 0.5180189832760627
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.6915997953595148
+      }
+    },
+    {
+      "label": "buckling",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 0.7729845803115523,
+        "balanced_vector_RMSE_um": 0.8791954164527658,
+        "balanced_vector_NRMSE": 0.2940194604833231,
+        "pooled_vector_RMSE_um": 0.8778671089185486,
+        "pooled_vector_NRMSE": 0.31489762695189527,
+        "strain_Frobenius_RMSE": 0.026882592406667113,
+        "strain_Frobenius_NRMSE": 0.7013247440512582,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.3220596185728824,
+            "NRMSE": 0.27973684356247897
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.5283494050027199,
+            "NRMSE": 0.2460641842435294
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 0.6384124291325979,
+            "NRMSE": 0.1463330514944951
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.4306174176620691,
+            "NRMSE": 0.3227182851029209
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 0.7509818524102783,
+            "NRMSE": 0.32056021691275494
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.229875799576104,
+            "NRMSE": 0.28480327710853454
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.378454004629138,
+            "NRMSE": 0.43362319880867284
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.1096376403289514,
+            "NRMSE": 0.34176529109676346
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.5309146428134669
+      }
+    },
+    {
+      "label": "sliding",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.7117533628413968,
+        "balanced_vector_RMSE_um": 1.3083399263346651,
+        "balanced_vector_NRMSE": 0.4375334448645587,
+        "pooled_vector_RMSE_um": 1.2940131902469967,
+        "pooled_vector_NRMSE": 0.46417240002898674,
+        "strain_Frobenius_RMSE": 0.030866772381447943,
+        "strain_Frobenius_NRMSE": 0.8052657613013032,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.502442190963802,
+            "NRMSE": 0.43641482653319136
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.8283187355240196,
+            "NRMSE": 0.3857666385548413
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 1.2308847821097022,
+            "NRMSE": 0.28213599545512424
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.5148475936605085,
+            "NRMSE": 0.3858430376958719
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 1.2752117393975866,
+            "NRMSE": 0.5443302664092274
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.7253001878643845,
+            "NRMSE": 0.3995290806348948
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.823450801630682,
+            "NRMSE": 0.5736067847153624
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.7457155793007688,
+            "NRMSE": 0.5376755180682345
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.7085650101745439
+      }
+    },
+    {
+      "label": "combined",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 0.8056913615962178,
+        "balanced_vector_RMSE_um": 0.8976031203133252,
+        "balanced_vector_NRMSE": 0.3001753423914145,
+        "pooled_vector_RMSE_um": 0.8952598786054881,
+        "pooled_vector_NRMSE": 0.3211365460831579,
+        "strain_Frobenius_RMSE": 0.02695970091071165,
+        "strain_Frobenius_NRMSE": 0.7033363841879364,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.32189697245803967,
+            "NRMSE": 0.27959557123847434
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.5476710775250858,
+            "NRMSE": 0.2550627210875562
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 0.665177445162592,
+            "NRMSE": 0.15246796724839037
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.43605688290034916,
+            "NRMSE": 0.326794792047543
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 0.7647950593206733,
+            "NRMSE": 0.3264564507421683
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.2545717862887438,
+            "NRMSE": 0.29052214559071204
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.3976662035407357,
+            "NRMSE": 0.4396668209536401
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.13887238873536,
+            "NRMSE": 0.35076951187670646
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.5334281796024011
+      }
+    }
+  ],
+  "rows": [
+    {
+      "b": -1,
+      "y": -1,
+      "id": "Pos008-control-q110-s10",
+      "exit": {
+        "code": 0,
+        "signal": null,
+        "finished": "2026-10-31T23:36:46.003Z"
+      },
+      "valid": true,
+      "history": [
+        {
+          "step": 1,
+          "fraction": 0.1,
+          "converged": 1,
+          "relative": 6.874493792006817e-8,
+          "iterations": 66,
+          "evaluations": 69,
+          "restarts": 0,
+          "potential": 758.7082996481325,
+          "stored": 758.7082996481325,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 757.6827387793568,
+          "relative_balance": 0.0013517195861062572,
+          "minJ": 0.976967522313244,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 6.896197958
+        },
+        {
+          "step": 2,
+          "fraction": 0.2,
+          "converged": 1,
+          "relative": 6.389802159884801e-8,
+          "iterations": 71,
+          "evaluations": 91,
+          "restarts": 0,
+          "potential": 3026.6281227141503,
+          "stored": 3026.6281227141503,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 3024.5765196929187,
+          "relative_balance": 0.0006778510401838848,
+          "minJ": 0.9540944616410909,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 15.298928375
+        },
+        {
+          "step": 3,
+          "fraction": 0.3,
+          "converged": 1,
+          "relative": 6.590018380695852e-8,
+          "iterations": 71,
+          "evaluations": 111,
+          "restarts": 0,
+          "potential": 6791.485987546176,
+          "stored": 6791.485987546176,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 6788.45674828925,
+          "relative_balance": 0.0004460348239665284,
+          "minJ": 0.9313900999103583,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 25.688036708
+        },
+        {
+          "step": 4,
+          "fraction": 0.4,
+          "converged": 1,
+          "relative": 8.947612790701028e-8,
+          "iterations": 73,
+          "evaluations": 82,
+          "restarts": 0,
+          "potential": 12041.770541435459,
+          "stored": 12041.770541435459,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 12037.97876730207,
+          "relative_balance": 0.00031488510101916264,
+          "minJ": 0.9088841415300186,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 35.843846958
+        },
+        {
+          "step": 5,
+          "fraction": 0.5,
+          "converged": 1,
+          "relative": 6.899347981733293e-8,
+          "iterations": 74,
+          "evaluations": 81,
+          "restarts": 0,
+          "potential": 18768.34072543504,
+          "stored": 18768.34072543504,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 18764.023003368697,
+          "relative_balance": 0.0002300534783285631,
+          "minJ": 0.8866020286299405,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 42.44495525
+        },
+        {
+          "step": 6,
+          "fraction": 0.6,
+          "converged": 1,
+          "relative": 9.364304178505294e-8,
+          "iterations": 74,
+          "evaluations": 79,
+          "restarts": 0,
+          "potential": 26964.77256939855,
+          "stored": 26964.77256939855,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 26960.087468640842,
+          "relative_balance": 0.00017374894394707653,
+          "minJ": 0.86455701290698,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 49.067534583
+        },
+        {
+          "step": 7,
+          "fraction": 0.7,
+          "converged": 1,
+          "relative": 9.941390154488913e-8,
+          "iterations": 74,
+          "evaluations": 79,
+          "restarts": 0,
+          "potential": 36626.600046909254,
+          "stored": 36626.600046909254,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 36621.65738954943,
+          "relative_balance": 0.00013494720649731437,
+          "minJ": 0.842746831732736,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 55.340927666
+        },
+        {
+          "step": 8,
+          "fraction": 0.8,
+          "converged": 1,
+          "relative": 8.970492778941858e-8,
+          "iterations": 77,
+          "evaluations": 84,
+          "restarts": 0,
+          "potential": 47750.67993213268,
+          "stored": 47750.67993213268,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 47745.55209020957,
+          "relative_balance": 0.00010738783050638802,
+          "minJ": 0.8211719645021706,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 62.340893958
+        },
+        {
+          "step": 9,
+          "fraction": 0.9,
+          "converged": 1,
+          "relative": 9.790447596771208e-8,
+          "iterations": 79,
+          "evaluations": 83,
+          "restarts": 0,
+          "potential": 60334.74939340728,
+          "stored": 60334.74939340728,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 60329.48560265923,
+          "relative_balance": 0.00008724310287134285,
+          "minJ": 0.799835664294126,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 69.59082925
+        },
+        {
+          "step": 10,
+          "fraction": 1,
+          "converged": 1,
+          "relative": 7.937694770351726e-8,
+          "iterations": 81,
+          "evaluations": 83,
+          "restarts": 0,
+          "potential": 74377.14678170114,
+          "stored": 74377.14678170114,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 74371.78261289645,
+          "relative_balance": 0.00007212119631902318,
+          "minJ": 0.7787432200104797,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 76.661651125
+        }
+      ],
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.6017885791974857,
+        "balanced_vector_RMSE_um": 1.2656178646011147,
+        "balanced_vector_NRMSE": 0.42324638500667955,
+        "pooled_vector_RMSE_um": 1.2547619385390527,
+        "pooled_vector_NRMSE": 0.450092676694837,
+        "strain_Frobenius_RMSE": 0.0302476143247996,
+        "strain_Frobenius_NRMSE": 0.7891128970597399,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.5063249772166161,
+            "NRMSE": 0.43978736474646685
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.7989992993888896,
+            "NRMSE": 0.3721119186540327
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 1.1541169256975607,
+            "NRMSE": 0.26453972982360613
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.5163976743401313,
+            "NRMSE": 0.38700471708500334
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 1.233187759752993,
+            "NRMSE": 0.5263921285072632
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.665285439573688,
+            "NRMSE": 0.3856314195914583
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.7883491331091426,
+            "NRMSE": 0.5625647784266384
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.6818950818657208,
+            "NRMSE": 0.5180189832760627
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "name": "control",
+      "specimen": "Pos008",
+      "steps": 10,
+      "quad": 110,
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.6915997953595148
+      }
+    },
+    {
+      "b": 0.0025,
+      "y": -1,
+      "id": "Pos008-buckling-q110-s10",
+      "exit": {
+        "code": 0,
+        "signal": null,
+        "finished": "2026-10-31T23:40:51.902Z"
+      },
+      "valid": true,
+      "history": [
+        {
+          "step": 1,
+          "fraction": 0.1,
+          "converged": 1,
+          "relative": 9.892411694420828e-8,
+          "iterations": 111,
+          "evaluations": 115,
+          "restarts": 0,
+          "potential": 534.1732274466772,
+          "stored": 534.1732274466772,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 457.9468289604068,
+          "relative_balance": 0.1426997733499842,
+          "minJ": 0.9736352998710865,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 18.840323709
+        },
+        {
+          "step": 2,
+          "fraction": 0.2,
+          "converged": 1,
+          "relative": 8.400691169812019e-8,
+          "iterations": 136,
+          "evaluations": 142,
+          "restarts": 0,
+          "potential": 1669.9576278570953,
+          "stored": 1669.9576278570953,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 1571.422568474405,
+          "relative_balance": 0.05900452666522532,
+          "minJ": 0.9450190979771478,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 43.333946209
+        },
+        {
+          "step": 3,
+          "fraction": 0.3,
+          "converged": 1,
+          "relative": 9.599356709685611e-8,
+          "iterations": 159,
+          "evaluations": 186,
+          "restarts": 0,
+          "potential": 3099.2037600730005,
+          "stored": 3099.2037600730005,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 2991.575462434589,
+          "relative_balance": 0.03472772556131522,
+          "minJ": 0.9169798623726476,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 70.110059292
+        },
+        {
+          "step": 4,
+          "fraction": 0.4,
+          "converged": 1,
+          "relative": 8.767579806831847e-8,
+          "iterations": 181,
+          "evaluations": 188,
+          "restarts": 0,
+          "potential": 4703.451224785971,
+          "stored": 4703.451224785971,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 4591.560654821179,
+          "relative_balance": 0.023789035883939387,
+          "minJ": 0.8896801067443533,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 97.419293334
+        },
+        {
+          "step": 5,
+          "fraction": 0.5,
+          "converged": 1,
+          "relative": 9.13250767337128e-8,
+          "iterations": 194,
+          "evaluations": 197,
+          "restarts": 0,
+          "potential": 6428.417233454134,
+          "stored": 6428.417233454134,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 6314.353595920036,
+          "relative_balance": 0.01774365810303952,
+          "minJ": 0.8631132866477756,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 124.980901125
+        },
+        {
+          "step": 6,
+          "fraction": 0.6,
+          "converged": 1,
+          "relative": 9.48444688436476e-8,
+          "iterations": 208,
+          "evaluations": 212,
+          "restarts": 0,
+          "potential": 8246.781474108951,
+          "stored": 8246.781474108951,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 8131.558685668615,
+          "relative_balance": 0.013971849357483556,
+          "minJ": 0.8371465814324766,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 153.771141
+        },
+        {
+          "step": 7,
+          "fraction": 0.7,
+          "converged": 1,
+          "relative": 9.303015514368896e-8,
+          "iterations": 238,
+          "evaluations": 245,
+          "restarts": 0,
+          "potential": 10144.075634394221,
+          "stored": 10144.075634394221,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 10028.23133804135,
+          "relative_balance": 0.011419896748412647,
+          "minJ": 0.8117754548798133,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 187.142172375
+        },
+        {
+          "step": 8,
+          "fraction": 0.8,
+          "converged": 1,
+          "relative": 9.321400279715986e-8,
+          "iterations": 260,
+          "evaluations": 267,
+          "restarts": 0,
+          "potential": 12112.577371573569,
+          "stored": 12112.577371573569,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 11996.419205285938,
+          "relative_balance": 0.009589880231455666,
+          "minJ": 0.787023388711012,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 222.591151542
+        },
+        {
+          "step": 9,
+          "fraction": 0.9,
+          "converged": 1,
+          "relative": 9.97484977425724e-8,
+          "iterations": 313,
+          "evaluations": 320,
+          "restarts": 0,
+          "potential": 14148.387398319093,
+          "stored": 14148.387398319093,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 14032.102624647863,
+          "relative_balance": 0.008218941876375637,
+          "minJ": 0.7628719146551406,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 273.781180667
+        },
+        {
+          "step": 10,
+          "fraction": 1,
+          "converged": 1,
+          "relative": 9.759907515677453e-8,
+          "iterations": 339,
+          "evaluations": 352,
+          "restarts": 0,
+          "potential": 16249.912101535236,
+          "stored": 16249.912101535236,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 16133.621453243553,
+          "relative_balance": 0.007156386297049301,
+          "minJ": 0.7392934843685922,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 322.546756042
+        }
+      ],
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 0.7729845803115523,
+        "balanced_vector_RMSE_um": 0.8791954164527658,
+        "balanced_vector_NRMSE": 0.2940194604833231,
+        "pooled_vector_RMSE_um": 0.8778671089185486,
+        "pooled_vector_NRMSE": 0.31489762695189527,
+        "strain_Frobenius_RMSE": 0.026882592406667113,
+        "strain_Frobenius_NRMSE": 0.7013247440512582,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.3220596185728824,
+            "NRMSE": 0.27973684356247897
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.5283494050027199,
+            "NRMSE": 0.2460641842435294
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 0.6384124291325979,
+            "NRMSE": 0.1463330514944951
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.4306174176620691,
+            "NRMSE": 0.3227182851029209
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 0.7509818524102783,
+            "NRMSE": 0.32056021691275494
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.229875799576104,
+            "NRMSE": 0.28480327710853454
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.378454004629138,
+            "NRMSE": 0.43362319880867284
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.1096376403289514,
+            "NRMSE": 0.34176529109676346
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "name": "buckling",
+      "specimen": "Pos008",
+      "steps": 10,
+      "quad": 110,
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.5309146428134669
+      }
+    },
+    {
+      "b": -1,
+      "y": 0.04,
+      "id": "Pos008-sliding-q110-s10",
+      "exit": {
+        "code": 0,
+        "signal": null,
+        "finished": "2026-10-31T23:38:00.648Z"
+      },
+      "valid": true,
+      "history": [
+        {
+          "step": 1,
+          "fraction": 0.1,
+          "converged": 1,
+          "relative": 6.874493792006817e-8,
+          "iterations": 66,
+          "evaluations": 69,
+          "restarts": 0,
+          "potential": 758.7082996481325,
+          "stored": 758.7082996481325,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 757.6827387793568,
+          "relative_balance": 0.0013517195861062572,
+          "minJ": 0.976967522313244,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 6.816407
+        },
+        {
+          "step": 2,
+          "fraction": 0.2,
+          "converged": 1,
+          "relative": 6.972561499476516e-8,
+          "iterations": 70,
+          "evaluations": 88,
+          "restarts": 0,
+          "potential": 3026.6280722466145,
+          "stored": 3026.6228769317518,
+          "increment_diss": 0.0051953148628865915,
+          "cumulative_diss": 0.0051953148628865915,
+          "work": 3024.5752013663614,
+          "relative_balance": 0.0006782699529808561,
+          "minJ": 0.9540945520278157,
+          "slipped": 1,
+          "max_slip": 0.0007429495310992615,
+          "max_kkt": 1.734723475976807e-15,
+          "seconds": 14.106391
+        },
+        {
+          "step": 3,
+          "fraction": 0.3,
+          "converged": 1,
+          "relative": 8.314568552131391e-8,
+          "iterations": 69,
+          "evaluations": 87,
+          "restarts": 0,
+          "potential": 6790.962728730742,
+          "stored": 6786.586324628267,
+          "increment_diss": 4.376404102490393,
+          "cumulative_diss": 4.3815994173532795,
+          "work": 6787.477417563293,
+          "relative_balance": 0.0005139924855141975,
+          "minJ": 0.9313324643343186,
+          "slipped": 130,
+          "max_slip": 0.021010413250686116,
+          "max_kkt": 7.765316167862579e-14,
+          "seconds": 21.798708791
+        },
+        {
+          "step": 4,
+          "fraction": 0.4,
+          "converged": 1,
+          "relative": 5.421657352789369e-8,
+          "iterations": 70,
+          "evaluations": 111,
+          "restarts": 0,
+          "potential": 12029.557099728258,
+          "stored": 11994.093989197394,
+          "increment_diss": 35.46311053089572,
+          "cumulative_diss": 39.844709948249,
+          "work": 12028.242875073085,
+          "relative_balance": 0.0004733133693760842,
+          "minJ": 0.9086685713579292,
+          "slipped": 771,
+          "max_slip": 0.0433556370650173,
+          "max_kkt": 9.597184158494088e-14,
+          "seconds": 31.305144458
+        },
+        {
+          "step": 5,
+          "fraction": 0.5,
+          "converged": 1,
+          "relative": 8.900409754179118e-8,
+          "iterations": 73,
+          "evaluations": 75,
+          "restarts": 0,
+          "potential": 18689.936219275598,
+          "stored": 18592.698846717612,
+          "increment_diss": 97.23737255790044,
+          "cumulative_diss": 137.08208250614945,
+          "work": 18721.80944386343,
+          "relative_balance": 0.00042560483704832047,
+          "minJ": 0.8860490149730089,
+          "slipped": 1705,
+          "max_slip": 0.06775198827152815,
+          "max_kkt": 9.101747133755111e-14,
+          "seconds": 37.858546666
+        },
+        {
+          "step": 6,
+          "fraction": 0.6,
+          "converged": 1,
+          "relative": 8.709939132239647e-8,
+          "iterations": 75,
+          "evaluations": 79,
+          "restarts": 0,
+          "potential": 26713.90130466561,
+          "stored": 26545.344536005923,
+          "increment_diss": 168.55676865944588,
+          "cumulative_diss": 305.6388511655953,
+          "work": 26840.74209445098,
+          "relative_balance": 0.00038141220278106904,
+          "minJ": 0.8636423254925191,
+          "slipped": 2989,
+          "max_slip": 0.09392847845422297,
+          "max_kkt": 9.922618282587337e-14,
+          "seconds": 44.710093166
+        },
+        {
+          "step": 7,
+          "fraction": 0.7,
+          "converged": 1,
+          "relative": 8.000402312010155e-8,
+          "iterations": 81,
+          "evaluations": 107,
+          "restarts": 0,
+          "potential": 36064.99811103658,
+          "stored": 35813.221249394024,
+          "increment_diss": 251.7768616436065,
+          "cumulative_diss": 557.4157128092019,
+          "work": 36358.18302077181,
+          "relative_balance": 0.00034241746836492917,
+          "minJ": 0.8414469355759981,
+          "slipped": 4542,
+          "max_slip": 0.12137381959943817,
+          "max_kkt": 9.852535454157874e-14,
+          "seconds": 53.729064958
+        },
+        {
+          "step": 8,
+          "fraction": 0.8,
+          "converged": 1,
+          "relative": 8.9591388038835e-8,
+          "iterations": 75,
+          "evaluations": 78,
+          "restarts": 0,
+          "potential": 46704.9530541485,
+          "stored": 46364.9308893131,
+          "increment_diss": 340.02216483550797,
+          "cumulative_diss": 897.4378776447098,
+          "work": 47247.87012403543,
+          "relative_balance": 0.00030676928179106675,
+          "minJ": 0.8194525757550707,
+          "slipped": 6128,
+          "max_slip": 0.15007368865671483,
+          "max_kkt": 9.985068327722502e-14,
+          "seconds": 60.375918916
+        },
+        {
+          "step": 9,
+          "fraction": 0.9,
+          "converged": 1,
+          "relative": 8.053617072924013e-8,
+          "iterations": 77,
+          "evaluations": 82,
+          "restarts": 0,
+          "potential": 58603.94947389096,
+          "stored": 58178.59024860548,
+          "increment_diss": 425.3592252852221,
+          "cumulative_diss": 1322.797102929932,
+          "work": 59484.94651195828,
+          "relative_balance": 0.0002763101888699458,
+          "minJ": 0.7976326621062643,
+          "slipped": 7801,
+          "max_slip": 0.17950439257468406,
+          "max_kkt": 9.948292190031793e-14,
+          "seconds": 67.335156583
+        },
+        {
+          "step": 10,
+          "fraction": 1,
+          "converged": 1,
+          "relative": 8.266271834579748e-8,
+          "iterations": 78,
+          "evaluations": 83,
+          "restarts": 0,
+          "potential": 71741.5591393008,
+          "stored": 71233.40645387194,
+          "increment_diss": 508.15268542820394,
+          "cumulative_diss": 1830.949788358136,
+          "work": 73046.08226766561,
+          "relative_balance": 0.0002501079254552233,
+          "minJ": 0.7759510308293707,
+          "slipped": 9502,
+          "max_slip": 0.2093957485277666,
+          "max_kkt": 9.992007221626409e-14,
+          "seconds": 74.498285583
+        }
+      ],
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.7117533628413968,
+        "balanced_vector_RMSE_um": 1.3083399263346651,
+        "balanced_vector_NRMSE": 0.4375334448645587,
+        "pooled_vector_RMSE_um": 1.2940131902469967,
+        "pooled_vector_NRMSE": 0.46417240002898674,
+        "strain_Frobenius_RMSE": 0.030866772381447943,
+        "strain_Frobenius_NRMSE": 0.8052657613013032,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.502442190963802,
+            "NRMSE": 0.43641482653319136
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.8283187355240196,
+            "NRMSE": 0.3857666385548413
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 1.2308847821097022,
+            "NRMSE": 0.28213599545512424
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.5148475936605085,
+            "NRMSE": 0.3858430376958719
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 1.2752117393975866,
+            "NRMSE": 0.5443302664092274
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.7253001878643845,
+            "NRMSE": 0.3995290806348948
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.823450801630682,
+            "NRMSE": 0.5736067847153624
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.7457155793007688,
+            "NRMSE": 0.5376755180682345
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "name": "sliding",
+      "specimen": "Pos008",
+      "steps": 10,
+      "quad": 110,
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.7085650101745439
+      }
+    },
+    {
+      "b": 0.0025,
+      "y": 0.04,
+      "id": "Pos008-combined-q110-s10",
+      "exit": {
+        "code": 0,
+        "signal": null,
+        "finished": "2026-10-31T23:43:15.078Z"
+      },
+      "valid": true,
+      "history": [
+        {
+          "step": 1,
+          "fraction": 0.1,
+          "converged": 1,
+          "relative": 9.892411694420828e-8,
+          "iterations": 111,
+          "evaluations": 115,
+          "restarts": 0,
+          "potential": 534.1732274466772,
+          "stored": 534.1732274466772,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 457.9468289604068,
+          "relative_balance": 0.1426997733499842,
+          "minJ": 0.9736352998710865,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 16.434635833
+        },
+        {
+          "step": 2,
+          "fraction": 0.2,
+          "converged": 1,
+          "relative": 8.400691169812019e-8,
+          "iterations": 136,
+          "evaluations": 142,
+          "restarts": 0,
+          "potential": 1669.9576278570953,
+          "stored": 1669.9576278570953,
+          "increment_diss": 0,
+          "cumulative_diss": 0,
+          "work": 1571.422568474405,
+          "relative_balance": 0.05900452666522532,
+          "minJ": 0.9450190979771478,
+          "slipped": 0,
+          "max_slip": 0,
+          "max_kkt": 0,
+          "seconds": 37.061104458
+        },
+        {
+          "step": 3,
+          "fraction": 0.3,
+          "converged": 1,
+          "relative": 7.653500460434292e-8,
+          "iterations": 159,
+          "evaluations": 165,
+          "restarts": 0,
+          "potential": 3099.2014412970348,
+          "stored": 3099.1466970115,
+          "increment_diss": 0.05474428553570468,
+          "cumulative_diss": 0.05474428553570468,
+          "work": 2991.5672323402346,
+          "relative_balance": 0.03472965891231494,
+          "minJ": 0.9169594610031715,
+          "slipped": 5,
+          "max_slip": 0.004665417777030979,
+          "max_kkt": 2.981642710508936e-14,
+          "seconds": 60.878553791
+        },
+        {
+          "step": 4,
+          "fraction": 0.4,
+          "converged": 1,
+          "relative": 8.34157960093244e-8,
+          "iterations": 180,
+          "evaluations": 186,
+          "restarts": 0,
+          "potential": 4703.207356250759,
+          "stored": 4701.168239876233,
+          "increment_diss": 2.039116374525312,
+          "cumulative_diss": 2.093860660061017,
+          "work": 4591.274942733973,
+          "relative_balance": 0.0238105288220173,
+          "minJ": 0.8893640476771939,
+          "slipped": 80,
+          "max_slip": 0.016296048017764193,
+          "max_kkt": 9.845596560253966e-14,
+          "seconds": 88.3608995
+        },
+        {
+          "step": 5,
+          "fraction": 0.5,
+          "converged": 1,
+          "relative": 8.763476337213283e-8,
+          "iterations": 191,
+          "evaluations": 195,
+          "restarts": 0,
+          "potential": 6424.792615928783,
+          "stored": 6416.682080061417,
+          "increment_diss": 8.110535867352237,
+          "cumulative_diss": 10.204396527413254,
+          "work": 6312.588778087681,
+          "relative_balance": 0.0177843033197335,
+          "minJ": 0.8621301021329753,
+          "slipped": 235,
+          "max_slip": 0.028033561980291423,
+          "max_kkt": 9.970496650524296e-14,
+          "seconds": 123.3140075
+        },
+        {
+          "step": 6,
+          "fraction": 0.6,
+          "converged": 1,
+          "relative": 9.550963601990444e-8,
+          "iterations": 205,
+          "evaluations": 215,
+          "restarts": 0,
+          "potential": 8230.849263466536,
+          "stored": 8212.162920994324,
+          "increment_diss": 18.686342472191804,
+          "cumulative_diss": 28.890738999605055,
+          "work": 8125.414153345186,
+          "relative_balance": 0.01403212640273337,
+          "minJ": 0.8348916236207032,
+          "slipped": 503,
+          "max_slip": 0.04038256983316051,
+          "max_kkt": 9.9552310839357e-14,
+          "seconds": 154.827777708
+        },
+        {
+          "step": 7,
+          "fraction": 0.7,
+          "converged": 1,
+          "relative": 8.27052453225849e-8,
+          "iterations": 238,
+          "evaluations": 250,
+          "restarts": 0,
+          "potential": 10100.15297544852,
+          "stored": 10067.527594407551,
+          "increment_diss": 32.62538104103602,
+          "cumulative_diss": 61.51612004064108,
+          "work": 10012.540624063908,
+          "relative_balance": 0.011501884449180828,
+          "minJ": 0.8077093891728498,
+          "slipped": 888,
+          "max_slip": 0.053037972754391545,
+          "max_kkt": 9.788003740851536e-14,
+          "seconds": 192.582179416
+        },
+        {
+          "step": 8,
+          "fraction": 0.8,
+          "converged": 1,
+          "relative": 9.211736219065446e-8,
+          "iterations": 250,
+          "evaluations": 253,
+          "restarts": 0,
+          "potential": 12018.872540235123,
+          "stored": 11969.103458839403,
+          "increment_diss": 49.76908139571626,
+          "cumulative_diss": 111.28520143635734,
+          "work": 11963.342535392489,
+          "relative_balance": 0.009688937018074393,
+          "minJ": 0.7805938131824837,
+          "slipped": 1306,
+          "max_slip": 0.06612047437503599,
+          "max_kkt": 9.808820422563258e-14,
+          "seconds": 231.27107725
+        },
+        {
+          "step": 9,
+          "fraction": 0.9,
+          "converged": 1,
+          "relative": 9.357916099899356e-8,
+          "iterations": 261,
+          "evaluations": 265,
+          "restarts": 0,
+          "potential": 13977.021357202697,
+          "stored": 13908.899032848869,
+          "increment_diss": 68.12232435370653,
+          "cumulative_diss": 179.40752579006386,
+          "work": 13970.886017559507,
+          "relative_balance": 0.008334610025036925,
+          "minJ": 0.7534862044033216,
+          "slipped": 1787,
+          "max_slip": 0.07955227880267797,
+          "max_kkt": 9.683920332292928e-14,
+          "seconds": 269.91977675
+        },
+        {
+          "step": 10,
+          "fraction": 1,
+          "converged": 1,
+          "relative": 9.880116493859391e-8,
+          "iterations": 269,
+          "evaluations": 278,
+          "restarts": 0,
+          "potential": 15968.777651284876,
+          "stored": 15881.438985127828,
+          "increment_diss": 87.33866615709307,
+          "cumulative_diss": 266.74619194715694,
+          "work": 16030.49240235921,
+          "relative_balance": 0.007288297317946253,
+          "minJ": 0.7265362460355725,
+          "slipped": 2339,
+          "max_slip": 0.09512334864110839,
+          "max_kkt": 9.905964937217959e-14,
+          "seconds": 314.270207416
+        }
+      ],
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 0.8056913615962178,
+        "balanced_vector_RMSE_um": 0.8976031203133252,
+        "balanced_vector_NRMSE": 0.3001753423914145,
+        "pooled_vector_RMSE_um": 0.8952598786054881,
+        "pooled_vector_NRMSE": 0.3211365460831579,
+        "strain_Frobenius_RMSE": 0.02695970091071165,
+        "strain_Frobenius_NRMSE": 0.7033363841879364,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.32189697245803967,
+            "NRMSE": 0.27959557123847434
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.5476710775250858,
+            "NRMSE": 0.2550627210875562
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 0.665177445162592,
+            "NRMSE": 0.15246796724839037
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.43605688290034916,
+            "NRMSE": 0.326794792047543
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 0.7647950593206733,
+            "NRMSE": 0.3264564507421683
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.2545717862887438,
+            "NRMSE": 0.29052214559071204
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.3976662035407357,
+            "NRMSE": 0.4396668209536401
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.13887238873536,
+            "NRMSE": 0.35076951187670646
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "name": "combined",
+      "specimen": "Pos008",
+      "steps": 10,
+      "quad": 110,
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.5334281796024011
+      }
+    }
+  ],
+  "improvement": 0.285821508346531,
+  "verdict": "Selected combined model: 28.6% lower vector MSE than harmonic interpolation. Numerical qualification is reported below. It meets the frozen practical improvement and numerical gates.",
+  "controls_summary": "Numerical qualification: passes the frozen checks. Gates: equilibrium PASS; finite energy history PASS; nonnegative dissipation PASS; work balance PASS; kkt PASS; positive jacobian PASS; step refinement PASS; angular refinement PASS; no detected negative curvature PASS; hvp fd PASS",
+  "mechanism_comparisons": {
+    "buckling_vs_control_fractional_MSE_reduction": 0.5174240905757823,
+    "sliding_vs_control_fractional_MSE_reduction": -0.0686512471571028,
+    "combined_vs_buckling_fractional_MSE_reduction": -0.0423123334122435,
+    "scope": "Descriptive family comparisons on reused benchmark; only combined is the prospectively primary candidate."
+  },
+  "qualified_practical_win": true
+}
