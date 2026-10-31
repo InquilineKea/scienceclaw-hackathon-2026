@@ -1,0 +1,20 @@
+{
+  "status": "complete",
+  "kind": "archive",
+  "finishedAt": "2026-10-31T16:16:28.681120+00:00",
+  "provenance": {
+    "sourceRepository": "InquilineKea/scienceclaw-hackathon-2026",
+    "sourceCommit": "80d4b5e54542cd27abf203946be58e0745717d5b",
+    "sourceFolders": [
+      "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa",
+      "collagen-network-atlas/runs/20261031-storage-verification",
+      "collagen-network-atlas/runs/20261031-auto-upload-validation",
+      "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot",
+      "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729"
+    ],
+    "purpose": "Lossless archival consolidation and large-file transport validation; no new simulation",
+    "members": 469,
+    "memberBytes": 119832656,
+    "transportCorrection": "v2 stores permanent published tag URLs. The original attempt and every raw byte are retained unchanged. Scientific data are identical."
+  }
+}
