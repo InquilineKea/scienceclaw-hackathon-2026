@@ -10,8 +10,8 @@
   "scope": "Original 450-run baseline, 252-run directional-strain experiment, and separate paired crosslink experiment. Static application and browser-local computation; no server or package installation. Density sweep uses 6,300 paired configurations at two resolutions. Separate CDSM species pilot contains backbone geometry only, without molecular mechanical calibration.",
   "files": {
     "index.html": {
-      "bytes": 16852,
-      "sha256": "49de08b75873e5c335076f4f300af3eb78ba9fcb5a1d850df4dae0bb061aa279"
+      "bytes": 16904,
+      "sha256": "552671b8b0391880e6a068cca48ab1ecf46b2acccc9a58850844b82ca3d96c20"
     },
     "style.css": {
       "bytes": 13374,
@@ -277,5 +277,66 @@
   "density_configurations": 6300,
   "density_solver_runs": 12600,
   "cdsm_backbone_structures": 18,
-  "cdsm_source_commit": "074a6f3aa76c987fde3fa39746c33256429a081a"
+  "cdsm_source_commit": "074a6f3aa76c987fde3fa39746c33256429a081a",
+  "transitions": {
+    "scope": "Separate finite-network mechanism study; per-sample convergence flags; uncalibrated statistical and feedback hypotheses.",
+    "files": {
+      "index.html": {
+        "bytes": 3285,
+        "sha256": "d4cb4375fba10d7471b1fd95e80805f81ca20483bcb92775cd56a6666cc788c3"
+      },
+      "style.css": {
+        "bytes": 3532,
+        "sha256": "5623b24d8082bf41386d83dffc5c89c6b33596c9a41df8b3db9fb89963a91b01"
+      },
+      "app.js": {
+        "bytes": 4934,
+        "sha256": "d1a9dfc644558d1b1d82a817b4af6332395a0b2ea26456001185bd9492753af5"
+      },
+      "transition-view.json": {
+        "bytes": 161643,
+        "sha256": "bbff7cd49b80db382bd56184db38cb1d40bcbb960e2a52f1f5495b8a89b120f2"
+      },
+      "figures/01-strain-rigidity.png": {
+        "bytes": 93941,
+        "sha256": "d673f495077a79606bdb13db62e267db1a4e1ebd89c021c54eed75af251b7513"
+      },
+      "figures/02-sliding-locking.png": {
+        "bytes": 97843,
+        "sha256": "74cfe7e7283569b72e961f3e4c2a078d2f9e1891aefc74a38627d25914a63a9f"
+      },
+      "figures/02b-sliding-failure.png": {
+        "bytes": 81586,
+        "sha256": "b2507b5c7b0a4b7e78d0ea16e7f48f9fb45a0c988498861f3b2b3c4693c788be"
+      },
+      "figures/03-plastic-memory.png": {
+        "bytes": 48991,
+        "sha256": "c5bdbcd9bacd2dc66124b6992bc04a05f4c1b31b48686efc2828bd875a3dad68"
+      },
+      "figures/04-stiffening-and-damage.png": {
+        "bytes": 91641,
+        "sha256": "6d4a79f2c8620331d23ea07e1f91370d45950cdef78efb365fe2290300ec3aa3"
+      },
+      "figures/05-inclusion-compression.png": {
+        "bytes": 73837,
+        "sha256": "1919e60e1a5254d6dd428b15234800efe8db7cada097856332883629f099c534"
+      },
+      "figures/06-lox-feedback.png": {
+        "bytes": 71207,
+        "sha256": "588832dc5550d67449e72519bf1437261c360b30c9bffd2be06443de860d410a"
+      },
+      "figures/07-helix-coil.png": {
+        "bytes": 79256,
+        "sha256": "6f1da4a48ca691ab884de05a19db7d2db7dab988f65eb1845953ae2d740a3b64"
+      },
+      "figures/inclusion-contact.gif": {
+        "bytes": 438435,
+        "sha256": "98a56376417361cc05dd2a8e0193db50225cf88ebbe3dc9f58830e9f9bb5857e"
+      },
+      "figures/sliding-memory.gif": {
+        "bytes": 508514,
+        "sha256": "aac921634fdd7a5ceb5b8f5b89ff91d0ed78e3a78aff1b3f54a17af8c9d63730"
+      }
+    }
+  }
 }

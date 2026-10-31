@@ -9,7 +9,14 @@ files += ['TOPOLOGY_AGING_FIGURE.md','topology-aging.html','topology-aging.css',
 files += ['force-replay/'+n for n in ['index.html','replay-ui.js','replay-data.js','replay.json','force-redistribution.gif','force-redistribution-still.png','README.md','VALIDATION.json']]
 files += ['force-robustness/'+n for n in ['index.html','comparison.svg','METHODS.md','results.csv','summary.json','checked-results.json']]
 dest.mkdir(exist_ok=True)
-allowed=set(files)|{'.nojekyll','DEPLOYMENT.json'}
+transition_source=root/'collagen-transition-atlas/web'
+transition_files=['index.html','style.css','app.js','transition-view.json',
+ 'figures/01-strain-rigidity.png','figures/02-sliding-locking.png',
+ 'figures/02b-sliding-failure.png','figures/03-plastic-memory.png',
+ 'figures/04-stiffening-and-damage.png','figures/05-inclusion-compression.png',
+ 'figures/06-lox-feedback.png','figures/07-helix-coil.png',
+ 'figures/inclusion-contact.gif','figures/sliding-memory.gif']
+allowed=set(files)|{'.nojekyll','DEPLOYMENT.json'}|{'transitions/'+name for name in transition_files}
 unexpected=[str(p.relative_to(dest)) for p in dest.rglob('*') if p.is_file() and str(p.relative_to(dest)) not in allowed]
 if unexpected:raise SystemExit('Unexpected files in Pages directory; review before replacing: '+str(unexpected))
 density=json.loads((source/'data/density.json').read_text())
@@ -24,6 +31,9 @@ for name,digest in density['sourceHashes'].items():
     assert hashlib.sha256((source/name).read_bytes()).hexdigest()==digest
 for name in files:
     target=dest/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(source/name,target)
+for name in transition_files:
+    target=dest/'transitions'/name;target.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copyfile(transition_source/name,target)
 (dest/'.nojekyll').write_text('')
 data=json.loads((source/'data/results.json').read_text())
 model_hash=hashlib.sha256((source/'model.js').read_bytes()).hexdigest()
@@ -36,5 +46,7 @@ assert aging['agingHash']==hashlib.sha256((source/'aging.js').read_bytes()).hexd
 metadata={'site':'Fracture Atlas','model_sha256':model_hash,'baseline_runs':len(data['rows']),'historical_archive_snapshot':'02b533d81e2de8a05227ab37284f2f553398735c','directional_runs':252,'aging_runs':len(aging['rows'])+len(aging['baseline']),'aging_source_sha256':aging['agingHash'],'directional_source_sha256':hashlib.sha256((source/'directional.js').read_bytes()).hexdigest(),'scope':'Original 450-run baseline, 252-run directional-strain experiment, and separate paired crosslink experiment. Static application and browser-local computation; no server or package installation.','files':{name:{'bytes':(dest/name).stat().st_size,'sha256':hashlib.sha256((dest/name).read_bytes()).hexdigest()} for name in files}}
 metadata.update(density_configurations=6300,density_solver_runs=12600,cdsm_backbone_structures=18,cdsm_source_commit=species['builderCommit'])
 metadata['scope']+=' Density sweep uses 6,300 paired configurations at two resolutions. Separate CDSM species pilot contains backbone geometry only, without molecular mechanical calibration.'
+metadata['transitions']={'scope':'Separate finite-network mechanism study; per-sample convergence flags; uncalibrated statistical and feedback hypotheses.',
+ 'files':{name:{'bytes':(dest/'transitions'/name).stat().st_size,'sha256':hashlib.sha256((dest/'transitions'/name).read_bytes()).hexdigest()} for name in transition_files}}
 (dest/'DEPLOYMENT.json').write_text(json.dumps(metadata,indent=2)+'\n')
 print(json.dumps({'pages_source':'docs','files':len(files)+2,'bytes':sum(r['bytes'] for r in metadata['files'].values()),'model_sha256':model_hash}))
