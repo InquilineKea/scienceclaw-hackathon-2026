@@ -1,0 +1,15 @@
+{
+  "run_id": "defaults-regression-20261031T231435Z-2c1d2519",
+  "status": "completed",
+  "exit_code": 0,
+  "elapsed_seconds": 8.281982,
+  "tests": 7,
+  "passed": true,
+  "verified_files": 15,
+  "isolation": {
+    "exit_code": 0,
+    "stdout": "read-denied; network-denied\n",
+    "stderr": ""
+  },
+  "limits": "No plotting regeneration, full-network sweep or biological validation."
+}

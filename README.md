@@ -8,8 +8,8 @@ crosslinks that give each tissue its tuned stiffness and strength. But collagen 
 longest-lived proteins you own: some of it persists for decades. Over those decades, a second,
 unwanted kind of crosslink accumulates — oxidative and sugar-driven damage (AGEs, in the
 literature) that glues fibers together in the wrong places. Arteries stiffen. Heart walls stop
-relaxing between beats. Wounds heal slowly. Much of the mechanical difference between a
-25-year-old aorta and a 75-year-old one is, at root, this slow chemistry.
+relaxing between beats. Wounds heal slowly. Age-related mechanics also depend on architecture, hydration, elastin and other processes.
+This project does not determine how much each process contributes to an aging artery.
 
 The hard part is that the damage lives at every scale at once. It starts as a single chemical
 bond, changes how a fiber network carries load, changes what a cell feels and how it responds,
@@ -17,9 +17,9 @@ and ends as an organ that works less well. No experiment can watch all of that h
 wait thirty years, and you can't instrument a molecule and a heart at the same time.
 
 This repository is a working attempt to follow one question across those scales in a computer:
-**what happens when oxidative crosslinks pile up on a healthy collagen matrix?** It links small
-molecular calculations to a fiber-network model, a mechanosensing cell, and simplified tissue and
-organ models — and it is unusually honest about what that buys you. Every result is labeled as a
+**what happens when oxidative crosslinks pile up on a healthy collagen matrix?** It places small
+molecular calculations alongside a fiber-network model, a mechanosensing cell, and simplified tissue and
+organ models. Quantitative molecular-to-network parameter transfer remains an open validation task. Every result is labeled as a
 model output with explicit limits, several of the project's own early claims were tested and
 *withdrawn* when better checks contradicted them, and every run is archived with checksums so
 anyone can verify that the published numbers match the code that made them. Nothing here is a
@@ -69,7 +69,21 @@ Future atlas runs now create separate timestamped folders with source snapshots 
 | `AGENTS.md`, `CODEX_HANDOFF.md` | Shared context and runbook for Codex / Claude Code agents |
 | `tests/` | Hardware-free checks (analytic lattice moduli, tensegrity, transport, heart, LAMMPS export) |
 
+See [audit remediation and validation gates](validation/piper-audit-20261031/REMEDIATION.md) for the reproduced cases, tested code changes, and remaining scientific acceptance criteria.
+
 ## Main findings (model outputs, not measurements)
+
+**Comparison qualification:** The historical ~51× local and ~259× cpu32 branching ratios use
+different lattice sizes, seed counts and target-connectivity endpoints. They are not independent
+measurements of one universal effect. Recomputing ratios of mean G from the saved healthy Col I
+CSV rows over the common target interval z_target=3.0→4.4 gives 51.025× (12×12, 2 seeds) and
+68.736× (16×16, 4 seeds). Actual mean coordination also differs. This is a descriptive reanalysis
+of archived outputs, not a fresh solver reproduction or a size-controlled causal comparison.
+The ~259× ratio uses target z=2.8→5.0; its actual mean z is 2.977→5.117.
+
+Molecular proxy calculations and species backbone construction do not yet supply a calibrated
+chemistry/sequence-to-network constitutive law. Algebraic convergence, mesh acceptance and
+biological validation are separate gates.
 
 - Branching factor dominates network stiffness (~260× from z = 2.8 to 5). Oxidative crosslinks stiffen sparse,
   sub-isostatic networks most (~14×) and erase strain-stiffening (6–15× → ~3×).
@@ -78,7 +92,7 @@ Future atlas runs now create separate timestamped folders with source snapshots 
 - A tensegrity cell on healthy collagen VII cannot hold its prestress (14%) and YAP stays cytoplasmic; recovery of
   the YAP–myosin loop slows at the mechanosensing threshold.
 - With sliding GAGs, crosslinks raise stiffness ~6× while cutting dissipated energy per cycle from ~0.55 to 0.02–0.10;
-  only the sliding model matches tendon GAG-removal data.
+  this qualitative direction motivates comparison with tendon GAG-removal data; it is not a held-out quantitative fit.
 - ALCHEMI + AIMNet2: methylglyoxal-glycated arginine (MG-H1) loses contact with dermatan sulfate; CML-lysine does not.
 - ALCHEMI crosslink stretch scans, converged on a Brev L4 with two potentials (MACE-OFF, MACE-MP), then checked with
   semi-empirical PM7 (MOPAC) over three starting conformers: the three methods agree from a shared starting conformer,

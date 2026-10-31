@@ -70,8 +70,10 @@ class ClutchParams:
     dt: float = 2e-3
 
 
-def motor_clutch(curve: MatrixCurve, n_motor: np.ndarray, p: ClutchParams = ClutchParams(), seed=0,
+def motor_clutch(curve: MatrixCurve, n_motor: np.ndarray, p: ClutchParams | None = None, seed=0,
                  traction_bins=None):
+    if p is None:
+        p = ClutchParams()
     rng = np.random.default_rng(seed)
     M, C = curve.E_sec.shape[0], p.n_c_max
     bound = np.zeros((M, C), bool)
@@ -304,7 +306,11 @@ def nuc_cyto_ratio(Y):
 class CellModel:
     """Evaluates steady YAP for a matrix condition at a given myosin level M (1 = basal)."""
 
-    def __init__(self, curve: MatrixCurve, clutch=ClutchParams(), cp=CellParams(), seed=0):
+    def __init__(self, curve: MatrixCurve, clutch=None, cp=None, seed=0):
+        if clutch is None:
+            clutch = ClutchParams()
+        if cp is None:
+            cp = CellParams()
         self.curve, self.clutch, self.cp, self.seed = curve, clutch, cp, seed
         self.cell = TensegrityCell(k_cable=1.0)
         self._ps_cache = {}
