@@ -1,0 +1,14 @@
+{
+  "complete": {
+    "filename": "fracture-atlas-complete-final-f0a5034f44aa.zip",
+    "bytes": 12487518,
+    "sha256": "9127370ca5ca9b1e07a6518809886815234a7e890e3b8098a7caf0f2e820966e",
+    "members": 52
+  },
+  "data_source": {
+    "filename": "fracture-atlas-data-source-final-f0a5034f44aa.zip",
+    "bytes": 5861750,
+    "sha256": "94ca5e64137eae88856ede6fdc2917c4df2214784fd1ae71e14f0daad801e6eb",
+    "members": 41
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "scope": "Exact corrected WordPress archives and publication provenance; paths relative to repository root; this manifest excludes itself.",
+  "model_sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+  "files": {
+    "archives/2026-10-31/fracture-atlas-complete-final-f0a5034f44aa.zip": {
+      "bytes": 12487518,
+      "sha256": "9127370ca5ca9b1e07a6518809886815234a7e890e3b8098a7caf0f2e820966e"
+    },
+    "archives/2026-10-31/fracture-atlas-data-source-final-f0a5034f44aa.zip": {
+      "bytes": 5861750,
+      "sha256": "94ca5e64137eae88856ede6fdc2917c4df2214784fd1ae71e14f0daad801e6eb"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/MEDIA-PROVENANCE.md": {
+      "bytes": 1557,
+      "sha256": "f18ee233bfbb72e9e3c42bb95138a46b9b47830e321abd57fdaaf4332923e113"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/README.md": {
+      "bytes": 3118,
+      "sha256": "2bf9410f8e5f2aa36c46e7f58680a633ae59c84f196853eda8ebfecb0b938656"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/archive-metadata.json": {
+      "bytes": 428,
+      "sha256": "74ed3b1f4c18a3c606e7d12574c1a0bdb6bf80a525a85b905abe209faa72a6e8"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/archive-validation.json": {
+      "bytes": 776,
+      "sha256": "1915505cf8e8f619991b269c6bd2ee8bcbc2838c8678e12463029cad04f0ffa6"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/compare-final-media.swift": {
+      "bytes": 1778,
+      "sha256": "0940649304409c2a752e84acee0c49794413c716ded43ef3d4b60e8831d18b6e"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/media-provenance.json": {
+      "bytes": 7601,
+      "sha256": "6255c5a72ad3895aaf9e342c895fd5e180fb175f0d798fb3984ffb6f33b5e4b8"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/pixel-audit.json": {
+      "bytes": 1513,
+      "sha256": "773f05a9c053194bca9e58f840cca3d19dc20bb966cc30cc547d1da160b6b13f"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/public-archive-verification.json": {
+      "bytes": 325,
+      "sha256": "efbaa4f316ee5d17c03675b8d9e0a0d85a4be3335f2c2dcc089f9902ac974b37"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/wordpress-posts.json": {
+      "bytes": 568,
+      "sha256": "fc30b2ba99121d8a19a4031cf10015fed227186f31e5995f971a21dd1c846886"
+    }
+  }
+}

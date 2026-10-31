@@ -1,0 +1,21 @@
+{
+  "checked_date": "2026-10-31",
+  "archives": [
+    {
+      "archive": "fracture-atlas-complete-final-f0a5034f44aa.zip",
+      "sha256": "9127370ca5ca9b1e07a6518809886815234a7e890e3b8098a7caf0f2e820966e",
+      "member_hashes_verified": 51,
+      "media_results_exact": true,
+      "media_replays_exact": true,
+      "model_sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    {
+      "archive": "fracture-atlas-data-source-final-f0a5034f44aa.zip",
+      "sha256": "94ca5e64137eae88856ede6fdc2917c4df2214784fd1ae71e14f0daad801e6eb",
+      "member_hashes_verified": 40,
+      "media_results_exact": true,
+      "media_replays_exact": true,
+      "model_sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    }
+  ]
+}

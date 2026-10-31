@@ -1,0 +1,79 @@
+[
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "benchmark.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "free-vs-clamped-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "free-vs-clamped.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "pressure-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "pressure.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "pulse-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "pulse.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "shear-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "shear.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "tension-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "all_decoded_pixels_equal" : true,
+    "file" : "tension.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  }
+]

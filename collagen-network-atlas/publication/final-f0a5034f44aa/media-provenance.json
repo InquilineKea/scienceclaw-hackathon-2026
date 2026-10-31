@@ -1,0 +1,201 @@
+{
+  "model_sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+  "media_results_exact": true,
+  "media_replays_exact": true,
+  "final_results_unchanged": true,
+  "final_replays_unchanged": true,
+  "previous_media_input_model_hash": "2caf29c69aa5e7bcc1e1f70d221d0a08df77c6c20ab4a057dd30f564124a6dbc",
+  "assets": [
+    {
+      "asset": "benchmark",
+      "file": "benchmark.png",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/benchmark.png",
+      "http_status": 200,
+      "corrected_sha256": "0f77adea113ff969b60afb1d327ba34703ba2c747f758a4db66e6c63b73d6f9a",
+      "published_sha256": "fab7c29a952532e407c417a852a08be9504c81b52550d4887b77b21645d252f1",
+      "published_byte_equal": false,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "tension",
+      "file": "tension.gif",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension.gif",
+      "http_status": 200,
+      "corrected_sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab",
+      "published_sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab",
+      "published_byte_equal": true,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "tension-still",
+      "file": "tension-still.png",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension-still.png",
+      "http_status": 200,
+      "corrected_sha256": "dbc9a7a41f9bc8953f43fea9627fe175ab85199078759197b4511f500c359770",
+      "published_sha256": "09b214d5fa14d7df9b9b03ad387052e94036e0603dd977e8192820f078f41928",
+      "published_byte_equal": false,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "shear",
+      "file": "shear.gif",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear.gif",
+      "http_status": 200,
+      "corrected_sha256": "160134592571aa5f404276d93374da199ef243c0fdf49fab6407b10717a44cd0",
+      "published_sha256": "160134592571aa5f404276d93374da199ef243c0fdf49fab6407b10717a44cd0",
+      "published_byte_equal": true,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "shear-still",
+      "file": "shear-still.png",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear-still.png",
+      "http_status": 200,
+      "corrected_sha256": "80a96517c58b801e1ee636706b369bc61bc1fd3af88f7fb6020e4deab4424e42",
+      "published_sha256": "66e36d51c3e8b6169ada744241a2a478d9dbaf3b06f22684301f67bb0a0cdb97",
+      "published_byte_equal": false,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "pressure",
+      "file": "pressure.gif",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure.gif",
+      "http_status": 200,
+      "corrected_sha256": "868fbb320f3684ad53049b57ba4b1c876a6dc848caa4a657986ddf76760a233f",
+      "published_sha256": "868fbb320f3684ad53049b57ba4b1c876a6dc848caa4a657986ddf76760a233f",
+      "published_byte_equal": true,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "pressure-still",
+      "file": "pressure-still.png",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure-still.png",
+      "http_status": 200,
+      "corrected_sha256": "9d77586b123eaa53e07add75a0a2790e3d01f4d2f4de2ca26f337c09d7823e0d",
+      "published_sha256": "c391556cad2d87eff5148a10d91b01bb880a2cea7816ad9356c70db2849d6449",
+      "published_byte_equal": false,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "pulse",
+      "file": "pulse.gif",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse.gif",
+      "http_status": 200,
+      "corrected_sha256": "f14d85c9215e76a54c84165b481e6c7b7b0c93fe5882f832e773c9f0a5bf4de1",
+      "published_sha256": "f14d85c9215e76a54c84165b481e6c7b7b0c93fe5882f832e773c9f0a5bf4de1",
+      "published_byte_equal": true,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "pulse-still",
+      "file": "pulse-still.png",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse-still.png",
+      "http_status": 200,
+      "corrected_sha256": "3d2e880e7145bb400037dc6f8fbb7444123529ccc6b9caffe9e5c18e4b1b1d3b",
+      "published_sha256": "72b99191424fd5ad5b316919396e8c92ff8cb65e77abb18eaa2f7618caaca1e5",
+      "published_byte_equal": false,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "free-vs-clamped",
+      "file": "free-vs-clamped.gif",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped.gif",
+      "http_status": 200,
+      "corrected_sha256": "e3e6ad447a661ebe84f1cb81133b194f93ecf8e12c81e8ab4e1cb29a0c0864df",
+      "published_sha256": "e3e6ad447a661ebe84f1cb81133b194f93ecf8e12c81e8ab4e1cb29a0c0864df",
+      "published_byte_equal": true,
+      "original_archive_byte_equal": true
+    },
+    {
+      "asset": "free-vs-clamped-still",
+      "file": "free-vs-clamped-still.png",
+      "public_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped-still.png",
+      "http_status": 200,
+      "corrected_sha256": "f0feca55e6dfddd39258cc846382b0b2d87bfa5353583d0c6e0f3242d7d6dd1c",
+      "published_sha256": "9757345c621a4a0eeed19267754ac361be8fa90b0816dbf7d51d1393f78b4155",
+      "published_byte_equal": false,
+      "original_archive_byte_equal": true
+    }
+  ],
+  "public_pixel_checks": [
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "benchmark.png",
+      "frames": 1,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "free-vs-clamped-still.png",
+      "frames": 1,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "free-vs-clamped.gif",
+      "frames": 65,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "pressure-still.png",
+      "frames": 1,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "pressure.gif",
+      "frames": 65,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "pulse-still.png",
+      "frames": 1,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "pulse.gif",
+      "frames": 65,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "shear-still.png",
+      "frames": 1,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "shear.gif",
+      "frames": 65,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "tension-still.png",
+      "frames": 1,
+      "height": 720,
+      "width": 1100
+    },
+    {
+      "all_decoded_pixels_equal": true,
+      "file": "tension.gif",
+      "frames": 65,
+      "height": 720,
+      "width": 1100
+    }
+  ],
+  "checked_date": "2026-10-31",
+  "correction": "The intermediate media input used an older model hash and support-reaction records. Corrected input exactly matches final results/replays. All regenerated figure bytes match the original full archive; all five hosted GIFs are byte-identical and all hosted PNG pixels are identical to the final-model render."
+}
