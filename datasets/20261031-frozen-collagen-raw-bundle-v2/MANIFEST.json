@@ -1,0 +1,18 @@
+{
+  "FINISHED.json": {
+    "bytes": 953,
+    "sha256": "ff24c8df50ac57368b6151b1f46241f7ee8862eaa1a692a13ebbbe8adca5d3a7"
+  },
+  "MEMBER_MANIFEST.json": {
+    "bytes": 98639,
+    "sha256": "a94c398721e198e392c35266febe9b015cec1c3b1bc49496063737a2ab1aa7af"
+  },
+  "README.md": {
+    "bytes": 1413,
+    "sha256": "5587acc89efa97b70c270c4d3533436c5bf09bca4949cf59148ff02ac284fc00"
+  },
+  "collagen-frozen-data-20261031.tar": {
+    "bytes": 120412160,
+    "sha256": "c224b81867f51a1014c0d526ce6833e798afb3a42ec122c9e85914cf50f46298"
+  }
+}
