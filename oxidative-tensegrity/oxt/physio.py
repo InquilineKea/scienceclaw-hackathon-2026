@@ -75,7 +75,9 @@ class LVParams:
 
 
 def heart(E_myo_ratio: float, E_myo_kpa: float, E_myo_kpa_young: float, pwv_ratio: float,
-          p: LVParams = LVParams()):
+          p: LVParams | None = None):
+    if p is None:
+        p = LVParams()
     beta = p.beta0 * ((1 - p.w_col) + p.w_col * E_myo_ratio)
     EDV = p.V0 + math.log(p.P_fill / p.A + 1) / beta
 
