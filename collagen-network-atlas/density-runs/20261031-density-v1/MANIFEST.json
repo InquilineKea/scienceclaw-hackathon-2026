@@ -1,0 +1,45 @@
+{
+  "version": "crosslink-density-v1",
+  "files": {
+    "aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "benchmark-density.js": {
+      "bytes": 6126,
+      "sha256": "8a879b064a4fc9d7a5182735a2f16cb8e00cbb1058cebb4316528d9d92b5e408"
+    },
+    "check-density.js": {
+      "bytes": 1600,
+      "sha256": "c2ca5562e3a38cf3c525538bd9fc7497b4838a78afed16aea21317bc2aaa4b30"
+    },
+    "density-data.js": {
+      "bytes": 15382297,
+      "sha256": "628ac0d805524c1e58f1c6bb483e96c89823e16c2fddc5d489f628e7cc2b04c5"
+    },
+    "density.csv": {
+      "bytes": 2435966,
+      "sha256": "0aa0af9a8430fe350597ecede322dc9b604ccbcd9b78dc21962fc23c6669b837"
+    },
+    "density.js": {
+      "bytes": 2300,
+      "sha256": "4e69aedabb2c23499d6a7702736e4cb515eec7be5310940c2d2db2971035bb45"
+    },
+    "density.json": {
+      "bytes": 15382266,
+      "sha256": "4ce2afe0bbd43bea9305f55fba988d78e9fa5f14a93cefaf8211acd4fce9fa20"
+    },
+    "directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "raw-curves.ndjson.gz": {
+      "bytes": 199139567,
+      "sha256": "b2add1f2d867367200c4a2b5cab770332b5cd1b132d2066a355db7840525574a"
+    }
+  }
+}

@@ -1,0 +1,516 @@
+{
+  "date": "2026-10-31",
+  "scope": "Matched 90-residue backbone commissioning only; no AGE chemistry, dynamics, stiffness, rupture or species robustness inference.",
+  "builderCommit": "074a6f3aa76c987fde3fa39746c33256429a081a",
+  "records": [
+    {
+      "species": "beaver",
+      "scientificName": "Castor canadensis",
+      "gene": "COL1A1",
+      "accession": "A0A250Y7T0",
+      "entryType": "UniProtKB unreviewed (TrEMBL)",
+      "fullLength": 1460,
+      "sequenceSha256": "26fec29c1552b3e2299d8afca0b04052d962c1291c5de790995b3620fd31e2b4",
+      "helicalStart": 175,
+      "helicalEnd": 1188,
+      "helicalRegionMethod": "longest uninterrupted GXY run; human COL1A1 agrees with UniProt annotated triple-helical region",
+      "url": "https://www.uniprot.org/uniprotkb/A0A250Y7T0/entry"
+    },
+    {
+      "species": "beaver",
+      "scientificName": "Castor canadensis",
+      "gene": "COL1A2",
+      "accession": "A0A8B7UHI7",
+      "entryType": "UniProtKB unreviewed (TrEMBL)",
+      "fullLength": 1366,
+      "sequenceSha256": "119f9a6290ec32273b549be4dbb7c5785a69e42778f3332b95698a33a269af13",
+      "helicalStart": 91,
+      "helicalEnd": 1107,
+      "helicalRegionMethod": "longest uninterrupted GXY run; human COL1A1 agrees with UniProt annotated triple-helical region",
+      "url": "https://www.uniprot.org/uniprotkb/A0A8B7UHI7/entry"
+    },
+    {
+      "species": "human",
+      "scientificName": "Homo sapiens",
+      "gene": "COL1A1",
+      "accession": "P02452",
+      "entryType": "UniProtKB reviewed (Swiss-Prot)",
+      "fullLength": 1464,
+      "sequenceSha256": "9e6f3ccbb2f55bd0b0955073c0153e5473ec4c033ed1df0e3ff762cb1b3a9d0c",
+      "helicalStart": 179,
+      "helicalEnd": 1192,
+      "helicalRegionMethod": "longest uninterrupted GXY run; human COL1A1 agrees with UniProt annotated triple-helical region",
+      "url": "https://www.uniprot.org/uniprotkb/P02452/entry"
+    },
+    {
+      "species": "human",
+      "scientificName": "Homo sapiens",
+      "gene": "COL1A2",
+      "accession": "P08123",
+      "entryType": "UniProtKB reviewed (Swiss-Prot)",
+      "fullLength": 1366,
+      "sequenceSha256": "8ff76c5f4c93911a603bb7c1a0111633918998a259c581889864d2325c7eaf5a",
+      "helicalStart": 91,
+      "helicalEnd": 1107,
+      "helicalRegionMethod": "longest uninterrupted GXY run; human COL1A1 agrees with UniProt annotated triple-helical region",
+      "url": "https://www.uniprot.org/uniprotkb/P08123/entry"
+    }
+  ],
+  "alignments": [
+    {
+      "gene": "COL1A1",
+      "alignmentLength": 1014,
+      "identicalResidues": 993,
+      "identity": 0.9792899408284024,
+      "gaps": 0
+    },
+    {
+      "gene": "COL1A2",
+      "alignmentLength": 1017,
+      "identicalResidues": 945,
+      "identity": 0.9292035398230089,
+      "gaps": 0
+    }
+  ],
+  "windows": [
+    {
+      "window": "N",
+      "offset0": 0,
+      "gene": "COL1A1",
+      "identicalResidues": 90,
+      "length": 90,
+      "differences": []
+    },
+    {
+      "window": "N",
+      "offset0": 0,
+      "gene": "COL1A2",
+      "identicalResidues": 88,
+      "length": 90,
+      "differences": [
+        {
+          "windowPosition1": 45,
+          "beaver": "P",
+          "human": "A"
+        },
+        {
+          "windowPosition1": 47,
+          "beaver": "A",
+          "human": "P"
+        }
+      ]
+    },
+    {
+      "window": "middle",
+      "offset0": 462,
+      "gene": "COL1A1",
+      "identicalResidues": 88,
+      "length": 90,
+      "differences": [
+        {
+          "windowPosition1": 12,
+          "beaver": "S",
+          "human": "P"
+        },
+        {
+          "windowPosition1": 59,
+          "beaver": "S",
+          "human": "A"
+        }
+      ]
+    },
+    {
+      "window": "middle",
+      "offset0": 462,
+      "gene": "COL1A2",
+      "identicalResidues": 81,
+      "length": 90,
+      "differences": [
+        {
+          "windowPosition1": 11,
+          "beaver": "T",
+          "human": "P"
+        },
+        {
+          "windowPosition1": 15,
+          "beaver": "A",
+          "human": "V"
+        },
+        {
+          "windowPosition1": 24,
+          "beaver": "P",
+          "human": "H"
+        },
+        {
+          "windowPosition1": 35,
+          "beaver": "A",
+          "human": "P"
+        },
+        {
+          "windowPosition1": 51,
+          "beaver": "S",
+          "human": "T"
+        },
+        {
+          "windowPosition1": 56,
+          "beaver": "N",
+          "human": "S"
+        },
+        {
+          "windowPosition1": 78,
+          "beaver": "P",
+          "human": "V"
+        },
+        {
+          "windowPosition1": 83,
+          "beaver": "A",
+          "human": "P"
+        },
+        {
+          "windowPosition1": 87,
+          "beaver": "G",
+          "human": "S"
+        }
+      ]
+    },
+    {
+      "window": "C",
+      "offset0": 924,
+      "gene": "COL1A1",
+      "identicalResidues": 87,
+      "length": 90,
+      "differences": [
+        {
+          "windowPosition1": 2,
+          "beaver": "E",
+          "human": "D"
+        },
+        {
+          "windowPosition1": 5,
+          "beaver": "M",
+          "human": "I"
+        },
+        {
+          "windowPosition1": 48,
+          "beaver": "A",
+          "human": "P"
+        }
+      ]
+    },
+    {
+      "window": "C",
+      "offset0": 924,
+      "gene": "COL1A2",
+      "identicalResidues": 76,
+      "length": 90,
+      "differences": [
+        {
+          "windowPosition1": 2,
+          "beaver": "Q",
+          "human": "P"
+        },
+        {
+          "windowPosition1": 5,
+          "beaver": "S",
+          "human": "L"
+        },
+        {
+          "windowPosition1": 14,
+          "beaver": "F",
+          "human": "L"
+        },
+        {
+          "windowPosition1": 20,
+          "beaver": "L",
+          "human": "I"
+        },
+        {
+          "windowPosition1": 23,
+          "beaver": "L",
+          "human": "H"
+        },
+        {
+          "windowPosition1": 29,
+          "beaver": "S",
+          "human": "A"
+        },
+        {
+          "windowPosition1": 32,
+          "beaver": "P",
+          "human": "S"
+        },
+        {
+          "windowPosition1": 45,
+          "beaver": "T",
+          "human": "S"
+        },
+        {
+          "windowPosition1": 54,
+          "beaver": "S",
+          "human": "T"
+        },
+        {
+          "windowPosition1": 59,
+          "beaver": "S",
+          "human": "T"
+        },
+        {
+          "windowPosition1": 65,
+          "beaver": "V",
+          "human": "I"
+        },
+        {
+          "windowPosition1": 68,
+          "beaver": "S",
+          "human": "P"
+        },
+        {
+          "windowPosition1": 71,
+          "beaver": "S",
+          "human": "H"
+        },
+        {
+          "windowPosition1": 89,
+          "beaver": "A",
+          "human": "V"
+        }
+      ]
+    }
+  ],
+  "tasks": [
+    {
+      "id": "beaver-N-112",
+      "species": "beaver",
+      "window": "N",
+      "helicalOffset0": 0,
+      "order": "112",
+      "sequences": [
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR",
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR",
+        "GPMGLMGPRGPPGAAGAPGPQGFQGPAGEPGEPGQTGPAGARGPPGAPGKAGEDGHPGKPGRPGERGVVGPQGARGFPGTPGLPGFKGIR"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "beaver-N-121",
+      "species": "beaver",
+      "window": "N",
+      "helicalOffset0": 0,
+      "order": "121",
+      "sequences": [
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR",
+        "GPMGLMGPRGPPGAAGAPGPQGFQGPAGEPGEPGQTGPAGARGPPGAPGKAGEDGHPGKPGRPGERGVVGPQGARGFPGTPGLPGFKGIR",
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "beaver-N-211",
+      "species": "beaver",
+      "window": "N",
+      "helicalOffset0": 0,
+      "order": "211",
+      "sequences": [
+        "GPMGLMGPRGPPGAAGAPGPQGFQGPAGEPGEPGQTGPAGARGPPGAPGKAGEDGHPGKPGRPGERGVVGPQGARGFPGTPGLPGFKGIR",
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR",
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "human-N-112",
+      "species": "human",
+      "window": "N",
+      "helicalOffset0": 0,
+      "order": "112",
+      "sequences": [
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR",
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR",
+        "GPMGLMGPRGPPGAAGAPGPQGFQGPAGEPGEPGQTGPAGARGPAGPPGKAGEDGHPGKPGRPGERGVVGPQGARGFPGTPGLPGFKGIR"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "human-N-121",
+      "species": "human",
+      "window": "N",
+      "helicalOffset0": 0,
+      "order": "121",
+      "sequences": [
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR",
+        "GPMGLMGPRGPPGAAGAPGPQGFQGPAGEPGEPGQTGPAGARGPAGPPGKAGEDGHPGKPGRPGERGVVGPQGARGFPGTPGLPGFKGIR",
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "human-N-211",
+      "species": "human",
+      "window": "N",
+      "helicalOffset0": 0,
+      "order": "211",
+      "sequences": [
+        "GPMGLMGPRGPPGAAGAPGPQGFQGPAGEPGEPGQTGPAGARGPAGPPGKAGEDGHPGKPGRPGERGVVGPQGARGFPGTPGLPGFKGIR",
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR",
+        "GPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHR"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "beaver-middle-112",
+      "species": "beaver",
+      "window": "middle",
+      "helicalOffset0": 462,
+      "order": "112",
+      "sequences": [
+        "GFQGLPGPAGPSGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGSNGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP",
+        "GFQGLPGPAGPSGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGSNGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP",
+        "GFQGLPGPSGTAGEAGKPGERGLPGEFGLPGPAGARGERGPPGESGAAGPSGPIGNRGPSGPPGPDGNKGEPGVVGAPGTAGASGPGGLP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "beaver-middle-121",
+      "species": "beaver",
+      "window": "middle",
+      "helicalOffset0": 462,
+      "order": "121",
+      "sequences": [
+        "GFQGLPGPAGPSGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGSNGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP",
+        "GFQGLPGPSGTAGEAGKPGERGLPGEFGLPGPAGARGERGPPGESGAAGPSGPIGNRGPSGPPGPDGNKGEPGVVGAPGTAGASGPGGLP",
+        "GFQGLPGPAGPSGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGSNGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "beaver-middle-211",
+      "species": "beaver",
+      "window": "middle",
+      "helicalOffset0": 462,
+      "order": "211",
+      "sequences": [
+        "GFQGLPGPSGTAGEAGKPGERGLPGEFGLPGPAGARGERGPPGESGAAGPSGPIGNRGPSGPPGPDGNKGEPGVVGAPGTAGASGPGGLP",
+        "GFQGLPGPAGPSGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGSNGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP",
+        "GFQGLPGPAGPSGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGSNGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "human-middle-112",
+      "species": "human",
+      "window": "middle",
+      "helicalOffset0": 462,
+      "order": "112",
+      "sequences": [
+        "GFQGLPGPAGPPGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGANGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP",
+        "GFQGLPGPAGPPGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGANGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP",
+        "GFQGLPGPSGPAGEVGKPGERGLHGEFGLPGPAGPRGERGPPGESGAAGPTGPIGSRGPSGPPGPDGNKGEPGVVGAVGTAGPSGPSGLP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "human-middle-121",
+      "species": "human",
+      "window": "middle",
+      "helicalOffset0": 462,
+      "order": "121",
+      "sequences": [
+        "GFQGLPGPAGPPGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGANGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP",
+        "GFQGLPGPSGPAGEVGKPGERGLHGEFGLPGPAGPRGERGPPGESGAAGPTGPIGSRGPSGPPGPDGNKGEPGVVGAVGTAGPSGPSGLP",
+        "GFQGLPGPAGPPGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGANGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "human-middle-211",
+      "species": "human",
+      "window": "middle",
+      "helicalOffset0": 462,
+      "order": "211",
+      "sequences": [
+        "GFQGLPGPSGPAGEVGKPGERGLHGEFGLPGPAGPRGERGPPGESGAAGPTGPIGSRGPSGPPGPDGNKGEPGVVGAVGTAGPSGPSGLP",
+        "GFQGLPGPAGPPGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGANGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP",
+        "GFQGLPGPAGPPGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGANGAPGNDGAKGDAGAPGAPGSQGAPGLQGMP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "beaver-C-112",
+      "species": "beaver",
+      "window": "C",
+      "helicalOffset0": 924,
+      "order": "112",
+      "sequences": [
+        "GERGMKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAAGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP",
+        "GERGMKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAAGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP",
+        "GQRGSPGLKGHNGFQGLPGLAGLHGDQGSPGPVGPAGPRGPAGPTGPAGKDGRSGHPGSVGPAGVRGSQGSQGPAGPPGPPGPPGPPGAS"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "beaver-C-121",
+      "species": "beaver",
+      "window": "C",
+      "helicalOffset0": 924,
+      "order": "121",
+      "sequences": [
+        "GERGMKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAAGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP",
+        "GQRGSPGLKGHNGFQGLPGLAGLHGDQGSPGPVGPAGPRGPAGPTGPAGKDGRSGHPGSVGPAGVRGSQGSQGPAGPPGPPGPPGPPGAS",
+        "GERGMKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAAGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "beaver-C-211",
+      "species": "beaver",
+      "window": "C",
+      "helicalOffset0": 924,
+      "order": "211",
+      "sequences": [
+        "GQRGSPGLKGHNGFQGLPGLAGLHGDQGSPGPVGPAGPRGPAGPTGPAGKDGRSGHPGSVGPAGVRGSQGSQGPAGPPGPPGPPGPPGAS",
+        "GERGMKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAAGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP",
+        "GERGMKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAAGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "human-C-112",
+      "species": "human",
+      "window": "C",
+      "helicalOffset0": 924,
+      "order": "112",
+      "sequences": [
+        "GDRGIKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAPGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP",
+        "GDRGIKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAPGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP",
+        "GPRGLPGLKGHNGLQGLPGIAGHHGDQGAPGSVGPAGPRGPAGPSGPAGKDGRTGHPGTVGPAGIRGPQGHQGPAGPPGPPGPPGPPGVS"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "human-C-121",
+      "species": "human",
+      "window": "C",
+      "helicalOffset0": 924,
+      "order": "121",
+      "sequences": [
+        "GDRGIKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAPGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP",
+        "GPRGLPGLKGHNGLQGLPGIAGHHGDQGAPGSVGPAGPRGPAGPSGPAGKDGRTGHPGTVGPAGIRGPQGHQGPAGPPGPPGPPGPPGVS",
+        "GDRGIKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAPGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    },
+    {
+      "id": "human-C-211",
+      "species": "human",
+      "window": "C",
+      "helicalOffset0": 924,
+      "order": "211",
+      "sequences": [
+        "GPRGLPGLKGHNGLQGLPGIAGHHGDQGAPGSVGPAGPRGPAGPSGPAGKDGRTGHPGTVGPAGIRGPQGHQGPAGPPGPPGPPGPPGVS",
+        "GDRGIKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAPGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP",
+        "GDRGIKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAPGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPP"
+      ],
+      "ptm": "gene-encoded sequence; CDSM getprop internally maps Y-position P to O for propensity lookup; no measured PTM assignment"
+    }
+  ]
+}

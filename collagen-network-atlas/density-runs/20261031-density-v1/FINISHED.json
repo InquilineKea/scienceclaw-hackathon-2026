@@ -1,0 +1,9 @@
+{
+  "status": "completed",
+  "uniqueConfigurations": 6300,
+  "solverRuns": 12600,
+  "invalid": 0,
+  "capped": 124,
+  "workUnresolved": 412,
+  "manifestSha256": "15e00af6c6c241228bff4ecbac78e0941d121c53961e82f824fac47c09eef579"
+}

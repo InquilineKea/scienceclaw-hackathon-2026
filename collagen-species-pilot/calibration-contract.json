@@ -1,0 +1,23 @@
+{
+  "schema": 1,
+  "status": "not_calibrated",
+  "species": ["Castor canadensis", "Homo sapiens"],
+  "collagen": "type I: two COL1A1 plus one COL1A2",
+  "damageChemistry": null,
+  "attachmentSites": null,
+  "forceFieldAndTopologyHashes": null,
+  "temperatureKelvin": null,
+  "hydrationAndIonicConditions": null,
+  "ptmOccupancy": null,
+  "independentReplicates": null,
+  "forceExtensionSamplesWithUnits": null,
+  "axialRigidityEA": null,
+  "bendingRigidityKappa": null,
+  "slidingLaw": null,
+  "connectorPotential": null,
+  "validatedRuptureLaw": null,
+  "homogenizationRule": null,
+  "uncertaintyIntervals": null,
+  "networkTransferEnabled": false,
+  "reason": "Sequence and backbone coordinates alone do not determine these properties. No species or age-dependent mechanical multipliers may be inferred from this commissioning run."
+}

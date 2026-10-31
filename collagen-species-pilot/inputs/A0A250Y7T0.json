@@ -1,0 +1,1345 @@
+{
+  "entryType": "UniProtKB unreviewed (TrEMBL)",
+  "primaryAccession": "A0A250Y7T0",
+  "uniProtkbId": "A0A250Y7T0_CASCN",
+  "entryAudit": {
+    "firstPublicDate": "2017-11-22",
+    "lastAnnotationUpdateDate": "2026-09-02",
+    "lastSequenceUpdateDate": "2017-11-22",
+    "entryVersion": 41,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 2.0,
+  "organism": {
+    "scientificName": "Castor canadensis",
+    "commonName": "American beaver",
+    "taxonId": 51338,
+    "evidences": [
+      {
+        "evidenceCode": "ECO:0000313",
+        "source": "RefSeq",
+        "id": "XP_020026973.1"
+      }
+    ],
+    "lineage": [
+      "Eukaryota",
+      "Metazoa",
+      "Chordata",
+      "Craniata",
+      "Vertebrata",
+      "Euteleostomi",
+      "Mammalia",
+      "Eutheria",
+      "Euarchontoglires",
+      "Glires",
+      "Rodentia",
+      "Castorimorpha",
+      "Castoridae",
+      "Castor"
+    ]
+  },
+  "proteinExistence": "3: Inferred from homology",
+  "proteinDescription": {
+    "submissionNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000313",
+              "source": "RefSeq",
+              "id": "XP_020026973.1"
+            }
+          ],
+          "value": "Collagen alpha-1(I) chain"
+        }
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000313",
+            "source": "RefSeq",
+            "id": "XP_020026973.1"
+          }
+        ],
+        "value": "Col1a1"
+      }
+    }
+  ],
+  "comments": [
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000256",
+                "source": "PROSITE-ProRule",
+                "id": "PRU00793"
+              }
+            ],
+            "value": "Secreted, extracellular space, extracellular matrix",
+            "id": "SL-0111"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000256",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00793"
+            }
+          ],
+          "value": "Belongs to the fibrillar collagen family"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000256",
+              "source": "PROSITE-ProRule",
+              "id": "PRU00793"
+            }
+          ],
+          "value": "Lacks conserved residue(s) required for the propagation of feature annotation"
+        }
+      ],
+      "commentType": "CAUTION"
+    }
+  ],
+  "features": [
+    {
+      "type": "Signal",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 22,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "SignalP"
+        }
+      ]
+    },
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 23,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1460,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "SignalP"
+        }
+      ],
+      "featureId": "PRO_5047715911"
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 36,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 94,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "VWFC",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000259",
+          "source": "PROSITE",
+          "id": "PS50184"
+        }
+      ]
+    },
+    {
+      "type": "Domain",
+      "location": {
+        "start": {
+          "value": 1225,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1460,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Fibrillar collagen NC1",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000259",
+          "source": "PROSITE",
+          "id": "PS51461"
+        }
+      ]
+    },
+    {
+      "type": "Region",
+      "location": {
+        "start": {
+          "value": 100,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1212,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Disordered",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 135,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 150,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Pro residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 169,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 183,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 194,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 213,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 225,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 239,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Basic and acidic residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 314,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 327,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 329,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 341,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Pro residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 375,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 414,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 481,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 490,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Gly residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 534,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 588,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 696,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 723,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 780,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 794,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 807,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 834,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 836,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 848,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Pro residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 849,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 879,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 908,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 917,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 927,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 951,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 992,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1002,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Pro residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 1004,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1019,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 1038,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1053,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Pro residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 1074,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1088,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 1089,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1103,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Basic and acidic residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 1122,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1155,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Low complexity",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Compositional bias",
+      "location": {
+        "start": {
+          "value": 1173,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1188,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Pro residues",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "MobiDB-lite"
+        }
+      ]
+    },
+    {
+      "type": "Disulfide bond",
+      "location": {
+        "start": {
+          "value": 1255,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1255,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Interchain",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00793"
+        }
+      ]
+    },
+    {
+      "type": "Disulfide bond",
+      "location": {
+        "start": {
+          "value": 1261,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1261,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Interchain",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00793"
+        }
+      ]
+    },
+    {
+      "type": "Disulfide bond",
+      "location": {
+        "start": {
+          "value": 1278,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1278,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Interchain",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00793"
+        }
+      ]
+    },
+    {
+      "type": "Disulfide bond",
+      "location": {
+        "start": {
+          "value": 1287,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1287,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Interchain",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00793"
+        }
+      ]
+    },
+    {
+      "type": "Disulfide bond",
+      "location": {
+        "start": {
+          "value": 1366,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1411,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00793"
+        }
+      ]
+    }
+  ],
+  "keywords": [
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00022837"
+        }
+      ],
+      "id": "KW-0106",
+      "category": "Ligand",
+      "name": "Calcium"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00023119"
+        },
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00793"
+        }
+      ],
+      "id": "KW-0176",
+      "category": "Domain",
+      "name": "Collagen"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00023157"
+        },
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00793"
+        }
+      ],
+      "id": "KW-1015",
+      "category": "PTM",
+      "name": "Disulfide bond"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00022530"
+        },
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00793"
+        }
+      ],
+      "id": "KW-0272",
+      "category": "Cellular component",
+      "name": "Extracellular matrix"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00023180"
+        }
+      ],
+      "id": "KW-0325",
+      "category": "PTM",
+      "name": "Glycoprotein"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00023278"
+        }
+      ],
+      "id": "KW-0379",
+      "category": "PTM",
+      "name": "Hydroxylation"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00022723"
+        }
+      ],
+      "id": "KW-0479",
+      "category": "Ligand",
+      "name": "Metal-binding"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000313",
+          "source": "Proteomes",
+          "id": "UP001732720"
+        }
+      ],
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00022737"
+        }
+      ],
+      "id": "KW-0677",
+      "category": "Domain",
+      "name": "Repeat"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "ARBA",
+          "id": "ARBA00022525"
+        },
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "PROSITE-ProRule",
+          "id": "PRU00793"
+        }
+      ],
+      "id": "KW-0964",
+      "category": "Cellular component",
+      "name": "Secreted"
+    },
+    {
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000256",
+          "source": "SAM",
+          "id": "SignalP"
+        }
+      ],
+      "id": "KW-0732",
+      "category": "Domain",
+      "name": "Signal"
+    }
+  ],
+  "references": [
+    {
+      "referenceNumber": 1,
+      "citation": {
+        "id": "CI-FT6ASB9QRK3SG",
+        "citationType": "submission",
+        "authoringGroup": [
+          "RefSeq"
+        ],
+        "publicationDate": "JAN-2026",
+        "submissionDatabase": "UniProtKB"
+      },
+      "referencePositions": [
+        "IDENTIFICATION"
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000313",
+          "source": "RefSeq",
+          "id": "XP_020026973.1"
+        }
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "RefSeq",
+      "id": "XP_020026973.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "XM_020171384.2"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "109691407",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "ccan:109691407",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "CTD",
+      "id": "1277",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "OrthoDB",
+      "id": "8939548at2759",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP001732720",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome 11"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005576",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:extracellular region"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005201",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "F:extracellular matrix structural constituent"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:InterPro"
+        }
+      ]
+    },
+    {
+      "database": "FunFam",
+      "id": "2.60.120.1000:FF:000001",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Collagen alpha-1 type I chain"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "2.60.120.1000",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "-"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Gene3D",
+      "id": "2.10.70.10",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Complement Module, domain 1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR008160",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Collagen"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR050938",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Collagen_Structural_Proteins"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR000885",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Fib_collagen_C"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR001007",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "VWF_dom"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR37456:SF6",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "COLLAGEN ALPHA-1(XXIII) CHAIN-LIKE ISOFORM X2"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PANTHER",
+      "id": "PTHR37456",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "SI:CH211-266K2.1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF01410",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "COLFI"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF01391",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Collagen"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "11"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF00093",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "VWC"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SMART",
+      "id": "SM00038",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "COLFI"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SMART",
+      "id": "SM00214",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "VWC"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "SUPFAM",
+      "id": "SSF57603",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "FnI-like domain"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS51461",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "NC1_FIB"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS01208",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "VWFC_1"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PROSITE",
+      "id": "PS50184",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "VWFC_2"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MFSFVDLRLLLLLAATALQTHGQEEVLRQQEDIPQISCIHDGIRHPNNETWKPEPCLVCICNNGTTLCDDVICENVFDCLEPQILDGECCPVCVEHSVTPDQGGQGVEGPKGDTGPRGPRGPSGPPGRDGIPGQPGLPGPPGPPGPPGPPGLGGNFAPQMSYGYDEKSGGVSVPGPMGPSGPRGLPGPPGAPGPQGFQGPPGEPGEPGASGPMGPRGPPGPPGKNGDDGEAGKPGRPGERGPPGPQGARGLPGTAGLPGMKGHRGFSGLDGAKGDSGPAGPKGEPGSPGENGAPGQMGPRGLPGERGRPGAPGPAGARGNDGATGAAGPPGPTGPAGPPGFPGAVGAKGEAGPQGARGSEGPQGVRGEPGPPGPAGAAGPAGNPGADGQPGAKGANGAPGIAGAPGFPGARGPSGPQGPSGPPGPKGNSGEPGAPGNKGDTGAKGEPGPVGVQGPPGPAGEEGKRGARGEPGPAGLPGPPGERGGPGSRGFPGADGVAGPKGPAGERGSPGPAGPKGSPGEAGRPGEAGLPGAKGLTGSPGSPGPDGKTGPPGPAGQDGRPGPAGPPGARGQAGVMGFPGPKGAAGEPGKAGERGVPGPPGAVGPAGKDGEAGAQGPPGPAGPAGERGEQGPAGSPGFQGLPGPAGPSGEAGKPGEQGVPGDLGAPGPSGARGERGFPGERGVQGPPGPAGPRGSNGAPGNDGAKGDAGAPGAPGSQGAPGLQGMPGERGAAGLPGPKGDRGDAGPKGADGSPGKDGVRGLTGPIGPPGPAGAPGDKGETGPSGPAGPTGARGAPGDRGEPGPPGPAGFAGPPGADGQPGAKGEPGDAGAKGDAGPPGPAGPAGPPGPIGNVGAPGPKGARGSAGPPGATGFPGAAGRVGPPGPSGNAGPPGPPGPVGKEGGKGPRGETGPAGRPGEVGPPGPPGPAGEKGSPGSDGPAGAPGTPGPQGIAGQRGVVGLPGQRGERGFPGLPGPSGEPGKQGPSGASGERGPPGPMGPPGLAGPPGESGREGSPGAEGSPGRDGSPGPKGDRGESGPAGPPGAPGAPGAPGPVGPAGKSGDRGETGPAGPAGPIGPAGSRGPAGPQGPRGDKGETGEQGERGMKGHRGFSGLQGPPGPPGSPGEQGPSGASGPAGPRGPPGSAGAAGKDGLNGLPGPIGPPGPRGRTGDAGPVGPPGPPGPPGPPGPPSGGYDFSFLPQPPQEKSGDGGRYYRADDANVVRDRDLEVDTTLKSLSQQIENIRSPEGSRKNPARTCRDLKMCHSDWKSGEYWIDPNQGCNLDAIKVFCNMETGETCVYPTQPTVAQKNWYISKNPKEKKHVWFGESMTGGFQFEYGGEGSDPADVAIQLTFLRLMSTEASQNITYHCKNSVAYMDQQTGNLKKSLLLQGSNEIELRGEGNSRFTYVTLEDGCKSHTGTWGKTVIQYKTTKTSRLPIIDVAPLDIGAPDQEFGIDISPVCFV",
+    "length": 1460,
+    "molWeight": 138793,
+    "crc64": "7EC6BC7C2B350764",
+    "md5": "EBF1AFA00F8D31F8F408AE896FDEA069"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "SUBCELLULAR LOCATION": 1,
+      "SIMILARITY": 1,
+      "CAUTION": 1
+    },
+    "countByFeatureType": {
+      "Signal": 1,
+      "Chain": 1,
+      "Domain": 2,
+      "Region": 1,
+      "Compositional bias": 23,
+      "Disulfide bond": 5
+    },
+    "uniParcId": "UPI0009817F71"
+  }
+}

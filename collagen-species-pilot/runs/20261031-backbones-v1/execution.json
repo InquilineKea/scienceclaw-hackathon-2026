@@ -1,0 +1,22 @@
+{
+  "runtime_image": "docker.io/library/node@sha256:94c973596a8581a87ba42746ceb0b0e0b5246d098de45b1ce04dcc967cfc5dfb",
+  "compute": "Nebius CPU-only, 2 vCPUs",
+  "gpuUsed": false,
+  "uid": 65534,
+  "network": "seccomp blocks socket/connect/bind/listen/send/receive; socket denial checked before each child",
+  "workloadTimeoutSeconds": 300,
+  "startedUnix": 1793467261.1945534,
+  "sourceHashes": {
+    "vendor/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+    "vendor/step1_backbone_builder.py": "9d94365a72f29fc038b0f24249d59dac9c4e9a16d9b6dce6c201de316f18c50e",
+    "vendor/thparams/THpropensities.dat": "bb7a88428f3f24b283d1009196e3cdbd909513a390bdd86a4fd4cd9c87a7259f",
+    "vendor/thparams/THparams_nonsmooth.dat": "0d4dd9e009969ba81b299f9e2b984091655cd989940bda3c6a90e713cf396955",
+    "vendor/thparams/THparams_IR.dat": "b1a17c02aec33f8d3cc8d958391604ef9c237dfe8966a15b9d6066ea06c47faa",
+    "vendor/thparams/THparams_AR.dat": "df4d03ca2dddedfc187d4a89933135f2790c3480feae0415b494bac7162c674d",
+    "inputs/pilot.json": "d1d3c373a90e36fd9135a1ca617d397756d6c7588460f48bca55540bd5f1cd91",
+    "run-backbones.py": "b13033c78adbb5c7cbd031241bc256cf985c803c8f66b2b572e57dce4dfc6932"
+  },
+  "returncode": 0,
+  "elapsedSeconds": 0.28098368644714355,
+  "success": true
+}

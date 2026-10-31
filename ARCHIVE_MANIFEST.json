@@ -1,10 +1,14 @@
 {
-  "createdAt": "2026-10-31T12:54:28.640114+00:00",
-  "scope": "Published research archives, live static application, separate directional-strain and age-related connector hypothesis datasets; manifest excludes itself.",
+  "createdAt": "2026-10-31T17:25:32.721019+00:00",
+  "scope": "Published archives and application, density sweep and matched CDSM backbone pilot. Large raw density curves use the linked release manifest. This inventory excludes itself and ignored local raw copies.",
   "files": {
+    ".gitignore": {
+      "bytes": 62,
+      "sha256": "3efb159c398290c843c5c1f5b283023ffdf04fc9d943a840b2c29231f466617f"
+    },
     "ARCHIVE_INDEX.md": {
-      "bytes": 5265,
-      "sha256": "55fd6653632f3da9ef92d900a7e28cfd9e4aaf4a8838871dd2274f2bd3ff7a7c"
+      "bytes": 6048,
+      "sha256": "91ba3654d1671caff9c79765629078cfd265c0d3e3d671ce453d22362c6fe670"
     },
     "ARCHIVE_PROVENANCE.json": {
       "bytes": 188852,
@@ -14,9 +18,25 @@
       "bytes": 1565,
       "sha256": "a447e48778d4ed605cd30804bfab8333cbebe2a6aa7c4e9376a2fe2309a3ed28"
     },
+    "DATA_TRANSPORT_ERRATA.md": {
+      "bytes": 1493,
+      "sha256": "8fafce48413e3110c30acfdb4c9d987e3c9d1c7c7198e62d6789ba9f6873d45f"
+    },
+    "LARGE_DATASETS.md": {
+      "bytes": 3640,
+      "sha256": "cb7d19ac527024c6fac0918411d19a8394fa5cae7f258c06e44193d850ae779b"
+    },
+    "LARGE_DATA_SECURITY_REVIEW.md": {
+      "bytes": 2524,
+      "sha256": "6f0df48d5ee01682cef40c5e5e38fea1dac125ffda78df15a74e0cb3d3a659da"
+    },
+    "PAGES.md": {
+      "bytes": 5765,
+      "sha256": "e31da8853ca5eef1ff56199bd997142ca52b4c0a65561d086775182754e4ea94"
+    },
     "README.md": {
-      "bytes": 5886,
-      "sha256": "646b893e7bb059118766b26c7af32a6339d4a9e125e161f9457b51b71beed729"
+      "bytes": 6740,
+      "sha256": "978b6a05a6afa854da06b01abe63853fbc1b7ce88e46fecef90c99a2b2c0caa9"
     },
     "archives/2026-10-31/README.md": {
       "bytes": 2011,
@@ -30,9 +50,17 @@
       "bytes": 7251202,
       "sha256": "d0aa9885504bb129bd3f3e9afa5e23fd360ec64bdfabb9563acb1694ef649556"
     },
+    "archives/2026-10-31/fracture-atlas-complete-final-f0a5034f44aa.zip": {
+      "bytes": 12487518,
+      "sha256": "9127370ca5ca9b1e07a6518809886815234a7e890e3b8098a7caf0f2e820966e"
+    },
     "archives/2026-10-31/fracture-atlas-complete.zip": {
       "bytes": 10239026,
       "sha256": "29cc630d7d9b559877451320be7c52f1fb7d1cb3be38ff7cc451a0fec9339a94"
+    },
+    "archives/2026-10-31/fracture-atlas-data-source-final-f0a5034f44aa.zip": {
+      "bytes": 5861750,
+      "sha256": "94ca5e64137eae88856ede6fdc2917c4df2214784fd1ae71e14f0daad801e6eb"
     },
     "archives/2026-10-31/fracture-atlas-data-source.zip": {
       "bytes": 3613252,
@@ -57,6 +85,10 @@
     "collagen-molecular-pilot/SECURITY_REVIEW.md": {
       "bytes": 9434,
       "sha256": "aee8c9f827330a1302d568ccf66f126b070e0a6f990f5a18d2d1732ecc93e901"
+    },
+    "collagen-molecular-pilot/large_data.py": {
+      "bytes": 14401,
+      "sha256": "5fee2fbdc735e5dac6375a5a781d59c26ea98dd8fa28a27b1af0f5abff5cc473"
     },
     "collagen-molecular-pilot/pilot.py": {
       "bytes": 12837,
@@ -553,6 +585,10 @@
     "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/verify_run.py": {
       "bytes": 2816,
       "sha256": "f278dce054674d956fdc3a2342b4d48749ee245d1cbde1026560a569a2f18d28"
+    },
+    "collagen-molecular-pilot/restore-large-data.py": {
+      "bytes": 4159,
+      "sha256": "736ededfb1af6d7a2dbf14c1f3297445a29038654a313a34cf1a65b33e10d9a0"
     },
     "collagen-molecular-pilot/restore_reviewed_environment.sh": {
       "bytes": 1587,
@@ -1242,9 +1278,25 @@
       "bytes": 2821,
       "sha256": "3bb6a366ff2f453c57ad7616bb1eed18143bc70e14d26df9540eead28343e43b"
     },
+    "collagen-molecular-pilot/upload-run.py": {
+      "bytes": 12490,
+      "sha256": "10fc834383f682ffc668321fe4b0e37dbc864469e3791aa1211825495d5d31e2"
+    },
     "collagen-network-atlas/.gitignore": {
       "bytes": 49,
       "sha256": "b887f14880c5f218cd788d6d80c7e005a39f61605a7cd875f46d1d731f7b337e"
+    },
+    "collagen-network-atlas/AGING_METHODS.md": {
+      "bytes": 8224,
+      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
+    },
+    "collagen-network-atlas/DENSITY_METHODS.md": {
+      "bytes": 4871,
+      "sha256": "c64859609c4dca8481daa89305ebf299c6d2905ffee91774565bd0e27fa612b3"
+    },
+    "collagen-network-atlas/DIRECTIONAL_METHODS.md": {
+      "bytes": 5849,
+      "sha256": "6f7139912438dc881ddbd1d3f0310ec96bef355bc415d43980e276f81793261b"
     },
     "collagen-network-atlas/EVIDENCE.md": {
       "bytes": 5196,
@@ -1270,6 +1322,78 @@
       "bytes": 3895,
       "sha256": "0f3b86689c1fd4a48cfbfa6e2578a1683e8e388df581351dac5e23862562bfe7"
     },
+    "collagen-network-atlas/SPECIES_METHODS.md": {
+      "bytes": 6596,
+      "sha256": "994128bd5c4deb3c67a31b151014548869cfcfefc6a8534acdfbcd9f66d3820b"
+    },
+    "collagen-network-atlas/UPLOAD-SECURITY-REVIEW.md": {
+      "bytes": 3062,
+      "sha256": "2da069bebd35dcd113fc3e401de986a1b11f28ce4b9949914bc3bc2175a2edca"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/AGING_METHODS.md": {
+      "bytes": 8224,
+      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/CHECKS.json": {
+      "bytes": 476,
+      "sha256": "0be42e0aa69f8e9ab0fc8a316562b08cfa217824e5ba77ede86d54f34f59e15c"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/MANIFEST.json": {
+      "bytes": 1442,
+      "sha256": "9ddf7b569a8839165f02148322b5181e118f5152ce41b805a3da1af39f73b7f6"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging-data.js": {
+      "bytes": 458679,
+      "sha256": "ddc126b127e648a37f22131f594e9c73440f6d4524e0d8222ad783c449f1f95f"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging.csv": {
+      "bytes": 149638,
+      "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging.json": {
+      "bytes": 623269,
+      "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/benchmark-aging.js": {
+      "bytes": 2729,
+      "sha256": "bf08005898199fe1abea31ddf3c3f7296f698098675da420724993f0c5af1008"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/check-aging.js": {
+      "bytes": 2506,
+      "sha256": "691da0cac5d2c3491c13a530903afa95ea76dd30b4504056062eb5c80ddd26a0"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-network-atlas/aging-ui.js": {
+      "bytes": 15510,
+      "sha256": "349bfe53dad708927dbc380b4c25c962d20ca7f65c55e865d049d3b6cd8f86d3"
+    },
+    "collagen-network-atlas/aging-worker.js": {
+      "bytes": 735,
+      "sha256": "e20e0dc7de2022206b283b9ef1442451b1d70e4cee96b81aad6f08cea49821c3"
+    },
+    "collagen-network-atlas/aging.css": {
+      "bytes": 1305,
+      "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
+    },
+    "collagen-network-atlas/aging.html": {
+      "bytes": 13262,
+      "sha256": "ebee360f6b9855ee0c77e60eb7471653731a9e463f9127a642dba9a256c1a7f0"
+    },
+    "collagen-network-atlas/aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
     "collagen-network-atlas/app.js": {
       "bytes": 20543,
       "sha256": "37ca08684ed57654f167559b4e81393ae989943bde7505a22f33618671b27603"
@@ -1278,13 +1402,41 @@
       "bytes": 2171,
       "sha256": "7ced362139a506ae915e8ab722d73f3093fbce584a0ea01c4de60b82cf7a2c9e"
     },
+    "collagen-network-atlas/benchmark-aging.js": {
+      "bytes": 2729,
+      "sha256": "bf08005898199fe1abea31ddf3c3f7296f698098675da420724993f0c5af1008"
+    },
     "collagen-network-atlas/benchmark-core.js": {
       "bytes": 10084,
       "sha256": "b4cb186ca36de605c1f8e4de13c868d1971024197733b4fb5b5cdfb26ea8e7f6"
     },
+    "collagen-network-atlas/benchmark-density.js": {
+      "bytes": 6126,
+      "sha256": "8a879b064a4fc9d7a5182735a2f16cb8e00cbb1058cebb4316528d9d92b5e408"
+    },
+    "collagen-network-atlas/benchmark-directional.js": {
+      "bytes": 2568,
+      "sha256": "bb8b5d9db044103d172ab20f6c8ba7e2f3edaa2d92ca8ce37c75640e4fbd860c"
+    },
     "collagen-network-atlas/benchmark.js": {
       "bytes": 413,
       "sha256": "69657fe59127cee9aa460bd38d44b46107242e591733bb223c34e3d62f7ddf2f"
+    },
+    "collagen-network-atlas/check-aging.js": {
+      "bytes": 2506,
+      "sha256": "691da0cac5d2c3491c13a530903afa95ea76dd30b4504056062eb5c80ddd26a0"
+    },
+    "collagen-network-atlas/check-density.js": {
+      "bytes": 1600,
+      "sha256": "c2ca5562e3a38cf3c525538bd9fc7497b4838a78afed16aea21317bc2aaa4b30"
+    },
+    "collagen-network-atlas/check-directional.js": {
+      "bytes": 2860,
+      "sha256": "6f927cc1e00ae95faac753811b9772577cbff9fb52b0b36b42d9523e7cc8aed4"
+    },
+    "collagen-network-atlas/check-load-guide.js": {
+      "bytes": 1452,
+      "sha256": "38b8887bb39acbc94b1e1a8f15b928f611b3432d8c189f110cde0102de00a714"
     },
     "collagen-network-atlas/check-media.swift": {
       "bytes": 940,
@@ -1293,6 +1445,18 @@
     "collagen-network-atlas/check.js": {
       "bytes": 2915,
       "sha256": "de5bf54d9e9869042c0f8906023380466b8d9d42637cac89d258b9892057d9a6"
+    },
+    "collagen-network-atlas/data/aging-data.js": {
+      "bytes": 458679,
+      "sha256": "ddc126b127e648a37f22131f594e9c73440f6d4524e0d8222ad783c449f1f95f"
+    },
+    "collagen-network-atlas/data/aging.csv": {
+      "bytes": 149638,
+      "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
+    },
+    "collagen-network-atlas/data/aging.json": {
+      "bytes": 623269,
+      "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
     },
     "collagen-network-atlas/data/audit.json": {
       "bytes": 1329,
@@ -1313,6 +1477,30 @@
     "collagen-network-atlas/data/curves.csv": {
       "bytes": 4637534,
       "sha256": "be25548e5eab953bf8b569a31171e0d258e6cae591937efd37daf76a8d899ec2"
+    },
+    "collagen-network-atlas/data/density-data.js": {
+      "bytes": 2683343,
+      "sha256": "a6ec7e5eca2f107d4805bc21e1f3fd4c2bfbd79b364405dcb91bcdee8bc4ffb6"
+    },
+    "collagen-network-atlas/data/density.csv": {
+      "bytes": 2435966,
+      "sha256": "0aa0af9a8430fe350597ecede322dc9b604ccbcd9b78dc21962fc23c6669b837"
+    },
+    "collagen-network-atlas/data/density.json": {
+      "bytes": 15382266,
+      "sha256": "4ce2afe0bbd43bea9305f55fba988d78e9fa5f14a93cefaf8211acd4fce9fa20"
+    },
+    "collagen-network-atlas/data/directional-data.js": {
+      "bytes": 126583,
+      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
+    },
+    "collagen-network-atlas/data/directional.csv": {
+      "bytes": 60148,
+      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
+    },
+    "collagen-network-atlas/data/directional.json": {
+      "bytes": 171432,
+      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
     },
     "collagen-network-atlas/data/historical-media-input.json": {
       "bytes": 9259515,
@@ -1354,6 +1542,18 @@
       "bytes": 339,
       "sha256": "303f242870bff9e700c8f1bbf5a6c4bd17d41050cee26d1444f55d52247fc72d"
     },
+    "collagen-network-atlas/data/species-backbones.json": {
+      "bytes": 480950,
+      "sha256": "bc73e1479413e54a25677b0d9167ece91aad6429ca84660982163dc17c06a51b"
+    },
+    "collagen-network-atlas/data/species-data.js": {
+      "bytes": 292758,
+      "sha256": "5a2cc4110241d7ffde741b4610d7ffa287aef09ac7aff379dd6a7d41c18074c2"
+    },
+    "collagen-network-atlas/data/species-inputs.json": {
+      "bytes": 17859,
+      "sha256": "d1d3c373a90e36fd9135a1ca617d397756d6c7588460f48bca55540bd5f1cd91"
+    },
     "collagen-network-atlas/data/summary.csv": {
       "bytes": 201413,
       "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
@@ -1365,6 +1565,166 @@
     "collagen-network-atlas/data/validation.csv": {
       "bytes": 1948,
       "sha256": "610e0e618f7f2bb09a15e17f4d0f6caec6c1b182434c7e30a5a79385e94aca56"
+    },
+    "collagen-network-atlas/density-cloud/SECURITY_REVIEW.md": {
+      "bytes": 3796,
+      "sha256": "9cd77ab8a997c528d31629e2001a99ff1c483ed92a67dbada96cb032f23069eb"
+    },
+    "collagen-network-atlas/density-cloud/cloud-density-template.py": {
+      "bytes": 4553,
+      "sha256": "6acfb25dd184c9892bd5bb5cb729b66bf11f4f9da197f01c5490ca0ed2c0600e"
+    },
+    "collagen-network-atlas/density-cloud/cloud-density.py": {
+      "bytes": 21592,
+      "sha256": "918cdfc022671f374a0c7c5e97de76b52758b9341222e52f8a53f6acddb8e952"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/.gitignore": {
+      "bytes": 22,
+      "sha256": "0684898d068a54db7fbbd86b77d6805ebc047243ba40d34af58f0fa8385924d9"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/COLLECTION_MANIFEST.json": {
+      "bytes": 3011,
+      "sha256": "16e9ca5aed16df66de2febd089c9293cb43c6667a870e7fd31028ba9b4b95943"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/FINISHED.json": {
+      "bytes": 229,
+      "sha256": "785c88047f7ad866c9b1c931723d8551d238454116db92afe09d8aefb3d68284"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/MANIFEST.json": {
+      "bytes": 1418,
+      "sha256": "15e00af6c6c241228bff4ecbac78e0941d121c53961e82f824fac47c09eef579"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/README.md": {
+      "bytes": 2606,
+      "sha256": "3b791bf8340e6144d918b0766a376d02082c60cd901db573c25c9d31293f64af"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/VALIDATION.json": {
+      "bytes": 4135,
+      "sha256": "b69575368ebbd81a658caa15273381f3584bb550f58594f6d1b2b90965526b05"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/_release/LARGE_DATASETS.json": {
+      "bytes": 848,
+      "sha256": "b5a91dd06fc0043307fdbb95d427e9a311b665595244ac15b4ce4dbd88c58fd3"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/_release/README.md": {
+      "bytes": 723,
+      "sha256": "2120b613a656c2962020e5c8ddeaed5f38f9448e1edc6b477117440fa0bb28f1"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/_release/restore-large-data.py": {
+      "bytes": 4159,
+      "sha256": "736ededfb1af6d7a2dbf14c1f3297445a29038654a313a34cf1a65b33e10d9a0"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/benchmark-density.js": {
+      "bytes": 6126,
+      "sha256": "8a879b064a4fc9d7a5182735a2f16cb8e00cbb1058cebb4316528d9d92b5e408"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/check-density.js": {
+      "bytes": 1600,
+      "sha256": "c2ca5562e3a38cf3c525538bd9fc7497b4838a78afed16aea21317bc2aaa4b30"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/density-data.js": {
+      "bytes": 15382297,
+      "sha256": "628ac0d805524c1e58f1c6bb483e96c89823e16c2fddc5d489f628e7cc2b04c5"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/density.csv": {
+      "bytes": 2435966,
+      "sha256": "0aa0af9a8430fe350597ecede322dc9b604ccbcd9b78dc21962fc23c6669b837"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/density.js": {
+      "bytes": 2300,
+      "sha256": "4e69aedabb2c23499d6a7702736e4cb515eec7be5310940c2d2db2971035bb45"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/density.json": {
+      "bytes": 15382266,
+      "sha256": "4ce2afe0bbd43bea9305f55fba988d78e9fa5f14a93cefaf8211acd4fce9fa20"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/download-receipt.json": {
+      "bytes": 1129,
+      "sha256": "8ad555b6e0aff26f762b1d31fda0f0ad1617a778fb57a7783c73b544ac65648b"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/execution.json": {
+      "bytes": 1013,
+      "sha256": "509a1b92c19d51a1829914c41bd14b494b1dbf1b48bcde90b26cbe213a0663f7"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/execution.log": {
+      "bytes": 3464,
+      "sha256": "eb469054499ea91458409f5754512c26312aff54628fbaf280a0bf04ec7eea9d"
+    },
+    "collagen-network-atlas/density-runs/20261031-density-v1/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-network-atlas/density-ui.js": {
+      "bytes": 6288,
+      "sha256": "16d82d29e56aed46d9a1dc4b3c37a0ce0d25b6fcc4f668a7650cecc6cafc396d"
+    },
+    "collagen-network-atlas/density.css": {
+      "bytes": 1197,
+      "sha256": "46930ef55c040e63b24d830623f54189f5391fc3942cd8e0489c27b33f050700"
+    },
+    "collagen-network-atlas/density.js": {
+      "bytes": 2300,
+      "sha256": "4e69aedabb2c23499d6a7702736e4cb515eec7be5310940c2d2db2971035bb45"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/CHECKS.json": {
+      "bytes": 1124,
+      "sha256": "1db024e0f0de87f3ae17fb920042130214243e8948b53aed582dbbfd72e15008"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/DIRECTIONAL_METHODS.md": {
+      "bytes": 5849,
+      "sha256": "6f7139912438dc881ddbd1d3f0310ec96bef355bc415d43980e276f81793261b"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/MANIFEST.json": {
+      "bytes": 1324,
+      "sha256": "ee5fccb31ac756cf3c69ef0a4f23807706be28ae96f1b5906555558bad787d56"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/benchmark-directional.js": {
+      "bytes": 2568,
+      "sha256": "bb8b5d9db044103d172ab20f6c8ba7e2f3edaa2d92ca8ce37c75640e4fbd860c"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/check-directional.js": {
+      "bytes": 2860,
+      "sha256": "6f927cc1e00ae95faac753811b9772577cbff9fb52b0b36b42d9523e7cc8aed4"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional-data.js": {
+      "bytes": 126583,
+      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional.csv": {
+      "bytes": 60148,
+      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional.json": {
+      "bytes": 171432,
+      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
+    },
+    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-network-atlas/directional-ui.js": {
+      "bytes": 10525,
+      "sha256": "487aeb00868973470c9e0764ce833ec882f20e6630432e32a2d921127634d2d7"
+    },
+    "collagen-network-atlas/directional-worker.js": {
+      "bytes": 276,
+      "sha256": "456ca8b15df426813dd7f6ec6de4e4f2e60bc00073f7c112b51c3a5c5ed535e0"
+    },
+    "collagen-network-atlas/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
     },
     "collagen-network-atlas/figures/benchmark.png": {
       "bytes": 107866,
@@ -1415,8 +1775,16 @@
       "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
     },
     "collagen-network-atlas/index.html": {
-      "bytes": 16756,
-      "sha256": "cacf29cfdc23facad271035be76493eb1bfda3a5f0bd823a49256fcf09d87c42"
+      "bytes": 16798,
+      "sha256": "2deab7e70f8db9861da2aff2eff6a52fb8afe9b54be2db2bd12458ad6fb9a11d"
+    },
+    "collagen-network-atlas/large_data.py": {
+      "bytes": 14401,
+      "sha256": "5fee2fbdc735e5dac6375a5a781d59c26ea98dd8fa28a27b1af0f5abff5cc473"
+    },
+    "collagen-network-atlas/load-guide.js": {
+      "bytes": 5783,
+      "sha256": "9735a5df66d437fc31d7752d5a7bcff9d084805f09145226559522bf2b947eca"
     },
     "collagen-network-atlas/make-archive.py": {
       "bytes": 1205,
@@ -1430,6 +1798,10 @@
       "bytes": 3839,
       "sha256": "7bd17153e049c565ad6be54e70144fdb90966a1d1f0908a15f075b97ae54a85f"
     },
+    "collagen-network-atlas/publication/aging-ui-checks.json": {
+      "bytes": 1041,
+      "sha256": "8170570cdce3faf8ab215ddaf7f6a9df4e90430911a9a0851f193c45f08a8cb9"
+    },
     "collagen-network-atlas/publication/archive-metadata.json": {
       "bytes": 389,
       "sha256": "52906a145001edd29e2360d24defd8ca9acf42fcb9560c972e28a528118b8c06"
@@ -1438,9 +1810,57 @@
       "bytes": 19403,
       "sha256": "df9574ebd59a081f8559fde8417f230d4c2724abdd34b241084c17d091cd5e77"
     },
+    "collagen-network-atlas/publication/directional-ui-checks.json": {
+      "bytes": 1124,
+      "sha256": "1db024e0f0de87f3ae17fb920042130214243e8948b53aed582dbbfd72e15008"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/MANIFEST.json": {
+      "bytes": 2390,
+      "sha256": "d67faff8d33fe2cc776a80f61090a7d99aea23dc053e06c7c71336d0f590c83e"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/MEDIA-PROVENANCE.md": {
+      "bytes": 1557,
+      "sha256": "f18ee233bfbb72e9e3c42bb95138a46b9b47830e321abd57fdaaf4332923e113"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/README.md": {
+      "bytes": 3118,
+      "sha256": "2bf9410f8e5f2aa36c46e7f58680a633ae59c84f196853eda8ebfecb0b938656"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/archive-metadata.json": {
+      "bytes": 428,
+      "sha256": "74ed3b1f4c18a3c606e7d12574c1a0bdb6bf80a525a85b905abe209faa72a6e8"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/archive-validation.json": {
+      "bytes": 776,
+      "sha256": "1915505cf8e8f619991b269c6bd2ee8bcbc2838c8678e12463029cad04f0ffa6"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/compare-final-media.swift": {
+      "bytes": 1778,
+      "sha256": "0940649304409c2a752e84acee0c49794413c716ded43ef3d4b60e8831d18b6e"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/media-provenance.json": {
+      "bytes": 7601,
+      "sha256": "6255c5a72ad3895aaf9e342c895fd5e180fb175f0d798fb3984ffb6f33b5e4b8"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/pixel-audit.json": {
+      "bytes": 1513,
+      "sha256": "773f05a9c053194bca9e58f840cca3d19dc20bb966cc30cc547d1da160b6b13f"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/public-archive-verification.json": {
+      "bytes": 325,
+      "sha256": "efbaa4f316ee5d17c03675b8d9e0a0d85a4be3335f2c2dcc089f9902ac974b37"
+    },
+    "collagen-network-atlas/publication/final-f0a5034f44aa/wordpress-posts.json": {
+      "bytes": 568,
+      "sha256": "fc30b2ba99121d8a19a4031cf10015fed227186f31e5995f971a21dd1c846886"
+    },
     "collagen-network-atlas/publication/media.json": {
       "bytes": 26456,
       "sha256": "5dc977963597382a8b327a737a983c78c4b78a08939379e862ad940a734b6649"
+    },
+    "collagen-network-atlas/publication/pages-ui-checks.json": {
+      "bytes": 763,
+      "sha256": "5c29a8aef134048f7f5e88a3101adf39b77cfc3e5946cb9c295a4a606d3b615f"
     },
     "collagen-network-atlas/publication/public-media-frames.json": {
       "bytes": 1084,
@@ -1458,6 +1878,10 @@
       "bytes": 8485,
       "sha256": "74dae55f7d493debb545639010d021da9a407fb4fdb394c7627a86d4b59b9a68"
     },
+    "collagen-network-atlas/restore-large-data.py": {
+      "bytes": 4159,
+      "sha256": "736ededfb1af6d7a2dbf14c1f3297445a29038654a313a34cf1a65b33e10d9a0"
+    },
     "collagen-network-atlas/run-atlas.py": {
       "bytes": 6118,
       "sha256": "d8ce930b9ae4236286597504d28278b86bb00add0a40869bb9bca5d27c623cd2"
@@ -1465,6 +1889,254 @@
     "collagen-network-atlas/run-guard.js": {
       "bytes": 641,
       "sha256": "a977f37176d5d09d66f167d2072ba01590b550a5b857d64941d86b5293010f79"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/EVIDENCE.md": {
+      "bytes": 5196,
+      "sha256": "c5690ab4a8eb5a35144ee566b815bce97f6063671026e055cf9a38fce460ab04"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/FINISHED.json": {
+      "bytes": 197,
+      "sha256": "0599ecadcd531094f881c5985efc0c39240182fdb11892e65833db83f8ed03c6"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/MANIFEST.json": {
+      "bytes": 7923,
+      "sha256": "70a1985be620c95325feaa4cdac4b9ce71af519682fc6eee96de5dba6e9ebe84"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/METHODS.md": {
+      "bytes": 15339,
+      "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/README.md": {
+      "bytes": 4831,
+      "sha256": "437bb87cdb23294a07e9c3b5ef0d96ff7eace99a8494a000f5c6065dba9b8560"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/REPORT.md": {
+      "bytes": 9877,
+      "sha256": "c3e91f0338efa2e55feea97bb6fd4e75d4b3895eec40733fe1479089998c8f8f"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/RUN_CONTEXT.json": {
+      "bytes": 4089,
+      "sha256": "105ffccf6412f40113669aab71d8b5ee849b0f6725f6ab10e2e9cbc3c63ed512"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/RUN_STORAGE.md": {
+      "bytes": 3131,
+      "sha256": "f01a30a7759260b8cc885bad30343187f05d7ca64c20cae425b450a9fcafc8e5"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/SECURITY-REVIEW.md": {
+      "bytes": 3895,
+      "sha256": "0f3b86689c1fd4a48cfbfa6e2578a1683e8e388df581351dac5e23862562bfe7"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/UPLOAD-SECURITY-REVIEW.md": {
+      "bytes": 3062,
+      "sha256": "2da069bebd35dcd113fc3e401de986a1b11f28ce4b9949914bc3bc2175a2edca"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/app.js": {
+      "bytes": 20543,
+      "sha256": "37ca08684ed57654f167559b4e81393ae989943bde7505a22f33618671b27603"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/audit.js": {
+      "bytes": 2171,
+      "sha256": "7ced362139a506ae915e8ab722d73f3093fbce584a0ea01c4de60b82cf7a2c9e"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/benchmark-core.js": {
+      "bytes": 10084,
+      "sha256": "b4cb186ca36de605c1f8e4de13c868d1971024197733b4fb5b5cdfb26ea8e7f6"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/benchmark.js": {
+      "bytes": 413,
+      "sha256": "69657fe59127cee9aa460bd38d44b46107242e591733bb223c34e3d62f7ddf2f"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/check-load-guide.js": {
+      "bytes": 1452,
+      "sha256": "38b8887bb39acbc94b1e1a8f15b928f611b3432d8c189f110cde0102de00a714"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/check-media.swift": {
+      "bytes": 940,
+      "sha256": "a3a51dccef1d59cf41acc5458f5cf8aa4873ab000671ed60ce6a2a062cf56dd2"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/check.js": {
+      "bytes": 2915,
+      "sha256": "de5bf54d9e9869042c0f8906023380466b8d9d42637cac89d258b9892057d9a6"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/audit.json": {
+      "bytes": 1343,
+      "sha256": "83d1e83a6e2e151bfabdeaaa1d506f3e33dfbc543b1e25a9d16c1290a6a37d8a"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/benchmark.js": {
+      "bytes": 577607,
+      "sha256": "e7cd448a2f4e34edc065879373c9a550ca39bdd8ee3ae91e7c715177d45e8519"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/checks.json": {
+      "bytes": 592,
+      "sha256": "85bddc51e1ae07e89fa4fed5acdd2da8f56fe9cdbed3f0aafc9fe1b37c2f4610"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/convergence.csv": {
+      "bytes": 5774,
+      "sha256": "7dcebb7cebfb09834037f1b692711d2d9683c36529991b38ec21428d21b24bae"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/curves.csv": {
+      "bytes": 4637534,
+      "sha256": "be25548e5eab953bf8b569a31171e0d258e6cae591937efd37daf76a8d899ec2"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/media-input.json": {
+      "bytes": 9261961,
+      "sha256": "808c62b61b1413d7bb25babd21bd66061abfb2b5957cdf261f2d4965509b12d3"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/predictors.csv": {
+      "bytes": 2711,
+      "sha256": "51cea1b5a6b82f3612f8b262aa946543c59ad15dd4a5011063c81c87f6470604"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/replays.js": {
+      "bytes": 8683031,
+      "sha256": "d79bfe429b45474b730195341975214d92fabad5301d05e79b4241fb4ca64c46"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/results.json": {
+      "bytes": 824560,
+      "sha256": "a3991ba2c3d70350ead9fb33f5517b0ed740694b1c8e0a29fd97b8130a00f69b"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/summary.csv": {
+      "bytes": 201413,
+      "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/data/validation.csv": {
+      "bytes": 1948,
+      "sha256": "610e0e618f7f2bb09a15e17f4d0f6caec6c1b182434c7e30a5a79385e94aca56"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/benchmark.png": {
+      "bytes": 107866,
+      "sha256": "0f77adea113ff969b60afb1d327ba34703ba2c747f758a4db66e6c63b73d6f9a"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/benchmark.svg": {
+      "bytes": 9610,
+      "sha256": "ac72f272400c1d6008e18209dbfe433733965829beb9d1287f39492a024f9b19"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/free-vs-clamped-still.png": {
+      "bytes": 170589,
+      "sha256": "f0feca55e6dfddd39258cc846382b0b2d87bfa5353583d0c6e0f3242d7d6dd1c"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/free-vs-clamped.gif": {
+      "bytes": 1419870,
+      "sha256": "e3e6ad447a661ebe84f1cb81133b194f93ecf8e12c81e8ab4e1cb29a0c0864df"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/pressure-still.png": {
+      "bytes": 166182,
+      "sha256": "9d77586b123eaa53e07add75a0a2790e3d01f4d2f4de2ca26f337c09d7823e0d"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/pressure.gif": {
+      "bytes": 1211691,
+      "sha256": "868fbb320f3684ad53049b57ba4b1c876a6dc848caa4a657986ddf76760a233f"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/pulse-still.png": {
+      "bytes": 209486,
+      "sha256": "3d2e880e7145bb400037dc6f8fbb7444123529ccc6b9caffe9e5c18e4b1b1d3b"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/pulse.gif": {
+      "bytes": 1693798,
+      "sha256": "f14d85c9215e76a54c84165b481e6c7b7b0c93fe5882f832e773c9f0a5bf4de1"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/shear-still.png": {
+      "bytes": 184176,
+      "sha256": "80a96517c58b801e1ee636706b369bc61bc1fd3af88f7fb6020e4deab4424e42"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/shear.gif": {
+      "bytes": 1004038,
+      "sha256": "160134592571aa5f404276d93374da199ef243c0fdf49fab6407b10717a44cd0"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/tension-still.png": {
+      "bytes": 150357,
+      "sha256": "dbc9a7a41f9bc8953f43fea9627fe175ab85199078759197b4511f500c359770"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/figures/tension.gif": {
+      "bytes": 518304,
+      "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/index.html": {
+      "bytes": 12164,
+      "sha256": "c543c932d7f3487a324fff99a3b64623355c021d765583f4870c18802429f58d"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/load-guide.js": {
+      "bytes": 5783,
+      "sha256": "9735a5df66d437fc31d7752d5a7bcff9d084805f09145226559522bf2b947eca"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/logs/audit.log": {
+      "bytes": 1344,
+      "sha256": "fb2322612a430ae5f4311423b1dc65c7721228ee065dd68b0db838c11552129b"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/logs/benchmark.log": {
+      "bytes": 339,
+      "sha256": "e9c0f36729985b8ccfae70a700e740ecec230589ec7c771fe835f00509f6eb8b"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/logs/checks.log": {
+      "bytes": 592,
+      "sha256": "85bddc51e1ae07e89fa4fed5acdd2da8f56fe9cdbed3f0aafc9fe1b37c2f4610"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/logs/media-input.log": {
+      "bytes": 66,
+      "sha256": "f8838a98da71060c57ef672d9d8780a26f41ab012ee6162e6c84bf0f7688280b"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/logs/render.log": {
+      "bytes": 116,
+      "sha256": "390376d033996f1d4696544e22d192d8623153da19a2d296732df9a71355e128"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/logs/report.log": {
+      "bytes": 37,
+      "sha256": "a28d540d903db16314882eb3fd7641e5ed7c7fc3fd5e5421aae8c639cc185474"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/make-archive.py": {
+      "bytes": 1205,
+      "sha256": "70473dc09c6dac90bb3478875c7e288dcf9a55adcc6fc92ff7074b538a0c784d"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/prepare-media.js": {
+      "bytes": 3839,
+      "sha256": "7bd17153e049c565ad6be54e70144fdb90966a1d1f0908a15f075b97ae54a85f"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/recover-archive.py": {
+      "bytes": 1587,
+      "sha256": "43cfbccd1b6de15f48fe70b89790841ea1e3bfbac67c8a96fcab370b252238ab"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/render-media.swift": {
+      "bytes": 8485,
+      "sha256": "74dae55f7d493debb545639010d021da9a407fb4fdb394c7627a86d4b59b9a68"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/run-atlas.py": {
+      "bytes": 6118,
+      "sha256": "d8ce930b9ae4236286597504d28278b86bb00add0a40869bb9bca5d27c623cd2"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/run-guard.js": {
+      "bytes": 641,
+      "sha256": "a977f37176d5d09d66f167d2072ba01590b550a5b857d64941d86b5293010f79"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/style.css": {
+      "bytes": 11893,
+      "sha256": "8b33805914aca42ede32c702014f878fb2af2c470de2a27d8501176d63ea790f"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/test_run_storage.py": {
+      "bytes": 2943,
+      "sha256": "444dde4258308044f94dc95c5fdc766834dc6aba8c1ca4c153e49dbcf463af60"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/test_upload_run.py": {
+      "bytes": 4235,
+      "sha256": "fc6dfb616d94600c304b0a22787a3751f5b20a42892066b43979b50ad877b40d"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/upload-run.py": {
+      "bytes": 11361,
+      "sha256": "2bf9bd93d125f6caed8e554ef61d2effd9a7890ff6ca59a600960f1b11b4850d"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/verify-media.py": {
+      "bytes": 1222,
+      "sha256": "a4266a98217230b3c110cfa88022de9d2dc923ba31fd2f4931c28ca3fbd43a3d"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/worker.js": {
+      "bytes": 298,
+      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+    },
+    "collagen-network-atlas/runs/20261031-auto-upload-validation/write-report.js": {
+      "bytes": 11567,
+      "sha256": "26b04ba2433def5e1be685bb613cb111f1d023f615b76469ece4697ca850cdc0"
     },
     "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/EVIDENCE.md": {
       "bytes": 5196,
@@ -1926,13 +2598,37 @@
       "bytes": 11561,
       "sha256": "5d6699cbaa683fa8d7ea7e5bd84b52c2409e4939e6dbb2f6f3a7e97e1686796c"
     },
+    "collagen-network-atlas/species-ui.js": {
+      "bytes": 2684,
+      "sha256": "1f1af387668ca0cb8f9e25e1846efc26895ce61518c71eba03d22b97525383c4"
+    },
+    "collagen-network-atlas/species.css": {
+      "bytes": 659,
+      "sha256": "1834840657960e9986043c91b321d2337e661d9c8801f7fe194a80f13ff7ba1a"
+    },
+    "collagen-network-atlas/species.html": {
+      "bytes": 6632,
+      "sha256": "41a35550d47c7aaaefa086473017edc841f850d9227d944f5175330b4342de6f"
+    },
     "collagen-network-atlas/style.css": {
       "bytes": 13374,
       "sha256": "7a934411db6e996e36a37c0acd528ed4bd750ffa8080c2a85e6b4d5780dadd5e"
     },
+    "collagen-network-atlas/test_large_data.py": {
+      "bytes": 8465,
+      "sha256": "a06e9068a01bd68db5cb2ac06445c5fada22017190274a0a8d39db55bd940ed9"
+    },
     "collagen-network-atlas/test_run_storage.py": {
       "bytes": 2943,
       "sha256": "444dde4258308044f94dc95c5fdc766834dc6aba8c1ca4c153e49dbcf463af60"
+    },
+    "collagen-network-atlas/test_upload_run.py": {
+      "bytes": 4235,
+      "sha256": "fc6dfb616d94600c304b0a22787a3751f5b20a42892066b43979b50ad877b40d"
+    },
+    "collagen-network-atlas/upload-run.py": {
+      "bytes": 12490,
+      "sha256": "10fc834383f682ffc668321fe4b0e37dbc864469e3791aa1211825495d5d31e2"
     },
     "collagen-network-atlas/verify-media.py": {
       "bytes": 1222,
@@ -1946,405 +2642,337 @@
       "bytes": 11567,
       "sha256": "26b04ba2433def5e1be685bb613cb111f1d023f615b76469ece4697ca850cdc0"
     },
-    "verify-archives.py": {
-      "bytes": 786,
-      "sha256": "73bafdb189f65dbfa495068582dd9057faa7a429badc8112b0c3c9f04406e6e8"
+    "collagen-species-pilot/.gitignore": {
+      "bytes": 20,
+      "sha256": "a512c0f8363c1e1c5fa3bf8895f3c32fab0bf5283b586d9b4c4647535d6a8ada"
     },
-    "archives/2026-10-31/fracture-atlas-complete-final-f0a5034f44aa.zip": {
-      "bytes": 12487518,
-      "sha256": "9127370ca5ca9b1e07a6518809886815234a7e890e3b8098a7caf0f2e820966e"
+    "collagen-species-pilot/INPUT_MANIFEST.json": {
+      "bytes": 1766,
+      "sha256": "44d79f4e8bf03e0f477db947ccecf1b777211418917c010d5d60b0f8986b0b39"
     },
-    "archives/2026-10-31/fracture-atlas-data-source-final-f0a5034f44aa.zip": {
-      "bytes": 5861750,
-      "sha256": "94ca5e64137eae88856ede6fdc2917c4df2214784fd1ae71e14f0daad801e6eb"
+    "collagen-species-pilot/README.md": {
+      "bytes": 6482,
+      "sha256": "b4c38b781274b6502feaf913ab7431824a8a0fe7eacc855b06afbac9282c4454"
     },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/MEDIA-PROVENANCE.md": {
-      "bytes": 1557,
-      "sha256": "f18ee233bfbb72e9e3c42bb95138a46b9b47830e321abd57fdaaf4332923e113"
+    "collagen-species-pilot/SECURITY_REVIEW.md": {
+      "bytes": 3466,
+      "sha256": "72007733cb22de811ba8a83c6ee97d41b5b1532b03770687c931a1bc8b2cd9fb"
     },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/README.md": {
-      "bytes": 3118,
-      "sha256": "2bf9410f8e5f2aa36c46e7f58680a633ae59c84f196853eda8ebfecb0b938656"
+    "collagen-species-pilot/calibration-contract.json": {
+      "bytes": 837,
+      "sha256": "5164ec9c952b775d1c139cb2136ddc3fa774b3d9c4ed0d36c398e2bd5d795936"
     },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/archive-metadata.json": {
-      "bytes": 428,
-      "sha256": "74ed3b1f4c18a3c606e7d12574c1a0bdb6bf80a525a85b905abe209faa72a6e8"
+    "collagen-species-pilot/cdsm-inputs.json.zlib": {
+      "bytes": 19309,
+      "sha256": "4c52dd0c1a1c042d6c50214b24dffd6d608386a1c1d1de3712b4ae0535bc2af2"
     },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/archive-validation.json": {
-      "bytes": 776,
-      "sha256": "1915505cf8e8f619991b269c6bd2ee8bcbc2838c8678e12463029cad04f0ffa6"
+    "collagen-species-pilot/cloud-backbones-reviewed.py": {
+      "bytes": 30897,
+      "sha256": "98f84badec0bd97e377e76a5750d79bdad4ecf9510a5113f8f67ecd023c32ad8"
     },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/compare-final-media.swift": {
-      "bytes": 1778,
-      "sha256": "0940649304409c2a752e84acee0c49794413c716ded43ef3d4b60e8831d18b6e"
+    "collagen-species-pilot/cloud-backbones.py": {
+      "bytes": 5300,
+      "sha256": "4b736b8ba628bd4a5cf4c0cfd165519740b249dc75ecc4d123139e57d4c7afec"
     },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/media-provenance.json": {
-      "bytes": 7601,
-      "sha256": "6255c5a72ad3895aaf9e342c895fd5e180fb175f0d798fb3984ffb6f33b5e4b8"
-    },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/pixel-audit.json": {
+    "collagen-species-pilot/inputs/A0A250Y7T0.fasta": {
       "bytes": 1513,
-      "sha256": "773f05a9c053194bca9e58f840cca3d19dc20bb966cc30cc547d1da160b6b13f"
+      "sha256": "b05759a6cad9cbe4a9c7d41bf88c3c8ff7655223c87cd70407b464672c845921"
     },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/public-archive-verification.json": {
-      "bytes": 325,
-      "sha256": "efbaa4f316ee5d17c03675b8d9e0a0d85a4be3335f2c2dcc089f9902ac974b37"
+    "collagen-species-pilot/inputs/A0A250Y7T0.json": {
+      "bytes": 28588,
+      "sha256": "01b13e327dec1ac97aba63d36e7b1014ff198c09097db4ec1cf9cecbec261e6f"
     },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/wordpress-posts.json": {
-      "bytes": 568,
-      "sha256": "fc30b2ba99121d8a19a4031cf10015fed227186f31e5995f971a21dd1c846886"
+    "collagen-species-pilot/inputs/A0A8B7UHI7.fasta": {
+      "bytes": 1419,
+      "sha256": "c9fb95fddbb89e3803f0b60d122ae37dd019224385da2ba1d40a640f94d82a7a"
     },
-    "collagen-network-atlas/publication/final-f0a5034f44aa/MANIFEST.json": {
-      "bytes": 2390,
-      "sha256": "d67faff8d33fe2cc776a80f61090a7d99aea23dc053e06c7c71336d0f590c83e"
+    "collagen-species-pilot/inputs/A0A8B7UHI7.json": {
+      "bytes": 27143,
+      "sha256": "67b85cab94a388a3cf254ca7016345942b6193fe5521c799b24a0615d05dcea0"
     },
-    "PAGES.md": {
-      "bytes": 5765,
-      "sha256": "e31da8853ca5eef1ff56199bd997142ca52b4c0a65561d086775182754e4ea94"
+    "collagen-species-pilot/inputs/COL1A1-aligned.fasta": {
+      "bytes": 2059,
+      "sha256": "eaf201263e3f22cd0222fed683c0ad3278359ca63fdea909d768608bb21e79d8"
     },
-    "publish-pages.py": {
-      "bytes": 2747,
-      "sha256": "dfae9de1fe8b8a9dcaddf6180ccc349ce7d4e6770ebb82272f54083971b33600"
+    "collagen-species-pilot/inputs/COL1A2-aligned.fasta": {
+      "bytes": 2065,
+      "sha256": "6190122b3e907f19d22e1a04de97f20b273f6554648cfeca078a5bb10f3dc4ba"
     },
-    "collagen-network-atlas/load-guide.js": {
-      "bytes": 5783,
-      "sha256": "9735a5df66d437fc31d7752d5a7bcff9d084805f09145226559522bf2b947eca"
+    "collagen-species-pilot/inputs/P02452.fasta": {
+      "bytes": 1508,
+      "sha256": "8c2a8eba6000936a3a6b48cc28e4396a0d15de9597b2b1234165840116c1c9c5"
     },
-    "collagen-network-atlas/check-load-guide.js": {
-      "bytes": 1452,
-      "sha256": "38b8887bb39acbc94b1e1a8f15b928f611b3432d8c189f110cde0102de00a714"
+    "collagen-species-pilot/inputs/P02452.json": {
+      "bytes": 433252,
+      "sha256": "3a215114cbeb6744ddeb8c9c884280e2208c8e37f1fcee3b48247d301cb4d4e0"
     },
-    "collagen-network-atlas/publication/pages-ui-checks.json": {
-      "bytes": 763,
-      "sha256": "5c29a8aef134048f7f5e88a3101adf39b77cfc3e5946cb9c295a4a606d3b615f"
+    "collagen-species-pilot/inputs/P08123.fasta": {
+      "bytes": 1410,
+      "sha256": "23c56b555e41c58b6012fd7f3a5323a16861015c76926523430e1159016f4434"
     },
-    "docs/index.html": {
-      "bytes": 16756,
-      "sha256": "cacf29cfdc23facad271035be76493eb1bfda3a5f0bd823a49256fcf09d87c42"
+    "collagen-species-pilot/inputs/P08123.json": {
+      "bytes": 261054,
+      "sha256": "42b587f874adbdd89581a5841bc2c01372d923a2a75e62bbd961e017bf059604"
     },
-    "docs/DEPLOYMENT.json": {
-      "bytes": 4771,
-      "sha256": "a931012ee8cb98ce12339ca388c04ebb8abe511b1487b3ecc62fef761fdafe48"
+    "collagen-species-pilot/inputs/pilot.json": {
+      "bytes": 17859,
+      "sha256": "d1d3c373a90e36fd9135a1ca617d397756d6c7588460f48bca55540bd5f1cd91"
     },
-    "docs/load-guide.js": {
-      "bytes": 5783,
-      "sha256": "9735a5df66d437fc31d7752d5a7bcff9d084805f09145226559522bf2b947eca"
+    "collagen-species-pilot/prepare-inputs.py": {
+      "bytes": 4419,
+      "sha256": "4bbb59b865d1a0765e9206a19e09c2c28bc027e684eb792e048f088849f0ef22"
     },
-    "docs/EVIDENCE.md": {
-      "bytes": 5196,
-      "sha256": "c5690ab4a8eb5a35144ee566b815bce97f6063671026e055cf9a38fce460ab04"
+    "collagen-species-pilot/run-backbones.py": {
+      "bytes": 2409,
+      "sha256": "b13033c78adbb5c7cbd031241bc256cf985c803c8f66b2b572e57dce4dfc6932"
     },
-    "docs/worker.js": {
-      "bytes": 298,
-      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+    "collagen-species-pilot/runs/20261031-backbones-v1/COLLECTION_MANIFEST.json": {
+      "bytes": 4974,
+      "sha256": "4e390a4d85a25023e488e4e5f54706fbdda068ded7d726106ff3cda7f1120627"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/README.md": {
+      "bytes": 1587,
+      "sha256": "722e0272010bee3b06e438170bf79b1a1b0811745514c4194e647e351a0447d7"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/cdsm-results.zip": {
+      "bytes": 405910,
+      "sha256": "0fe88d49b47486735d23fc0c28bb5470bd2521afc0c21a44701088dae8c56c15"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/download-receipt.json": {
+      "bytes": 1416,
+      "sha256": "8f4f76117262f4ffffe8fdb60e02853fa33690e69873c23f50bd553f4db1f4f3"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/execution.json": {
+      "bytes": 1303,
+      "sha256": "abf1d18605824232018cc7cce13553457d952309f9fd7235ed81ed8bda1d70b6"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/execution.log": {
+      "bytes": 74,
+      "sha256": "07b4b2987ada482809661ec197031b24b054d2e75e759a0f207d91c1aa614281"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/MANIFEST.json": {
+      "bytes": 2493,
+      "sha256": "71a9b8fad00fe699478b4b5b82cf8622f7cb2b11b8e4b189a66a5e71f70cb031"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/backbones.json": {
+      "bytes": 480950,
+      "sha256": "bc73e1479413e54a25677b0d9167ece91aad6429ca84660982163dc17c06a51b"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/beaver-C-112.pdb": {
+      "bytes": 87804,
+      "sha256": "efe5925127a613e31337104849a15a559e4a051a5b3efca1403dc85e2f9fde74"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/beaver-C-121.pdb": {
+      "bytes": 87804,
+      "sha256": "b829bd8a25f111f3b2cc4922c68076c8a21d43b627a9c3310a92fd0c28f7f6f2"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/beaver-C-211.pdb": {
+      "bytes": 87804,
+      "sha256": "441c772c074d27347ba60aeb003f0f678a8387b59d87c8e9d9fea8ca3e448c53"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/beaver-N-112.pdb": {
+      "bytes": 87804,
+      "sha256": "3f3bd5e7fa71b35fc4a0c69cca7eabb520d057c98e350e4e3ecad0e81a5bb579"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/beaver-N-121.pdb": {
+      "bytes": 87804,
+      "sha256": "caf9d32c0d813d21ac0b2070b582725b78950be7ebc22cb8fd1fbc1d050ca900"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/beaver-N-211.pdb": {
+      "bytes": 87804,
+      "sha256": "c583a0726420a49d59668019cff7c7ef34d929b7792fe7fc38f33843bf6a75ea"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/beaver-middle-112.pdb": {
+      "bytes": 87804,
+      "sha256": "f3e45c4d8eca5598b37ef2582dc2bca14d311940254a1a65fd340ba4c2b10a9d"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/beaver-middle-121.pdb": {
+      "bytes": 87804,
+      "sha256": "ed05bbd27173bd5b9ab269cdb704ef0ac406908ab3a48d36b9695252f0f22a57"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/beaver-middle-211.pdb": {
+      "bytes": 87804,
+      "sha256": "622ac210105e7c123673a8261253144f068b01c8cb27624e04717c3f4a05a17b"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/human-C-112.pdb": {
+      "bytes": 87804,
+      "sha256": "99f1af43cff71be4b235303061897aea3a2351782867e4e4acf09a147490232c"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/human-C-121.pdb": {
+      "bytes": 87804,
+      "sha256": "9e0a1ee1d486dfbee248a6fc7385c9cec424de2ddb3d313d97866f5d7044172b"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/human-C-211.pdb": {
+      "bytes": 87804,
+      "sha256": "d21e7965bfa3229b73be070370681353a704b9c897fdfbacb7232f29bf87362b"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/human-N-112.pdb": {
+      "bytes": 87804,
+      "sha256": "ea6efcc9ef1c22fbfb4350ae3e2716ff8b69c4eb843ac233ce36b7dac417fe1f"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/human-N-121.pdb": {
+      "bytes": 87804,
+      "sha256": "0820b1d4524152735158f7b8b61ce3093c297c2886e1586ca91a461e3ff73df2"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/human-N-211.pdb": {
+      "bytes": 87804,
+      "sha256": "01640af693f0f8b87fd3d95c4652cacff421351c2d7682763ca91e10290ab6d3"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/human-middle-112.pdb": {
+      "bytes": 87804,
+      "sha256": "fc919146f4d69af071f0d651d5413cea8a8810c3c2090852985019c8b9ceccc5"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/human-middle-121.pdb": {
+      "bytes": 87804,
+      "sha256": "7a76f5b8a001ffcd551b12ce38060bf87c6cafbb87e29a8fba5e1a42a32a561a"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/result/human-middle-211.pdb": {
+      "bytes": 87804,
+      "sha256": "0fcea66efa5ed7926dd743b20d1045865d0f81fc3ee84b448eef1ac969846654"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/source/inputs/pilot.json": {
+      "bytes": 17859,
+      "sha256": "d1d3c373a90e36fd9135a1ca617d397756d6c7588460f48bca55540bd5f1cd91"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/source/run-backbones.py": {
+      "bytes": 2409,
+      "sha256": "b13033c78adbb5c7cbd031241bc256cf985c803c8f66b2b572e57dce4dfc6932"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/source/vendor/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/source/vendor/step1_backbone_builder.py": {
+      "bytes": 31237,
+      "sha256": "9d94365a72f29fc038b0f24249d59dac9c4e9a16d9b6dce6c201de316f18c50e"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/source/vendor/thparams/THparams_AR.dat": {
+      "bytes": 1671,
+      "sha256": "df4d03ca2dddedfc187d4a89933135f2790c3480feae0415b494bac7162c674d"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/source/vendor/thparams/THparams_IR.dat": {
+      "bytes": 1723,
+      "sha256": "b1a17c02aec33f8d3cc8d958391604ef9c237dfe8966a15b9d6066ea06c47faa"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/source/vendor/thparams/THparams_nonsmooth.dat": {
+      "bytes": 1316,
+      "sha256": "0d4dd9e009969ba81b299f9e2b984091655cd989940bda3c6a90e713cf396955"
+    },
+    "collagen-species-pilot/runs/20261031-backbones-v1/source/vendor/thparams/THpropensities.dat": {
+      "bytes": 6987,
+      "sha256": "bb7a88428f3f24b283d1009196e3cdbd909513a390bdd86a4fd4cd9c87a7259f"
+    },
+    "collagen-species-pilot/vendor/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "collagen-species-pilot/vendor/step1_backbone_builder.py": {
+      "bytes": 31237,
+      "sha256": "9d94365a72f29fc038b0f24249d59dac9c4e9a16d9b6dce6c201de316f18c50e"
+    },
+    "collagen-species-pilot/vendor/thparams/THparams_AR.dat": {
+      "bytes": 1671,
+      "sha256": "df4d03ca2dddedfc187d4a89933135f2790c3480feae0415b494bac7162c674d"
+    },
+    "collagen-species-pilot/vendor/thparams/THparams_IR.dat": {
+      "bytes": 1723,
+      "sha256": "b1a17c02aec33f8d3cc8d958391604ef9c237dfe8966a15b9d6066ea06c47faa"
+    },
+    "collagen-species-pilot/vendor/thparams/THparams_nonsmooth.dat": {
+      "bytes": 1316,
+      "sha256": "0d4dd9e009969ba81b299f9e2b984091655cd989940bda3c6a90e713cf396955"
+    },
+    "collagen-species-pilot/vendor/thparams/THpropensities.dat": {
+      "bytes": 6987,
+      "sha256": "bb7a88428f3f24b283d1009196e3cdbd909513a390bdd86a4fd4cd9c87a7259f"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle-v2/FINISHED.json": {
+      "bytes": 953,
+      "sha256": "ff24c8df50ac57368b6151b1f46241f7ee8862eaa1a692a13ebbbe8adca5d3a7"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle-v2/MANIFEST.json": {
+      "bytes": 535,
+      "sha256": "f95f1bfa45dd29bf961fccf355a57bdf1a41b2aa92ff3c197d429627c11b3413"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle-v2/MEMBER_MANIFEST.json": {
+      "bytes": 98639,
+      "sha256": "a94c398721e198e392c35266febe9b015cec1c3b1bc49496063737a2ab1aa7af"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle-v2/README.md": {
+      "bytes": 1413,
+      "sha256": "5587acc89efa97b70c270c4d3533436c5bf09bca4949cf59148ff02ac284fc00"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle-v2/_release/LARGE_DATASETS.json": {
+      "bytes": 1116,
+      "sha256": "bf93f01fadefd22f1e8c9f4660456ae870035fca65f565a50cd983c26b90c256"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle-v2/_release/README.md": {
+      "bytes": 1095,
+      "sha256": "5bc3e698b794fce1f7bdaf78db52281c69c84b212901f1c05c721d3f8898eca6"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle-v2/_release/restore-large-data.py": {
+      "bytes": 4159,
+      "sha256": "736ededfb1af6d7a2dbf14c1f3297445a29038654a313a34cf1a65b33e10d9a0"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle/FINISHED.json": {
+      "bytes": 788,
+      "sha256": "26f668acba48bc5bce76203519288b01ea26d08099017e44eef91c9dd376cff5"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle/MANIFEST.json": {
+      "bytes": 535,
+      "sha256": "d53c584706d99d944cb5a57bcc1855253a2650dcd2ef932877a1ae6f1b215293"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle/MEMBER_MANIFEST.json": {
+      "bytes": 98639,
+      "sha256": "a94c398721e198e392c35266febe9b015cec1c3b1bc49496063737a2ab1aa7af"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle/README.md": {
+      "bytes": 1214,
+      "sha256": "713ca90721e488ebd8bfc6bc6231b9af5f31eeac8bbe8db58d37aef3660db4f5"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle/_release/LARGE_DATASETS.json": {
+      "bytes": 1061,
+      "sha256": "ef919e4ce2e302b264ec987dc5d53b174a3f4ea1dbaeadf0630cabd53387fdd6"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle/_release/README.md": {
+      "bytes": 1046,
+      "sha256": "65a02c8620cb70a1b3d437418e79ecd93622c31084bc3d3c3b112dfa95d0dbb3"
+    },
+    "datasets/20261031-frozen-collagen-raw-bundle/_release/restore-large-data.py": {
+      "bytes": 4159,
+      "sha256": "736ededfb1af6d7a2dbf14c1f3297445a29038654a313a34cf1a65b33e10d9a0"
     },
     "docs/.nojekyll": {
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
     },
-    "docs/METHODS.md": {
-      "bytes": 15339,
-      "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
+    "docs/AGING_METHODS.md": {
+      "bytes": 8224,
+      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
     },
-    "docs/style.css": {
-      "bytes": 13374,
-      "sha256": "7a934411db6e996e36a37c0acd528ed4bd750ffa8080c2a85e6b4d5780dadd5e"
+    "docs/DENSITY_METHODS.md": {
+      "bytes": 4871,
+      "sha256": "c64859609c4dca8481daa89305ebf299c6d2905ffee91774565bd0e27fa612b3"
     },
-    "docs/model.js": {
-      "bytes": 18846,
-      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
-    },
-    "docs/app.js": {
-      "bytes": 20543,
-      "sha256": "37ca08684ed57654f167559b4e81393ae989943bde7505a22f33618671b27603"
-    },
-    "docs/figures/benchmark.svg": {
-      "bytes": 9610,
-      "sha256": "ac72f272400c1d6008e18209dbfe433733965829beb9d1287f39492a024f9b19"
-    },
-    "docs/data/replays.js": {
-      "bytes": 8683031,
-      "sha256": "d79bfe429b45474b730195341975214d92fabad5301d05e79b4241fb4ca64c46"
-    },
-    "docs/data/summary.csv": {
-      "bytes": 201413,
-      "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
-    },
-    "docs/data/results.json": {
-      "bytes": 824546,
-      "sha256": "b3c01f927ed40d9467f8a2fe599382a28d9bbcd5bfb6224629a6b6dad17e8f0f"
-    },
-    "docs/data/benchmark.js": {
-      "bytes": 577593,
-      "sha256": "53e5785f3a3ef962a4c700e13c7c4aa688c3e58178afe9a764af2f03a84a97af"
-    },
-    "docs/data/curves.csv": {
-      "bytes": 4637534,
-      "sha256": "be25548e5eab953bf8b569a31171e0d258e6cae591937efd37daf76a8d899ec2"
-    },
-    "collagen-network-atlas/upload-run.py": {
-      "bytes": 12490,
-      "sha256": "10fc834383f682ffc668321fe4b0e37dbc864469e3791aa1211825495d5d31e2"
-    },
-    "collagen-network-atlas/test_upload_run.py": {
-      "bytes": 4235,
-      "sha256": "fc6dfb616d94600c304b0a22787a3751f5b20a42892066b43979b50ad877b40d"
-    },
-    "collagen-network-atlas/UPLOAD-SECURITY-REVIEW.md": {
-      "bytes": 3062,
-      "sha256": "2da069bebd35dcd113fc3e401de986a1b11f28ce4b9949914bc3bc2175a2edca"
-    },
-    "collagen-molecular-pilot/upload-run.py": {
-      "bytes": 12490,
-      "sha256": "10fc834383f682ffc668321fe4b0e37dbc864469e3791aa1211825495d5d31e2"
-    },
-    "collagen-network-atlas/DIRECTIONAL_METHODS.md": {
-      "bytes": 5849,
-      "sha256": "6f7139912438dc881ddbd1d3f0310ec96bef355bc415d43980e276f81793261b"
-    },
-    "collagen-network-atlas/benchmark-directional.js": {
-      "bytes": 2568,
-      "sha256": "bb8b5d9db044103d172ab20f6c8ba7e2f3edaa2d92ca8ce37c75640e4fbd860c"
-    },
-    "collagen-network-atlas/check-directional.js": {
-      "bytes": 2860,
-      "sha256": "6f927cc1e00ae95faac753811b9772577cbff9fb52b0b36b42d9523e7cc8aed4"
-    },
-    "collagen-network-atlas/data/directional-data.js": {
-      "bytes": 126583,
-      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
-    },
-    "collagen-network-atlas/data/directional.csv": {
-      "bytes": 60148,
-      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
-    },
-    "collagen-network-atlas/data/directional.json": {
-      "bytes": 171432,
-      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/CHECKS.json": {
-      "bytes": 1124,
-      "sha256": "1db024e0f0de87f3ae17fb920042130214243e8948b53aed582dbbfd72e15008"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/DIRECTIONAL_METHODS.md": {
-      "bytes": 5849,
-      "sha256": "6f7139912438dc881ddbd1d3f0310ec96bef355bc415d43980e276f81793261b"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/MANIFEST.json": {
-      "bytes": 1324,
-      "sha256": "ee5fccb31ac756cf3c69ef0a4f23807706be28ae96f1b5906555558bad787d56"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/benchmark-directional.js": {
-      "bytes": 2568,
-      "sha256": "bb8b5d9db044103d172ab20f6c8ba7e2f3edaa2d92ca8ce37c75640e4fbd860c"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/check-directional.js": {
-      "bytes": 2860,
-      "sha256": "6f927cc1e00ae95faac753811b9772577cbff9fb52b0b36b42d9523e7cc8aed4"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional-data.js": {
-      "bytes": 126583,
-      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional.csv": {
-      "bytes": 60148,
-      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional.js": {
-      "bytes": 3224,
-      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/directional.json": {
-      "bytes": 171432,
-      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
-    },
-    "collagen-network-atlas/directional-runs/20261031-perimeter-v1/model.js": {
-      "bytes": 18846,
-      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
-    },
-    "collagen-network-atlas/directional-ui.js": {
-      "bytes": 10525,
-      "sha256": "487aeb00868973470c9e0764ce833ec882f20e6630432e32a2d921127634d2d7"
-    },
-    "collagen-network-atlas/directional-worker.js": {
-      "bytes": 276,
-      "sha256": "456ca8b15df426813dd7f6ec6de4e4f2e60bc00073f7c112b51c3a5c5ed535e0"
-    },
-    "collagen-network-atlas/directional.js": {
-      "bytes": 3224,
-      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
-    },
-    "collagen-network-atlas/publication/directional-ui-checks.json": {
-      "bytes": 1124,
-      "sha256": "1db024e0f0de87f3ae17fb920042130214243e8948b53aed582dbbfd72e15008"
+    "docs/DEPLOYMENT.json": {
+      "bytes": 6917,
+      "sha256": "f61fb765c8303724b7a6753165b95d5bf83fa30178caea690e6a383d9c808a93"
     },
     "docs/DIRECTIONAL_METHODS.md": {
       "bytes": 5849,
       "sha256": "6f7139912438dc881ddbd1d3f0310ec96bef355bc415d43980e276f81793261b"
     },
-    "docs/data/directional-data.js": {
-      "bytes": 126583,
-      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
+    "docs/EVIDENCE.md": {
+      "bytes": 5196,
+      "sha256": "c5690ab4a8eb5a35144ee566b815bce97f6063671026e055cf9a38fce460ab04"
     },
-    "docs/data/directional.csv": {
-      "bytes": 60148,
-      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
+    "docs/METHODS.md": {
+      "bytes": 15339,
+      "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
     },
-    "docs/data/directional.json": {
-      "bytes": 171432,
-      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
-    },
-    "docs/directional-ui.js": {
-      "bytes": 10525,
-      "sha256": "487aeb00868973470c9e0764ce833ec882f20e6630432e32a2d921127634d2d7"
-    },
-    "docs/directional-worker.js": {
-      "bytes": 276,
-      "sha256": "456ca8b15df426813dd7f6ec6de4e4f2e60bc00073f7c112b51c3a5c5ed535e0"
-    },
-    "docs/directional.js": {
-      "bytes": 3224,
-      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
-    },
-    "LARGE_DATASETS.md": {
-      "bytes": 3640,
-      "sha256": "cb7d19ac527024c6fac0918411d19a8394fa5cae7f258c06e44193d850ae779b"
-    },
-    "LARGE_DATA_SECURITY_REVIEW.md": {
-      "bytes": 2524,
-      "sha256": "6f0df48d5ee01682cef40c5e5e38fea1dac125ffda78df15a74e0cb3d3a659da"
-    },
-    "DATA_TRANSPORT_ERRATA.md": {
-      "bytes": 1493,
-      "sha256": "8fafce48413e3110c30acfdb4c9d987e3c9d1c7c7198e62d6789ba9f6873d45f"
-    },
-    "collagen-network-atlas/test_large_data.py": {
-      "bytes": 8465,
-      "sha256": "a06e9068a01bd68db5cb2ac06445c5fada22017190274a0a8d39db55bd940ed9"
-    },
-    "collagen-network-atlas/large_data.py": {
-      "bytes": 14401,
-      "sha256": "5fee2fbdc735e5dac6375a5a781d59c26ea98dd8fa28a27b1af0f5abff5cc473"
-    },
-    "collagen-network-atlas/restore-large-data.py": {
-      "bytes": 4159,
-      "sha256": "736ededfb1af6d7a2dbf14c1f3297445a29038654a313a34cf1a65b33e10d9a0"
-    },
-    "collagen-molecular-pilot/large_data.py": {
-      "bytes": 14401,
-      "sha256": "5fee2fbdc735e5dac6375a5a781d59c26ea98dd8fa28a27b1af0f5abff5cc473"
-    },
-    "collagen-molecular-pilot/restore-large-data.py": {
-      "bytes": 4159,
-      "sha256": "736ededfb1af6d7a2dbf14c1f3297445a29038654a313a34cf1a65b33e10d9a0"
-    },
-    "large-data-validation/offline-tests.log": {
-      "bytes": 111,
-      "sha256": "027b04919bbcc41e5e34ffca5c9265d1ae24be32b2479ac8e0d44b036dda5dbe"
-    },
-    "large-data-validation/public-recovery.json": {
-      "bytes": 192,
-      "sha256": "8e608b9985ccd56b87a52ae667bfb35ea2b688b8de59661abc0dafafd6ed1ec0"
-    },
-    "large-data-validation/verification.json": {
-      "bytes": 2590,
-      "sha256": "8a9ec3f2c153a3a560c34cdad3b5bb7612e8114be6dc4b6cdd8660c7a534a0fb"
-    },
-    "collagen-network-atlas/AGING_METHODS.md": {
-      "bytes": 8224,
-      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/AGING_METHODS.md": {
-      "bytes": 8224,
-      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/CHECKS.json": {
-      "bytes": 476,
-      "sha256": "0be42e0aa69f8e9ab0fc8a316562b08cfa217824e5ba77ede86d54f34f59e15c"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/MANIFEST.json": {
-      "bytes": 1442,
-      "sha256": "9ddf7b569a8839165f02148322b5181e118f5152ce41b805a3da1af39f73b7f6"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging-data.js": {
-      "bytes": 458679,
-      "sha256": "ddc126b127e648a37f22131f594e9c73440f6d4524e0d8222ad783c449f1f95f"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging.csv": {
-      "bytes": 149638,
-      "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging.js": {
-      "bytes": 6862,
-      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging.json": {
-      "bytes": 623269,
-      "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/benchmark-aging.js": {
-      "bytes": 2729,
-      "sha256": "bf08005898199fe1abea31ddf3c3f7296f698098675da420724993f0c5af1008"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/check-aging.js": {
-      "bytes": 2506,
-      "sha256": "691da0cac5d2c3491c13a530903afa95ea76dd30b4504056062eb5c80ddd26a0"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/directional.js": {
-      "bytes": 3224,
-      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
-    },
-    "collagen-network-atlas/aging-runs/20261031-connectors-v1/model.js": {
-      "bytes": 18846,
-      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
-    },
-    "collagen-network-atlas/aging-ui.js": {
-      "bytes": 15510,
-      "sha256": "349bfe53dad708927dbc380b4c25c962d20ca7f65c55e865d049d3b6cd8f86d3"
-    },
-    "collagen-network-atlas/aging-worker.js": {
-      "bytes": 735,
-      "sha256": "e20e0dc7de2022206b283b9ef1442451b1d70e4cee96b81aad6f08cea49821c3"
-    },
-    "collagen-network-atlas/aging.css": {
-      "bytes": 1305,
-      "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
-    },
-    "collagen-network-atlas/aging.html": {
-      "bytes": 9800,
-      "sha256": "052a55b303d858005a2b175d152d745399b947186bb746f575fd08087ff33305"
-    },
-    "collagen-network-atlas/aging.js": {
-      "bytes": 6862,
-      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
-    },
-    "collagen-network-atlas/benchmark-aging.js": {
-      "bytes": 2729,
-      "sha256": "bf08005898199fe1abea31ddf3c3f7296f698098675da420724993f0c5af1008"
-    },
-    "collagen-network-atlas/check-aging.js": {
-      "bytes": 2506,
-      "sha256": "691da0cac5d2c3491c13a530903afa95ea76dd30b4504056062eb5c80ddd26a0"
-    },
-    "collagen-network-atlas/data/aging-data.js": {
-      "bytes": 458679,
-      "sha256": "ddc126b127e648a37f22131f594e9c73440f6d4524e0d8222ad783c449f1f95f"
-    },
-    "collagen-network-atlas/data/aging.csv": {
-      "bytes": 149638,
-      "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
-    },
-    "collagen-network-atlas/data/aging.json": {
-      "bytes": 623269,
-      "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
-    },
-    "collagen-network-atlas/publication/aging-ui-checks.json": {
-      "bytes": 1041,
-      "sha256": "8170570cdce3faf8ab215ddaf7f6a9df4e90430911a9a0851f193c45f08a8cb9"
-    },
-    "docs/AGING_METHODS.md": {
-      "bytes": 8224,
-      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
+    "docs/SPECIES_METHODS.md": {
+      "bytes": 6596,
+      "sha256": "994128bd5c4deb3c67a31b151014548869cfcfefc6a8534acdfbcd9f66d3820b"
     },
     "docs/aging-ui.js": {
       "bytes": 15510,
@@ -2359,12 +2987,16 @@
       "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
     },
     "docs/aging.html": {
-      "bytes": 9800,
-      "sha256": "052a55b303d858005a2b175d152d745399b947186bb746f575fd08087ff33305"
+      "bytes": 13262,
+      "sha256": "ebee360f6b9855ee0c77e60eb7471653731a9e463f9127a642dba9a256c1a7f0"
     },
     "docs/aging.js": {
       "bytes": 6862,
       "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "docs/app.js": {
+      "bytes": 20543,
+      "sha256": "37ca08684ed57654f167559b4e81393ae989943bde7505a22f33618671b27603"
     },
     "docs/data/aging-data.js": {
       "bytes": 458679,
@@ -2377,8 +3009,546 @@
     "docs/data/aging.json": {
       "bytes": 623269,
       "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
+    },
+    "docs/data/benchmark.js": {
+      "bytes": 577593,
+      "sha256": "53e5785f3a3ef962a4c700e13c7c4aa688c3e58178afe9a764af2f03a84a97af"
+    },
+    "docs/data/curves.csv": {
+      "bytes": 4637534,
+      "sha256": "be25548e5eab953bf8b569a31171e0d258e6cae591937efd37daf76a8d899ec2"
+    },
+    "docs/data/density-data.js": {
+      "bytes": 2683343,
+      "sha256": "a6ec7e5eca2f107d4805bc21e1f3fd4c2bfbd79b364405dcb91bcdee8bc4ffb6"
+    },
+    "docs/data/density.csv": {
+      "bytes": 2435966,
+      "sha256": "0aa0af9a8430fe350597ecede322dc9b604ccbcd9b78dc21962fc23c6669b837"
+    },
+    "docs/data/density.json": {
+      "bytes": 15382266,
+      "sha256": "4ce2afe0bbd43bea9305f55fba988d78e9fa5f14a93cefaf8211acd4fce9fa20"
+    },
+    "docs/data/directional-data.js": {
+      "bytes": 126583,
+      "sha256": "ad046dc2eb07c401f1599cc58fcf50025e0baefb47fa5b0872e91bdbf3c41228"
+    },
+    "docs/data/directional.csv": {
+      "bytes": 60148,
+      "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
+    },
+    "docs/data/directional.json": {
+      "bytes": 171432,
+      "sha256": "09fbba2d6b49613b5e0104283bd5852fcfa0d746729093134fd591df49b6dddc"
+    },
+    "docs/data/replays.js": {
+      "bytes": 8683031,
+      "sha256": "d79bfe429b45474b730195341975214d92fabad5301d05e79b4241fb4ca64c46"
+    },
+    "docs/data/results.json": {
+      "bytes": 824546,
+      "sha256": "b3c01f927ed40d9467f8a2fe599382a28d9bbcd5bfb6224629a6b6dad17e8f0f"
+    },
+    "docs/data/species-backbones.json": {
+      "bytes": 480950,
+      "sha256": "bc73e1479413e54a25677b0d9167ece91aad6429ca84660982163dc17c06a51b"
+    },
+    "docs/data/species-data.js": {
+      "bytes": 292758,
+      "sha256": "5a2cc4110241d7ffde741b4610d7ffa287aef09ac7aff379dd6a7d41c18074c2"
+    },
+    "docs/data/species-inputs.json": {
+      "bytes": 17859,
+      "sha256": "d1d3c373a90e36fd9135a1ca617d397756d6c7588460f48bca55540bd5f1cd91"
+    },
+    "docs/data/summary.csv": {
+      "bytes": 201413,
+      "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
+    },
+    "docs/density-ui.js": {
+      "bytes": 6288,
+      "sha256": "16d82d29e56aed46d9a1dc4b3c37a0ce0d25b6fcc4f668a7650cecc6cafc396d"
+    },
+    "docs/density.css": {
+      "bytes": 1197,
+      "sha256": "46930ef55c040e63b24d830623f54189f5391fc3942cd8e0489c27b33f050700"
+    },
+    "docs/directional-ui.js": {
+      "bytes": 10525,
+      "sha256": "487aeb00868973470c9e0764ce833ec882f20e6630432e32a2d921127634d2d7"
+    },
+    "docs/directional-worker.js": {
+      "bytes": 276,
+      "sha256": "456ca8b15df426813dd7f6ec6de4e4f2e60bc00073f7c112b51c3a5c5ed535e0"
+    },
+    "docs/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "docs/figures/benchmark.svg": {
+      "bytes": 9610,
+      "sha256": "ac72f272400c1d6008e18209dbfe433733965829beb9d1287f39492a024f9b19"
+    },
+    "docs/index.html": {
+      "bytes": 16798,
+      "sha256": "2deab7e70f8db9861da2aff2eff6a52fb8afe9b54be2db2bd12458ad6fb9a11d"
+    },
+    "docs/load-guide.js": {
+      "bytes": 5783,
+      "sha256": "9735a5df66d437fc31d7752d5a7bcff9d084805f09145226559522bf2b947eca"
+    },
+    "docs/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "docs/species-ui.js": {
+      "bytes": 2684,
+      "sha256": "1f1af387668ca0cb8f9e25e1846efc26895ce61518c71eba03d22b97525383c4"
+    },
+    "docs/species.css": {
+      "bytes": 659,
+      "sha256": "1834840657960e9986043c91b321d2337e661d9c8801f7fe194a80f13ff7ba1a"
+    },
+    "docs/species.html": {
+      "bytes": 6632,
+      "sha256": "41a35550d47c7aaaefa086473017edc841f850d9227d944f5175330b4342de6f"
+    },
+    "docs/style.css": {
+      "bytes": 13374,
+      "sha256": "7a934411db6e996e36a37c0acd528ed4bd750ffa8080c2a85e6b4d5780dadd5e"
+    },
+    "docs/worker.js": {
+      "bytes": 298,
+      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+    },
+    "large-data-validation/offline-tests.log": {
+      "bytes": 111,
+      "sha256": "027b04919bbcc41e5e34ffca5c9265d1ae24be32b2479ac8e0d44b036dda5dbe"
+    },
+    "large-data-validation/public-recovery.json": {
+      "bytes": 192,
+      "sha256": "8e608b9985ccd56b87a52ae667bfb35ea2b688b8de59661abc0dafafd6ed1ec0"
+    },
+    "large-data-validation/verification.json": {
+      "bytes": 2590,
+      "sha256": "8a9ec3f2c153a3a560c34cdad3b5bb7612e8114be6dc4b6cdd8660c7a534a0fb"
+    },
+    "oxidative-tensegrity/.gitignore": {
+      "bytes": 95,
+      "sha256": "1d2dc5d43ecb8ba34f5f3dc15df1d18612828011897bcfd43d62951c49f0fb14"
+    },
+    "oxidative-tensegrity/AGENTS.md": {
+      "bytes": 8073,
+      "sha256": "8289cf253b0bd4c9ef8c82f48966afccd181cd233c985310df74a95180bc486c"
+    },
+    "oxidative-tensegrity/CLAUDE.md": {
+      "bytes": 11,
+      "sha256": "336cc4fbf19beaada7ccf9986414fa91851a8d7a07dfb3ccbe800a69eed0ab49"
+    },
+    "oxidative-tensegrity/CODEX_HANDOFF.md": {
+      "bytes": 7200,
+      "sha256": "42ef18120824f6357911d0aa87e5913100aaba818401eff30ebe5a2db513c067"
+    },
+    "oxidative-tensegrity/HYPOTHESES_EWALD.md": {
+      "bytes": 11749,
+      "sha256": "acfae56210b2fddb79f782553432e1a2ac55006d61dc2426f553efba73ea6eaf"
+    },
+    "oxidative-tensegrity/README.md": {
+      "bytes": 16772,
+      "sha256": "0c4d2e94aac7c84a0d2b3760f5c1e4ed49a958dcc59f19e7926d69e5d792e732"
+    },
+    "oxidative-tensegrity/SECURITY-REVIEW.md": {
+      "bytes": 9432,
+      "sha256": "edadc3a593fae2ccd9cf4a89f0620c28ac1baae496a1468df40fea55e46ca2d7"
+    },
+    "oxidative-tensegrity/agents/blog_critic.py": {
+      "bytes": 9628,
+      "sha256": "b9c68057f3d04058c9b52528d71aedd159821e99f1ef65c848c3d50d5c0f32e6"
+    },
+    "oxidative-tensegrity/agents/blog_critic_to_wp.py": {
+      "bytes": 6278,
+      "sha256": "ea1efb4dccd9ca32e4114b4d2a8690c6845005500a1c3a8b7d4efae177de29bc"
+    },
+    "oxidative-tensegrity/agents/critic_swarm.py": {
+      "bytes": 5794,
+      "sha256": "083d091f739d324d0437dd29c142cfac152ae7dd419314bff5e7e91149234239"
+    },
+    "oxidative-tensegrity/alchemi_collagen_gag.py": {
+      "bytes": 8954,
+      "sha256": "f3a7b2362bde7a68beb57bb36581df930593b5dce7e910733ff3be190f8186d3"
+    },
+    "oxidative-tensegrity/alchemi_crosslinks.py": {
+      "bytes": 12097,
+      "sha256": "4cdae0d85d4b718f6669bfe31afafe01c88671a9fa42b813b41fef4c8ee248bc"
+    },
+    "oxidative-tensegrity/compare_crosslink_models.py": {
+      "bytes": 4356,
+      "sha256": "d50d174ae0675a65246db2f62bb1a10dcd7e7b3d098af1247a323dbcb43ee769"
+    },
+    "oxidative-tensegrity/make_figures.py": {
+      "bytes": 11796,
+      "sha256": "6f8e7f6159255935a19fdea5c62a2b895d2b782b783cc1647e25ec5df5df89fa"
+    },
+    "oxidative-tensegrity/oxt/__init__.py": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "oxidative-tensegrity/oxt/cell.py": {
+      "bytes": 16852,
+      "sha256": "9a7e8e32b11dc2e9a14aa6632aafa2adca5b52c5335773b95a696e3e8dfc6805"
+    },
+    "oxidative-tensegrity/oxt/gag.py": {
+      "bytes": 6111,
+      "sha256": "97ed49101c25e74b3e789c36f5a90a9c4582b0732673c2236ecb783eb991e444"
+    },
+    "oxidative-tensegrity/oxt/lammps_export.py": {
+      "bytes": 5262,
+      "sha256": "ebd9b102e457c57810b8327e4b8b2e82b265b4d5bda1acb44e1ca136cc0f8696"
+    },
+    "oxidative-tensegrity/oxt/materials.py": {
+      "bytes": 10506,
+      "sha256": "1af29b8c72704f2117fd48068da26730832a02860c31f7e24933d92db6208615"
+    },
+    "oxidative-tensegrity/oxt/network.py": {
+      "bytes": 12795,
+      "sha256": "d163c66caac206618081595d2d52d4626cc9dce07b87c275d483da27546055b2"
+    },
+    "oxidative-tensegrity/oxt/physio.py": {
+      "bytes": 5418,
+      "sha256": "da8fbe7e73afe44b4988c8185916875c816020aa15bcb5ed86ce33dfec62df11"
+    },
+    "oxidative-tensegrity/pm7_crosslinks.py": {
+      "bytes": 6670,
+      "sha256": "000f631a0f0572e36b04c3bfbe8d6aa247690cb5924b44d2426ea23d92370b44"
+    },
+    "oxidative-tensegrity/remote/brev_alchemi.sh": {
+      "bytes": 2554,
+      "sha256": "df6d35c0d7f4d3159bf50269820e30eb74ac3586a38d422a75a4afe11b987233"
+    },
+    "oxidative-tensegrity/remote/brev_pm7.sh": {
+      "bytes": 1444,
+      "sha256": "1454058f80db95c19139d004867d896324428b545005d63b9a299af0bb0531b6"
+    },
+    "oxidative-tensegrity/remote/gcp_swarm.sh": {
+      "bytes": 1699,
+      "sha256": "c3192b88f13e0afa02e8c996dbeb8d81c88a34a3bdccd3cf07d60efd1861e63d"
+    },
+    "oxidative-tensegrity/remote/gcp_up.sh": {
+      "bytes": 2258,
+      "sha256": "59d4bb364c76ba0094ad23c821a29eff0292f5a1e9d620a138c67a60fb30a5ba"
+    },
+    "oxidative-tensegrity/remote/gpu_run.sh": {
+      "bytes": 2175,
+      "sha256": "33c655e8358ba1af8ebab967cc1d3889014c2647e1e52d7352067c3c8be1c75c"
+    },
+    "oxidative-tensegrity/remote/lammps/colI_aniso.data": {
+      "bytes": 156080,
+      "sha256": "ee54b2bc7d0dd02c77dee8ae06665f4d6b2ae1c0617219695a5656df38a7c0a3"
+    },
+    "oxidative-tensegrity/remote/lammps/colI_aniso.in": {
+      "bytes": 1295,
+      "sha256": "a89691ee0116158e6de4cdee47286824a0fd07b7cedc788588572c390d04a65a"
+    },
+    "oxidative-tensegrity/remote/lammps/colI_iso.data": {
+      "bytes": 155806,
+      "sha256": "71e6147804055a0948047e9fc7f921425e0d68377d8b27377b59cc26f4232620"
+    },
+    "oxidative-tensegrity/remote/lammps/colI_iso.in": {
+      "bytes": 1316,
+      "sha256": "93b49e69bdecc953ffe388c2c77bd9b541d7b3f65de7c0e3a24c50e21ec39731"
+    },
+    "oxidative-tensegrity/remote/lammps/colI_none.data": {
+      "bytes": 125181,
+      "sha256": "438c9abe15d945496ddaf1daaaff01ecb6867dd82557fb57aa7288ebafc90d9f"
+    },
+    "oxidative-tensegrity/remote/lammps/colI_none.in": {
+      "bytes": 1227,
+      "sha256": "0241aca0f18a5baf7f75a1d891620bd02c1743e16af467014b5e4bcb1019072a"
+    },
+    "oxidative-tensegrity/remote/lammps/colVII_aniso.data": {
+      "bytes": 144053,
+      "sha256": "ca56053f6f097059125d1b5f35eba5d84ea26d90324d973445c9df65c7d80f55"
+    },
+    "oxidative-tensegrity/remote/lammps/colVII_aniso.in": {
+      "bytes": 1293,
+      "sha256": "d6b3c961f8e52e42df2a2f1dc0b79e1ef43eba6808c38a24ea125bd8e11dcbd9"
+    },
+    "oxidative-tensegrity/remote/lammps/colVII_iso.data": {
+      "bytes": 143787,
+      "sha256": "ed8df603b7f69a33417a3ff31c850b6648a7f195ced35d5ce82d087875307282"
+    },
+    "oxidative-tensegrity/remote/lammps/colVII_iso.in": {
+      "bytes": 1311,
+      "sha256": "1cc7f46e20ff3a6b376a1a72ab166bd043d68518a39346bf53c1c73749211fe8"
+    },
+    "oxidative-tensegrity/remote/lammps/colVII_none.data": {
+      "bytes": 118780,
+      "sha256": "012f635ee0a58dc5b33b94f7b0241bab83bcac689c20581f05c8d4d62dfa3587"
+    },
+    "oxidative-tensegrity/remote/lammps/colVII_none.in": {
+      "bytes": 1236,
+      "sha256": "ad084e36873ac06047a6cbbf49dd270c0a1fe6c30816bddbd1bb6f351816c833"
+    },
+    "oxidative-tensegrity/remote/make_lammps_inputs.py": {
+      "bytes": 1008,
+      "sha256": "b779f16dafa9d3d2cf62c0b932d82b4da6aeb53b65c8e9e4e43ca9fec1ba6737"
+    },
+    "oxidative-tensegrity/remote/nebius_job.sh": {
+      "bytes": 1613,
+      "sha256": "ae48692de26a2e1ef9a292c7e35e5c20d73d9e56de9608ec4465b7c3f7c52365"
+    },
+    "oxidative-tensegrity/remote/push_and_run.sh": {
+      "bytes": 1297,
+      "sha256": "6ec6fd7124c3a5d16e2bda163d1a3ce616208a7a7ab48763708ad3ca390c298c"
+    },
+    "oxidative-tensegrity/results/alchemi_brev/crosslink_mace_mp.json": {
+      "bytes": 11966,
+      "sha256": "b26ea0f5862879968e494764e1845efdd7484a12ef787beacf460eeadf1a66e7"
+    },
+    "oxidative-tensegrity/results/alchemi_brev/crosslink_mace_off.json": {
+      "bytes": 11941,
+      "sha256": "1a70cba1d906cf426aa30e4877b23e51810cb519f7eefd76a4c866b4d8d968f8"
+    },
+    "oxidative-tensegrity/results/alchemi_brev/crosslink_model_comparison.json": {
+      "bytes": 5380,
+      "sha256": "a69aaedc87925c72298aaa69ec0a529645fc73662b3e957891efe98517cca507"
+    },
+    "oxidative-tensegrity/results/alchemi_brev/crosslink_model_comparison.md": {
+      "bytes": 1517,
+      "sha256": "44294275648c7a88c157e8f6f54960a8ffb7553a3f81a01be951874452d8848d"
+    },
+    "oxidative-tensegrity/results/alchemi_brev/crosslink_pm7.json": {
+      "bytes": 34445,
+      "sha256": "5f2a34810ee73f909e50a52de2c5e53bfbb94192af0a36554eb0a9cb270e42e4"
+    },
+    "oxidative-tensegrity/results/alchemi_gag/collagen_gag_brev_L4.json": {
+      "bytes": 6444,
+      "sha256": "9bc071ed3ab25be9472bb476222e27cf02f60c8eff8617a7cea2e270d08c9864"
+    },
+    "oxidative-tensegrity/results/alchemi_gag/collagen_gag_pilot.json": {
+      "bytes": 6436,
+      "sha256": "877da3c3a9f969fa1538d1497ce6b57a633ed51974a46606b608b25091216b13"
+    },
+    "oxidative-tensegrity/results/alchemi_pilot/alchemi-freeze.txt": {
+      "bytes": 2654,
+      "sha256": "f3dc3f6abe4242162b4c0d36383a94107e191b36d64e8ca77371671b91f92f95"
+    },
+    "oxidative-tensegrity/results/alchemi_pilot/crosslink_params_pilot.json": {
+      "bytes": 5567,
+      "sha256": "b5b8bd2f15c38e46903974b6693e8aa8368f504cf123c3413b6cd5064c798733"
+    },
+    "oxidative-tensegrity/results/blog_critique/agent-critique-full-log.pdf": {
+      "bytes": 1052211,
+      "sha256": "b76e47dc5fa314ff6ccfd0f1066b67ba3b4efc96e85494961a10fd33d3d42686"
+    },
+    "oxidative-tensegrity/results/blog_critique/log.jsonl": {
+      "bytes": 824382,
+      "sha256": "17d74bf27a24a09df30db87d016064c71ca5ffa356cabb701a503c95dcba193c"
+    },
+    "oxidative-tensegrity/results/blog_critique/meta.json": {
+      "bytes": 749,
+      "sha256": "22a8a707bba5188e1a23ce3d6bd8c786e616400186f573da430883de731970c0"
+    },
+    "oxidative-tensegrity/results/blog_critique/synthesis.json": {
+      "bytes": 17874,
+      "sha256": "a3654b0b890fae92e7e5fd820b59badbf53e243eb286026f4a245e4ac207fa7c"
+    },
+    "oxidative-tensegrity/results/blog_critique/wp_post_final.html": {
+      "bytes": 31240,
+      "sha256": "e597778dc8e89995978645cdb497f28ed6db630db63fb138341ca28729ac1aea"
+    },
+    "oxidative-tensegrity/results/cpu32/SUMMARY.md": {
+      "bytes": 9771,
+      "sha256": "a3cf1aa3ce03f9c4c765857f9bdbc67716e98c3a5afe5bd190e38855e89e301d"
+    },
+    "oxidative-tensegrity/results/cpu32/cell.csv": {
+      "bytes": 26302,
+      "sha256": "9da3f129ee4625b8c7dbc66550fb2afc7c1722bbb371c8e6c2f2088fbb5dfb28"
+    },
+    "oxidative-tensegrity/results/cpu32/failure.csv": {
+      "bytes": 81307,
+      "sha256": "542bd2d4e2eb50606fd42c07d71f1fc635957fc4fc49d758d7360a8618908877"
+    },
+    "oxidative-tensegrity/results/cpu32/figures/fig1_branching_rigidity.png": {
+      "bytes": 121544,
+      "sha256": "28025d3fe1b81401e46e7db6fbbc14cad5ad7c75da136917904479eb7d581b2c"
+    },
+    "oxidative-tensegrity/results/cpu32/figures/fig2_strain_stiffening.png": {
+      "bytes": 115608,
+      "sha256": "3290b5a44353adc533053b25f2963664c9ab9f4f5f4131ed94253c6f8c7e52c6"
+    },
+    "oxidative-tensegrity/results/cpu32/figures/fig3_failure_anisotropy.png": {
+      "bytes": 293822,
+      "sha256": "bd93423d4fa2eb3b6e05836f6324f23d66a17157ea4a3b4a0793ac980ded677f"
+    },
+    "oxidative-tensegrity/results/cpu32/figures/fig4_cell_mechanotransduction.png": {
+      "bytes": 484412,
+      "sha256": "c291cfadddb8453e10159482b6bd57dfa323c621e23eacc09554bb3302b5ba7b"
+    },
+    "oxidative-tensegrity/results/cpu32/figures/fig5_tissues_organs.png": {
+      "bytes": 278880,
+      "sha256": "5fee67032737f5d4a17405354c771a1c8c7d3fe317e13ed8c535fdc333350e8c"
+    },
+    "oxidative-tensegrity/results/cpu32/figures/fig6_gag_sliding.png": {
+      "bytes": 182494,
+      "sha256": "11410f72074a821565729a1ec885f8cce8e0672a965abce01599d5ad37dd91e4"
+    },
+    "oxidative-tensegrity/results/cpu32/gag.csv": {
+      "bytes": 102906,
+      "sha256": "e2da74f0a8b97beaa267da25f903448e9b72813c091f66aa74ae4991f386948d"
+    },
+    "oxidative-tensegrity/results/cpu32/gag_summary.csv": {
+      "bytes": 3315,
+      "sha256": "71e2dee5b6244d1fab1b5e156a592b1bf79f295d63e8772b73b8592648cd4777"
+    },
+    "oxidative-tensegrity/results/cpu32/heart.csv": {
+      "bytes": 745,
+      "sha256": "6f4945d52d2dad7be97cf91d82a9f892e5cfcb75cd141026129cb444260e8dbc"
+    },
+    "oxidative-tensegrity/results/cpu32/network.csv": {
+      "bytes": 276472,
+      "sha256": "9de6feef3863651bf160a83c554770506f75b5097863df4729663a6a002941a2"
+    },
+    "oxidative-tensegrity/results/cpu32/organ.csv": {
+      "bytes": 5576,
+      "sha256": "42f05e97eae6b5b8733e80bb07f0591202559553daca599764c1839e5dcb8978"
+    },
+    "oxidative-tensegrity/results/cpu32/summary.json": {
+      "bytes": 1897,
+      "sha256": "351a43e1f88508953fa83ee1d708ce649a0b65ce2555aec8d5b3466672559970"
+    },
+    "oxidative-tensegrity/results/cpu32/tissues.csv": {
+      "bytes": 108273,
+      "sha256": "8c7e92cec18334b0f62eb3e1def1f935dcf13afca58e397c23ca2def17beb506"
+    },
+    "oxidative-tensegrity/results/cpu32/transport.csv": {
+      "bytes": 31551,
+      "sha256": "5200e9a2a8b447bc4e148b68678a3bb336d6cf05fc0a08c037dc78e699532995"
+    },
+    "oxidative-tensegrity/results/local/SUMMARY.md": {
+      "bytes": 5887,
+      "sha256": "ffc745de33aa82bc7cfa2d5968de85d6ceb5f03ed8c67dee794e7cf467fdd4f9"
+    },
+    "oxidative-tensegrity/results/local/cell.csv": {
+      "bytes": 15346,
+      "sha256": "63602c9f3e50accee88b573985df698d13c945a0df7496be7177df184a34cb59"
+    },
+    "oxidative-tensegrity/results/local/failure.csv": {
+      "bytes": 16685,
+      "sha256": "19735ec002a45508b4143604add0822f11cb9a8ff4321b4ee55b22ef3f603705"
+    },
+    "oxidative-tensegrity/results/local/figures/fig1_branching_rigidity.png": {
+      "bytes": 106147,
+      "sha256": "9d1983d8581519c26df6e886d7b2cc1c53c3831321e2f8d0c2a5f7160193d23c"
+    },
+    "oxidative-tensegrity/results/local/figures/fig2_strain_stiffening.png": {
+      "bytes": 110805,
+      "sha256": "91b068a99bb5727bd6b41b58f624766758aeebe68bb033bb7f78e7b42e16531a"
+    },
+    "oxidative-tensegrity/results/local/figures/fig3_failure_anisotropy.png": {
+      "bytes": 281999,
+      "sha256": "f6773c8dad18309895c75419ca2f34dda68b48f3cf6b8dbf6a4fed9249d230da"
+    },
+    "oxidative-tensegrity/results/local/figures/fig4_cell_mechanotransduction.png": {
+      "bytes": 446806,
+      "sha256": "63fc13c066fcea294580294abfd3e5d21ab1251376ed1055efa470e87f7e264b"
+    },
+    "oxidative-tensegrity/results/local/figures/fig5_tissues_organs.png": {
+      "bytes": 252740,
+      "sha256": "eaa280926cf1aec9cb0598236d4ee59de2c5680080790d774719063107a93bd0"
+    },
+    "oxidative-tensegrity/results/local/heart.csv": {
+      "bytes": 446,
+      "sha256": "deefcdb347967902160079e9a6a74ed18e17e9cd878fc3a8bad0d12ff599a40d"
+    },
+    "oxidative-tensegrity/results/local/network.csv": {
+      "bytes": 25401,
+      "sha256": "8cf1f08cf2b5c44c5f316574724fe2f3932a62e32db0a76279bfac1da62ae1e5"
+    },
+    "oxidative-tensegrity/results/local/organ.csv": {
+      "bytes": 3263,
+      "sha256": "32a81c8060c08fd4d6246b0cfc913165de0ac8ad7db7579be4c56df2045bdaa3"
+    },
+    "oxidative-tensegrity/results/local/summary.json": {
+      "bytes": 1680,
+      "sha256": "35c8d77602cdb860869e4073a2df048b8eb49b8c78eddccb1352e9c4e4788dfa"
+    },
+    "oxidative-tensegrity/results/local/summary_fullrun.json": {
+      "bytes": 1678,
+      "sha256": "c09bae928848ed46d9661e8e6f7bd36a9821eb84271d55484de6acfeb8d8f1fc"
+    },
+    "oxidative-tensegrity/results/local/tissues.csv": {
+      "bytes": 24559,
+      "sha256": "cabb009e6f887fc430aea7bcfccbd5160d7c83aeea6606e52f1c5ae3b3dc1705"
+    },
+    "oxidative-tensegrity/results/local/transport.csv": {
+      "bytes": 18973,
+      "sha256": "c04c2db2ee54f2cf887a2e96d5ed31840f12e3d654fb6dde45ce71e5ec5ddc9c"
+    },
+    "oxidative-tensegrity/run_gag.py": {
+      "bytes": 4708,
+      "sha256": "be152257d2fb9e6bcbb87986433e79394409ec91b3fcbcac44e9942d05cc770d"
+    },
+    "oxidative-tensegrity/run_sweep.py": {
+      "bytes": 12283,
+      "sha256": "0cf6414a9f6e947a8894693e44caad8b1839507685cf1c90e2e65c6dde5ac47b"
+    },
+    "oxidative-tensegrity/swarm/CODEX_CRITIQUE_20261031.md": {
+      "bytes": 9300,
+      "sha256": "e73ff7ac147bfa5a7301a6ed08457e36aac13dcfc6349411f063452488c89131"
+    },
+    "oxidative-tensegrity/swarm/SUMMARY.md": {
+      "bytes": 3100,
+      "sha256": "e97ebaf85610d90374119a6a2886b26300d62ce028a09e824cbac3a7c8d6ca7d"
+    },
+    "oxidative-tensegrity/swarm/run_round2.sh": {
+      "bytes": 1403,
+      "sha256": "a0aef2d033fcd3cf997151fde420730a6aba6aa0bc6de42b46d3617461dddf87"
+    },
+    "oxidative-tensegrity/swarm/run_scienceclaw_swarm.sh": {
+      "bytes": 2406,
+      "sha256": "d5a7580eedbdf971245037fd76feb038b68c1ff4b2fcebef371a4f7c957e1e04"
+    },
+    "oxidative-tensegrity/swarm/set_gemini_key.sh": {
+      "bytes": 525,
+      "sha256": "f026d8c768d9cc6d4d0fe74f4aa7d027b77a0aac7320a4fe0b9725a53de54c58"
+    },
+    "oxidative-tensegrity/swarm/topics.txt": {
+      "bytes": 1499,
+      "sha256": "e794b1ab74592525fd828916a8d83bbeaa5ff69f3805cc5ad371f214c2078a2a"
+    },
+    "oxidative-tensegrity/swarm/topics_round2.txt": {
+      "bytes": 2459,
+      "sha256": "0772cb151b6a047ea59d67df2af0e094faf5c53fe19f7af1ab5dce0ca2cdc54d"
+    },
+    "oxidative-tensegrity/tests/test_oxt.py": {
+      "bytes": 3881,
+      "sha256": "6be19a8d611c7319cd2d3e6c5b447befe16f24256263f295baf33d2ad8bc290c"
+    },
+    "oxidative-tensegrity/viz/data.json": {
+      "bytes": 114410,
+      "sha256": "9f91372fcffe65467c80b66907d27ad276b3d283cd7beacc37c236fbe79c524e"
+    },
+    "oxidative-tensegrity/viz/export_viz.py": {
+      "bytes": 6602,
+      "sha256": "6e1b6ea549332a4a99d8300b5a91490b289397ac7bf3250cb70abcc02b084d40"
+    },
+    "oxidative-tensegrity/viz/oxidative-tensegrity.html": {
+      "bytes": 161574,
+      "sha256": "8228d9e9a202e79832c1a3e37a80457cc41e4f296f91db76fad4ca657a55ade1"
+    },
+    "oxidative-tensegrity/viz/page.template.html": {
+      "bytes": 47172,
+      "sha256": "80e5000bb346f2493609b2fe5a8f3d63ff9374e31a632411589ef679b6ea98b1"
+    },
+    "publish-pages.py": {
+      "bytes": 4336,
+      "sha256": "285efa5a3653ea2ed1ef058755f9e4700f2c0cdf16c1460fc5c367420f703d4e"
+    },
+    "verify-archives.py": {
+      "bytes": 786,
+      "sha256": "73bafdb189f65dbfa495068582dd9057faa7a429badc8112b0c3c9f04406e6e8"
     }
-  },
-  "note": "Updated live workflow files for automatic publication; frozen run files remain unchanged.",
-  "updatedAt": "2026-10-31T16:33:18.450011+00:00"
+  }
 }

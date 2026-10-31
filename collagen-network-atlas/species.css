@@ -1,0 +1,3 @@
+.species-controls{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:24px 0}.species-controls label{display:flex;flex-direction:column;gap:10px;font-size:12px}.species-controls select{width:100%}.specimen h3{margin:20px}.specimen canvas{display:block;width:100%;height:230px}#speciesSequences code{white-space:normal;word-break:break-all;font-size:11px;line-height:1.8}#speciesSequences table{min-width:620px}#speciesStatus{font-size:11px}main p{line-height:1.65}@media(max-width:800px){.species-controls{grid-template-columns:1fr 1fr}.comparison{grid-template-columns:1fr}}
+
+.specimen{background:#fbfcf8;color:#233b35;border:1px solid #d9dfd5}

@@ -1,0 +1,20 @@
+{
+  "runtime_image": "docker.io/library/node@sha256:94c973596a8581a87ba42746ceb0b0e0b5246d098de45b1ce04dcc967cfc5dfb",
+  "compute": "Nebius CPU-only, 4 vCPUs",
+  "gpuUsed": false,
+  "uid": 65534,
+  "network": "seccomp blocks socket/connect/bind/listen/send/receive; socket denial checked before each child",
+  "workloadTimeoutSeconds": 1200,
+  "startedUnix": 1793465927.6227489,
+  "sourceHashes": {
+    "model.js": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+    "directional.js": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee",
+    "aging.js": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8",
+    "density.js": "4e69aedabb2c23499d6a7702736e4cb515eec7be5310940c2d2db2971035bb45",
+    "benchmark-density.js": "8a879b064a4fc9d7a5182735a2f16cb8e00cbb1058cebb4316528d9d92b5e408",
+    "check-density.js": "c2ca5562e3a38cf3c525538bd9fc7497b4838a78afed16aea21317bc2aaa4b30"
+  },
+  "returncode": 0,
+  "elapsedSeconds": 763.6139588356018,
+  "success": true
+}

@@ -1,0 +1,89 @@
+{
+  "scope": "Collected immutable job outputs plus local validation and recovery documentation; excludes this manifest.",
+  "files": {
+    ".gitignore": {
+      "bytes": 22,
+      "sha256": "0684898d068a54db7fbbd86b77d6805ebc047243ba40d34af58f0fa8385924d9"
+    },
+    "FINISHED.json": {
+      "bytes": 229,
+      "sha256": "785c88047f7ad866c9b1c931723d8551d238454116db92afe09d8aefb3d68284"
+    },
+    "MANIFEST.json": {
+      "bytes": 1418,
+      "sha256": "15e00af6c6c241228bff4ecbac78e0941d121c53961e82f824fac47c09eef579"
+    },
+    "README.md": {
+      "bytes": 2606,
+      "sha256": "3b791bf8340e6144d918b0766a376d02082c60cd901db573c25c9d31293f64af"
+    },
+    "VALIDATION.json": {
+      "bytes": 4135,
+      "sha256": "b69575368ebbd81a658caa15273381f3584bb550f58594f6d1b2b90965526b05"
+    },
+    "_release/LARGE_DATASETS.json": {
+      "bytes": 848,
+      "sha256": "b5a91dd06fc0043307fdbb95d427e9a311b665595244ac15b4ce4dbd88c58fd3"
+    },
+    "_release/README.md": {
+      "bytes": 723,
+      "sha256": "2120b613a656c2962020e5c8ddeaed5f38f9448e1edc6b477117440fa0bb28f1"
+    },
+    "_release/restore-large-data.py": {
+      "bytes": 4159,
+      "sha256": "736ededfb1af6d7a2dbf14c1f3297445a29038654a313a34cf1a65b33e10d9a0"
+    },
+    "aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "benchmark-density.js": {
+      "bytes": 6126,
+      "sha256": "8a879b064a4fc9d7a5182735a2f16cb8e00cbb1058cebb4316528d9d92b5e408"
+    },
+    "check-density.js": {
+      "bytes": 1600,
+      "sha256": "c2ca5562e3a38cf3c525538bd9fc7497b4838a78afed16aea21317bc2aaa4b30"
+    },
+    "density-data.js": {
+      "bytes": 15382297,
+      "sha256": "628ac0d805524c1e58f1c6bb483e96c89823e16c2fddc5d489f628e7cc2b04c5"
+    },
+    "density.csv": {
+      "bytes": 2435966,
+      "sha256": "0aa0af9a8430fe350597ecede322dc9b604ccbcd9b78dc21962fc23c6669b837"
+    },
+    "density.js": {
+      "bytes": 2300,
+      "sha256": "4e69aedabb2c23499d6a7702736e4cb515eec7be5310940c2d2db2971035bb45"
+    },
+    "density.json": {
+      "bytes": 15382266,
+      "sha256": "4ce2afe0bbd43bea9305f55fba988d78e9fa5f14a93cefaf8211acd4fce9fa20"
+    },
+    "directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "download-receipt.json": {
+      "bytes": 1129,
+      "sha256": "8ad555b6e0aff26f762b1d31fda0f0ad1617a778fb57a7783c73b544ac65648b"
+    },
+    "execution.json": {
+      "bytes": 1013,
+      "sha256": "509a1b92c19d51a1829914c41bd14b494b1dbf1b48bcde90b26cbe213a0663f7"
+    },
+    "execution.log": {
+      "bytes": 3464,
+      "sha256": "eb469054499ea91458409f5754512c26312aff54628fbaf280a0bf04ec7eea9d"
+    },
+    "model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "raw-curves.ndjson.gz": {
+      "bytes": 199139567,
+      "sha256": "b2add1f2d867367200c4a2b5cab770332b5cd1b132d2066a355db7840525574a"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "repository": "InquilineKea/scienceclaw-hackathon-2026",
+  "kind": "density",
+  "runId": "20261031-density-v1",
+  "manifestSHA256": "15e00af6c6c241228bff4ecbac78e0941d121c53961e82f824fac47c09eef579",
+  "partBytes": 1073741824,
+  "files": {
+    "raw-curves.ndjson.gz": {
+      "bytes": 199139567,
+      "sha256": "b2add1f2d867367200c4a2b5cab770332b5cd1b132d2066a355db7840525574a",
+      "parts": [
+        {
+          "bytes": 199139567,
+          "sha256": "b2add1f2d867367200c4a2b5cab770332b5cd1b132d2066a355db7840525574a",
+          "url": "https://github.com/InquilineKea/scienceclaw-hackathon-2026/releases/download/data-density-20261031-v1-15e00af6c6c2/raw-curves.ndjson.gz",
+          "releaseTag": "data-density-20261031-v1-15e00af6c6c2",
+          "assetName": "raw-curves.ndjson.gz"
+        }
+      ]
+    }
+  }
+}

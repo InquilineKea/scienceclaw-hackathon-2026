@@ -37,3 +37,8 @@ Replay states were originally sampled and retained only for selected cases. JSON
 Run `node benchmark.js --render` from collagen-network-atlas on macOS, or omit --render for the numerical/analysis pipeline. It creates a timestamped unique folder, snapshots source, retains success/failure logs, verifies media inputs, and writes a checksum manifest. Existing run IDs are rejected, even after failure. The live molecular launcher likewise creates a distinct run folder. See RUN_STORAGE.md in the atlas.
 
 Completed runs now upload automatically through the trusted host uploader, with periodic retries for pending completed folders. Existing run data are never replaced. No paid GPU job is started by upload or retry. See the atlas RUN_STORAGE.md for scope, limits and receipts.
+
+## Density and matched-species additions — 2026-10-31
+
+- [Crosslink-density run](collagen-network-atlas/density-runs/20261031-density-v1/): 6,300 configurations, 12,600 solves, all coarse/fine curves, SHA-256 manifests, numerical flags and CPU runtime receipt. The approximately 199 MB raw gzip is preserved through [GitHub Releases and verified recovery metadata](collagen-network-atlas/density-runs/20261031-density-v1/_release/), beyond the Git source ZIP.
+- [Beaver–human CDSM pilot](collagen-species-pilot/): four source sequence records, matched alignments, 18 backbone structures, actual remote source bundle, original output ZIP, runtime receipt and an explicit uncalibrated molecular-to-network contract. No AGE-adduct dynamics or species robustness result is claimed.

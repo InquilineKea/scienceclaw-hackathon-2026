@@ -1,0 +1,15 @@
+'use strict';
+const assert=require('node:assert/strict'),D=require('./density.js'),A=require('./aging.js');
+const curve=[{q:0,work:0,energy:0,damage:0,linkDamage:0},{q:.1,work:1,energy:.8,damage:0,linkDamage:0},{q:.2,work:2,energy:1,damage:0,linkDamage:.1},{q:.3,work:3,energy:1.1,damage:.2,linkDamage:.1}];
+assert.deepEqual(D.beforeEvent(curve,r=>r.damage>0||r.linkDamage>0),{observed:true,lastIntactStrain:.1,onsetStrain:.2,work:1,storedEnergy:.8});
+assert.equal(D.beforeEvent(curve,r=>r.damage>.5).work,null);
+assert.equal(D.beforeEvent(curve,r=>r.damage>0).work,2);
+const b={valid:true,stiffnessValid:true,censored:false,criterion:'test',stiffness:1,work:1,failureStrain:.2,workBeforeDamage:.5,workBeforeCollagenDamage:.6};
+assert.equal(D.compareResolution(b,{...b,work:1.1}).workUnresolved,true);
+assert.equal(D.compareResolution(b,{...b,censored:true}).workUnresolved,true);
+assert.equal(D.compareResolution(b,{...b,criterion:'different'}).workUnresolved,true);
+assert.equal(D.compareResolution(b,{...b,work:1.01}).workUnresolved,false);
+const n=A.build('isotropic',17,{count:0}),r=A.simulate(n,0,{steps:30,frames:false}),s=D.summarize(r);
+assert.equal(s.work,r.metrics.work);assert.equal(s.stiffness,r.metrics.stiffness);
+assert.ok(s.firstDamageStrain>s.lastIntactStrain);assert.ok(s.workBeforeDamage<=s.work);
+console.log(JSON.stringify({status:'passed',checks:['last intact sample and first damage bracket','separate collagen and connector onset','unobserved onset excluded','resolution sensitivity and criterion mismatch flags','postprocessing leaves original solver values unchanged']}));

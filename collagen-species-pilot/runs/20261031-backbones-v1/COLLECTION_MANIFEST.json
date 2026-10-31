@@ -1,0 +1,137 @@
+{
+  "scope": "Collected immutable job outputs plus local validation and recovery documentation; excludes this manifest.",
+  "files": {
+    "README.md": {
+      "bytes": 1587,
+      "sha256": "722e0272010bee3b06e438170bf79b1a1b0811745514c4194e647e351a0447d7"
+    },
+    "cdsm-results.zip": {
+      "bytes": 405910,
+      "sha256": "0fe88d49b47486735d23fc0c28bb5470bd2521afc0c21a44701088dae8c56c15"
+    },
+    "download-receipt.json": {
+      "bytes": 1416,
+      "sha256": "8f4f76117262f4ffffe8fdb60e02853fa33690e69873c23f50bd553f4db1f4f3"
+    },
+    "execution.json": {
+      "bytes": 1303,
+      "sha256": "abf1d18605824232018cc7cce13553457d952309f9fd7235ed81ed8bda1d70b6"
+    },
+    "execution.log": {
+      "bytes": 74,
+      "sha256": "07b4b2987ada482809661ec197031b24b054d2e75e759a0f207d91c1aa614281"
+    },
+    "result/MANIFEST.json": {
+      "bytes": 2493,
+      "sha256": "71a9b8fad00fe699478b4b5b82cf8622f7cb2b11b8e4b189a66a5e71f70cb031"
+    },
+    "result/backbones.json": {
+      "bytes": 480950,
+      "sha256": "bc73e1479413e54a25677b0d9167ece91aad6429ca84660982163dc17c06a51b"
+    },
+    "result/beaver-C-112.pdb": {
+      "bytes": 87804,
+      "sha256": "efe5925127a613e31337104849a15a559e4a051a5b3efca1403dc85e2f9fde74"
+    },
+    "result/beaver-C-121.pdb": {
+      "bytes": 87804,
+      "sha256": "b829bd8a25f111f3b2cc4922c68076c8a21d43b627a9c3310a92fd0c28f7f6f2"
+    },
+    "result/beaver-C-211.pdb": {
+      "bytes": 87804,
+      "sha256": "441c772c074d27347ba60aeb003f0f678a8387b59d87c8e9d9fea8ca3e448c53"
+    },
+    "result/beaver-N-112.pdb": {
+      "bytes": 87804,
+      "sha256": "3f3bd5e7fa71b35fc4a0c69cca7eabb520d057c98e350e4e3ecad0e81a5bb579"
+    },
+    "result/beaver-N-121.pdb": {
+      "bytes": 87804,
+      "sha256": "caf9d32c0d813d21ac0b2070b582725b78950be7ebc22cb8fd1fbc1d050ca900"
+    },
+    "result/beaver-N-211.pdb": {
+      "bytes": 87804,
+      "sha256": "c583a0726420a49d59668019cff7c7ef34d929b7792fe7fc38f33843bf6a75ea"
+    },
+    "result/beaver-middle-112.pdb": {
+      "bytes": 87804,
+      "sha256": "f3e45c4d8eca5598b37ef2582dc2bca14d311940254a1a65fd340ba4c2b10a9d"
+    },
+    "result/beaver-middle-121.pdb": {
+      "bytes": 87804,
+      "sha256": "ed05bbd27173bd5b9ab269cdb704ef0ac406908ab3a48d36b9695252f0f22a57"
+    },
+    "result/beaver-middle-211.pdb": {
+      "bytes": 87804,
+      "sha256": "622ac210105e7c123673a8261253144f068b01c8cb27624e04717c3f4a05a17b"
+    },
+    "result/human-C-112.pdb": {
+      "bytes": 87804,
+      "sha256": "99f1af43cff71be4b235303061897aea3a2351782867e4e4acf09a147490232c"
+    },
+    "result/human-C-121.pdb": {
+      "bytes": 87804,
+      "sha256": "9e0a1ee1d486dfbee248a6fc7385c9cec424de2ddb3d313d97866f5d7044172b"
+    },
+    "result/human-C-211.pdb": {
+      "bytes": 87804,
+      "sha256": "d21e7965bfa3229b73be070370681353a704b9c897fdfbacb7232f29bf87362b"
+    },
+    "result/human-N-112.pdb": {
+      "bytes": 87804,
+      "sha256": "ea6efcc9ef1c22fbfb4350ae3e2716ff8b69c4eb843ac233ce36b7dac417fe1f"
+    },
+    "result/human-N-121.pdb": {
+      "bytes": 87804,
+      "sha256": "0820b1d4524152735158f7b8b61ce3093c297c2886e1586ca91a461e3ff73df2"
+    },
+    "result/human-N-211.pdb": {
+      "bytes": 87804,
+      "sha256": "01640af693f0f8b87fd3d95c4652cacff421351c2d7682763ca91e10290ab6d3"
+    },
+    "result/human-middle-112.pdb": {
+      "bytes": 87804,
+      "sha256": "fc919146f4d69af071f0d651d5413cea8a8810c3c2090852985019c8b9ceccc5"
+    },
+    "result/human-middle-121.pdb": {
+      "bytes": 87804,
+      "sha256": "7a76f5b8a001ffcd551b12ce38060bf87c6cafbb87e29a8fba5e1a42a32a561a"
+    },
+    "result/human-middle-211.pdb": {
+      "bytes": 87804,
+      "sha256": "0fcea66efa5ed7926dd743b20d1045865d0f81fc3ee84b448eef1ac969846654"
+    },
+    "source/inputs/pilot.json": {
+      "bytes": 17859,
+      "sha256": "d1d3c373a90e36fd9135a1ca617d397756d6c7588460f48bca55540bd5f1cd91"
+    },
+    "source/run-backbones.py": {
+      "bytes": 2409,
+      "sha256": "b13033c78adbb5c7cbd031241bc256cf985c803c8f66b2b572e57dce4dfc6932"
+    },
+    "source/vendor/LICENSE": {
+      "bytes": 11357,
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    "source/vendor/step1_backbone_builder.py": {
+      "bytes": 31237,
+      "sha256": "9d94365a72f29fc038b0f24249d59dac9c4e9a16d9b6dce6c201de316f18c50e"
+    },
+    "source/vendor/thparams/THparams_AR.dat": {
+      "bytes": 1671,
+      "sha256": "df4d03ca2dddedfc187d4a89933135f2790c3480feae0415b494bac7162c674d"
+    },
+    "source/vendor/thparams/THparams_IR.dat": {
+      "bytes": 1723,
+      "sha256": "b1a17c02aec33f8d3cc8d958391604ef9c237dfe8966a15b9d6066ea06c47faa"
+    },
+    "source/vendor/thparams/THparams_nonsmooth.dat": {
+      "bytes": 1316,
+      "sha256": "0d4dd9e009969ba81b299f9e2b984091655cd989940bda3c6a90e713cf396955"
+    },
+    "source/vendor/thparams/THpropensities.dat": {
+      "bytes": 6987,
+      "sha256": "bb7a88428f3f24b283d1009196e3cdbd909513a390bdd86a4fd4cd9c87a7259f"
+    }
+  }
+}

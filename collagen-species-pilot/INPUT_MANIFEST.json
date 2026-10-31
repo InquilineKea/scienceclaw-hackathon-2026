@@ -1,0 +1,20 @@
+{
+  "vendor/LICENSE": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+  "vendor/step1_backbone_builder.py": "9d94365a72f29fc038b0f24249d59dac9c4e9a16d9b6dce6c201de316f18c50e",
+  "vendor/thparams/THpropensities.dat": "bb7a88428f3f24b283d1009196e3cdbd909513a390bdd86a4fd4cd9c87a7259f",
+  "vendor/thparams/THparams_nonsmooth.dat": "0d4dd9e009969ba81b299f9e2b984091655cd989940bda3c6a90e713cf396955",
+  "vendor/thparams/THparams_IR.dat": "b1a17c02aec33f8d3cc8d958391604ef9c237dfe8966a15b9d6066ea06c47faa",
+  "vendor/thparams/THparams_AR.dat": "df4d03ca2dddedfc187d4a89933135f2790c3480feae0415b494bac7162c674d",
+  "inputs/P02452.json": "3a215114cbeb6744ddeb8c9c884280e2208c8e37f1fcee3b48247d301cb4d4e0",
+  "inputs/P08123.fasta": "23c56b555e41c58b6012fd7f3a5323a16861015c76926523430e1159016f4434",
+  "inputs/A0A8B7UHI7.json": "67b85cab94a388a3cf254ca7016345942b6193fe5521c799b24a0615d05dcea0",
+  "inputs/A0A250Y7T0.json": "01b13e327dec1ac97aba63d36e7b1014ff198c09097db4ec1cf9cecbec261e6f",
+  "inputs/A0A8B7UHI7.fasta": "c9fb95fddbb89e3803f0b60d122ae37dd019224385da2ba1d40a640f94d82a7a",
+  "inputs/P02452.fasta": "8c2a8eba6000936a3a6b48cc28e4396a0d15de9597b2b1234165840116c1c9c5",
+  "inputs/COL1A1-aligned.fasta": "eaf201263e3f22cd0222fed683c0ad3278359ca63fdea909d768608bb21e79d8",
+  "inputs/COL1A2-aligned.fasta": "6190122b3e907f19d22e1a04de97f20b273f6554648cfeca078a5bb10f3dc4ba",
+  "inputs/pilot.json": "d1d3c373a90e36fd9135a1ca617d397756d6c7588460f48bca55540bd5f1cd91",
+  "inputs/P08123.json": "42b587f874adbdd89581a5841bc2c01372d923a2a75e62bbd961e017bf059604",
+  "inputs/A0A250Y7T0.fasta": "b05759a6cad9cbe4a9c7d41bf88c3c8ff7655223c87cd70407b464672c845921",
+  "run-backbones.py": "b13033c78adbb5c7cbd031241bc256cf985c803c8f66b2b572e57dce4dfc6932"
+}

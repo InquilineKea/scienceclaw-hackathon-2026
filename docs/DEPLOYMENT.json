@@ -7,11 +7,11 @@
   "aging_runs": 756,
   "aging_source_sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8",
   "directional_source_sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee",
-  "scope": "Original 450-run baseline, 252-run directional-strain experiment, and separate paired crosslink experiment. Static application and browser-local computation; no server or package installation.",
+  "scope": "Original 450-run baseline, 252-run directional-strain experiment, and separate paired crosslink experiment. Static application and browser-local computation; no server or package installation. Density sweep uses 6,300 paired configurations at two resolutions. Separate CDSM species pilot contains backbone geometry only, without molecular mechanical calibration.",
   "files": {
     "index.html": {
-      "bytes": 16756,
-      "sha256": "cacf29cfdc23facad271035be76493eb1bfda3a5f0bd823a49256fcf09d87c42"
+      "bytes": 16798,
+      "sha256": "2deab7e70f8db9861da2aff2eff6a52fb8afe9b54be2db2bd12458ad6fb9a11d"
     },
     "style.css": {
       "bytes": 13374,
@@ -94,8 +94,8 @@
       "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
     },
     "aging.html": {
-      "bytes": 9800,
-      "sha256": "052a55b303d858005a2b175d152d745399b947186bb746f575fd08087ff33305"
+      "bytes": 13262,
+      "sha256": "ebee360f6b9855ee0c77e60eb7471653731a9e463f9127a642dba9a256c1a7f0"
     },
     "aging.css": {
       "bytes": 1305,
@@ -128,6 +128,62 @@
     "data/aging.csv": {
       "bytes": 149638,
       "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
+    },
+    "density-ui.js": {
+      "bytes": 6288,
+      "sha256": "16d82d29e56aed46d9a1dc4b3c37a0ce0d25b6fcc4f668a7650cecc6cafc396d"
+    },
+    "density.css": {
+      "bytes": 1197,
+      "sha256": "46930ef55c040e63b24d830623f54189f5391fc3942cd8e0489c27b33f050700"
+    },
+    "DENSITY_METHODS.md": {
+      "bytes": 4871,
+      "sha256": "c64859609c4dca8481daa89305ebf299c6d2905ffee91774565bd0e27fa612b3"
+    },
+    "data/density-data.js": {
+      "bytes": 2683343,
+      "sha256": "a6ec7e5eca2f107d4805bc21e1f3fd4c2bfbd79b364405dcb91bcdee8bc4ffb6"
+    },
+    "data/density.json": {
+      "bytes": 15382266,
+      "sha256": "4ce2afe0bbd43bea9305f55fba988d78e9fa5f14a93cefaf8211acd4fce9fa20"
+    },
+    "data/density.csv": {
+      "bytes": 2435966,
+      "sha256": "0aa0af9a8430fe350597ecede322dc9b604ccbcd9b78dc21962fc23c6669b837"
+    },
+    "species.html": {
+      "bytes": 6632,
+      "sha256": "41a35550d47c7aaaefa086473017edc841f850d9227d944f5175330b4342de6f"
+    },
+    "species.css": {
+      "bytes": 659,
+      "sha256": "1834840657960e9986043c91b321d2337e661d9c8801f7fe194a80f13ff7ba1a"
+    },
+    "species-ui.js": {
+      "bytes": 2684,
+      "sha256": "1f1af387668ca0cb8f9e25e1846efc26895ce61518c71eba03d22b97525383c4"
+    },
+    "SPECIES_METHODS.md": {
+      "bytes": 6596,
+      "sha256": "994128bd5c4deb3c67a31b151014548869cfcfefc6a8534acdfbcd9f66d3820b"
+    },
+    "data/species-data.js": {
+      "bytes": 292758,
+      "sha256": "5a2cc4110241d7ffde741b4610d7ffa287aef09ac7aff379dd6a7d41c18074c2"
+    },
+    "data/species-inputs.json": {
+      "bytes": 17859,
+      "sha256": "d1d3c373a90e36fd9135a1ca617d397756d6c7588460f48bca55540bd5f1cd91"
+    },
+    "data/species-backbones.json": {
+      "bytes": 480950,
+      "sha256": "bc73e1479413e54a25677b0d9167ece91aad6429ca84660982163dc17c06a51b"
     }
-  }
+  },
+  "density_configurations": 6300,
+  "density_solver_runs": 12600,
+  "cdsm_backbone_structures": 18,
+  "cdsm_source_commit": "074a6f3aa76c987fde3fa39746c33256429a081a"
 }

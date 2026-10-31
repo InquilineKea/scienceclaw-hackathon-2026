@@ -2,6 +2,10 @@
 
 **[Open the interactive Fracture Atlas](https://inquilinekea.github.io/scienceclaw-hackathon-2026/)** — seven architectures, eight loading protocols, explicit support/load diagrams, orientation readouts, animation replay, and custom browser computations. [Hosting and loading details](PAGES.md).
 
+**New: [crosslink-density sweep](https://inquilinekea.github.io/scienceclaw-hackathon-2026/aging.html#density)** — stiffness, work to failure and work before first damage for all seven networks, comparing distributed and clustered connectors at 12 loading directions. The 6,300 configurations have paired 480/960-step checks and complete [raw-curve recovery](collagen-network-atlas/density-runs/20261031-density-v1/_release/).
+
+**[Beaver–human molecular pilot](https://inquilinekea.github.io/scienceclaw-hackathon-2026/species.html)** — 18 matched CDSM type-I collagen backbones with interactive coordinate views, [sequences, PDBs and provenance](collagen-species-pilot/). This is backbone construction, without AGE chemistry, molecular dynamics or a species toughness ranking. The molecular-to-network calibration fields remain explicitly unset.
+
 Work from the MIT Media Lab ScienceClaw hackathon (30 Oct – 1 Nov 2026). One question, followed from chemical bonds
 to the heart: **what happens to tissue when oxidative crosslinks pile up on a healthy, enzymatically crosslinked
 collagen matrix?**

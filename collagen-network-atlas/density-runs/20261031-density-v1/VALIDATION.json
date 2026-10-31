@@ -1,0 +1,153 @@
+{
+  "checks": "All raw records unique; fine strain schedules increasing; endpoint work and first-damage last-intact work match exported summaries.",
+  "rawRecords": 6300,
+  "flags": {
+    "stiffnessUnresolved": 0,
+    "workUnresolved": 412,
+    "failureStrainUnresolved": 377,
+    "workBeforeDamageUnresolved": 2,
+    "workBeforeCollagenDamageUnresolved": 30
+  },
+  "examplesMeanPairedRatios": [
+    {
+      "family": "aligned",
+      "pattern": "distributed",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 1.142947593269762,
+      "work": 1.0093335481793861,
+      "failureStrain": 0.9726927905924092,
+      "workBeforeDamage": 1.0650825118376324
+    },
+    {
+      "family": "aligned",
+      "pattern": "clustered",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 1.0493114715309457,
+      "work": 0.915321493599864,
+      "failureStrain": 0.9217123984355465,
+      "workBeforeDamage": 1.0133812293418785
+    },
+    {
+      "family": "isotropic",
+      "pattern": "distributed",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 3.047508023303212,
+      "work": 1.4275673929385164,
+      "failureStrain": 1.0560855472252866,
+      "workBeforeDamage": 1.2997397383825764
+    },
+    {
+      "family": "isotropic",
+      "pattern": "clustered",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 1.6151826549329094,
+      "work": 0.8967561211241631,
+      "failureStrain": 0.8093994669651797,
+      "workBeforeDamage": 0.9574041603623785
+    },
+    {
+      "family": "hierarchical",
+      "pattern": "distributed",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 2.07020326163544,
+      "work": 1.2458593884796236,
+      "failureStrain": 0.9675889150173836,
+      "workBeforeDamage": 1.375338417766012
+    },
+    {
+      "family": "hierarchical",
+      "pattern": "clustered",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 1.3184720110526376,
+      "work": 0.9833428669698775,
+      "failureStrain": 0.8617031590475226,
+      "workBeforeDamage": 1.1860469616457765
+    },
+    {
+      "family": "modular",
+      "pattern": "distributed",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 4.131529119347975,
+      "work": 1.7156431025854386,
+      "failureStrain": 1.0,
+      "workBeforeDamage": 0.8476557431342219
+    },
+    {
+      "family": "modular",
+      "pattern": "clustered",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 2.612128376469854,
+      "work": 2.315519373556469,
+      "failureStrain": 1.0733638694304481,
+      "workBeforeDamage": 2.115153674305162
+    },
+    {
+      "family": "loops",
+      "pattern": "distributed",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 2.6147982270886048,
+      "work": 0.9799991582472529,
+      "failureStrain": 0.8394311386107608,
+      "workBeforeDamage": 1.2918480591378076
+    },
+    {
+      "family": "loops",
+      "pattern": "clustered",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 1.615119680093014,
+      "work": null,
+      "failureStrain": null,
+      "workBeforeDamage": 1.175252763092981
+    },
+    {
+      "family": "bottleneck",
+      "pattern": "distributed",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 5.172702969085027,
+      "work": 1.68753358848633,
+      "failureStrain": 0.9735849187516479,
+      "workBeforeDamage": 0.9262609956242073
+    },
+    {
+      "family": "bottleneck",
+      "pattern": "clustered",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 3.3317743061955767,
+      "work": 2.8487690099490592,
+      "failureStrain": 1.0920515481493378,
+      "workBeforeDamage": 1.8980467030164132
+    },
+    {
+      "family": "heterogeneous",
+      "pattern": "distributed",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 1.7089838981046082,
+      "work": 1.1130449272160317,
+      "failureStrain": 0.9985062281676509,
+      "workBeforeDamage": 1.1210043267698084
+    },
+    {
+      "family": "heterogeneous",
+      "pattern": "clustered",
+      "count": 24,
+      "angle": 0,
+      "stiffness": 1.060008225687464,
+      "work": 1.002748163593118,
+      "failureStrain": 0.9883388894352837,
+      "workBeforeDamage": 0.9166885243197993
+    }
+  ]
+}
