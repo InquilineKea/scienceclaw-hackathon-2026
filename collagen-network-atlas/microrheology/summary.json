@@ -1,0 +1,1346 @@
+[
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 0,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0446508045575993,
+      "min": 1.02453827761651,
+      "max": 1.072267314047553,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9836988981977517,
+      "min": 0.9377081213834455,
+      "max": 1.0006741811981272,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.2018418630034967,
+      "farRms": 0.03125511377590759
+    },
+    "damaged": {
+      "selfAmplitude": 0.21057241142996933,
+      "farRms": 0.03079860055489124
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 0.03,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0446445744093151,
+      "min": 1.0245698780414108,
+      "max": 1.0723761872484865,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9836232953866948,
+      "min": 0.9376860811338824,
+      "max": 1.0005156139819014,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.2012093841304125,
+      "farRms": 0.031113389768688368
+    },
+    "damaged": {
+      "selfAmplitude": 0.2099126009671038,
+      "farRms": 0.030656457833545238
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 0.1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0446197339251277,
+      "min": 1.0249097680587953,
+      "max": 1.0734508896816206,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9829367817546272,
+      "min": 0.9374454943667898,
+      "max": 0.9990389031801725,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.1952956406138141,
+      "farRms": 0.029786495077702313
+    },
+    "damaged": {
+      "selfAmplitude": 0.203750086428791,
+      "farRms": 0.02932774524565462
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 0.3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0452346897968838,
+      "min": 1.02610328541368,
+      "max": 1.0802989986447291,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9799383420745746,
+      "min": 0.934957942527092,
+      "max": 0.9955724748674397,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.1637174680944906,
+      "farRms": 0.02267386697337701
+    },
+    "damaged": {
+      "selfAmplitude": 0.1709598906544891,
+      "farRms": 0.022261810405204502
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0418169725040827,
+      "min": 1.0226454816106858,
+      "max": 1.0757927742488667,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.979253680492462,
+      "min": 0.928729585362985,
+      "max": 1.0020714975156033,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.09783756792815089,
+      "farRms": 0.008736294075474537
+    },
+    "damaged": {
+      "selfAmplitude": 0.10186522810035091,
+      "farRms": 0.008594796610532637
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0250255057049698,
+      "min": 1.0126243594092412,
+      "max": 1.0476621742002457,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.986763319504708,
+      "min": 0.9559517168961456,
+      "max": 1.0181778425042303,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.051330205192303024,
+      "farRms": 0.002074313654025295
+    },
+    "damaged": {
+      "selfAmplitude": 0.05257888061787736,
+      "farRms": 0.0020597089099727065
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 0,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0028180606848234,
+      "min": 1.0012819092721796,
+      "max": 1.0051715922659819,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9988357907674024,
+      "min": 0.9971967185317147,
+      "max": 0.9997756903594535,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.23160371963804838,
+      "farRms": 0.07309691301203514
+    },
+    "damaged": {
+      "selfAmplitude": 0.23223462783277576,
+      "farRms": 0.07301485253604828
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 0.03,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0028231247789108,
+      "min": 1.0012813865804313,
+      "max": 1.0051830549289487,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9988245630698674,
+      "min": 0.9971818480631311,
+      "max": 0.9997589865715798,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.2285434164490375,
+      "farRms": 0.0720314671003143
+    },
+    "damaged": {
+      "selfAmplitude": 0.22916721473828283,
+      "farRms": 0.0719496519546901
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 0.1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.002885076322642,
+      "min": 1.0012860401828432,
+      "max": 1.0053014669599472,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9987283456737711,
+      "min": 0.9970427583559691,
+      "max": 0.999647090327955,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.20385594979937838,
+      "farRms": 0.06341205068848271
+    },
+    "damaged": {
+      "selfAmplitude": 0.20442550832433876,
+      "farRms": 0.0633330033660206
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 0.3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0035000948561248,
+      "min": 1.0014503341876424,
+      "max": 1.0062619736362661,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9982423399136502,
+      "min": 0.9961764987966553,
+      "max": 0.9994447497555401,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.12892138538296816,
+      "farRms": 0.036872471209947626
+    },
+    "damaged": {
+      "selfAmplitude": 0.12936056473752672,
+      "farRms": 0.03680723516195655
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0064579761238432,
+      "min": 1.002344912326246,
+      "max": 1.0112168816650753,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9958670335974625,
+      "min": 0.9916635742745068,
+      "max": 0.9985051832614218,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.05889929353816589,
+      "farRms": 0.011902414150628884
+    },
+    "damaged": {
+      "selfAmplitude": 0.059272800666377,
+      "farRms": 0.011852389688453
+    }
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.009687124152903,
+      "min": 1.0032485880497781,
+      "max": 1.017550175801441,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9878994408533014,
+      "min": 0.9774552202255467,
+      "max": 0.9956519784830077,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.030267873783680857,
+      "farRms": 0.003087784676872083
+    },
+    "damaged": {
+      "selfAmplitude": 0.030562977712640632,
+      "farRms": 0.0030496813369412087
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 0,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.072672230139299,
+      "min": 1.0163283686624691,
+      "max": 1.1868491545812527,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9969817898933278,
+      "min": 0.9815959366245453,
+      "max": 1.021743410643309,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.2550623865129482,
+      "farRms": 0.03307118817598542
+    },
+    "damaged": {
+      "selfAmplitude": 0.27220610114459987,
+      "farRms": 0.03295203819392287
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 0.03,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.072054423291964,
+      "min": 1.01625306813761,
+      "max": 1.185627461402739,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.996400481484622,
+      "min": 0.9813491218428895,
+      "max": 1.0209879008340441,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.2539508858737184,
+      "farRms": 0.03288369218811176
+    },
+    "damaged": {
+      "selfAmplitude": 0.2708688113958833,
+      "farRms": 0.03274719949481953
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 0.1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0670595584793883,
+      "min": 1.01476584422129,
+      "max": 1.1746215722322866,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9920686793143828,
+      "min": 0.9790762175206407,
+      "max": 1.0141804993242145,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.2439226787884191,
+      "farRms": 0.03118698885224096
+    },
+    "damaged": {
+      "selfAmplitude": 0.2590270642448864,
+      "farRms": 0.030928301972006682
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 0.3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0495799224434346,
+      "min": 1.0103055358026345,
+      "max": 1.1251488484373047,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9823087847294385,
+      "min": 0.9681421930371821,
+      "max": 0.9898173167233879,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.19612184639681374,
+      "farRms": 0.023009216885601966
+    },
+    "damaged": {
+      "selfAmplitude": 0.2052191621385779,
+      "farRms": 0.022582288656089963
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.021246025500588,
+      "min": 0.9973852181727116,
+      "max": 1.0684120602353224,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9763784257227018,
+      "min": 0.9410895409214659,
+      "max": 1.0007107360632483,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.11038851167880662,
+      "farRms": 0.008653637558529053
+    },
+    "damaged": {
+      "selfAmplitude": 0.11263542049126239,
+      "farRms": 0.008426551973219506
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0051229626920473,
+      "min": 0.9975673480372486,
+      "max": 1.0309802619726751,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9768224228174942,
+      "min": 0.9389229568992653,
+      "max": 1.000739271408135,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.055521432091301955,
+      "farRms": 0.001989638590235286
+    },
+    "damaged": {
+      "selfAmplitude": 0.055790732611302594,
+      "farRms": 0.0019377299994771202
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 0,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0037752515114664,
+      "min": 1.0012215153187856,
+      "max": 1.006805721587006,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.998517964197569,
+      "min": 0.9969346272975532,
+      "max": 0.999697066076467,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.23307888110456182,
+      "farRms": 0.06512446511299742
+    },
+    "damaged": {
+      "selfAmplitude": 0.23395336980597572,
+      "farRms": 0.06503285796248182
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 0.03,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0037400599589659,
+      "min": 1.0012198473535974,
+      "max": 1.0067320719760624,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9984602569917781,
+      "min": 0.9968572952189373,
+      "max": 0.9996872124365255,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.23054716319076868,
+      "farRms": 0.06434421672988465
+    },
+    "damaged": {
+      "selfAmplitude": 0.23140295165198324,
+      "farRms": 0.06424993106510037
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 0.1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.003484668901416,
+      "min": 1.001217432028103,
+      "max": 1.0061557586173229,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9980130445844771,
+      "min": 0.996271139935258,
+      "max": 0.9996089703606358,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.20926711344287366,
+      "farRms": 0.0577792623798858
+    },
+    "damaged": {
+      "selfAmplitude": 0.2099833499389343,
+      "farRms": 0.057668486564886795
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 0.3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0030550614784097,
+      "min": 1.001429856295602,
+      "max": 1.004584139765314,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9968394748353123,
+      "min": 0.9948738005177525,
+      "max": 0.999409571218572,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.13651394379961848,
+      "farRms": 0.035138818563087725
+    },
+    "damaged": {
+      "selfAmplitude": 0.13691364103556505,
+      "farRms": 0.0350305212196316
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0029075950285111,
+      "min": 1.0018527204937162,
+      "max": 1.0061081237997596,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9957810578905426,
+      "min": 0.9945319424152268,
+      "max": 0.9993539446322124,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.06203461954920822,
+      "farRms": 0.011540594721328495
+    },
+    "damaged": {
+      "selfAmplitude": 0.062209089405260404,
+      "farRms": 0.01149223861133365
+    }
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0030244952700753,
+      "min": 1.000324527629303,
+      "max": 1.0097508465470375,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9950078669508513,
+      "min": 0.985643417165893,
+      "max": 1.000662082598859,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.031318820890525616,
+      "farRms": 0.00293489688578692
+    },
+    "damaged": {
+      "selfAmplitude": 0.031412932733539844,
+      "farRms": 0.002918925688640883
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 0,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.038977547844132,
+      "min": 1.0029601536244361,
+      "max": 1.0659426644121077,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9650254427413391,
+      "min": 0.8829847152307336,
+      "max": 1.0078919033395528,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.31969837099584303,
+      "farRms": 0.044180410324137276
+    },
+    "damaged": {
+      "selfAmplitude": 0.33202758198620247,
+      "farRms": 0.04273937949757549
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 0.03,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0386704895926928,
+      "min": 1.002898850863152,
+      "max": 1.0657527644325446,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9644083766411022,
+      "min": 0.8820633635594111,
+      "max": 1.0071676151120745,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.315203725210384,
+      "farRms": 0.043249321990709105
+    },
+    "damaged": {
+      "selfAmplitude": 0.3272530969807322,
+      "farRms": 0.0418091672767549
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 0.1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.03626857014426,
+      "min": 1.0024730880171069,
+      "max": 1.0675164670455128,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9598216951175138,
+      "min": 0.8752805657927494,
+      "max": 1.0020821043883865,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.28193087275785456,
+      "farRms": 0.03632316974563595
+    },
+    "damaged": {
+      "selfAmplitude": 0.2919821343713613,
+      "farRms": 0.03493007734049405
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 0.3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.024368124194029,
+      "min": 1.000474073794755,
+      "max": 1.0637857519735623,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9476094917135162,
+      "min": 0.8586163815870292,
+      "max": 0.9963321162074178,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.1977327305021023,
+      "farRms": 0.019029120767486547
+    },
+    "damaged": {
+      "selfAmplitude": 0.20235849284731247,
+      "farRms": 0.01804960144149795
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0022773758951922,
+      "min": 0.9946711268083424,
+      "max": 1.0126907002655716,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9404523450623039,
+      "min": 0.8424461216623996,
+      "max": 0.9971860503899201,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.11123041960578633,
+      "farRms": 0.00522233416140434
+    },
+    "damaged": {
+      "selfAmplitude": 0.11141989765426333,
+      "farRms": 0.004916272412108005
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "omega": 3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 0.9975303251939083,
+      "min": 0.9935379652733285,
+      "max": 0.9999636488654355,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9384873890638864,
+      "min": 0.8157271930390612,
+      "max": 1.0002310683414954,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.056577915684976325,
+      "farRms": 0.001047053259353676
+    },
+    "damaged": {
+      "selfAmplitude": 0.05644927752691286,
+      "farRms": 0.0009870188482847921
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 0,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0003859756601612,
+      "min": 1.0002753224605483,
+      "max": 1.0006441956967322,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9998984240153753,
+      "min": 0.9998263065265409,
+      "max": 0.9999419620534102,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.3101055041777138,
+      "farRms": 0.11454755388148465
+    },
+    "damaged": {
+      "selfAmplitude": 0.31021302053641253,
+      "farRms": 0.1145358464895523
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 0.03,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0003867604027483,
+      "min": 1.000276056538767,
+      "max": 1.0006430481420163,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9998890897837982,
+      "min": 0.99980811985922,
+      "max": 0.9999333081441342,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.2883234295210759,
+      "farRms": 0.10572316591754541
+    },
+    "damaged": {
+      "selfAmplitude": 0.2884232389073792,
+      "farRms": 0.10571137053069507
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 0.1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0004267608889434,
+      "min": 1.0003093922581074,
+      "max": 1.0006915605202682,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9998424719951682,
+      "min": 0.9997164146814342,
+      "max": 0.9999028085714599,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.19479800522652174,
+      "farRms": 0.06756795400910068
+    },
+    "damaged": {
+      "selfAmplitude": 0.19487151080228457,
+      "farRms": 0.06755727956075161
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 0.3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.00066108876133,
+      "min": 1.000490982136402,
+      "max": 1.000990728574662,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9996872204153783,
+      "min": 0.9994036873995178,
+      "max": 0.9998603279538516,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.09969073624384692,
+      "farRms": 0.027780236300555237
+    },
+    "damaged": {
+      "selfAmplitude": 0.09974895562247513,
+      "farRms": 0.027771546259710782
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0010209442469722,
+      "min": 1.0006646087923272,
+      "max": 1.0013851353546421,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.999058181473998,
+      "min": 0.9982389309678623,
+      "max": 0.9996535025411062,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.051253923183111096,
+      "farRms": 0.008366443864251104
+    },
+    "damaged": {
+      "selfAmplitude": 0.05130167923491848,
+      "farRms": 0.008358459866449359
+    }
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "omega": 3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0005302141660357,
+      "min": 1.0001678597330177,
+      "max": 1.000806304684691,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9976734584089109,
+      "min": 0.9956481265145198,
+      "max": 0.9995350042011915,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.03066567319320361,
+      "farRms": 0.002269873234551842
+    },
+    "damaged": {
+      "selfAmplitude": 0.030681219228860846,
+      "farRms": 0.002264259803121767
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 0,
+    "resolvedPairs": 8,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0583009527191654,
+      "min": 1.0012322320272826,
+      "max": 1.163575137155988,
+      "seeds": 4
+    },
+    "remoteRatio": {
+      "mean": 1.0089968114063101,
+      "min": 0.998504017923844,
+      "max": 1.0179664336926075,
+      "seeds": 4
+    },
+    "intact": {
+      "selfAmplitude": 0.33515364447475793,
+      "farRms": 0.044090306610118604
+    },
+    "damaged": {
+      "selfAmplitude": 0.36895160968098745,
+      "farRms": 0.04517638274670466
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 0.03,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0532939596755624,
+      "min": 1.0012349428817893,
+      "max": 1.1481510049604964,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.999336534694225,
+      "min": 0.9765603942773702,
+      "max": 1.0097610735516724,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.3305494204352918,
+      "farRms": 0.0432088197145276
+    },
+    "damaged": {
+      "selfAmplitude": 0.3489724424514177,
+      "farRms": 0.043235823648773805
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 0.1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0389328629149082,
+      "min": 1.0010176826745756,
+      "max": 1.0884791072158717,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9879585007624554,
+      "min": 0.9533743770658674,
+      "max": 1.0063375104630436,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.29573608025928283,
+      "farRms": 0.03655019443713364
+    },
+    "damaged": {
+      "selfAmplitude": 0.30768972114326326,
+      "farRms": 0.036148499773354895
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 0.3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.019497738698148,
+      "min": 0.9996551709890509,
+      "max": 1.0478094169188044,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9829255412236169,
+      "min": 0.9299920347276727,
+      "max": 1.015136567006969,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.20376117997518364,
+      "farRms": 0.01939930323695039
+    },
+    "damaged": {
+      "selfAmplitude": 0.20769225546725903,
+      "farRms": 0.01910764252025287
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0030225639433696,
+      "min": 0.995835129355356,
+      "max": 1.0180775071797874,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9947488651818892,
+      "min": 0.9439086176832089,
+      "max": 1.0743792519438462,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.11220078684656894,
+      "farRms": 0.005530400437920824
+    },
+    "damaged": {
+      "selfAmplitude": 0.11249737431226038,
+      "farRms": 0.0055162624803026935
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "omega": 3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.000007136711065,
+      "min": 0.9980983297693174,
+      "max": 1.0016049077846318,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9975544121937059,
+      "min": 0.9251829758951714,
+      "max": 1.0702877011587746,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.05708932961500499,
+      "farRms": 0.0012187792579529328
+    },
+    "damaged": {
+      "selfAmplitude": 0.05709583258497591,
+      "farRms": 0.0012278191137341861
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 0,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0005192381537078,
+      "min": 1.0001669735975698,
+      "max": 1.0006642460077384,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9998497046538756,
+      "min": 0.9998283855509231,
+      "max": 0.9998841967560244,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.308506245774608,
+      "farRms": 0.10676263352894763
+    },
+    "damaged": {
+      "selfAmplitude": 0.30864884676055326,
+      "farRms": 0.10674658354719996
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 0.03,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.000517960259442,
+      "min": 1.0001671657126363,
+      "max": 1.0006682767340296,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9998355255399323,
+      "min": 0.9998094411005158,
+      "max": 0.999876147774991,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.28956729624115024,
+      "farRms": 0.09962712992203597
+    },
+    "damaged": {
+      "selfAmplitude": 0.2897005012299504,
+      "farRms": 0.09961073206567692
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 0.1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.000555487349622,
+      "min": 1.000193053659886,
+      "max": 1.000743904684218,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9997625773821911,
+      "min": 0.999712065581269,
+      "max": 0.9998336125409204,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.2015629515316743,
+      "farRms": 0.066146399231659
+    },
+    "damaged": {
+      "selfAmplitude": 0.20166156389073464,
+      "farRms": 0.06613070184767073
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 0.3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0008558170611068,
+      "min": 1.0003888925053732,
+      "max": 1.0011553009054737,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9995224815632809,
+      "min": 0.999388124220802,
+      "max": 0.999677619722614,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.10386655366231776,
+      "farRms": 0.027784482613847864
+    },
+    "damaged": {
+      "selfAmplitude": 0.10394512448848069,
+      "farRms": 0.027771212237937874
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 1,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0014391492153045,
+      "min": 1.0008950651950628,
+      "max": 1.0020765003089078,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9985585962714153,
+      "min": 0.9978782298185627,
+      "max": 0.9989552639167217,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.0531437554120109,
+      "farRms": 0.008438165484175636
+    },
+    "damaged": {
+      "selfAmplitude": 0.05321451822185554,
+      "farRms": 0.008425800915336585
+    }
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "omega": 3,
+    "resolvedPairs": 10,
+    "expectedPairs": 10,
+    "localRatio": {
+      "mean": 1.0010211062494785,
+      "min": 1.0005038137086895,
+      "max": 1.001940373673289,
+      "seeds": 5
+    },
+    "remoteRatio": {
+      "mean": 0.9962815066954345,
+      "min": 0.9940919310192611,
+      "max": 0.9976471605416986,
+      "seeds": 5
+    },
+    "intact": {
+      "selfAmplitude": 0.03187458191354429,
+      "farRms": 0.0023404829894387406
+    },
+    "damaged": {
+      "selfAmplitude": 0.03190649535014829,
+      "farRms": 0.002331285020839134
+    }
+  }
+]

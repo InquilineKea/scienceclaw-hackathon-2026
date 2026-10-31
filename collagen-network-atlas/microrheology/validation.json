@@ -1,0 +1,34 @@
+{
+  "configurations": 40,
+  "harmonicSystems": 960,
+  "resolved": 958,
+  "unresolved": [
+    {
+      "n": 14,
+      "family": "modular",
+      "seed": 43,
+      "pattern": "distributed",
+      "damaged": true,
+      "direction": 0,
+      "omega": 0,
+      "residual": 1
+    },
+    {
+      "n": 14,
+      "family": "modular",
+      "seed": 43,
+      "pattern": "distributed",
+      "damaged": true,
+      "direction": 1,
+      "omega": 0,
+      "residual": 1
+    }
+  ],
+  "maxResolvedResidual": 9.987979707098967e-10,
+  "maxHessianStepRelative": 2.0236333483431604e-10,
+  "maxHessianAsymmetry": 9.318091249820596e-11,
+  "maxLinearizationError": 6.572102031037886e-05,
+  "maxRestResidual": 2.0317978140325016e-18,
+  "passiveImaginarySign": true,
+  "elapsedSeconds": 16.724
+}
