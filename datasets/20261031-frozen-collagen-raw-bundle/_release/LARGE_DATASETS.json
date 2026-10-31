@@ -1,0 +1,23 @@
+{
+  "files": {
+    "collagen-frozen-data-20261031.tar": {
+      "bytes": 120412160,
+      "parts": [
+        {
+          "assetName": "ea36a186a387d8ec-part-000001-c224b81867f51a1014c0d526ce6833e798afb3a42ec122c9e85914cf50f46298.bin",
+          "bytes": 120412160,
+          "releaseTag": "data-archive-20261031-frozen-collagen-raw-bundle-d53c584706d99d944cb5-s0001",
+          "sha256": "c224b81867f51a1014c0d526ce6833e798afb3a42ec122c9e85914cf50f46298",
+          "url": "https://github.com/InquilineKea/scienceclaw-hackathon-2026/releases/download/untagged-00ad574d00f8b86adec9/ea36a186a387d8ec-part-000001-c224b81867f51a1014c0d526ce6833e798afb3a42ec122c9e85914cf50f46298.bin"
+        }
+      ],
+      "sha256": "c224b81867f51a1014c0d526ce6833e798afb3a42ec122c9e85914cf50f46298"
+    }
+  },
+  "kind": "archive",
+  "manifestSHA256": "d53c584706d99d944cb5a57bcc1855253a2650dcd2ef932877a1ae6f1b215293",
+  "partBytes": 1073741824,
+  "repository": "InquilineKea/scienceclaw-hackathon-2026",
+  "runId": "20261031-frozen-collagen-raw-bundle",
+  "schemaVersion": 1
+}
