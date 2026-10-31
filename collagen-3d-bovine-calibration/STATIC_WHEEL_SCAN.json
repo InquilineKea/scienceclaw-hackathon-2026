@@ -1,0 +1,54 @@
+[
+  {
+    "wheel": "scipy-1.14.1-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "python_files_scanned": 875,
+    "files_with_network_or_process_keywords": 238,
+    "representative_matches": [
+      "scipy/__init__.py",
+      "scipy/conftest.py",
+      "scipy/sparse/_coo.py",
+      "scipy/sparse/_base.py",
+      "scipy/sparse/tests/test_array_api.py",
+      "scipy/sparse/tests/test_base.py",
+      "scipy/sparse/tests/test_csr.py",
+      "scipy/sparse/csgraph/_laplacian.py",
+      "scipy/sparse/csgraph/tests/test_traversal.py",
+      "scipy/sparse/csgraph/tests/test_flow.py",
+      "scipy/sparse/csgraph/tests/test_connected_components.py",
+      "scipy/sparse/linalg/_expm_multiply.py",
+      "scipy/sparse/linalg/_interface.py",
+      "scipy/sparse/linalg/_matfuncs.py",
+      "scipy/sparse/linalg/_special_sparse_arrays.py",
+      "scipy/sparse/linalg/_svdp.py"
+    ],
+    "entrypoints": [],
+    "startup_pth": []
+  },
+  {
+    "wheel": "numpy-2.1.3-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+    "python_files_scanned": 485,
+    "files_with_network_or_process_keywords": 126,
+    "representative_matches": [
+      "numpy/ctypeslib.py",
+      "numpy/matlib.py",
+      "numpy/conftest.py",
+      "numpy/__init__.py",
+      "numpy/_array_api_info.py",
+      "numpy/random/__init__.py",
+      "numpy/random/tests/test_random.py",
+      "numpy/random/tests/test_extending.py",
+      "numpy/random/tests/test_randomstate.py",
+      "numpy/random/tests/test_generator_mt19937.py",
+      "numpy/random/tests/test_seed_sequence.py",
+      "numpy/_typing/_dtype_like.py",
+      "numpy/_typing/_array_like.py",
+      "numpy/distutils/lib2def.py",
+      "numpy/distutils/exec_command.py",
+      "numpy/distutils/msvccompiler.py"
+    ],
+    "entrypoints": [
+      "numpy-2.1.3.dist-info/entry_points.txt"
+    ],
+    "startup_pth": []
+  }
+]

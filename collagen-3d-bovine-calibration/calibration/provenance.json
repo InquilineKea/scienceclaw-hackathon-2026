@@ -1,0 +1,30 @@
+{
+  "dataset": "https://doi.org/10.5281/zenodo.17413651",
+  "paper": "https://doi.org/10.1016/j.actbio.2024.07.002",
+  "license": "CC BY 4.0",
+  "archive_md5": "6ff4b0c9b58d8c470c5cd39d48558027",
+  "archive_sha256": "c3e4965ff36fb5f848030cb4dfcf643c2c55302575b7e7005ff7c77f8b8c90e7",
+  "sweeps": 10,
+  "concentrations": [
+    0.8,
+    1.5,
+    2.3
+  ],
+  "primary_rows": 110,
+  "challenge_rows": 100,
+  "replicate_counts": [
+    4,
+    3,
+    3
+  ],
+  "datasets": 3516,
+  "shapes": 111,
+  "moments_doubles": 6244416,
+  "notes": [
+    "All four archived 0.8 mg/mL files retained; publication says n=3. File identifiers do not establish independent donor/batch replication.",
+    "Use concentration 2.3 mg/mL from repository and filenames; some article text says 2.5.",
+    "Only plain cached numeric measurement cells A:E were read. Supplemental F-column formulas were not evaluated.",
+    "Zero storage modulus retained; no logarithm of measured values.",
+    "The archive contains bovine dermal collagen only; not native human tendon, collagen-decorin-GAG, or crosslink treatment experiments."
+  ]
+}

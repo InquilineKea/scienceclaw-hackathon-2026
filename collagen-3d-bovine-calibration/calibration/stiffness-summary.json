@@ -1,0 +1,34 @@
+[
+  {
+    "density": 0.15,
+    "pattern": "clustered",
+    "n_seed_angle_pairs": 8,
+    "mean_ratio": 1.4455849113054875,
+    "min_ratio": 1.269243205760629,
+    "max_ratio": 1.694548264855228
+  },
+  {
+    "density": 0.15,
+    "pattern": "distributed",
+    "n_seed_angle_pairs": 8,
+    "mean_ratio": 1.4799344716587481,
+    "min_ratio": 1.291904650977983,
+    "max_ratio": 1.720321253040172
+  },
+  {
+    "density": 0.3,
+    "pattern": "clustered",
+    "n_seed_angle_pairs": 8,
+    "mean_ratio": 1.979444192127344,
+    "min_ratio": 1.6848343730818196,
+    "max_ratio": 2.382881073290076
+  },
+  {
+    "density": 0.3,
+    "pattern": "distributed",
+    "n_seed_angle_pairs": 8,
+    "mean_ratio": 2.270142683361153,
+    "min_ratio": 2.0294836392333773,
+    "max_ratio": 2.783163173709157
+  }
+]

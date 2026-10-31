@@ -1,0 +1,30 @@
+[
+  {
+    "seed": 29,
+    "accepted_1pct_harmonic_G": 0.04738695592959144,
+    "smallstrain_G": 0.04731678151954023,
+    "relative_amplitude_change_recomputed": 0.0014830765702487092,
+    "scope": "Derived diagnostic; frozen executed input/calibration factors retained unchanged."
+  },
+  {
+    "seed": 30,
+    "accepted_1pct_harmonic_G": 0.053263651201168646,
+    "smallstrain_G": 0.053151729989915096,
+    "relative_amplitude_change_recomputed": 0.0021056927267426584,
+    "scope": "Derived diagnostic; frozen executed input/calibration factors retained unchanged."
+  },
+  {
+    "seed": 31,
+    "accepted_1pct_harmonic_G": 0.05314049017730054,
+    "smallstrain_G": 0.05302547516486303,
+    "relative_amplitude_change_recomputed": 0.002169051990197568,
+    "scope": "Derived diagnostic; frozen executed input/calibration factors retained unchanged."
+  },
+  {
+    "seed": 32,
+    "accepted_1pct_harmonic_G": 0.05544465159255732,
+    "smallstrain_G": 0.05515596857003516,
+    "relative_amplitude_change_recomputed": 0.005233939861931658,
+    "scope": "Derived diagnostic; frozen executed input/calibration factors retained unchanged."
+  }
+]

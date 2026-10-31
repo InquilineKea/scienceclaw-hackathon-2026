@@ -1,0 +1,345 @@
+{
+  "primary_validation": [
+    {
+      "mode": "leave_file",
+      "band": "plateau",
+      "model": "Kelvin_Voigt",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.4981624172697896,
+      "median_complex_NRMSE": 0.4645555566846904,
+      "mean_Gp_NRMSE": 0.493787003518809,
+      "mean_Gpp_NRMSE": 0.5757298084283556,
+      "worst_complex_NRMSE": 1.264496764173069
+    },
+    {
+      "mode": "leave_file",
+      "band": "plateau",
+      "model": "Standard_linear_solid",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.5364732212621177,
+      "median_complex_NRMSE": 0.45918764138034407,
+      "mean_Gp_NRMSE": 0.5527082595481094,
+      "mean_Gpp_NRMSE": 0.4233889072487796,
+      "worst_complex_NRMSE": 1.7416820066237622
+    },
+    {
+      "mode": "leave_file",
+      "band": "plateau",
+      "model": "Fractional_Kelvin_Voigt",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.5275498850946162,
+      "median_complex_NRMSE": 0.43048495451383273,
+      "mean_Gp_NRMSE": 0.5432427902810268,
+      "mean_Gpp_NRMSE": 0.36729458131911596,
+      "worst_complex_NRMSE": 1.7734136704639725
+    },
+    {
+      "mode": "leave_file",
+      "band": "high_frequency_challenge",
+      "model": "Kelvin_Voigt",
+      "curves": 10,
+      "mean_complex_NRMSE": 1.2514234220737004,
+      "median_complex_NRMSE": 1.299248844245386,
+      "mean_Gp_NRMSE": 0.7700764980548815,
+      "mean_Gpp_NRMSE": 6.048646631607773,
+      "worst_complex_NRMSE": 1.7469237388499284
+    },
+    {
+      "mode": "leave_file",
+      "band": "high_frequency_challenge",
+      "model": "Standard_linear_solid",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.719127052936767,
+      "median_complex_NRMSE": 0.7966057628159093,
+      "mean_Gp_NRMSE": 0.7131940445833013,
+      "mean_Gpp_NRMSE": 0.8322975217043995,
+      "worst_complex_NRMSE": 1.1256644087505514
+    },
+    {
+      "mode": "leave_file",
+      "band": "high_frequency_challenge",
+      "model": "Fractional_Kelvin_Voigt",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.6968628794215341,
+      "median_complex_NRMSE": 0.6928290037364329,
+      "mean_Gp_NRMSE": 0.670267344348384,
+      "mean_Gpp_NRMSE": 0.8768806082398515,
+      "worst_complex_NRMSE": 1.1047321974844133
+    },
+    {
+      "mode": "leave_concentration",
+      "band": "plateau",
+      "model": "Kelvin_Voigt",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.41139148728281477,
+      "median_complex_NRMSE": 0.4290456303200615,
+      "mean_Gp_NRMSE": 0.39859851046447997,
+      "mean_Gpp_NRMSE": 0.6376499744216333,
+      "worst_complex_NRMSE": 0.8283925785175893
+    },
+    {
+      "mode": "leave_concentration",
+      "band": "plateau",
+      "model": "Standard_linear_solid",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.4071826776342823,
+      "median_complex_NRMSE": 0.35239269080478,
+      "mean_Gp_NRMSE": 0.41305539090023424,
+      "mean_Gpp_NRMSE": 0.49600600807806366,
+      "worst_complex_NRMSE": 0.8593292260225487
+    },
+    {
+      "mode": "leave_concentration",
+      "band": "plateau",
+      "model": "Fractional_Kelvin_Voigt",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.769263940901974,
+      "median_complex_NRMSE": 0.49042603462439005,
+      "mean_Gp_NRMSE": 0.7900107098388393,
+      "mean_Gpp_NRMSE": 0.45711782448693966,
+      "worst_complex_NRMSE": 3.4316297817058046
+    },
+    {
+      "mode": "leave_concentration",
+      "band": "high_frequency_challenge",
+      "model": "Kelvin_Voigt",
+      "curves": 10,
+      "mean_complex_NRMSE": 1.0887514765933166,
+      "median_complex_NRMSE": 1.1532301717380447,
+      "mean_Gp_NRMSE": 0.7139784715386499,
+      "mean_Gpp_NRMSE": 4.735176272504569,
+      "worst_complex_NRMSE": 1.767938294497291
+    },
+    {
+      "mode": "leave_concentration",
+      "band": "high_frequency_challenge",
+      "model": "Standard_linear_solid",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.6574685921778445,
+      "median_complex_NRMSE": 0.5726932671507703,
+      "mean_Gp_NRMSE": 0.6471113469091807,
+      "mean_Gpp_NRMSE": 0.8817745013949251,
+      "worst_complex_NRMSE": 1.110052685488309
+    },
+    {
+      "mode": "leave_concentration",
+      "band": "high_frequency_challenge",
+      "model": "Fractional_Kelvin_Voigt",
+      "curves": 10,
+      "mean_complex_NRMSE": 0.7900469711676766,
+      "median_complex_NRMSE": 0.7423891942048347,
+      "mean_Gp_NRMSE": 0.7808893182632655,
+      "mean_Gpp_NRMSE": 0.6226295482929898,
+      "worst_complex_NRMSE": 2.057080491439597
+    }
+  ],
+  "paired_comparisons": [
+    {
+      "model": "Standard_linear_solid",
+      "baseline": "Kelvin_Voigt",
+      "files_improved": 8,
+      "files": 10,
+      "relative_reduction_mean_NRMSE": -0.07690424380524896
+    },
+    {
+      "model": "Fractional_Kelvin_Voigt",
+      "baseline": "Kelvin_Voigt",
+      "files_improved": 7,
+      "files": 10,
+      "relative_reduction_mean_NRMSE": -0.05899174005515406
+    }
+  ],
+  "full_fits": [
+    {
+      "dataset": 0,
+      "model": "Kelvin_Voigt",
+      "p": 2.2,
+      "q": 1.1,
+      "shape": 1.0,
+      "A_Pa": 9.522231628684587,
+      "B_Pa": 3.8911402496361376,
+      "weighted_loss": 1.7013747840991111,
+      "grid_index": 1353,
+      "cpu_exhaustive_loss_difference": 1.1102230246251565e-15
+    },
+    {
+      "dataset": 0,
+      "model": "Standard_linear_solid",
+      "p": 2.4000000000000004,
+      "q": 1.4000000000000001,
+      "shape": 0.31622776601683794,
+      "A_Pa": 7.71279505157603,
+      "B_Pa": 4.868072259907977,
+      "weighted_loss": 1.6085850327448188,
+      "grid_index": 94503,
+      "cpu_exhaustive_loss_difference": 1.5543122344752192e-15
+    },
+    {
+      "dataset": 0,
+      "model": "Fractional_Kelvin_Voigt",
+      "p": 2.7,
+      "q": 1.5,
+      "shape": 0.38,
+      "A_Pa": 5.867039314301882,
+      "B_Pa": 6.107056043653503,
+      "weighted_loss": 1.5255475176665407,
+      "grid_index": 68640,
+      "cpu_exhaustive_loss_difference": 0.0
+    }
+  ],
+  "bootstrap_count": 3500,
+  "bootstrap_ordered_resamples": 186624,
+  "bootstrap_weight_sum": 0.9999999999999999,
+  "bootstrap_boundaries": [
+    {
+      "model": "Kelvin_Voigt",
+      "bootstrap_probability_p_on_boundary": 0,
+      "bootstrap_probability_q_on_boundary": 0,
+      "bootstrap_probability_A_zero": 0,
+      "bootstrap_probability_B_zero": 0
+    },
+    {
+      "model": "Standard_linear_solid",
+      "bootstrap_probability_p_on_boundary": 0.022006815843621397,
+      "bootstrap_probability_q_on_boundary": 0,
+      "bootstrap_probability_A_zero": 0,
+      "bootstrap_probability_B_zero": 0
+    },
+    {
+      "model": "Fractional_Kelvin_Voigt",
+      "bootstrap_probability_p_on_boundary": 0.05459640775034293,
+      "bootstrap_probability_q_on_boundary": 0,
+      "bootstrap_probability_A_zero": 0,
+      "bootstrap_probability_B_zero": 0
+    }
+  ],
+  "max_direct_loss_error": 5.329070518200751e-15,
+  "max_refinement_prediction_change_Pa": 1.4836962663471382,
+  "refinement_primary_full_changes": [
+    {
+      "dataset": 0,
+      "model": "Kelvin_Voigt",
+      "coarse_loss": 1.7013747840991111,
+      "fine_loss": 1.7008887255969478,
+      "max_endpoint_prediction_change_Pa": 0.6475148997857829
+    },
+    {
+      "dataset": 0,
+      "model": "Standard_linear_solid",
+      "coarse_loss": 1.6085850327448188,
+      "fine_loss": 1.6079954702741,
+      "max_endpoint_prediction_change_Pa": 0.5139911414876153
+    },
+    {
+      "dataset": 0,
+      "model": "Fractional_Kelvin_Voigt",
+      "coarse_loss": 1.5255475176665407,
+      "fine_loss": 1.5254604786964114,
+      "max_endpoint_prediction_change_Pa": 0.31554505732011773
+    }
+  ],
+  "sensitivity_fits": [
+    {
+      "dataset": 14,
+      "model": "Kelvin_Voigt",
+      "p": 2.3000000000000003,
+      "q": 1.1,
+      "shape": 1.0,
+      "A_Pa": 9.306393611284442,
+      "B_Pa": 3.859213820429463,
+      "weighted_loss": 1.3885723003100272,
+      "grid_index": 1414,
+      "cpu_exhaustive_loss_difference": -1.0
+    },
+    {
+      "dataset": 14,
+      "model": "Standard_linear_solid",
+      "p": 2.5,
+      "q": 1.5,
+      "shape": 0.31622776601683794,
+      "A_Pa": 7.439648088131059,
+      "B_Pa": 5.0118401158054935,
+      "weighted_loss": 1.2995814531160645,
+      "grid_index": 94565,
+      "cpu_exhaustive_loss_difference": -1.0
+    },
+    {
+      "dataset": 14,
+      "model": "Fractional_Kelvin_Voigt",
+      "p": 2.7,
+      "q": 1.5,
+      "shape": 0.42000000000000004,
+      "A_Pa": 6.187527968863055,
+      "B_Pa": 5.611576299420868,
+      "weighted_loss": 1.2308659108405289,
+      "grid_index": 76082,
+      "cpu_exhaustive_loss_difference": -1.0
+    },
+    {
+      "dataset": 15,
+      "model": "Kelvin_Voigt",
+      "p": 1.6,
+      "q": 1.1,
+      "shape": 1.0,
+      "A_Pa": 14.002938212538854,
+      "B_Pa": 0.5142930223866559,
+      "weighted_loss": 6.207750466572056,
+      "grid_index": 987,
+      "cpu_exhaustive_loss_difference": -1.0
+    },
+    {
+      "dataset": 15,
+      "model": "Standard_linear_solid",
+      "p": 2.1,
+      "q": 0.1,
+      "shape": 0.039810717055349734,
+      "A_Pa": 10.827529140924087,
+      "B_Pa": 10.928983434938662,
+      "weighted_loss": 3.8374468386519878,
+      "grid_index": 60818,
+      "cpu_exhaustive_loss_difference": -1.0
+    },
+    {
+      "dataset": 15,
+      "model": "Fractional_Kelvin_Voigt",
+      "p": 3.6,
+      "q": 0.6000000000000001,
+      "shape": 0.28,
+      "A_Pa": 4.435026913554662,
+      "B_Pa": 7.811374516710413,
+      "weighted_loss": 4.333736703384922,
+      "grid_index": 50575,
+      "cpu_exhaustive_loss_difference": -1.0
+    }
+  ],
+  "provenance": {
+    "dataset": "https://doi.org/10.5281/zenodo.17413651",
+    "paper": "https://doi.org/10.1016/j.actbio.2024.07.002",
+    "license": "CC BY 4.0",
+    "archive_md5": "6ff4b0c9b58d8c470c5cd39d48558027",
+    "archive_sha256": "c3e4965ff36fb5f848030cb4dfcf643c2c55302575b7e7005ff7c77f8b8c90e7",
+    "sweeps": 10,
+    "concentrations": [
+      0.8,
+      1.5,
+      2.3
+    ],
+    "primary_rows": 110,
+    "challenge_rows": 100,
+    "replicate_counts": [
+      4,
+      3,
+      3
+    ],
+    "datasets": 3516,
+    "shapes": 111,
+    "moments_doubles": 6244416,
+    "notes": [
+      "All four archived 0.8 mg/mL files retained; publication says n=3. File identifiers do not establish independent donor/batch replication.",
+      "Use concentration 2.3 mg/mL from repository and filenames; some article text says 2.5.",
+      "Only plain cached numeric measurement cells A:E were read. Supplemental F-column formulas were not evaluated.",
+      "Zero storage modulus retained; no logarithm of measured values.",
+      "The archive contains bovine dermal collagen only; not native human tendon, collagen-decorin-GAG, or crosslink treatment experiments."
+    ]
+  }
+}

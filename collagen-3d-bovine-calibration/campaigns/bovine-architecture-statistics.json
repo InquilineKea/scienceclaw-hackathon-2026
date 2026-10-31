@@ -1,0 +1,139 @@
+{
+  "source_doi": "10.1016/j.mtbio.2025.101962",
+  "source_table": "Table1",
+  "concentration_mg_ml": 0.8,
+  "VOI_volume_um3": 111.8,
+  "pixel_size_nm": [
+    9.37,
+    9.37,
+    20.21
+  ],
+  "VOIs": [
+    {
+      "VOI": 1,
+      "segments": 2108,
+      "points": 54467,
+      "nodes": 1710,
+      "derived_2E_over_V_not_interior_degree": 2.4654970760233916,
+      "arclength_nm": {
+        "mean": 341.3,
+        "SD": 339.37
+      },
+      "endpoint_length_nm": {
+        "mean": 298.86,
+        "SD": 284.27
+      },
+      "tortuosity": {
+        "mean": 1.13,
+        "SD": 0.31
+      },
+      "azimuth_deg": {
+        "mean": 164.33,
+        "SD": 106
+      },
+      "elevation_deg": {
+        "mean": 56.23,
+        "SD": 22.42
+      }
+    },
+    {
+      "VOI": 2,
+      "segments": 2070,
+      "points": 53117,
+      "nodes": 1751,
+      "derived_2E_over_V_not_interior_degree": 2.364363221016562,
+      "arclength_nm": {
+        "mean": 348.16,
+        "SD": 329.69
+      },
+      "endpoint_length_nm": {
+        "mean": 304.78,
+        "SD": 276.37
+      },
+      "tortuosity": {
+        "mean": 1.14,
+        "SD": 0.32
+      },
+      "azimuth_deg": {
+        "mean": 170.67,
+        "SD": 98.13
+      },
+      "elevation_deg": {
+        "mean": 53.43,
+        "SD": 22.67
+      }
+    },
+    {
+      "VOI": 3,
+      "segments": 2128,
+      "points": 56438,
+      "nodes": 1766,
+      "derived_2E_over_V_not_interior_degree": 2.4099660249150623,
+      "arclength_nm": {
+        "mean": 350.18,
+        "SD": 346.83
+      },
+      "endpoint_length_nm": {
+        "mean": 304.47,
+        "SD": 289.25
+      },
+      "tortuosity": {
+        "mean": 1.14,
+        "SD": 0.31
+      },
+      "azimuth_deg": {
+        "mean": 174.13,
+        "SD": 101.11
+      },
+      "elevation_deg": {
+        "mean": 55.17,
+        "SD": 22.69
+      }
+    }
+  ],
+  "overall": {
+    "arclength_nm": {
+      "mean": 346.55,
+      "SD": 338.75
+    },
+    "endpoint_length_nm": {
+      "mean": 302.7,
+      "SD": 283.37
+    },
+    "tortuosity": {
+      "mean": 1.13,
+      "SD": 0.31
+    },
+    "azimuth_deg": {
+      "mean": 169.72,
+      "SD": 101.88
+    },
+    "elevation_deg": {
+      "mean": 54.95,
+      "SD": 22.62
+    }
+  },
+  "missing": [
+    "raw node coordinates",
+    "segment polylines and adjacency",
+    "interior junction degree distribution",
+    "numeric orientation histograms",
+    "numeric length/tortuosity histograms",
+    "joint/spatial correlations",
+    "fiber thickness distribution",
+    "specimen-linked withheld mechanics and local strains"
+  ],
+  "can_claim": "constraints on reported moments only; not measured graph or full distribution preservation",
+  "angle_convention": {
+    "azimuth": "0\u2013360deg, X towardY inXY plane",
+    "elevation": "angle fromZ,0=normal toXY,90=parallel toXY",
+    "warning": "ordinary published angular mean/SD do not identify an axial spherical orientation density"
+  },
+  "material_fit": {
+    "model": "3D Euler\u2013Bernoulli beams, updated Lagrangian",
+    "ka_Pa_um2": 1700.0,
+    "kb_Pa_um4": 0.0053,
+    "fitted_on": "same-study stress-strain response, not independent validation",
+    "transfer_warning": "kb is beam flexural rigidity and must not be assigned to a cosine-junction penalty without dimensional/operator mapping"
+  }
+}
