@@ -1,0 +1,3346 @@
+{
+  "lattice": {
+    "W": 6,
+    "nodes": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ],
+      [
+        5.0,
+        0.0
+      ],
+      [
+        0.5,
+        0.8660254037844386
+      ],
+      [
+        1.5,
+        0.8660254037844386
+      ],
+      [
+        2.5,
+        0.8660254037844386
+      ],
+      [
+        3.5,
+        0.8660254037844386
+      ],
+      [
+        4.5,
+        0.8660254037844386
+      ],
+      [
+        5.5,
+        0.8660254037844386
+      ],
+      [
+        0.0,
+        1.7320508075688772
+      ],
+      [
+        1.0,
+        1.7320508075688772
+      ],
+      [
+        2.0,
+        1.7320508075688772
+      ],
+      [
+        3.0,
+        1.7320508075688772
+      ],
+      [
+        4.0,
+        1.7320508075688772
+      ],
+      [
+        5.0,
+        1.7320508075688772
+      ],
+      [
+        0.5,
+        2.598076211353316
+      ],
+      [
+        1.5,
+        2.598076211353316
+      ],
+      [
+        2.5,
+        2.598076211353316
+      ],
+      [
+        3.5,
+        2.598076211353316
+      ],
+      [
+        4.5,
+        2.598076211353316
+      ],
+      [
+        5.5,
+        2.598076211353316
+      ],
+      [
+        0.0,
+        3.4641016151377544
+      ],
+      [
+        1.0,
+        3.4641016151377544
+      ],
+      [
+        2.0,
+        3.4641016151377544
+      ],
+      [
+        3.0,
+        3.4641016151377544
+      ],
+      [
+        4.0,
+        3.4641016151377544
+      ],
+      [
+        5.0,
+        3.4641016151377544
+      ],
+      [
+        0.5,
+        4.330127018922193
+      ],
+      [
+        1.5,
+        4.330127018922193
+      ],
+      [
+        2.5,
+        4.330127018922193
+      ],
+      [
+        3.5,
+        4.330127018922193
+      ],
+      [
+        4.5,
+        4.330127018922193
+      ],
+      [
+        5.5,
+        4.330127018922193
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        9,
+        15
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        17
+      ],
+      [
+        10,
+        16
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        18
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        19
+      ],
+      [
+        13,
+        18
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        14,
+        20
+      ],
+      [
+        14,
+        19
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        16,
+        22
+      ],
+      [
+        16,
+        21
+      ],
+      [
+        17,
+        12
+      ],
+      [
+        17,
+        23
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        18,
+        25
+      ],
+      [
+        18,
+        24
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        19,
+        25
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        20,
+        27
+      ],
+      [
+        20,
+        26
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        21,
+        28
+      ],
+      [
+        21,
+        27
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        22,
+        29
+      ],
+      [
+        22,
+        28
+      ],
+      [
+        23,
+        18
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        23,
+        29
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        24,
+        30
+      ],
+      [
+        24,
+        35
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        25,
+        31
+      ],
+      [
+        25,
+        30
+      ],
+      [
+        26,
+        27
+      ],
+      [
+        26,
+        32
+      ],
+      [
+        26,
+        31
+      ],
+      [
+        27,
+        28
+      ],
+      [
+        27,
+        33
+      ],
+      [
+        27,
+        32
+      ],
+      [
+        28,
+        29
+      ],
+      [
+        28,
+        34
+      ],
+      [
+        28,
+        33
+      ],
+      [
+        29,
+        24
+      ],
+      [
+        29,
+        35
+      ],
+      [
+        29,
+        34
+      ],
+      [
+        30,
+        31
+      ],
+      [
+        30,
+        1
+      ],
+      [
+        30,
+        0
+      ],
+      [
+        31,
+        32
+      ],
+      [
+        31,
+        2
+      ],
+      [
+        31,
+        1
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        32,
+        3
+      ],
+      [
+        32,
+        2
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        33,
+        4
+      ],
+      [
+        33,
+        3
+      ],
+      [
+        34,
+        35
+      ],
+      [
+        34,
+        5
+      ],
+      [
+        34,
+        4
+      ],
+      [
+        35,
+        30
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        35,
+        5
+      ]
+    ],
+    "imageShifts": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        -6.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        6.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ]
+    ],
+    "area": 31.176914536239792
+  },
+  "cases": [
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.0,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.399724115038522e-17,
+          "Pyy": 5.128187304637532e-16,
+          "energy": 1.3929126544665355e-30,
+          "residual": 9.615424054581367e-16,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 3.5685869611861004e-06,
+          "Pxy": 6.355519467633851e-06,
+          "Pyy": 3.435915037987906e-07,
+          "energy": 4.3461159028240147e-07,
+          "residual": 1.218916887099967e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 7.342297680729906e-06,
+          "Pxy": 1.1851228405546852e-05,
+          "Pyy": 1.5345585538405711e-06,
+          "energy": 1.7631122165755787e-06,
+          "residual": 1.6048612581692418e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0011851228405472855
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.16666666666666666,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 1.4802797390089163e-15,
+          "Pyy": 2.9485714665496015e-15,
+          "energy": 6.779353522928756e-30,
+          "residual": 1.1730133449206096e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.165895842800728e-06,
+          "Pxy": 5.439594038169238e-06,
+          "Pyy": 5.423846080826769e-07,
+          "energy": 4.3484077028225386e-07,
+          "residual": 1.0900895812941353e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 5.669142194602327e-06,
+          "Pxy": 1.0966849619537105e-05,
+          "Pyy": 1.185719876663218e-06,
+          "energy": 1.7649296707775228e-06,
+          "residual": 1.4821236414907635e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0010966849618056825
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.3333333333333333,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": -1.8160759148776908e-16,
+          "Pxy": 7.771384900796508e-16,
+          "Pyy": 4.166447834592526e-15,
+          "energy": 9.823863579016099e-30,
+          "residual": 1.5383762553334868e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 3.861986634830274e-06,
+          "Pxy": 6.514099565779242e-06,
+          "Pyy": 1.6132537566574213e-06,
+          "energy": 4.365593546476152e-07,
+          "residual": 1.7215720066469426e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 7.4197695135836145e-06,
+          "Pxy": 1.1882197926884335e-05,
+          "Pyy": 1.982601147751515e-06,
+          "energy": 1.7693782807559444e-06,
+          "residual": 1.7904490296178238e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0011882197926107196
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.5,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336924e-16,
+          "Pxy": 7.771384900796508e-16,
+          "Pyy": 6.602200570678374e-15,
+          "energy": 1.4859014825622088e-29,
+          "residual": 1.7306719688603312e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.3833392638918223e-06,
+          "Pxy": 5.6531615551409835e-06,
+          "Pyy": -3.748226116981602e-07,
+          "energy": 4.373130624419236e-07,
+          "residual": 1.2601015794062191e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 5.7308383832872935e-06,
+          "Pxy": 1.0661883053510809e-05,
+          "Pyy": 5.105517599746009e-07,
+          "energy": 1.7749284440993254e-06,
+          "residual": 1.108525843980098e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.001066188305273367
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.6666666666666666,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336924e-16,
+          "Pxy": 7.771384900796507e-16,
+          "Pyy": 9.037953306764221e-15,
+          "energy": 2.083093839717803e-29,
+          "residual": 1.7306719688603315e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 3.0321842757823554e-06,
+          "Pxy": 5.580418122982953e-06,
+          "Pyy": 6.73523394957369e-07,
+          "energy": 4.382912974367984e-07,
+          "residual": 7.63045311928874e-07,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.911033447988369e-06,
+          "Pxy": 1.1238888825248041e-05,
+          "Pyy": 1.6580107673040302e-06,
+          "energy": 1.779253864073736e-06,
+          "residual": 1.5546354479048885e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0011238888824470902
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.8333333333333333,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336924e-16,
+          "Pxy": 7.771384900796507e-16,
+          "Pyy": 9.037953306764221e-15,
+          "energy": 2.2587386506459188e-29,
+          "residual": 1.7306719688603315e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.4837176737664506e-06,
+          "Pxy": 5.561756598600847e-06,
+          "Pyy": -1.965628422407913e-07,
+          "energy": 4.4072997089997235e-07,
+          "residual": 2.4506897630967713e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.112639472960189e-06,
+          "Pxy": 1.16863003060732e-05,
+          "Pyy": 7.224850719906391e-07,
+          "energy": 1.7901204292595827e-06,
+          "residual": 1.209082745273315e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.001168630030529606
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 1.0,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336923e-16,
+          "Pxy": 1.4802797390089163e-15,
+          "Pyy": 1.0255829674807145e-14,
+          "energy": 2.7856730834302665e-29,
+          "residual": 1.9229687926101997e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.8170579616119156e-06,
+          "Pxy": 5.0818228433721195e-06,
+          "Pyy": 8.590346000063614e-07,
+          "energy": 4.417939654443057e-07,
+          "residual": 1.3604868051663279e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.457428472433356e-06,
+          "Pxy": 1.1940459945710171e-05,
+          "Pyy": 9.170929325749915e-07,
+          "energy": 1.7948609276621523e-06,
+          "residual": 2.7022246335817575e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0011940459944229892
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.0,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.399724115038522e-17,
+          "Pyy": 5.128187304637532e-16,
+          "energy": 1.3929126544665355e-30,
+          "residual": 9.615424054581367e-16,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 3.5685869611861004e-06,
+          "Pxy": 6.355519467633851e-06,
+          "Pyy": 3.435915037987906e-07,
+          "energy": 4.3461159028240147e-07,
+          "residual": 1.218916887099967e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 7.342297680729906e-06,
+          "Pxy": 1.1851228405546852e-05,
+          "Pyy": 1.5345585538405711e-06,
+          "energy": 1.7631122165755787e-06,
+          "residual": 1.6048612581692418e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0011851228405472855
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.16666666666666666,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.399724115038522e-17,
+          "Pyy": 5.128187304637532e-16,
+          "energy": 3.8519400074601584e-30,
+          "residual": 5.865047295700116e-15,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.2914517334571595e-06,
+          "Pxy": 5.243392852335732e-06,
+          "Pyy": 1.2408420276404323e-07,
+          "energy": 4.3471511356830037e-07,
+          "residual": 9.993209736106028e-07,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 5.810973514680108e-06,
+          "Pxy": 1.0728958273326577e-05,
+          "Pyy": 8.621683086068793e-07,
+          "energy": 1.7641482694770645e-06,
+          "residual": 2.053768434338001e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.001072895827325258
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.3333333333333333,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.399724115038522e-17,
+          "Pyy": 5.128187304637532e-16,
+          "energy": 6.428063901072524e-30,
+          "residual": 1.1537803873876999e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.588899981774885e-06,
+          "Pxy": 6.292331006143527e-06,
+          "Pyy": -4.051027974622478e-07,
+          "energy": 4.3719407567673096e-07,
+          "residual": 1.7124391373952551e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 5.9136296670586805e-06,
+          "Pxy": 1.1233692237932224e-05,
+          "Pyy": 1.8759657057874546e-07,
+          "energy": 1.7747660474478497e-06,
+          "residual": 1.5261725475907228e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0011233692237858227
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.5,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.771384900796508e-16,
+          "Pyy": 1.7306950985066776e-15,
+          "energy": 1.0058056660253587e-29,
+          "residual": 1.1537803873876999e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.805145438651849e-06,
+          "Pxy": 4.985951386366286e-06,
+          "Pyy": 7.882323059183677e-07,
+          "energy": 4.386750447303112e-07,
+          "residual": 1.4417626225382378e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.480978642292245e-06,
+          "Pxy": 1.0575233642971035e-05,
+          "Pyy": 1.4399843019560343e-06,
+          "energy": 1.7812708614674848e-06,
+          "residual": 1.669120069819455e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0010575233642193896
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.6666666666666666,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.771384900796509e-16,
+          "Pyy": 6.6022005706783744e-15,
+          "energy": 1.9425779909753102e-29,
+          "residual": 1.7306719688603315e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.9484600792562448e-06,
+          "Pxy": 6.401035400250725e-06,
+          "Pyy": 7.260196052777177e-08,
+          "energy": 4.4061769349000764e-07,
+          "residual": 1.3954099767196485e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.805244819792224e-06,
+          "Pxy": 1.280317246345686e-05,
+          "Pyy": 1.240677553124955e-06,
+          "energy": 1.7895505811347993e-06,
+          "residual": 2.805880702868902e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0012803172462679722
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.8333333333333333,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": -3.8458698616158975e-16,
+          "Pxy": 1.4802797390089165e-15,
+          "Pyy": 7.820076938721298e-15,
+          "energy": 2.293867612831542e-29,
+          "residual": 1.9229687926101997e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.773797272035638e-06,
+          "Pxy": 6.185324245559655e-06,
+          "Pyy": 4.124774571511323e-07,
+          "energy": 4.411960554705195e-07,
+          "residual": 1.177795209506639e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.224091717101024e-06,
+          "Pxy": 1.2523981453208303e-05,
+          "Pyy": 1.6127595645668305e-06,
+          "energy": 1.7922926748871367e-06,
+          "residual": 3.3311064663494686e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0012523981451728022
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 1.0,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336923e-16,
+          "Pxy": 1.4802797390089163e-15,
+          "Pyy": 1.0255829674807145e-14,
+          "energy": 2.7856730834302665e-29,
+          "residual": 1.9229687926101997e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.8170579616119156e-06,
+          "Pxy": 5.0818228433721195e-06,
+          "Pyy": 8.590346000063614e-07,
+          "energy": 4.417939654443057e-07,
+          "residual": 1.3604868051663279e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.457428472433356e-06,
+          "Pxy": 1.1940459945710171e-05,
+          "Pyy": 9.170929325749915e-07,
+          "energy": 1.7948609276621523e-06,
+          "residual": 2.7022246335817575e-06,
+          "converged": false,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0
+        }
+      ],
+      "smallShearModulus": 0.0011940459944229892
+    }
+  ]
+}

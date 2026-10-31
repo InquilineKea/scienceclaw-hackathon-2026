@@ -1,0 +1,6 @@
+{
+  "source": "User-owned oxidative-tensegrity/oxt/network.py, copied through Batch class only",
+  "sourceSHA256": "d163c66caac206618081595d2d52d4626cc9dce07b87c275d483da27546055b2",
+  "copiedSHA256": "a781e092c608cded0350befb4d9d7786359d8287780c9703e8f087452a1f7dc6",
+  "purpose": "Frozen numerical baseline; new mechanisms are in transitions.py; original models unchanged"
+}

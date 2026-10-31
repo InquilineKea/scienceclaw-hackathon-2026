@@ -1,0 +1,23 @@
+{
+  "jobId": "aijob-e00ngbb7wmy88429pa",
+  "jobName": "collagen-transitions-h100-20261031",
+  "observedState": "Provisioning",
+  "observedAtUTC": "2026-10-31T17:00:49.401371+00:00",
+  "gpu": "NVIDIA H100 NVLink 80GB",
+  "gpuCount": 1,
+  "vCPUs": 16,
+  "RAMGiB": 200,
+  "temporaryDiskGiB": 100,
+  "providerTimeoutHours": 1,
+  "displayedHourlyEstimateUSD": 4.51,
+  "authorizedTaskBudgetUSD": 15,
+  "actualBilledCostUSD": null,
+  "costCaveat": "Displayed estimate, not invoice; includes temporary disk and startup/shutdown, excludes taxes/discounts. Private bucket separately billed.",
+  "bucketQuotaGiB": 1,
+  "bucketPrivate": true,
+  "entrypoint": "python /output/cloud_job.py",
+  "submissionNotes": [
+    "Two initial requests refused: request entity too large. No job IDs or compute created by those attempts.",
+    "Identical reviewed job input uploaded to private output bucket; confirmed object present before successful submission."
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "suites": {
+    "rigidity": {
+      "file": "data/rigidity.json",
+      "cases": 3
+    },
+    "sliding_memory": {
+      "file": "data/sliding-memory.json",
+      "cases": 3
+    },
+    "plastic_memory_matrix": {
+      "file": "data/plastic-memory-matrix.json",
+      "cases": 8
+    },
+    "sliding_failure": {
+      "file": "data/sliding-failure.json",
+      "cases": 3
+    },
+    "stiffness_percolation": {
+      "file": "data/stiffness-percolation.json",
+      "cases": 14
+    },
+    "targeted_damage": {
+      "file": "data/targeted-damage.json",
+      "cases": 2
+    },
+    "inclusions": {
+      "file": "data/inclusions.json",
+      "cases": 3
+    },
+    "lox_feedback": {
+      "file": "data/lox-feedback.json",
+      "cases": 969
+    },
+    "helix_coil": {
+      "file": "data/helix-coil-sensitivity.json",
+      "cases": 18
+    }
+  },
+  "limitations": [
+    "Dimensionless finite 2D network models; no pressure/acceleration calibration or universal critical exponents.",
+    "Locking and plasticity laws are declared hypotheses, not validated AGE chemistry.",
+    "Inclusion model uses disks at network junctions, not cells with membranes or volumes.",
+    "Helix-coil sensitivity is not atomistic MD or an experimentally calibrated melting temperature.",
+    "Feedback branches are mathematical equilibria, not measured LOX-cell signaling.",
+    "All saved curves include convergence flags; unconverged samples are ineligible for scientific conclusions."
+  ],
+  "elapsedSeconds": 600.590349184,
+  "numericalSamples": {
+    "samples": 400,
+    "converged": 398
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "startedUnix": 1793469224.7420945,
+  "steps": [
+    {
+      "name": "install-reviewed-wheels",
+      "returncode": 0,
+      "elapsedSeconds": 1.0008292198181152
+    },
+    {
+      "name": "numerical-checks",
+      "returncode": 0,
+      "elapsedSeconds": 4.001435279846191
+    }
+  ],
+  "authorizedBudgetUSD": 15,
+  "providerTimeoutHours": 1,
+  "status": "checks_passed",
+  "elapsedSeconds": 5.65681529045105
+}

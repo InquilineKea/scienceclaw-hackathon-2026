@@ -1,0 +1,26 @@
+{
+  "startedUnix": 1793467791.0420983,
+  "steps": [
+    {
+      "name": "install-reviewed-wheels",
+      "returncode": 0,
+      "elapsedSeconds": 1.000765323638916
+    },
+    {
+      "name": "numerical-checks",
+      "returncode": 0,
+      "elapsedSeconds": 4.001155138015747
+    },
+    {
+      "name": "commission",
+      "returncode": 1,
+      "elapsedSeconds": 498.0883312225342
+    }
+  ],
+  "authorizedBudgetUSD": 15,
+  "providerTimeoutHours": 1,
+  "status": "failed",
+  "elapsedSeconds": 503.7546925544739,
+  "error": "commission failed: 1",
+  "traceback": "Traceback (most recent call last):\n  File \"/output/cloud_job_v2.py\", line 90, in <module>\n    run_step('commission',[sys.executable,'-I',wrapper,runner,'--out',str(runs/'commission'),'--profile','commission','--device','cuda','--minutes','12'],780)\n  File \"/output/cloud_job_v2.py\", line 66, in run_step\n    if rc:raise RuntimeError(name+' failed: '+str(rc))\n          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nRuntimeError: commission failed: 1\n"
+}

@@ -1,0 +1,9 @@
+{"elapsedSeconds": 1.499, "event": "checks_passed", "checks": 10}
+{"elapsedSeconds": 29.625, "event": "rigidity_group", "W": 6, "kappa": 0.0001, "cases": 3}
+{"elapsedSeconds": 179.695, "event": "sliding_memory_done", "cases": 3}
+{"elapsedSeconds": 300.299, "event": "memory_matrix_done", "cases": 8}
+{"elapsedSeconds": 398.301, "event": "sliding_failure_done", "cases": 3}
+{"elapsedSeconds": 405.779, "event": "stiffness_percolation_done", "cases": 14}
+{"elapsedSeconds": 445.957, "event": "targeted_damage_done", "cases": 2}
+{"elapsedSeconds": 493.352, "event": "inclusions_done", "cases": 3}
+{"elapsedSeconds": 495.647, "event": "failed", "error": "Object of type bool is not JSON serializable"}

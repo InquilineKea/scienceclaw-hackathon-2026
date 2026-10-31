@@ -1,0 +1,117 @@
+					127 text Time Message
+					128 container
+						129 text 31 Oct 13:15:24 . 498
+					130 text OSError: [Errno 22] Invalid argument
+					131 container
+						132 text 31 Oct 13:15:24 . 498
+					133 text fp.close()
+					134 container
+						135 text 31 Oct 13:15:24 . 498
+					136 text File "/opt/conda/lib/python3.11/zipfile.py", line 2017, in _fpclose
+					137 container
+						138 text 31 Oct 13:15:24 . 498
+					139 text self._fpclose(fp)
+					140 container
+						141 text 31 Oct 13:15:24 . 498
+					142 text File "/opt/conda/lib/python3.11/zipfile.py", line 1917, in close
+					143 container
+						144 text 31 Oct 13:15:24 . 498
+					145 text self.close()
+					146 container
+						147 text 31 Oct 13:15:24 . 498
+					148 text File "/opt/conda/lib/python3.11/zipfile.py", line 1356, in __exit__
+					149 container
+						150 text 31 Oct 13:15:24 . 498
+					151 text with zipfile.ZipFile(archive,'x',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
+					152 container
+						153 text 31 Oct 13:15:24 . 455
+					154 text File "/output/cloud_job.py", line 57, in <module>
+					155 container
+						156 text 31 Oct 13:15:24 . 455
+					157 text Traceback (most recent call last):
+					158 container
+						159 text 31 Oct 13:15:24 . 455
+					160 container
+						161 text 31 Oct 13:15:24 . 455
+					162 text During handling of the above exception, another exception occurred:
+					163 container
+						164 text 31 Oct 13:15:24 . 455
+					165 container
+						166 text 31 Oct 13:15:24 . 455
+					167 text OSError: [Errno 22] Invalid argument
+					168 container
+						169 text 31 Oct 13:15:24 . 455
+					170 container
+						171 text 31 Oct 13:15:24 . 455
+					172 text During handling of the above exception, another exception occurred:
+					173 container
+						174 text 31 Oct 13:15:24 . 455
+					175 container
+						176 text 31 Oct 13:15:24 . 455
+					177 text OSError: [Errno 22] Invalid argument
+					178 container
+						179 text 31 Oct 13:15:24 . 455
+					180 text self.fp.seek(self.start_dir)
+					181 container
+						182 text 31 Oct 13:15:24 . 455
+					183 text File "/opt/conda/lib/python3.11/zipfile.py", line 1912, in close
+					184 container
+						185 text 31 Oct 13:15:24 . 455
+					186 text Traceback (most recent call last):
+					187 container
+						188 text 31 Oct 13:15:24 . 455
+					189 container
+						190 text 31 Oct 13:15:24 . 455
+					191 text During handling of the above exception, another exception occurred:
+					192 container
+						193 text 31 Oct 13:15:24 . 455
+					194 container
+						195 text 31 Oct 13:15:24 . 455
+					196 text OSError: [Errno 22] Invalid argument
+					197 container
+						198 text 31 Oct 13:15:24 . 455
+					199 text self._fileobj.seek(self._zipfile.start_dir)
+					200 container
+						201 text 31 Oct 13:15:24 . 455
+					202 text File "/opt/conda/lib/python3.11/zipfile.py", line 1220, in close
+					203 container
+						204 text 31 Oct 13:15:24 . 455
+					205 text with open(filename, "rb") as src, self.open(zinfo, 'w') as dest:
+					206 container
+						207 text 31 Oct 13:15:24 . 454
+					208 text File "/opt/conda/lib/python3.11/zipfile.py", line 1814, in write
+					209 container
+						210 text 31 Oct 13:15:24 . 454
+					211 text ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+					212 container
+						213 text 31 Oct 13:15:24 . 454
+					214 text for name in [*files,'OUTPUT_MANIFEST.json']:z.write(workspace/name,name)
+					215 container
+						216 text 31 Oct 13:15:24 . 448
+					217 text File "/output/cloud_job.py", line 58, in <module>
+					218 container
+						219 text 31 Oct 13:15:24 . 447
+					220 text Traceback (most recent call last):
+					221 container
+						222 text 31 Oct 13:15:24 . 361
+					223 text {"name": "transition-pilot", "returncode": 1, "elapsedSeconds": 676.4673898220062}
+					224 container
+						225 text 31 Oct 13:04:07 . 894
+					226 text {"name": "numerical-checks", "returncode": 0, "elapsedSeconds": 3.4210293292999268}
+					227 container
+						228 text 31 Oct 13:04:04 . 473
+					229 text {"name": "install-reviewed-wheels", "returncode": 0, "elapsedSeconds": 0.9156935214996338}
+					230 container
+						231 text 31 Oct 13:04:01 . 176
+					232 text Starting workload container
+					233 container
+						234 text 31 Oct 13:01:51 . 268
+					235 text Downloading container image
+					236 container
+						237 text 31 Oct 13:01:36 . 605
+					238 text Workload initialization started
+					239 container
+						240 text 31 Oct 13:00:07 . 185
+					241 text Provisioning resources for the workload
+
+The focused UI element is 117 button Export logs

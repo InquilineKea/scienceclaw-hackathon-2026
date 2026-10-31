@@ -1,0 +1,21 @@
+{
+  "jobID": "aijob-e00rxabfzdn5yamng9",
+  "name": "collagen-transitions-h100-v2-20261031",
+  "observedUTC": "2026-10-31T17:26:57.702113+00:00",
+  "observedStatus": "Failed",
+  "hardware": "1 NVIDIA H100 80 GB, 16 vCPU, 200 GiB RAM",
+  "temporaryDiskGiB": 100,
+  "timeoutHours": 1,
+  "displayedUSDPerHour": 4.51,
+  "priorAttemptEstimatedUSD": 1.15,
+  "totalAuthorizedBudgetUSD": 15,
+  "sourceZIP_SHA256": "3db564b466e31360079f52882022e8198ce7637eac7fbe18c2579ee49c0be363",
+  "inputSHA256": "08a2a50030982187e5080ec64a8d6f36c4a8ab276a0641080cea7b9c898dd86d",
+  "billingNote": "Estimate, not invoice; startup/shutdown included by provider. Taxes/discounts and object storage not finalized.",
+  "provisioningStartedUTC": "2026-10-31T17:26:03.505Z",
+  "containerStartedUTC": "2026-10-31T17:29:49.903Z",
+  "lastOutputUTC": "2026-10-31T17:38:14.994Z",
+  "estimatedUSD": 0.9163931638888889,
+  "archiveSHA256": "2c9807a319d268105f4001eafb27c98dd11c0060cf90ca6bc21260541d348826",
+  "dataRecovered": true
+}

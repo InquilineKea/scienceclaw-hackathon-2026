@@ -1,0 +1,16 @@
+{
+  "suites": {},
+  "limitations": [
+    "Dimensionless finite 2D network models; no pressure/acceleration calibration or universal critical exponents.",
+    "Locking and plasticity laws are declared hypotheses, not validated AGE chemistry.",
+    "Inclusion model uses disks at network junctions, not cells with membranes or volumes.",
+    "Helix-coil sensitivity is not atomistic MD or an experimentally calibrated melting temperature.",
+    "Feedback branches are mathematical equilibria, not measured LOX-cell signaling.",
+    "All saved curves include convergence flags; unconverged samples are ineligible for scientific conclusions."
+  ],
+  "elapsedSeconds": 1.6679617860000064,
+  "numericalSamples": {
+    "samples": 0,
+    "converged": 0
+  }
+}

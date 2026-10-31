@@ -1,0 +1,3 @@
+ISOLATION verified: unprivileged worker; IPv4/IPv6 sockets denied; minimal environment
+{"elapsedSeconds": 1.659, "event": "checks_passed", "checks": 10}
+{"elapsedSeconds": 1.659, "event": "finished", "samples": 0, "converged": 0}

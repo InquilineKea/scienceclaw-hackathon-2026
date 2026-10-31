@@ -1,0 +1,44 @@
+{
+  "rigidity": {
+    "cases": 3,
+    "samples": 27,
+    "converged": 6,
+    "fullyConvergedRecordedPaths": 0
+  },
+  "sliding-memory": {
+    "cases": 3,
+    "samples": 75,
+    "converged": 4,
+    "fullyConvergedRecordedPaths": 0
+  },
+  "stiffness-percolation": {
+    "cases": 14,
+    "samples": 42,
+    "converged": 14,
+    "fullyConvergedRecordedPaths": 0
+  },
+  "plastic-memory-matrix": {
+    "cases": 8,
+    "samples": 144,
+    "converged": 12,
+    "fullyConvergedRecordedPaths": 0
+  },
+  "inclusions": {
+    "cases": 3,
+    "samples": 30,
+    "converged": 2,
+    "fullyConvergedRecordedPaths": 0
+  },
+  "sliding-failure": {
+    "cases": 3,
+    "samples": 54,
+    "converged": 22,
+    "fullyConvergedRecordedPaths": 0
+  },
+  "targeted-damage": {
+    "cases": 2,
+    "samples": 28,
+    "converged": 2,
+    "fullyConvergedRecordedPaths": 0
+  }
+}

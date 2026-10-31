@@ -1,0 +1,24 @@
+{
+  "object": "collagen-transition-v4-c42ab12d1b8e-final.zip",
+  "bytes": 2480407,
+  "sha256": "73b0132a8c6eaf94435cb6a63d89305aed450b6856e324116223884a6245c70c",
+  "status": "complete",
+  "elapsedSeconds": 617.3245606422424,
+  "steps": [
+    {
+      "name": "install-reviewed-wheels",
+      "returncode": 0,
+      "elapsedSeconds": 1.0008292198181152
+    },
+    {
+      "name": "numerical-checks",
+      "returncode": 0,
+      "elapsedSeconds": 4.001435279846191
+    },
+    {
+      "name": "commission",
+      "returncode": 0,
+      "elapsedSeconds": 611.106618642807
+    }
+  ]
+}

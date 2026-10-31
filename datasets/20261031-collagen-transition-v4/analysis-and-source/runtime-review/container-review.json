@@ -1,0 +1,35 @@
+{
+  "source": "Official pytorch/pytorch Docker Hub repository",
+  "tag": "2.6.0-cuda12.4-cudnn9-runtime",
+  "pinnedImage": "pytorch/pytorch@sha256:77f17f843507062875ce8be2a6f76aa6aa3df7f9ef1e31d9d7432f4b0f563dee",
+  "architecture": "amd64",
+  "created": "2025-01-29T17:27:42.06005143Z",
+  "totalCompressedBytes": 3314094972,
+  "entrypoint": null,
+  "command": [
+    "/bin/bash"
+  ],
+  "historyCommands": [
+    "/bin/sh -c #(nop)  ARG RELEASE",
+    "/bin/sh -c #(nop)  ARG LAUNCHPAD_BUILD_ARCH",
+    "/bin/sh -c #(nop)  LABEL org.opencontainers.image.ref.name=ubuntu",
+    "/bin/sh -c #(nop)  LABEL org.opencontainers.image.version=22.04",
+    "/bin/sh -c #(nop) ADD file:ebe009f86035c175ba244badd298a2582914415cf62783d510eab3a311a5d4e1 in / ",
+    "/bin/sh -c #(nop)  CMD [\"/bin/bash\"]",
+    "ARG PYTORCH_VERSION=2.6.0",
+    "ARG TRITON_VERSION=",
+    "ARG TARGETPLATFORM=linux/amd64",
+    "ARG CUDA_VERSION=12.4.1",
+    "LABEL com.nvidia.volumes.needed=nvidia_driver",
+    "RUN |4 PYTORCH_VERSION=2.6.0 TRITON_VERSION= TARGETPLATFORM=linux/amd64 CUDA_VERSION=12.4.1 /bin/sh -c apt-get update && DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends         ca-certificates         libjpeg-dev         libpng-dev         && rm -rf /var/lib/apt/lists/* # buildkit",
+    "COPY /opt/conda /opt/conda # buildkit",
+    "RUN |4 PYTORCH_VERSION=2.6.0 TRITON_VERSION= TARGETPLATFORM=linux/amd64 CUDA_VERSION=12.4.1 /bin/sh -c if test -n \"${TRITON_VERSION}\" -a \"${TARGETPLATFORM}\" != \"linux/arm64\"; then         DEBIAN_FRONTEND=noninteractive apt install -y --no-install-recommends gcc;         rm -rf /var/lib/apt/lists/*;     fi # buildkit",
+    "ENV PATH=/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ENV NVIDIA_VISIBLE_DEVICES=all",
+    "ENV NVIDIA_DRIVER_CAPABILITIES=compute,utility",
+    "ENV LD_LIBRARY_PATH=/usr/local/nvidia/lib:/usr/local/nvidia/lib64",
+    "ENV PATH=/usr/local/nvidia/bin:/usr/local/cuda/bin:/opt/conda/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+    "ENV PYTORCH_VERSION=2.6.0",
+    "WORKDIR /workspace"
+  ]
+}

@@ -1,0 +1,46 @@
+ISOLATION verified: unprivileged worker; IPv4/IPv6 sockets denied; minimal environment
+{"elapsedSeconds": 1.499, "event": "checks_passed", "checks": 10}
+{"elapsedSeconds": 29.625, "event": "rigidity_group", "W": 6, "kappa": 0.0001, "cases": 3}
+{"elapsedSeconds": 179.695, "event": "sliding_memory_done", "cases": 3}
+{"elapsedSeconds": 300.299, "event": "memory_matrix_done", "cases": 8}
+{"elapsedSeconds": 398.301, "event": "sliding_failure_done", "cases": 3}
+{"elapsedSeconds": 405.779, "event": "stiffness_percolation_done", "cases": 14}
+{"elapsedSeconds": 445.957, "event": "targeted_damage_done", "cases": 2}
+{"elapsedSeconds": 493.352, "event": "inclusions_done", "cases": 3}
+{"elapsedSeconds": 495.647, "event": "failed", "error": "Object of type bool is not JSON serializable"}
+Traceback (most recent call last):
+  File "/tmp/collagen-transition-job-v2/source/run_transitions.py", line 315, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/tmp/collagen-transition-job-v2/source/run_transitions.py", line 292, in main
+    rigidity(args.device,args.profile);sliding_and_memory(args.device,args.profile);sliding_failure(args.device,args.profile);percolation(args.device,args.profile);inclusions(args.device,args.profile);feedback_and_thermal(args.device)
+                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/collagen-transition-job-v2/source/run_transitions.py", line 267, in feedback_and_thermal
+    save('data/lox-feedback.json',{'equilibria':records,'up':up,'down':down,'interpretation':'Hypothetical three-stage saturating feedback. Bistability requires two stable equilibria and an intervening unstable equilibrium; gain alone is not sufficient.'})
+  File "/tmp/collagen-transition-job-v2/source/run_transitions.py", line 18, in save
+    p.write_text(json.dumps(data,indent=2,allow_nan=False)+'\n')
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/json/__init__.py", line 238, in dumps
+    **kw).encode(obj)
+          ^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 202, in encode
+    chunks = list(chunks)
+             ^^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 432, in _iterencode
+    yield from _iterencode_dict(o, _current_indent_level)
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+    yield from chunks
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+    yield from chunks
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 439, in _iterencode
+    o = _default(o)
+        ^^^^^^^^^^^
+  File "/opt/conda/lib/python3.11/json/encoder.py", line 180, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type bool is not JSON serializable

@@ -1,0 +1,22 @@
+{
+  "status": "failed",
+  "jobId": "aijob-e00ngbb7wmy88429pa",
+  "startUTC": "2026-10-31T17:00:07.185Z",
+  "containerStartUTC": "2026-10-31T17:04:01.176Z",
+  "failureUTC": "2026-10-31T17:15:24.498Z",
+  "numericalCheckReturnCode": 0,
+  "pilotReturnCode": 1,
+  "pilotElapsedSeconds": 676.4673898220062,
+  "outerFailure": "OSError Errno 22 Invalid argument: seeking while writing ZIP directly to object-storage mount",
+  "rawNumericalRecovery": "unavailable",
+  "reason": "No result object survived the failed ZIP write. Nebius removes job container disks after completion. Inner pilot traceback was redirected to a temporary log and was not exported.",
+  "costEstimateUSD": 1.149,
+  "actualBilledCostUSD": null,
+  "retained": [
+    "dispatched input",
+    "source hashes",
+    "visible provider console log",
+    "failure screenshot"
+  ],
+  "providerStorageReference": "https://docs.nebius.com/serverless/overview"
+}

@@ -1,0 +1,11 @@
+ISOLATION verified: unprivileged worker; IPv4/IPv6 sockets denied; minimal environment
+{"elapsedSeconds": 1.42, "event": "checks_passed", "checks": 12}
+{"elapsedSeconds": 34.067, "event": "rigidity_group", "W": 6, "kappa": 0.0001, "cases": 3}
+{"elapsedSeconds": 209.612, "event": "sliding_memory_done", "cases": 3}
+{"elapsedSeconds": 370.964, "event": "memory_matrix_done", "cases": 8}
+{"elapsedSeconds": 468.676, "event": "sliding_failure_done", "cases": 3}
+{"elapsedSeconds": 485.579, "event": "stiffness_percolation_done", "cases": 14}
+{"elapsedSeconds": 515.159, "event": "targeted_damage_done", "cases": 2}
+{"elapsedSeconds": 597.798, "event": "inclusions_done", "cases": 3}
+{"elapsedSeconds": 600.59, "event": "feedback_thermal_done"}
+{"elapsedSeconds": 608.738, "event": "finished", "samples": 400, "converged": 398}
