@@ -1,0 +1,33 @@
+                      :-) GROMACS - gmx mdrun, 2025.3 (-:
+
+Executable:   /opt/gromacs/bin/gmx
+Data prefix:  /opt/gromacs
+Working dir:  /tmp/collagen-pilot/runs/argon
+Command line:
+  gmx mdrun -deffnm argon -ntmpi 1 -ntomp 1 -nb gpu -pme cpu -bonded cpu -update cpu
+
+Compiled SIMD is AVX2_256, but CPU also supports AVX_512 (see log).
+Reading file argon.tpr, VERSION 2025.3 (single precision)
+Can not increase nstlist because an NVE ensemble is used
+1 GPU selected for this run.
+Mapping of GPU IDs to the 1 GPU task in the 1 rank on this node:
+  PP:0
+PP tasks will do (non-perturbed) short-ranged interactions on the GPU
+PP task will update and constrain coordinates on the CPU
+Using 1 MPI thread
+Using 1 OpenMP thread 
+
+
+NOTE: Thread affinity was not set.
+starting mdrun 'Four-argon infrastructure smoke'
+1000 steps,      1.0 ps.
+
+Writing final coordinates.
+
+               Core t (s)   Wall t (s)        (%)
+       Time:        0.035        0.035       99.7
+                 (ns/day)    (hour/ns)
+Performance:     2492.204        0.010
+
+GROMACS reminds you: "I was taught that the way of progress was neither swift nor easy." (Marie Curie)
+

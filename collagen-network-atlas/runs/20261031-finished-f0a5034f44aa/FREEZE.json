@@ -1,0 +1,14 @@
+{
+  "frozenAt": "2026-10-31T12:48:43.469143+00:00",
+  "status": "completed numerical atlas; corrected media",
+  "modelHash": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+  "runs": 450,
+  "originalArchiveSHA256": "29cc630d7d9b559877451320be7c52f1fb7d1cb3be38ff7cc451a0fec9339a94",
+  "correction": {
+    "historicalMediaInput": "data/historical-media-input.json",
+    "historicalModelHash": "2caf29c69aa5e7bcc1e1f70d221d0a08df77c6c20ab4a057dd30f564124a6dbc",
+    "reason": "Earlier rendering input contained different pulse/free rows and replay states.",
+    "action": "Regenerated media-input.json, SVG, PNG and all five GIFs from the final archived results/replays using the archived original preparation/renderer code. No numerical model rerun or parameter change in this frozen baseline.",
+    "verification": "media-input results and replays exactly equal final data; five GIFs validated with 65 frames each."
+  }
+}

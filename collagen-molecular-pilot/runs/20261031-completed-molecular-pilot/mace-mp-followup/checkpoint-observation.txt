@@ -1,0 +1,10 @@
+Sat Oct 31 10:07:57 UTC 2026
+a90be07c8aa6623c390fcc4653d3e319c4a356f8b4a53d323f96b2012d375caf  /root/.cache/mace/macemediumdensityagnesistressmodel
+4842c52ad210d6e1f84d6cf1ffa70fae25a7e0d755ed55cf223f43913f587db7  /root/.cache/mace/MACE-OFF23_medium.model
+23-    "small-0b": "https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0b/mace_agnesi_small.model",
+24-    "medium-0b": "https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0b/mace_agnesi_medium.model",
+25-    "small-0b2": "https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0b2/mace-small-density-agnesi-stress.model",
+26:    "medium-0b2": "https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0b2/mace-medium-density-agnesi-stress.model",
+27-    "large-0b2": "https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0b2/mace-large-density-agnesi-stress.model",
+28-    "medium-0b3": "https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0b3/mace-mp-0b3-medium.model",
+29-    "medium-mpa-0": "https://github.com/ACEsuit/mace-mp/releases/download/mace_mpa_0/mace-mpa-0-medium.model",

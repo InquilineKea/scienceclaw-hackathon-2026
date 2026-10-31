@@ -1,0 +1,39 @@
+{
+  "job_label": "collagen-fragment-pilot-20261031T093913Z",
+  "engine": "NVIDIA ALCHEMI Toolkit FIRE2",
+  "nim_service": false,
+  "model": "MACE-OFF23 medium",
+  "model_sha256": "4842c52ad210d6e1f84d6cf1ffa70fae25a7e0d755ed55cf223f43913f587db7",
+  "supported_atomic_numbers": [
+    1,
+    6,
+    7,
+    8,
+    9,
+    15,
+    16,
+    17,
+    35,
+    53
+  ],
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "cuda": "13.0",
+  "versions": {
+    "torch": "2.14.1+cu130",
+    "nvalchemi-toolkit": "0.3.0",
+    "nvalchemi-toolkit-ops": "0.5.0",
+    "mace-torch": "0.3.15",
+    "rdkit": "2024.9.6",
+    "ase": "3.24.0"
+  },
+  "started_unix": 1793439554.242599,
+  "fmax_target_eV_A": 0.02,
+  "max_steps": 1000,
+  "limits": [
+    "isolated neutral fragments",
+    "no solvent",
+    "no reactions",
+    "no tissue strength inference",
+    "no glucosepane/PYD/4-HNE simulation"
+  ]
+}

@@ -1,0 +1,10 @@
+'use strict';
+require('./run-guard.js').requireRun(__dirname,["data/audit.json"]);
+const fs=require('node:fs'),assert=require('node:assert/strict'),crypto=require('node:crypto'),M=require('./model.js'),D=require('./data/results.json');
+const hash=crypto.createHash('sha256').update(fs.readFileSync('model.js')).digest('hex');assert.equal(hash,D.modelHash);assert.equal(D.rows.length,450);assert.ok(D.rows.every(r=>r.valid));assert.ok(D.rows.filter(r=>r.group==='topology').every(r=>r.nodes===36&&r.edges===82&&Math.abs(r.volume-.06)<1e-8&&r.cycles===47));
+let reproducibilityError=0;
+for(const family of M.families){const stored=D.rows.find(r=>r.group==='topology'&&r.seed===17&&r.family===family&&r.mode==='tension'),fresh=M.simulate(M.build(family,17),'tension',{frames:false});reproducibilityError=Math.max(reproducibilityError,Math.abs(fresh.metrics.work-stored.work));assert.ok(Math.abs(fresh.metrics.work-stored.work)<1e-9);}
+const pulse=D.rows.filter(r=>r.group==='topology'&&r.mode==='pulse'),free=D.rows.filter(r=>r.group==='topology'&&r.mode==='free');
+const maxPulseRelativeEnergyError=Math.max(...pulse.map(r=>Math.abs(r.energyBalanceError/r.totalExternalWork)));assert.ok(maxPulseRelativeEnergyError<.001);assert.ok(free.every(r=>r.maxStrain<1e-9&&r.finalDamage===0&&r.work<1e-15));
+const report={date:'2026-10-31',runtime:process.version,modelHash:hash,totalRuns:D.rows.length,topologyRuns:280,quasistaticRuns:D.rows.filter(r=>!['pulse','free'].includes(r.mode)).length,invalidRuns:D.rows.filter(r=>!r.valid).length,maxResidual:Math.max(...D.rows.map(r=>r.maxResidual||0)),reproducibilityError,maxPulseRelativeEnergyError,maxFreeStrain:Math.max(...free.map(r=>r.maxStrain)),maxFreeInternalizedWork:Math.max(...free.map(r=>r.work)),checks:JSON.parse(fs.readFileSync('data/checks.json','utf8')),notes:['All comparisons refer to the hypothetical model.','Residual convergence does not imply global minimization or physical calibration.','Seven baseline tensile cases reproduced within stored rounding; no bitwise cross-runtime claim.']};
+fs.writeFileSync('data/audit.json',JSON.stringify(report,null,2));console.log(JSON.stringify(report,null,2));

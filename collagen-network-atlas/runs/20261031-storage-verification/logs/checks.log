@@ -1,0 +1,14 @@
+{
+  "passed": 9,
+  "checks": [
+    "fixed node/edge/volume budgets and connected graphs",
+    "analytic gradient versus central finite differences, including hinges",
+    "rotation and translation invariant internal energy",
+    "eigenvalues and unit capacity cut on analytic path",
+    "zero load is stress-free and equilibrium reduces energy",
+    "reaction equals finite difference of minimized energy",
+    "free acceleration is rigid translation without strain or rupture",
+    "rupture removes collagen and hinge stored energy irreversibly",
+    "deterministic seeded generation"
+  ]
+}

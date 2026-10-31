@@ -1,0 +1,29 @@
+{
+  "attempts": [
+    {
+      "run": "collagen-fragment-pilot-20261031T093655Z",
+      "container_id": "adb616a6105eb13308da44fcacd2f332b4a0679525f8b0195e6c79cc85825b8c",
+      "exit_code": 1,
+      "oom_killed": false,
+      "container_seconds": 38.346484
+    },
+    {
+      "run": "collagen-fragment-pilot-20261031T093913Z",
+      "container_id": "755d1fc83e4a2e5b59d13cbfc4c2ef0c54829f84dcfd1830888e835c507d2c8b",
+      "exit_code": 1,
+      "oom_killed": false,
+      "container_seconds": 20.221962
+    },
+    {
+      "run": "collagen-fragment-pilot-20261031T094052Z",
+      "container_id": "5b3d8e42702a11dd5b6dc31f0e7f9a13fcce83fdb3317e295e7cb687c7d3b57a",
+      "exit_code": 0,
+      "oom_killed": false,
+      "container_seconds": 40.796032
+    }
+  ],
+  "total_container_seconds": 99.36447799999999,
+  "container_compute_equivalent_USD": 0.149046717,
+  "rate_USD_per_hour": 5.4,
+  "provisioning_transfer_waiting_idle_and_storage_excluded": true
+}

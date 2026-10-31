@@ -1,0 +1,82 @@
+{
+  "HLNL": {
+    "refitted_k_eV_A2": 1.5776684562551115,
+    "recomputed_peak_slope_eV_A": 1.2847857490736525,
+    "k_reproduced": true,
+    "peak_reproduced": true,
+    "normalization_reproduced": true,
+    "minimum_grid_index": 16,
+    "minimum_at_boundary": false,
+    "negative_curvature": false
+  },
+  "pyridinoline": {
+    "refitted_k_eV_A2": 0.09684601439455534,
+    "recomputed_peak_slope_eV_A": 0.2104329608159869,
+    "k_reproduced": true,
+    "peak_reproduced": true,
+    "normalization_reproduced": true,
+    "minimum_grid_index": 3,
+    "minimum_at_boundary": false,
+    "negative_curvature": false
+  },
+  "pentosidine": {
+    "refitted_k_eV_A2": 0.05110075343128537,
+    "recomputed_peak_slope_eV_A": 0.32996102419896256,
+    "k_reproduced": true,
+    "peak_reproduced": true,
+    "normalization_reproduced": true,
+    "minimum_grid_index": 4,
+    "minimum_at_boundary": false,
+    "negative_curvature": false
+  },
+  "glucosepane": {
+    "refitted_k_eV_A2": 0.10068034665990402,
+    "recomputed_peak_slope_eV_A": 0.9538538355157486,
+    "k_reproduced": true,
+    "peak_reproduced": true,
+    "normalization_reproduced": true,
+    "minimum_grid_index": 5,
+    "minimum_at_boundary": false,
+    "negative_curvature": false
+  },
+  "dityrosine": {
+    "refitted_k_eV_A2": 0.4173554525931476,
+    "recomputed_peak_slope_eV_A": 1.5212073560794135,
+    "k_reproduced": true,
+    "peak_reproduced": true,
+    "normalization_reproduced": true,
+    "minimum_grid_index": 3,
+    "minimum_at_boundary": false,
+    "negative_curvature": false
+  },
+  "disulfide": {
+    "refitted_k_eV_A2": 0.2082098567202732,
+    "recomputed_peak_slope_eV_A": 0.13388727894525404,
+    "k_reproduced": true,
+    "peak_reproduced": true,
+    "normalization_reproduced": true,
+    "minimum_grid_index": 4,
+    "minimum_at_boundary": false,
+    "negative_curvature": false
+  },
+  "isopeptide_TG2": {
+    "refitted_k_eV_A2": 0.058374554882017725,
+    "recomputed_peak_slope_eV_A": 0.20545237327367005,
+    "k_reproduced": true,
+    "peak_reproduced": true,
+    "normalization_reproduced": true,
+    "minimum_grid_index": 5,
+    "minimum_at_boundary": false,
+    "negative_curvature": false
+  },
+  "sulfilimine": {
+    "refitted_k_eV_A2": 0.05855223468639745,
+    "recomputed_peak_slope_eV_A": 0.38186199058130144,
+    "k_reproduced": true,
+    "peak_reproduced": true,
+    "normalization_reproduced": true,
+    "minimum_grid_index": 0,
+    "minimum_at_boundary": true,
+    "negative_curvature": false
+  }
+}

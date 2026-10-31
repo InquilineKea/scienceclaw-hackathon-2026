@@ -1,0 +1,8 @@
+{
+  "observed_utc": "2026-10-31T09:53:34Z",
+  "existing_container": "a764482e2959",
+  "mace_off_result_retrieved": true,
+  "mace_mp_result_present": false,
+  "claim": "Pre-existing work, not newly executed by this task. Local legacy scripts saved as inspected reference; exact executable source hash for the old run is not established.",
+  "scientific_status": "Proxy fragment results; not accepted as tissue mechanical parameters."
+}

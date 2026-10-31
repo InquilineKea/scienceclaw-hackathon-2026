@@ -1,0 +1,1954 @@
+{
+  "createdAt": "2026-10-31T12:54:28.640114+00:00",
+  "scope": "Files added or updated by the completed collagen archival upload; manifest excludes itself.",
+  "files": {
+    "ARCHIVE_INDEX.md": {
+      "bytes": 3977,
+      "sha256": "67ab53790483b9ff570f5288355d912ee8f7b636d0a977d49f3ffdbec81415f5"
+    },
+    "ARCHIVE_PROVENANCE.json": {
+      "bytes": 188852,
+      "sha256": "b8b3d61c0f0e0838ee99d067d74b2e643a5b83dcb4500ebd42855d19ab910d1d"
+    },
+    "ARCHIVE_VALIDATION.json": {
+      "bytes": 1565,
+      "sha256": "a447e48778d4ed605cd30804bfab8333cbebe2a6aa7c4e9376a2fe2309a3ed28"
+    },
+    "README.md": {
+      "bytes": 5057,
+      "sha256": "4b53410c1670c41db28e97906354f838fd7da32b4c6e93b60704ef8430dafb0a"
+    },
+    "archives/2026-10-31/README.md": {
+      "bytes": 1132,
+      "sha256": "2e195c5c23a38c61fc783aa1a4279318d07a4e569f1cd99f2936a233ead3f001"
+    },
+    "archives/2026-10-31/collagen-mechanics-explorer-with-brev-evidence.zip": {
+      "bytes": 2057137,
+      "sha256": "21d0d6acd9ee0c035d7c9a9ed6dadb707e1892392053adf4217a58f2c69329ce"
+    },
+    "archives/2026-10-31/collagen-pilot-results.zip": {
+      "bytes": 7251202,
+      "sha256": "d0aa9885504bb129bd3f3e9afa5e23fd360ec64bdfabb9563acb1694ef649556"
+    },
+    "archives/2026-10-31/fracture-atlas-complete.zip": {
+      "bytes": 10239026,
+      "sha256": "29cc630d7d9b559877451320be7c52f1fb7d1cb3be38ff7cc451a0fec9339a94"
+    },
+    "archives/2026-10-31/fracture-atlas-data-source.zip": {
+      "bytes": 3613252,
+      "sha256": "a49532c00e6a881d5daf0d30119183eec1239cb6049c8123ab2bd9bc191c3011"
+    },
+    "archives/2026-10-31/fracture-atlas-frozen-20261031.zip": {
+      "bytes": 14744379,
+      "sha256": "e98c40a539a592ef6873c225a27e6e8622e5e1ca37beacc1c6339f3e85ca5ccf"
+    },
+    "archives/2026-10-31/public-scienceclaw-collagen-results-complete.zip": {
+      "bytes": 669506,
+      "sha256": "858dc8af54880beea10e507f504304707c7c5270bf0ae20f8042320918d3582a"
+    },
+    "collagen-molecular-pilot/.gitignore": {
+      "bytes": 30,
+      "sha256": "e8773aaf6a7e7e3eb6bce23ce3ea0486ba3cb6f3e01946cea9fbee1b7c0cd274"
+    },
+    "collagen-molecular-pilot/README.md": {
+      "bytes": 2181,
+      "sha256": "0eb8f265ffea1c2b012fdb80ea6701a1f523e47c3a03216147d43e5c47735b11"
+    },
+    "collagen-molecular-pilot/SECURITY_REVIEW.md": {
+      "bytes": 9434,
+      "sha256": "aee8c9f827330a1302d568ccf66f126b070e0a6f990f5a18d2d1732ecc93e901"
+    },
+    "collagen-molecular-pilot/pilot.py": {
+      "bytes": 12837,
+      "sha256": "9258d163b0abc6fea2328c7cadbba82f25d0ff2729099fc00039fdfff204d1bb"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/execution.json": {
+      "bytes": 271,
+      "sha256": "e24d0afad72bd3ba7efd99526dca3404230d833a37835e4f7212724d6ba6057d"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/aminoacids.arn": {
+      "bytes": 2591,
+      "sha256": "45cadf54d614d57bdc56680baed016347a61e2f54c7fffe86767d622c82da35b"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/aminoacids.c.tdb": {
+      "bytes": 10,
+      "sha256": "30dd9f50e9d411f1875ee9e62ce8b2872c9c6d5a2c33a26227309e78c453caff"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/aminoacids.hdb": {
+      "bytes": 8884,
+      "sha256": "dbbf077e6daa84e39717586dcd625c2b7cb4b07c3123778fdc50c7223ab3459d"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/aminoacids.n.tdb": {
+      "bytes": 10,
+      "sha256": "30dd9f50e9d411f1875ee9e62ce8b2872c9c6d5a2c33a26227309e78c453caff"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/aminoacids.r2b": {
+      "bytes": 849,
+      "sha256": "594c8d2d7335369e4715cd12a8526d8ec6db4a2c73cc7ae7f343daf8375aa994"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/aminoacids.rtp": {
+      "bytes": 85701,
+      "sha256": "d031eb9706ab0858a58fed876ecbf0fa58007214814551fed98cf4dffa24a017"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/aminoacids.vsd": {
+      "bytes": 5207,
+      "sha256": "637827cb6ee5615d56dd5ad53d105089f47ca9fbad5a6cd3f39874323221bf92"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/atomtypes.atp": {
+      "bytes": 3750,
+      "sha256": "6acc0dc03db15b21f3cf2ded8307ad4198a3a1a6b4f5b4a384c451c0a1bca266"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/dna.arn": {
+      "bytes": 116,
+      "sha256": "7d4060fa38daf653cb1d91bb62e322113208c084c5a9dda86e44e3e72746230e"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/dna.hdb": {
+      "bytes": 3104,
+      "sha256": "e0b03f8000e1969a0b266b42271de2a2cef2c4be5e0a541f83fab64fd9f04172"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/dna.r2b": {
+      "bytes": 145,
+      "sha256": "fbec89b6f1b8ff4f31d1956d54d2b00bbf20dc52664effe344df066ff2537905"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/dna.rtp": {
+      "bytes": 30306,
+      "sha256": "e9f3a329876a6ebc884dfa98c2e18ef93bb0f792d03fc832bd5457f869313b10"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/ffbonded.itp": {
+      "bytes": 35971,
+      "sha256": "9875fb0c4a5c4b05948ee9b73b5b88c5bde4e9fe1c24a1ad257cc2a1fda37fac"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/ffnonbonded.itp": {
+      "bytes": 4580,
+      "sha256": "4c712502e6bd0d96b4aa5400b63f9d24c3768c805850df7f1065807aa0d9c5ce"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/forcefield.doc": {
+      "bytes": 718,
+      "sha256": "8150eb1425bd194fc9700bbc0f609932c0b35ccaf91358a9ef887002d56daad7"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/forcefield.itp": {
+      "bytes": 929,
+      "sha256": "605a1fd9cdb4abde32531c58b5502c7147c17173d6a5b943b6d26182c447401c"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/ions.itp": {
+      "bytes": 2164,
+      "sha256": "d6cbb4aeb3389fd15c981bdbff335c32ccbfe887ef004e0b7119d6da813cb098"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/rna.arn": {
+      "bytes": 116,
+      "sha256": "facaec3626144bd3939e7c8dae4414c9c7fbbb45841e71453fd609ec6872737b"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/rna.hdb": {
+      "bytes": 4104,
+      "sha256": "db938616259c0fe730a8831f1c782f8573a93c03596f16def07f39bb8e79623f"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/rna.r2b": {
+      "bytes": 145,
+      "sha256": "ec41f5bbc4fd9be5b65215f3d587b6f32832088c3f250335a965e66a0a6332cf"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/rna.rtp": {
+      "bytes": 30510,
+      "sha256": "dd504cf035a410326b2481de69da1689188daecbba578228b824d7e9dca07830"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/spc.itp": {
+      "bytes": 746,
+      "sha256": "9031c25f6b9ed49f0d2f22d0b3747fdb7cb385b27c6e7e78a9f0c0803a981c91"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/spce.itp": {
+      "bytes": 746,
+      "sha256": "7aed1c2af7236f422e60c7ef9fcc637d14c16492fea5bcff876a08414a421105"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/tip3p.itp": {
+      "bytes": 802,
+      "sha256": "c3eeb41bd1840248b0da6070e40bc8229a94d253830a1f392542f329d1ff386b"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/tip4p.itp": {
+      "bytes": 1261,
+      "sha256": "764abe1a3085cfbd20ab1ad0bb89f3d983834c1e65568d25c8288d6ff8f42c2f"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/tip4pew.itp": {
+      "bytes": 1317,
+      "sha256": "805e679a542d1c5d7d461e291bda4f4507249b0cd41ec87436dc589d93e4d22a"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/tip5p.itp": {
+      "bytes": 2108,
+      "sha256": "35d78616a55a6ffefb3ddb9191638045b76dd8e72e61d911074af9c5c02aa4d9"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/urea.itp": {
+      "bytes": 1250,
+      "sha256": "3301745b840423447afc73827121717f4903f81e45156fb2b62e0e4e3af4f5ea"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/forcefield-used/amber99sb-ildn.ff/watermodels.dat": {
+      "bytes": 311,
+      "sha256": "71182f700ba0f197a4bc8d9c7d8ca1f7c4ff8837d29a7d3dc757ffcf005b2aba"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/inputs/collagen_ppg9.pdb": {
+      "bytes": 39677,
+      "sha256": "b592e2b212f24efafe0f2014c78e5db5633ed7b84a826c6901d7833f1cc7a0ee"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/mdp/em.mdp": {
+      "bytes": 335,
+      "sha256": "b33cd7c914da1bb2a2be7fc1a90af4c713a3235e100ee9d0f55473e08e66cc10"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/mdp/npt.mdp": {
+      "bytes": 648,
+      "sha256": "c05aa5f028adec8b32843ce79bdd39141042a387058b41701bf167bdf663d912"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/mdp/nvt.mdp": {
+      "bytes": 584,
+      "sha256": "8a1e4fc285d9dc17987f8d949f641cc16c3999f77f91df66250046bd7c13c9d3"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/mdp/sample.mdp": {
+      "bytes": 614,
+      "sha256": "092bfb5860a8d9feabd469b5ca4422d8498350269febfeff2b22223670bd9eb2"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/output-sha256.json": {
+      "bytes": 13355,
+      "sha256": "d7fa13c3e29fa82cd4f39d8d17952ed935f97c68356e3ade7e82f329096e6c13"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/pilot-console.log": {
+      "bytes": 649,
+      "sha256": "f535819b39ede7391e58bbfcf14536cd748a64b89cb4203104c8207028a3b132"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/run_baseline.sh": {
+      "bytes": 3599,
+      "sha256": "d6780d125fbf6b3cf595bc243f75bf36cc870df70e914e4532c10ec68b95722d"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/run_smoke.sh": {
+      "bytes": 2284,
+      "sha256": "9b5fd12fdee3eb712b31c6ea85661b9c81eaff5deef8f72debf0c1a0690dee70"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/actual.mdp": {
+      "bytes": 10948,
+      "sha256": "942f1f2cdd8e5c8c359b4e7920b3a3b95c78db836a895463ac178b64814d2cc8"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/argon.cpt": {
+      "bytes": 1096,
+      "sha256": "0872377afbf04c2d7776b3ba2fc30258f63d1fbad1155107330d922efdac5e83"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/argon.edr": {
+      "bytes": 2620,
+      "sha256": "4423b16f85b1e33cc14b6595a215ef09570d2cadb5ff07897fa75e7b5d91327b"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/argon.gro": {
+      "bytes": 345,
+      "sha256": "9f50203d5c56879593c2a9cd806ea7731ef970e64930592d24aa75a7f3adc124"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/argon.log": {
+      "bytes": 23181,
+      "sha256": "7b9a572eb647ae30d84dce37514cd9a3ab583b66c525592981db9760246d8456"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/argon.mdp": {
+      "bytes": 317,
+      "sha256": "8b926220de3bbe1f7f957dcb59f8e4678b5c02d9e1a8732a3b2aacebd5577b38"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/argon.top": {
+      "bytes": 197,
+      "sha256": "e68637e980cb62e8d39df6d4d5f1f955341da3c1eadeeb10186d16c505fe2ac7"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/argon.tpr": {
+      "bytes": 3344,
+      "sha256": "fbce6722d264306f8656abe5a996b8dab03df8e63830c1add89aec6b0456629f"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/argon.xtc": {
+      "bytes": 1144,
+      "sha256": "cf068424032806554582e164e2dd1d1b482b07167d12743694ead039a2db4b36"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/console.log": {
+      "bytes": 1142,
+      "sha256": "2894a5dfe5b24b542deffe1b160dfc9f36e67086189a8392f33b573b4247178d"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/energy-summary.txt": {
+      "bytes": 2111,
+      "sha256": "2195570fd2eb4645a1f4b5f48fa070757193789c0add7187e790a3555c36651f"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/energy.xvg": {
+      "bytes": 916,
+      "sha256": "587aca7d3101cf693d40bbfe43abaed0d9874affa96985e46cb233229ba75124"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/grompp.log": {
+      "bytes": 1545,
+      "sha256": "16cd5247cac8f792710c4fc7c52544876c92e4a53098956126c470bef0751543"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/processed.top": {
+      "bytes": 197,
+      "sha256": "e68637e980cb62e8d39df6d4d5f1f955341da3c1eadeeb10186d16c505fe2ac7"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/trajectory-check.txt": {
+      "bytes": 1013,
+      "sha256": "d9acbefae360b51f0f592a907e126bfb4486aa46926b4481749115e6b8df6193"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/argon/verification.json": {
+      "bytes": 118,
+      "sha256": "10db985fad715b1443789d03ae1c847154283ba71db02538a14d22319b333fb7"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/backbone-rmsd.xvg": {
+      "bytes": 1108,
+      "sha256": "7bf6ceaec1be0c609d8e03b9261caa8c13874dff12f92dcb9810f052774bc7fc"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/boxed.gro": {
+      "bytes": 43024,
+      "sha256": "f1b2aafb7a4de75e08dd85f8e1eb153cdcc3db468b0a615ba27ec169133a818c"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/editconf.log": {
+      "bytes": 1014,
+      "sha256": "c81157ebe70b4923267e072c640c69dd76a65838cc4cb7a5f3ff0e0db9f78058"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.actual.mdp": {
+      "bytes": 10978,
+      "sha256": "c50cc193bea93cbe1e2c349ff573adfe02d74bc6b7a9f16caf42ad2085b120a5"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.console.log": {
+      "bytes": 1114,
+      "sha256": "09bea2fe9ea3f0a585d7ac3ef3ee15f427dd1a6eb478fcbcac5e8f0f1ad6e841"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.edr": {
+      "bytes": 40544,
+      "sha256": "b18b429f68f30404fee370d0478514bd95abfc9aea689ba7e9328de83bc60f71"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.gro": {
+      "bytes": 617004,
+      "sha256": "9296a53ada7077e18a3c7a38feac5b70929ae4e606f42e89d419c17e73a3745d"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.grompp.log": {
+      "bytes": 1588,
+      "sha256": "c326f49df259783967fcaa9e060571a496218be3dbc4470123eaef7ea9d7aac8"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.log": {
+      "bytes": 119657,
+      "sha256": "0000dbf3352610bc2cf45da8dc698e7a48d37ca6a4488d05226e6a3eb7a8b255"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.mdp": {
+      "bytes": 335,
+      "sha256": "b33cd7c914da1bb2a2be7fc1a90af4c713a3235e100ee9d0f55473e08e66cc10"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.processed.top": {
+      "bytes": 336158,
+      "sha256": "d7793cbf05d0a5011ec8565915076d4b614b844fe6ae0427bf765457f1d7671e"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.tpr": {
+      "bytes": 416276,
+      "sha256": "1015320651fc75fb5856fbc95b80b519ad876d76576ebb765970c61fd3342979"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/em.trr": {
+      "bytes": 164640,
+      "sha256": "3bc4d702b2dea082da291887605176d3d43c3e368ca348650ba7ce5d3c8d2949"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/energy-summary.txt": {
+      "bytes": 4154,
+      "sha256": "f9ea8aef40e486b4bcc8832b3bdf63d1447df0cec8f969659243fa03c5359758"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/gpu.txt": {
+      "bytes": 76,
+      "sha256": "39ec9a09c9ea8b881d40b40bb49c4f165e2d1d82632db111cb584f72ad724869"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/gromacs-binary.sha256": {
+      "bytes": 87,
+      "sha256": "b3d368e10616aea2ccca14686559e425f9d67e3a57e7ff8952b9c137a9fba03a"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/gromacs-version.txt": {
+      "bytes": 1514,
+      "sha256": "e03788c7ca6e5435f46f91469b50bfe6f7cf16e739a3e85cf23b17a6517bea28"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/input.pdb": {
+      "bytes": 39677,
+      "sha256": "b592e2b212f24efafe0f2014c78e5db5633ed7b84a826c6901d7833f1cc7a0ee"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.actual.mdp": {
+      "bytes": 11052,
+      "sha256": "f7734016e6ef49e25967108289b3fbbf2356eec45f917cfaca61c3c875b143c1"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.console.log": {
+      "bytes": 1356,
+      "sha256": "8c2a63714be162e4428ea733addd6a19c5b8a94d2bd5347a636d8d21536cbbcd"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.cpt": {
+      "bytes": 330264,
+      "sha256": "2bb064e3439ceed8da1f1b1f8fd64f9bb154b98002b84cecae49c5bd4df631ac"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.edr": {
+      "bytes": 53388,
+      "sha256": "76c619408b4f3759750eecb53b5d1eedad088858ba9fd711ed12c2b05e433d26"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.gro": {
+      "bytes": 946044,
+      "sha256": "c4a8c7786f3b6cd53ccca84f1d699cacf23e8ddcbfa55e6fbc5d500eb6356c07"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.grompp.log": {
+      "bytes": 2541,
+      "sha256": "f43fad568ff5e91fb36670d645986186ba743e65ad8c6a451934ffcd25c7d369"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.log": {
+      "bytes": 160226,
+      "sha256": "9731bef9e6eff9381b35773d5b363d04ccc56c71510815209c3c6ba337f8c18a"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.mdp": {
+      "bytes": 648,
+      "sha256": "c05aa5f028adec8b32843ce79bdd39141042a387058b41701bf167bdf663d912"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.processed.top": {
+      "bytes": 352136,
+      "sha256": "e8047ed04ae3f776d3d68e56ceb1b4da60ea1a7e48173d8b9a1ec5f206ce0632"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.tpr": {
+      "bytes": 633056,
+      "sha256": "d047dd9a5d897ca3886dd5084dc4698e718f25c168d2c8b3305d1f7bdd6e44b4"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/npt.xtc": {
+      "bytes": 1049708,
+      "sha256": "e15220d72bb8056c887cda306c22114e565df615131f39abca55b64345e8b4f7"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.actual.mdp": {
+      "bytes": 11018,
+      "sha256": "98ac8f0c156f478b89e397d9b119063295ef10c0acb0e841600c059d420e50b9"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.console.log": {
+      "bytes": 1609,
+      "sha256": "ed05b8bd97f1119e09022e22f9fedda7456015600789b7dd3966d4755874c4b4"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.cpt": {
+      "bytes": 330148,
+      "sha256": "561347167b549414804243eec42de7a742c812a1760989363d3735768e27ab31"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.edr": {
+      "bytes": 24412,
+      "sha256": "30df43407106100d8d3f6af3a971f8701d1f239c5a54959f3ef7c1fec400c07b"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.gro": {
+      "bytes": 946044,
+      "sha256": "4120898b0461b229ca98fae863480a3d61747d5b5f5d5ab5e1a3b026f8212a0d"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.grompp.log": {
+      "bytes": 2080,
+      "sha256": "8a16ee4a85aa7ad43e774d0d360215b254d6e5845a5bf4dc215d3a6c7bf5de75"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.log": {
+      "bytes": 92757,
+      "sha256": "2e880a81f271cf6551f77362447354b6bb9390b9b910bf007e2111c15477f954"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.mdp": {
+      "bytes": 584,
+      "sha256": "8a1e4fc285d9dc17987f8d949f641cc16c3999f77f91df66250046bd7c13c9d3"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.processed.top": {
+      "bytes": 352136,
+      "sha256": "e8047ed04ae3f776d3d68e56ceb1b4da60ea1a7e48173d8b9a1ec5f206ce0632"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.tpr": {
+      "bytes": 633032,
+      "sha256": "0977325bc00b1c8f2faa27163aad92c8464c3c4427e80ad0679ff4468e80ba0f"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/nvt.xtc": {
+      "bytes": 550576,
+      "sha256": "5eea214a19564639cdae3eb1f7cd8be889aa816cac7e73261e0685fbc22de6e0"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/pdb2gmx.log": {
+      "bytes": 5470,
+      "sha256": "d1622c8c9cf3a105a8d15a614cc2da8f5ddb96f9b887f0e4a0f35e8278dbb9ea"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/posre_Protein_chain_A.itp": {
+      "bytes": 5326,
+      "sha256": "ac2fe0237198645c93f0bd98379ec3ea887e1d66965784656b23a3677a78345e"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/posre_Protein_chain_B.itp": {
+      "bytes": 5326,
+      "sha256": "ac2fe0237198645c93f0bd98379ec3ea887e1d66965784656b23a3677a78345e"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/posre_Protein_chain_C.itp": {
+      "bytes": 5326,
+      "sha256": "ac2fe0237198645c93f0bd98379ec3ea887e1d66965784656b23a3677a78345e"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/processed.gro": {
+      "bytes": 43024,
+      "sha256": "fa215c247c1c266e84821700599684cfc4ef6ad813605df38fb8894a0b9d9703"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/rmsd-analysis.txt": {
+      "bytes": 2940,
+      "sha256": "b91a92891d0be0679a6b7aaf6f683d80fcf38e0f1a0b5915ff1d0049c842f58e"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample-energy.xvg": {
+      "bytes": 14063,
+      "sha256": "9b6947891338fc7f2c12550e3e7d3c712ee0f42969a49cd79bb9c42a2eff6bfe"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.actual.mdp": {
+      "bytes": 11050,
+      "sha256": "cc6a75027acb84d5d6dd2d3d8e6ad8865d9e9fcf6d570eea7857b974f4afdb6f"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.console.log": {
+      "bytes": 1372,
+      "sha256": "11adda9ccab2d93a9cd78ab2fa31832f6f1666e4cfa57690770de38a96a436bf"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.cpt": {
+      "bytes": 330268,
+      "sha256": "172ea8f1c60d3d5440efc64d74290d83051eaff2aaf226627adb9af605d90f25"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.edr": {
+      "bytes": 52552,
+      "sha256": "78087b6427a9fee1f9a20bddae31dc7eba555d68d8bdb1a46626f09189a733ad"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.gro": {
+      "bytes": 946044,
+      "sha256": "af8d9c44c133c65ecea2f6e2e5c472ea9cf114a40fd7f2e360e2424287dcc762"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.grompp.log": {
+      "bytes": 1967,
+      "sha256": "9ff95167ceb61614d462e453f339eae88309ff71a732b525e3e621cef9cc2ef5"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.log": {
+      "bytes": 153681,
+      "sha256": "cee60e4ba464a25f088a104a92ecb9c03f08ba413b0ec08ab67ffc6d434079d7"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.mdp": {
+      "bytes": 614,
+      "sha256": "092bfb5860a8d9feabd469b5ca4422d8498350269febfeff2b22223670bd9eb2"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.processed.top": {
+      "bytes": 336158,
+      "sha256": "d7793cbf05d0a5011ec8565915076d4b614b844fe6ae0427bf765457f1d7671e"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.tpr": {
+      "bytes": 580796,
+      "sha256": "761a5630d2e40e328fc33c142d0b4ac753b8c28641cfdd041fa2358e4fbe7fa2"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.tpr.txt": {
+      "bytes": 2287429,
+      "sha256": "5f57310192f271ccc08c471ee4e6c68a01e583e3c78eec2138f0f13901afd3e7"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/sample.xtc": {
+      "bytes": 1041724,
+      "sha256": "a46bcda1a85a4f1d772a4838c26aad26c1f7e9ce969863ad57b5d2112017faff"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/solvate.log": {
+      "bytes": 2078,
+      "sha256": "e74c860e81b5693325cf66cda00b50dc19599850b3f9f26aa8975f5da583622e"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/solvated.gro": {
+      "bytes": 617044,
+      "sha256": "e984d4c16f5e81de6fb50c8718d889311ed3e7b2ee057f56c72eabd10e2c40b2"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/topol.top": {
+      "bytes": 1283,
+      "sha256": "ea14414d66c0b2f0a2cf3b37e7fd3ee58efcd66af063dc2e55759fc2737cbb5e"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/topol_Protein_chain_A.itp": {
+      "bytes": 98175,
+      "sha256": "2b9549cc666269de7e47022bb20de024c93203186e3911e7257acf1b47a5d7c4"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/topol_Protein_chain_B.itp": {
+      "bytes": 98175,
+      "sha256": "33d20b7dc1551ccfae79da766da63c4771aaafd540082dd084fc4a009349a22b"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/topol_Protein_chain_C.itp": {
+      "bytes": 98175,
+      "sha256": "76611290e85a4e69f912cb8b52d43f61587f1ac9a8752468ad99d5e589b85bb7"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/trajectory-check.txt": {
+      "bytes": 1417,
+      "sha256": "e91f113524301883b2c96f73a51eade751f4ac8f0459e42807912f3fb5052b2a"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/runs/ppg9-gpu-seed104729/verification.json": {
+      "bytes": 6338,
+      "sha256": "5228cb49139bc785b86bef81f2cadbb7368a7bf7019bdf1f7c11c33ae56e7080"
+    },
+    "collagen-molecular-pilot/prior-gromacs/20261031-ppg9-seed104729/verify_run.py": {
+      "bytes": 2816,
+      "sha256": "f278dce054674d956fdc3a2342b4d48749ee245d1cbde1026560a569a2f18d28"
+    },
+    "collagen-molecular-pilot/restore_reviewed_environment.sh": {
+      "bytes": 1587,
+      "sha256": "bc11d5cbc73c5b2a7a03dba71c2fb8a97b7251f3c320b8f3d9b4f4d9625341ba"
+    },
+    "collagen-molecular-pilot/reviewed-environment.sha256": {
+      "bytes": 94,
+      "sha256": "56c9567770379ea42c2662686f9b4534563b607d1a14870f6090abfd1f32a765"
+    },
+    "collagen-molecular-pilot/run_pilot.sh": {
+      "bytes": 2846,
+      "sha256": "dbdc34db071bede28d732638b63bb078ebd8ffc0421bc5932ddf56e6c35deb3e"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/FROZEN_MANIFEST.json": {
+      "bytes": 27829,
+      "sha256": "e670da2f81d5858c53ef25b1b32043000145dc1403bf20cceed97a32e2d93c08"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/LATEST_README.md": {
+      "bytes": 712,
+      "sha256": "fd678f6f295ddf6c6e8abb9f3d98d54dc682f4e237135c5378c6b0f3651db6f7"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/PUBLIC_MANIFEST.json": {
+      "bytes": 17755,
+      "sha256": "3505dda1ce1e449d67b463de8963246127e0ca32e43176bb791ea633c5793abf"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/README.md": {
+      "bytes": 1772,
+      "sha256": "fb22847baaabf9154a2297c6e5fe9d95d2075fd972fb558940fc438471dc2d80"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/REPORT.md": {
+      "bytes": 8560,
+      "sha256": "e83fd94d08ebee54181bfce94c9933e1e521701519dca22c82cc483efdb000be"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/SECURITY_REVIEW.md": {
+      "bytes": 9434,
+      "sha256": "aee8c9f827330a1302d568ccf66f126b070e0a6f990f5a18d2d1732ecc93e901"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/attempts.json": {
+      "bytes": 955,
+      "sha256": "d2b3de62953744595be139e1c502b41047cdb6c20841324cdd34072ac27d6f8c"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/cost_estimate.json": {
+      "bytes": 287,
+      "sha256": "0fcb3724c98f6ded5b124060c48d995a1dedaec8950215db073cbd8c4bf474ef"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/evidence/existing_crosslink_params.json": {
+      "bytes": 11941,
+      "sha256": "1a70cba1d906cf426aa30e4877b23e51810cb519f7eefd76a4c866b4d8d968f8"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/evidence/existing_environment_freeze.txt": {
+      "bytes": 2790,
+      "sha256": "64c65792047c2c927675b8f7f17393be14fd8b83f6a1ac62cc29282875fd7405"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/evidence/existing_gag_result.json": {
+      "bytes": 6444,
+      "sha256": "9bc071ed3ab25be9472bb476222e27cf02f60c8eff8617a7cea2e270d08c9864"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/evidence/existing_job_console.log": {
+      "bytes": 4275,
+      "sha256": "c72940b7568ddf58d12cdbb58b98729b32b1cf12cec8d8f8ea900a9f9bb97eb1"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/evidence/inspected_legacy_alchemi_collagen_gag.py": {
+      "bytes": 8954,
+      "sha256": "f3a7b2362bde7a68beb57bb36581df930593b5dce7e910733ff3be190f8186d3"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/evidence/inspected_legacy_alchemi_crosslinks.py": {
+      "bytes": 12097,
+      "sha256": "4cdae0d85d4b718f6669bfe31afafe01c88671a9fa42b813b41fef4c8ee248bc"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/evidence/legacy_final_observation.json": {
+      "bytes": 435,
+      "sha256": "c79d53703b70a758ae1ebc20f89d55eca3c306c1aba8573bb3e8b6bc0791d9df"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/evidence/static_review_verification.json": {
+      "bytes": 905,
+      "sha256": "c699b358c85c6b7d26484e568ebfff21ba14a2ae947c51ff498b2fe5c88f6067"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/explorer_evidence_panel.py": {
+      "bytes": 2544,
+      "sha256": "fdbfb87094125c3bce08dc1ca8a7e7ee9d87f93a98e5e67f74972f0783e29d51"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/figures/collagen-pipeline-evidence-diagram.png": {
+      "bytes": 191761,
+      "sha256": "f323e2e16601281696c8288fd4016a08fed995a420511ea3f55926b57134ee2f"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/figures/mace-off-vs-mp-curvature.png": {
+      "bytes": 178457,
+      "sha256": "d0c643517ac3141d8df69833ee4c653e0fa80940c352d9c77e76963821c9e6d5"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/figures/mace-off-vs-mp-energy-curves.png": {
+      "bytes": 264259,
+      "sha256": "ebeabf19e949ea2328f1abb529aed6eb3959265763a7826ae2ce73f718a186b9"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/figures/wordpress-media.json": {
+      "bytes": 7999,
+      "sha256": "53c3cf0315cc695566d7d6e710fa314b6d0f8165016f5ad93debe826df08654c"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/capped_glycine_seed17_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "6dc45c339c04ef97cafc7746db3b24cfd700243c8f5128e48c3e2453b0433819"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/capped_glycine_seed29_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "bba2021daaebae1d92961364bca7fd63459a6d32da31aa42c449f426958834c4"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/console.log": {
+      "bytes": 6419,
+      "sha256": "48bba5626812edae3540dadde487ab588a521d54b3e30b869677ba2d4656c218"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/container-execution.txt": {
+      "bytes": 135,
+      "sha256": "6f0fcddd5629b5630b15c8c605ef323e953dd8eb17e286776ed1184c7643abeb"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/dityrosine_biaryl_core_seed17_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "2bb7b05f5f3a820653c22085c67411b0ae4ac71e28ba7f37dc11bc10786b79c1"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/dityrosine_biaryl_core_seed29_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "0ba3cd48826f502998f60774244343b91b2c348836f84b81e53cf12bb89b5295"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/exit-code.txt": {
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/finished.txt": {
+      "bytes": 21,
+      "sha256": "2d338440d51c5bf0a6e8a7d79320bcf3ac99009f0ece6d6284da2b0d45f6583d"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/gpu-after.csv": {
+      "bytes": 79,
+      "sha256": "611d5f5061e52ca7cb45323d75236b09d864fefbb2313eb19de1178aa94ab5be"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/gpu-before.csv": {
+      "bytes": 138,
+      "sha256": "fe2b306b3eaf38f85433ed45fa3dc5a16110faae350e0e8c70732bf98cd79348"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/isopeptide_amide_motif_seed17_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "2ffff4ba50e882350a726b4d0972f49815fac430d619ccb275fe2caf5ef78502"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/isopeptide_amide_motif_seed29_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "fbdfa643b02bf8d259b80beed0be6475e2c8702de1b16972119a61020e781d72"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/job-label.txt": {
+      "bytes": 41,
+      "sha256": "524d13c523e241d35d66fa1cb023789049e045bd48d501f951fb706df14c3175"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/nim_request.json": {
+      "bytes": 14872,
+      "sha256": "3215837dcca9758826c1683abe8fe81933ca5e30d1b45167df21e3393a7ff188"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/peptide_bond_control_seed17_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "dc8fc21c427ae8b99bce2837e157b1d6eb233844ff0d5d0d3399ff3f3e1ec78a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/peptide_bond_control_seed29_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "b19ad10faa786f2761f0ab78d294c825c73527814a227a793a97d0064a40cb8c"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/provenance.json": {
+      "bytes": 862,
+      "sha256": "6073734fc5bc02e350a06d4ff2d70ecab40426dff01c0f9e1180739cb0140073"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/scheduling.txt": {
+      "bytes": 27,
+      "sha256": "836a65f6aa52e293daec0a610778f0931579ac2563e4e1b962e87777710d9bee"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/started.txt": {
+      "bytes": 21,
+      "sha256": "93b1aabbea21ef024ddd3ae5e5e8361e31bd1dab09312396aca2ea8cc05132f1"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093655Z/structures.json": {
+      "bytes": 26868,
+      "sha256": "e2676d6f586e47b8b9399f1db15a6013c87940e40b2e2861d0f8d0687b6b239e"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/capped_glycine_seed17_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "6dc45c339c04ef97cafc7746db3b24cfd700243c8f5128e48c3e2453b0433819"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/capped_glycine_seed29_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "bba2021daaebae1d92961364bca7fd63459a6d32da31aa42c449f426958834c4"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/console.log": {
+      "bytes": 7873,
+      "sha256": "57ace57535c42dc48fefc8822d9d68a96a2b51fb223c3673b267566e890c5a53"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/container-execution.txt": {
+      "bytes": 135,
+      "sha256": "0a03cfb763c294c6721112c1cfcd46e54a81a826fda09db7844d43d4c661dc5d"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/dityrosine_biaryl_core_seed17_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "2bb7b05f5f3a820653c22085c67411b0ae4ac71e28ba7f37dc11bc10786b79c1"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/dityrosine_biaryl_core_seed29_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "0ba3cd48826f502998f60774244343b91b2c348836f84b81e53cf12bb89b5295"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/exit-code.txt": {
+      "bytes": 2,
+      "sha256": "4355a46b19d348dc2f57c046f8ef63d4538ebb936000f3c9ee954a27460dd865"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/finished.txt": {
+      "bytes": 21,
+      "sha256": "c4307f11e156153c7943021cfb7d3e8048e95349f47395fc89b124bfbc8c8a4b"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/gpu-after.csv": {
+      "bytes": 79,
+      "sha256": "9c8d67ffc4e209481b5a6ffde609869cfc9f68d14b6d1bf0c0e8106de65576e1"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/gpu-before.csv": {
+      "bytes": 138,
+      "sha256": "fe2b306b3eaf38f85433ed45fa3dc5a16110faae350e0e8c70732bf98cd79348"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/isopeptide_amide_motif_seed17_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "2ffff4ba50e882350a726b4d0972f49815fac430d619ccb275fe2caf5ef78502"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/isopeptide_amide_motif_seed29_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "fbdfa643b02bf8d259b80beed0be6475e2c8702de1b16972119a61020e781d72"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/job-label.txt": {
+      "bytes": 41,
+      "sha256": "663e6134c02f722100a0b498c302abdf06812fefc3920f1e24572088e10f03f7"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/nim_request.json": {
+      "bytes": 14872,
+      "sha256": "3215837dcca9758826c1683abe8fe81933ca5e30d1b45167df21e3393a7ff188"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/peptide_bond_control_seed17_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "dc8fc21c427ae8b99bce2837e157b1d6eb233844ff0d5d0d3399ff3f3e1ec78a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/peptide_bond_control_seed29_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "b19ad10faa786f2761f0ab78d294c825c73527814a227a793a97d0064a40cb8c"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/provenance.json": {
+      "bytes": 861,
+      "sha256": "406cf66ad90034aa8824760dd053ec06196846f9bbadc04b19c819b178aafd2f"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/scheduling.txt": {
+      "bytes": 27,
+      "sha256": "836a65f6aa52e293daec0a610778f0931579ac2563e4e1b962e87777710d9bee"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/started.txt": {
+      "bytes": 21,
+      "sha256": "44f3fbdbcd22f5e8cd8aae5ff63cdee8f8558bf566f4a9d96e8bfa247c731170"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T093913Z/structures.json": {
+      "bytes": 26868,
+      "sha256": "e2676d6f586e47b8b9399f1db15a6013c87940e40b2e2861d0f8d0687b6b239e"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/capped_glycine_seed17_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "6dc45c339c04ef97cafc7746db3b24cfd700243c8f5128e48c3e2453b0433819"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/capped_glycine_seed17_relaxed.sdf": {
+      "bytes": 1662,
+      "sha256": "8c315d23a523e07c1ff832c699aca0c5e0f0d1a97a878d18346de884fa6f6736"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/capped_glycine_seed29_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "bba2021daaebae1d92961364bca7fd63459a6d32da31aa42c449f426958834c4"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/capped_glycine_seed29_relaxed.sdf": {
+      "bytes": 1662,
+      "sha256": "ad726ad0aeebe08b55fb359991a9039aff4ce73fddb2146edcb9c22c16dc1e8a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/console.log": {
+      "bytes": 3418,
+      "sha256": "94bcf28ef03bd62554d9b2039f24fc655648f1b5925729e02f422cf1026fb799"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/container-execution.txt": {
+      "bytes": 135,
+      "sha256": "7b82f306f0fbe086d81fc16c69f43a68fd83fac9d98cabf043f65c98ed1fad2a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/convergence.jsonl": {
+      "bytes": 1143,
+      "sha256": "25498163932d6bc0d5843bc4854c34339a65c06c392c27e738bb8ca50b0577b0"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/dityrosine_biaryl_core_seed17_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "2bb7b05f5f3a820653c22085c67411b0ae4ac71e28ba7f37dc11bc10786b79c1"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/dityrosine_biaryl_core_seed17_relaxed.sdf": {
+      "bytes": 2111,
+      "sha256": "eaa8b7e285b1b07c62986fa705b1ad1b37f5497eb3cb5d3d348dff35d6d19690"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/dityrosine_biaryl_core_seed29_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "0ba3cd48826f502998f60774244343b91b2c348836f84b81e53cf12bb89b5295"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/dityrosine_biaryl_core_seed29_relaxed.sdf": {
+      "bytes": 2111,
+      "sha256": "18dc44adb1fc94618281d8bfd17c9d2852973df49a517a9a4bfb6b0ebc7c669b"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/explorer_import.json": {
+      "bytes": 330,
+      "sha256": "b3bb280376aae8dd366a032368024c69b99f6d2083a797326aa90c5ebc3b0d77"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/finished.txt": {
+      "bytes": 21,
+      "sha256": "e74720a682c96b45e8bdef3c58f6f28c9632a685fc9d8229b7a7bc824b1cc124"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/gpu-after.csv": {
+      "bytes": 79,
+      "sha256": "611d5f5061e52ca7cb45323d75236b09d864fefbb2313eb19de1178aa94ab5be"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/gpu-before.csv": {
+      "bytes": 138,
+      "sha256": "fe2b306b3eaf38f85433ed45fa3dc5a16110faae350e0e8c70732bf98cd79348"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/isopeptide_amide_motif_seed17_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "2ffff4ba50e882350a726b4d0972f49815fac430d619ccb275fe2caf5ef78502"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/isopeptide_amide_motif_seed17_relaxed.sdf": {
+      "bytes": 1338,
+      "sha256": "81fc267560a39891bd68eecbee9c4092261e94449d399b5e3ad21db329058b8f"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/isopeptide_amide_motif_seed29_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "fbdfa643b02bf8d259b80beed0be6475e2c8702de1b16972119a61020e781d72"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/isopeptide_amide_motif_seed29_relaxed.sdf": {
+      "bytes": 1338,
+      "sha256": "03d6d4ed2cce166a8be6222271e5dd6e63bea44851da4d516493303edc8dfa61"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/job-label.txt": {
+      "bytes": 41,
+      "sha256": "5b365660c23949d771ac7659dfa54c8bd8629492fe17fbe46bf0fe3923c9b686"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/nim_request.json": {
+      "bytes": 14872,
+      "sha256": "3215837dcca9758826c1683abe8fe81933ca5e30d1b45167df21e3393a7ff188"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/peptide_bond_control_seed17_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "dc8fc21c427ae8b99bce2837e157b1d6eb233844ff0d5d0d3399ff3f3e1ec78a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/peptide_bond_control_seed17_relaxed.sdf": {
+      "bytes": 1087,
+      "sha256": "f02fc8ac4c72847bc9809b1dd5ff6a324bfdc1974924abcb62d1a632b40fef04"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/peptide_bond_control_seed29_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "b19ad10faa786f2761f0ab78d294c825c73527814a227a793a97d0064a40cb8c"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/peptide_bond_control_seed29_relaxed.sdf": {
+      "bytes": 1087,
+      "sha256": "3676d759503b4f087323b86244fd3469f3d08321f0b801f56be3c59d94c9b6fb"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/provenance.json": {
+      "bytes": 861,
+      "sha256": "6ba66562c7a4a2cdff4efbdd405ab3bf82cb3bfb9c824b30997eb58efc64d8ff"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/results.csv": {
+      "bytes": 1739,
+      "sha256": "0a3330c519116fe61cdb64de4eca2a9c2afa4d75f132f3c8b9c11cb0e8c3bbf7"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/results.json": {
+      "bytes": 38414,
+      "sha256": "38d560894463fcd8da81d566d1805def017d0855efec73992b0fa0ce94fc135a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/scheduling.txt": {
+      "bytes": 27,
+      "sha256": "836a65f6aa52e293daec0a610778f0931579ac2563e4e1b962e87777710d9bee"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/started.txt": {
+      "bytes": 21,
+      "sha256": "73fc4b973056999d08d336f4c74ef7406ea1583a00a64649ee3c16afb91cfdd6"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/h100_runs/collagen-fragment-pilot-20261031T094052Z/structures.json": {
+      "bytes": 26868,
+      "sha256": "e2676d6f586e47b8b9399f1db15a6013c87940e40b2e2861d0f8d0687b6b239e"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/COMPLETED_MANIFEST.json": {
+      "bytes": 1473,
+      "sha256": "5c9faa88db3928ca1dcc18793a2b57c236d63038fc2043c44cc297717fc87868"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/FOLLOWUP.md": {
+      "bytes": 1164,
+      "sha256": "629babeedd3680f448353366398b5177be2c911cc06269c42617fd787a05d462"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/FOLLOWUP_MANIFEST.json": {
+      "bytes": 565,
+      "sha256": "5f4cba7468af471a887308863027fd6ae09da1c2a77646b9d5983e83c84568d0"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/blog-update-receipt.json": {
+      "bytes": 902,
+      "sha256": "1d37626f7898544838841c3ece83db2f37e21c3dcc1047e8262d7f13c2005ab1"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/checkpoint-observation.txt": {
+      "bytes": 1089,
+      "sha256": "fcdeeffdd5cd8f8cdadb5f3d012a09ddd8f417998204d2bbfb71b730b9f3b0f6"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/compare_scans.py": {
+      "bytes": 6970,
+      "sha256": "6393acd2731278ef7af23181e6d878ee9f2a831c7b0b1fe019ee419cc768bf2f"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/comparison.csv": {
+      "bytes": 2137,
+      "sha256": "6ea0b61704d8bfa150737dd3a63b4acd30bb0f73fa2d370c38c64252ee299986"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/comparison.json": {
+      "bytes": 13215,
+      "sha256": "19e25120165d20e19e2bdc370df783b844fbec13495272657b3a73efd38c2482"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/completed-publication-receipt.json": {
+      "bytes": 1274,
+      "sha256": "4d412beb0c6d3ebc7f463ba11d01cc9a17714cfedda148f505ba7e3cce51c460"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/completion-observation.txt": {
+      "bytes": 98,
+      "sha256": "3f12c511f72a9ad86bb57a4f7273a50885b870abc651b1bfd3cb2faacc5f4a60"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/draw_science_figures.swift": {
+      "bytes": 8523,
+      "sha256": "501a21a6d74d450877dccd5351a06eadd0feb301472bbfeb1688b8b2b996f472"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/live-observation.txt": {
+      "bytes": 442,
+      "sha256": "3b22b6bca0b07c04f87b983a92d0b763dacc0df4fbf12c2a3140911eb9fdffdb"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/mace_mp_result.json": {
+      "bytes": 11966,
+      "sha256": "b26ea0f5862879968e494764e1845efdd7484a12ef787beacf460eeadf1a66e7"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/observed-console.log": {
+      "bytes": 12610,
+      "sha256": "8e244914b74e44773f0a97992e4e2259bcb1a4289d43d0183dcc67822e49c35c"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/off_arithmetic_check.json": {
+      "bytes": 2487,
+      "sha256": "9aac36f5a53067fa6667444f4430bf66d3ab7069db835c07dfcbd60b49bfbaac"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/public-render-verification.json": {
+      "bytes": 221,
+      "sha256": "62a972f8b368651836d62229c40ab1e2df2c2a19ced1ab41856f1412056aa236"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/mace-mp-followup/status.json": {
+      "bytes": 2033,
+      "sha256": "830d0ed3d71eb66152cfe53caaf45465d07edce5931521661640ee845ac4649e"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot.py": {
+      "bytes": 12546,
+      "sha256": "e81d743aba003d01e2bf0853895b5a1be7aadc7a756702d584eb6fc4a970ef7f"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/capped_glycine_seed17_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "6dc45c339c04ef97cafc7746db3b24cfd700243c8f5128e48c3e2453b0433819"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/capped_glycine_seed17_relaxed.sdf": {
+      "bytes": 1662,
+      "sha256": "8c315d23a523e07c1ff832c699aca0c5e0f0d1a97a878d18346de884fa6f6736"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/capped_glycine_seed29_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "bba2021daaebae1d92961364bca7fd63459a6d32da31aa42c449f426958834c4"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/capped_glycine_seed29_relaxed.sdf": {
+      "bytes": 1662,
+      "sha256": "ad726ad0aeebe08b55fb359991a9039aff4ce73fddb2146edcb9c22c16dc1e8a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/console.log": {
+      "bytes": 3418,
+      "sha256": "94bcf28ef03bd62554d9b2039f24fc655648f1b5925729e02f422cf1026fb799"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/container-execution.txt": {
+      "bytes": 135,
+      "sha256": "7b82f306f0fbe086d81fc16c69f43a68fd83fac9d98cabf043f65c98ed1fad2a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/convergence.jsonl": {
+      "bytes": 1143,
+      "sha256": "25498163932d6bc0d5843bc4854c34339a65c06c392c27e738bb8ca50b0577b0"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/dityrosine_biaryl_core_seed17_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "2bb7b05f5f3a820653c22085c67411b0ae4ac71e28ba7f37dc11bc10786b79c1"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/dityrosine_biaryl_core_seed17_relaxed.sdf": {
+      "bytes": 2111,
+      "sha256": "eaa8b7e285b1b07c62986fa705b1ad1b37f5497eb3cb5d3d348dff35d6d19690"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/dityrosine_biaryl_core_seed29_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "0ba3cd48826f502998f60774244343b91b2c348836f84b81e53cf12bb89b5295"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/dityrosine_biaryl_core_seed29_relaxed.sdf": {
+      "bytes": 2111,
+      "sha256": "18dc44adb1fc94618281d8bfd17c9d2852973df49a517a9a4bfb6b0ebc7c669b"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/exit-code.txt": {
+      "bytes": 2,
+      "sha256": "9a271f2a916b0b6ee6cecb2426f0b3206ef074578be55d9bc94f6f3fe3ab86aa"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/explorer_import.json": {
+      "bytes": 330,
+      "sha256": "b3bb280376aae8dd366a032368024c69b99f6d2083a797326aa90c5ebc3b0d77"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/finished.txt": {
+      "bytes": 21,
+      "sha256": "e74720a682c96b45e8bdef3c58f6f28c9632a685fc9d8229b7a7bc824b1cc124"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/gpu-after.csv": {
+      "bytes": 79,
+      "sha256": "611d5f5061e52ca7cb45323d75236b09d864fefbb2313eb19de1178aa94ab5be"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/gpu-before.csv": {
+      "bytes": 138,
+      "sha256": "fe2b306b3eaf38f85433ed45fa3dc5a16110faae350e0e8c70732bf98cd79348"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/independent_validation.json": {
+      "bytes": 2681,
+      "sha256": "f78cc78ca2d6b57d59a57049876898153da0394c4e8e13d13457c16aa8b0dd56"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/isopeptide_amide_motif_seed17_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "2ffff4ba50e882350a726b4d0972f49815fac430d619ccb275fe2caf5ef78502"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/isopeptide_amide_motif_seed17_relaxed.sdf": {
+      "bytes": 1338,
+      "sha256": "81fc267560a39891bd68eecbee9c4092261e94449d399b5e3ad21db329058b8f"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/isopeptide_amide_motif_seed29_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "fbdfa643b02bf8d259b80beed0be6475e2c8702de1b16972119a61020e781d72"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/isopeptide_amide_motif_seed29_relaxed.sdf": {
+      "bytes": 1338,
+      "sha256": "03d6d4ed2cce166a8be6222271e5dd6e63bea44851da4d516493303edc8dfa61"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/job-label.txt": {
+      "bytes": 41,
+      "sha256": "5b365660c23949d771ac7659dfa54c8bd8629492fe17fbe46bf0fe3923c9b686"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/nim_request.json": {
+      "bytes": 14872,
+      "sha256": "3215837dcca9758826c1683abe8fe81933ca5e30d1b45167df21e3393a7ff188"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/peptide_bond_control_seed17_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "dc8fc21c427ae8b99bce2837e157b1d6eb233844ff0d5d0d3399ff3f3e1ec78a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/peptide_bond_control_seed17_relaxed.sdf": {
+      "bytes": 1087,
+      "sha256": "f02fc8ac4c72847bc9809b1dd5ff6a324bfdc1974924abcb62d1a632b40fef04"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/peptide_bond_control_seed29_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "b19ad10faa786f2761f0ab78d294c825c73527814a227a793a97d0064a40cb8c"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/peptide_bond_control_seed29_relaxed.sdf": {
+      "bytes": 1087,
+      "sha256": "3676d759503b4f087323b86244fd3469f3d08321f0b801f56be3c59d94c9b6fb"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/provenance.json": {
+      "bytes": 861,
+      "sha256": "6ba66562c7a4a2cdff4efbdd405ab3bf82cb3bfb9c824b30997eb58efc64d8ff"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/results.csv": {
+      "bytes": 1739,
+      "sha256": "0a3330c519116fe61cdb64de4eca2a9c2afa4d75f132f3c8b9c11cb0e8c3bbf7"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/results.json": {
+      "bytes": 38414,
+      "sha256": "38d560894463fcd8da81d566d1805def017d0855efec73992b0fa0ce94fc135a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/scheduling.txt": {
+      "bytes": 27,
+      "sha256": "836a65f6aa52e293daec0a610778f0931579ac2563e4e1b962e87777710d9bee"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/started.txt": {
+      "bytes": 21,
+      "sha256": "73fc4b973056999d08d336f4c74ef7406ea1583a00a64649ee3c16afb91cfdd6"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/pilot_run/structures.json": {
+      "bytes": 26868,
+      "sha256": "e2676d6f586e47b8b9399f1db15a6013c87940e40b2e2861d0f8d0687b6b239e"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/capped_glycine_seed17_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "6dc45c339c04ef97cafc7746db3b24cfd700243c8f5128e48c3e2453b0433819"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/capped_glycine_seed29_initial.sdf": {
+      "bytes": 1662,
+      "sha256": "bba2021daaebae1d92961364bca7fd63459a6d32da31aa42c449f426958834c4"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/dityrosine_biaryl_core_seed17_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "2bb7b05f5f3a820653c22085c67411b0ae4ac71e28ba7f37dc11bc10786b79c1"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/dityrosine_biaryl_core_seed29_initial.sdf": {
+      "bytes": 2111,
+      "sha256": "0ba3cd48826f502998f60774244343b91b2c348836f84b81e53cf12bb89b5295"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/isopeptide_amide_motif_seed17_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "2ffff4ba50e882350a726b4d0972f49815fac430d619ccb275fe2caf5ef78502"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/isopeptide_amide_motif_seed29_initial.sdf": {
+      "bytes": 1338,
+      "sha256": "fbdfa643b02bf8d259b80beed0be6475e2c8702de1b16972119a61020e781d72"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/nim_request.json": {
+      "bytes": 14872,
+      "sha256": "3215837dcca9758826c1683abe8fe81933ca5e30d1b45167df21e3393a7ff188"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/peptide_bond_control_seed17_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "dc8fc21c427ae8b99bce2837e157b1d6eb233844ff0d5d0d3399ff3f3e1ec78a"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/peptide_bond_control_seed29_initial.sdf": {
+      "bytes": 1087,
+      "sha256": "b19ad10faa786f2761f0ab78d294c825c73527814a227a793a97d0064a40cb8c"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/preparation_validation.json": {
+      "bytes": 628,
+      "sha256": "f66f3e8f62225d53f1ebe054854f61943303174aa1360a32fa0a2116ce0398ed"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prepared/structures.json": {
+      "bytes": 26868,
+      "sha256": "e2676d6f586e47b8b9399f1db15a6013c87940e40b2e2861d0f8d0687b6b239e"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/archive_validation.json": {
+      "bytes": 1262,
+      "sha256": "e5493ba5913cda5d2f91c205dff2d812d8d6e6f69ebe8305c5e09ee95a69da85"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/execution.json": {
+      "bytes": 271,
+      "sha256": "e24d0afad72bd3ba7efd99526dca3404230d833a37835e4f7212724d6ba6057d"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/inputs/collagen_ppg9.pdb": {
+      "bytes": 39677,
+      "sha256": "b592e2b212f24efafe0f2014c78e5db5633ed7b84a826c6901d7833f1cc7a0ee"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/mdp/sample.mdp": {
+      "bytes": 614,
+      "sha256": "092bfb5860a8d9feabd469b5ca4422d8498350269febfeff2b22223670bd9eb2"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/output-sha256.json": {
+      "bytes": 13355,
+      "sha256": "d7fa13c3e29fa82cd4f39d8d17952ed935f97c68356e3ade7e82f329096e6c13"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/pilot-console.log": {
+      "bytes": 649,
+      "sha256": "f535819b39ede7391e58bbfcf14536cd748a64b89cb4203104c8207028a3b132"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/runs/ppg9-gpu-seed104729/energy-summary.txt": {
+      "bytes": 4154,
+      "sha256": "f9ea8aef40e486b4bcc8832b3bdf63d1447df0cec8f969659243fa03c5359758"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/runs/ppg9-gpu-seed104729/pdb2gmx.log": {
+      "bytes": 5470,
+      "sha256": "d1622c8c9cf3a105a8d15a614cc2da8f5ddb96f9b887f0e4a0f35e8278dbb9ea"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/runs/ppg9-gpu-seed104729/sample-energy.xvg": {
+      "bytes": 14063,
+      "sha256": "9b6947891338fc7f2c12550e3e7d3c712ee0f42969a49cd79bb9c42a2eff6bfe"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/prior_gromacs/runs/ppg9-gpu-seed104729/sample.log": {
+      "bytes": 153681,
+      "sha256": "cee60e4ba464a25f088a104a92ecb9c03f08ba413b0ec08ab67ffc6d434079d7"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/resource_state.json": {
+      "bytes": 1610,
+      "sha256": "45ff79342ec2b2e453c4131ffb87a9041e97b1b6df3d3c650647ef581d74e284"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/restore_reviewed_environment.sh": {
+      "bytes": 1587,
+      "sha256": "bc11d5cbc73c5b2a7a03dba71c2fb8a97b7251f3c320b8f3d9b4f4d9625341ba"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/reviewed-environment.sha256": {
+      "bytes": 94,
+      "sha256": "56c9567770379ea42c2662686f9b4534563b607d1a14870f6090abfd1f32a765"
+    },
+    "collagen-molecular-pilot/runs/20261031-completed-molecular-pilot/run_pilot.sh": {
+      "bytes": 2821,
+      "sha256": "3bb6a366ff2f453c57ad7616bb1eed18143bc70e14d26df9540eead28343e43b"
+    },
+    "collagen-network-atlas/.gitignore": {
+      "bytes": 30,
+      "sha256": "e8773aaf6a7e7e3eb6bce23ce3ea0486ba3cb6f3e01946cea9fbee1b7c0cd274"
+    },
+    "collagen-network-atlas/EVIDENCE.md": {
+      "bytes": 5196,
+      "sha256": "c5690ab4a8eb5a35144ee566b815bce97f6063671026e055cf9a38fce460ab04"
+    },
+    "collagen-network-atlas/METHODS.md": {
+      "bytes": 15339,
+      "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
+    },
+    "collagen-network-atlas/README.md": {
+      "bytes": 4246,
+      "sha256": "4feb6ea3cc7cf8b9e609d565a58bee8e6795ebf8de171284c881a561d2dc1602"
+    },
+    "collagen-network-atlas/REPORT.md": {
+      "bytes": 9882,
+      "sha256": "6cba4ce9314c399a28cfca2663e1908c170f0d563639a67fe6632808dbf6b631"
+    },
+    "collagen-network-atlas/RUN_STORAGE.md": {
+      "bytes": 2237,
+      "sha256": "81f6213d9edeb627983b4e470249067ee60480a88f88e472605f4409f7665255"
+    },
+    "collagen-network-atlas/SECURITY-REVIEW.md": {
+      "bytes": 3895,
+      "sha256": "0f3b86689c1fd4a48cfbfa6e2578a1683e8e388df581351dac5e23862562bfe7"
+    },
+    "collagen-network-atlas/app.js": {
+      "bytes": 18360,
+      "sha256": "227b8eddfe58e958ed54f9ec7afdd942df2c3601b14520954147fd468a6347d8"
+    },
+    "collagen-network-atlas/audit.js": {
+      "bytes": 2171,
+      "sha256": "7ced362139a506ae915e8ab722d73f3093fbce584a0ea01c4de60b82cf7a2c9e"
+    },
+    "collagen-network-atlas/benchmark-core.js": {
+      "bytes": 10084,
+      "sha256": "b4cb186ca36de605c1f8e4de13c868d1971024197733b4fb5b5cdfb26ea8e7f6"
+    },
+    "collagen-network-atlas/benchmark.js": {
+      "bytes": 413,
+      "sha256": "69657fe59127cee9aa460bd38d44b46107242e591733bb223c34e3d62f7ddf2f"
+    },
+    "collagen-network-atlas/check-media.swift": {
+      "bytes": 940,
+      "sha256": "a3a51dccef1d59cf41acc5458f5cf8aa4873ab000671ed60ce6a2a062cf56dd2"
+    },
+    "collagen-network-atlas/check.js": {
+      "bytes": 2915,
+      "sha256": "de5bf54d9e9869042c0f8906023380466b8d9d42637cac89d258b9892057d9a6"
+    },
+    "collagen-network-atlas/data/audit.json": {
+      "bytes": 1329,
+      "sha256": "d0c1b0c3f96c6d22fe59cd74092b4e76ceb5e14d912e1c4a75a0942934fb4c20"
+    },
+    "collagen-network-atlas/data/benchmark.js": {
+      "bytes": 577593,
+      "sha256": "53e5785f3a3ef962a4c700e13c7c4aa688c3e58178afe9a764af2f03a84a97af"
+    },
+    "collagen-network-atlas/data/checks.json": {
+      "bytes": 592,
+      "sha256": "85bddc51e1ae07e89fa4fed5acdd2da8f56fe9cdbed3f0aafc9fe1b37c2f4610"
+    },
+    "collagen-network-atlas/data/convergence.csv": {
+      "bytes": 5774,
+      "sha256": "7dcebb7cebfb09834037f1b692711d2d9683c36529991b38ec21428d21b24bae"
+    },
+    "collagen-network-atlas/data/curves.csv": {
+      "bytes": 4637534,
+      "sha256": "be25548e5eab953bf8b569a31171e0d258e6cae591937efd37daf76a8d899ec2"
+    },
+    "collagen-network-atlas/data/historical-media-input.json": {
+      "bytes": 9259515,
+      "sha256": "9480284804995ef5bab881c70b9f0619735300d6bea18a4f8051c37d9b8a4286"
+    },
+    "collagen-network-atlas/data/media-input.json": {
+      "bytes": 9261947,
+      "sha256": "41c415a85a9e8c89447916bea3cfcdc8fc8d2f67b286cc493ed606e51a92ebcc"
+    },
+    "collagen-network-atlas/data/media-rebuild-render.log": {
+      "bytes": 224,
+      "sha256": "91b2390d3d2fd71b1f90d1fd012df8f134d09d1c6ac95b84794a8de44c2da849"
+    },
+    "collagen-network-atlas/data/media-rebuild-validation.json": {
+      "bytes": 1084,
+      "sha256": "18e8a23300cc78f86755247b01ce27e43759a8383a848c568dc7c7a92e69f7a5"
+    },
+    "collagen-network-atlas/data/media-rebuild.log": {
+      "bytes": 66,
+      "sha256": "f8838a98da71060c57ef672d9d8780a26f41ab012ee6162e6c84bf0f7688280b"
+    },
+    "collagen-network-atlas/data/predictors.csv": {
+      "bytes": 2711,
+      "sha256": "51cea1b5a6b82f3612f8b262aa946543c59ad15dd4a5011063c81c87f6470604"
+    },
+    "collagen-network-atlas/data/render.log": {
+      "bytes": 116,
+      "sha256": "390376d033996f1d4696544e22d192d8623153da19a2d296732df9a71355e128"
+    },
+    "collagen-network-atlas/data/replays.js": {
+      "bytes": 8683031,
+      "sha256": "d79bfe429b45474b730195341975214d92fabad5301d05e79b4241fb4ca64c46"
+    },
+    "collagen-network-atlas/data/results.json": {
+      "bytes": 824546,
+      "sha256": "b3c01f927ed40d9467f8a2fe599382a28d9bbcd5bfb6224629a6b6dad17e8f0f"
+    },
+    "collagen-network-atlas/data/run.log": {
+      "bytes": 339,
+      "sha256": "303f242870bff9e700c8f1bbf5a6c4bd17d41050cee26d1444f55d52247fc72d"
+    },
+    "collagen-network-atlas/data/summary.csv": {
+      "bytes": 201413,
+      "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
+    },
+    "collagen-network-atlas/data/ui-checks.json": {
+      "bytes": 704,
+      "sha256": "45a2297191b9855bb097bc4d4b713db9beea2aa407176c4a79c8be058b640026"
+    },
+    "collagen-network-atlas/data/validation.csv": {
+      "bytes": 1948,
+      "sha256": "610e0e618f7f2bb09a15e17f4d0f6caec6c1b182434c7e30a5a79385e94aca56"
+    },
+    "collagen-network-atlas/figures/benchmark.png": {
+      "bytes": 107866,
+      "sha256": "0f77adea113ff969b60afb1d327ba34703ba2c747f758a4db66e6c63b73d6f9a"
+    },
+    "collagen-network-atlas/figures/benchmark.svg": {
+      "bytes": 9610,
+      "sha256": "ac72f272400c1d6008e18209dbfe433733965829beb9d1287f39492a024f9b19"
+    },
+    "collagen-network-atlas/figures/free-vs-clamped-still.png": {
+      "bytes": 170589,
+      "sha256": "f0feca55e6dfddd39258cc846382b0b2d87bfa5353583d0c6e0f3242d7d6dd1c"
+    },
+    "collagen-network-atlas/figures/free-vs-clamped.gif": {
+      "bytes": 1419870,
+      "sha256": "e3e6ad447a661ebe84f1cb81133b194f93ecf8e12c81e8ab4e1cb29a0c0864df"
+    },
+    "collagen-network-atlas/figures/pressure-still.png": {
+      "bytes": 166182,
+      "sha256": "9d77586b123eaa53e07add75a0a2790e3d01f4d2f4de2ca26f337c09d7823e0d"
+    },
+    "collagen-network-atlas/figures/pressure.gif": {
+      "bytes": 1211691,
+      "sha256": "868fbb320f3684ad53049b57ba4b1c876a6dc848caa4a657986ddf76760a233f"
+    },
+    "collagen-network-atlas/figures/pulse-still.png": {
+      "bytes": 209486,
+      "sha256": "3d2e880e7145bb400037dc6f8fbb7444123529ccc6b9caffe9e5c18e4b1b1d3b"
+    },
+    "collagen-network-atlas/figures/pulse.gif": {
+      "bytes": 1693798,
+      "sha256": "f14d85c9215e76a54c84165b481e6c7b7b0c93fe5882f832e773c9f0a5bf4de1"
+    },
+    "collagen-network-atlas/figures/shear-still.png": {
+      "bytes": 184176,
+      "sha256": "80a96517c58b801e1ee636706b369bc61bc1fd3af88f7fb6020e4deab4424e42"
+    },
+    "collagen-network-atlas/figures/shear.gif": {
+      "bytes": 1004038,
+      "sha256": "160134592571aa5f404276d93374da199ef243c0fdf49fab6407b10717a44cd0"
+    },
+    "collagen-network-atlas/figures/tension-still.png": {
+      "bytes": 150357,
+      "sha256": "dbc9a7a41f9bc8953f43fea9627fe175ab85199078759197b4511f500c359770"
+    },
+    "collagen-network-atlas/figures/tension.gif": {
+      "bytes": 518304,
+      "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
+    },
+    "collagen-network-atlas/index.html": {
+      "bytes": 10540,
+      "sha256": "aeafc92bd281b49a7dac82c9acc5e00b8a85fd5c1987303247110b5e970bc990"
+    },
+    "collagen-network-atlas/make-archive.py": {
+      "bytes": 1205,
+      "sha256": "70473dc09c6dac90bb3478875c7e288dcf9a55adcc6fc92ff7074b538a0c784d"
+    },
+    "collagen-network-atlas/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-network-atlas/prepare-media.js": {
+      "bytes": 3839,
+      "sha256": "7bd17153e049c565ad6be54e70144fdb90966a1d1f0908a15f075b97ae54a85f"
+    },
+    "collagen-network-atlas/publication/archive-metadata.json": {
+      "bytes": 389,
+      "sha256": "52906a145001edd29e2360d24defd8ca9acf42fcb9560c972e28a528118b8c06"
+    },
+    "collagen-network-atlas/publication/build-posts.py": {
+      "bytes": 19403,
+      "sha256": "df9574ebd59a081f8559fde8417f230d4c2724abdd34b241084c17d091cd5e77"
+    },
+    "collagen-network-atlas/publication/media.json": {
+      "bytes": 26456,
+      "sha256": "5dc977963597382a8b327a737a983c78c4b78a08939379e862ad940a734b6649"
+    },
+    "collagen-network-atlas/publication/public-media-frames.json": {
+      "bytes": 1084,
+      "sha256": "18e8a23300cc78f86755247b01ce27e43759a8383a848c568dc7c7a92e69f7a5"
+    },
+    "collagen-network-atlas/publication/public-media-http.json": {
+      "bytes": 3213,
+      "sha256": "7762e65c8833d4b516e838b372b1becc3494c5423ce2cd8b4d7aacde272ee25a"
+    },
+    "collagen-network-atlas/recover-archive.py": {
+      "bytes": 1587,
+      "sha256": "43cfbccd1b6de15f48fe70b89790841ea1e3bfbac67c8a96fcab370b252238ab"
+    },
+    "collagen-network-atlas/render-media.swift": {
+      "bytes": 8485,
+      "sha256": "74dae55f7d493debb545639010d021da9a407fb4fdb394c7627a86d4b59b9a68"
+    },
+    "collagen-network-atlas/run-atlas.py": {
+      "bytes": 5711,
+      "sha256": "fbd0240ca586c610d58284fddd078ca0799d3f98ef96818e48a9cebb6ba1433c"
+    },
+    "collagen-network-atlas/run-guard.js": {
+      "bytes": 641,
+      "sha256": "a977f37176d5d09d66f167d2072ba01590b550a5b857d64941d86b5293010f79"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/EVIDENCE.md": {
+      "bytes": 5196,
+      "sha256": "c5690ab4a8eb5a35144ee566b815bce97f6063671026e055cf9a38fce460ab04"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/FREEZE.json": {
+      "bytes": 942,
+      "sha256": "1b4e07a6f66fe037f2cd7ba587c4e26109c4f30328c22c359eb96a79bc92afcb"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/FREEZE.md": {
+      "bytes": 1326,
+      "sha256": "b8de9737c1663cb22724f0c9ce3a95cf38fef5f6fcdcf4a201e3de0c7b380dce"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/MANIFEST.json": {
+      "bytes": 7656,
+      "sha256": "1396bfde1a982611d0ccbb950e2df42ea375d32a2790ddd4463b601b98320c7e"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/MANIFEST.original.json": {
+      "bytes": 6285,
+      "sha256": "a17e0f75804b8e2e7de08fe6a3ed6d48957c98459c448396bf79520f7a0a531f"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/METHODS.md": {
+      "bytes": 15339,
+      "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/README.md": {
+      "bytes": 3652,
+      "sha256": "e6ca7ad83a7aba193fb92abf70310d0660898c92fcb6f34ddbb24518010c273f"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/REPORT.md": {
+      "bytes": 9882,
+      "sha256": "6cba4ce9314c399a28cfca2663e1908c170f0d563639a67fe6632808dbf6b631"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/SECURITY-REVIEW.md": {
+      "bytes": 3895,
+      "sha256": "0f3b86689c1fd4a48cfbfa6e2578a1683e8e388df581351dac5e23862562bfe7"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/app.js": {
+      "bytes": 18360,
+      "sha256": "227b8eddfe58e958ed54f9ec7afdd942df2c3601b14520954147fd468a6347d8"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/audit.js": {
+      "bytes": 2090,
+      "sha256": "4a9ac0877f0a6a2410c8e0d6979bcc0dd21f18d0dc1fab1f8efedb1dbb64573d"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/benchmark.js": {
+      "bytes": 9851,
+      "sha256": "4d39ccda696ada1a741cfc859b2fcd53cc9efec2cea0eb7de81041f4ad7a264a"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/check-media.swift": {
+      "bytes": 940,
+      "sha256": "a3a51dccef1d59cf41acc5458f5cf8aa4873ab000671ed60ce6a2a062cf56dd2"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/check.js": {
+      "bytes": 2915,
+      "sha256": "de5bf54d9e9869042c0f8906023380466b8d9d42637cac89d258b9892057d9a6"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/audit.json": {
+      "bytes": 1329,
+      "sha256": "d0c1b0c3f96c6d22fe59cd74092b4e76ceb5e14d912e1c4a75a0942934fb4c20"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/benchmark.js": {
+      "bytes": 577593,
+      "sha256": "53e5785f3a3ef962a4c700e13c7c4aa688c3e58178afe9a764af2f03a84a97af"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/checks.json": {
+      "bytes": 592,
+      "sha256": "85bddc51e1ae07e89fa4fed5acdd2da8f56fe9cdbed3f0aafc9fe1b37c2f4610"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/convergence.csv": {
+      "bytes": 5774,
+      "sha256": "7dcebb7cebfb09834037f1b692711d2d9683c36529991b38ec21428d21b24bae"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/curves.csv": {
+      "bytes": 4637534,
+      "sha256": "be25548e5eab953bf8b569a31171e0d258e6cae591937efd37daf76a8d899ec2"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/historical-media-input.json": {
+      "bytes": 9259515,
+      "sha256": "9480284804995ef5bab881c70b9f0619735300d6bea18a4f8051c37d9b8a4286"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/media-input.json": {
+      "bytes": 9261947,
+      "sha256": "41c415a85a9e8c89447916bea3cfcdc8fc8d2f67b286cc493ed606e51a92ebcc"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/media-rebuild-render.log": {
+      "bytes": 224,
+      "sha256": "91b2390d3d2fd71b1f90d1fd012df8f134d09d1c6ac95b84794a8de44c2da849"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/media-rebuild-validation.json": {
+      "bytes": 1084,
+      "sha256": "18e8a23300cc78f86755247b01ce27e43759a8383a848c568dc7c7a92e69f7a5"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/media-rebuild.log": {
+      "bytes": 66,
+      "sha256": "f8838a98da71060c57ef672d9d8780a26f41ab012ee6162e6c84bf0f7688280b"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/predictors.csv": {
+      "bytes": 2711,
+      "sha256": "51cea1b5a6b82f3612f8b262aa946543c59ad15dd4a5011063c81c87f6470604"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/render.log": {
+      "bytes": 116,
+      "sha256": "390376d033996f1d4696544e22d192d8623153da19a2d296732df9a71355e128"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/replays.js": {
+      "bytes": 8683031,
+      "sha256": "d79bfe429b45474b730195341975214d92fabad5301d05e79b4241fb4ca64c46"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/results.json": {
+      "bytes": 824546,
+      "sha256": "b3c01f927ed40d9467f8a2fe599382a28d9bbcd5bfb6224629a6b6dad17e8f0f"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/run.log": {
+      "bytes": 339,
+      "sha256": "303f242870bff9e700c8f1bbf5a6c4bd17d41050cee26d1444f55d52247fc72d"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/summary.csv": {
+      "bytes": 201413,
+      "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/ui-checks.json": {
+      "bytes": 704,
+      "sha256": "45a2297191b9855bb097bc4d4b713db9beea2aa407176c4a79c8be058b640026"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/data/validation.csv": {
+      "bytes": 1948,
+      "sha256": "610e0e618f7f2bb09a15e17f4d0f6caec6c1b182434c7e30a5a79385e94aca56"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/benchmark.png": {
+      "bytes": 107866,
+      "sha256": "0f77adea113ff969b60afb1d327ba34703ba2c747f758a4db66e6c63b73d6f9a"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/benchmark.svg": {
+      "bytes": 9610,
+      "sha256": "ac72f272400c1d6008e18209dbfe433733965829beb9d1287f39492a024f9b19"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/free-vs-clamped-still.png": {
+      "bytes": 170589,
+      "sha256": "f0feca55e6dfddd39258cc846382b0b2d87bfa5353583d0c6e0f3242d7d6dd1c"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/free-vs-clamped.gif": {
+      "bytes": 1419870,
+      "sha256": "e3e6ad447a661ebe84f1cb81133b194f93ecf8e12c81e8ab4e1cb29a0c0864df"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/pressure-still.png": {
+      "bytes": 166182,
+      "sha256": "9d77586b123eaa53e07add75a0a2790e3d01f4d2f4de2ca26f337c09d7823e0d"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/pressure.gif": {
+      "bytes": 1211691,
+      "sha256": "868fbb320f3684ad53049b57ba4b1c876a6dc848caa4a657986ddf76760a233f"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/pulse-still.png": {
+      "bytes": 209486,
+      "sha256": "3d2e880e7145bb400037dc6f8fbb7444123529ccc6b9caffe9e5c18e4b1b1d3b"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/pulse.gif": {
+      "bytes": 1693798,
+      "sha256": "f14d85c9215e76a54c84165b481e6c7b7b0c93fe5882f832e773c9f0a5bf4de1"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/shear-still.png": {
+      "bytes": 184176,
+      "sha256": "80a96517c58b801e1ee636706b369bc61bc1fd3af88f7fb6020e4deab4424e42"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/shear.gif": {
+      "bytes": 1004038,
+      "sha256": "160134592571aa5f404276d93374da199ef243c0fdf49fab6407b10717a44cd0"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/tension-still.png": {
+      "bytes": 150357,
+      "sha256": "dbc9a7a41f9bc8953f43fea9627fe175ab85199078759197b4511f500c359770"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/figures/tension.gif": {
+      "bytes": 518304,
+      "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/index.html": {
+      "bytes": 10540,
+      "sha256": "aeafc92bd281b49a7dac82c9acc5e00b8a85fd5c1987303247110b5e970bc990"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/make-archive.py": {
+      "bytes": 1696,
+      "sha256": "72845217698730046449943afa06eee43f526c512b0410638e6ed1c8a2c2c7c0"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/prepare-media.js": {
+      "bytes": 3739,
+      "sha256": "0bec55ad73554e575a8a170ea75b0e34ecb07a2f8d984500610613e5749e6e5f"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/publication/archive-metadata.json": {
+      "bytes": 389,
+      "sha256": "52906a145001edd29e2360d24defd8ca9acf42fcb9560c972e28a528118b8c06"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/publication/build-posts.py": {
+      "bytes": 19403,
+      "sha256": "df9574ebd59a081f8559fde8417f230d4c2724abdd34b241084c17d091cd5e77"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/publication/media.json": {
+      "bytes": 26456,
+      "sha256": "5dc977963597382a8b327a737a983c78c4b78a08939379e862ad940a734b6649"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/publication/public-media-frames.json": {
+      "bytes": 1084,
+      "sha256": "18e8a23300cc78f86755247b01ce27e43759a8383a848c568dc7c7a92e69f7a5"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/publication/public-media-http.json": {
+      "bytes": 3213,
+      "sha256": "7762e65c8833d4b516e838b372b1becc3494c5423ce2cd8b4d7aacde272ee25a"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/recover-archive.py": {
+      "bytes": 1587,
+      "sha256": "43cfbccd1b6de15f48fe70b89790841ea1e3bfbac67c8a96fcab370b252238ab"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/render-media.swift": {
+      "bytes": 8048,
+      "sha256": "f537aec2cd4ba5a308e1b3b3b65f4159cb97d4cc785edf374449d173d8c53167"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/style.css": {
+      "bytes": 9907,
+      "sha256": "45df16d1b63ed15d7d35512d9afe6e1ed8b0eb19e89e77545e0a0aa240ebfd09"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/verify-media.py": {
+      "bytes": 1222,
+      "sha256": "a4266a98217230b3c110cfa88022de9d2dc923ba31fd2f4931c28ca3fbd43a3d"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/worker.js": {
+      "bytes": 298,
+      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+    },
+    "collagen-network-atlas/runs/20261031-finished-f0a5034f44aa/write-report.js": {
+      "bytes": 11498,
+      "sha256": "37373dd665103adf8800db9262287c9ae02701bc7ce6e7a5df1fca5cc249c27a"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/EVIDENCE.md": {
+      "bytes": 5196,
+      "sha256": "c5690ab4a8eb5a35144ee566b815bce97f6063671026e055cf9a38fce460ab04"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/FINISHED.json": {
+      "bytes": 197,
+      "sha256": "107c11558e7857eff741eabfb304fbbff545035575e4442bbdf217f84edbf674"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/MANIFEST.json": {
+      "bytes": 7141,
+      "sha256": "b9894cf85e7bf7763907f54c93f47141819c4d7660886757dc88517bf8f97f59"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/METHODS.md": {
+      "bytes": 15339,
+      "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/README.md": {
+      "bytes": 3652,
+      "sha256": "e6ca7ad83a7aba193fb92abf70310d0660898c92fcb6f34ddbb24518010c273f"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/REPORT.md": {
+      "bytes": 9882,
+      "sha256": "fa23c48d38de1d0476435651f63f705487dbb5344ccdde46dfa1eba0ad7fe9c9"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/RUN_CONTEXT.json": {
+      "bytes": 3257,
+      "sha256": "dc6f642020db621029c95362905eecc0cb1570eba13ea9dc6c5043a65e309eb5"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/SECURITY-REVIEW.md": {
+      "bytes": 3895,
+      "sha256": "0f3b86689c1fd4a48cfbfa6e2578a1683e8e388df581351dac5e23862562bfe7"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/app.js": {
+      "bytes": 18360,
+      "sha256": "227b8eddfe58e958ed54f9ec7afdd942df2c3601b14520954147fd468a6347d8"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/audit.js": {
+      "bytes": 2159,
+      "sha256": "75a1faee5200ab27f588a2306e98a176075c6f7d447c1c512ed575011ed392b3"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/benchmark-core.js": {
+      "bytes": 10084,
+      "sha256": "b4cb186ca36de605c1f8e4de13c868d1971024197733b4fb5b5cdfb26ea8e7f6"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/benchmark.js": {
+      "bytes": 413,
+      "sha256": "69657fe59127cee9aa460bd38d44b46107242e591733bb223c34e3d62f7ddf2f"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/check-media.swift": {
+      "bytes": 940,
+      "sha256": "a3a51dccef1d59cf41acc5458f5cf8aa4873ab000671ed60ce6a2a062cf56dd2"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/check.js": {
+      "bytes": 2915,
+      "sha256": "de5bf54d9e9869042c0f8906023380466b8d9d42637cac89d258b9892057d9a6"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/audit.json": {
+      "bytes": 1329,
+      "sha256": "d0c1b0c3f96c6d22fe59cd74092b4e76ceb5e14d912e1c4a75a0942934fb4c20"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/benchmark.js": {
+      "bytes": 577607,
+      "sha256": "1b2924da04ac8d648d9ad4b9474074f242a0e63d27faa1835d3ff9e0a65dde28"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/checks.json": {
+      "bytes": 592,
+      "sha256": "85bddc51e1ae07e89fa4fed5acdd2da8f56fe9cdbed3f0aafc9fe1b37c2f4610"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/convergence.csv": {
+      "bytes": 5774,
+      "sha256": "7dcebb7cebfb09834037f1b692711d2d9683c36529991b38ec21428d21b24bae"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/curves.csv": {
+      "bytes": 4637534,
+      "sha256": "be25548e5eab953bf8b569a31171e0d258e6cae591937efd37daf76a8d899ec2"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/media-input.json": {
+      "bytes": 9261961,
+      "sha256": "2ec2d25a5ad9df4a041eb88cadd56f0796281b6a0c31a590df8fa12067dc6f06"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/predictors.csv": {
+      "bytes": 2711,
+      "sha256": "51cea1b5a6b82f3612f8b262aa946543c59ad15dd4a5011063c81c87f6470604"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/replays.js": {
+      "bytes": 8683031,
+      "sha256": "d79bfe429b45474b730195341975214d92fabad5301d05e79b4241fb4ca64c46"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/results.json": {
+      "bytes": 824560,
+      "sha256": "1fd97840874826ec53d2492127c8d05ecb675f3c2803a0c5f648d7f58e5ee8d8"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/summary.csv": {
+      "bytes": 201413,
+      "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/data/validation.csv": {
+      "bytes": 1948,
+      "sha256": "610e0e618f7f2bb09a15e17f4d0f6caec6c1b182434c7e30a5a79385e94aca56"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/benchmark.png": {
+      "bytes": 107866,
+      "sha256": "0f77adea113ff969b60afb1d327ba34703ba2c747f758a4db66e6c63b73d6f9a"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/benchmark.svg": {
+      "bytes": 9610,
+      "sha256": "ac72f272400c1d6008e18209dbfe433733965829beb9d1287f39492a024f9b19"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/free-vs-clamped-still.png": {
+      "bytes": 170589,
+      "sha256": "f0feca55e6dfddd39258cc846382b0b2d87bfa5353583d0c6e0f3242d7d6dd1c"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/free-vs-clamped.gif": {
+      "bytes": 1419870,
+      "sha256": "e3e6ad447a661ebe84f1cb81133b194f93ecf8e12c81e8ab4e1cb29a0c0864df"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/pressure-still.png": {
+      "bytes": 166182,
+      "sha256": "9d77586b123eaa53e07add75a0a2790e3d01f4d2f4de2ca26f337c09d7823e0d"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/pressure.gif": {
+      "bytes": 1216121,
+      "sha256": "95f5deb4817299b62568b3b700c00b433e306bfb6b9f1fb5a058449ecfff1c9a"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/pulse-still.png": {
+      "bytes": 209486,
+      "sha256": "3d2e880e7145bb400037dc6f8fbb7444123529ccc6b9caffe9e5c18e4b1b1d3b"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/pulse.gif": {
+      "bytes": 1693798,
+      "sha256": "f14d85c9215e76a54c84165b481e6c7b7b0c93fe5882f832e773c9f0a5bf4de1"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/shear-still.png": {
+      "bytes": 184176,
+      "sha256": "80a96517c58b801e1ee636706b369bc61bc1fd3af88f7fb6020e4deab4424e42"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/shear.gif": {
+      "bytes": 1004038,
+      "sha256": "160134592571aa5f404276d93374da199ef243c0fdf49fab6407b10717a44cd0"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/tension-still.png": {
+      "bytes": 150357,
+      "sha256": "dbc9a7a41f9bc8953f43fea9627fe175ab85199078759197b4511f500c359770"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/figures/tension.gif": {
+      "bytes": 518304,
+      "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/index.html": {
+      "bytes": 10540,
+      "sha256": "aeafc92bd281b49a7dac82c9acc5e00b8a85fd5c1987303247110b5e970bc990"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/logs/audit.log": {
+      "bytes": 1330,
+      "sha256": "a115b0486556fa0c3f38af9a97837c46578e0bafc0dca31414b9b90356099ee3"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/logs/benchmark.log": {
+      "bytes": 339,
+      "sha256": "bbed09f0b6718e9d6aeb195a38247b65ca17e3e163854dc55ae6cfdab876ae34"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/logs/checks.log": {
+      "bytes": 592,
+      "sha256": "85bddc51e1ae07e89fa4fed5acdd2da8f56fe9cdbed3f0aafc9fe1b37c2f4610"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/logs/media-input.log": {
+      "bytes": 66,
+      "sha256": "f8838a98da71060c57ef672d9d8780a26f41ab012ee6162e6c84bf0f7688280b"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/logs/render.log": {
+      "bytes": 116,
+      "sha256": "390376d033996f1d4696544e22d192d8623153da19a2d296732df9a71355e128"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/logs/report.log": {
+      "bytes": 37,
+      "sha256": "a28d540d903db16314882eb3fd7641e5ed7c7fc3fd5e5421aae8c639cc185474"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/make-archive.py": {
+      "bytes": 1696,
+      "sha256": "72845217698730046449943afa06eee43f526c512b0410638e6ed1c8a2c2c7c0"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/prepare-media.js": {
+      "bytes": 3839,
+      "sha256": "7bd17153e049c565ad6be54e70144fdb90966a1d1f0908a15f075b97ae54a85f"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/recover-archive.py": {
+      "bytes": 1587,
+      "sha256": "43cfbccd1b6de15f48fe70b89790841ea1e3bfbac67c8a96fcab370b252238ab"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/render-media.swift": {
+      "bytes": 8485,
+      "sha256": "74dae55f7d493debb545639010d021da9a407fb4fdb394c7627a86d4b59b9a68"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/run-atlas.py": {
+      "bytes": 5711,
+      "sha256": "fbd0240ca586c610d58284fddd078ca0799d3f98ef96818e48a9cebb6ba1433c"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/run-guard.js": {
+      "bytes": 641,
+      "sha256": "a977f37176d5d09d66f167d2072ba01590b550a5b857d64941d86b5293010f79"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/style.css": {
+      "bytes": 9907,
+      "sha256": "45df16d1b63ed15d7d35512d9afe6e1ed8b0eb19e89e77545e0a0aa240ebfd09"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/test_run_storage.py": {
+      "bytes": 2943,
+      "sha256": "444dde4258308044f94dc95c5fdc766834dc6aba8c1ca4c153e49dbcf463af60"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/verify-media.py": {
+      "bytes": 1222,
+      "sha256": "a4266a98217230b3c110cfa88022de9d2dc923ba31fd2f4931c28ca3fbd43a3d"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/worker.js": {
+      "bytes": 298,
+      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+    },
+    "collagen-network-atlas/runs/20261031-storage-verification/write-report.js": {
+      "bytes": 11561,
+      "sha256": "5d6699cbaa683fa8d7ea7e5bd84b52c2409e4939e6dbb2f6f3a7e97e1686796c"
+    },
+    "collagen-network-atlas/style.css": {
+      "bytes": 9907,
+      "sha256": "45df16d1b63ed15d7d35512d9afe6e1ed8b0eb19e89e77545e0a0aa240ebfd09"
+    },
+    "collagen-network-atlas/test_run_storage.py": {
+      "bytes": 2943,
+      "sha256": "444dde4258308044f94dc95c5fdc766834dc6aba8c1ca4c153e49dbcf463af60"
+    },
+    "collagen-network-atlas/verify-media.py": {
+      "bytes": 1222,
+      "sha256": "a4266a98217230b3c110cfa88022de9d2dc923ba31fd2f4931c28ca3fbd43a3d"
+    },
+    "collagen-network-atlas/worker.js": {
+      "bytes": 298,
+      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+    },
+    "collagen-network-atlas/write-report.js": {
+      "bytes": 11567,
+      "sha256": "26b04ba2433def5e1be685bb613cb111f1d023f615b76469ece4697ca850cdc0"
+    },
+    "verify-archives.py": {
+      "bytes": 786,
+      "sha256": "73bafdb189f65dbfa495068582dd9057faa7a429badc8112b0c3c9f04406e6e8"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+                       :-) GROMACS - gmx rms, 2025.3 (-:
+
+Executable:   /opt/gromacs/bin/gmx
+Data prefix:  /opt/gromacs
+Working dir:  /tmp/collagen-pilot/runs/ppg9-gpu-seed104729
+Command line:
+  gmx rms -s sample.tpr -f sample.xtc -o backbone-rmsd.xvg -tu ps
+
+Reading file sample.tpr, VERSION 2025.3 (single precision)
+Reading file sample.tpr, VERSION 2025.3 (single precision)
+Select group for least squares fit
+Group     0 (         System) has 13710 elements
+Group     1 (        Protein) has   954 elements
+Group     2 (      Protein-H) has   489 elements
+Group     3 (        C-alpha) has    81 elements
+Group     4 (       Backbone) has   243 elements
+Group     5 (      MainChain) has   327 elements
+Group     6 (   MainChain+Cb) has   381 elements
+Group     7 (    MainChain+H) has   360 elements
+Group     8 (      SideChain) has   594 elements
+Group     9 (    SideChain-H) has   162 elements
+Group    10 (    Prot-Masses) has   954 elements
+Group    11 (    non-Protein) has 12756 elements
+Group    12 (          Water) has 12756 elements
+Group    13 (            SOL) has 12756 elements
+Group    14 (      non-Water) has   954 elements
+Select a group: Select group for RMSD calculation
+Group     0 (         System) has 13710 elements
+Group     1 (        Protein) has   954 elements
+Group     2 (      Protein-H) has   489 elements
+Group     3 (        C-alpha) has    81 elements
+Group     4 (       Backbone) has   243 elements
+Group     5 (      MainChain) has   327 elements
+Group     6 (   MainChain+Cb) has   381 elements
+Group     7 (    MainChain+H) has   360 elements
+Group     8 (      SideChain) has   594 elements
+Group     9 (    SideChain-H) has   162 elements
+Group    10 (    Prot-Masses) has   954 elements
+Group    11 (    non-Protein) has 12756 elements
+Group    12 (          Water) has 12756 elements
+Group    13 (            SOL) has 12756 elements
+Group    14 (      non-Water) has   954 elements
+Select a group: Reading frame       0 time    0.000   Reading frame       1 time    1.000   Reading frame       2 time    2.000   Reading frame       3 time    3.000   Reading frame       4 time    4.000   Reading frame       5 time    5.000   Reading frame       6 time    6.000   Reading frame       7 time    7.000   Reading frame       8 time    8.000   Reading frame       9 time    9.000   Reading frame      10 time   10.000   Reading frame      11 time   11.000   Reading frame      12 time   12.000   Reading frame      13 time   13.000   Reading frame      14 time   14.000   Reading frame      15 time   15.000   Reading frame      16 time   16.000   Reading frame      17 time   17.000   Reading frame      18 time   18.000   Reading frame      19 time   19.000   Reading frame      20 time   20.000   Last frame         20 time   20.000   
+
+GROMACS reminds you: "She Says She Can't Go Home Without a Chaperone" (E. Costello)
+
+Selected 4: 'Backbone'
+Selected 4: 'Backbone'

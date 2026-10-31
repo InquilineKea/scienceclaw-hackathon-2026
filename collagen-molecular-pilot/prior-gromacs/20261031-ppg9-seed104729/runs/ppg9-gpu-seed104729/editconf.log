@@ -1,0 +1,25 @@
+                     :-) GROMACS - gmx editconf, 2025.3 (-:
+
+Executable:   /opt/gromacs/bin/gmx
+Data prefix:  /opt/gromacs
+Working dir:  /tmp/collagen-pilot/runs/ppg9-gpu-seed104729
+Command line:
+  gmx editconf -f processed.gro -o boxed.gro -c -d 1.2 -bt triclinic
+
+
+GROMACS reminds you: "I was taught that the way of progress was neither swift nor easy." (Marie Curie)
+
+Note that major changes are planned in future for editconf, to improve usability and utility.
+Read 954 atoms
+Volume: 12.5945 nm^3, corresponds to roughly 5600 electrons
+No velocities found
+    system size :  1.234  1.224  8.345 (nm)
+    center      :  1.170  2.156 13.977 (nm)
+    box vectors :  1.234  1.223  8.344 (nm)
+    box angles  :  90.00  90.00  90.00 (degrees)
+    box volume  :  12.59               (nm^3)
+    shift       :  0.647 -0.344 -8.605 (nm)
+new center      :  1.817  1.812  5.373 (nm)
+new box vectors :  3.634  3.624 10.745 (nm)
+new box angles  :  90.00  90.00  90.00 (degrees)
+new box volume  : 141.51               (nm^3)

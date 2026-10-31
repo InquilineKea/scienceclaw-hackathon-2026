@@ -1,0 +1,180 @@
+                     :-) GROMACS - gmx pdb2gmx, 2025.3 (-:
+
+Executable:   /opt/gromacs/bin/gmx
+Data prefix:  /opt/gromacs
+Working dir:  /tmp/collagen-pilot/runs/ppg9-gpu-seed104729
+Command line:
+  gmx pdb2gmx -f input.pdb -o processed.gro -p topol.top -i posre.itp -ff amber99sb-ildn -water tip3p -ignh -chainsep id_or_ter -merge no
+
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.r2b
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/dna.r2b
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/rna.r2b
+All occupancies are one
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/atomtypes.atp
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.rtp
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/dna.rtp
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/rna.rtp
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.hdb
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/dna.hdb
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/rna.hdb
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.n.tdb
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.c.tdb
+9 out of 9 lines of specbond.dat converted successfully
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.arn
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/dna.arn
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/rna.arn
+Before cleaning: 938 pairs
+Before cleaning: 1028 dihedrals
+9 out of 9 lines of specbond.dat converted successfully
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.arn
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/dna.arn
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/rna.arn
+Before cleaning: 938 pairs
+Before cleaning: 1028 dihedrals
+9 out of 9 lines of specbond.dat converted successfully
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/aminoacids.arn
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/dna.arn
+Opening force field file /opt/gromacs/share/gromacs/top/amber99sb-ildn.ff/rna.arn
+Before cleaning: 938 pairs
+Before cleaning: 1028 dihedrals
+
+GROMACS reminds you: "I was taught that the way of progress was neither swift nor easy." (Marie Curie)
+
+Using the Amber99sb-ildn force field in directory amber99sb-ildn.ff
+
+going to rename amber99sb-ildn.ff/aminoacids.r2b
+
+going to rename amber99sb-ildn.ff/dna.r2b
+
+going to rename amber99sb-ildn.ff/rna.r2b
+Reading input.pdb...
+Read '', 486 atoms
+
+Analyzing pdb file
+Splitting chemical chains based on TER records or chain id changing.
+
+There are 3 chains and 0 blocks of water and 81 residues with 486 atoms
+
+  chain  #res #atoms
+
+  1 'A'    27    162  
+
+  2 'B'    27    162  
+
+  3 'C'    27    162  
+
+All occupancies are one
+
+Reading residue database... (Amber99sb-ildn)
+
+Processing chain 1 'A' (162 atoms, 27 residues)
+
+Identified residue PRO1 as a starting terminus.
+
+Identified residue GLY27 as a ending terminus.
+
+Checking for duplicate atoms....
+
+Generating any missing hydrogen atoms and/or adding termini.
+
+Now there are 27 residues with 318 atoms
+Chain time...
+
+Making bonds...
+
+Number of bonds was 336, now 335
+
+Generating angles, dihedrals and pairs...
+
+Making cmap torsions...
+
+There are 1028 dihedrals,   53 impropers,  651 angles
+           938 pairs,      335 bonds and     0 virtual sites
+
+Total mass 2279.590 a.m.u.
+
+Total charge 0.000 e
+
+Writing topology
+
+Processing chain 2 'B' (162 atoms, 27 residues)
+
+Identified residue PRO1 as a starting terminus.
+
+Identified residue GLY27 as a ending terminus.
+
+Checking for duplicate atoms....
+
+Generating any missing hydrogen atoms and/or adding termini.
+
+Now there are 27 residues with 318 atoms
+Chain time...
+
+Making bonds...
+
+Number of bonds was 336, now 335
+
+Generating angles, dihedrals and pairs...
+
+Making cmap torsions...
+
+There are 1028 dihedrals,   53 impropers,  651 angles
+           938 pairs,      335 bonds and     0 virtual sites
+
+Total mass 2279.590 a.m.u.
+
+Total charge 0.000 e
+
+Writing topology
+
+Processing chain 3 'C' (162 atoms, 27 residues)
+
+Identified residue PRO1 as a starting terminus.
+
+Identified residue GLY27 as a ending terminus.
+
+Checking for duplicate atoms....
+
+Generating any missing hydrogen atoms and/or adding termini.
+
+Now there are 27 residues with 318 atoms
+Chain time...
+
+Making bonds...
+
+Number of bonds was 336, now 335
+
+Generating angles, dihedrals and pairs...
+
+Making cmap torsions...
+
+There are 1028 dihedrals,   53 impropers,  651 angles
+           938 pairs,      335 bonds and     0 virtual sites
+
+Total mass 2279.590 a.m.u.
+
+Total charge 0.000 e
+
+Writing topology
+
+Including chain 1 in system: 318 atoms 27 residues
+
+Including chain 2 in system: 318 atoms 27 residues
+
+Including chain 3 in system: 318 atoms 27 residues
+
+Now there are 954 atoms and 81 residues
+
+Total mass in system 6838.770 a.m.u.
+
+Total charge in system 0.000 e
+
+Writing coordinate file...
+
+		--------- PLEASE NOTE ------------
+
+You have successfully generated a topology from: input.pdb.
+
+The Amber99sb-ildn force field and the tip3p water model are used.
+
+		--------- ETON ESAELP ------------

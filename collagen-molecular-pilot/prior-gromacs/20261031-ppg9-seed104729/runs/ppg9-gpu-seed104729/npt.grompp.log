@@ -1,0 +1,74 @@
+                      :-) GROMACS - gmx grompp, 2025.3 (-:
+
+Executable:   /opt/gromacs/bin/gmx
+Data prefix:  /opt/gromacs
+Working dir:  /tmp/collagen-pilot/runs/ppg9-gpu-seed104729
+Command line:
+  gmx grompp -f npt.mdp -c nvt.gro -p topol.top -o npt.tpr -pp npt.processed.top -po npt.actual.mdp -maxwarn 0 -r em.gro -t nvt.cpt
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group System is 27906.00
+
+NOTE 1 [file npt.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
+Last frame         -1 time   10.000   
+
+There was 1 NOTE
+
+GROMACS reminds you: "Ludwig Boltzmann, who spent much of his life studying statistical mechanics, died in 1906, by his own hand. Paul Ehrenfest, carrying on the same work, died similarly in 1933. Now it is our turn to study statistical mechanics. Perhaps it will be wise to approach the subject cautiously." (David Goodstein)
+
+Generated 2145 of the 2145 non-bonded parameter combinations
+
+Generated 2145 of the 2145 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_B'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_C'
+
+turning H bonds into constraints...
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+
+Taking velocities from 'nvt.gro'
+Analysing residue names:
+There are:    81    Protein residues
+There are:  4252      Water residues
+Analysing Protein...
+
+The largest distance between excluded atoms is 0.397 nm between atom 83 and 97
+
+Determining Verlet buffer for a tolerance of 0.005 kJ/mol/ps at 300 K
+
+Calculated rlist for 1x1 atom pair-list as 1.037 nm, buffer size 0.037 nm
+
+Set rlist, assuming 4x4 atom pair-list, to 1.000 nm, buffer size 0.000 nm
+
+Note that mdrun will redetermine rlist based on the actual pair-list setup
+
+  rest:       	 1.815  1.813  5.313
+  rest:       	 1.815  1.813  5.313
+
+Reading Coordinates, Velocities and Box size from old trajectory
+
+Will read whole trajectory
+
+Using frame at t = 10 ps
+
+Starting time for run is 0 ps
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 32x32x96, spacing 0.114 0.113 0.112
+
+Estimate for the relative computational load of the PME mesh part: 0.26
+
+This run will generate roughly 3 Mb of data

@@ -1,0 +1,47 @@
+                      :-) GROMACS - gmx grompp, 2025.3 (-:
+
+Executable:   /opt/gromacs/bin/gmx
+Data prefix:  /opt/gromacs
+Working dir:  /tmp/collagen-pilot/runs/ppg9-gpu-seed104729
+Command line:
+  gmx grompp -f em.mdp -c solvated.gro -p topol.top -o em.tpr -pp em.processed.top -po em.actual.mdp -maxwarn 0
+
+Generating 1-4 interactions: fudge = 0.5
+Number of degrees of freedom in T-Coupling group rest is 27906.00
+The integrator does not provide a ensemble temperature, there is no system ensemble temperature
+
+GROMACS reminds you: "I was taught that the way of progress was neither swift nor easy." (Marie Curie)
+
+Setting the LD random seed to -152052241
+
+Generated 2145 of the 2145 non-bonded parameter combinations
+
+Generated 2145 of the 2145 1-4 parameter combinations
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_A'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_B'
+
+turning H bonds into constraints...
+
+Excluding 3 bonded neighbours molecule type 'Protein_chain_C'
+
+turning H bonds into constraints...
+
+Excluding 2 bonded neighbours molecule type 'SOL'
+
+turning H bonds into constraints...
+Analysing residue names:
+There are:    81    Protein residues
+There are:  4252      Water residues
+Analysing Protein...
+
+The largest distance between excluded atoms is 0.388 nm between atom 345 and 351
+Calculating fourier grid dimensions for X Y Z
+Using a fourier grid of 32x32x96, spacing 0.114 0.113 0.112
+
+Estimate for the relative computational load of the PME mesh part: 0.24
+
+This run will generate roughly 1 Mb of data

@@ -1,0 +1,39 @@
+# This file was created Sat Oct 31 01:50:11 2026
+# Created by:
+#                       :-) GROMACS - gmx rms, 2025.3 (-:
+# 
+# Executable:   /opt/gromacs/bin/gmx
+# Data prefix:  /opt/gromacs
+# Working dir:  /tmp/collagen-pilot/runs/ppg9-gpu-seed104729
+# Command line:
+#   gmx rms -s sample.tpr -f sample.xtc -o backbone-rmsd.xvg -tu ps
+# gmx rms is part of G R O M A C S:
+#
+# GRoups of Organic Molecules in ACtion for Science
+#
+@    title "RMSD"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "RMSD (nm)"
+@TYPE xy
+@ subtitle "Backbone after lsq fit to Backbone"
+   0.0000000    0.0004938
+   1.0000000    0.0635957
+   2.0000000    0.0849348
+   3.0000000    0.0937102
+   4.0000000    0.1076552
+   5.0000000    0.1042747
+   6.0000000    0.1086975
+   7.0000000    0.1224920
+   8.0000000    0.1246275
+   9.0000000    0.1135666
+  10.0000000    0.1261155
+  11.0000000    0.1345017
+  12.0000000    0.1376486
+  13.0000000    0.1335084
+  14.0000000    0.1390906
+  15.0000000    0.1409482
+  16.0000000    0.1434788
+  17.0000000    0.1560977
+  18.0000000    0.1404544
+  19.0000000    0.1417418
+  20.0000000    0.1553049

@@ -1,0 +1,47 @@
+{
+  "observed_utc": "2026-10-31T09:52:14.258332+00:00",
+  "instance_inventory": {
+    "workspaces": [
+      {
+        "name": "collagen-md-l40s-20261031",
+        "id": "hck82wx4n",
+        "status": "RUNNING",
+        "build_status": "COMPLETED",
+        "shell_status": "READY",
+        "health_status": "HEALTHY",
+        "instance_type": "massedcompute_L40S",
+        "instance_kind": "gpu",
+        "gpu": "L40S"
+      },
+      {
+        "name": "collagen-pilot-h100-20261031",
+        "id": "g1c2xtpht",
+        "status": "STOPPED",
+        "build_status": "COMPLETED",
+        "shell_status": "NOT READY",
+        "health_status": "UNHEALTHY",
+        "instance_type": "gpu-h100-sxm.1gpu-16vcpu-200gb",
+        "instance_kind": "gpu",
+        "gpu": "H100"
+      },
+      {
+        "name": "collagen-md-20261031",
+        "id": "enjgg7tq5",
+        "status": "RUNNING",
+        "build_status": "COMPLETED",
+        "shell_status": "READY",
+        "health_status": "HEALTHY",
+        "instance_type": "g2-standard-4:nvidia-l4:1",
+        "instance_kind": "gpu",
+        "gpu": "L4"
+      }
+    ]
+  },
+  "temporary_transfer_port_present": false,
+  "h100_observation_exit": 0,
+  "new_instance_lifecycle": "STOPPED; explicitly authorized by user; verified via authenticated Brev inventory",
+  "third_instance_notice": "L40S hck82wx4n appeared after the H100 was created; not provisioned by this chat",
+  "h100_stop_confirmation": "User: Stop the completed H100. Stop command issued and STOPPED state verified.",
+  "prior_observation_utc": "2026-10-31T09:43:48.583302+00:00",
+  "running_gpu_instances": 2
+}

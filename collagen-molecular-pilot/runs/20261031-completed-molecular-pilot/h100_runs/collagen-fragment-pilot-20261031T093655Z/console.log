@@ -1,0 +1,100 @@
+Prepared 8 valid neutral conformers
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "CPU"
+     "cuda:0"   : "NVIDIA H100 80GB HBM3" (79 GiB, sm_90, mempool enabled)
+   Kernel cache:
+     /tmp/cache/warp/1.18.0
+/opt/venv/lib/python3.12/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'atomic_masses' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+/opt/venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'velocities' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+Traceback (most recent call last):
+  File "/app/pilot.py", line 240, in <module>
+    main()
+  File "/app/pilot.py", line 156, in main
+    evaluated = model(batch)
+                ^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/nvalchemi/models/mace.py", line 948, in forward
+    raw_output = self.model.forward(
+                 ^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/mace/modules/models.py", line 548, in forward
+    node_feats, sc = interaction(
+                     ^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/mace/modules/blocks.py", line 736, in forward
+    mji = self.conv_tp(
+          ^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/e3nn/o3/_tensor_product/_tensor_product.py", line 529, in forward
+    return self._compiled_main_left_right(x, y, real_weight)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1783, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/venv/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1794, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: The following operation failed in the TorchScript interpreter.
+Traceback of TorchScript, serialized code (most recent call last):
+  File "code/__torch__/torch/fx/graph_module/___torch_mangle_11.py", line 97, in forward
+    _w3j_1_2_1 = self._w3j_1_2_1
+    mul_1 = torch.mul(_w3j_1_2_1, 1.7320508075688772)
+    tensordot = _0(einsum_11, mul_1, ([4, 3], [1, 0]), None, )
+                ~~ <--- HERE
+    einsum_12 = torch.einsum("dbca,dbc->dba", [tensordot, reshape_21])
+    reshape_22 = torch.reshape(einsum_12, [getitem_4, 384])
+  File "code/__torch__/torch/functional/___torch_mangle_0.py", line 9, in tensordot
+  dims_a, dims_b, = dims1
+  if torch.__is__(out, None):
+    _1 = torch.tensordot(a, b, dims_a, dims_b)
+         ~~~~~~~~~~~~~~~ <--- HERE
+    _0 = _1
+  else:
+
+Traceback of TorchScript, original code (most recent call last):
+  File "<eval_with_key>.127", line 75, in forward
+    _w3j_1_2_1 = self._w3j_1_2_1
+    mul_1 = _w3j_1_2_1 * 1.7320508075688772;  _w3j_1_2_1 = None
+    tensordot = torch.functional.tensordot(einsum_11, mul_1, ([4, 3], [1, 0]), out = None);  mul_1 = None
+                ~~~~~~~~~~~~~~~~~~~~~~~~~~ <--- HERE
+    einsum_12 = torch.functional.einsum('dbca,dbc->dba', tensordot, reshape_21);  tensordot = reshape_21 = None
+    reshape_22 = einsum_12.reshape(getitem_4, 384);  einsum_12 = None
+  File "/home/dpk25/miniconda3/envs/SPICE/lib/python3.9/site-packages/torch/functional.py", line 1064, in tensordot
+
+    if out is None:
+        return _VF.tensordot(a, b, dims_a, dims_b)  # type: ignore[attr-defined]
+               ~~~~~~~~~~~~~ <--- HERE
+    else:
+        return _VF.tensordot(a, b, dims_a, dims_b, out=out)  # type: ignore[attr-defined]
+RuntimeError: Expected all tensors to be on the same device, but got mat2 is on cpu, different from other tensors on cuda:0 (when checking argument in method wrapper_CUDA_mm)
+

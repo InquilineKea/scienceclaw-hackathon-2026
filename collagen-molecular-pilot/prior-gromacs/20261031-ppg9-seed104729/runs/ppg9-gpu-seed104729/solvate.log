@@ -1,0 +1,54 @@
+                     :-) GROMACS - gmx solvate, 2025.3 (-:
+
+Executable:   /opt/gromacs/bin/gmx
+Data prefix:  /opt/gromacs
+Working dir:  /tmp/collagen-pilot/runs/ppg9-gpu-seed104729
+Command line:
+  gmx solvate -cp boxed.gro -cs spc216.gro -p topol.top -o solvated.gro
+
+Reading solute configuration
+Reading solvent configuration
+
+Initialising inter-atomic distances...
+
+WARNING: Masses and atomic (Van der Waals) radii will be guessed
+         based on residue and atom names, since they could not be
+         definitively assigned from the information in your input
+         files. These guessed numbers might deviate from the mass
+         and radius of the atom type. Please check the output
+         files if necessary. Note, that this functionality may
+         be removed in a future GROMACS version. Please, consider
+         using another file format for your input.
+
+NOTE: From version 5.0 gmx solvate uses the Van der Waals radii
+from the source below. This means the results may be different
+compared to previous GROMACS versions.
+
+++++ PLEASE READ AND CITE THE FOLLOWING REFERENCE ++++
+A. Bondi
+van der Waals Volumes and Radii
+J. Phys. Chem. (1964)
+DOI: 10.1021/j100785a001
+-------- -------- --- Thank You --- -------- --------
+
+Generating solvent configuration
+Will generate new solvent configuration of 2x2x6 boxes
+Solvent box contains 15372 atoms in 5124 residues
+Removed 1704 solvent atoms due to solvent-solvent overlap
+Removed 912 solvent atoms due to solute-solvent overlap
+Sorting configuration
+Found 1 molecule type:
+    SOL (   3 atoms):  4252 residues
+Generated solvent containing 12756 atoms in 4252 residues
+Writing generated configuration to solvated.gro
+
+Output configuration contains 13710 atoms in 4333 residues
+Volume                 :     141.508 (nm^3)
+Density                :      984.25 (g/l)
+Number of solvent molecules:   4252   
+
+Processing topology
+
+GROMACS reminds you: "I was taught that the way of progress was neither swift nor easy." (Marie Curie)
+
+Adding line for 4252 solvent molecules with resname (SOL) to topology file (topol.top)

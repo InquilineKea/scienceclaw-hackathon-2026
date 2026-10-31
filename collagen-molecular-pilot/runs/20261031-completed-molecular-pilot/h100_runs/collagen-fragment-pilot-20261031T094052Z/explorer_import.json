@@ -1,0 +1,9 @@
+{
+  "schema": "collagen-molecular-evidence-v1",
+  "scope": "local-fragment-geometries",
+  "can_update_tissue_stiffness": false,
+  "mechanics_parameters": null,
+  "evidence_file": "results.json",
+  "status": "validated",
+  "explanation": "Geometry relaxation does not identify tissue strength, rupture force, or reaction rates."
+}

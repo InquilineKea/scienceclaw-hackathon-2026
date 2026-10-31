@@ -1,0 +1,41 @@
+                      :-) GROMACS - gmx energy, 2025.3 (-:
+
+Executable:   /opt/gromacs/bin/gmx
+Data prefix:  /opt/gromacs
+Working dir:  /tmp/collagen-pilot/runs/ppg9-gpu-seed104729
+Command line:
+  gmx energy -f sample.edr -o sample-energy.xvg
+
+Opened sample.edr as single precision energy file
+
+Select the terms you want from the following list by
+selecting either (part of) the name or the number or a combination.
+End your selection with an empty line or a zero.
+-------------------------------------------------------------------
+  1  Bond             2  Angle            3  Proper-Dih.      4  Per.-Imp.-Dih.
+  5  LJ-14            6  Coulomb-14       7  LJ-(SR)          8  Disper.-corr. 
+  9  Coulomb-(SR)    10  Coul.-recip.    11  Potential       12  Kinetic-En.   
+ 13  Total-Energy    14  Conserved-En.   15  Temperature     16  Pres.-DC      
+ 17  Pressure        18  Constr.-rmsd    19  Box-X           20  Box-Y         
+ 21  Box-Z           22  Volume          23  Density         24  pV            
+ 25  Enthalpy        26  Vir-XX          27  Vir-XY          28  Vir-XZ        
+ 29  Vir-YX          30  Vir-YY          31  Vir-YZ          32  Vir-ZX        
+ 33  Vir-ZY          34  Vir-ZZ          35  Pres-XX         36  Pres-XY       
+ 37  Pres-XZ         38  Pres-YX         39  Pres-YY         40  Pres-YZ       
+ 41  Pres-ZX         42  Pres-ZY         43  Pres-ZZ         44  #Surf*SurfTen 
+ 45  T-System        46  Lamb-System   
+
+Reading energy frame      0 time    0.000         Reading energy frame      1 time    0.100         Reading energy frame      2 time    0.200         Reading energy frame      3 time    0.300         Reading energy frame      4 time    0.400         Reading energy frame      5 time    0.500         Reading energy frame      6 time    0.600         Reading energy frame      7 time    0.700         Reading energy frame      8 time    0.800         Reading energy frame      9 time    0.900         Reading energy frame     10 time    1.000         Reading energy frame     11 time    1.100         Reading energy frame     12 time    1.200         Reading energy frame     13 time    1.300         Reading energy frame     14 time    1.400         Reading energy frame     15 time    1.500         Reading energy frame     16 time    1.600         Reading energy frame     17 time    1.700         Reading energy frame     18 time    1.800         Reading energy frame     19 time    1.900         Reading energy frame     20 time    2.000         Reading energy frame     30 time    3.000         Reading energy frame     40 time    4.000         Reading energy frame     50 time    5.000         Reading energy frame     60 time    6.000         Reading energy frame     70 time    7.000         Reading energy frame     80 time    8.000         Reading energy frame     90 time    9.000         Reading energy frame    100 time   10.000         Reading energy frame    110 time   11.000         Reading energy frame    120 time   12.000         Reading energy frame    130 time   13.000         Reading energy frame    140 time   14.000         Reading energy frame    150 time   15.000         Reading energy frame    160 time   16.000         Reading energy frame    170 time   17.000         Reading energy frame    180 time   18.000         Reading energy frame    190 time   19.000         Reading energy frame    200 time   20.000         Last energy frame read 200 time   20.000         
+
+GROMACS reminds you: "She Says She Can't Go Home Without a Chaperone" (E. Costello)
+
+
+Statistics over 20001 steps [ 0.0000 through 20.0000 ps ], 4 data sets
+All statistics are over 201 points (frames)
+
+Energy                      Average   Err.Est.       RMSD  Tot-Drift
+-------------------------------------------------------------------------------
+Potential                   -168043         71    314.771    246.318  (kJ/mol)
+Temperature                 299.198       0.39    2.38885    1.06262  (K)
+Pressure                    42.6657        6.3    205.685   -33.9615  (bar)
+Density                      1009.2       0.59    1.87508   -3.86367  (kg/m^3)

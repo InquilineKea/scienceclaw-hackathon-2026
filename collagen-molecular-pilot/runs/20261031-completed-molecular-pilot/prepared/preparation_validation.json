@@ -1,0 +1,19 @@
+{
+  "status": "PREPARED_ON_BREV",
+  "instance": "collagen-md-20261031",
+  "instance_id": "enjgg7tq5",
+  "container_label": "collagen-fragment-prep-01a1912f",
+  "container_auto_removed": true,
+  "structures": 8,
+  "total_atoms": 140,
+  "charge_and_spin": "all neutral singlets; no radicals",
+  "validation": {
+    "rdkit_sanitization": true,
+    "formula_match": true,
+    "connected_molecules": true,
+    "mmff_all_parameters": true,
+    "mmff_converged": true
+  },
+  "execution_approval": "Explicit human approval in this chat after SECURITY_REVIEW.md",
+  "not_yet_evidence_of": "GPU geometry relaxation or tissue mechanics"
+}

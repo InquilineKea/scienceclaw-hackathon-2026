@@ -9,6 +9,12 @@ collagen matrix?**
 - **AI peer review of the project blog:** https://humanavianaisymbiosis.wordpress.com/2026/10/31/agent-critiques-five-ai-reviewers-read-every-post-on-this-blog/
 - **Blog:** https://humanavianaisymbiosis.wordpress.com/
 
+## Complete collagen archives and separate run storage
+
+The [archive index](ARCHIVE_INDEX.md) links the frozen 450-run network atlas, corrected diagrams and animations, completed H100 molecular results, MACE-OFF/MACE-MP comparison, failed/successful job logs, and the recovered GROMACS trajectories. [File checksums](ARCHIVE_MANIFEST.json) cover the added deliverables.
+
+Future atlas runs now create separate timestamped folders with source snapshots and logs. Existing run names are rejected. These results retain their scientific limits: hypothetical network mechanics and molecular proxy calculations do not establish validated tissue toughness or native crosslink reactions.
+
 ## What is here
 
 | Path (under `oxidative-tensegrity/`) | What it is |

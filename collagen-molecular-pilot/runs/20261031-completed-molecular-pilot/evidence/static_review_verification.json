@@ -1,0 +1,21 @@
+{
+  "audit_date": "2026-10-31",
+  "upstream_commit": "84fe8e8fb8fab54863eea8f138722c7ab434966a",
+  "installed_python_files_matching_upstream": 316,
+  "installed_python_files_different": 0,
+  "model_sha256": "4842c52ad210d6e1f84d6cf1ffa70fae25a7e0d755ed55cf223f43913f587db7",
+  "public_model_bytes_match_remote_cached_model": true,
+  "model_unpickled_during_static_audit": false,
+  "image_id": "sha256:78c6833ca878fd221957db5d580f7f2e9e31265b38656e97368caf23f12e24c8",
+  "third_party_execution_approved": true,
+  "gpu_sharing_approval": "Not granted; user chose a second GPU instead",
+  "readiness_attempt_exit_code": 75,
+  "readiness_attempt_reason": "Existing GPU workload active",
+  "remaining_unverified": [
+    "complete transitive artifact integrity",
+    "publisher signatures",
+    "GPU kernel binary audit",
+    "independent quantum reference for fragments"
+  ],
+  "second_gpu_authorized": true
+}

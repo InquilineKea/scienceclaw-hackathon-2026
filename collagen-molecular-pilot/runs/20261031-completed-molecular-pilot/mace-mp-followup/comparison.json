@@ -1,0 +1,352 @@
+{
+  "scope": "Descriptive comparison of proxy-fragment scans; not a validation against molecular or tissue reference data",
+  "sources": {
+    "OFF": {
+      "model": "alchemi:mace-off:medium",
+      "sha256": "1a70cba1d906cf426aa30e4877b23e51810cb519f7eefd76a4c866b4d8d968f8",
+      "seconds": 2592.3543553352356,
+      "steps": 419,
+      "reported_final_free_atom_fmax_eV_A": 0.019735862658841613
+    },
+    "MP": {
+      "model": "alchemi:mace-mp:medium-0b2",
+      "sha256": "b26ea0f5862879968e494764e1845efdd7484a12ef787beacf460eeadf1a66e7",
+      "seconds": 2688.1630158424377,
+      "steps": 387,
+      "reported_final_free_atom_fmax_eV_A": 0.01936194510594663
+    }
+  },
+  "matched_fragments": 8,
+  "points_per_fragment": 21,
+  "same_source_SMILES_and_distance_grids": true,
+  "independent_arithmetic_checks": {
+    "OFF": {
+      "HLNL": {
+        "refitted_k_eV_A2": 1.5776684562551115,
+        "recomputed_peak_slope_eV_A": 1.2847857490736525,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 16,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "pyridinoline": {
+        "refitted_k_eV_A2": 0.09684601439455534,
+        "recomputed_peak_slope_eV_A": 0.2104329608159869,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 3,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "pentosidine": {
+        "refitted_k_eV_A2": 0.05110075343128537,
+        "recomputed_peak_slope_eV_A": 0.32996102419896256,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 4,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "glucosepane": {
+        "refitted_k_eV_A2": 0.10068034665990402,
+        "recomputed_peak_slope_eV_A": 0.9538538355157486,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 5,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "dityrosine": {
+        "refitted_k_eV_A2": 0.4173554525931476,
+        "recomputed_peak_slope_eV_A": 1.5212073560794135,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 3,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "disulfide": {
+        "refitted_k_eV_A2": 0.2082098567202732,
+        "recomputed_peak_slope_eV_A": 0.13388727894525404,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 4,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "isopeptide_TG2": {
+        "refitted_k_eV_A2": 0.058374554882017725,
+        "recomputed_peak_slope_eV_A": 0.20545237327367005,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 5,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "sulfilimine": {
+        "refitted_k_eV_A2": 0.05855223468639745,
+        "recomputed_peak_slope_eV_A": 0.38186199058130144,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 0,
+        "minimum_at_boundary": true,
+        "negative_curvature": false
+      }
+    },
+    "MP": {
+      "HLNL": {
+        "refitted_k_eV_A2": 0.14780453422549064,
+        "recomputed_peak_slope_eV_A": 0.9458906858577236,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 4,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "pyridinoline": {
+        "refitted_k_eV_A2": 0.05081250115268185,
+        "recomputed_peak_slope_eV_A": 0.1051541376650405,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 0,
+        "minimum_at_boundary": true,
+        "negative_curvature": false
+      },
+      "pentosidine": {
+        "refitted_k_eV_A2": 0.07340681394401144,
+        "recomputed_peak_slope_eV_A": 0.26587833932708144,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 5,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "glucosepane": {
+        "refitted_k_eV_A2": 0.07877705836193209,
+        "recomputed_peak_slope_eV_A": 0.6609824259003646,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 8,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "dityrosine": {
+        "refitted_k_eV_A2": 0.3455022898511477,
+        "recomputed_peak_slope_eV_A": 1.4213443189846002,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 1,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "disulfide": {
+        "refitted_k_eV_A2": 0.05327318390851543,
+        "recomputed_peak_slope_eV_A": 0.023826114275586827,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 4,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "isopeptide_TG2": {
+        "refitted_k_eV_A2": 0.040736708115135814,
+        "recomputed_peak_slope_eV_A": 0.1432132843612478,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 6,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      },
+      "sulfilimine": {
+        "refitted_k_eV_A2": 0.1772132939112569,
+        "recomputed_peak_slope_eV_A": 0.16379342035414018,
+        "k_reproduced": true,
+        "peak_reproduced": true,
+        "normalization_reproduced": true,
+        "minimum_grid_index": 4,
+        "minimum_at_boundary": false,
+        "negative_curvature": false
+      }
+    }
+  },
+  "all_arithmetic_checks_pass": true,
+  "rows": [
+    {
+      "source_proxy_label": "HLNL",
+      "k_OFF_eV_A2": 1.577668456256599,
+      "k_MP_eV_A2": 0.14780453422546555,
+      "k_MP_over_OFF": 0.09368542144536987,
+      "k_relative_change_percent": -90.63145785546301,
+      "peak_slope_OFF_eV_A": 1.2847857490736525,
+      "peak_slope_MP_eV_A": 0.9458906858577236,
+      "k_rel_OFF": 16.290484085696328,
+      "k_rel_MP": 2.90882225579379,
+      "curve_RMSE_eV": 0.16077761071373603,
+      "curve_max_absolute_difference_eV": 0.2520300211699862,
+      "min_distance_OFF_A": 13.83012727400772,
+      "min_distance_MP_A": 11.664804316966109
+    },
+    {
+      "source_proxy_label": "pyridinoline",
+      "k_OFF_eV_A2": 0.09684601439449259,
+      "k_MP_eV_A2": 0.050812501152680815,
+      "k_MP_over_OFF": 0.524673126409737,
+      "k_relative_change_percent": -47.532687359026305,
+      "peak_slope_OFF_eV_A": 0.2104329608159869,
+      "peak_slope_MP_eV_A": 0.1051541376650405,
+      "k_rel_OFF": 1.0,
+      "k_rel_MP": 1.0,
+      "curve_RMSE_eV": 0.031422220752492895,
+      "curve_max_absolute_difference_eV": 0.08038569070311041,
+      "min_distance_OFF_A": 6.725222060417084,
+      "min_distance_MP_A": 6.408219702779583
+    },
+    {
+      "source_proxy_label": "pentosidine",
+      "k_OFF_eV_A2": 0.05110075343125041,
+      "k_MP_eV_A2": 0.07340681394396573,
+      "k_MP_over_OFF": 1.4365113822191544,
+      "k_relative_change_percent": 43.651138221915446,
+      "peak_slope_OFF_eV_A": 0.32996102419896256,
+      "peak_slope_MP_eV_A": 0.26587833932708144,
+      "k_rel_OFF": 0.527649524358293,
+      "k_rel_MP": 1.4446605122505933,
+      "curve_RMSE_eV": 0.025776282246055493,
+      "curve_max_absolute_difference_eV": 0.07133064025612157,
+      "min_distance_OFF_A": 8.703023707871926,
+      "min_distance_MP_A": 8.837651320119447
+    },
+    {
+      "source_proxy_label": "glucosepane",
+      "k_OFF_eV_A2": 0.1006803466598976,
+      "k_MP_eV_A2": 0.07877705836195294,
+      "k_MP_over_OFF": 0.7824472300245957,
+      "k_relative_change_percent": -21.755276997540427,
+      "peak_slope_OFF_eV_A": 0.9538538355157486,
+      "peak_slope_MP_eV_A": 0.6609824259003646,
+      "k_rel_OFF": 1.039592050218879,
+      "k_rel_MP": 1.5503479768737332,
+      "curve_RMSE_eV": 0.07152968760977416,
+      "curve_max_absolute_difference_eV": 0.18692367019662015,
+      "min_distance_OFF_A": 12.08426012467286,
+      "min_distance_MP_A": 12.63651378147609
+    },
+    {
+      "source_proxy_label": "dityrosine",
+      "k_OFF_eV_A2": 0.4173554525928416,
+      "k_MP_eV_A2": 0.34550228985119874,
+      "k_MP_over_OFF": 0.8278370096874222,
+      "k_relative_change_percent": -17.216299031257776,
+      "peak_slope_OFF_eV_A": 1.5212073560794135,
+      "peak_slope_MP_eV_A": 1.4213443189846002,
+      "k_rel_OFF": 4.309474738865203,
+      "k_rel_MP": 6.799552905554432,
+      "curve_RMSE_eV": 0.07699115512498933,
+      "curve_max_absolute_difference_eV": 0.15197665230240887,
+      "min_distance_OFF_A": 7.288157100645071,
+      "min_distance_MP_A": 7.059132397026219
+    },
+    {
+      "source_proxy_label": "disulfide",
+      "k_OFF_eV_A2": 0.20820985672023895,
+      "k_MP_eV_A2": 0.053273183908506855,
+      "k_MP_over_OFF": 0.25586292958304724,
+      "k_relative_change_percent": -74.41370704169528,
+      "peak_slope_OFF_eV_A": 0.13388727894525404,
+      "peak_slope_MP_eV_A": 0.023826114275586827,
+      "k_rel_OFF": 2.149906302515629,
+      "k_rel_MP": 1.0484267198033062,
+      "curve_RMSE_eV": 0.034158088636930165,
+      "curve_max_absolute_difference_eV": 0.06620366426338364,
+      "min_distance_OFF_A": 4.868991878599115,
+      "min_distance_MP_A": 4.868991878599115
+    },
+    {
+      "source_proxy_label": "isopeptide_TG2",
+      "k_OFF_eV_A2": 0.058374554882013915,
+      "k_MP_eV_A2": 0.04073670811512897,
+      "k_MP_over_OFF": 0.6978504281097409,
+      "k_relative_change_percent": -30.214957189025917,
+      "peak_slope_OFF_eV_A": 0.20545237327367005,
+      "peak_slope_MP_eV_A": 0.1432132843612478,
+      "k_rel_OFF": 0.6027563988769944,
+      "k_rel_MP": 0.8017064145833677,
+      "curve_RMSE_eV": 0.033462006809784284,
+      "curve_max_absolute_difference_eV": 0.10458823778040482,
+      "min_distance_OFF_A": 9.001456636088683,
+      "min_distance_MP_A": 9.1385795627318
+    },
+    {
+      "source_proxy_label": "sulfilimine",
+      "k_OFF_eV_A2": 0.058552234686401396,
+      "k_MP_eV_A2": 0.1772132939112086,
+      "k_MP_over_OFF": 3.026584636100421,
+      "k_relative_change_percent": 202.6584636100421,
+      "peak_slope_OFF_eV_A": 0.38186199058130144,
+      "peak_slope_MP_eV_A": 0.16379342035414018,
+      "k_rel_OFF": 0.6045910619294533,
+      "k_rel_MP": 3.4875924209816036,
+      "curve_RMSE_eV": 0.06559007605505988,
+      "curve_max_absolute_difference_eV": 0.1325574241325569,
+      "min_distance_OFF_A": 6.637711361716588,
+      "min_distance_MP_A": 7.075517855787257
+    }
+  ],
+  "descending_k_order": {
+    "OFF": [
+      "HLNL",
+      "dityrosine",
+      "disulfide",
+      "glucosepane",
+      "pyridinoline",
+      "sulfilimine",
+      "isopeptide_TG2",
+      "pentosidine"
+    ],
+    "MP": [
+      "dityrosine",
+      "sulfilimine",
+      "HLNL",
+      "glucosepane",
+      "pentosidine",
+      "disulfide",
+      "pyridinoline",
+      "isopeptide_TG2"
+    ]
+  },
+  "descriptive_spearman_k_rank_correlation": 0.47619047619047616,
+  "MACE_MP_to_OFF_reported_runtime_ratio": 1.036958165194516,
+  "cost_at_observed_L4_catalog_rate": {
+    "USD_per_hour": 0.845421,
+    "OFF_compute_equivalent_USD": 0.6087863365116306,
+    "MP_compute_equivalent_USD": 0.6312859625045916,
+    "invoice_verified": false
+  },
+  "caveats": [
+    "Source labels describe truncated or approximate neutral proxies; native glucosepane/PYD/4-HNE chemistry is not validated.",
+    "Both use the MACE architecture; differing checkpoints/training data are not independent experimental validation.",
+    "MACE-MP-0b2 targets materials with MPTrj/PBE+U data; MACE-OFF23 targets neutral organic chemistry with SPICE/wB97M+D3 data.",
+    "Each curve is independently minimum-zeroed; offsets and absolute total energies must not be compared between model families.",
+    "Different relaxed coordinates may contribute to the curve difference; this is not a same-geometry energy-force benchmark.",
+    "k is a five-point local quadratic fit; peak slope is not rupture force or a reaction event.",
+    "The pyridinoline-proxy normalizer can conceal model disagreement; raw k and shape comparisons are retained.",
+    "Final per-structure coordinates/forces were not exported by the legacy scan; aggregate force convergence is not independent geometry validation.",
+    "Timings include setup/compilation and are not repeated controlled benchmarks."
+  ]
+}

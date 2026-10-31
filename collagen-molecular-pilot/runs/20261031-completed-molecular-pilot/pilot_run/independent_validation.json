@@ -1,0 +1,87 @@
+{
+  "passed": true,
+  "structures": 8,
+  "method": "Original Python standard-library recomputation from exported force vectors, energies, coordinates, and input bonds",
+  "checks": [
+    {
+      "structure": "peptide_bond_control_seed17",
+      "independent_fmax_eV_A": 0.014684471399675662,
+      "energy_change_eV": -0.04349356444799923,
+      "within_compound_relative_energy_eV": 3.6624169297283515e-07,
+      "bond_ratio_range": [
+        0.9866974934342105,
+        1.0059914622496875
+      ]
+    },
+    {
+      "structure": "peptide_bond_control_seed29",
+      "independent_fmax_eV_A": 0.014687441606382075,
+      "energy_change_eV": -0.04349277081837499,
+      "within_compound_relative_energy_eV": 0.0,
+      "bond_ratio_range": [
+        0.9866974241332696,
+        1.0059915138410886
+      ]
+    },
+    {
+      "structure": "capped_glycine_seed17",
+      "independent_fmax_eV_A": 0.012987460916840167,
+      "energy_change_eV": -0.08224942508786626,
+      "within_compound_relative_energy_eV": 0.03324690426779853,
+      "bond_ratio_range": [
+        0.979250376170832,
+        1.007484065494387
+      ]
+    },
+    {
+      "structure": "capped_glycine_seed29",
+      "independent_fmax_eV_A": 0.013054255491934508,
+      "energy_change_eV": -0.09006774708177545,
+      "within_compound_relative_energy_eV": 0.0,
+      "bond_ratio_range": [
+        0.9785783931730516,
+        1.0073098241051188
+      ]
+    },
+    {
+      "structure": "isopeptide_amide_motif_seed17",
+      "independent_fmax_eV_A": 0.01126030214658617,
+      "energy_change_eV": -0.04120740972030035,
+      "within_compound_relative_energy_eV": 4.898563929600641e-06,
+      "bond_ratio_range": [
+        0.9878550471254508,
+        1.0056900502563828
+      ]
+    },
+    {
+      "structure": "isopeptide_amide_motif_seed29",
+      "independent_fmax_eV_A": 0.011261343386575532,
+      "energy_change_eV": -0.04120586890530831,
+      "within_compound_relative_energy_eV": 0.0,
+      "bond_ratio_range": [
+        0.9878558984559648,
+        1.0056885908296809
+      ]
+    },
+    {
+      "structure": "dityrosine_biaryl_core_seed17",
+      "independent_fmax_eV_A": 0.01541643750185675,
+      "energy_change_eV": -0.11699379050332936,
+      "within_compound_relative_energy_eV": 1.5810655895620584e-08,
+      "bond_ratio_range": [
+        0.9853812419179258,
+        1.003487864941456
+      ]
+    },
+    {
+      "structure": "dityrosine_biaryl_core_seed29",
+      "independent_fmax_eV_A": 0.01541953618451572,
+      "energy_change_eV": -0.11698842906116624,
+      "within_compound_relative_energy_eV": 0.0,
+      "bond_ratio_range": [
+        0.9853806308580978,
+        1.003486705534366
+      ]
+    }
+  ]
+}

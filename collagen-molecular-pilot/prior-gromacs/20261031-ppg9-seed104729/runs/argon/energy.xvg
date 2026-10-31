@@ -1,0 +1,35 @@
+# This file was created Sat Oct 31 01:49:12 2026
+# Created by:
+#                      :-) GROMACS - gmx energy, 2025.3 (-:
+# 
+# Executable:   /opt/gromacs/bin/gmx
+# Data prefix:  /opt/gromacs
+# Working dir:  /tmp/collagen-pilot/runs/argon
+# Command line:
+#   gmx energy -f argon.edr -o energy.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Georgetown Riga Oslo Madrid Amsterdam Chisinau Stockholm
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Total Energy"
+    0.000000    4.260524
+    0.100000    4.260522
+    0.200000    4.260518
+    0.300000    4.260515
+    0.400000    4.260542
+    0.500000    4.260526
+    0.600000    4.260537
+    0.700000    4.260523
+    0.800000    4.260531
+    0.900000    4.260526
+    1.000000    4.260522

@@ -1,0 +1,23 @@
+{
+  "status": "INFRASTRUCTURE_SMOKE_COMPLETE",
+  "time_ps": 1.0,
+  "energy_frames": 11,
+  "biological_model": false
+}
+
+EM maximum force criterion passed; continue short equilibration
+{
+  "status": "SHORT_BASELINE_COMPLETED_NOT_SCIENTIFICALLY_VALIDATED",
+  "maximum_force": 974.06793,
+  "requested_device": "gpu",
+  "sample_end_time_ps": 20.0,
+  "energy_frames": 201,
+  "rmsd_frames": 21,
+  "manual_review_required": [
+    "Topology net charge and chain termini",
+    "Temperature/density relaxation",
+    "Imaging of triple helix before interpreting RMSD",
+    "Longer independent replicas",
+    "Force-field accuracy for scientific question"
+  ]
+}

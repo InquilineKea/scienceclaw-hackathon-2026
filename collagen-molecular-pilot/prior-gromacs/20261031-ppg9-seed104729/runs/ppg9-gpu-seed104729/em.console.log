@@ -1,0 +1,32 @@
+                      :-) GROMACS - gmx mdrun, 2025.3 (-:
+
+Executable:   /opt/gromacs/bin/gmx
+Data prefix:  /opt/gromacs
+Working dir:  /tmp/collagen-pilot/runs/ppg9-gpu-seed104729
+Command line:
+  gmx mdrun -deffnm em -ntmpi 1 -ntomp 4 -nb cpu
+
+Compiled SIMD is AVX2_256, but CPU also supports AVX_512 (see log).
+Reading file em.tpr, VERSION 2025.3 (single precision)
+Using 1 MPI thread
+Using 4 OpenMP threads 
+
+
+NOTE: The number of threads is not equal to the number of (logical) cpus
+      and the -pin option is set to auto: will not pin threads to cpus.
+      This can lead to significant performance degradation.
+      Consider using -pin on (and -pinoffset in case you run multiple jobs).
+
+Steepest Descents:
+   Tolerance (Fmax)   =  1.00000e+03
+   Number of steps    =         5000
+
+writing lowest energy coordinates.
+
+Steepest Descents converged to Fmax < 1000 in 240 steps
+Potential Energy  = -1.8839236e+05
+Maximum force     =  9.7406793e+02 on atom 952
+Norm of force     =  4.4445906e+01
+
+GROMACS reminds you: "I will not be a lemming and follow the crowd over the cliff and into the C." (John Beidler)
+

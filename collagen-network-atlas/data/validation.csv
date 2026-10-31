@@ -1,0 +1,31 @@
+mode,features,split,n,logWorkR2,logWorkRMSE
+"tension","mean","held-out seeds",14,-0.0001364299,0.9629359
+"tension","mean","leave-one-family-out",35,-0.3288948,1.137835
+"tension","spectral","held-out seeds",14,0.2416286,0.838511
+"tension","spectral","leave-one-family-out",35,-3.464366,2.085518
+"tension","geometry","held-out seeds",14,0.1869562,0.8682099
+"tension","geometry","leave-one-family-out",35,-1.745383,1.635443
+"tension","mechanical","held-out seeds",14,0.4685765,0.7019209
+"tension","mechanical","leave-one-family-out",35,-0.03953194,1.006359
+"tension","combined","held-out seeds",14,0.8017531,0.4287173
+"tension","combined","leave-one-family-out",35,-0.5701352,1.236809
+"tensionY","mean","held-out seeds",12,-0.009742666,0.653236
+"tensionY","mean","leave-one-family-out",30,-0.3664064,0.8173744
+"tensionY","spectral","held-out seeds",12,0.2885441,0.5483258
+"tensionY","spectral","leave-one-family-out",30,-1.05539,1.002486
+"tensionY","geometry","held-out seeds",12,-0.02684593,0.6587451
+"tensionY","geometry","leave-one-family-out",30,-4.878956,1.695435
+"tensionY","mechanical","held-out seeds",12,-0.2500847,0.7268327
+"tensionY","mechanical","leave-one-family-out",30,-2.080188,1.227212
+"tensionY","combined","held-out seeds",12,0.1124096,0.6124506
+"tensionY","combined","leave-one-family-out",30,-6.444164,1.907827
+"shear","mean","held-out seeds",12,-0.0009984304,0.3919743
+"shear","mean","leave-one-family-out",30,-0.3535569,0.5687262
+"shear","spectral","held-out seeds",12,0.1566529,0.3597858
+"shear","spectral","leave-one-family-out",30,-1.039458,0.6981077
+"shear","geometry","held-out seeds",12,0.4897196,0.2798629
+"shear","geometry","leave-one-family-out",30,-2.309064,0.8892372
+"shear","mechanical","held-out seeds",12,0.4071458,0.301658
+"shear","mechanical","leave-one-family-out",30,-0.8874989,0.6715964
+"shear","combined","held-out seeds",12,0.376373,0.3093879
+"shear","combined","leave-one-family-out",30,-4.460554,1.142308

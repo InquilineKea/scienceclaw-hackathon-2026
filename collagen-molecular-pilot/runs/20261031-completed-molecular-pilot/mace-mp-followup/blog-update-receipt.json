@@ -1,0 +1,33 @@
+{
+  "posts": [
+    {
+      "id": 96,
+      "url": "https://humanavianaisymbiosis.wordpress.com/2026/10/31/scienceclaw-collagen-brev-alchemi-results/",
+      "status": "publish",
+      "categories": [
+        792847524,
+        792847523,
+        792847528,
+        7880023
+      ],
+      "raw_code_records": 0,
+      "new_record_exact_match": null,
+      "status_timestamp_present": true
+    },
+    {
+      "id": 97,
+      "url": "https://humanavianaisymbiosis.wordpress.com/2026/10/31/scienceclaw-alchemi-collagen-data-code-logs/",
+      "status": "publish",
+      "categories": [
+        792847524,
+        792847523,
+        792847528
+      ],
+      "raw_code_records": 71,
+      "new_record_exact_match": true,
+      "status_timestamp_present": true
+    }
+  ],
+  "result_status": "MACE-MP still running at 2026-10-31 06:11:59 America/New_York; numerical comparison unavailable",
+  "warnings": []
+}

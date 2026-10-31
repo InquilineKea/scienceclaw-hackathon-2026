@@ -1,0 +1,44 @@
+{
+  "source": "Existing downloaded archive; not a run by this chat",
+  "archive_sha256": "d0aa9885504bb129bd3f3e9afa5e23fd360ec64bdfabb9563acb1694ef649556",
+  "archive_members": 123,
+  "manifest_entries": 122,
+  "hash_mismatches": [],
+  "missing_manifest_files": [],
+  "gpu_recorded_by_GROMACS": "NVIDIA L40S; differs from current Brev L4",
+  "sample_duration_ps": 20.0,
+  "samples": 201,
+  "sampled_frame_statistics": {
+    "time_ps": {
+      "mean": 10.0,
+      "min": 0.0,
+      "max": 20.0
+    },
+    "potential_kJ_mol": {
+      "mean": -168042.82866915423,
+      "min": -168918.765625,
+      "max": -167228.625
+    },
+    "temperature_K": {
+      "mean": 299.1984054129353,
+      "min": 293.445862,
+      "max": 306.850311
+    },
+    "pressure_bar": {
+      "mean": 42.66575051741294,
+      "min": -713.825195,
+      "max": 556.329041
+    },
+    "density_kg_m3": {
+      "mean": 1009.1991980497512,
+      "min": 1004.437378,
+      "max": 1013.972534
+    }
+  },
+  "limitations": [
+    "20 ps is not sufficient for collagen mechanical inference",
+    "unmodified PPG9 baseline; no glucosepane/PYD/4-HNE topology",
+    "No new MD execution in this chat",
+    "Archive integrity check does not establish independent authenticity or experimental validity"
+  ]
+}

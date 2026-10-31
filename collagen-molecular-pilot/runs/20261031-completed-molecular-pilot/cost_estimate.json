@@ -1,0 +1,9 @@
+{
+  "pilot_script_seconds": 36.68702483177185,
+  "H100_catalog_USD_per_hour": 5.4,
+  "pilot_compute_equivalent_USD": 0.055030537247657774,
+  "invoice_verified": false,
+  "setup_and_idle_cost_excluded": true,
+  "requested_storage_GB": 100,
+  "catalog_storage_USD_per_GB_month": 0.12264
+}

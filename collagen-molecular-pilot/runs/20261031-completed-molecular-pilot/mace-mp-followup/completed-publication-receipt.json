@@ -1,0 +1,46 @@
+{
+  "posts": [
+    {
+      "id": 96,
+      "title": "ScienceClaw collagen on Brev: completed ALCHEMI pilot and MACE-OFF/MACE-MP comparison",
+      "url": "https://humanavianaisymbiosis.wordpress.com/2026/10/31/scienceclaw-collagen-brev-alchemi-results/",
+      "status": "publish",
+      "categories": [
+        792847524,
+        792847523,
+        792847528,
+        7880023
+      ],
+      "raw_records": 0,
+      "new_raw_records_exact": 0,
+      "original_raw_records_exact": 0,
+      "embedded_figure_ids": [
+        106,
+        107,
+        108
+      ],
+      "newsletter_disabled": true,
+      "social_disabled": true
+    },
+    {
+      "id": 97,
+      "title": "ScienceClaw collagen calculations: full data, MACE-OFF/MACE-MP comparison, code and logs",
+      "url": "https://humanavianaisymbiosis.wordpress.com/2026/10/31/scienceclaw-alchemi-collagen-data-code-logs/",
+      "status": "publish",
+      "categories": [
+        792847524,
+        792847523,
+        792847528,
+        7880023
+      ],
+      "raw_records": 77,
+      "new_raw_records_exact": 13,
+      "original_raw_records_exact": 64,
+      "embedded_figure_ids": [],
+      "newsletter_disabled": true,
+      "social_disabled": true
+    }
+  ],
+  "comparison_status": "completed",
+  "new_images": 3
+}

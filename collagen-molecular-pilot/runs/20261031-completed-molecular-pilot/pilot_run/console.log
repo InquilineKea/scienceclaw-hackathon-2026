@@ -1,0 +1,30 @@
+Prepared 8 valid neutral conformers
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "CPU"
+     "cuda:0"   : "NVIDIA H100 80GB HBM3" (79 GiB, sm_90, mempool enabled)
+   Kernel cache:
+     /tmp/cache/warp/1.18.0
+/opt/venv/lib/python3.12/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/opt/venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'atomic_masses' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+/opt/venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'velocities' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+{"step": 1, "elapsed_s": 32.09472727775574, "fmax_eV_A": [0.9505265853670106, 0.9505095718580777, 1.2012672649514051, 1.389901500509411, 0.9037344797460033, 0.903732988637334, 0.9437464405676794, 0.9437523673106621]}
+{"step": 26, "elapsed_s": 33.48570990562439, "fmax_eV_A": [0.18348978829667403, 0.18348232608704354, 0.24112985686442592, 0.23227992237264555, 0.21081003396872602, 0.21080037979890526, 0.20521004762241774, 0.20521414199401886]}
+{"step": 51, "elapsed_s": 35.11474537849426, "fmax_eV_A": [0.04450253489647244, 0.04450344998103421, 0.06480467009980062, 0.08379270445680974, 0.05580959208251832, 0.05580354448474838, 0.08279652207152623, 0.08278915206045166]}
+{"step": 76, "elapsed_s": 35.90063285827637, "fmax_eV_A": [0.016152486317974567, 0.016152195570657647, 0.028828313523566847, 0.02281484791118449, 0.01972442419007107, 0.019727866562231227, 0.019575865656220666, 0.01957895734870861]}
+{"step": 101, "elapsed_s": 36.649847984313965, "fmax_eV_A": [0.014684471399674506, 0.014687441606382062, 0.012987460916840684, 0.013054255491934397, 0.011260302146586567, 0.01126134338657555, 0.015416437501856364, 0.015419536184515319]}
+{"engine": "NVIDIA ALCHEMI Toolkit FIRE2", "nim_service": false, "elapsed_seconds": 36.68702483177185, "timed_out": false, "all_validated": true}

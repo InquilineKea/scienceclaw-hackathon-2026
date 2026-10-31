@@ -1,0 +1,145 @@
+name, driver_version, memory.total [MiB]
+NVIDIA L4, 580.178.04, 23034 MiB
+name, driver_version, memory.total [MiB]
+NVIDIA L4, 580.178.04, 23034 MiB
+torch 2.14.1+cu130 cuda True NVIDIA L4
+=== B5 collagen-GAG (AIMNet2), 24 orientations
+=== B1a crosslink scan, MACE-OFF medium
+/root/alchemi-venv/lib/python3.12/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/mace/calculators/foundations_models.py:272: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'atomic_masses' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+/root/alchemi-venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'velocities' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+/root/alchemi-venv/lib/python3.12/site-packages/mace/calculators/foundations_models.py:272: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/mace/calculators/foundations_models.py:272: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/mace/calculators/foundations_models.py:272: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+8 chemistries x 21 strains = 168 systems, 2 chemistries per GPU batch
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "CPU"
+     "cuda:0"   : "NVIDIA L4" (22 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.18.0
+Using MACE-OFF23 MODEL for MACECalculator with /root/.cache/mace/MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /root/.cache/mace/MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /root/.cache/mace/MACE-OFF23_medium.model
+Using MACE-OFF23 MODEL for MACECalculator with /root/.cache/mace/MACE-OFF23_medium.model
+HLNL            k=1.578 eV/A^2  k_rel=16.29  Fpk=1.28 eV/A
+pyridinoline    k=0.097 eV/A^2  k_rel=1.00  Fpk=0.21 eV/A
+pentosidine     k=0.051 eV/A^2  k_rel=0.53  Fpk=0.33 eV/A
+glucosepane     k=0.101 eV/A^2  k_rel=1.04  Fpk=0.95 eV/A
+dityrosine      k=0.417 eV/A^2  k_rel=4.31  Fpk=1.52 eV/A
+disulfide       k=0.208 eV/A^2  k_rel=2.15  Fpk=0.13 eV/A
+isopeptide_TG2  k=0.058 eV/A^2  k_rel=0.60  Fpk=0.21 eV/A
+sulfilimine     k=0.059 eV/A^2  k_rel=0.60  Fpk=0.38 eV/A
+wrote results/crosslink_params.json
+=== B1b crosslink scan, MACE-MP medium-0b2 (independent model family)
+/root/alchemi-venv/lib/python3.12/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'atomic_masses' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+/root/alchemi-venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'velocities' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+8 chemistries x 21 strains = 168 systems, 2 chemistries per GPU batch
+Warp 1.18.0 initialized:
+   CUDA Toolkit 13.4, Driver 13.0
+   Devices:
+     "cpu"      : "CPU"
+     "cuda:0"   : "NVIDIA L4" (22 GiB, sm_89, mempool enabled)
+   Kernel cache:
+     /root/.cache/warp/1.18.0
+Downloading MACE model from 'https://github.com/ACEsuit/mace-mp/releases/download/mace_mp_0b2/mace-medium-density-agnesi-stress.model'
+Cached MACE model to /root/.cache/mace/macemediumdensityagnesistressmodel
+HLNL            k=0.148 eV/A^2  k_rel=2.91  Fpk=0.95 eV/A
+pyridinoline    k=0.051 eV/A^2  k_rel=1.00  Fpk=0.11 eV/A
+pentosidine     k=0.073 eV/A^2  k_rel=1.44  Fpk=0.27 eV/A
+glucosepane     k=0.079 eV/A^2  k_rel=1.55  Fpk=0.66 eV/A
+dityrosine      k=0.346 eV/A^2  k_rel=6.80  Fpk=1.42 eV/A
+disulfide       k=0.053 eV/A^2  k_rel=1.05  Fpk=0.02 eV/A
+isopeptide_TG2  k=0.041 eV/A^2  k_rel=0.80  Fpk=0.14 eV/A
+sulfilimine     k=0.177 eV/A^2  k_rel=3.49  Fpk=0.16 eV/A
+wrote results/crosslink_params_mp.json
+ALL DONE

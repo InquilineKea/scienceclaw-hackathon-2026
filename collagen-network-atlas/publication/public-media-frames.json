@@ -1,0 +1,68 @@
+[
+  {
+    "file" : "benchmark.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "free-vs-clamped-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "free-vs-clamped.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "pressure-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "pressure.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "pulse-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "pulse.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "shear-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "shear.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "tension-still.png",
+    "frames" : 1,
+    "height" : 720,
+    "width" : 1100
+  },
+  {
+    "file" : "tension.gif",
+    "frames" : 65,
+    "height" : 720,
+    "width" : 1100
+  }
+]

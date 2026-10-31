@@ -1,0 +1,17 @@
+{
+  "status.json": "830d0ed3d71eb66152cfe53caaf45465d07edce5931521661640ee845ac4649e",
+  "live-observation.txt": "3b22b6bca0b07c04f87b983a92d0b763dacc0df4fbf12c2a3140911eb9fdffdb",
+  "completion-observation.txt": "3f12c511f72a9ad86bb57a4f7273a50885b870abc651b1bfd3cb2faacc5f4a60",
+  "checkpoint-observation.txt": "fcdeeffdd5cd8f8cdadb5f3d012a09ddd8f417998204d2bbfb71b730b9f3b0f6",
+  "observed-console.log": "8e244914b74e44773f0a97992e4e2259bcb1a4289d43d0183dcc67822e49c35c",
+  "mace_mp_result.json": "b26ea0f5862879968e494764e1845efdd7484a12ef787beacf460eeadf1a66e7",
+  "off_arithmetic_check.json": "9aac36f5a53067fa6667444f4430bf66d3ab7069db835c07dfcbd60b49bfbaac",
+  "compare_scans.py": "6393acd2731278ef7af23181e6d878ee9f2a831c7b0b1fe019ee419cc768bf2f",
+  "comparison.json": "19e25120165d20e19e2bdc370df783b844fbec13495272657b3a73efd38c2482",
+  "comparison.csv": "6ea0b61704d8bfa150737dd3a63b4acd30bb0f73fa2d370c38c64252ee299986",
+  "draw_science_figures.swift": "501a21a6d74d450877dccd5351a06eadd0feb301472bbfeb1688b8b2b996f472",
+  "FOLLOWUP.md": "629babeedd3680f448353366398b5177be2c911cc06269c42617fd787a05d462",
+  "../figures/mace-off-vs-mp-energy-curves.png": "ebeabf19e949ea2328f1abb529aed6eb3959265763a7826ae2ce73f718a186b9",
+  "../figures/collagen-pipeline-evidence-diagram.png": "f323e2e16601281696c8288fd4016a08fed995a420511ea3f55926b57134ee2f",
+  "../figures/mace-off-vs-mp-curvature.png": "d0c643517ac3141d8df69833ee4c653e0fa80940c352d9c77e76963821c9e6d5"
+}

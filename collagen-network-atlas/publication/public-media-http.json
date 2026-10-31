@@ -1,0 +1,90 @@
+[
+  {
+    "asset": "benchmark",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/benchmark.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 67354,
+    "sha256": "fab7c29a952532e407c417a852a08be9504c81b52550d4887b77b21645d252f1"
+  },
+  {
+    "asset": "tension",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension.gif",
+    "status": 200,
+    "content_type": "image/gif",
+    "bytes": 518304,
+    "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
+  },
+  {
+    "asset": "tension-still",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension-still.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 108235,
+    "sha256": "09b214d5fa14d7df9b9b03ad387052e94036e0603dd977e8192820f078f41928"
+  },
+  {
+    "asset": "shear",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear.gif",
+    "status": 200,
+    "content_type": "image/gif",
+    "bytes": 1004038,
+    "sha256": "160134592571aa5f404276d93374da199ef243c0fdf49fab6407b10717a44cd0"
+  },
+  {
+    "asset": "shear-still",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear-still.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 130260,
+    "sha256": "66e36d51c3e8b6169ada744241a2a478d9dbaf3b06f22684301f67bb0a0cdb97"
+  },
+  {
+    "asset": "pressure",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure.gif",
+    "status": 200,
+    "content_type": "image/gif",
+    "bytes": 1211691,
+    "sha256": "868fbb320f3684ad53049b57ba4b1c876a6dc848caa4a657986ddf76760a233f"
+  },
+  {
+    "asset": "pressure-still",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure-still.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 120957,
+    "sha256": "c391556cad2d87eff5148a10d91b01bb880a2cea7816ad9356c70db2849d6449"
+  },
+  {
+    "asset": "pulse",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse.gif",
+    "status": 200,
+    "content_type": "image/gif",
+    "bytes": 1693798,
+    "sha256": "f14d85c9215e76a54c84165b481e6c7b7b0c93fe5882f832e773c9f0a5bf4de1"
+  },
+  {
+    "asset": "pulse-still",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse-still.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 153339,
+    "sha256": "72b99191424fd5ad5b316919396e8c92ff8cb65e77abb18eaa2f7618caaca1e5"
+  },
+  {
+    "asset": "free-vs-clamped",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped.gif",
+    "status": 200,
+    "content_type": "image/gif",
+    "bytes": 1419870,
+    "sha256": "e3e6ad447a661ebe84f1cb81133b194f93ecf8e12c81e8ab4e1cb29a0c0864df"
+  },
+  {
+    "asset": "free-vs-clamped-still",
+    "url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped-still.png",
+    "status": 200,
+    "content_type": "image/png",
+    "bytes": 120542,
+    "sha256": "9757345c621a4a0eeed19267754ac361be8fa90b0816dbf7d51d1393f78b4155"
+  }
+]

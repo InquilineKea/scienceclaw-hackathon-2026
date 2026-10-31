@@ -1,0 +1,33 @@
+{
+  "observed_utc": "2026-10-31T10:15:22Z",
+  "observed_New_York": "2026-10-31T06:15:22-04:00",
+  "instance_name": "collagen-md-20261031",
+  "instance_id": "enjgg7tq5",
+  "container_id": "a764482e2959eb84d136226a68ce7eaa48432c152a4a504bc7ce450b6225dd73",
+  "mace_mp_result_present": true,
+  "MACE_MP_source": "alchemi:mace-mp:medium-0b2",
+  "MACE_OFF_source": "alchemi:mace-off:medium",
+  "comparison_available": true,
+  "source_file_SHA256_now": "4cdae0d85d4b718f6669bfe31afafe01c88671a9fa42b813b41fef4c8ee248bc",
+  "source_matches_local_inspected_script": true,
+  "checkpoint_SHA256_MP": "a90be07c8aa6623c390fcc4653d3e319c4a356f8b4a53d323f96b2012d375caf",
+  "checkpoint_SHA256_OFF": "4842c52ad210d6e1f84d6cf1ffa70fae25a7e0d755ed55cf223f43913f587db7",
+  "intervention": "Read-only collection; no job restarted, stopped, modified, or provisioned.",
+  "caveats": [
+    "A running container exit-code field of 0 is not a completion result.",
+    "No independent final-coordinate/force validation for the legacy scan.",
+    "Checkpoint hashes identify cached files; their runtime identity is inferred from the installed filename mapping and log, not attested by the legacy output."
+  ],
+  "container_state": "Finished; auto-removed by launcher. Exact exit code not retained.",
+  "result_sha256": "b26ea0f5862879968e494764e1845efdd7484a12ef787beacf460eeadf1a66e7",
+  "completion_evidence": [
+    "Result JSON retrieved and hash matched",
+    "Console ends with ALL DONE after writing MACE-MP JSON",
+    "GPU snapshot: 0 MiB allocated, 0% utilization",
+    "Original launcher used set -euo pipefail and docker --rm"
+  ],
+  "independent_arithmetic_checks": "All 16 fragment/model curvature, peak-slope and normalization checks passed; matching 8 SMILES and 21-point distance grids.",
+  "result_file_mtime_utc": "2026-10-31T10:14:15.807734403Z",
+  "result_file_mtime_New_York": "2026-10-31T06:14:15.807734403-04:00",
+  "L4_instance_lifecycle": "RUNNING; original job completed and GPU idle at observation; no stop requested or performed"
+}

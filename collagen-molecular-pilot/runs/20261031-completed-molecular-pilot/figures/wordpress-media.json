@@ -1,0 +1,188 @@
+{
+  "curvature": {
+    "id": 106,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-curvature.png",
+    "title": "MACE-OFF and MACE-MP proxy-fragment curvature comparison",
+    "alt_text": "Paired points compare fitted curvature for eight proxy fragments on a logarithmic axis. MACE-MP is much lower for HLNL and disulfide and higher for sulfilimine. These are not validated native crosslink stiffness values.",
+    "caption": "Curvature from local five-point fits, in eV per square ångström. Boundary minima occur for sulfilimine with MACE-OFF and the pyridinoline proxy with MACE-MP.",
+    "mime_type": "image/png",
+    "media_type": "image",
+    "media_details": {
+      "width": 1600,
+      "height": 1060,
+      "file": "2026/10/mace-off-vs-mp-curvature.png",
+      "filesize": 117433,
+      "sizes": {
+        "thumbnail": {
+          "file": "mace-off-vs-mp-curvature.png?w=150",
+          "width": 150,
+          "height": 99,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-curvature.png?w=150"
+        },
+        "medium": {
+          "file": "mace-off-vs-mp-curvature.png?w=300",
+          "width": 300,
+          "height": 199,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-curvature.png?w=300"
+        },
+        "large": {
+          "file": "mace-off-vs-mp-curvature.png?w=1024",
+          "width": 1024,
+          "height": 678,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-curvature.png?w=1024"
+        },
+        "full": {
+          "file": "mace-off-vs-mp-curvature.png",
+          "width": 1024,
+          "height": 678,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-curvature.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T10:19:33+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=106&action=edit"
+  },
+  "curves": {
+    "id": 107,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-energy-curves.png",
+    "title": "MACE-OFF and MACE-MP: all eight constrained energy curves",
+    "alt_text": "Eight panels compare 21-point energy-distance scans for the simplified fragments. Every model curve is zeroed at its own minimum, and panel energy scales differ. Several curves are nonsmooth.",
+    "caption": "All 168 scan points per model. Each curve is independently minimum-zeroed; separate panel scales are labeled. Curve differences include differences in relaxed structures and are not measured reaction or rupture behavior.",
+    "mime_type": "image/png",
+    "media_type": "image",
+    "media_details": {
+      "width": 1800,
+      "height": 1280,
+      "file": "2026/10/mace-off-vs-mp-energy-curves.png",
+      "filesize": 180006,
+      "sizes": {
+        "thumbnail": {
+          "file": "mace-off-vs-mp-energy-curves.png?w=150",
+          "width": 150,
+          "height": 107,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-energy-curves.png?w=150"
+        },
+        "medium": {
+          "file": "mace-off-vs-mp-energy-curves.png?w=300",
+          "width": 300,
+          "height": 213,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-energy-curves.png?w=300"
+        },
+        "large": {
+          "file": "mace-off-vs-mp-energy-curves.png?w=1024",
+          "width": 1024,
+          "height": 728,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-energy-curves.png?w=1024"
+        },
+        "full": {
+          "file": "mace-off-vs-mp-energy-curves.png",
+          "width": 1024,
+          "height": 728,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/mace-off-vs-mp-energy-curves.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T10:19:58+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=107&action=edit"
+  },
+  "workflow": {
+    "id": 108,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-pipeline-evidence-diagram.png",
+    "title": "Collagen molecular pipeline: calculations, checks and limits",
+    "alt_text": "Workflow diagram separates the new H100 neutral-fragment pilot from the recovered L4 proxy scans, then shows numerical checks, publication, and read-only explorer integration. Native crosslink rupture, reactions and tissue stiffness remain unvalidated.",
+    "caption": "The new H100 geometry pilot and the recovered L4 scans are separate evidence streams. Numerical checks support reproducibility, while biological chemistry and tissue mechanics remain unvalidated.",
+    "mime_type": "image/png",
+    "media_type": "image",
+    "media_details": {
+      "width": 1600,
+      "height": 1030,
+      "file": "2026/10/collagen-pipeline-evidence-diagram.png",
+      "filesize": 121259,
+      "sizes": {
+        "thumbnail": {
+          "file": "collagen-pipeline-evidence-diagram.png?w=150",
+          "width": 150,
+          "height": 97,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-pipeline-evidence-diagram.png?w=150"
+        },
+        "medium": {
+          "file": "collagen-pipeline-evidence-diagram.png?w=300",
+          "width": 300,
+          "height": 193,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-pipeline-evidence-diagram.png?w=300"
+        },
+        "large": {
+          "file": "collagen-pipeline-evidence-diagram.png?w=1024",
+          "width": 1024,
+          "height": 659,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-pipeline-evidence-diagram.png?w=1024"
+        },
+        "full": {
+          "file": "collagen-pipeline-evidence-diagram.png",
+          "width": 1024,
+          "height": 659,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-pipeline-evidence-diagram.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T10:20:04+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=108&action=edit"
+  }
+}

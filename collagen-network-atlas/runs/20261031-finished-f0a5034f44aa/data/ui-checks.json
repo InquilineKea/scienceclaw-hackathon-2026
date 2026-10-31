@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-31",
+  "browser": "Codex in-app browser",
+  "observed": [
+    "Gallery and two network panels rendered",
+    "All eight loading protocols loaded valid replay captions",
+    "Shared timeline changed deformation, damage and time/strain captions",
+    "Custom sacrificial-link control completed a local worker computation for both panels",
+    "Reference checkbox, model status and uncensored/capped labels are exposed to accessibility APIs",
+    "No console error or warning entries were returned during the tested flows"
+  ],
+  "limits": ["Desktop browser checked; no claim of exhaustive browser compatibility", "Responsive CSS provided; separate mobile device test not performed"]
+}

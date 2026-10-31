@@ -1,0 +1,684 @@
+{
+  "benchmark": {
+    "id": 129,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/benchmark.png",
+    "title": "Fracture Atlas: matched-budget network comparison",
+    "alt_text": "Three charts show simulated work density under X tension, shear and constrained inertial pulses for seven network families; error bars are sample standard deviations over five seeds. Capped results are marked.",
+    "caption": "450 original local computations. Hypothetical dimensionless model; no tissue calibration. Pulse material work excludes kinetic energy.",
+    "mime_type": "image/png",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/benchmark.png",
+      "filesize": 67354,
+      "sizes": {
+        "thumbnail": {
+          "file": "benchmark.png?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/benchmark.png?w=150"
+        },
+        "medium": {
+          "file": "benchmark.png?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/benchmark.png?w=300"
+        },
+        "large": {
+          "file": "benchmark.png?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/benchmark.png?w=1024"
+        },
+        "full": {
+          "file": "benchmark.png",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/benchmark.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:11:58+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=129&action=edit"
+  },
+  "tension": {
+    "id": 130,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension.gif",
+    "title": "Fracture Atlas — X tension: aligned bundles versus diagonal reinforcement",
+    "alt_text": "X tension: aligned bundles versus diagonal reinforcement. Simulation-derived animated network deformation, force colors and damage, with matched visual scales and time or strain progression.",
+    "caption": "Same seed 17, 36 nodes, 82 edges and collagen volume 0.06; aligned bundles emphasize strength, diagonal paths absorb more work before the operational criterion.",
+    "mime_type": "image/gif",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/tension.gif",
+      "filesize": 518304,
+      "sizes": {
+        "thumbnail": {
+          "file": "tension.gif?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension.gif?w=150"
+        },
+        "medium": {
+          "file": "tension.gif?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension.gif?w=300"
+        },
+        "large": {
+          "file": "tension.gif?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension.gif?w=1024"
+        },
+        "full": {
+          "file": "tension.gif",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension.gif"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:13:36+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=130&action=edit"
+  },
+  "tension-still": {
+    "id": 135,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension-still.png",
+    "title": "Static fallback — X tension: aligned bundles versus diagonal reinforcement",
+    "alt_text": "Static frame at 75 percent of the loading or observation window: X tension: aligned bundles versus diagonal reinforcement",
+    "caption": "Same seed 17, 36 nodes, 82 edges and collagen volume 0.06; aligned bundles emphasize strength, diagonal paths absorb more work before the operational criterion.",
+    "mime_type": "image/png",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/tension-still.png",
+      "filesize": 108235,
+      "sizes": {
+        "thumbnail": {
+          "file": "tension-still.png?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension-still.png?w=150"
+        },
+        "medium": {
+          "file": "tension-still.png?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension-still.png?w=300"
+        },
+        "large": {
+          "file": "tension-still.png?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension-still.png?w=1024"
+        },
+        "full": {
+          "file": "tension-still.png",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/tension-still.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:15:06+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=135&action=edit"
+  },
+  "shear": {
+    "id": 131,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear.gif",
+    "title": "Fracture Atlas — Shear: bottlenecked versus disordered network",
+    "alt_text": "Shear: bottlenecked versus disordered network. Simulation-derived animated network deformation, force colors and damage, with matched visual scales and time or strain progression.",
+    "caption": "Same top/bottom shear protocol and material budget. The X-oriented bottleneck behaves differently when the loading faces change.",
+    "mime_type": "image/gif",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/shear.gif",
+      "filesize": 1004038,
+      "sizes": {
+        "thumbnail": {
+          "file": "shear.gif?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear.gif?w=150"
+        },
+        "medium": {
+          "file": "shear.gif?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear.gif?w=300"
+        },
+        "large": {
+          "file": "shear.gif?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear.gif?w=1024"
+        },
+        "full": {
+          "file": "shear.gif",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear.gif"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:13:42+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=131&action=edit"
+  },
+  "shear-still": {
+    "id": 136,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear-still.png",
+    "title": "Static fallback — Shear: bottlenecked versus disordered network",
+    "alt_text": "Static frame at 75 percent of the loading or observation window: Shear: bottlenecked versus disordered network",
+    "caption": "Same top/bottom shear protocol and material budget. The X-oriented bottleneck behaves differently when the loading faces change.",
+    "mime_type": "image/png",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/shear-still.png",
+      "filesize": 130260,
+      "sizes": {
+        "thumbnail": {
+          "file": "shear-still.png?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear-still.png?w=150"
+        },
+        "medium": {
+          "file": "shear-still.png?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear-still.png?w=300"
+        },
+        "large": {
+          "file": "shear-still.png?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear-still.png?w=1024"
+        },
+        "full": {
+          "file": "shear-still.png",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/shear-still.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:15:12+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=136&action=edit"
+  },
+  "pressure": {
+    "id": 132,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure.gif",
+    "title": "Fracture Atlas — Confined compression: disordered versus bottlenecked network",
+    "alt_text": "Confined compression: disordered versus bottlenecked network. Simulation-derived animated network deformation, force colors and damage, with matched visual scales and time or strain progression.",
+    "caption": "X compression with lateral Y boundary constraints; both representative runs reach the 30% cap. No hydraulic or pore-pressure model is solved.",
+    "mime_type": "image/gif",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/pressure.gif",
+      "filesize": 1211691,
+      "sizes": {
+        "thumbnail": {
+          "file": "pressure.gif?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure.gif?w=150"
+        },
+        "medium": {
+          "file": "pressure.gif?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure.gif?w=300"
+        },
+        "large": {
+          "file": "pressure.gif?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure.gif?w=1024"
+        },
+        "full": {
+          "file": "pressure.gif",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure.gif"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:13:48+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=132&action=edit"
+  },
+  "pressure-still": {
+    "id": 137,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure-still.png",
+    "title": "Static fallback — Confined compression: disordered versus bottlenecked network",
+    "alt_text": "Static frame at 75 percent of the loading or observation window: Confined compression: disordered versus bottlenecked network",
+    "caption": "X compression with lateral Y boundary constraints; both representative runs reach the 30% cap. No hydraulic or pore-pressure model is solved.",
+    "mime_type": "image/png",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/pressure-still.png",
+      "filesize": 120957,
+      "sizes": {
+        "thumbnail": {
+          "file": "pressure-still.png?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure-still.png?w=150"
+        },
+        "medium": {
+          "file": "pressure-still.png?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure-still.png?w=300"
+        },
+        "large": {
+          "file": "pressure-still.png?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure-still.png?w=1024"
+        },
+        "full": {
+          "file": "pressure-still.png",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pressure-still.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:15:17+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=137&action=edit"
+  },
+  "pulse": {
+    "id": 133,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse.gif",
+    "title": "Fracture Atlas — Constrained acceleration: aligned versus degree-heterogeneous network",
+    "alt_text": "Constrained acceleration: aligned versus degree-heterogeneous network. Simulation-derived animated network deformation, force colors and damage, with matched visual scales and time or strain progression.",
+    "caption": "Uniform half-sine body-force pulse, density 1, peak acceleration 0.018, duration 8; left edge fixed. Animation continues after first failure criterion; kinetic energy is excluded from material work.",
+    "mime_type": "image/gif",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/pulse.gif",
+      "filesize": 1693798,
+      "sizes": {
+        "thumbnail": {
+          "file": "pulse.gif?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse.gif?w=150"
+        },
+        "medium": {
+          "file": "pulse.gif?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse.gif?w=300"
+        },
+        "large": {
+          "file": "pulse.gif?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse.gif?w=1024"
+        },
+        "full": {
+          "file": "pulse.gif",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse.gif"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:13:55+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=133&action=edit"
+  },
+  "pulse-still": {
+    "id": 138,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse-still.png",
+    "title": "Static fallback — Constrained acceleration: aligned versus degree-heterogeneous network",
+    "alt_text": "Static frame at 75 percent of the loading or observation window: Constrained acceleration: aligned versus degree-heterogeneous network",
+    "caption": "Uniform half-sine body-force pulse, density 1, peak acceleration 0.018, duration 8; left edge fixed. Animation continues after first failure criterion; kinetic energy is excluded from material work.",
+    "mime_type": "image/png",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/pulse-still.png",
+      "filesize": 153339,
+      "sizes": {
+        "thumbnail": {
+          "file": "pulse-still.png?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse-still.png?w=150"
+        },
+        "medium": {
+          "file": "pulse-still.png?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse-still.png?w=300"
+        },
+        "large": {
+          "file": "pulse-still.png?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse-still.png?w=1024"
+        },
+        "full": {
+          "file": "pulse-still.png",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/pulse-still.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:15:23+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=138&action=edit"
+  },
+  "free-vs-clamped": {
+    "id": 134,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped.gif",
+    "title": "Fracture Atlas — Same acceleration with free and clamped boundaries",
+    "alt_text": "Same acceleration with free and clamped boundaries. Simulation-derived animated network deformation, force colors and damage, with matched visual scales and time or strain progression.",
+    "caption": "Identical disordered network and acceleration history. Free translation gives negligible strain; the left-clamped network deforms and ruptures.",
+    "mime_type": "image/gif",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/free-vs-clamped.gif",
+      "filesize": 1419870,
+      "sizes": {
+        "thumbnail": {
+          "file": "free-vs-clamped.gif?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped.gif?w=150"
+        },
+        "medium": {
+          "file": "free-vs-clamped.gif?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped.gif?w=300"
+        },
+        "large": {
+          "file": "free-vs-clamped.gif?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped.gif?w=1024"
+        },
+        "full": {
+          "file": "free-vs-clamped.gif",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/gif",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped.gif"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:14:01+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=134&action=edit"
+  },
+  "free-vs-clamped-still": {
+    "id": 139,
+    "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped-still.png",
+    "title": "Static fallback — Same acceleration with free and clamped boundaries",
+    "alt_text": "Static frame at 75 percent of the loading or observation window: Same acceleration with free and clamped boundaries",
+    "caption": "Identical disordered network and acceleration history. Free translation gives negligible strain; the left-clamped network deforms and ruptures.",
+    "mime_type": "image/png",
+    "media_type": "image",
+    "media_details": {
+      "width": 1100,
+      "height": 720,
+      "file": "2026/10/free-vs-clamped-still.png",
+      "filesize": 120542,
+      "sizes": {
+        "thumbnail": {
+          "file": "free-vs-clamped-still.png?w=150",
+          "width": 150,
+          "height": 98,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped-still.png?w=150"
+        },
+        "medium": {
+          "file": "free-vs-clamped-still.png?w=300",
+          "width": 300,
+          "height": 196,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped-still.png?w=300"
+        },
+        "large": {
+          "file": "free-vs-clamped-still.png?w=1024",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped-still.png?w=1024"
+        },
+        "full": {
+          "file": "free-vs-clamped-still.png",
+          "width": 1024,
+          "height": 670,
+          "mime_type": "image/png",
+          "source_url": "https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/free-vs-clamped-still.png"
+        }
+      },
+      "image_meta": {
+        "aperture": "0",
+        "credit": "",
+        "camera": "",
+        "caption": "",
+        "created_timestamp": "0",
+        "copyright": "",
+        "focal_length": "0",
+        "iso": "0",
+        "shutter_speed": "0",
+        "title": "",
+        "orientation": "0",
+        "keywords": [],
+        "alt": ""
+      }
+    },
+    "date": "2026-10-31T12:15:31+00:00",
+    "edit_link": "https://humanavianaisymbiosis.wordpress.com/wp-admin/post.php?post=139&action=edit"
+  }
+}

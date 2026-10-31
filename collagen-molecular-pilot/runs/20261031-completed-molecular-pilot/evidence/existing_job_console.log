@@ -1,0 +1,43 @@
+name, driver_version, memory.total [MiB]
+NVIDIA L4, 580.178.04, 23034 MiB
+name, driver_version, memory.total [MiB]
+NVIDIA L4, 580.178.04, 23034 MiB
+torch 2.14.1+cu130 cuda True NVIDIA L4
+=== B5 collagen-GAG (AIMNet2), 24 orientations
+=== B1a crosslink scan, MACE-OFF medium
+/root/alchemi-venv/lib/python3.12/site-packages/e3nn/o3/_wigner.py:10: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  _Jd, _W3j_flat, _W3j_indices = torch.load(os.path.join(os.path.dirname(__file__), 'constants.pt'))
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_script.py:1491: FutureWarning: `torch.jit.script` is deprecated. Please switch to `torch.compile` or `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/mace/calculators/foundations_models.py:272: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'atomic_masses' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+/root/alchemi-venv/lib/python3.12/site-packages/pydantic/main.py:1117: UserWarning: AtomicData field 'velocities' was cast from torch.float32 to torch.float64 to match positions; pass a matching dtype to silence this (warned once per field/dtype).
+  setattr_handler(self, name, value)  # call here to not memo on possibly unknown fields
+/root/alchemi-venv/lib/python3.12/site-packages/mace/calculators/foundations_models.py:272: UserWarning: Environment variable TORCH_FORCE_NO_WEIGHTS_ONLY_LOAD detected, since the`weights_only` argument was not explicitly passed to `torch.load`, forcing weights_only=False.
+  return torch.load(model, map_location=device)
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+/root/alchemi-venv/lib/python3.12/site-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(

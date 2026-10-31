@@ -1,0 +1,99 @@
+{
+  "runId": "20261031-storage-verification",
+  "startedAt": "2026-10-31T12:46:03.117116+00:00",
+  "sourceFiles": {
+    "EVIDENCE.md": {
+      "bytes": 5196,
+      "sha256": "c5690ab4a8eb5a35144ee566b815bce97f6063671026e055cf9a38fce460ab04"
+    },
+    "METHODS.md": {
+      "bytes": 15339,
+      "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
+    },
+    "README.md": {
+      "bytes": 3652,
+      "sha256": "e6ca7ad83a7aba193fb92abf70310d0660898c92fcb6f34ddbb24518010c273f"
+    },
+    "SECURITY-REVIEW.md": {
+      "bytes": 3895,
+      "sha256": "0f3b86689c1fd4a48cfbfa6e2578a1683e8e388df581351dac5e23862562bfe7"
+    },
+    "app.js": {
+      "bytes": 18360,
+      "sha256": "227b8eddfe58e958ed54f9ec7afdd942df2c3601b14520954147fd468a6347d8"
+    },
+    "audit.js": {
+      "bytes": 2159,
+      "sha256": "75a1faee5200ab27f588a2306e98a176075c6f7d447c1c512ed575011ed392b3"
+    },
+    "benchmark-core.js": {
+      "bytes": 10084,
+      "sha256": "b4cb186ca36de605c1f8e4de13c868d1971024197733b4fb5b5cdfb26ea8e7f6"
+    },
+    "benchmark.js": {
+      "bytes": 413,
+      "sha256": "69657fe59127cee9aa460bd38d44b46107242e591733bb223c34e3d62f7ddf2f"
+    },
+    "check-media.swift": {
+      "bytes": 940,
+      "sha256": "a3a51dccef1d59cf41acc5458f5cf8aa4873ab000671ed60ce6a2a062cf56dd2"
+    },
+    "check.js": {
+      "bytes": 2915,
+      "sha256": "de5bf54d9e9869042c0f8906023380466b8d9d42637cac89d258b9892057d9a6"
+    },
+    "index.html": {
+      "bytes": 10540,
+      "sha256": "aeafc92bd281b49a7dac82c9acc5e00b8a85fd5c1987303247110b5e970bc990"
+    },
+    "make-archive.py": {
+      "bytes": 1696,
+      "sha256": "72845217698730046449943afa06eee43f526c512b0410638e6ed1c8a2c2c7c0"
+    },
+    "model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "prepare-media.js": {
+      "bytes": 3839,
+      "sha256": "7bd17153e049c565ad6be54e70144fdb90966a1d1f0908a15f075b97ae54a85f"
+    },
+    "recover-archive.py": {
+      "bytes": 1587,
+      "sha256": "43cfbccd1b6de15f48fe70b89790841ea1e3bfbac67c8a96fcab370b252238ab"
+    },
+    "render-media.swift": {
+      "bytes": 8485,
+      "sha256": "74dae55f7d493debb545639010d021da9a407fb4fdb394c7627a86d4b59b9a68"
+    },
+    "run-atlas.py": {
+      "bytes": 5711,
+      "sha256": "fbd0240ca586c610d58284fddd078ca0799d3f98ef96818e48a9cebb6ba1433c"
+    },
+    "run-guard.js": {
+      "bytes": 641,
+      "sha256": "a977f37176d5d09d66f167d2072ba01590b550a5b857d64941d86b5293010f79"
+    },
+    "style.css": {
+      "bytes": 9907,
+      "sha256": "45df16d1b63ed15d7d35512d9afe6e1ed8b0eb19e89e77545e0a0aa240ebfd09"
+    },
+    "test_run_storage.py": {
+      "bytes": 2943,
+      "sha256": "444dde4258308044f94dc95c5fdc766834dc6aba8c1ca4c153e49dbcf463af60"
+    },
+    "verify-media.py": {
+      "bytes": 1222,
+      "sha256": "a4266a98217230b3c110cfa88022de9d2dc923ba31fd2f4931c28ca3fbd43a3d"
+    },
+    "worker.js": {
+      "bytes": 298,
+      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+    },
+    "write-report.js": {
+      "bytes": 11561,
+      "sha256": "5d6699cbaa683fa8d7ea7e5bd84b52c2409e4939e6dbb2f6f3a7e97e1686796c"
+    }
+  },
+  "policy": "New directory; no resume or overwrite mode."
+}
