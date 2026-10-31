@@ -1,5 +1,36 @@
 # ScienceClaw Hackathon 2026: Oxidative Tensegrity
 
+## Why this could matter (the two-minute version)
+
+Collagen is the scaffolding protein that holds your body together — skin, tendons, arteries, heart
+wall, the membranes under every organ. Your body maintains it with deliberate, enzyme-placed
+crosslinks that give each tissue its tuned stiffness and strength. But collagen is also one of the
+longest-lived proteins you own: some of it persists for decades. Over those decades, a second,
+unwanted kind of crosslink accumulates — oxidative and sugar-driven damage (AGEs, in the
+literature) that glues fibers together in the wrong places. Arteries stiffen. Heart walls stop
+relaxing between beats. Wounds heal slowly. Much of the mechanical difference between a
+25-year-old aorta and a 75-year-old one is, at root, this slow chemistry.
+
+The hard part is that the damage lives at every scale at once. It starts as a single chemical
+bond, changes how a fiber network carries load, changes what a cell feels and how it responds,
+and ends as an organ that works less well. No experiment can watch all of that happen — you can't
+wait thirty years, and you can't instrument a molecule and a heart at the same time.
+
+This repository is a working attempt to follow one question across those scales in a computer:
+**what happens when oxidative crosslinks pile up on a healthy collagen matrix?** It links small
+molecular calculations to a fiber-network model, a mechanosensing cell, and simplified tissue and
+organ models — and it is unusually honest about what that buys you. Every result is labeled as a
+model output with explicit limits, several of the project's own early claims were tested and
+*withdrawn* when better checks contradicted them, and every run is archived with checksums so
+anyone can verify that the published numbers match the code that made them. Nothing here is a
+medical claim. What's on offer is something rarer: a multiscale hypothesis machine whose failure
+modes are documented as carefully as its findings.
+
+Everything below is the technical record — what was built, what it showed, and exactly where it
+stops being trustworthy.
+
+---
+
 **[Open the interactive Fracture Atlas](https://inquilinekea.github.io/scienceclaw-hackathon-2026/)** — seven architectures, eight loading protocols, explicit support/load diagrams, orientation readouts, animation replay, and custom browser computations. [Hosting and loading details](PAGES.md).
 
 **New: [crosslink-density sweep](https://inquilinekea.github.io/scienceclaw-hackathon-2026/aging.html#density)** — stiffness, work to failure and work before first damage for all seven networks, comparing distributed and clustered connectors at 12 loading directions. The 6,300 configurations have paired 480/960-step checks and complete [raw-curve recovery](collagen-network-atlas/density-runs/20261031-density-v1/_release/).
