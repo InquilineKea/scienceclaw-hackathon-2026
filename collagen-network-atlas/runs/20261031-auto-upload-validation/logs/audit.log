@@ -1,0 +1,33 @@
+{
+  "date": "2026-10-31T15:48:59.917Z",
+  "runtime": "v26.12.1",
+  "modelHash": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+  "totalRuns": 450,
+  "topologyRuns": 280,
+  "quasistaticRuns": 350,
+  "invalidRuns": 0,
+  "maxResidual": 1.999946e-7,
+  "reproducibilityError": 4.688971086408422e-11,
+  "maxPulseRelativeEnergyError": 0.0006213294730746961,
+  "maxFreeStrain": 1.258993e-13,
+  "maxFreeInternalizedWork": 4.608892e-30,
+  "checks": {
+    "passed": 9,
+    "checks": [
+      "fixed node/edge/volume budgets and connected graphs",
+      "analytic gradient versus central finite differences, including hinges",
+      "rotation and translation invariant internal energy",
+      "eigenvalues and unit capacity cut on analytic path",
+      "zero load is stress-free and equilibrium reduces energy",
+      "reaction equals finite difference of minimized energy",
+      "free acceleration is rigid translation without strain or rupture",
+      "rupture removes collagen and hinge stored energy irreversibly",
+      "deterministic seeded generation"
+    ]
+  },
+  "notes": [
+    "All comparisons refer to the hypothetical model.",
+    "Residual convergence does not imply global minimization or physical calibration.",
+    "Seven baseline tensile cases reproduced within stored rounding; no bitwise cross-runtime claim."
+  ]
+}

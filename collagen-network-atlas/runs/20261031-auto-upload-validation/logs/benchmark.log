@@ -1,0 +1,16 @@
+completed topology aligned 3s
+completed topology isotropic 5s
+completed topology hierarchical 8s
+completed topology modular 9s
+completed topology loops 13s
+completed topology bottleneck 15s
+completed topology heterogeneous 17s
+{
+  "runs": 450,
+  "unconverged": 0,
+  "runtimeSeconds": 37.134,
+  "pareto": [
+    "aligned",
+    "loops"
+  ]
+}
