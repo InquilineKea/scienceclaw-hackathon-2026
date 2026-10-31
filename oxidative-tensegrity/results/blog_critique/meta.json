@@ -1,0 +1,23 @@
+{
+ "site": "humanavianaisymbiosis.wordpress.com",
+ "items": 22,
+ "critiques": 110,
+ "errors": 0,
+ "roles": {
+  "methods_referee": "gemini-3.1-pro-preview",
+  "ecm_biologist": "gemini-4-argon",
+  "simulation_auditor": "gemini-3.1-pro-preview",
+  "integrity_auditor": "gemini-3.8-flash",
+  "science_communicator": "gemini-3.6-flash"
+ },
+ "synthesis_model": "gemini-4-argon",
+ "usage": {
+  "prompt_tokens": 1571995,
+  "completion_tokens": 152265
+ },
+ "run_utc": "2026-10-31T09:30:09Z",
+ "notes": [
+  "simulation_auditor first ran on gemini-2.5-pro, which returned HTTP 404 for every call with this key; all 22 were re-run on gemini-3.1-pro-preview (log keeps the failed attempt under retry_of)",
+  "the synthesis was regenerated after the retries"
+ ]
+}

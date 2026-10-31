@@ -1,0 +1,7 @@
+__pycache__/
+.pytest_cache/
+results_local.log
+swarm/work/
+swarm/run.log
+*.key
+swarm/round2.log
