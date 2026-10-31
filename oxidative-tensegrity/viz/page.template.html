@@ -112,7 +112,7 @@ footer { color: var(--muted); font-size: 0.82rem }
     <figure class="fig" style="margin:0"><div class="chart" id="cgag"></div>
       <figcaption>Best contact energy, residue + dermatan-sulfate disaccharide (0, 1 or 2 sulfates). AIMNet2 via ALCHEMI; filled = Brev L4, 24 orientations; open = laptop CPU, 6. Rigid gas-phase fragments: ranks, not binding free energies.</figcaption></figure>
     <figure class="fig" style="margin:0"><div class="chart" id="xl"></div>
-      <figcaption>Stretch stiffness relative to pyridinoline, MACE-OFF via ALCHEMI batched FIRE2. <span id="xlsrc"></span></figcaption></figure>
+      <figcaption>Stretch stiffness of capped crosslink fragments relative to pyridinoline, two independent machine-learned potentials via ALCHEMI batched FIRE2. <span id="xlsrc"></span></figcaption></figure>
   </div>
 </section>
 
@@ -325,24 +325,32 @@ function drawMolecules() {
   });
   chart(document.getElementById("cgag"), { series, xticks: [0, 1, 2], xfmt: v => pairs[v] || "", xdom: [-0.2, 2.6], ydom: [0, 3.4], right: 90,
     title: "GAG contact energy (−eV, higher = tighter)", ylabel: "−E contact (eV)", xname: "GAG", yname: "−E", w: 520, h: 300 });
-  const xl = D.crosslink_converged || D.crosslink_pilot;
-  document.getElementById("xlsrc").textContent = D.crosslink_converged ? "Converged run on Brev." : `CPU pilot, not converged (final force ${(+D.crosslink_pilot._fmax).toFixed(2)} eV/Å): ranks only.`;
-  const names = Object.keys(xl).filter(k => !k.startsWith("_")).sort((a, b) => xl[b].k_rel - xl[a].k_rel);
+  const off = D.crosslink_off, mp = D.crosslink_mp, pil = D.crosslink_pilot;
+  const two = off && mp;
+  document.getElementById("xlsrc").textContent = two
+    ? `Converged on the Brev L4 (final force ${(+off._fmax).toFixed(3)} and ${(+mp._fmax).toFixed(3)} eV/Å). The two models agree on dityrosine (stiffest), glucosepane (≈ pyridinoline) and TG2 (soft), and disagree up to ~6× elsewhere (rank correlation 0.48), so only those agreements are robust. MACE-OFF is the organic-chemistry model; MACE-MP was trained on inorganic materials.`
+    : `CPU pilot, not converged (final force ${(+pil._fmax).toFixed(2)} eV/Å): ranks only.`;
+  const A = two ? off : pil;
+  const names = Object.keys(A).filter(k => !k.startsWith("_")).sort((x, y) => A[y].k_rel - A[x].k_rel);
   const host = document.getElementById("xl"); host.innerHTML = "";
-  const W = 520, H = 300, l = 120, r = 40, top = 26, rowH = (H - top - 10) / names.length;
+  const W = 520, H = 320, l = 120, r = 46, top = 26, rowH = (H - top - 10) / names.length;
   const svg = el("svg", { viewBox: `0 0 ${W} ${H}`, role: "img", "aria-label": "Crosslink stretch stiffness" }, host);
-  el("text", { x: 0, y: 14, class: "ttl" }, svg).textContent = "Relative stretch stiffness (pyridinoline = 1)";
-  const max = Math.max(...names.map(n => xl[n].k_rel)) * 1.1, X = v => l + v / max * (W - l - r);
-  const oxid = { "pentosidine": 1, "glucosepane": 1, "dityrosine": 1, "disulfide": 1, "sulfilimine": 1 };
-  el("line", { x1: X(1), x2: X(1), y1: top, y2: H - 6, stroke: css("--rule"), "stroke-dasharray": "3 3" }, svg);
+  el("text", { x: 0, y: 14, class: "ttl" }, svg).textContent = "Relative stretch stiffness (pyridinoline = 1, log scale)";
+  const vals = names.flatMap(n => two ? [off[n].k_rel, mp[n].k_rel] : [A[n].k_rel]);
+  const lo = Math.log10(0.3), hi = Math.log10(Math.max(...vals) * 1.3), X = v => l + (Math.log10(v) - lo) / (hi - lo) * (W - l - r);
+  [0.5, 1, 2, 5, 10].filter(v => Math.log10(v) < hi).forEach(v => { el("line", { x1: X(v), x2: X(v), y1: top, y2: H - 6, stroke: css(v === 1 ? "--rule" : "--grid"), "stroke-dasharray": v === 1 ? "3 3" : "" }, svg); el("text", { x: X(v), y: H, "text-anchor": "middle" }, svg).textContent = v; });
+  const xseries = two ? [["MACE-OFF", off, "--iso"], ["MACE-MP", mp, "--aniso"]] : [["pilot", pil, "--iso"]];
   names.forEach((n, i) => {
-    const y = top + i * rowH + 4, col = css(oxid[n] ? "--iso" : "--healthy");
-    el("text", { x: l - 8, y: y + rowH / 2 + 2, "text-anchor": "end" }, svg).textContent = n.replace("_", " ");
-    const rct = el("rect", { x: l, y, width: Math.max(1, X(xl[n].k_rel) - l), height: rowH - 8, rx: 3, fill: col }, svg);
-    rct.addEventListener("pointermove", ev => showTip(ev, `${n}: k_rel ${xl[n].k_rel}, peak force ${xl[n].Fpk} eV/Å`)); rct.addEventListener("pointerleave", hideTip);
-    el("text", { x: X(xl[n].k_rel) + 5, y: y + rowH / 2 + 2 }, svg).textContent = xl[n].k_rel.toFixed(2);
+    const y = top + i * rowH + 3;
+    el("text", { x: l - 8, y: y + rowH / 2, "text-anchor": "end" }, svg).textContent = n.replace("_", " ");
+    xseries.forEach(([lab, src, cc], j) => {
+      const h = (rowH - 8) / xseries.length, yy = y + j * h, v = src[n].k_rel;
+      const rct = el("rect", { x: l, y: yy, width: Math.max(1, X(v) - l), height: h - 1, rx: 2, fill: css(cc) }, svg);
+      rct.addEventListener("pointermove", ev => showTip(ev, `${n}, ${lab}: k_rel ${v}, peak force ${src[n].Fpk} eV/Å`)); rct.addEventListener("pointerleave", hideTip);
+      el("text", { x: X(v) + 4, y: yy + h - 2, style: "font-size:10px" }, svg).textContent = v.toFixed(1);
+    });
   });
-  legend(host, [["oxidative / glycation", "--iso"], ["enzymatic (LOX, TG2)", "--healthy"]]);
+  legend(host, xseries.map(([lab, , cc]) => [lab, cc]));
 }
 
 // ---------- network animation ----------

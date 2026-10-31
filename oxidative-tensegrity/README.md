@@ -178,6 +178,17 @@ so k_rel mixes linker geometry with chemistry. The pilot is therefore **not** fe
 (`results/crosslink_params.json` is absent, so placeholders stay in use). It already contradicts one
 placeholder: glucosepane comes out no stiffer than pyridinoline, not 1.8×.
 
+## Converged crosslink scan on Brev (`results/alchemi_brev/`)
+
+Both machine-learned potentials converged on the NVIDIA L4 (final force 0.020 and 0.019 eV/Å; ~45 min each, 168
+systems in two-chemistry GPU batches). Stretch stiffness relative to pyridinoline, MACE-OFF / MACE-MP: dityrosine
+4.3 / 6.8, glucosepane 1.0 / 1.55, TG2 isopeptide 0.6 / 0.8, disulfide 2.2 / 1.05, pentosidine 0.5 / 1.4,
+sulfilimine 0.6 / 3.5, HLNL 16.3 / 2.9. Rank correlation between the models is only 0.48, so only their agreements
+are robust: dityrosine is the stiffest linkage, glucosepane is no stiffer than the healthy enzymatic crosslink, and
+TG2 isopeptide is soft. MACE-OFF (organic chemistry) is the more appropriate model; MACE-MP was trained on inorganic
+materials. Fragments differ in length, so k_rel still mixes geometry with chemistry. These values are **not** fed
+into the network model.
+
 ## Caveats
 
 2D networks (isostatic point z = 4, not 6 as in 3D); small local lattices (finite size); all parameters are

@@ -37,6 +37,9 @@ collagen matrix?**
 - With sliding GAGs, crosslinks raise stiffness ~6× while cutting dissipated energy per cycle from ~0.55 to 0.02–0.10;
   only the sliding model matches tendon GAG-removal data.
 - ALCHEMI + AIMNet2: methylglyoxal-glycated arginine (MG-H1) loses contact with dermatan sulfate; CML-lysine does not.
+- ALCHEMI crosslink stretch scans, converged on a Brev L4 with two independent potentials (MACE-OFF, MACE-MP): the
+  models disagree up to ~6× (rank correlation 0.48); robust only where they agree: dityrosine is the stiffest
+  linkage, glucosepane is no stiffer than the healthy enzymatic crosslink, TG2 isopeptide is soft.
 
 Limits: 2D, small networks; parameters are literature-informed assumptions; atomistic numbers are rigid-fragment
 contact energies; agent-swarm syntheses are leads, not evidence. Details in `oxidative-tensegrity/README.md`.

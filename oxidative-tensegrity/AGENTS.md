@@ -38,7 +38,7 @@ Do not run on the instance anything not listed here without the user's say-so.
 
 | ID | Job | Command (on the Brev box, from this folder) | Outputs to bring back | Claimed by | Status |
 |---|---|---|---|---|---|
-| B1 | Converged ALCHEMI crosslink scan, two independent MLIPs | `ALCHEMI_COMMIT=84fe8e8fb8fab54863eea8f138722c7ab434966a RUN_ALCHEMI=1 bash remote/gpu_run.sh` (does B1 then B2) | `results/crosslink_params.json`, `results/crosslink_params_mp.json` | Claude Code, Brev L4 | running |
+| B1 | Converged ALCHEMI crosslink scan, two independent MLIPs | `ALCHEMI_COMMIT=84fe8e8fb8fab54863eea8f138722c7ab434966a RUN_ALCHEMI=1 bash remote/gpu_run.sh` (does B1 then B2) | `results/alchemi_brev/crosslink_mace_off.json`, `crosslink_mace_mp.json` | Claude Code, Brev L4 | done |
 | B2 | Large network/tissue/cell sweep (48x48, 8 seeds) | same command as B1 (runs after it), or `python run_sweep.py --profile gpu --device cuda` | `results/gpu/` | — | open |
 | B3 | LAMMPS oscillatory shear, G' and G'' (healthy vs oxidised Col I / VII) | `python remote/make_lammps_inputs.py 32 && cd remote/lammps && for f in *.in; do lmp -in $f; done` (LAMMPS from conda-forge, pinned) | `remote/lammps/*_stress.txt` | — | open |
 | B4 | GAG models × crosslinks under cyclic load (bridge / sliding / polyelectrolyte), 40x40, 8 seeds | `python run_gag.py --profile gpu --device cuda` | `results/gpu/gag.csv`, `gag_summary.csv` | — | open (12x12 version done on GCP: `results/cpu32/gag*.csv`) |
@@ -55,6 +55,7 @@ positions); see `SECURITY-REVIEW.md`. A CPU pilot is in `results/alchemi_pilot/`
 converged. If the two MLIPs disagree by >30% on a chemistry's `k_rel`, report it rather than averaging.
 
 Findings from Brev jobs:
+- B1: both MLIPs converged (fmax ≈ 0.02 eV/Å) but disagree up to ~6× (Spearman 0.48). Robust: dityrosine stiffest, glucosepane ≈ pyridinoline, TG2 soft. Not fed into the network model.
 - B5: MG-H1-Arg is the weakest dermatan-sulfate binder and loses contact (4.0–4.5 Å); Arg > Lys; CML-Lys stays bound. Magnitudes shift ~0.5 eV between CPU and L4 runs (RDKit conformers differ by architecture), so average over conformers next.
 
 ## Cross-workspace links
