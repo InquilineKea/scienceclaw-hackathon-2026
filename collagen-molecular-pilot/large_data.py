@@ -183,7 +183,10 @@ def prepare(publisher, payload, large, kind, runid, fingerprint, prefix, release
                     if ph.hexdigest() != part['sha256']: raise ValueError('Source changed during upload')
                     asset = api.put(release,asset_name,path,part['bytes'],part['sha256'])
                 finally: path.unlink(missing_ok=True)
-                item['parts'].append({**part,'url':asset['browser_download_url'],'releaseTag':tag,'assetName':asset['name']})
+                # GitHub reports an untagged-* URL while a release is a draft.
+                # Store its final tag URL, never that temporary draft location.
+                final_url = 'https://github.com/' + REPOSITORY + '/releases/download/' + tag + '/' + asset['name']
+                item['parts'].append({**part,'url':final_url,'releaseTag':tag,'assetName':asset['name']})
             if f.read(1): raise ValueError('Source grew during upload')
         index_new['files'][name] = item
     if saved:
@@ -208,6 +211,16 @@ def prepare(publisher, payload, large, kind, runid, fingerprint, prefix, release
         api.put_bytes(release,'restore-large-data.py',metadata[generated[1]])
     def finish(commit):
         urls = [api.publish(r,commit) for r in release_map.values()]
+        # Public release metadata must still contain every exact verified asset.
+        # No success receipt is issued for a partial or divergent publication.
+        if isinstance(api, Releases):
+            public_assets = {tag:api.assets(api.get(tag),refresh=True) for tag in release_map}
+            for item in index_new['files'].values():
+                for part in item['parts']:
+                    matches = [a for a in public_assets[part['releaseTag']] if a['name'] == part['assetName']]
+                    if (len(matches) != 1 or matches[0]['browser_download_url'] != part['url'] or
+                            not api.verify(matches[0],part['bytes'],part['sha256'])):
+                        raise ValueError('Published asset URL or checksum differs; publication remains pending')
         return {'largeFiles':len(large),'largeBytes':sum(x['bytes'] for x in large.values()),
                 'releases':urls,'datasetIndex':'https://github.com/' + REPOSITORY + '/blob/' + commit + '/' + prefix + '/_release/LARGE_DATASETS.json'}
     return {**payload,**metadata}, finish

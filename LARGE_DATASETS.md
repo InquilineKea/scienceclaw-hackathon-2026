@@ -3,8 +3,8 @@
 Files above 95 MiB are automatically published as GitHub Release assets after a completed run passes its manifest and scientific validation. Smaller files and a complete inventory remain in Git. No raw file is silently excluded due to size.
 
 - [All data releases](https://github.com/InquilineKea/scienceclaw-hackathon-2026/releases)
-- [Frozen 2026-10-31 preservation bundle and member checksums](datasets/20261031-frozen-collagen-raw-bundle/)
-- [Bundle download links and recovery instructions](datasets/20261031-frozen-collagen-raw-bundle/_release/README.md)
+- [Frozen 2026-10-31 preservation bundle and member checksums](datasets/20261031-frozen-collagen-raw-bundle-v2/)
+- [Bundle download links and recovery instructions](datasets/20261031-frozen-collagen-raw-bundle-v2/_release/README.md)
 - [Atlas run folders](collagen-network-atlas/runs/)
 - [Molecular run folders](collagen-molecular-pilot/runs/)
 

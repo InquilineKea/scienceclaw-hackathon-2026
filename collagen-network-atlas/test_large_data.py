@@ -21,7 +21,7 @@ class FakeReleases:
         if key in self.blobs:assert self.blobs[key]==data
         else:
             assert release['draft'];self.blobs[key]=data;self.put_count+=1
-        return {'name':name,'browser_download_url':'https://github.com/'+l.REPOSITORY+'/releases/download/'+key[0]+'/'+name}
+        return {'name':name,'browser_download_url':'https://github.com/'+l.REPOSITORY+'/releases/download/untagged-temporary/'+name}
     def publish(self,release,commit):
         if self.fail_publish:raise RuntimeError('simulated publication interruption')
         release['draft']=False
