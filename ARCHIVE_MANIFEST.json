@@ -15,8 +15,8 @@
       "sha256": "a447e48778d4ed605cd30804bfab8333cbebe2a6aa7c4e9376a2fe2309a3ed28"
     },
     "README.md": {
-      "bytes": 5057,
-      "sha256": "4b53410c1670c41db28e97906354f838fd7da32b4c6e93b60704ef8430dafb0a"
+      "bytes": 5231,
+      "sha256": "a7c2454aca1c2d438111e2530fe97c2410f2b6f4ad588d7eca39c4416362ca67"
     },
     "archives/2026-10-31/README.md": {
       "bytes": 1132,
@@ -1950,5 +1950,6 @@
       "bytes": 786,
       "sha256": "73bafdb189f65dbfa495068582dd9057faa7a429badc8112b0c3c9f04406e6e8"
     }
-  }
+  },
+  "note": "README checksum refreshed after preserving concurrent upstream PM7 work."
 }
