@@ -1,0 +1,133 @@
+{
+  "sourceSnapshot": "f6d5714bfb8a6354b63d17fe6fbc4ab4a10f2fdb",
+  "count": 24,
+  "angle": 0,
+  "mapSeed": 17,
+  "metricSeeds": [
+    17,
+    29,
+    43
+  ],
+  "checks": [
+    {
+      "family": "isotropic",
+      "pattern": "distributed",
+      "metric": "stiffness",
+      "mean": 3.047508023303212,
+      "min": 2.488738313450621,
+      "max": 3.822496500069907,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "isotropic",
+      "pattern": "distributed",
+      "metric": "work",
+      "mean": 1.4275673929385164,
+      "min": 1.117712949596894,
+      "max": 1.650834417048446,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "isotropic",
+      "pattern": "distributed",
+      "metric": "failureStrain",
+      "mean": 1.0560855472252866,
+      "min": 0.8513119533527697,
+      "max": 1.164705882352941,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "isotropic",
+      "pattern": "clustered",
+      "metric": "stiffness",
+      "mean": 1.6151826549329094,
+      "min": 1.4867655805032145,
+      "max": 1.7541099784247849,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "isotropic",
+      "pattern": "clustered",
+      "metric": "work",
+      "mean": 0.8967561211241631,
+      "min": 0.7483663186133493,
+      "max": 1.0371853602484706,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "isotropic",
+      "pattern": "clustered",
+      "metric": "failureStrain",
+      "mean": 0.8093994669651797,
+      "min": 0.7686274509803921,
+      "max": 0.880466472303207,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "modular",
+      "pattern": "distributed",
+      "metric": "stiffness",
+      "mean": 4.131529119347975,
+      "min": 3.5713996886554122,
+      "max": 4.932759892747747,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "modular",
+      "pattern": "distributed",
+      "metric": "work",
+      "mean": 1.7156431025854386,
+      "min": 1.5700896404711486,
+      "max": 1.9714468839223613,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "modular",
+      "pattern": "distributed",
+      "metric": "failureStrain",
+      "mean": 1,
+      "min": 1,
+      "max": 1,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "modular",
+      "pattern": "clustered",
+      "metric": "stiffness",
+      "mean": 2.612128376469854,
+      "min": 2.257677872789356,
+      "max": 3.070306846718517,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "modular",
+      "pattern": "clustered",
+      "metric": "work",
+      "mean": 2.315519373556469,
+      "min": 1.9294040298387602,
+      "max": 3.003452981419525,
+      "resolved": true,
+      "n": 3
+    },
+    {
+      "family": "modular",
+      "pattern": "clustered",
+      "metric": "failureStrain",
+      "mean": 1.0733638694304481,
+      "min": 0.9050632911392408,
+      "max": 1.3020833333333333,
+      "resolved": true,
+      "n": 3
+    }
+  ]
+}

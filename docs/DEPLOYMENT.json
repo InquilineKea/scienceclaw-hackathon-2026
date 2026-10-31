@@ -10,8 +10,8 @@
   "scope": "Original 450-run baseline, 252-run directional-strain experiment, and separate paired crosslink experiment. Static application and browser-local computation; no server or package installation. Density sweep uses 6,300 paired configurations at two resolutions. Separate CDSM species pilot contains backbone geometry only, without molecular mechanical calibration.",
   "files": {
     "index.html": {
-      "bytes": 16798,
-      "sha256": "2deab7e70f8db9861da2aff2eff6a52fb8afe9b54be2db2bd12458ad6fb9a11d"
+      "bytes": 16852,
+      "sha256": "49de08b75873e5c335076f4f300af3eb78ba9fcb5a1d850df4dae0bb061aa279"
     },
     "style.css": {
       "bytes": 13374,
@@ -94,8 +94,8 @@
       "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
     },
     "aging.html": {
-      "bytes": 13262,
-      "sha256": "ebee360f6b9855ee0c77e60eb7471653731a9e463f9127a642dba9a256c1a7f0"
+      "bytes": 13316,
+      "sha256": "82aee968215d50328f24350df84b426b9b5f535c72fbbb5ed45bd663c7daf412"
     },
     "aging.css": {
       "bytes": 1305,
@@ -154,8 +154,8 @@
       "sha256": "0aa0af9a8430fe350597ecede322dc9b604ccbcd9b78dc21962fc23c6669b837"
     },
     "species.html": {
-      "bytes": 6632,
-      "sha256": "41a35550d47c7aaaefa086473017edc841f850d9227d944f5175330b4342de6f"
+      "bytes": 6686,
+      "sha256": "afbbe52a5750d9b7827448ed1d196da1d519ff35d0a1c4c7d4983e9bdc23e3ac"
     },
     "species.css": {
       "bytes": 659,
@@ -180,6 +180,42 @@
     "data/species-backbones.json": {
       "bytes": 480950,
       "sha256": "bc73e1479413e54a25677b0d9167ece91aad6429ca84660982163dc17c06a51b"
+    },
+    "TOPOLOGY_AGING_FIGURE.md": {
+      "bytes": 3089,
+      "sha256": "213a9a1e240147dcd7ff563951da7b5cc10d154450c70836c4cdfbffc856046e"
+    },
+    "topology-aging.html": {
+      "bytes": 6616,
+      "sha256": "db7b2f7914e5ff92b578852b4a99fec00e7428894e2b1c48fa93e6d2b7748894"
+    },
+    "topology-aging.css": {
+      "bytes": 1830,
+      "sha256": "e53d4f2f8bd82b7cfd08c21aba40075b894e655043dbd64822e55627db4aca1b"
+    },
+    "topology-aging.js": {
+      "bytes": 2888,
+      "sha256": "11ef496616bed934769c3bdbeb7449f17c2e77f92653295426c06a0ed5870d41"
+    },
+    "topology-figure.js": {
+      "bytes": 5063,
+      "sha256": "beb9dea2ea6fdb2165999fc8cf3a17897b4f8a51492ede79f84b312d4392431d"
+    },
+    "data/topology-maps.js": {
+      "bytes": 21467,
+      "sha256": "b6c1d29eb189d79f70dd26577641771e3a5dfda1e80086bc0bbda691f14dba92"
+    },
+    "figures/topology-aging-overview.svg": {
+      "bytes": 58480,
+      "sha256": "05c17b0fc4cbd92658e07a60ac6204673d59479eb95e00bcfbc6beca8a1e8ec9"
+    },
+    "figures/topology-aging-overview.png": {
+      "bytes": 952101,
+      "sha256": "9d0c823d278ccc92795e812746a61f2827077faf02c62a82cede02afe0f16f9f"
+    },
+    "figures/topology-aging-values.json": {
+      "bytes": 2965,
+      "sha256": "e3e044074d1ff9f9b0c926a23cc23d90fed42c1514938faea3a7e28efe6ae152"
     }
   },
   "density_configurations": 6300,

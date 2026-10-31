@@ -78,3 +78,5 @@ Google AI Studio (ScienceClaw swarms and critic swarms). Built with Claude Code,
 ## Complete large datasets
 
 Files above 95 MiB now upload automatically through [GitHub Releases](https://github.com/InquilineKea/scienceclaw-hackathon-2026/releases). [Dataset links, checksums and exact recovery instructions](LARGE_DATASETS.md) cover the original large files; downloading the GitHub repository ZIP alone does not include release assets.
+
+The [aging and topology explainer](https://inquilinekea.github.io/scienceclaw-hackathon-2026/topology-aging.html) compares actual connector maps with the saved mechanics, and includes a standalone [PNG](collagen-network-atlas/figures/topology-aging-overview.png), [SVG](collagen-network-atlas/figures/topology-aging-overview.svg) and [figure provenance](collagen-network-atlas/TOPOLOGY_AGING_FIGURE.md).

@@ -42,3 +42,5 @@ Completed runs now upload automatically through the trusted host uploader, with 
 
 - [Crosslink-density run](collagen-network-atlas/density-runs/20261031-density-v1/): 6,300 configurations, 12,600 solves, all coarse/fine curves, SHA-256 manifests, numerical flags and CPU runtime receipt. The approximately 199 MB raw gzip is preserved through [GitHub Releases and verified recovery metadata](collagen-network-atlas/density-runs/20261031-density-v1/_release/), beyond the Git source ZIP.
 - [Beaver–human CDSM pilot](collagen-species-pilot/): four source sequence records, matched alignments, 18 backbone structures, actual remote source bundle, original output ZIP, runtime receipt and an explicit uncalibrated molecular-to-network contract. No AGE-adduct dynamics or species robustness result is claimed.
+
+- [Aging and topology figure](collagen-network-atlas/TOPOLOGY_AGING_FIGURE.md): actual model connector maps, checked paired ratios, standalone PNG/SVG and an interactive explainer. Biological relevance and the molecular-to-network scale gap are explicit.

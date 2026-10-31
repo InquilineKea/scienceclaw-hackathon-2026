@@ -1,14 +1,14 @@
 {
-  "createdAt": "2026-10-31T17:25:32.721019+00:00",
-  "scope": "Published archives and application, density sweep and matched CDSM backbone pilot. Large raw density curves use the linked release manifest. This inventory excludes itself and ignored local raw copies.",
+  "createdAt": "2026-10-31T17:41:15.639323+00:00",
+  "scope": "Published archives and application, density sweep, matched CDSM backbone pilot, and aging/topology explainer. Large raw density curves use the linked release manifest. This inventory excludes itself and ignored local raw copies.",
   "files": {
     ".gitignore": {
       "bytes": 62,
       "sha256": "3efb159c398290c843c5c1f5b283023ffdf04fc9d943a840b2c29231f466617f"
     },
     "ARCHIVE_INDEX.md": {
-      "bytes": 6048,
-      "sha256": "91ba3654d1671caff9c79765629078cfd265c0d3e3d671ce453d22362c6fe670"
+      "bytes": 6304,
+      "sha256": "ed57806282cfddd0c062c310c2f320de3f1e15649b95229091d0d00b392708ef"
     },
     "ARCHIVE_PROVENANCE.json": {
       "bytes": 188852,
@@ -35,8 +35,8 @@
       "sha256": "e31da8853ca5eef1ff56199bd997142ca52b4c0a65561d086775182754e4ea94"
     },
     "README.md": {
-      "bytes": 6740,
-      "sha256": "978b6a05a6afa854da06b01abe63853fbc1b7ce88e46fecef90c99a2b2c0caa9"
+      "bytes": 7145,
+      "sha256": "643081db7407931c5ea2abba67f34a684881e61b41bbeb9d9b2ad81c272e83aa"
     },
     "archives/2026-10-31/README.md": {
       "bytes": 2011,
@@ -1326,6 +1326,10 @@
       "bytes": 6596,
       "sha256": "994128bd5c4deb3c67a31b151014548869cfcfefc6a8534acdfbcd9f66d3820b"
     },
+    "collagen-network-atlas/TOPOLOGY_AGING_FIGURE.md": {
+      "bytes": 3089,
+      "sha256": "213a9a1e240147dcd7ff563951da7b5cc10d154450c70836c4cdfbffc856046e"
+    },
     "collagen-network-atlas/UPLOAD-SECURITY-REVIEW.md": {
       "bytes": 3062,
       "sha256": "2da069bebd35dcd113fc3e401de986a1b11f28ce4b9949914bc3bc2175a2edca"
@@ -1387,8 +1391,8 @@
       "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
     },
     "collagen-network-atlas/aging.html": {
-      "bytes": 13262,
-      "sha256": "ebee360f6b9855ee0c77e60eb7471653731a9e463f9127a642dba9a256c1a7f0"
+      "bytes": 13316,
+      "sha256": "82aee968215d50328f24350df84b426b9b5f535c72fbbb5ed45bd663c7daf412"
     },
     "collagen-network-atlas/aging.js": {
       "bytes": 6862,
@@ -1557,6 +1561,10 @@
     "collagen-network-atlas/data/summary.csv": {
       "bytes": 201413,
       "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
+    },
+    "collagen-network-atlas/data/topology-maps.js": {
+      "bytes": 21467,
+      "sha256": "b6c1d29eb189d79f70dd26577641771e3a5dfda1e80086bc0bbda691f14dba92"
     },
     "collagen-network-atlas/data/ui-checks.json": {
       "bytes": 704,
@@ -1774,9 +1782,21 @@
       "bytes": 518304,
       "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
     },
+    "collagen-network-atlas/figures/topology-aging-overview.png": {
+      "bytes": 952101,
+      "sha256": "9d0c823d278ccc92795e812746a61f2827077faf02c62a82cede02afe0f16f9f"
+    },
+    "collagen-network-atlas/figures/topology-aging-overview.svg": {
+      "bytes": 58480,
+      "sha256": "05c17b0fc4cbd92658e07a60ac6204673d59479eb95e00bcfbc6beca8a1e8ec9"
+    },
+    "collagen-network-atlas/figures/topology-aging-values.json": {
+      "bytes": 2965,
+      "sha256": "e3e044074d1ff9f9b0c926a23cc23d90fed42c1514938faea3a7e28efe6ae152"
+    },
     "collagen-network-atlas/index.html": {
-      "bytes": 16798,
-      "sha256": "2deab7e70f8db9861da2aff2eff6a52fb8afe9b54be2db2bd12458ad6fb9a11d"
+      "bytes": 16852,
+      "sha256": "49de08b75873e5c335076f4f300af3eb78ba9fcb5a1d850df4dae0bb061aa279"
     },
     "collagen-network-atlas/large_data.py": {
       "bytes": 14401,
@@ -1789,6 +1809,10 @@
     "collagen-network-atlas/make-archive.py": {
       "bytes": 1205,
       "sha256": "70473dc09c6dac90bb3478875c7e288dcf9a55adcc6fc92ff7074b538a0c784d"
+    },
+    "collagen-network-atlas/make-topology-figure.js": {
+      "bytes": 1526,
+      "sha256": "0491bcabf929c5b3b23cb2430541a1e650b59618e025ae87ae48a47c425fca2b"
     },
     "collagen-network-atlas/model.js": {
       "bytes": 18846,
@@ -2607,8 +2631,8 @@
       "sha256": "1834840657960e9986043c91b321d2337e661d9c8801f7fe194a80f13ff7ba1a"
     },
     "collagen-network-atlas/species.html": {
-      "bytes": 6632,
-      "sha256": "41a35550d47c7aaaefa086473017edc841f850d9227d944f5175330b4342de6f"
+      "bytes": 6686,
+      "sha256": "afbbe52a5750d9b7827448ed1d196da1d519ff35d0a1c4c7d4983e9bdc23e3ac"
     },
     "collagen-network-atlas/style.css": {
       "bytes": 13374,
@@ -2625,6 +2649,22 @@
     "collagen-network-atlas/test_upload_run.py": {
       "bytes": 4235,
       "sha256": "fc6dfb616d94600c304b0a22787a3751f5b20a42892066b43979b50ad877b40d"
+    },
+    "collagen-network-atlas/topology-aging.css": {
+      "bytes": 1830,
+      "sha256": "e53d4f2f8bd82b7cfd08c21aba40075b894e655043dbd64822e55627db4aca1b"
+    },
+    "collagen-network-atlas/topology-aging.html": {
+      "bytes": 6616,
+      "sha256": "db7b2f7914e5ff92b578852b4a99fec00e7428894e2b1c48fa93e6d2b7748894"
+    },
+    "collagen-network-atlas/topology-aging.js": {
+      "bytes": 2888,
+      "sha256": "11ef496616bed934769c3bdbeb7449f17c2e77f92653295426c06a0ed5870d41"
+    },
+    "collagen-network-atlas/topology-figure.js": {
+      "bytes": 5063,
+      "sha256": "beb9dea2ea6fdb2165999fc8cf3a17897b4f8a51492ede79f84b312d4392431d"
     },
     "collagen-network-atlas/upload-run.py": {
       "bytes": 12490,
@@ -2955,8 +2995,8 @@
       "sha256": "c64859609c4dca8481daa89305ebf299c6d2905ffee91774565bd0e27fa612b3"
     },
     "docs/DEPLOYMENT.json": {
-      "bytes": 6917,
-      "sha256": "f61fb765c8303724b7a6753165b95d5bf83fa30178caea690e6a383d9c808a93"
+      "bytes": 8231,
+      "sha256": "c23dd607752efadfcb6322e612be7c3a5a5619546544aae23f1b92ead2e81cb3"
     },
     "docs/DIRECTIONAL_METHODS.md": {
       "bytes": 5849,
@@ -2974,6 +3014,10 @@
       "bytes": 6596,
       "sha256": "994128bd5c4deb3c67a31b151014548869cfcfefc6a8534acdfbcd9f66d3820b"
     },
+    "docs/TOPOLOGY_AGING_FIGURE.md": {
+      "bytes": 3089,
+      "sha256": "213a9a1e240147dcd7ff563951da7b5cc10d154450c70836c4cdfbffc856046e"
+    },
     "docs/aging-ui.js": {
       "bytes": 15510,
       "sha256": "349bfe53dad708927dbc380b4c25c962d20ca7f65c55e865d049d3b6cd8f86d3"
@@ -2987,8 +3031,8 @@
       "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
     },
     "docs/aging.html": {
-      "bytes": 13262,
-      "sha256": "ebee360f6b9855ee0c77e60eb7471653731a9e463f9127a642dba9a256c1a7f0"
+      "bytes": 13316,
+      "sha256": "82aee968215d50328f24350df84b426b9b5f535c72fbbb5ed45bd663c7daf412"
     },
     "docs/aging.js": {
       "bytes": 6862,
@@ -3066,6 +3110,10 @@
       "bytes": 201413,
       "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
     },
+    "docs/data/topology-maps.js": {
+      "bytes": 21467,
+      "sha256": "b6c1d29eb189d79f70dd26577641771e3a5dfda1e80086bc0bbda691f14dba92"
+    },
     "docs/density-ui.js": {
       "bytes": 6288,
       "sha256": "16d82d29e56aed46d9a1dc4b3c37a0ce0d25b6fcc4f668a7650cecc6cafc396d"
@@ -3090,9 +3138,21 @@
       "bytes": 9610,
       "sha256": "ac72f272400c1d6008e18209dbfe433733965829beb9d1287f39492a024f9b19"
     },
+    "docs/figures/topology-aging-overview.png": {
+      "bytes": 952101,
+      "sha256": "9d0c823d278ccc92795e812746a61f2827077faf02c62a82cede02afe0f16f9f"
+    },
+    "docs/figures/topology-aging-overview.svg": {
+      "bytes": 58480,
+      "sha256": "05c17b0fc4cbd92658e07a60ac6204673d59479eb95e00bcfbc6beca8a1e8ec9"
+    },
+    "docs/figures/topology-aging-values.json": {
+      "bytes": 2965,
+      "sha256": "e3e044074d1ff9f9b0c926a23cc23d90fed42c1514938faea3a7e28efe6ae152"
+    },
     "docs/index.html": {
-      "bytes": 16798,
-      "sha256": "2deab7e70f8db9861da2aff2eff6a52fb8afe9b54be2db2bd12458ad6fb9a11d"
+      "bytes": 16852,
+      "sha256": "49de08b75873e5c335076f4f300af3eb78ba9fcb5a1d850df4dae0bb061aa279"
     },
     "docs/load-guide.js": {
       "bytes": 5783,
@@ -3111,12 +3171,28 @@
       "sha256": "1834840657960e9986043c91b321d2337e661d9c8801f7fe194a80f13ff7ba1a"
     },
     "docs/species.html": {
-      "bytes": 6632,
-      "sha256": "41a35550d47c7aaaefa086473017edc841f850d9227d944f5175330b4342de6f"
+      "bytes": 6686,
+      "sha256": "afbbe52a5750d9b7827448ed1d196da1d519ff35d0a1c4c7d4983e9bdc23e3ac"
     },
     "docs/style.css": {
       "bytes": 13374,
       "sha256": "7a934411db6e996e36a37c0acd528ed4bd750ffa8080c2a85e6b4d5780dadd5e"
+    },
+    "docs/topology-aging.css": {
+      "bytes": 1830,
+      "sha256": "e53d4f2f8bd82b7cfd08c21aba40075b894e655043dbd64822e55627db4aca1b"
+    },
+    "docs/topology-aging.html": {
+      "bytes": 6616,
+      "sha256": "db7b2f7914e5ff92b578852b4a99fec00e7428894e2b1c48fa93e6d2b7748894"
+    },
+    "docs/topology-aging.js": {
+      "bytes": 2888,
+      "sha256": "11ef496616bed934769c3bdbeb7449f17c2e77f92653295426c06a0ed5870d41"
+    },
+    "docs/topology-figure.js": {
+      "bytes": 5063,
+      "sha256": "beb9dea2ea6fdb2165999fc8cf3a17897b4f8a51492ede79f84b312d4392431d"
     },
     "docs/worker.js": {
       "bytes": 298,
@@ -3543,8 +3619,8 @@
       "sha256": "80e5000bb346f2493609b2fe5a8f3d63ff9374e31a632411589ef679b6ea98b1"
     },
     "publish-pages.py": {
-      "bytes": 4336,
-      "sha256": "285efa5a3653ea2ed1ef058755f9e4700f2c0cdf16c1460fc5c367420f703d4e"
+      "bytes": 4595,
+      "sha256": "507a89314310812ece3c78c947e2a702d7102573f3c4efc05d5dff0f6e01a28f"
     },
     "verify-archives.py": {
       "bytes": 786,

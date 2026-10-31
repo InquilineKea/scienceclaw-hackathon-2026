@@ -1,0 +1,15 @@
+# Aging, topology and crosslink placement: figure provenance
+
+The interactive `topology-aging.html` and the four-panel PNG/SVG summarize the completed density sweep. They run no new scientific simulations and introduce no molecular calibration. The underlying simulation snapshot is `f6d5714bfb8a6354b63d17fe6fbc4ab4a10f2fdb`.
+
+`make-topology-figure.js` uses the unchanged original geometry builders to export the seven seed-17 networks with their 24 nested distributed and clustered candidate links. `topology-figure.js` renders those actual node coordinates and connections. Lines are not force magnitudes, deformation trajectories or measured biological anatomy. Blue nodes are the 20 prescribed perimeter nodes; 16 interior nodes relax in the underlying solve. Crossings away from nodes are not new junctions.
+
+The overview selects disordered/isotropic and modular networks, 24 added links and 0° loading. Each metric is the mean of three individual paired ratios against that seed's zero-added-link control. Displayed ranges span the three ratios, not confidence intervals. All 12 displayed metric contrasts and their paired controls pass the existing 480/960-step metric-specific checks. The JSON figure-value file retains full precision and numerical flags. The interactive page uses those same checks for all seven families, all 13 counts and all 12 angles; unresolved values retain a dagger.
+
+The figure is a deliberately selected contrast, not a survey claiming uniform behavior across seeds, angles, architectures or biological tissues. In particular, the clustered disordered work ratio ranges from 0.75 to 1.04 despite its mean being below one. Connector placement also changes length and orientation, so the experiment does not isolate abstract graph topology from geometry. Collagen material and volume remain fixed; added connector energy is separate.
+
+The SVG is the deterministic vector source. The 3200 × 2240 PNG is rendered from that SVG by the page's browser-native canvas export; no image-generation model or inferred data is used. Both formats are standalone publication artifacts. The PNG and SVG should retain their labels and caveats when reused.
+
+Biological motivation: [Fessel et al. 2014](https://pubmed.ncbi.nlm.nih.gov/25364829/) found changes in molecular sliding and fibril failure behavior without an increase in maximum fibril modulus; [Svensson et al. 2018](https://pubmed.ncbi.nlm.nih.gov/29447959/) reported stronger and stiffer glycated fibrils without induced brittleness; [Kamml et al. 2023](https://pubmed.ncbi.nlm.nih.gov/37890341/) modeled AGE properties and a shift from sliding toward stretching. These motivate a mechanical hypothesis, not a conversion from node connectors to molecular AGE burden or chronological age. The current model does not explicitly contain molecular sliding, hydration, turnover, cellular remodeling or a thermodynamic phase transition.
+
+The beaver–human CDSM pilot remains a backbone-construction result. It does not determine a species robustness ranking or supply stiffness or rupture values to this figure.
