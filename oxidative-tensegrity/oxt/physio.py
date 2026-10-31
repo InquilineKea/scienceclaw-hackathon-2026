@@ -21,14 +21,14 @@ import numpy as np
 # matrix binding (dimensionless partition to bound state in healthy matrix), uptake (1/s)
 # --------------------------------------------------------------------------------------------------
 MOLECULES = {
-    "O2":          dict(r=0.17, D0=3000.0, bind=0.0,  uptake=1.0,  ages_binding=0.0),
-    "glucose":     dict(r=0.36, D0=900.0,  bind=0.0,  uptake=0.05, ages_binding=0.0),
-    "IGF-1":       dict(r=1.6,  D0=150.0,  bind=2.0,  uptake=1e-3, ages_binding=0.5),
-    "TGF-beta1":   dict(r=2.4,  D0=100.0,  bind=5.0,  uptake=1e-3, ages_binding=1.0),
-    "VEGF165":     dict(r=3.0,  D0=80.0,   bind=10.0, uptake=1e-3, ages_binding=1.0),
-    "albumin":     dict(r=3.5,  D0=70.0,   bind=0.2,  uptake=1e-5, ages_binding=0.5),
-    "IgG":         dict(r=5.3,  D0=45.0,   bind=0.2,  uptake=1e-5, ages_binding=0.3),
-    "exosome":     dict(r=50.0, D0=4.0,    bind=0.5,  uptake=1e-4, ages_binding=0.3),
+    "O2":          {"r": 0.17, "D0": 3000.0, "bind": 0.0,  "uptake": 1.0,  "ages_binding": 0.0},
+    "glucose":     {"r": 0.36, "D0": 900.0,  "bind": 0.0,  "uptake": 0.05, "ages_binding": 0.0},
+    "IGF-1":       {"r": 1.6,  "D0": 150.0,  "bind": 2.0,  "uptake": 1e-3, "ages_binding": 0.5},
+    "TGF-beta1":   {"r": 2.4,  "D0": 100.0,  "bind": 5.0,  "uptake": 1e-3, "ages_binding": 1.0},
+    "VEGF165":     {"r": 3.0,  "D0": 80.0,   "bind": 10.0, "uptake": 1e-3, "ages_binding": 1.0},
+    "albumin":     {"r": 3.5,  "D0": 70.0,   "bind": 0.2,  "uptake": 1e-5, "ages_binding": 0.5},
+    "IgG":         {"r": 5.3,  "D0": 45.0,   "bind": 0.2,  "uptake": 1e-5, "ages_binding": 0.3},
+    "exosome":     {"r": 50.0, "D0": 4.0,    "bind": 0.5,  "uptake": 1e-4, "ages_binding": 0.3},
 }
 R_COLLAGEN_NM = 40.0  # fibril radius
 R_GAG_NM = 0.5        # GAG chain radius
@@ -50,7 +50,7 @@ def transport(mol: str, phi_col: float, phi_gag: float, dose: float, thickness_u
     lam = math.sqrt(D / m["uptake"]) if m["uptake"] > 0 else float("inf")
     x = L / lam
     frac = 2 * math.exp(-x) / (1 + math.exp(-2 * x)) if np.isfinite(lam) else 1.0  # sech, overflow-safe
-    return dict(D_eff=D, hindrance=hind, bound_ratio=K, t_arrive_s=t_arrive, delivered_frac=frac)
+    return {"D_eff": D, "hindrance": hind, "bound_ratio": K, "t_arrive_s": t_arrive, "delivered_frac": frac}
 
 
 def phi_collagen(bond_density_ratio: float, phi0: float) -> float:
@@ -86,7 +86,7 @@ def heart(E_myo_ratio: float, E_myo_kpa: float, E_myo_kpa_young: float, pwv_rati
     Ea = p.Ea0 * pwv_ratio ** 2  # arterial elastance ~ characteristic impedance ~ PWV (stiffening proxy)
     ESV = (Ea * EDV + Ees * p.V0) / (Ea + Ees)
     SV = EDV - ESV
-    return dict(EDV=EDV, ESV=ESV, SV=SV, EF=SV / EDV, Ees=Ees, Ea=Ea, beta_EDPVR=beta)
+    return {"EDV": EDV, "ESV": ESV, "SV": SV, "EF": SV / EDV, "Ees": Ees, "Ea": Ea, "beta_EDPVR": beta}
 
 
 def pwv(E_ratio: float, pwv_young=6.0):

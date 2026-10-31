@@ -1,5 +1,10 @@
 """Original standard-library preparation; does not import or execute CDSM."""
-import json,pathlib,hashlib,shutil,sys
+import hashlib
+import json
+import pathlib
+import shutil
+import sys
+
 project=pathlib.Path(__file__).resolve().parent
 cache=project/'inputs'
 out=pathlib.Path(sys.argv[1]) if len(sys.argv)>1 else project/'reprepared'

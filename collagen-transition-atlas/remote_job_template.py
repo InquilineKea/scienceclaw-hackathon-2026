@@ -1,7 +1,20 @@
 #!/usr/bin/env python3
 """Original remote wrapper; prepared source and pinned wheel metadata are inserted."""
-import os,sys,json,time,hashlib,base64,zipfile,io,subprocess,signal,urllib.request,traceback,shutil
+import base64
+import hashlib
+import io
+import json
+import os
+import shutil
+import signal
+import subprocess
+import sys
+import time
+import traceback
+import urllib.request
+import zipfile
 from pathlib import Path
+
 SOURCE_B64 = 'SOURCE_ARCHIVE_BASE64'
 SOURCE_SHA = 'SOURCE_ARCHIVE_SHA256'
 WHEELS = [] # PINNED_WHEELS

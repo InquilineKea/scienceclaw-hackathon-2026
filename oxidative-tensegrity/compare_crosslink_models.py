@@ -39,15 +39,15 @@ def main():
 
     rows = []
     for i, n in enumerate(names):
-        r = dict(chemistry=n)
+        r = {"chemistry": n}
         for o in obs:
             r |= {f"{o}_{m}": float(val[o][m][i]) for m in runs}
         r |= {k: pm7[n][k] for k in ("k_rel_seed_mean", "k_rel_seed_sd", "peak_force_seed_mean", "peak_force_seed_sd")
               if k in pm7[n]}
         r["E_min_index"] = {m: argmin[m][n] for m in runs}
         rows.append(r)
-    out = dict(spearman=rho, pm7_seed_vs_seed7_spearman=seed_rho, chemistries=rows,
-               note="k_rel relative to pyridinoline in every method; seed spread is PM7 over RDKit conformer seeds")
+    out = {"spearman": rho, "pm7_seed_vs_seed7_spearman": seed_rho, "chemistries": rows,
+               "note": "k_rel relative to pyridinoline in every method; seed spread is PM7 over RDKit conformer seeds"}
     (D / "crosslink_model_comparison.json").write_text(json.dumps(out, indent=2))
 
     def pm(n, o):

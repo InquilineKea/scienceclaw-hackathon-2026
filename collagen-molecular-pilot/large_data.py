@@ -3,7 +3,11 @@
 Original standard-library code. Existing host-side gh session only. No installers,
 asset deletion, force pushes, tag replacement, or credential-bearing downloads.
 """
-import hashlib, json, os, re, shutil, subprocess, tempfile, uuid
+import hashlib
+import json
+import shutil
+import subprocess
+import uuid
 from pathlib import Path
 
 REPOSITORY = 'InquilineKea/scienceclaw-hackathon-2026'

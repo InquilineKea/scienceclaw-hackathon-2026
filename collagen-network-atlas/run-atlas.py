@@ -1,21 +1,20 @@
 #!/usr/bin/env python3
 """Original standard-library runner: reserve, snapshot, execute, seal; never reuse."""
-from pathlib import Path
 import argparse
 import datetime
 import hashlib
 import json
-import os
 import re
 import shutil
 import subprocess
 import sys
 import tempfile
 import uuid
+from pathlib import Path
 
 
 def now():
-    return datetime.datetime.now(datetime.timezone.utc).isoformat()
+    return datetime.datetime.now(datetime.UTC).isoformat()
 
 
 def write_new(path, value):
@@ -35,7 +34,7 @@ def inventory(folder):
 
 def reserve(root, run_id=None):
     root = Path(root).resolve()
-    run_id = run_id or (datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S.%fZ')
+    run_id = run_id or (datetime.datetime.now(datetime.UTC).strftime('%Y%m%dT%H%M%S.%fZ')
                         + '-' + uuid.uuid4().hex[:12])
     if not re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9._-]{0,99}', run_id):
         raise ValueError('Run ID must be a simple name, never a path')

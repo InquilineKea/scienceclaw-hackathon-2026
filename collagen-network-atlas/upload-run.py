@@ -1,8 +1,20 @@
 #!/usr/bin/env python3
 """Publish sealed scientific runs by adding a new Git tree; never replace a run."""
-from pathlib import Path, PurePosixPath
-import argparse, datetime, hashlib, json, os, re, shutil, subprocess, sys, tempfile, time, uuid
+import argparse
+import datetime
+import hashlib
 import importlib.util
+import json
+import os
+import re
+import shutil
+import subprocess
+import sys
+import tempfile
+import time
+import uuid
+from pathlib import Path, PurePosixPath
+
 _spec=importlib.util.spec_from_file_location('large_data',Path(__file__).with_name('large_data.py'))
 large_data=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(large_data)
 
@@ -12,7 +24,7 @@ LIMIT=95*1024*1024
 SECRET=re.compile(rb'gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|sk-[A-Za-z0-9_-]{30,}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|(?i:authorization\s*:\s*bearer\s+)[A-Za-z0-9_.-]{20,}')
 DENIED={'.env','.git','.aws','.ssh','credentials','credentials.json','auth.json','hosts.yml','cookies.sqlite','login data'}
 
-def now():return datetime.datetime.now(datetime.timezone.utc).isoformat()
+def now():return datetime.datetime.now(datetime.UTC).isoformat()
 def sha(data):return hashlib.sha256(data).hexdigest()
 def gitsha(data):return hashlib.sha1(b'blob '+str(len(data)).encode()+b'\0'+data).hexdigest()
 def write_new(path,data):

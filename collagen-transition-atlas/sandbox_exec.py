@@ -1,5 +1,11 @@
 """Original Linux worker wrapper: drop privileges and deny Internet sockets."""
-import os,sys,ctypes,errno,socket,platform
+import ctypes
+import errno
+import os
+import platform
+import socket
+import sys
+
 if platform.machine()!='x86_64':raise RuntimeError('Reviewed syscall filter is x86_64 only')
 class Filter(ctypes.Structure):_fields_=[('code',ctypes.c_ushort),('jt',ctypes.c_ubyte),('jf',ctypes.c_ubyte),('k',ctypes.c_uint)]
 class Program(ctypes.Structure):_fields_=[('length',ctypes.c_ushort),('filter',ctypes.POINTER(Filter))]

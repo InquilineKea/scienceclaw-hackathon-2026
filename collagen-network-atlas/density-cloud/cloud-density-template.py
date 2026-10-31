@@ -1,5 +1,21 @@
 """Original disposable CPU job. Only public original model files are embedded."""
-import base64, ctypes, errno, hashlib, json, os, pathlib, platform, resource, signal, socket, subprocess, sys, time, zipfile, zlib
+import base64
+import ctypes
+import errno
+import hashlib
+import json
+import os
+import pathlib
+import platform
+import resource
+import signal
+import socket
+import subprocess
+import sys
+import time
+import zipfile
+import zlib
+
 PAYLOAD = '__PAYLOAD__'
 FILES_SHA256 = __HASHES__
 root=pathlib.Path('/tmp/fracture-density-work');root.mkdir(mode=0o755,exist_ok=False)

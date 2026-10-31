@@ -20,12 +20,12 @@ import pandas as pd
 
 ROOT = Path(__file__).resolve().parent
 PROFILES = {
-    "smoke": dict(W=8, seeds=1, doses=[0.0, 1.0], densities=[0.12], n_half=3, n_cycles=2, workers=4, batch=8),
-    "local": dict(W=12, seeds=2, doses=[0.0, 0.5, 1.0], densities=[0.12], n_half=6, n_cycles=3, workers=6, batch=4),
-    "cpu32": dict(W=12, seeds=4, doses=[0.0, 0.5, 1.0], densities=[0.12], n_half=6, n_cycles=3, workers=30,
-                  batch=1),
-    "gpu": dict(W=40, seeds=8, doses=[0.0, 0.25, 0.5, 0.75, 1.0], densities=[0.06, 0.12, 0.2], n_half=12,
-                n_cycles=5, workers=1, batch=64),
+    "smoke": {"W": 8, "seeds": 1, "doses": [0.0, 1.0], "densities": [0.12], "n_half": 3, "n_cycles": 2, "workers": 4, "batch": 8},
+    "local": {"W": 12, "seeds": 2, "doses": [0.0, 0.5, 1.0], "densities": [0.12], "n_half": 6, "n_cycles": 3, "workers": 6, "batch": 4},
+    "cpu32": {"W": 12, "seeds": 4, "doses": [0.0, 0.5, 1.0], "densities": [0.12], "n_half": 6, "n_cycles": 3, "workers": 30,
+                  "batch": 1},
+    "gpu": {"W": 40, "seeds": 8, "doses": [0.0, 0.25, 0.5, 0.75, 1.0], "densities": [0.06, 0.12, 0.2], "n_half": 12,
+                "n_cycles": 5, "workers": 1, "batch": 64},
 }
 AMP = {"tension": 0.06, "shear": 0.12}  # below collagen I fibre rupture, so loops measure sliding, not fracture
 
@@ -70,13 +70,13 @@ def main():
     out.mkdir(parents=True, exist_ok=True)
     tasks = []
     for loading in ("tension", "shear"):
-        items = [dict(dose=d, gag=g, density=rho, seed=5000 + s, loading=loading)
+        items = [{"dose": d, "gag": g, "density": rho, "seed": 5000 + s, "loading": loading}
                  for d in P["doses"] for g in ("none", "bridge", "sliding", "polyelectrolyte")
                  for rho in P["densities"] for s in range(P["seeds"])]
         for k in range(0, len(items), P["batch"]):
-            tasks.append(dict(items=items[k:k + P["batch"]], loading=loading, W=P["W"], n_half=P["n_half"],
-                              n_cycles=P["n_cycles"], device=a.device,
-                              threads=1 if P["workers"] > 1 else 8))
+            tasks.append({"items": items[k:k + P["batch"]], "loading": loading, "W": P["W"], "n_half": P["n_half"],
+                              "n_cycles": P["n_cycles"], "device": a.device,
+                              "threads": 1 if P["workers"] > 1 else 8})
     print(f"[gag] {sum(len(t['items']) for t in tasks)} systems in {len(tasks)} batches", flush=True)
     rows, t0 = [], time.time()
     if P["workers"] > 1 and a.device == "cpu":

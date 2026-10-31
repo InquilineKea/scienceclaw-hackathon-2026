@@ -1,12 +1,16 @@
 """Plots and animations from saved numerical records only (no invented data)."""
-import json,sys,math
+import json
+import math
+import sys
 from pathlib import Path
+
 sys.path.insert(0,'/tmp/transition-deps')
-import numpy as np
 import matplotlib
+import numpy as np
+
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
-from matplotlib.animation import FuncAnimation,PillowWriter
+from matplotlib.animation import FuncAnimation, PillowWriter
 
 COLORS=['#007f86','#e56b42','#7353ba','#b69722','#288847','#bd4984']
 

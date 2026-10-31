@@ -7,7 +7,7 @@ that `alchemi_crosslinks.py` overwrites via `results/crosslink_params.json` when
 from __future__ import annotations
 
 import json
-from dataclasses import dataclass, replace
+from dataclasses import dataclass
 from pathlib import Path
 
 import numpy as np
@@ -19,14 +19,14 @@ ROOT = Path(__file__).resolve().parents[1]
 # --- crosslink chemistries ---------------------------------------------------------------------
 # k_rel: relative junction rigidity (dimensionless, pyridinoline = 1). oxidative: formed by ROS / glycoxidation.
 CROSSLINKS = {
-    "HLNL":          dict(k_rel=0.6, oxidative=False, note="LOX-derived divalent, immature; healthy"),
-    "pyridinoline":  dict(k_rel=1.0, oxidative=False, note="LOX-derived trivalent, mature; healthy"),
-    "pentosidine":   dict(k_rel=1.6, oxidative=True,  note="AGE, glycoxidation Lys-Arg"),
-    "glucosepane":   dict(k_rel=1.8, oxidative=True,  note="AGE, most abundant Lys-Arg crosslink in aged ECM"),
-    "dityrosine":    dict(k_rel=2.2, oxidative=True,  note="radical Tyr-Tyr biphenyl, short and stiff"),
-    "disulfide":     dict(k_rel=1.2, oxidative=True,  note="Cys-Cys; physiologic in Col VII NC2, scrambled under oxidation"),
-    "isopeptide_TG2": dict(k_rel=1.1, oxidative=False, note="transglutaminase-2 Gln-Lys; Col VII anchoring"),
-    "sulfilimine":   dict(k_rel=1.4, oxidative=True,  note="peroxidasin/HOBr Met-S=N-Hyl; physiologic in Col IV NC1"),
+    "HLNL":          {"k_rel": 0.6, "oxidative": False, "note": "LOX-derived divalent, immature; healthy"},
+    "pyridinoline":  {"k_rel": 1.0, "oxidative": False, "note": "LOX-derived trivalent, mature; healthy"},
+    "pentosidine":   {"k_rel": 1.6, "oxidative": True,  "note": "AGE, glycoxidation Lys-Arg"},
+    "glucosepane":   {"k_rel": 1.8, "oxidative": True,  "note": "AGE, most abundant Lys-Arg crosslink in aged ECM"},
+    "dityrosine":    {"k_rel": 2.2, "oxidative": True,  "note": "radical Tyr-Tyr biphenyl, short and stiff"},
+    "disulfide":     {"k_rel": 1.2, "oxidative": True,  "note": "Cys-Cys; physiologic in Col VII NC2, scrambled under oxidation"},
+    "isopeptide_TG2": {"k_rel": 1.1, "oxidative": False, "note": "transglutaminase-2 Gln-Lys; Col VII anchoring"},
+    "sulfilimine":   {"k_rel": 1.4, "oxidative": True,  "note": "peroxidasin/HOBr Met-S=N-Hyl; physiologic in Col IV NC1"},
 }
 
 
@@ -95,7 +95,7 @@ def build_spec(lat: Lattice, col: Collagen, dmg: Damage, rng: np.random.Generato
     kb = np.ones(Nb)
     eps_r = np.full(Nb, col.eps_r)
     rigid = np.zeros(lat.N)
-    meta = dict(collagen=col.name, mode=dmg.mode, dose=dmg.dose, z_target=z)
+    meta = {"collagen": col.name, "mode": dmg.mode, "dose": dmg.dose, "z_target": z}
 
     if dmg.mode != "none" and dmg.dose > 0:
         chems = (dmg.chem,) if dmg.chem else col.oxidative_xl

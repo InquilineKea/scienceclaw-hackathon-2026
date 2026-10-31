@@ -1,11 +1,27 @@
 #!/usr/bin/env python3
 """Bounded, append-only mechanistic follow-up; never overwrites a run directory."""
-import os,sys,math,time,json,argparse,hashlib,shutil,platform,traceback
+import argparse
+import hashlib
+import json
+import math
+import shutil
+import sys
+import time
+import traceback
 from pathlib import Path
+
 sys.path.insert(0,str(Path(__file__).resolve().parent))
 import numpy as np
 import torch
-from transitions import MechanismBatch,Lattice,specifications,network_stats,field_roots,feedback_path,helix_coil
+from transitions import (
+    Lattice,
+    MechanismBatch,
+    feedback_path,
+    field_roots,
+    helix_coil,
+    network_stats,
+    specifications,
+)
 
 START=time.monotonic();DEADLINE=3600.;OUT=None;CFG={};RESULTS={'suites':{},'limitations':[]}
 

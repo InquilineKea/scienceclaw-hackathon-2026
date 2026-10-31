@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """Export saved JSON curves to a static explorer, using Python's standard library."""
+import argparse
+import hashlib
+import json
+import shutil
 from pathlib import Path
-import argparse,json,shutil,hashlib
+
 
 def build(run,out,dataset_url,article_url=''):
     run=Path(run);out=Path(out);out.mkdir(parents=True,exist_ok=True)

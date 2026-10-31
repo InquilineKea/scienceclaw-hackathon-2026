@@ -3,8 +3,17 @@
 This is packaging, not a generic simulation launcher. The remote input still
 requires the exact preserved cloud_job_v2.py object at /output.
 """
+import argparse
+import ast
+import base64
+import difflib
+import gzip
+import hashlib
+import io
+import json
+import zipfile
 from pathlib import Path
-import ast,base64,gzip,json,hashlib,difflib,zipfile,io,argparse
+
 ap=argparse.ArgumentParser();ap.add_argument('v2_directory');ap.add_argument('v4_directory');ap.add_argument('template');ap.add_argument('output_directory');args=ap.parse_args()
 v2=Path(args.v2_directory);v4=Path(args.v4_directory);dest=Path(args.output_directory);dest.mkdir(parents=True,exist_ok=False)
 old=(v2/'cloud_job_v2.py').read_bytes();new=(v4/'cloud_job_v4.py').read_bytes();a=(v2/'source.zip').read_bytes();b=(v4/'source.zip').read_bytes();za=zipfile.ZipFile(io.BytesIO(a));zb=zipfile.ZipFile(io.BytesIO(b));changes={}

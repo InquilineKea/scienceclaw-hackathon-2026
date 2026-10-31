@@ -1,8 +1,15 @@
 """Remote-only runner of the pinned, separately reviewed CDSM backbone stage."""
-import json,pathlib,sys,math,hashlib,time
+import hashlib
+import json
+import math
+import pathlib
+import sys
+import time
+
 here=pathlib.Path(__file__).resolve().parent
 sys.path.insert(0,str(here/'vendor'))
 import step1_backbone_builder as cdsm
+
 inputs=json.loads((here/'inputs'/'pilot.json').read_text())
 out=pathlib.Path(sys.argv[1]);out.mkdir(exist_ok=False)
 started=time.time();results=[];ca={}

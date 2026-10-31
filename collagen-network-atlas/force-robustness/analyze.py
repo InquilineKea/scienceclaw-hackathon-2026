@@ -1,5 +1,9 @@
+import csv
+import json
+import random
+import statistics
 from pathlib import Path
-import json,random,csv,statistics,hashlib
+
 p=Path('results.json');d=json.loads(p.read_text());rows=d['rows'];metrics=['participation','maxShare','spread','patch'];summary=[]
 for r in rows:
  for k in ['spread','patch']:
@@ -16,7 +20,7 @@ for family in ['isotropic','modular']:
    if len(vals)>=6:means.append(statistics.mean(vals))
   rng=random.Random(20261031);boot=sorted(statistics.mean(rng.choices(means,k=len(means))) for _ in range(10000)) if means else []
   mean=statistics.mean(means) if means else None
-  summary.append(dict(family=family,metric=k,meanDelta=mean,ci=[boot[249],boot[9749]] if boot else None,resolvedPairs=len(diffs),totalPairs=120,seeds=len(means),anglesPerSeed=coverage,positivePairs=sum(v>0 for v in diffs),negativePairs=sum(v<0 for v in diffs),positiveSeedMeans=sum(v>0 for v in means),negativeSeedMeans=sum(v<0 for v in means)))
+  summary.append({'family': family,'metric': k,'meanDelta': mean,'ci': [boot[249],boot[9749]] if boot else None,'resolvedPairs': len(diffs),'totalPairs': 120,'seeds': len(means),'anglesPerSeed': coverage,'positivePairs': sum(v>0 for v in diffs),'negativePairs': sum(v<0 for v in diffs),'positiveSeedMeans': sum(v>0 for v in means),'negativeSeedMeans': sum(v<0 for v in means)})
 d['rows']=rows;Path('checked-results.json').write_text(json.dumps(d,separators=(',',':'))+'\n');Path('summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 keys=['family','seed','angle','pattern','participation','maxShare','spread','patch','damageAtSample','strainAtDamage']
 with Path('results.csv').open('w') as f:

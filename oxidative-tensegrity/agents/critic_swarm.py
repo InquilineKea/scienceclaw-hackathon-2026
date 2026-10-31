@@ -62,9 +62,9 @@ def digest(results: Path) -> str:
 def chat(model, system, user, key, max_tokens=1800):
     req = urllib.request.Request(
         BASE.rstrip("/") + "/chat/completions",
-        data=json.dumps(dict(model=model, max_tokens=max_tokens, temperature=0.3,
-                             messages=[{"role": "system", "content": system},
-                                       {"role": "user", "content": user}])).encode(),
+        data=json.dumps({"model": model, "max_tokens": max_tokens, "temperature": 0.3,
+                             "messages": [{"role": "system", "content": system},
+                                       {"role": "user", "content": user}]}).encode(),
         headers={"Authorization": f"Bearer {key}", "Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=300) as r:
         return json.loads(r.read())["choices"][0]["message"]["content"]
@@ -103,7 +103,7 @@ def main():
                "tensegrity/YAP -> organ function. Give (1) the three weakest claims, (2) one alternative "
                "hypothesis the data cannot rule out, (3) one decisive experiment. Be concrete.\n\n" + text)
         reply = chat(model, sys_prompt, ask, key)
-        out.append(dict(role=role, model=model, critique=reply))
+        out.append({"role": role, "model": model, "critique": reply})
         print(f"--- {role} ({model})\n{reply[:1500]}\n")
     (results / "critiques.json").write_text(json.dumps(out, indent=2))
     print("wrote", results / "critiques.json")

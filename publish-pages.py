@@ -1,6 +1,9 @@
 """Copy a bounded, buildless browser application into the GitHub Pages /docs source."""
+import hashlib
+import json
+import shutil
 from pathlib import Path
-import hashlib,json,shutil
+
 root=Path(__file__).resolve().parent
 source=root/'collagen-network-atlas';dest=root/'docs'
 files=['index.html','style.css','app.js','model.js','load-guide.js','worker.js','METHODS.md','EVIDENCE.md','data/benchmark.js','data/replays.js','data/results.json','data/summary.csv','data/curves.csv','figures/benchmark.svg','directional.js','directional-ui.js','directional-worker.js','DIRECTIONAL_METHODS.md','data/directional-data.js','data/directional.json','data/directional.csv','aging.html','aging.css','aging.js','aging-ui.js','aging-worker.js','AGING_METHODS.md','data/aging-data.js','data/aging.json','data/aging.csv']

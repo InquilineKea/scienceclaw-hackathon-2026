@@ -81,8 +81,8 @@ def motor_clutch(curve: MatrixCurve, n_motor: np.ndarray, p: ClutchParams = Clut
     x_sub = np.zeros(M)
     steps = int(p.T / p.dt)
     rec0 = steps // 2
-    acc = dict(F=np.zeros(M), v=np.zeros(M), nb=np.zeros(M), rho=np.zeros(M), strain_max=np.zeros(M),
-               P=np.zeros(M), strain=np.zeros(M))
+    acc = {"F": np.zeros(M), "v": np.zeros(M), "nb": np.zeros(M), "rho": np.zeros(M), "strain_max": np.zeros(M),
+               "P": np.zeros(M), "strain": np.zeros(M)}
     F_hist = np.zeros((M, steps - rec0), dtype=np.float32)
     idx = np.arange(C)[None, :]
     for t in range(steps):
@@ -247,7 +247,7 @@ class TensegrityCell:
             return E, g[free]
 
         q0 = self.P0[free] if x0 is None else x0
-        r = minimize(energy, q0, jac=True, method="L-BFGS-B", options=dict(maxiter=5000, gtol=1e-10))
+        r = minimize(energy, q0, jac=True, method="L-BFGS-B", options={"maxiter": 5000, "gtol": 1e-10})
         P = unpack(r.x)
         base = P[self.basal]
         area = 0.5 * abs(np.cross(base[1, :2] - base[0, :2], base[2, :2] - base[0, :2]))
@@ -259,18 +259,18 @@ class TensegrityCell:
         compression = self.k_strut * np.clip(self.Ls0 - ls, 0, None)
         ua = np.linalg.norm(P[self.basal, :2] - anchor, axis=1)
         height = P[:, 2].max()
-        return dict(
-            footprint=area / area0,
-            height=height / self.P0[:, 2].max(),
-            prestress=tension.mean(),
-            strut_load=compression.mean(),
-            anchor_traction=(k_anchor * ua).mean(),
-            anchor_disp_um=ua.mean() * self.size_um,
-            slack_cables=int((lc < Lc).sum()),
+        return {
+            "footprint": area / area0,
+            "height": height / self.P0[:, 2].max(),
+            "prestress": tension.mean(),
+            "strut_load": compression.mean(),
+            "anchor_traction": (k_anchor * ua).mean(),
+            "anchor_disp_um": ua.mean() * self.size_um,
+            "slack_cables": int((lc < Lc).sum()),
             # nuclear flattening proxy: spread footprint and low height (Elosegui-Artola 2017)
-            flattening=(area / area0) / (height / self.P0[:, 2].max()),
-            x=r.x,
-        )
+            "flattening": (area / area0) / (height / self.P0[:, 2].max()),
+            "x": r.x,
+        }
 
 
 # --------------------------------------------------------------------------------------------------
@@ -327,12 +327,12 @@ class CellModel:
         ps_rigid = np.array([self._rigid_prestress(c) for c in con])
         ps_ratio = np.array([t["prestress"] for t in tens]) / ps_rigid
         Y = yap_from(mc["F"], ps_ratio, self.cp)
-        out = dict(Y=Y, k_anchor=k_anchor, E_loc=E_loc, prestress_ratio=ps_ratio,
-                   flattening=np.array([t["flattening"] for t in tens]),
-                   footprint=np.array([t["footprint"] for t in tens]),
-                   height=np.array([t["height"] for t in tens]),
-                   strut_load=np.array([t["strut_load"] for t in tens]),
-                   prestress=np.array([t["prestress"] for t in tens]))
+        out = {"Y": Y, "k_anchor": k_anchor, "E_loc": E_loc, "prestress_ratio": ps_ratio,
+                   "flattening": np.array([t["flattening"] for t in tens]),
+                   "footprint": np.array([t["footprint"] for t in tens]),
+                   "height": np.array([t["height"] for t in tens]),
+                   "strut_load": np.array([t["strut_load"] for t in tens]),
+                   "prestress": np.array([t["prestress"] for t in tens])}
         out.update({f"mc_{k}": v for k, v in mc.items()})
         return out
 

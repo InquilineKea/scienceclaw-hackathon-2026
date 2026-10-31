@@ -11,8 +11,8 @@ import importlib.metadata
 import json
 import math
 import os
-from pathlib import Path
 import time
+from pathlib import Path
 
 SYSTEMS = [
     {"id": "peptide_bond_control", "name": "N-methylacetamide",
@@ -112,13 +112,13 @@ def main():
         raise ValueError("Unreviewed model checksum")
     import numpy as np
     import torch
-    from rdkit import Chem
     from ase import Atoms
     from nvalchemi.data import AtomicData, Batch
     from nvalchemi.dynamics import FIRE2
     from nvalchemi.dynamics.base import ConvergenceHook, DynamicsStage
     from nvalchemi.hooks import NeighborListHook
     from nvalchemi.models.mace import MACEWrapper
+    from rdkit import Chem
     if not torch.cuda.is_available():
         raise RuntimeError("GPU unavailable; CPU fallback forbidden")
     torch.set_num_threads(2)

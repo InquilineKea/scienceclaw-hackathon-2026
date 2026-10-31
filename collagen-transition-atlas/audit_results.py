@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """Independent standard-library readback of frozen numerical output."""
-import argparse,json,hashlib,math,statistics
+import argparse
+import hashlib
+import json
+import math
 from pathlib import Path
+
 
 def independent_folded_fraction(T,hyp,hydration,crosslink,sites=81):
     """Scaled probability/count recurrence, independent of PyTorch/autograd."""

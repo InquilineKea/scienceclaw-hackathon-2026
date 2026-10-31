@@ -4,7 +4,13 @@
 Usage: python3 -I restore-large-data.py LARGE_DATASETS.json DESTINATION
 Uses only the Python standard library. No login required for public datasets.
 """
-import argparse, hashlib, json, os, re, tempfile, urllib.request
+import argparse
+import hashlib
+import json
+import os
+import re
+import tempfile
+import urllib.request
 from pathlib import Path, PurePosixPath
 
 REPOSITORY = 'InquilineKea/scienceclaw-hackathon-2026'

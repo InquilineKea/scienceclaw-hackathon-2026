@@ -116,4 +116,4 @@ def fit_viscoelastic(stress_file: Path, period: float):
     gd = np.gradient(g) / w
     A = np.stack([g, gd], 1)
     (Gp, Gpp), *_ = np.linalg.lstsq(A, s, rcond=None)
-    return dict(G_storage=Gp, G_loss=Gpp, tan_delta=Gpp / Gp if Gp else float("nan"))
+    return {"G_storage": Gp, "G_loss": Gpp, "tan_delta": Gpp / Gp if Gp else float("nan")}

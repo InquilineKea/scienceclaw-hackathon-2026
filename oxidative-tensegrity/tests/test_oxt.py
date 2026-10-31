@@ -8,17 +8,17 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from oxt.cell import TensegrityCell, expanded_octahedron, k_adhesion  # noqa: E402
-from oxt.lammps_export import export  # noqa: E402
-from oxt.materials import COLLAGENS, TISSUES, Damage, build_spec, tissue_dose  # noqa: E402
-from oxt.network import Batch, Lattice, SystemSpec, coordination  # noqa: E402
-from oxt.physio import heart, transport  # noqa: E402
+from oxt.cell import TensegrityCell, expanded_octahedron, k_adhesion
+from oxt.lammps_export import export
+from oxt.materials import COLLAGENS, TISSUES, Damage, build_spec, tissue_dose
+from oxt.network import Batch, Lattice, SystemSpec, coordination
+from oxt.physio import heart, transport
 
 
 def full_spec(lat, **kw):
     Nb = lat.Nb
-    d = dict(alive=np.ones(Nb, bool), mu=np.ones(Nb), kappa_b=np.ones(Nb), eps_r=np.full(Nb, 9.0),
-             rigid_node=np.zeros(lat.N), kappa=0.0, mu_el=0.0, k_gag=0.0)
+    d = {"alive": np.ones(Nb, bool), "mu": np.ones(Nb), "kappa_b": np.ones(Nb), "eps_r": np.full(Nb, 9.0),
+             "rigid_node": np.zeros(lat.N), "kappa": 0.0, "mu_el": 0.0, "k_gag": 0.0}
     d.update(kw)
     return SystemSpec(**d)
 

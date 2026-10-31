@@ -1,6 +1,10 @@
 """Original standard-library read-only verification of this task's public media."""
+import hashlib
+import json
+import subprocess
+import urllib.parse
 from pathlib import Path
-import hashlib,json,urllib.parse,subprocess
+
 manifest=json.loads(Path('publication/media.json').read_text())
 out=Path('/private/tmp/fracture-atlas-media-check');out.mkdir(exist_ok=True)
 records=[]

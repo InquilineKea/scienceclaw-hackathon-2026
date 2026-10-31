@@ -1,6 +1,11 @@
 """Original stdlib-only result integrity check and bounded publication copier."""
+import hashlib
+import json
+import shutil
+import sys
+import zipfile
 from pathlib import Path
-import hashlib,json,shutil,zipfile,sys
+
 root=Path(__file__).resolve().parent
 receipt=json.loads(Path(sys.argv[1]).read_text());archive=Path(sys.argv[2]);b=archive.read_bytes()
 assert len(b)==receipt['archiveBytes'] and hashlib.sha256(b).hexdigest()==receipt['archiveSha256']

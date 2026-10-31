@@ -1,6 +1,12 @@
 """Offline regression tests: no network, credentials, packages, or scientific jobs."""
-import hashlib, importlib.util, io, json, re, tempfile, unittest
+import hashlib
+import importlib.util
+import io
+import json
+import tempfile
+import unittest
 from pathlib import Path
+
 
 def module(name, filename):
     s=importlib.util.spec_from_file_location(name,Path(__file__).with_name(filename))
