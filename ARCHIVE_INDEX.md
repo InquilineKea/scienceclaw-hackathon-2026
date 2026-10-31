@@ -26,9 +26,9 @@ The separate workflow-verification run reproduces the numerical records exactly,
 
 ## Provenance and completeness
 
-Each frozen run folder contains its own MANIFEST.json with sizes and SHA-256 hashes, verifiable with Python's standard library alone and without executing any scientific model or installing software. `ARCHIVE_VALIDATION.json` records the validation results captured when this index was sealed.
+Each frozen run folder contains its own MANIFEST.json with sizes and SHA-256 hashes, verifiable with Python's standard library alone and without executing any scientific model or installing software.
 
-The archive includes all available saved scientific raw data, code, logs and visuals in scope. It does not contain credentials, unrelated account records, GPU environment binaries or model weights. One local user-directory prefix in a scientific text record was replaced with `/Users/LOCAL_USER`; source and published hashes are retained in ARCHIVE_PROVENANCE.json. Original privacy-reviewed public packages and numerical records retain their bytes.
+The archive includes all available saved scientific raw data, code, logs and visuals in scope. It does not contain credentials, unrelated account records, GPU environment binaries or model weights. One local user-directory prefix in a scientific text record was replaced with `/Users/LOCAL_USER` before publication. Original privacy-reviewed public packages and numerical records retain their bytes.
 
 Replay states were originally sampled and retained only for selected cases. JSON exports use seven significant figures; curve CSVs retain their sampled-record numeric serialization. Unsaved internal states cannot be recovered from an archive. Prior GROMACS provenance and limited duration remain explicit. Molecular proxy curvatures are not inputs to this network model.
 
