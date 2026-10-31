@@ -1,0 +1,416 @@
+{
+  "scope": "Controlled independent stdlib material reference; not production-code or experimental validation",
+  "H": 0.05,
+  "tension_onset": 0.04,
+  "tension_scale": 0.05,
+  "directions": 26,
+  "quadrature_fourth_moment_error": 1.6653345369377348e-16,
+  "local_return_checks": [
+    {
+      "d0": null,
+      "yield_force": null,
+      "max_incremental_gradient_error": 7.96009924641794e-11,
+      "max_condensed_tangent_error": 2.3194175469143374e-09,
+      "max_active_kkt_error": 0.0,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": null,
+      "yield_force": 0.01,
+      "max_incremental_gradient_error": 3.742922638494406e-12,
+      "max_condensed_tangent_error": 1.1371331654075334e-10,
+      "max_active_kkt_error": 6.938893903907228e-18,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": null,
+      "yield_force": 0.04,
+      "max_incremental_gradient_error": 4.0193265382626464e-12,
+      "max_condensed_tangent_error": 1.4548046101126033e-10,
+      "max_active_kkt_error": 6.938893903907228e-18,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": 0.0025,
+      "yield_force": null,
+      "max_incremental_gradient_error": 7.96009924641794e-11,
+      "max_condensed_tangent_error": 2.3194175469143374e-09,
+      "max_active_kkt_error": 0.0,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": 0.0025,
+      "yield_force": 0.01,
+      "max_incremental_gradient_error": 1.512734382203007e-12,
+      "max_condensed_tangent_error": 1.7961743203898095e-10,
+      "max_active_kkt_error": 6.938893903907228e-18,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": 0.0025,
+      "yield_force": 0.04,
+      "max_incremental_gradient_error": 4.0193265382626464e-12,
+      "max_condensed_tangent_error": 1.7961743203898095e-10,
+      "max_active_kkt_error": 6.938893903907228e-18,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": 0.01,
+      "yield_force": null,
+      "max_incremental_gradient_error": 7.96009924641794e-11,
+      "max_condensed_tangent_error": 2.3194175469143374e-09,
+      "max_active_kkt_error": 0.0,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": 0.01,
+      "yield_force": 0.01,
+      "max_incremental_gradient_error": 1.512734382203007e-12,
+      "max_condensed_tangent_error": 1.1371331654075334e-10,
+      "max_active_kkt_error": 6.938893903907228e-18,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": 0.01,
+      "yield_force": 0.04,
+      "max_incremental_gradient_error": 4.0193265382626464e-12,
+      "max_condensed_tangent_error": 1.4548046101126033e-10,
+      "max_active_kkt_error": 6.938893903907228e-18,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": 0.04,
+      "yield_force": null,
+      "max_incremental_gradient_error": 7.96009924641794e-11,
+      "max_condensed_tangent_error": 2.3194175469143374e-09,
+      "max_active_kkt_error": 0.0,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": 0.04,
+      "yield_force": 0.01,
+      "max_incremental_gradient_error": 2.5940846692940056e-12,
+      "max_condensed_tangent_error": 1.1371331654075334e-10,
+      "max_active_kkt_error": 6.938893903907228e-18,
+      "hold_slip_increment": 0.0
+    },
+    {
+      "d0": 0.04,
+      "yield_force": 0.04,
+      "max_incremental_gradient_error": 4.0193265382626464e-12,
+      "max_condensed_tangent_error": 1.4548046101126033e-10,
+      "max_active_kkt_error": 6.938893903907228e-18,
+      "hold_slip_increment": 0.0
+    }
+  ],
+  "finite_F_checks": [
+    {
+      "d0": null,
+      "yield_force": null,
+      "energy_direction_error": 9.173051207511662e-12,
+      "relative_Hvp_error": 3.452070590748581e-10,
+      "objectivity_energy_error": 1.734723475976807e-17,
+      "objectivity_Piola_error": 4.594496261474085e-16
+    },
+    {
+      "d0": null,
+      "yield_force": 0.01,
+      "energy_direction_error": 2.1294493945944737e-12,
+      "relative_Hvp_error": 2.7394466518837636e-10,
+      "objectivity_energy_error": 5.204170427930421e-18,
+      "objectivity_Piola_error": 2.1449278817554483e-16
+    },
+    {
+      "d0": null,
+      "yield_force": 0.04,
+      "energy_direction_error": 4.216599291950729e-12,
+      "relative_Hvp_error": 4.34478629240732e-10,
+      "objectivity_energy_error": 1.0408340855860843e-17,
+      "objectivity_Piola_error": 3.9866289323921905e-16
+    },
+    {
+      "d0": 0.0025,
+      "yield_force": null,
+      "energy_direction_error": 8.483366786826707e-12,
+      "relative_Hvp_error": 2.609348816977589e-10,
+      "objectivity_energy_error": 1.3877787807814457e-17,
+      "objectivity_Piola_error": 3.1608166012138045e-16
+    },
+    {
+      "d0": 0.0025,
+      "yield_force": 0.01,
+      "energy_direction_error": 1.8734423734567685e-12,
+      "relative_Hvp_error": 5.302688668741904e-10,
+      "objectivity_energy_error": 1.734723475976807e-18,
+      "objectivity_Piola_error": 3.337370832393568e-17
+    },
+    {
+      "d0": 0.0025,
+      "yield_force": 0.04,
+      "energy_direction_error": 4.3942696703602735e-12,
+      "relative_Hvp_error": 4.5776252932659054e-10,
+      "objectivity_energy_error": 8.673617379884035e-18,
+      "objectivity_Piola_error": 3.02041212507818e-16
+    },
+    {
+      "d0": 0.01,
+      "yield_force": null,
+      "energy_direction_error": 8.897910186433933e-12,
+      "relative_Hvp_error": 2.6424628045121603e-10,
+      "objectivity_energy_error": 1.3877787807814457e-17,
+      "objectivity_Piola_error": 3.681048881090748e-16
+    },
+    {
+      "d0": 0.01,
+      "yield_force": 0.01,
+      "energy_direction_error": 9.869466355283407e-13,
+      "relative_Hvp_error": 4.352921960687649e-10,
+      "objectivity_energy_error": 3.469446951953614e-18,
+      "objectivity_Piola_error": 4.331601393259198e-17
+    },
+    {
+      "d0": 0.01,
+      "yield_force": 0.04,
+      "energy_direction_error": 3.9414582708729995e-12,
+      "relative_Hvp_error": 5.028842501841546e-10,
+      "objectivity_energy_error": 1.0408340855860843e-17,
+      "objectivity_Piola_error": 2.9045223774593588e-16
+    },
+    {
+      "d0": 0.04,
+      "yield_force": null,
+      "energy_direction_error": 9.208897533419247e-12,
+      "relative_Hvp_error": 3.0522999950776207e-10,
+      "objectivity_energy_error": 1.3877787807814457e-17,
+      "objectivity_Piola_error": 4.2020431305955474e-16
+    },
+    {
+      "d0": 0.04,
+      "yield_force": 0.01,
+      "energy_direction_error": 1.297930513066703e-12,
+      "relative_Hvp_error": 2.8261451120244087e-10,
+      "objectivity_energy_error": 3.469446951953614e-18,
+      "objectivity_Piola_error": 1.34695441382533e-16
+    },
+    {
+      "d0": 0.04,
+      "yield_force": 0.04,
+      "energy_direction_error": 5.119807355846717e-12,
+      "relative_Hvp_error": 4.976695950171545e-10,
+      "objectivity_energy_error": 1.214306433183765e-17,
+      "objectivity_Piola_error": 3.4572635222074104e-16
+    }
+  ],
+  "angular_isotropy_diagnostic": [
+    {
+      "d0": null,
+      "right_rotation_energy_relative_difference": 0.023278928252982136
+    },
+    {
+      "d0": 0.0025,
+      "right_rotation_energy_relative_difference": 0.032121349612224515
+    },
+    {
+      "d0": 0.01,
+      "right_rotation_energy_relative_difference": 0.03120248891363194
+    },
+    {
+      "d0": 0.04,
+      "right_rotation_energy_relative_difference": 0.006864106906541644
+    }
+  ],
+  "cyclic_work_checks": [
+    {
+      "d0": null,
+      "yield_force": 0.01,
+      "resolutions": [
+        {
+          "steps_per_leg": 100,
+          "relative_work_energy_dissipation_error": 5.424022997727157e-05,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.001809523809523809
+        },
+        {
+          "steps_per_leg": 200,
+          "relative_work_energy_dissipation_error": 1.3559505890025246e-05,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.0018095238095238067
+        },
+        {
+          "steps_per_leg": 400,
+          "relative_work_energy_dissipation_error": 3.3898419978345027e-06,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.0018095238095238054
+        }
+      ]
+    },
+    {
+      "d0": null,
+      "yield_force": 0.04,
+      "resolutions": [
+        {
+          "steps_per_leg": 100,
+          "relative_work_energy_dissipation_error": 1.7240876763734982e-05,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866633
+        },
+        {
+          "steps_per_leg": 200,
+          "relative_work_energy_dissipation_error": 4.333652626632982e-06,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866631
+        },
+        {
+          "steps_per_leg": 400,
+          "relative_work_energy_dissipation_error": 1.089726871138882e-06,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866629
+        }
+      ]
+    },
+    {
+      "d0": 0.0025,
+      "yield_force": 0.01,
+      "resolutions": [
+        {
+          "steps_per_leg": 100,
+          "relative_work_energy_dissipation_error": 1.8941832248029082e-05,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.001809523809523809
+        },
+        {
+          "steps_per_leg": 200,
+          "relative_work_energy_dissipation_error": 6.411731360778985e-06,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.0018095238095238067
+        },
+        {
+          "steps_per_leg": 400,
+          "relative_work_energy_dissipation_error": 1.4087290328009004e-06,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.0018095238095238054
+        }
+      ]
+    },
+    {
+      "d0": 0.0025,
+      "yield_force": 0.04,
+      "resolutions": [
+        {
+          "steps_per_leg": 100,
+          "relative_work_energy_dissipation_error": 6.386944362582779e-06,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866633
+        },
+        {
+          "steps_per_leg": 200,
+          "relative_work_energy_dissipation_error": 2.2663613318078196e-06,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866631
+        },
+        {
+          "steps_per_leg": 400,
+          "relative_work_energy_dissipation_error": 6.586167264514418e-07,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866629
+        }
+      ]
+    },
+    {
+      "d0": 0.01,
+      "yield_force": 0.01,
+      "resolutions": [
+        {
+          "steps_per_leg": 100,
+          "relative_work_energy_dissipation_error": 2.0839159405151854e-05,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.001809523809523809
+        },
+        {
+          "steps_per_leg": 200,
+          "relative_work_energy_dissipation_error": 5.672770528201103e-06,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.0018095238095238067
+        },
+        {
+          "steps_per_leg": 400,
+          "relative_work_energy_dissipation_error": 1.3681780829215202e-06,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.0018095238095238054
+        }
+      ]
+    },
+    {
+      "d0": 0.01,
+      "yield_force": 0.04,
+      "resolutions": [
+        {
+          "steps_per_leg": 100,
+          "relative_work_energy_dissipation_error": 9.171408306556933e-06,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866633
+        },
+        {
+          "steps_per_leg": 200,
+          "relative_work_energy_dissipation_error": 2.4313515526350224e-06,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866631
+        },
+        {
+          "steps_per_leg": 400,
+          "relative_work_energy_dissipation_error": 6.266459105972388e-07,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866629
+        }
+      ]
+    },
+    {
+      "d0": 0.04,
+      "yield_force": 0.01,
+      "resolutions": [
+        {
+          "steps_per_leg": 100,
+          "relative_work_energy_dissipation_error": 1.5938750160368162e-05,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.001809523809523809
+        },
+        {
+          "steps_per_leg": 200,
+          "relative_work_energy_dissipation_error": 4.102910935501276e-06,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.0018095238095238067
+        },
+        {
+          "steps_per_leg": 400,
+          "relative_work_energy_dissipation_error": 1.0131419310700105e-06,
+          "terminal_slip": 0.18095238095238095,
+          "total_dissipation": 0.0018095238095238054
+        }
+      ]
+    },
+    {
+      "d0": 0.04,
+      "yield_force": 0.04,
+      "resolutions": [
+        {
+          "steps_per_leg": 100,
+          "relative_work_energy_dissipation_error": 5.800599533901612e-06,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866633
+        },
+        {
+          "steps_per_leg": 200,
+          "relative_work_energy_dissipation_error": 1.4662795273718028e-06,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866631
+        },
+        {
+          "steps_per_leg": 400,
+          "relative_work_energy_dissipation_error": 3.6656116853531373e-07,
+          "terminal_slip": 0.1528865576216658,
+          "total_dissipation": 0.006115462304866629
+        }
+      ]
+    }
+  ]
+}

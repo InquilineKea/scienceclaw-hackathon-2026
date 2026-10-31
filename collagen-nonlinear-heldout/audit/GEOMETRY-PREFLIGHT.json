@@ -1,0 +1,23 @@
+[
+  {
+    "pos": "Pos004",
+    "fully_prescribed_tets": 1073,
+    "minimum_fixed_J": 0.7622694624294022,
+    "inverted_fixed_tets": 0,
+    "old_selected_linear_minimum_J": 0.7364289117858841
+  },
+  {
+    "pos": "Pos007",
+    "fully_prescribed_tets": 504,
+    "minimum_fixed_J": 0.7782345596657912,
+    "inverted_fixed_tets": 0,
+    "old_selected_linear_minimum_J": 0.662402004498658
+  },
+  {
+    "pos": "Pos008",
+    "fully_prescribed_tets": 422,
+    "minimum_fixed_J": 0.8843451345284213,
+    "inverted_fixed_tets": 0,
+    "old_selected_linear_minimum_J": 0.7757069222460391
+  }
+]

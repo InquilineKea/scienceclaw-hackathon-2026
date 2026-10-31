@@ -1,0 +1,324 @@
+{
+  "passed": true,
+  "test_count": 4052,
+  "cycle": {
+    "work": 0.0015776495460150363,
+    "stored": 0.0005300311791383219,
+    "diss": 0.001047619047619057,
+    "final_slip": 0.10476190476190475
+  },
+  "records": [
+    {
+      "name": "26_weight",
+      "error": 2.220446049250313e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "26_xx",
+      "error": 5.551115123125783e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "26_xxxx",
+      "error": 5.551115123125783e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "26_xxyy",
+      "error": 0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "50_weight",
+      "error": 0,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "50_xx",
+      "error": 1.6653345369377348e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "50_xxxx",
+      "error": 2.7755575615628914e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "50_xxyy",
+      "error": 1.3877787807814457e-17,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "110_weight",
+      "error": 1.9984014443252818e-15,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "110_xx",
+      "error": 4.440892098500626e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "110_xxxx",
+      "error": 9.71445146547012e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "110_xxyy",
+      "error": 1.8041124150158794e-16,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "302_weight",
+      "error": 3.352873534367973e-14,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "302_xx",
+      "error": 1.149080830487037e-14,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "302_xxxx",
+      "error": 5.190292640122607e-15,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "302_xxyy",
+      "error": 3.011479954295737e-15,
+      "limit": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":null,\"yield\":null}_-0.05",
+      "error": 2.83176260218454e-14,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":null,\"yield\":null}_-0.05",
+      "error": 1.000088900582341e-12,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":null,\"yield\":null}_-0.002",
+      "error": 1.5048726154098802e-16,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":null,\"yield\":null}_-0.002",
+      "error": 1.3278267374516872e-13,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":null,\"yield\":null}_0.015",
+      "error": 7.766357001948165e-15,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":null,\"yield\":null}_0.015",
+      "error": 7.346345753944661e-13,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":null,\"yield\":null}_0.07",
+      "error": 5.9726806833637625e-12,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":null,\"yield\":null}_0.07",
+      "error": 1.191331477912172e-10,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":null,\"yield\":null}_0.13",
+      "error": 1.9489632130387236e-11,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":null,\"yield\":null}_0.13",
+      "error": 3.9901326687186156e-10,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.0025,\"yield\":null}_-0.05",
+      "error": 8.405168921976625e-15,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.0025,\"yield\":null}_-0.05",
+      "error": 8.529254361394089e-14,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.0025,\"yield\":null}_-0.002",
+      "error": 2.9955394501707255e-11,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.0025,\"yield\":null}_-0.002",
+      "error": 1.1982200787130637e-8,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.0025,\"yield\":null}_0.015",
+      "error": 7.766357001948165e-15,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.0025,\"yield\":null}_0.015",
+      "error": 7.346345753944661e-13,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.0025,\"yield\":null}_0.07",
+      "error": 5.9726806833637625e-12,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.0025,\"yield\":null}_0.07",
+      "error": 1.191331477912172e-10,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.0025,\"yield\":null}_0.13",
+      "error": 1.9489632130387236e-11,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.0025,\"yield\":null}_0.13",
+      "error": 3.9901326687186156e-10,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_-0.05",
+      "error": 7.329380158349608e-14,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_-0.05",
+      "error": 1.114836868654212e-11,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_-0.002",
+      "error": 1.3645616104077107e-11,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_-0.002",
+      "error": 1.364521606816993e-9,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_0.015",
+      "error": 8.527900607901984e-15,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_0.015",
+      "error": 7.784328737159285e-13,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_0.07",
+      "error": 6.303985111699717e-14,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_0.07",
+      "error": 2.6910140782376857e-12,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_energy_force_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_0.13",
+      "error": 7.705641680288977e-14,
+      "limit": 1e-7,
+      "passed": true
+    },
+    {
+      "name": "scalar_tangent_{\"buckling\":0.01,\"yield\":0.01,\"hardening\":0.05}_0.13",
+      "error": 2.6910140782376857e-12,
+      "limit": 0.00001,
+      "passed": true
+    },
+    {
+      "name": "scalar_cycle_energy_balance",
+      "error": 4.314914831413204e-7,
+      "limit": 0.001,
+      "passed": true
+    },
+    {
+      "name": "FE_energy_gradient_{\"buckling\":null,\"yield\":null}",
+      "error": 2.381923651373352e-12,
+      "limit": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "FE_energy_gradient_{\"buckling\":0.01,\"yield\":null}",
+      "error": 2.2687147299693677e-12,
+      "limit": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "FE_energy_gradient_{\"buckling\":0.0025,\"yield\":0.01,\"hardening\":0.05}",
+      "error": 7.411227664552711e-13,
+      "limit": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "finite_rotation_energy",
+      "error": 1.4064262995940326e-32,
+      "limit": 1e-20,
+      "passed": true
+    },
+    {
+      "name": "smallstrain_mu_matches_one",
+      "error": 3.1784574971993607e-11,
+      "limit": 0.0001,
+      "passed": true
+    }
+  ]
+}

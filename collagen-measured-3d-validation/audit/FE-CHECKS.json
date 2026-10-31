@@ -1,0 +1,59 @@
+{
+  "tests": [
+    {
+      "name": "unit_cube_volume",
+      "error": 6.661338147750939e-16,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "rigid_translation_gradient",
+      "error": 0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "infinitesimal_rotation_gradient",
+      "error": 0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "analytic_simple_shear_energy",
+      "error": 0,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "analytic_dilation_energy",
+      "error": 1.0842021724855044e-19,
+      "tolerance": 1e-12,
+      "passed": true
+    },
+    {
+      "name": "operator_symmetry",
+      "error": 4.524158825347513e-15,
+      "tolerance": 1e-11,
+      "passed": true
+    },
+    {
+      "name": "energy_directional_derivative",
+      "error": 6.147732961592212e-9,
+      "tolerance": 1e-8,
+      "passed": true
+    },
+    {
+      "name": "elastic_affine_patch",
+      "error": 1.942890293094024e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    },
+    {
+      "name": "harmonic_affine_patch",
+      "error": 1.6653345369377348e-16,
+      "tolerance": 1e-10,
+      "passed": true
+    }
+  ],
+  "passed": true
+}

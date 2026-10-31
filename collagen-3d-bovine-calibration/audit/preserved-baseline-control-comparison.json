@@ -1,0 +1,545 @@
+{
+  "scope": "Preserved single-seed baseline control, not final factorial outcome",
+  "seed": 29,
+  "plane": 1,
+  "threshold": 0.2,
+  "python100_status": "converged",
+  "javascript100_status": "converged",
+  "matched_positive_states": 100,
+  "max_pointwise_energy_relative_difference": 5.662359427762336e-08,
+  "max_pointwise_stress_relative_difference": 1.7627564108358677e-05,
+  "terminal_python100_vs_js_energy_difference": 2.3560320361326603e-13,
+  "python100_max_force": 9.996426103753007e-08,
+  "js100_max_force": 9.976705864144706e-08,
+  "high_resolution_pair": {
+    "coarse_steps": 100,
+    "fine_steps": 200,
+    "coarse_complete": true,
+    "fine_complete": true,
+    "coarse_energy_error": 9.93431956883258e-05,
+    "fine_energy_error": 3.259161531706946e-05,
+    "cap_work_relative_change": 6.675375741066972e-05,
+    "maximum_stress_relative_change": 1.388501995978948e-09,
+    "coarse_peak_censored": true,
+    "fine_peak_censored": true,
+    "fine_stability": [
+      {
+        "label": "initial_state",
+        "classification": "no_resolved_negative_curvature_marginal",
+        "minimum_scaled_eigenvalue": 8.612724281001771e-06
+      },
+      {
+        "label": "peak_state",
+        "classification": "positive_curvature_at_checked_state",
+        "minimum_scaled_eigenvalue": 0.0001124516272239496
+      },
+      {
+        "label": "terminal_state",
+        "classification": "positive_curvature_at_checked_state",
+        "minimum_scaled_eigenvalue": 0.0001124516272239496
+      }
+    ]
+  },
+  "pointwise": [
+    {
+      "gamma": 0.005,
+      "energy_relative_difference": 5.662359427762336e-08,
+      "stress_relative_difference": 3.3562698887565156e-06
+    },
+    {
+      "gamma": 0.01,
+      "energy_relative_difference": 1.468480667760656e-08,
+      "stress_relative_difference": 7.09023286737406e-06
+    },
+    {
+      "gamma": 0.015,
+      "energy_relative_difference": 3.5197466494168184e-08,
+      "stress_relative_difference": 1.7627564108358677e-05
+    },
+    {
+      "gamma": 0.02,
+      "energy_relative_difference": 3.1461872264531783e-09,
+      "stress_relative_difference": 5.255471441804239e-06
+    },
+    {
+      "gamma": 0.025,
+      "energy_relative_difference": 8.286937779893394e-10,
+      "stress_relative_difference": 6.409626932813547e-06
+    },
+    {
+      "gamma": 0.03,
+      "energy_relative_difference": 5.12277522003938e-09,
+      "stress_relative_difference": 1.1505887097734535e-05
+    },
+    {
+      "gamma": 0.035,
+      "energy_relative_difference": 6.399447662181949e-09,
+      "stress_relative_difference": 2.083379894792742e-06
+    },
+    {
+      "gamma": 0.04,
+      "energy_relative_difference": 4.394070946970716e-09,
+      "stress_relative_difference": 1.1759801576536515e-06
+    },
+    {
+      "gamma": 0.045,
+      "energy_relative_difference": 1.7521167219590342e-09,
+      "stress_relative_difference": 3.368803273723545e-06
+    },
+    {
+      "gamma": 0.05,
+      "energy_relative_difference": 2.901815521580432e-09,
+      "stress_relative_difference": 6.438190595871746e-06
+    },
+    {
+      "gamma": 0.055,
+      "energy_relative_difference": 1.6649815837645008e-09,
+      "stress_relative_difference": 9.496271242368434e-06
+    },
+    {
+      "gamma": 0.06,
+      "energy_relative_difference": 7.543125890342366e-12,
+      "stress_relative_difference": 1.1140071845909354e-06
+    },
+    {
+      "gamma": 0.065,
+      "energy_relative_difference": 2.924665255036222e-10,
+      "stress_relative_difference": 3.7501465799618694e-06
+    },
+    {
+      "gamma": 0.07,
+      "energy_relative_difference": 1.5850516211924252e-10,
+      "stress_relative_difference": 1.6531189723762742e-06
+    },
+    {
+      "gamma": 0.075,
+      "energy_relative_difference": 4.122495978759509e-11,
+      "stress_relative_difference": 1.7042270791478896e-06
+    },
+    {
+      "gamma": 0.08,
+      "energy_relative_difference": 2.986203094278132e-11,
+      "stress_relative_difference": 1.8302839521462823e-06
+    },
+    {
+      "gamma": 0.085,
+      "energy_relative_difference": 1.1043583594548645e-10,
+      "stress_relative_difference": 1.7501979537820705e-06
+    },
+    {
+      "gamma": 0.09,
+      "energy_relative_difference": 3.235721301846192e-10,
+      "stress_relative_difference": 2.6303802898013235e-06
+    },
+    {
+      "gamma": 0.095,
+      "energy_relative_difference": 9.227432635525561e-10,
+      "stress_relative_difference": 2.0804373929887616e-06
+    },
+    {
+      "gamma": 0.1,
+      "energy_relative_difference": 1.2368522142240251e-09,
+      "stress_relative_difference": 9.39323919607104e-07
+    },
+    {
+      "gamma": 0.105,
+      "energy_relative_difference": 6.564295902215051e-11,
+      "stress_relative_difference": 4.7281359859032795e-07
+    },
+    {
+      "gamma": 0.11,
+      "energy_relative_difference": 3.4010083372891595e-11,
+      "stress_relative_difference": 9.373713216705624e-07
+    },
+    {
+      "gamma": 0.115,
+      "energy_relative_difference": 4.240006471907651e-09,
+      "stress_relative_difference": 3.4985069629914496e-06
+    },
+    {
+      "gamma": 0.12,
+      "energy_relative_difference": 2.2703389336344613e-10,
+      "stress_relative_difference": 1.3506654297377347e-06
+    },
+    {
+      "gamma": 0.125,
+      "energy_relative_difference": 1.5182840692897553e-10,
+      "stress_relative_difference": 6.732450326531471e-07
+    },
+    {
+      "gamma": 0.13,
+      "energy_relative_difference": 6.625770053655912e-11,
+      "stress_relative_difference": 1.1698170368684891e-06
+    },
+    {
+      "gamma": 0.135,
+      "energy_relative_difference": 6.313326293307526e-11,
+      "stress_relative_difference": 4.439635145983377e-07
+    },
+    {
+      "gamma": 0.14,
+      "energy_relative_difference": 1.8851663089135582e-11,
+      "stress_relative_difference": 5.117119306284996e-07
+    },
+    {
+      "gamma": 0.145,
+      "energy_relative_difference": 2.5459601024706202e-11,
+      "stress_relative_difference": 2.1924392795426462e-07
+    },
+    {
+      "gamma": 0.15,
+      "energy_relative_difference": 4.1503012687799153e-11,
+      "stress_relative_difference": 2.4570332641999132e-06
+    },
+    {
+      "gamma": 0.155,
+      "energy_relative_difference": 7.798400391569918e-10,
+      "stress_relative_difference": 2.1745813947709287e-06
+    },
+    {
+      "gamma": 0.16,
+      "energy_relative_difference": 1.2182288544384945e-12,
+      "stress_relative_difference": 1.0023323641845018e-07
+    },
+    {
+      "gamma": 0.165,
+      "energy_relative_difference": 3.1177083041670715e-11,
+      "stress_relative_difference": 4.462352979661095e-07
+    },
+    {
+      "gamma": 0.17,
+      "energy_relative_difference": 1.0201706909852376e-09,
+      "stress_relative_difference": 3.364342460110971e-06
+    },
+    {
+      "gamma": 0.175,
+      "energy_relative_difference": 1.197042482510919e-09,
+      "stress_relative_difference": 1.2229287868366282e-06
+    },
+    {
+      "gamma": 0.18,
+      "energy_relative_difference": 2.931660610280306e-10,
+      "stress_relative_difference": 1.0367692218096166e-07
+    },
+    {
+      "gamma": 0.185,
+      "energy_relative_difference": 1.2637211264871283e-09,
+      "stress_relative_difference": 1.9397734201842039e-07
+    },
+    {
+      "gamma": 0.19,
+      "energy_relative_difference": 5.82088790487812e-10,
+      "stress_relative_difference": 3.12219338932664e-07
+    },
+    {
+      "gamma": 0.195,
+      "energy_relative_difference": 4.721604267991202e-10,
+      "stress_relative_difference": 3.3584233439626786e-07
+    },
+    {
+      "gamma": 0.2,
+      "energy_relative_difference": 1.386522508975852e-09,
+      "stress_relative_difference": 3.770149755281347e-06
+    },
+    {
+      "gamma": 0.205,
+      "energy_relative_difference": 2.0835368570702662e-10,
+      "stress_relative_difference": 3.511010820620359e-09
+    },
+    {
+      "gamma": 0.21,
+      "energy_relative_difference": 6.784630632759349e-10,
+      "stress_relative_difference": 1.590590049886559e-06
+    },
+    {
+      "gamma": 0.215,
+      "energy_relative_difference": 8.042309686348334e-11,
+      "stress_relative_difference": 7.09818279959328e-07
+    },
+    {
+      "gamma": 0.22,
+      "energy_relative_difference": 2.014300305659425e-10,
+      "stress_relative_difference": 3.7972634799588576e-07
+    },
+    {
+      "gamma": 0.225,
+      "energy_relative_difference": 2.678438856795704e-10,
+      "stress_relative_difference": 5.456849745269565e-07
+    },
+    {
+      "gamma": 0.23,
+      "energy_relative_difference": 2.481543206703541e-10,
+      "stress_relative_difference": 9.545997712212417e-07
+    },
+    {
+      "gamma": 0.235,
+      "energy_relative_difference": 2.03550755200186e-10,
+      "stress_relative_difference": 5.734023702115843e-07
+    },
+    {
+      "gamma": 0.24,
+      "energy_relative_difference": 4.4696297131528826e-11,
+      "stress_relative_difference": 2.978186316123121e-07
+    },
+    {
+      "gamma": 0.245,
+      "energy_relative_difference": 1.3321731361135358e-11,
+      "stress_relative_difference": 1.471579259816434e-07
+    },
+    {
+      "gamma": 0.25,
+      "energy_relative_difference": 7.809010599229742e-10,
+      "stress_relative_difference": 7.756169531797658e-07
+    },
+    {
+      "gamma": 0.255,
+      "energy_relative_difference": 3.1237989989946145e-10,
+      "stress_relative_difference": 6.79148287710804e-07
+    },
+    {
+      "gamma": 0.26,
+      "energy_relative_difference": 8.984307061727928e-12,
+      "stress_relative_difference": 9.162036102862427e-08
+    },
+    {
+      "gamma": 0.265,
+      "energy_relative_difference": 2.4872679059485625e-12,
+      "stress_relative_difference": 3.8791330650878216e-07
+    },
+    {
+      "gamma": 0.27,
+      "energy_relative_difference": 3.943211927148738e-11,
+      "stress_relative_difference": 1.2365442891367776e-07
+    },
+    {
+      "gamma": 0.275,
+      "energy_relative_difference": 6.850897435960418e-11,
+      "stress_relative_difference": 2.3890751167025972e-08
+    },
+    {
+      "gamma": 0.28,
+      "energy_relative_difference": 1.4713242199807778e-11,
+      "stress_relative_difference": 8.201862198195062e-08
+    },
+    {
+      "gamma": 0.285,
+      "energy_relative_difference": 5.6688846741135915e-11,
+      "stress_relative_difference": 1.375035443529014e-07
+    },
+    {
+      "gamma": 0.29,
+      "energy_relative_difference": 1.0727348923955114e-11,
+      "stress_relative_difference": 7.685015269901886e-08
+    },
+    {
+      "gamma": 0.295,
+      "energy_relative_difference": 2.593973827228069e-11,
+      "stress_relative_difference": 5.875402883880652e-07
+    },
+    {
+      "gamma": 0.3,
+      "energy_relative_difference": 3.319393492910423e-11,
+      "stress_relative_difference": 1.536938830450394e-07
+    },
+    {
+      "gamma": 0.305,
+      "energy_relative_difference": 8.261782712740997e-11,
+      "stress_relative_difference": 4.124935619560573e-07
+    },
+    {
+      "gamma": 0.31,
+      "energy_relative_difference": 2.4756352062911587e-12,
+      "stress_relative_difference": 2.535250250217496e-07
+    },
+    {
+      "gamma": 0.315,
+      "energy_relative_difference": 1.0638927948437645e-11,
+      "stress_relative_difference": 7.989494211919597e-08
+    },
+    {
+      "gamma": 0.32,
+      "energy_relative_difference": 1.3684059411233121e-11,
+      "stress_relative_difference": 1.0375608005803678e-07
+    },
+    {
+      "gamma": 0.325,
+      "energy_relative_difference": 1.3961117486316253e-11,
+      "stress_relative_difference": 3.266258846776365e-08
+    },
+    {
+      "gamma": 0.33,
+      "energy_relative_difference": 9.759527571069052e-12,
+      "stress_relative_difference": 2.7189749869434064e-08
+    },
+    {
+      "gamma": 0.335,
+      "energy_relative_difference": 1.8719673761209443e-12,
+      "stress_relative_difference": 8.201623437325997e-08
+    },
+    {
+      "gamma": 0.34,
+      "energy_relative_difference": 9.304501454049515e-12,
+      "stress_relative_difference": 1.769941606003235e-07
+    },
+    {
+      "gamma": 0.345,
+      "energy_relative_difference": 4.976255357809828e-13,
+      "stress_relative_difference": 7.212492858887047e-08
+    },
+    {
+      "gamma": 0.35,
+      "energy_relative_difference": 1.8777549171491962e-13,
+      "stress_relative_difference": 1.7361951680295902e-07
+    },
+    {
+      "gamma": 0.355,
+      "energy_relative_difference": 3.640022058600907e-12,
+      "stress_relative_difference": 4.9581775713176845e-08
+    },
+    {
+      "gamma": 0.36,
+      "energy_relative_difference": 1.8390317704203787e-12,
+      "stress_relative_difference": 2.8845748260004825e-07
+    },
+    {
+      "gamma": 0.365,
+      "energy_relative_difference": 4.744976185030612e-12,
+      "stress_relative_difference": 3.3818891031328634e-08
+    },
+    {
+      "gamma": 0.37,
+      "energy_relative_difference": 1.9970182593579125e-13,
+      "stress_relative_difference": 1.6284057469356973e-07
+    },
+    {
+      "gamma": 0.375,
+      "energy_relative_difference": 1.122630258383192e-11,
+      "stress_relative_difference": 1.702272001368835e-07
+    },
+    {
+      "gamma": 0.38,
+      "energy_relative_difference": 2.412739887923082e-12,
+      "stress_relative_difference": 9.73056249132707e-08
+    },
+    {
+      "gamma": 0.385,
+      "energy_relative_difference": 6.377992391182927e-12,
+      "stress_relative_difference": 2.3855821604135024e-08
+    },
+    {
+      "gamma": 0.39,
+      "energy_relative_difference": 2.9260832926553223e-12,
+      "stress_relative_difference": 1.2806148539655695e-08
+    },
+    {
+      "gamma": 0.395,
+      "energy_relative_difference": 2.6426851038478627e-11,
+      "stress_relative_difference": 4.441517937729489e-08
+    },
+    {
+      "gamma": 0.4,
+      "energy_relative_difference": 5.402993951432888e-12,
+      "stress_relative_difference": 1.3072588159241579e-08
+    },
+    {
+      "gamma": 0.405,
+      "energy_relative_difference": 2.690925880511928e-12,
+      "stress_relative_difference": 4.3070651922245556e-08
+    },
+    {
+      "gamma": 0.41,
+      "energy_relative_difference": 1.891031382220422e-12,
+      "stress_relative_difference": 1.629560052304295e-08
+    },
+    {
+      "gamma": 0.415,
+      "energy_relative_difference": 1.4966122882126518e-12,
+      "stress_relative_difference": 4.007052422746338e-08
+    },
+    {
+      "gamma": 0.42,
+      "energy_relative_difference": 2.183936578234476e-12,
+      "stress_relative_difference": 6.537664334929651e-08
+    },
+    {
+      "gamma": 0.425,
+      "energy_relative_difference": 2.2804244631223107e-12,
+      "stress_relative_difference": 7.4157105101719214e-09
+    },
+    {
+      "gamma": 0.43,
+      "energy_relative_difference": 2.0324595641936844e-12,
+      "stress_relative_difference": 2.7470793443994566e-08
+    },
+    {
+      "gamma": 0.435,
+      "energy_relative_difference": 3.78039936489082e-12,
+      "stress_relative_difference": 1.1784064829685578e-09
+    },
+    {
+      "gamma": 0.44,
+      "energy_relative_difference": 1.7277687822828728e-12,
+      "stress_relative_difference": 1.1120230007915576e-08
+    },
+    {
+      "gamma": 0.445,
+      "energy_relative_difference": 4.422125929277981e-12,
+      "stress_relative_difference": 1.1452211109167955e-08
+    },
+    {
+      "gamma": 0.45,
+      "energy_relative_difference": 6.9780331956330205e-12,
+      "stress_relative_difference": 1.4866487199850914e-08
+    },
+    {
+      "gamma": 0.455,
+      "energy_relative_difference": 2.36978409239446e-13,
+      "stress_relative_difference": 1.543397868894067e-08
+    },
+    {
+      "gamma": 0.46,
+      "energy_relative_difference": 1.612556825688959e-13,
+      "stress_relative_difference": 3.5078118816104204e-08
+    },
+    {
+      "gamma": 0.465,
+      "energy_relative_difference": 8.674263842595653e-12,
+      "stress_relative_difference": 1.8173835522789776e-07
+    },
+    {
+      "gamma": 0.47,
+      "energy_relative_difference": 6.612657160960623e-12,
+      "stress_relative_difference": 1.5581536121951283e-07
+    },
+    {
+      "gamma": 0.475,
+      "energy_relative_difference": 7.411709301502891e-13,
+      "stress_relative_difference": 6.350339566506474e-08
+    },
+    {
+      "gamma": 0.48,
+      "energy_relative_difference": 7.2522016713316926e-12,
+      "stress_relative_difference": 1.7756576665602502e-07
+    },
+    {
+      "gamma": 0.485,
+      "energy_relative_difference": 1.1298942619235926e-11,
+      "stress_relative_difference": 1.9458033641824143e-07
+    },
+    {
+      "gamma": 0.49,
+      "energy_relative_difference": 4.062017142062505e-12,
+      "stress_relative_difference": 1.102736630522548e-07
+    },
+    {
+      "gamma": 0.495,
+      "energy_relative_difference": 5.21537509703109e-12,
+      "stress_relative_difference": 1.601107489775409e-07
+    },
+    {
+      "gamma": 0.5,
+      "energy_relative_difference": 2.73327903305849e-12,
+      "stress_relative_difference": 2.4982233830927175e-08
+    }
+  ]
+}

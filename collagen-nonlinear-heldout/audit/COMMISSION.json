@@ -1,0 +1,12 @@
+{
+  "converged": true,
+  "relative": 9.413722323257248e-8,
+  "iterations": 116,
+  "evaluations": 126,
+  "seconds": 10.674,
+  "geometry": {
+    "minJ": 0.9725809666986858,
+    "inverted_tets": 0
+  },
+  "energy": 572.4070368613808
+}

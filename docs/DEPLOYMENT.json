@@ -10,8 +10,8 @@
   "scope": "Original 450-run baseline, 252-run directional-strain experiment, and separate paired crosslink experiment. Static application and browser-local computation; no server or package installation. Density sweep uses 6,300 paired configurations at two resolutions. Separate CDSM species pilot contains backbone geometry only, without molecular mechanical calibration.",
   "files": {
     "index.html": {
-      "bytes": 16961,
-      "sha256": "f0c86301b202fbf0ca91704ef51e74848f5947feb0c46293cf9838af0f81c54d"
+      "bytes": 17066,
+      "sha256": "991d5f7ceee0c7baaa5a0b889b459b5b8029b674ab82ec3b16bc2b6349f91582"
     },
     "style.css": {
       "bytes": 13374,
@@ -461,6 +461,158 @@
       "comparisons.csv": {
         "bytes": 211149,
         "sha256": "811a4688e4758b696ba2ac3c0f06f656d6f9901801872109a5da350a6f82080b"
+      }
+    }
+  },
+  "bovine_3d": {
+    "scope": "Bovine bulk-response calibration of synthetic periodic3D cells; conditional angular locking and damage, explicit step/energy/stability gates; measured-architecture validation data-gated.",
+    "files": {
+      "index.html": {
+        "bytes": 14844,
+        "sha256": "080751b20ed42a0d19d40f0dfd3b9c902d5ef7280b6b49b99218f8ce0c09bb51"
+      },
+      "page.js": {
+        "bytes": 10876,
+        "sha256": "ab16b95fb9748dee25e165c534716964c9fedcd719df0c88df806638b31dfd05"
+      },
+      "report-data.json": {
+        "bytes": 14031760,
+        "sha256": "4a380fa8b7fea9ff8eb822ac42e4a29106bc0ed03e218757dc88a7e219c69b36"
+      },
+      "bovine-calibration.svg": {
+        "bytes": 47317,
+        "sha256": "384a34f3b711f6fd1d4113b8a9985a88e8e5878345ed404e0dd9f59d5f815d14"
+      },
+      "bovine-calibration.jpg": {
+        "bytes": 76668,
+        "sha256": "fd87e62b01e7a783db5554d71b94030840ea3090ebc05338e11ceb0ffee82b02"
+      },
+      "mechanics-summary.svg": {
+        "bytes": 14598,
+        "sha256": "36f21300c6a16004b231987db9fa5bc0749e88e78749a2e70ba713a052f69cc3"
+      },
+      "mechanics-summary.jpg": {
+        "bytes": 111635,
+        "sha256": "be9686dab6b8340f866d07d4d96e1ce120e9ff18631a64629d02427c083b0bd2"
+      },
+      "force-damage-3d.gif": {
+        "bytes": 1532349,
+        "sha256": "9e5a172ca9b9842a42d78a5b767d5e2b95ca5112c05feca1d311e6390df32dc2"
+      },
+      "stiffness-summary.svg": {
+        "bytes": 6521,
+        "sha256": "d1592d3c030c0c8482c592ec88aa1c243e0999d129d525c2ccb87a95955b8219"
+      },
+      "stiffness-summary.jpg": {
+        "bytes": 88713,
+        "sha256": "16e8159feabada58853b732fcc15f4581ac6f72c681e6f3302958bbe5dcdebae"
+      },
+      "bovine-3d-results.zip": {
+        "bytes": 28095424,
+        "sha256": "55c493bf1d271e47632be6fffb580f48b1920e1b0a726ac506fff58a0931036a"
+      },
+      "README.md": {
+        "bytes": 435,
+        "sha256": "2f192bba6fb6c736a4d407c50c0fd9bf79d88af41e20c21a3db37914c206dd8e"
+      }
+    }
+  },
+  "measured_3d": {
+    "scope": "Measured image-derived3D PIV field, conditional partial-Dirichlet prediction and separate held-out nonlinear batch summaries; no measured fiber connectivity or joint specimen calibration.",
+    "files": {
+      "index.html": {
+        "bytes": 10060,
+        "sha256": "4d5a8055c50eb8a74ab20733832768b9fc98a0d8fa18691670d31d53eca085b5"
+      },
+      "page.js": {
+        "bytes": 3761,
+        "sha256": "6fa0aaea9e4af59db0660f8d4cb1fb87c74255c14e9f3fc6daf29c0cfd6975fd"
+      },
+      "report-data.json": {
+        "bytes": 348886,
+        "sha256": "ce2ab1bbea3b21c7d8123a7df19b41ecd8e58e7255c0e63705792ab4606fc17c"
+      },
+      "bulk-validation.svg": {
+        "bytes": 9128,
+        "sha256": "a4f7587786a71570796eaf35dd289d25bbca8a3d7ffdb47c30f4ebaaf107e38c"
+      },
+      "bulk-validation.jpg": {
+        "bytes": 85034,
+        "sha256": "cac2e3c77812e5db422f0f3fb8c89239d69f09f6fcad001e5cd4b6e8b9e8f5a4"
+      },
+      "spatial-validation.svg": {
+        "bytes": 7893,
+        "sha256": "6b30d975fdba470d92976903024c4aaa2bdbceb876a71bad8546f4eb3665a164"
+      },
+      "spatial-validation.jpg": {
+        "bytes": 101738,
+        "sha256": "7a73f71ceebb33e4ba7fb6530f2ae22af152af70b20324f1cb6fa37cb44bafcf"
+      },
+      "measured-predicted-3d.gif": {
+        "bytes": 1601129,
+        "sha256": "3218422b274645a04a72fba31677c41f177e3ac4513e8023d5510734be6774dd"
+      },
+      "measured-3d-results.zip": {
+        "bytes": 2169094,
+        "sha256": "0c6db7a02c6c3d0dd44c389fe4e3402932a644da956c41def28740afec061c0b"
+      },
+      "README.md": {
+        "bytes": 456,
+        "sha256": "86fb50bc331a44c1552c89ae6501ae6dbe874cec19e626056c96d7d8debafe61"
+      }
+    }
+  },
+  "nonlinear_3d": {
+    "scope": "Adaptively reused measured-boundary-conditioned 3D continuum surrogate comparison, fixed masks and honest numerical gates; no measured fiber graph or chemical aging validation.",
+    "scientific_commit": "ebc91b58da34dfc6f341266759d5cf2b123fc206",
+    "files": {
+      "comparison.svg": {
+        "bytes": 6475,
+        "sha256": "50f470a0de09badd59e810d186a9d36cb38c76dbfeb122e5f70fe6f9ce2e2dbc"
+      },
+      "index.html": {
+        "bytes": 3453,
+        "sha256": "162c817efb38dadbf6646379564ff3308def7430ba7a0b2256253c3425ec4f1e"
+      },
+      "selection.jpg": {
+        "bytes": 101317,
+        "sha256": "2df310f0686355a009acd3afdfb52772ab012033952a70da805a2c7fadd63a0c"
+      },
+      "page.js": {
+        "bytes": 2945,
+        "sha256": "5e07eb20dca8fb1a17a11f0d7ab23ce1e67f86ca64fbac984300b684d252babf"
+      },
+      "nonlinear-prediction-3d.gif": {
+        "bytes": 1626524,
+        "sha256": "975e5b3b2c88d76808234f1709fe524c87861a5c354ae4f1270e7dfeb3008297"
+      },
+      "REPORT.md": {
+        "bytes": 4596,
+        "sha256": "86f6c2a0bf78680f6470b4b5d3df991a2e9b7bcb8b66e50820585f5d990d204a"
+      },
+      "selection.svg": {
+        "bytes": 3219,
+        "sha256": "6b7c2aafa6b5c56e6b6598f3aec78951842276b8c601a33bb94183111bdb4746"
+      },
+      "results.json": {
+        "bytes": 42809,
+        "sha256": "a39b1db36b423870957c85072f075ea464205ffc8e71fd3b022a96a1964297c9"
+      },
+      "comparison.jpg": {
+        "bytes": 124417,
+        "sha256": "27547f2f0bd5760cc9a6e950e90bd0e23969299e062a4fa0a4e84dca44436023"
+      },
+      "nonlinear-3d-results.zip": {
+        "bytes": 4333153,
+        "sha256": "6da495a872d03d657074e5c71ea8b2620451f5ae5c084f62f8d1dd9504407960"
+      },
+      "fields.json": {
+        "bytes": 6135017,
+        "sha256": "2aebff46d2fdbbf495f999792c6f2cff8ab99c1d54da23bfc3a6f7bedf8f54d9"
+      },
+      "numerical-controls.json": {
+        "bytes": 35173,
+        "sha256": "c354fb0a5ecd651ecdf728f91b481f20de6b0f3e35dfe2d6ef901e942f099b90"
       }
     }
   }

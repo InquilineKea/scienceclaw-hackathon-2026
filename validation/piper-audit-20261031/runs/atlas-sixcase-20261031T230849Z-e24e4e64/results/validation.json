@@ -1,0 +1,204 @@
+{
+  "modelHash": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+  "reports": [
+    {
+      "family": "aligned",
+      "mode": "tension",
+      "pass": true,
+      "comparisons": [
+        {
+          "key": "work",
+          "stored": 0.000514188,
+          "fresh": 0.0005141879531102891,
+          "pass": true
+        },
+        {
+          "key": "strength",
+          "stored": 0.004875295,
+          "fresh": 0.004875295037794823,
+          "pass": true
+        },
+        {
+          "key": "finalDamage",
+          "stored": 0.2043474,
+          "fresh": 0.2043473935192009,
+          "pass": true
+        },
+        {
+          "key": "retained",
+          "stored": 0.6666667,
+          "fresh": 0.6666666666666666,
+          "pass": true
+        }
+      ],
+      "residualOK": true,
+      "dynamicOK": true
+    },
+    {
+      "family": "isotropic",
+      "mode": "tension",
+      "pass": true,
+      "comparisons": [
+        {
+          "key": "work",
+          "stored": 0.0004034793,
+          "fresh": 0.00040347933910750845,
+          "pass": true
+        },
+        {
+          "key": "strength",
+          "stored": 0.002096008,
+          "fresh": 0.0020960078464620406,
+          "pass": true
+        },
+        {
+          "key": "finalDamage",
+          "stored": 0.09933943,
+          "fresh": 0.09933942918611774,
+          "pass": true
+        },
+        {
+          "key": "retained",
+          "stored": 1,
+          "fresh": 1,
+          "pass": true
+        }
+      ],
+      "residualOK": true,
+      "dynamicOK": true
+    },
+    {
+      "family": "isotropic",
+      "mode": "shear",
+      "pass": true,
+      "comparisons": [
+        {
+          "key": "work",
+          "stored": 0.0003033775,
+          "fresh": 0.00030337754992049317,
+          "pass": true
+        },
+        {
+          "key": "strength",
+          "stored": 0.00167905,
+          "fresh": 0.0016790500270864213,
+          "pass": true
+        },
+        {
+          "key": "finalDamage",
+          "stored": 0.07008647,
+          "fresh": 0.07008646743930545,
+          "pass": true
+        },
+        {
+          "key": "retained",
+          "stored": 1,
+          "fresh": 1,
+          "pass": true
+        }
+      ],
+      "residualOK": true,
+      "dynamicOK": true
+    },
+    {
+      "family": "isotropic",
+      "mode": "confined",
+      "pass": true,
+      "comparisons": [
+        {
+          "key": "work",
+          "stored": 0.00001847762,
+          "fresh": 0.000018477617283982345,
+          "pass": true
+        },
+        {
+          "key": "strength",
+          "stored": 0.00008319221,
+          "fresh": 0.00008319221194702487,
+          "pass": true
+        },
+        {
+          "key": "finalDamage",
+          "stored": 0,
+          "fresh": 0,
+          "pass": true
+        },
+        {
+          "key": "retained",
+          "stored": 1,
+          "fresh": 1,
+          "pass": true
+        }
+      ],
+      "residualOK": true,
+      "dynamicOK": true
+    },
+    {
+      "family": "isotropic",
+      "mode": "pulse",
+      "pass": true,
+      "comparisons": [
+        {
+          "key": "work",
+          "stored": 0.001466816,
+          "fresh": 0.0014668159382227757,
+          "pass": true
+        },
+        {
+          "key": "strength",
+          "stored": 0.007422942,
+          "fresh": 0.0074229421817964955,
+          "pass": true
+        },
+        {
+          "key": "finalDamage",
+          "stored": 0.1695271,
+          "fresh": 0.16952707086368873,
+          "pass": true
+        },
+        {
+          "key": "retained",
+          "stored": 0,
+          "fresh": 0,
+          "pass": true
+        }
+      ],
+      "residualOK": true,
+      "dynamicOK": true
+    },
+    {
+      "family": "isotropic",
+      "mode": "free",
+      "pass": true,
+      "comparisons": [
+        {
+          "key": "work",
+          "stored": 4.323465e-30,
+          "fresh": 4.323465196233093e-30,
+          "pass": true
+        },
+        {
+          "key": "strength",
+          "stored": 0,
+          "fresh": 0,
+          "pass": true
+        },
+        {
+          "key": "finalDamage",
+          "stored": 0,
+          "fresh": 0,
+          "pass": true
+        },
+        {
+          "key": "retained",
+          "stored": 1,
+          "fresh": 1,
+          "pass": true
+        }
+      ],
+      "residualOK": true,
+      "dynamicOK": true
+    }
+  ],
+  "pass": true
+}

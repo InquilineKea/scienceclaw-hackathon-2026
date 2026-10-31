@@ -1,0 +1,384 @@
+{
+  "specimen": "Pos004",
+  "counts": {
+    "supplied_valid_boundary_nodes": 3610,
+    "invalid_reference_boundary_nodes": 151,
+    "eligible_valid_test_nodes": 3991,
+    "eligible_strain_tetrahedra": 16674,
+    "missing_measured_vectors": 206
+  },
+  "geometry": {
+    "minVolume_um3": 586.0868268713992,
+    "maxVolume_um3": 586.0868268714099,
+    "totalVolume_um3": 44645750.12372629
+  },
+  "reference_offset_um": [
+    -0.02554166903719594,
+    -0.14004022013058345,
+    0.03303159384135609
+  ],
+  "results": [
+    {
+      "name": "zero",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 4.137600165423876,
+        "balanced_vector_RMSE_um": 2.0341091822770667,
+        "balanced_vector_NRMSE": 1,
+        "pooled_vector_RMSE_um": 1.8961591540932867,
+        "pooled_vector_NRMSE": 1,
+        "strain_Frobenius_RMSE": 0.031315311022983204,
+        "strain_Frobenius_NRMSE": 1,
+        "octants": [
+          {
+            "nodes": 695,
+            "RMSE_um": 1.40006266784874,
+            "NRMSE": 1
+          },
+          {
+            "nodes": 384,
+            "RMSE_um": 2.1952129315901714,
+            "NRMSE": 1
+          },
+          {
+            "nodes": 338,
+            "RMSE_um": 3.220613636009728,
+            "NRMSE": 1
+          },
+          {
+            "nodes": 584,
+            "RMSE_um": 1.7503303169654898,
+            "NRMSE": 1
+          },
+          {
+            "nodes": 668,
+            "RMSE_um": 1.688927180734201,
+            "NRMSE": 1
+          },
+          {
+            "nodes": 320,
+            "RMSE_um": 2.4618857373031657,
+            "NRMSE": 1
+          },
+          {
+            "nodes": 524,
+            "RMSE_um": 1.4580454397261038,
+            "NRMSE": 1
+          },
+          {
+            "nodes": 478,
+            "RMSE_um": 1.3588247546540502,
+            "NRMSE": 1
+          }
+        ],
+        "strain_tetrahedra": 16674
+      }
+    },
+    {
+      "name": "affine_boundary_fit",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.7086467787377673,
+        "balanced_vector_RMSE_um": 1.3071521635746035,
+        "balanced_vector_NRMSE": 0.6426165197835266,
+        "pooled_vector_RMSE_um": 1.2199345933735475,
+        "pooled_vector_NRMSE": 0.6433714125420558,
+        "strain_Frobenius_RMSE": 0.029557090571187744,
+        "strain_Frobenius_NRMSE": 0.9438542874281195,
+        "octants": [
+          {
+            "nodes": 695,
+            "RMSE_um": 0.8797729685703835,
+            "NRMSE": 0.6283811351974655
+          },
+          {
+            "nodes": 384,
+            "RMSE_um": 1.4153041038750493,
+            "NRMSE": 0.6447229257390669
+          },
+          {
+            "nodes": 338,
+            "RMSE_um": 1.9600835872915743,
+            "NRMSE": 0.608605628870179
+          },
+          {
+            "nodes": 584,
+            "RMSE_um": 1.436457204008558,
+            "NRMSE": 0.8206777829792226
+          },
+          {
+            "nodes": 668,
+            "RMSE_um": 0.9757982710977154,
+            "NRMSE": 0.5777621926088737
+          },
+          {
+            "nodes": 320,
+            "RMSE_um": 1.720456706261757,
+            "NRMSE": 0.6988369444580335
+          },
+          {
+            "nodes": 524,
+            "RMSE_um": 0.8333206925103224,
+            "NRMSE": 0.5715327312891312
+          },
+          {
+            "nodes": 478,
+            "RMSE_um": 0.6165826453504173,
+            "NRMSE": 0.45376171080088684
+          }
+        ],
+        "strain_tetrahedra": 16674
+      }
+    },
+    {
+      "name": "harmonic_interpolation",
+      "kind": "harmonic",
+      "seconds": 0.362,
+      "solver": {
+        "iterations": 90,
+        "relative_residual": 9.961792822391655e-9,
+        "recomputed_free_residual": 9.961792838081338e-9
+      },
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 0.5822660537846369,
+        "balanced_vector_RMSE_um": 0.7630635974705102,
+        "balanced_vector_NRMSE": 0.375134041043119,
+        "pooled_vector_RMSE_um": 0.735838260055522,
+        "pooled_vector_NRMSE": 0.38806777293301004,
+        "strain_Frobenius_RMSE": 0.025825570088975233,
+        "strain_Frobenius_NRMSE": 0.8246946699657911,
+        "octants": [
+          {
+            "nodes": 695,
+            "RMSE_um": 0.46181906328524164,
+            "NRMSE": 0.3298559942283495
+          },
+          {
+            "nodes": 384,
+            "RMSE_um": 0.6745713734069138,
+            "NRMSE": 0.30729200056154315
+          },
+          {
+            "nodes": 338,
+            "RMSE_um": 1.083877234934372,
+            "NRMSE": 0.33654370173917314
+          },
+          {
+            "nodes": 584,
+            "RMSE_um": 1.1219531158703941,
+            "NRMSE": 0.6409950767552838
+          },
+          {
+            "nodes": 668,
+            "RMSE_um": 0.5819160471979562,
+            "NRMSE": 0.3445477423988102
+          },
+          {
+            "nodes": 320,
+            "RMSE_um": 0.8569228674590793,
+            "NRMSE": 0.3480758080989503
+          },
+          {
+            "nodes": 524,
+            "RMSE_um": 0.5435322444443719,
+            "NRMSE": 0.3727814165698946
+          },
+          {
+            "nodes": 478,
+            "RMSE_um": 0.4334351198409749,
+            "NRMSE": 0.3189779391024748
+          }
+        ],
+        "strain_tetrahedra": 16674
+      }
+    },
+    {
+      "name": "elastic_nu_0",
+      "nu": 0,
+      "kind": "elastic",
+      "seconds": 0.377,
+      "solver": {
+        "iterations": 102,
+        "relative_residual": 9.707035894649581e-9,
+        "recomputed_free_residual": 9.707035870370479e-9
+      },
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 0.6836428799819492,
+        "balanced_vector_RMSE_um": 0.8268269951942481,
+        "balanced_vector_NRMSE": 0.40648112815097937,
+        "pooled_vector_RMSE_um": 0.8128405503958058,
+        "pooled_vector_NRMSE": 0.42867738641089614,
+        "strain_Frobenius_RMSE": 0.026096297084389423,
+        "strain_Frobenius_NRMSE": 0.8333398657684289,
+        "octants": [
+          {
+            "nodes": 695,
+            "RMSE_um": 0.5586533843569309,
+            "NRMSE": 0.3990202704392706
+          },
+          {
+            "nodes": 384,
+            "RMSE_um": 0.7296523704520272,
+            "NRMSE": 0.33238341481684
+          },
+          {
+            "nodes": 338,
+            "RMSE_um": 1.1251266875937405,
+            "NRMSE": 0.3493516499507058
+          },
+          {
+            "nodes": 584,
+            "RMSE_um": 1.2073828987776802,
+            "NRMSE": 0.6898028829614825
+          },
+          {
+            "nodes": 668,
+            "RMSE_um": 0.7720096892319406,
+            "NRMSE": 0.45710063645037485
+          },
+          {
+            "nodes": 320,
+            "RMSE_um": 0.8181173460899813,
+            "NRMSE": 0.332313288831258
+          },
+          {
+            "nodes": 524,
+            "RMSE_um": 0.662315062442355,
+            "NRMSE": 0.4542485744249315
+          },
+          {
+            "nodes": 478,
+            "RMSE_um": 0.44384359037851356,
+            "NRMSE": 0.3266378455781915
+          }
+        ],
+        "strain_tetrahedra": 16674
+      }
+    },
+    {
+      "name": "elastic_nu_0.25",
+      "nu": 0.25,
+      "kind": "elastic",
+      "seconds": 0.407,
+      "solver": {
+        "iterations": 116,
+        "relative_residual": 8.73605728496544e-9,
+        "recomputed_free_residual": 8.736057279052954e-9
+      },
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 0.8310957173112344,
+        "balanced_vector_RMSE_um": 0.911644512576714,
+        "balanced_vector_NRMSE": 0.44817875093419574,
+        "pooled_vector_RMSE_um": 0.9070851074507038,
+        "pooled_vector_NRMSE": 0.47838025911092763,
+        "strain_Frobenius_RMSE": 0.026660667405831683,
+        "strain_Frobenius_NRMSE": 0.8513620505402184,
+        "octants": [
+          {
+            "nodes": 695,
+            "RMSE_um": 0.7359444099270603,
+            "NRMSE": 0.5256510489333112
+          },
+          {
+            "nodes": 384,
+            "RMSE_um": 0.8026505864974811,
+            "NRMSE": 0.36563677944264655
+          },
+          {
+            "nodes": 338,
+            "RMSE_um": 1.205189236124782,
+            "NRMSE": 0.37421105799514215
+          },
+          {
+            "nodes": 584,
+            "RMSE_um": 1.2879560542223978,
+            "NRMSE": 0.7358359972049731
+          },
+          {
+            "nodes": 668,
+            "RMSE_um": 0.9022848443817939,
+            "NRMSE": 0.534235492609905
+          },
+          {
+            "nodes": 320,
+            "RMSE_um": 0.8190536774703864,
+            "NRMSE": 0.33269361979715845
+          },
+          {
+            "nodes": 524,
+            "RMSE_um": 0.7738997563963463,
+            "NRMSE": 0.5307789011992141
+          },
+          {
+            "nodes": 478,
+            "RMSE_um": 0.5174012056169823,
+            "NRMSE": 0.3807711066823404
+          }
+        ],
+        "strain_tetrahedra": 16674
+      }
+    },
+    {
+      "name": "elastic_nu_0.45",
+      "nu": 0.45,
+      "kind": "elastic",
+      "seconds": 0.693,
+      "solver": {
+        "iterations": 194,
+        "relative_residual": 9.162663125446985e-9,
+        "recomputed_free_residual": 9.162663152569738e-9
+      },
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.5799445147235525,
+        "balanced_vector_RMSE_um": 1.256958437945962,
+        "balanced_vector_NRMSE": 0.6179404964579484,
+        "pooled_vector_RMSE_um": 1.2791322814218002,
+        "pooled_vector_NRMSE": 0.6745912011976976,
+        "strain_Frobenius_RMSE": 0.02961477710648916,
+        "strain_Frobenius_NRMSE": 0.9456964066157294,
+        "octants": [
+          {
+            "nodes": 695,
+            "RMSE_um": 1.3870684871119443,
+            "NRMSE": 0.9907188577803007
+          },
+          {
+            "nodes": 384,
+            "RMSE_um": 1.0910811035006236,
+            "NRMSE": 0.4970274581565373
+          },
+          {
+            "nodes": 338,
+            "RMSE_um": 1.5742153856676224,
+            "NRMSE": 0.4887936162432827
+          },
+          {
+            "nodes": 584,
+            "RMSE_um": 1.567663741127794,
+            "NRMSE": 0.8956387979645003
+          },
+          {
+            "nodes": 668,
+            "RMSE_um": 1.3244954011376078,
+            "NRMSE": 0.7842229175101739
+          },
+          {
+            "nodes": 320,
+            "RMSE_um": 0.8869320842062578,
+            "NRMSE": 0.3602653326948609
+          },
+          {
+            "nodes": 524,
+            "RMSE_um": 1.143060447686625,
+            "NRMSE": 0.7839676436293719
+          },
+          {
+            "nodes": 478,
+            "RMSE_um": 0.861331349144529,
+            "NRMSE": 0.6338796420910211
+          }
+        ],
+        "strain_tetrahedra": 16674
+      }
+    }
+  ],
+  "scope": "Internal measured-boundary-conditioned field prediction, not independently known force or measured collagen graph connectivity; normalized material stiffness cancels."
+}

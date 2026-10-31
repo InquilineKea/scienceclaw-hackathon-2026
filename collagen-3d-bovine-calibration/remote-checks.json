@@ -1,0 +1,122 @@
+{
+  "records": [
+    {
+      "physical_hessian_hvp": {
+        "records": [
+          {
+            "h": 1e-05,
+            "relative_error": 1.49331070694539e-09,
+            "max_absolute_error": 8.416874072714187e-10
+          },
+          {
+            "h": 5e-06,
+            "relative_error": 3.7506817904445857e-10,
+            "max_absolute_error": 2.114589059409866e-10
+          },
+          {
+            "h": 1e-06,
+            "relative_error": 2.582818857186547e-10,
+            "max_absolute_error": 6.592899837176702e-11
+          }
+        ],
+        "passes": true,
+        "definition": "analytic physical Hessian action versus finite analytic-gradient differences"
+      },
+      "seed": 29,
+      "gradientError": 4.7687312432209694e-11,
+      "stressError": 1.7368051441479793e-12,
+      "smallStrainEnergyRelativeDifference": 5.356267482690107e-11,
+      "residual": 9.220826159629081e-11,
+      "accepted": true
+    },
+    {
+      "physical_hessian_hvp": {
+        "records": [
+          {
+            "h": 1e-05,
+            "relative_error": 2.306431458578283e-09,
+            "max_absolute_error": 1.6432295940616015e-09
+          },
+          {
+            "h": 5e-06,
+            "relative_error": 5.797574288476623e-10,
+            "max_absolute_error": 4.1083959845256146e-10
+          },
+          {
+            "h": 1e-06,
+            "relative_error": 2.696215300284168e-10,
+            "max_absolute_error": 7.827156978112981e-11
+          }
+        ],
+        "passes": true,
+        "definition": "analytic physical Hessian action versus finite analytic-gradient differences"
+      },
+      "seed": 30,
+      "gradientError": 1.0600892040926735e-08,
+      "stressError": 1.2598394549812042e-12,
+      "smallStrainEnergyRelativeDifference": 1.764012300033744e-12,
+      "residual": 3.558121877019052e-11,
+      "accepted": true
+    },
+    {
+      "physical_hessian_hvp": {
+        "records": [
+          {
+            "h": 1e-05,
+            "relative_error": 2.706158701893171e-09,
+            "max_absolute_error": 3.2260043594800614e-09
+          },
+          {
+            "h": 5e-06,
+            "relative_error": 6.784076323143148e-10,
+            "max_absolute_error": 8.066634651915372e-10
+          },
+          {
+            "h": 1e-06,
+            "relative_error": 2.7099937762015927e-10,
+            "max_absolute_error": 6.082147285813022e-11
+          }
+        ],
+        "passes": true,
+        "definition": "analytic physical Hessian action versus finite analytic-gradient differences"
+      },
+      "seed": 31,
+      "gradientError": 1.794552874356814e-11,
+      "stressError": 1.4043349816361683e-12,
+      "smallStrainEnergyRelativeDifference": 1.067290023205529e-12,
+      "residual": 1.1725518991487396e-10,
+      "accepted": true
+    },
+    {
+      "physical_hessian_hvp": {
+        "records": [
+          {
+            "h": 1e-05,
+            "relative_error": 2.3750977766031876e-09,
+            "max_absolute_error": 2.3621551069330504e-09
+          },
+          {
+            "h": 5e-06,
+            "relative_error": 5.963113364079452e-10,
+            "max_absolute_error": 5.915386028232383e-10
+          },
+          {
+            "h": 1e-06,
+            "relative_error": 2.890802454277404e-10,
+            "max_absolute_error": 7.376758232036096e-11
+          }
+        ],
+        "passes": true,
+        "definition": "analytic physical Hessian action versus finite analytic-gradient differences"
+      },
+      "seed": 32,
+      "gradientError": 9.881289536606275e-11,
+      "stressError": 1.9216572777480678e-13,
+      "smallStrainEnergyRelativeDifference": 2.0445144651638445e-10,
+      "residual": 4.2563627969370346e-10,
+      "accepted": true
+    }
+  ],
+  "numpy": "2.1.3",
+  "scipy": "1.14.1"
+}

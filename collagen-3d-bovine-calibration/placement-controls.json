@@ -1,0 +1,162 @@
+[
+  {
+    "seed": 29,
+    "density": 0.15,
+    "patterns": [
+      {
+        "pattern": "clustered",
+        "locked": 32,
+        "active_locked_angles": 170,
+        "total_angular_coefficient": 0.36624223326180166,
+        "spread": 0.0560724454875104
+      },
+      {
+        "pattern": "distributed",
+        "locked": 32,
+        "active_locked_angles": 170,
+        "total_angular_coefficient": 0.36624223326179955,
+        "spread": 0.25583513917591577
+      }
+    ]
+  },
+  {
+    "seed": 29,
+    "density": 0.3,
+    "patterns": [
+      {
+        "pattern": "clustered",
+        "locked": 65,
+        "active_locked_angles": 344,
+        "total_angular_coefficient": 0.5788201937095518,
+        "spread": 0.09576382396530675
+      },
+      {
+        "pattern": "distributed",
+        "locked": 65,
+        "active_locked_angles": 344,
+        "total_angular_coefficient": 0.5788201937095397,
+        "spread": 0.24085431288186937
+      }
+    ]
+  },
+  {
+    "seed": 30,
+    "density": 0.15,
+    "patterns": [
+      {
+        "pattern": "clustered",
+        "locked": 31,
+        "active_locked_angles": 165,
+        "total_angular_coefficient": 0.3690173031102414,
+        "spread": 0.07913057700795981
+      },
+      {
+        "pattern": "distributed",
+        "locked": 31,
+        "active_locked_angles": 165,
+        "total_angular_coefficient": 0.36901730311023373,
+        "spread": 0.24502526579958103
+      }
+    ]
+  },
+  {
+    "seed": 30,
+    "density": 0.3,
+    "patterns": [
+      {
+        "pattern": "clustered",
+        "locked": 62,
+        "active_locked_angles": 340,
+        "total_angular_coefficient": 0.5914444949964249,
+        "spread": 0.11335905439569219
+      },
+      {
+        "pattern": "distributed",
+        "locked": 62,
+        "active_locked_angles": 340,
+        "total_angular_coefficient": 0.5914444949964234,
+        "spread": 0.2533379208793477
+      }
+    ]
+  },
+  {
+    "seed": 31,
+    "density": 0.15,
+    "patterns": [
+      {
+        "pattern": "clustered",
+        "locked": 32,
+        "active_locked_angles": 171,
+        "total_angular_coefficient": 0.3655146776093866,
+        "spread": 0.0578489640310967
+      },
+      {
+        "pattern": "distributed",
+        "locked": 32,
+        "active_locked_angles": 171,
+        "total_angular_coefficient": 0.3655146776093836,
+        "spread": 0.24993895823015433
+      }
+    ]
+  },
+  {
+    "seed": 31,
+    "density": 0.3,
+    "patterns": [
+      {
+        "pattern": "clustered",
+        "locked": 64,
+        "active_locked_angles": 357,
+        "total_angular_coefficient": 0.5925542213266836,
+        "spread": 0.09553969058191263
+      },
+      {
+        "pattern": "distributed",
+        "locked": 64,
+        "active_locked_angles": 357,
+        "total_angular_coefficient": 0.5925542213266822,
+        "spread": 0.24120919356725753
+      }
+    ]
+  },
+  {
+    "seed": 32,
+    "density": 0.15,
+    "patterns": [
+      {
+        "pattern": "clustered",
+        "locked": 33,
+        "active_locked_angles": 178,
+        "total_angular_coefficient": 0.36983441357338087,
+        "spread": 0.07516376255478102
+      },
+      {
+        "pattern": "distributed",
+        "locked": 33,
+        "active_locked_angles": 178,
+        "total_angular_coefficient": 0.3698344135733825,
+        "spread": 0.26594804289682955
+      }
+    ]
+  },
+  {
+    "seed": 32,
+    "density": 0.3,
+    "patterns": [
+      {
+        "pattern": "clustered",
+        "locked": 67,
+        "active_locked_angles": 352,
+        "total_angular_coefficient": 0.5762352302718489,
+        "spread": 0.11391936004275009
+      },
+      {
+        "pattern": "distributed",
+        "locked": 67,
+        "active_locked_angles": 352,
+        "total_angular_coefficient": 0.5762352302718495,
+        "spread": 0.2652627201622163
+      }
+    ]
+  }
+]

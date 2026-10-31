@@ -1,0 +1,26 @@
+{
+  "source_zip_sha256": "d896a5f81c29af030f765eb67ea9129d4f5ed9857910250c34f73f096cc313dc",
+  "source_inner_sha256": "5f2d3e967cc92eb0aefc93e3bb043e3c0ac9aecd7e16050c76ded15916e339cf",
+  "bounds_m": [
+    [
+      -0.0003542613333333333,
+      0.0003542613333333333
+    ],
+    [
+      -0.0003542613333333333,
+      0.0003542613333333333
+    ],
+    [
+      -3.425066666666667e-05,
+      3.425066666666667e-05
+    ]
+  ],
+  "unique_coordinate_counts": [
+    24,
+    24,
+    3
+  ],
+  "nodes": 1728,
+  "tetrahedra": 6348,
+  "outcome_values_not_summarized": true
+}

@@ -1,0 +1,13 @@
+# Selected-state true-Hessian audit helper
+
+`true_hessian_check.py` is original audit code and has not been executed with NumPy on the Mac. It imports no solver. The parent must inspect it before including it in the reviewed remote runtime.
+
+Use `check_state(model, u, gamma, plane, label)` on selected accepted equilibria. The `Model.state` contract is the current CPU solver: analytic full gradient with the first node pinned and a residual Jacobian on free DOFs. `u[:3]` must be zero. Only the actual analytic gradient and energy enter finite differences; Gauss–Newton is used solely to choose coordinate scales. The true-Hessian matrix includes the missing residual-weighted second derivatives automatically. The helper never changes the state or inserts a mechanical spring.
+
+The helper checks all free degrees of freedom at that state, not all states. It builds the central-difference Hessian in scaled coordinates, reports its antisymmetric error, checks its action against a separately directed gradient difference at half the step, computes its full symmetric spectrum, and confirms the weakest direction through energy and gradient curvature at two amplitudes. A significant negative eigenvalue must agree with both directional checks before it is called confirmed. Near-zero modes are marked marginal. Invalid equilibrium or finite-difference accuracy remains unresolved.
+
+Suggested bounded coverage: first positive strain, the saved pre-avalanche state when it sets a new observed peak, the associated post-avalanche state, and terminal accepted state. If cost requires subsampling, choose a frozen seed/plane/pattern/threshold subset and publish the exact coverage, rather than claiming every equilibrium is stability-qualified. Avoid rerunning the same zero-strain audit for all thresholds and step counts. A size guard limits the helper to at most 1,500 total degrees of freedom; current ~600-DOF models fit.
+
+The default scaled finite-difference amplitude is 1e-5, confirmed at 5e-6. The default resolved-negative threshold is 1e-5 times max(1, maximum absolute eigenvalue); this is a numerical classification threshold, not an experimental parameter. Report it with the raw minimum eigenvalues. Positive curvature at sampled states does not validate the constitutive law, mesh/RVE convergence, fracture physics, or a global minimum. No resolved negative mode in a marginal state is not proof of rigidity.
+
+The main sweep should preserve coordinates for selected checkpoints or call the helper in-process; the helper returns only diagnostics. For a pre-avalanche check, call before deleting bonds. Checking the post-avalanche state after changing `model.active` would test a different Hessian.

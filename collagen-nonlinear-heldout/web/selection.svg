@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="780" viewBox="0 0 1240 780"><rect width="1240" height="780" fill="#f7f9fc"/>
+<text x="30" y="45" font-family="Arial,sans-serif" font-size="30" fill="#182c42">Parameter selection before the final comparison</text>
+<text x="30" y="80" font-family="Arial,sans-serif" font-size="18" fill="#182c42">Position007 · primary equal-octant vector MSE (µm²) · all twelve factorial arms, including failures</text>
+<text x="80" y="160" font-family="Arial,sans-serif" font-size="21" fill="#182c42">Buckling scale / sliding yield</text>
+<text x="420" y="160" font-family="Arial,sans-serif" font-size="21" fill="#182c42">none</text>
+<text x="640" y="160" font-family="Arial,sans-serif" font-size="21" fill="#182c42">0.01</text>
+<text x="860" y="160" font-family="Arial,sans-serif" font-size="21" fill="#182c42">0.04</text>
+<text x="100" y="240" font-family="Arial,sans-serif" font-size="21" fill="#182c42">none</text>
+<text x="420" y="240" font-family="Arial,sans-serif" font-size="23" fill="#182c42">1.81176</text>
+<text x="640" y="240" font-family="Arial,sans-serif" font-size="23" fill="#182c42">2.21388</text>
+<text x="860" y="240" font-family="Arial,sans-serif" font-size="23" fill="#182c42">1.95008</text>
+<text x="100" y="325" font-family="Arial,sans-serif" font-size="21" fill="#182c42">0.0025</text>
+<text x="420" y="325" font-family="Arial,sans-serif" font-size="23" fill="#182c42">0.95762</text>
+<text x="640" y="325" font-family="Arial,sans-serif" font-size="23" fill="#182c42">1.26024</text>
+<text x="860" y="325" font-family="Arial,sans-serif" font-size="23" fill="#182c42">1.00055</text>
+<text x="100" y="410" font-family="Arial,sans-serif" font-size="21" fill="#182c42">0.01</text>
+<text x="420" y="410" font-family="Arial,sans-serif" font-size="23" fill="#182c42">1.32935</text>
+<text x="640" y="410" font-family="Arial,sans-serif" font-size="23" fill="#182c42">1.77480</text>
+<text x="860" y="410" font-family="Arial,sans-serif" font-size="23" fill="#182c42">1.42813</text>
+<text x="100" y="495" font-family="Arial,sans-serif" font-size="21" fill="#182c42">0.04</text>
+<text x="420" y="495" font-family="Arial,sans-serif" font-size="23" fill="#182c42">1.64648</text>
+<text x="640" y="495" font-family="Arial,sans-serif" font-size="23" fill="#182c42">2.06623</text>
+<text x="860" y="495" font-family="Arial,sans-serif" font-size="23" fill="#182c42">1.77843</text>
+<text x="30" y="610" font-family="Arial,sans-serif" font-size="17" fill="#182c42">Selected families: buckling b=0.0025, y=none, sliding b=none, y=0.04, combined b=0.0025, y=0.04</text>
+<text x="30" y="660" font-family="Arial,sans-serif" font-size="17" fill="#182c42">Fixed: tensile onset0.04, exponential scale0.05, slip hardening0.05; 110 directions and10 load increments.</text>
+<text x="30" y="700" font-family="Arial,sans-serif" font-size="17" fill="#182c42">Sliding is irreversible surrogate lengthening; compression softens without an outcome-fitted stiffness floor.</text>
+<text x="30" y="740" font-family="Arial,sans-serif" font-size="17" fill="#182c42">See numerical control results for equilibrium, work balance, step/angular refinement and bounded curvature screen.</text>
+</svg>

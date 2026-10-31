@@ -1,0 +1,90 @@
+[
+  {
+    "seed": 29,
+    "planes": [
+      {
+        "plane": 1,
+        "G_storage": 0.04816461634868917,
+        "elastic_quadrature_error": 5.281537013290816e-11,
+        "accepted": true,
+        "maxResidual": 9.949384067902497e-10
+      },
+      {
+        "plane": 2,
+        "G_storage": 0.04660929551049371,
+        "elastic_quadrature_error": -3.1317312805534403e-10,
+        "accepted": true,
+        "maxResidual": 9.729918358087402e-10
+      }
+    ],
+    "G": 0.04738695592959144,
+    "scale_Pa": 200.94626130517696,
+    "relative_change_from_smallstrain": 0.0014830765702487092
+  },
+  {
+    "seed": 30,
+    "planes": [
+      {
+        "plane": 1,
+        "G_storage": 0.058692764267034146,
+        "elastic_quadrature_error": -2.463459600763121e-8,
+        "accepted": false,
+        "maxResidual": 2.35182476217642e-8
+      },
+      {
+        "plane": 2,
+        "G_storage": 0.04783422470265026,
+        "elastic_quadrature_error": 1.2882003260980546e-8,
+        "accepted": false,
+        "maxResidual": 1.3324038156605147e-7
+      }
+    ],
+    "G": 0.0532634944848422,
+    "scale_Pa": 178.77594627957495,
+    "relative_change_from_smallstrain": 0.0021027442558936293
+  },
+  {
+    "seed": 31,
+    "planes": [
+      {
+        "plane": 1,
+        "G_storage": 0.05442430783472353,
+        "elastic_quadrature_error": 1.68716660434165e-10,
+        "accepted": true,
+        "maxResidual": 8.995200111748732e-10
+      },
+      {
+        "plane": 2,
+        "G_storage": 0.05185667251987755,
+        "elastic_quadrature_error": 1.4893514134646513e-9,
+        "accepted": true,
+        "maxResidual": 8.801689274282217e-10
+      }
+    ],
+    "G": 0.05314049017730054,
+    "scale_Pa": 179.18975901265014,
+    "relative_change_from_smallstrain": 0.002169051990197568
+  },
+  {
+    "seed": 32,
+    "planes": [
+      {
+        "plane": 1,
+        "G_storage": 0.060443247495973525,
+        "elastic_quadrature_error": -1.7973640726795526e-9,
+        "accepted": true,
+        "maxResidual": 9.821850061644257e-10
+      },
+      {
+        "plane": 2,
+        "G_storage": 0.05044605568914112,
+        "elastic_quadrature_error": 2.429567358928908e-10,
+        "accepted": true,
+        "maxResidual": 9.070975286731562e-10
+      }
+    ],
+    "G": 0.05544465159255732,
+    "scale_Pa": 171.7430149739243,
+    "relative_change_from_smallstrain": 0.005233939861931658
+  }
+]

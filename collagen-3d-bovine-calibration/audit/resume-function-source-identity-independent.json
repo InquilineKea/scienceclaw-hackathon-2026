@@ -1,0 +1,14 @@
+{
+  "Model": {
+    "source_segments_identical": true,
+    "source_segment_sha256": "e849afa9337e7c291bca988a22f7da34ae268722fd6c6db658dfd52c98a91d75"
+  },
+  "simulate": {
+    "source_segments_identical": true,
+    "source_segment_sha256": "dd0b10f247610214b3272d5fa75afb4dd89219b84683fdcf3f64b72b7fed6e80"
+  },
+  "checks": {
+    "source_segments_identical": true,
+    "source_segment_sha256": "d02658263ecf05be06c7dc0b651f0f2469717e59e969d9e9ebfa3c9e4e82e6a2"
+  }
+}

@@ -1,0 +1,5 @@
+import fs from'node:fs';import{Mesh}from'../collagen-measured-3d-validation/linear-fe.mjs';const R=new URL('../collagen-measured-3d-validation/',import.meta.url);let out=[];
+for(let pos of['Pos004','Pos007','Pos008']){let g=JSON.parse(fs.readFileSync(new URL('data/'+pos+'/geometry.json',R))),f=JSON.parse(fs.readFileSync(new URL(pos+'-fields.json',R))),m=new Mesh(g),min=Infinity,neg=0,fixed=0,minAll=Infinity;let u=f.predictions.elastic_nu_0; // selected baseline is present in allsaved fields
+ for(let e=0;e<m.tets.length;e++){let F=[1,0,0,0,1,0,0,0,1];for(let k=0;k<4;k++){let i=3*m.tets[e][k],j=e*12+3*k;for(let a=0;a<3;a++)for(let b=0;b<3;b++)F[3*a+b]+=u[i+a]*m.G[j+b]}let det=F[0]*(F[4]*F[8]-F[5]*F[7])-F[1]*(F[3]*F[8]-F[5]*F[6])+F[2]*(F[3]*F[7]-F[4]*F[6]);minAll=Math.min(minAll,det);if(m.tets[e].every(i=>f.boundary[i])){fixed++;min=Math.min(min,det);if(det<=0)neg++}}
+ out.push({pos,fully_prescribed_tets:fixed,minimum_fixed_J:min,inverted_fixed_tets:neg,old_selected_linear_minimum_J:minAll});}
+fs.writeFileSync(new URL('./audit/GEOMETRY-PREFLIGHT.json',import.meta.url),JSON.stringify(out,null,2));console.log(out);

@@ -1,0 +1,503 @@
+{
+  "rows": [
+    {
+      "seed": 29,
+      "density": 0.15,
+      "pattern": "clustered",
+      "selected_junctions": 32,
+      "locked_angle_arms": 340,
+      "unique_incident_segments": 76,
+      "orientation_second_moment": [
+        [
+          0.37401605956855194,
+          -0.000956740041614117,
+          0.05503075324746311
+        ],
+        [
+          -0.000956740041614117,
+          0.34376890835378904,
+          0.04327368609447755
+        ],
+        [
+          0.05503075324746311,
+          0.04327368609447755,
+          0.2822150320776598
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.1184386060655155,
+      "arm_weighted_median_segment_length": 0.08449956935532066,
+      "periodic_mean_squared_distance_to_cluster_center": 0.0560724454875104
+    },
+    {
+      "seed": 29,
+      "density": 0.15,
+      "pattern": "distributed",
+      "selected_junctions": 32,
+      "locked_angle_arms": 340,
+      "unique_incident_segments": 107,
+      "orientation_second_moment": [
+        [
+          0.3361580615939784,
+          0.005170211244589015,
+          0.0018744171559046932
+        ],
+        [
+          0.005170211244589015,
+          0.33644887965061787,
+          -0.027755582983412495
+        ],
+        [
+          0.0018744171559046932,
+          -0.027755582983412495,
+          0.32739305875540414
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.13164786601036935,
+      "arm_weighted_median_segment_length": 0.1208793757686921,
+      "periodic_mean_squared_distance_to_cluster_center": 0.25583513917591577
+    },
+    {
+      "seed": 29,
+      "density": 0.3,
+      "pattern": "clustered",
+      "selected_junctions": 65,
+      "locked_angle_arms": 688,
+      "unique_incident_segments": 152,
+      "orientation_second_moment": [
+        [
+          0.3577022269048745,
+          0.008202498870644425,
+          0.021063148738711197
+        ],
+        [
+          0.008202498870644425,
+          0.3376149110983254,
+          -0.014740653020413712
+        ],
+        [
+          0.021063148738711197,
+          -0.014740653020413712,
+          0.3046828619968019
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.12487486979616395,
+      "arm_weighted_median_segment_length": 0.0957526435851854,
+      "periodic_mean_squared_distance_to_cluster_center": 0.09576382396530675
+    },
+    {
+      "seed": 29,
+      "density": 0.3,
+      "pattern": "distributed",
+      "selected_junctions": 65,
+      "locked_angle_arms": 688,
+      "unique_incident_segments": 204,
+      "orientation_second_moment": [
+        [
+          0.3336040439265762,
+          0.013047914737138415,
+          -0.0017578920637089698
+        ],
+        [
+          0.013047914737138415,
+          0.34997095499605346,
+          -0.020484625916072995
+        ],
+        [
+          -0.0017578920637089698,
+          -0.020484625916072995,
+          0.3164250010773711
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.1312184061045799,
+      "arm_weighted_median_segment_length": 0.11372980455551707,
+      "periodic_mean_squared_distance_to_cluster_center": 0.24085431288186937
+    },
+    {
+      "seed": 30,
+      "density": 0.15,
+      "pattern": "clustered",
+      "selected_junctions": 31,
+      "locked_angle_arms": 330,
+      "unique_incident_segments": 77,
+      "orientation_second_moment": [
+        [
+          0.33451391984677076,
+          -0.04592500697163278,
+          -0.01319006413906387
+        ],
+        [
+          -0.04592500697163278,
+          0.357665426675673,
+          0.01711783158768957
+        ],
+        [
+          -0.01319006413906387,
+          0.01711783158768957,
+          0.3078206534775563
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.1504152020759123,
+      "arm_weighted_median_segment_length": 0.15228727107737067,
+      "periodic_mean_squared_distance_to_cluster_center": 0.07913057700795981
+    },
+    {
+      "seed": 30,
+      "density": 0.15,
+      "pattern": "distributed",
+      "selected_junctions": 31,
+      "locked_angle_arms": 330,
+      "unique_incident_segments": 108,
+      "orientation_second_moment": [
+        [
+          0.34833055991897527,
+          -0.040899476948059864,
+          0.006488761173158411
+        ],
+        [
+          -0.040899476948059864,
+          0.3503443767930416,
+          -0.0067447826907744415
+        ],
+        [
+          0.006488761173158411,
+          -0.0067447826907744415,
+          0.3013250632879819
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.1355664530619374,
+      "arm_weighted_median_segment_length": 0.11668947009101152,
+      "periodic_mean_squared_distance_to_cluster_center": 0.24502526579958103
+    },
+    {
+      "seed": 30,
+      "density": 0.3,
+      "pattern": "clustered",
+      "selected_junctions": 62,
+      "locked_angle_arms": 680,
+      "unique_incident_segments": 148,
+      "orientation_second_moment": [
+        [
+          0.31062322695906114,
+          -0.03320814348472656,
+          0.015916728631366495
+        ],
+        [
+          -0.03320814348472656,
+          0.36134470472511665,
+          0.008379857239611311
+        ],
+        [
+          0.015916728631366495,
+          0.008379857239611311,
+          0.32803206831582266
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.1402051500255406,
+      "arm_weighted_median_segment_length": 0.11866038215781403,
+      "periodic_mean_squared_distance_to_cluster_center": 0.11335905439569219
+    },
+    {
+      "seed": 30,
+      "density": 0.3,
+      "pattern": "distributed",
+      "selected_junctions": 62,
+      "locked_angle_arms": 680,
+      "unique_incident_segments": 198,
+      "orientation_second_moment": [
+        [
+          0.32656968082348153,
+          -0.012129784655327585,
+          0.0018272153357948126
+        ],
+        [
+          -0.012129784655327585,
+          0.38003420524718706,
+          -0.005902685725617802
+        ],
+        [
+          0.0018272153357948126,
+          -0.005902685725617802,
+          0.29339611392933146
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.14298852488424135,
+      "arm_weighted_median_segment_length": 0.12718264717367847,
+      "periodic_mean_squared_distance_to_cluster_center": 0.2533379208793477
+    },
+    {
+      "seed": 31,
+      "density": 0.15,
+      "pattern": "clustered",
+      "selected_junctions": 32,
+      "locked_angle_arms": 342,
+      "unique_incident_segments": 79,
+      "orientation_second_moment": [
+        [
+          0.30694232874086413,
+          0.007379429603926269,
+          0.044578398994597174
+        ],
+        [
+          0.007379429603926269,
+          0.35317439543444895,
+          0.022173591146627362
+        ],
+        [
+          0.044578398994597174,
+          0.022173591146627362,
+          0.33988327582468736
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.13095552153986062,
+      "arm_weighted_median_segment_length": 0.1154111056716392,
+      "periodic_mean_squared_distance_to_cluster_center": 0.0578489640310967
+    },
+    {
+      "seed": 31,
+      "density": 0.15,
+      "pattern": "distributed",
+      "selected_junctions": 32,
+      "locked_angle_arms": 342,
+      "unique_incident_segments": 111,
+      "orientation_second_moment": [
+        [
+          0.3336502168248869,
+          0.02090297831137623,
+          -0.006903057929157959
+        ],
+        [
+          0.02090297831137623,
+          0.2427845082189216,
+          -0.002280213464522828
+        ],
+        [
+          -0.006903057929157959,
+          -0.002280213464522828,
+          0.4235652749561915
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.13099025579683532,
+      "arm_weighted_median_segment_length": 0.1154111056716392,
+      "periodic_mean_squared_distance_to_cluster_center": 0.24993895823015433
+    },
+    {
+      "seed": 31,
+      "density": 0.3,
+      "pattern": "clustered",
+      "selected_junctions": 64,
+      "locked_angle_arms": 714,
+      "unique_incident_segments": 152,
+      "orientation_second_moment": [
+        [
+          0.29073457286007826,
+          -0.0018097247034167402,
+          -0.002128433631884723
+        ],
+        [
+          -0.0018097247034167402,
+          0.31682462213628626,
+          -0.018324216249818833
+        ],
+        [
+          -0.002128433631884723,
+          -0.018324216249818833,
+          0.3924408050036369
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.12495622271873048,
+      "arm_weighted_median_segment_length": 0.1154111056716392,
+      "periodic_mean_squared_distance_to_cluster_center": 0.09553969058191263
+    },
+    {
+      "seed": 31,
+      "density": 0.3,
+      "pattern": "distributed",
+      "selected_junctions": 64,
+      "locked_angle_arms": 714,
+      "unique_incident_segments": 201,
+      "orientation_second_moment": [
+        [
+          0.3100444955402962,
+          0.0032275245234853326,
+          -0.01943870370141931
+        ],
+        [
+          0.0032275245234853326,
+          0.29399754917918164,
+          -0.0052020956236669335
+        ],
+        [
+          -0.01943870370141931,
+          -0.0052020956236669335,
+          0.39595795528052236
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.12744619988710254,
+      "arm_weighted_median_segment_length": 0.1129436116533594,
+      "periodic_mean_squared_distance_to_cluster_center": 0.24120919356725753
+    },
+    {
+      "seed": 32,
+      "density": 0.15,
+      "pattern": "clustered",
+      "selected_junctions": 33,
+      "locked_angle_arms": 356,
+      "unique_incident_segments": 83,
+      "orientation_second_moment": [
+        [
+          0.330007961202604,
+          -0.03183805187146691,
+          0.03232038356456871
+        ],
+        [
+          -0.03183805187146691,
+          0.35548085294621734,
+          0.02838028644038709
+        ],
+        [
+          0.03232038356456871,
+          0.02838028644038709,
+          0.3145111858511789
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.13846847748453456,
+      "arm_weighted_median_segment_length": 0.12748824437711595,
+      "periodic_mean_squared_distance_to_cluster_center": 0.07516376255478102
+    },
+    {
+      "seed": 32,
+      "density": 0.15,
+      "pattern": "distributed",
+      "selected_junctions": 33,
+      "locked_angle_arms": 356,
+      "unique_incident_segments": 115,
+      "orientation_second_moment": [
+        [
+          0.3560233989775894,
+          0.0020298315705191377,
+          -0.009046856273029914
+        ],
+        [
+          0.0020298315705191377,
+          0.3013525931728791,
+          -0.013361943836360213
+        ],
+        [
+          -0.009046856273029914,
+          -0.013361943836360213,
+          0.34262400784953223
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.11860284020043962,
+      "arm_weighted_median_segment_length": 0.10549604121101026,
+      "periodic_mean_squared_distance_to_cluster_center": 0.26594804289682955
+    },
+    {
+      "seed": 32,
+      "density": 0.3,
+      "pattern": "clustered",
+      "selected_junctions": 67,
+      "locked_angle_arms": 704,
+      "unique_incident_segments": 155,
+      "orientation_second_moment": [
+        [
+          0.3468994958924897,
+          -0.01443051511107362,
+          0.006427773831255118
+        ],
+        [
+          -0.01443051511107362,
+          0.33150397930035697,
+          0.00872608017304318
+        ],
+        [
+          0.006427773831255118,
+          0.00872608017304318,
+          0.32159652480715306
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.13580440020276924,
+      "arm_weighted_median_segment_length": 0.12643881031188425,
+      "periodic_mean_squared_distance_to_cluster_center": 0.11391936004275009
+    },
+    {
+      "seed": 32,
+      "density": 0.3,
+      "pattern": "distributed",
+      "selected_junctions": 67,
+      "locked_angle_arms": 704,
+      "unique_incident_segments": 217,
+      "orientation_second_moment": [
+        [
+          0.386790843580874,
+          -0.00804801258313292,
+          -0.03139925297655696
+        ],
+        [
+          -0.00804801258313292,
+          0.28998178893995746,
+          -0.024869187920654855
+        ],
+        [
+          -0.03139925297655696,
+          -0.024869187920654855,
+          0.3232273674791688
+        ]
+      ],
+      "arm_weighted_mean_segment_length": 0.12471500722701821,
+      "arm_weighted_median_segment_length": 0.1111379907558582,
+      "periodic_mean_squared_distance_to_cluster_center": 0.2652627201622163
+    }
+  ],
+  "pairs": [
+    {
+      "seed": 29,
+      "density": 0.15,
+      "orientation_tensor_Frobenius_difference": 0.13908432785298314,
+      "mean_length_ratio_clustered_over_distributed": 0.8996621795311638
+    },
+    {
+      "seed": 29,
+      "density": 0.3,
+      "orientation_tensor_Frobenius_difference": 0.045009048418597916,
+      "mean_length_ratio_clustered_over_distributed": 0.9516566578063735
+    },
+    {
+      "seed": 30,
+      "density": 0.15,
+      "orientation_tensor_Frobenius_difference": 0.04744009867147007,
+      "mean_length_ratio_clustered_over_distributed": 1.1095311463757986
+    },
+    {
+      "seed": 30,
+      "density": 0.3,
+      "orientation_tensor_Frobenius_difference": 0.05913409689577473,
+      "mean_length_ratio_clustered_over_distributed": 0.9805342781110996
+    },
+    {
+      "seed": 31,
+      "density": 0.15,
+      "orientation_tensor_Frobenius_difference": 0.16359812388044573,
+      "mean_length_ratio_clustered_over_distributed": 0.9997348332762357
+    },
+    {
+      "seed": 31,
+      "density": 0.3,
+      "orientation_tensor_Frobenius_difference": 0.043597448073689274,
+      "mean_length_ratio_clustered_over_distributed": 0.980462523240569
+    },
+    {
+      "seed": 32,
+      "density": 0.15,
+      "orientation_tensor_Frobenius_difference": 0.11661215188659345,
+      "mean_length_ratio_clustered_over_distributed": 1.1674971463627841
+    },
+    {
+      "seed": 32,
+      "density": 0.3,
+      "orientation_tensor_Frobenius_difference": 0.09229624168075741,
+      "mean_length_ratio_clustered_over_distributed": 1.0889178714119387
+    }
+  ],
+  "scope": "Degree and angular budget matched; local orientation and segment-length correlations are diagnostics, not held fixed. One paired placement draw per seed; no claim of placement-only causality."
+}
