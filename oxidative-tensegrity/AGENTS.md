@@ -23,7 +23,8 @@ Driver `run_sweep.py` (profiles `smoke`, `local`, `gpu`), figures `make_figures.
 | GCP cpu32 sweep (`remote/gcp_up.sh`, VM `oxt-cpu32`, project scienceclaw26bos-3008, gcloud config `scienceclaw`) | done 2026-10-31 (6833 s), 16x16 x 4 seeds, in `results/cpu32/`; GAG sweep (`run_gag.py --profile cpu32`) also done there |
 | GPU sweep on Nebius H100 / Brev (`remote/nebius_job.sh`, `remote/gpu_run.sh`) | prepared, not submitted (needs the user's CLI login) |
 | ALCHEMI 101 multistage example | run 2026-10-30 in an isolated Docker container (CPU), exit 0 |
-| ALCHEMI atomistic crosslink scan (`alchemi_crosslinks.py`) | CPU pilot in `results/alchemi_pilot/`; converged two-model run in progress on Brev L4 `collagen-md-20261031` via `remote/brev_alchemi.sh` |
+| ALCHEMI atomistic crosslink scan (`alchemi_crosslinks.py`) | CPU pilot in `results/alchemi_pilot/`; completed two-model results (MACE-OFF, MACE-MP) on Brev L4 in `results/alchemi_brev/` |
+| PM7 tie-breaker + conformer check (`pm7_crosslinks.py`, `remote/brev_pm7.sh`, MOPAC 23.2.5) | done 2026-10-31 on Brev L4 (CPU, no-network container), 504 optimisations, 0 failed; `results/alchemi_brev/crosslink_pm7.json`, `crosslink_model_comparison.md` |
 | LAMMPS viscoelastic stage (`remote/lammps/*.in`) | decks generated, not run (LAMMPS not installed) |
 | Token Factory critic swarm (`agents/critic_swarm.py`) | prepared, not run (needs `NEBIUS_API_KEY` set by the user) |
 | ScienceClaw literature swarm (`swarm/`, Gemini, dry-run, Docker `sclaw`) | two rounds done 2026-10-31 (commit 894598c, user-approved); summaries in `swarm/SUMMARY.md` and `HYPOTHESES_EWALD.md`, raw logs local only |
@@ -55,7 +56,8 @@ positions); see `SECURITY-REVIEW.md`. A CPU pilot is in `results/alchemi_pilot/`
 converged. If the two MLIPs disagree by >30% on a chemistry's `k_rel`, report it rather than averaging.
 
 Findings from Brev jobs:
-- B1: both MLIPs converged (fmax ≈ 0.02 eV/Å) but disagree up to ~6× (Spearman 0.48). Robust: dityrosine stiffest, glucosepane ≈ pyridinoline, TG2 soft. Not fed into the network model.
+- B1: both MLIPs converged (fmax ≈ 0.02 eV/Å) but disagree up to ~6× (Spearman 0.48). Superseded by the PM7 check below. Not fed into the network model.
+- B1 PM7 check (Claude Code): PM7 matches both MACE models on peak force from the shared seed-7 conformer (Spearman 0.95–0.98), but PM7 from two other conformers gives 0.48 against seed 7, and k_rel disagrees everywhere (0.40–0.48). The scan measures conformer slack. Robust: dityrosine stiff; disulfide and TG2 soft. Glucosepane vs pyridinoline, HLNL, pentosidine, sulfilimine: undetermined. Next: ≥20-conformer ensembles or pre-extended fragments.
 - B5: MG-H1-Arg is the weakest dermatan-sulfate binder and loses contact (4.0–4.5 Å); Arg > Lys; CML-Lys stays bound. Magnitudes shift ~0.5 eV between CPU and L4 runs (RDKit conformers differ by architecture), so average over conformers next.
 
 ## Cross-workspace links
