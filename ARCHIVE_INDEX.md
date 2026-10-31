@@ -44,3 +44,7 @@ Completed runs now upload automatically through the trusted host uploader, with 
 - [Beaver–human CDSM pilot](collagen-species-pilot/): four source sequence records, matched alignments, 18 backbone structures, actual remote source bundle, original output ZIP, runtime receipt and an explicit uncalibrated molecular-to-network contract. No AGE-adduct dynamics or species robustness result is claimed.
 
 - [Aging and topology figure](collagen-network-atlas/TOPOLOGY_AGING_FIGURE.md): actual model connector maps, checked paired ratios, standalone PNG/SVG and an interactive explainer. Biological relevance and the molecular-to-network scale gap are explicit.
+
+## FEniCSx poroelastic microrheology
+
+[Completed result ZIP](collagen-fenicsx-poroelastic/poro-results-v2.zip): 25,570,444 bytes; SHA-256 `6efceca6cbde6461a938cd7bbf8568325a90334e1d51eb55dbd406189eebca73`. It contains the exact executed input sources, forty-network output, pressure/displacement fields, numerical validation, comparisons and generated publication assets. [Run receipt](collagen-fenicsx-poroelastic/RUN_RECEIPT.json), [input hashes](collagen-fenicsx-poroelastic/job/INPUT_MANIFEST.json), [review](collagen-fenicsx-poroelastic/review/SECURITY_REVIEW.md) and the failed-attempt archive are retained. This is a bounded hybrid-model experiment with explicit pressure-mesh exclusions, not an age/species/tissue calibration.

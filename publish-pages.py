@@ -17,7 +17,9 @@ transition_files=['index.html','style.css','app.js','transition-view.json',
  'figures/04-stiffening-and-damage.png','figures/05-inclusion-compression.png',
  'figures/06-lox-feedback.png','figures/07-helix-coil.png',
  'figures/inclusion-contact.gif','figures/sliding-memory.gif']
-allowed=set(files)|{'.nojekyll','DEPLOYMENT.json'}|{'transitions/'+name for name in transition_files}
+poro_source=root/'collagen-fenicsx-poroelastic/web'
+poro_files=['index.html','style.css','ui.js','data.js','METHODS.md','local-poro-vs-drag.png','local-poro-vs-drag.svg','remote-poro-vs-drag.png','remote-poro-vs-drag.svg','damage-comparison.png','poro-versus-drag-motion.gif','poro-damage-change.gif','poro-versus-drag-motion-still.png','poro-damage-change-still.png','validation.json','summary.json','results.json','comparisons.csv']
+allowed=set(files)|{'.nojekyll','DEPLOYMENT.json'}|{'transitions/'+name for name in transition_files}|{'poroelasticity/'+name for name in poro_files}
 unexpected=[str(p.relative_to(dest)) for p in dest.rglob('*') if p.is_file() and str(p.relative_to(dest)) not in allowed]
 if unexpected:raise SystemExit('Unexpected files in Pages directory; review before replacing: '+str(unexpected))
 density=json.loads((source/'data/density.json').read_text())
@@ -35,6 +37,9 @@ for name in files:
 for name in transition_files:
     target=dest/'transitions'/name;target.parent.mkdir(parents=True,exist_ok=True)
     shutil.copyfile(transition_source/name,target)
+for name in poro_files:
+    target=dest/'poroelasticity'/name;target.parent.mkdir(parents=True,exist_ok=True)
+    shutil.copyfile(poro_source/name,target)
 (dest/'.nojekyll').write_text('')
 data=json.loads((source/'data/results.json').read_text())
 model_hash=hashlib.sha256((source/'model.js').read_bytes()).hexdigest()
@@ -49,5 +54,6 @@ metadata.update(density_configurations=6300,density_solver_runs=12600,cdsm_backb
 metadata['scope']+=' Density sweep uses 6,300 paired configurations at two resolutions. Separate CDSM species pilot contains backbone geometry only, without molecular mechanical calibration.'
 metadata['transitions']={'scope':'Separate finite-network mechanism study; per-sample convergence flags; uncalibrated statistical and feedback hypotheses.',
  'files':{name:{'bytes':(dest/'transitions'/name).stat().st_size,'sha256':hashlib.sha256((dest/'transitions'/name).read_bytes()).hexdigest()} for name in transition_files}}
+metadata['poroelasticity']={'scope':'Matched discrete-solid and FEniCSx Darcy-Biot fluid coupling; uncalibrated harmonic response with pressure-mesh screening.', 'files':{name:{'bytes':(dest/'poroelasticity'/name).stat().st_size,'sha256':hashlib.sha256((dest/'poroelasticity'/name).read_bytes()).hexdigest()} for name in poro_files}}
 (dest/'DEPLOYMENT.json').write_text(json.dumps(metadata,indent=2)+'\n')
 print(json.dumps({'pages_source':'docs','files':len(files)+2,'bytes':sum(r['bytes'] for r in metadata['files'].values()),'model_sha256':model_hash}))

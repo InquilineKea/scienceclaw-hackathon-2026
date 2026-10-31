@@ -1,0 +1,21 @@
+{
+  "image": "ghcr.io/fenics/dolfinx/dolfinx@sha256:f3e532f96eb91454f13e7aae5289990cd0348124302c003a2002b4cfadb26b1a",
+  "gpuUsed": false,
+  "compute": "4 vCPU CPU-only",
+  "uid": 65534,
+  "network": "Runtime initialized without user secrets; socket denial installed and tested before scientific work",
+  "workloadTimeoutSeconds": 1800,
+  "inputSha256": "c1fe9a23de45415845e3a1843c431b92ed8f82193f3c666a0936ae74a91e87fa",
+  "sourceHashes": {
+    "coupled.py": "acd6d984e069b2ac8bc15733a82ace4e30ed894d9dec0291aa06aaa3926bc168",
+    "plot.py": "49b6ee61b78f61681be181fe4fea0b80a134ba6f611b21cd285f8ffb7356cee6",
+    "isolation.py": "20bd4971a4e11fd5b118f5dd8a9d383a17d85440de687ed2004ecf71e5af6928",
+    "networks.json.gz": "8fced75260f077f7d5c44fe7760ee9839aeab501537b352f31e3f54c45959c5c",
+    "baseline.json.gz": "c2056d4fa09785a2b54b12dd608b9ab5d69bea8ec62252a5505c16a51ef94d76"
+  },
+  "returncode": 0,
+  "seconds": 39.71551585197449,
+  "success": true,
+  "archiveBytes": 25570444,
+  "archiveSha256": "6efceca6cbde6461a938cd7bbf8568325a90334e1d51eb55dbd406189eebca73"
+}

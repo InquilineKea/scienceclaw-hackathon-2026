@@ -1,0 +1,482 @@
+[
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "permeability": 0.001,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 8,
+    "seedsBothDirections": 3,
+    "poroMean": 1.0255820508283633,
+    "poroRange": [
+      1.019913721107336,
+      1.0366126952165855
+    ],
+    "matchedDragMean": 1.0339678385345195
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "permeability": 0.001,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9994702731191619,
+    "poroRange": [
+      0.9860926829418089,
+      1.004260415105204
+    ],
+    "matchedDragMean": 0.9829367817502768
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "permeability": 0.1,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.0445837350613796,
+    "poroRange": [
+      1.0249301098391732,
+      1.0733912538011023
+    ],
+    "matchedDragMean": 1.0446197339251289
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "permeability": 0.1,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9828281055224222,
+    "poroRange": [
+      0.9374537682020023,
+      0.9988233386473379
+    ],
+    "matchedDragMean": 0.9829367817502768
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "permeability": 0.001,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.0041238724595871,
+    "poroRange": [
+      1.001915755107051,
+      1.0070838577582215
+    ],
+    "matchedDragMean": 1.0028850763226425
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "permeability": 0.001,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9989250658283296,
+    "poroRange": [
+      0.9972193752837615,
+      0.9998423105378774
+    ],
+    "matchedDragMean": 0.9987283456879462
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "permeability": 0.1,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.0028897780700343,
+    "poroRange": [
+      1.001287808945072,
+      1.0053066011745582
+    ],
+    "matchedDragMean": 1.0028850763226425
+  },
+  {
+    "n": 10,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "permeability": 0.1,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.998713246649862,
+    "poroRange": [
+      0.9970137183980826,
+      0.9996422405066633
+    ],
+    "matchedDragMean": 0.9987283456879462
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "permeability": 0.001,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 6,
+    "seedsBothDirections": 2,
+    "poroMean": 1.0121533098302293,
+    "poroRange": [
+      1.0073909524308364,
+      1.0169156672296222
+    ],
+    "matchedDragMean": 1.0151632311144505
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "permeability": 0.001,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 8,
+    "seedsBothDirections": 3,
+    "poroMean": 1.008131615674902,
+    "poroRange": [
+      0.988190501917991,
+      1.0326900906411445
+    ],
+    "matchedDragMean": 0.994805594924264
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "permeability": 0.1,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.0663276599423033,
+    "poroRange": [
+      1.0145965403610333,
+      1.1725426720937069
+    ],
+    "matchedDragMean": 1.0670595584778986
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "distributed",
+    "permeability": 0.1,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9914620155775646,
+    "poroRange": [
+      0.9786598701091709,
+      1.012487249751492
+    ],
+    "matchedDragMean": 0.9920686793004345
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "permeability": 0.001,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.0048173254870076,
+    "poroRange": [
+      1.002451254755797,
+      1.0074737509328868
+    ],
+    "matchedDragMean": 1.0034846689014163
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "permeability": 0.001,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.000974964599796,
+    "poroRange": [
+      0.999412426023259,
+      1.0022863993747566
+    ],
+    "matchedDragMean": 0.9980130445700848
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "permeability": 0.1,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.0034614870253569,
+    "poroRange": [
+      1.0012154827817599,
+      1.0061206799670137
+    ],
+    "matchedDragMean": 1.0034846689014163
+  },
+  {
+    "n": 10,
+    "family": "modular",
+    "pattern": "clustered",
+    "permeability": 0.1,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.997983638321112,
+    "poroRange": [
+      0.9962507555916656,
+      0.9996054740411684
+    ],
+    "matchedDragMean": 0.9980130445700848
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "permeability": 0.001,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 8,
+    "seedsBothDirections": 3,
+    "poroMean": 1.0091185028422822,
+    "poroRange": [
+      1.0025765027362528,
+      1.0149900115757784
+    ],
+    "matchedDragMean": 1.0166968126526699
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "permeability": 0.001,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9994776491898438,
+    "poroRange": [
+      0.989978462536304,
+      1.0125314749403675
+    ],
+    "matchedDragMean": 0.9598216950838092
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "permeability": 0.1,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.035661055519118,
+    "poroRange": [
+      1.0023876200818673,
+      1.0675339822925098
+    ],
+    "matchedDragMean": 1.0362685701441705
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "distributed",
+    "permeability": 0.1,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.959059832891838,
+    "poroRange": [
+      0.8740908861942396,
+      1.0017751360903333
+    ],
+    "matchedDragMean": 0.9598216950838092
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "permeability": 0.001,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.0005813449952634,
+    "poroRange": [
+      1.000407817051418,
+      1.0008264703779872
+    ],
+    "matchedDragMean": 1.0004267608889439
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "permeability": 0.001,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9998377718951644,
+    "poroRange": [
+      0.9997024733716228,
+      1.0000383167298348
+    ],
+    "matchedDragMean": 0.9998424720007684
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "permeability": 0.1,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.0004280981266818,
+    "poroRange": [
+      1.000312521201618,
+      1.000688402309848
+    ],
+    "matchedDragMean": 1.0004267608889439
+  },
+  {
+    "n": 14,
+    "family": "isotropic",
+    "pattern": "clustered",
+    "permeability": 0.1,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9998366241071878,
+    "poroRange": [
+      0.9997013888444932,
+      0.9999039190190318
+    ],
+    "matchedDragMean": 0.9998424720007684
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "permeability": 0.001,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 8,
+    "seedsBothDirections": 3,
+    "poroMean": 1.014662904090918,
+    "poroRange": [
+      1.0079561604410512,
+      1.0183443211544896
+    ],
+    "matchedDragMean": 1.0470639286686432
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "permeability": 0.001,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 8,
+    "seedsBothDirections": 3,
+    "poroMean": 0.9999510198778164,
+    "poroRange": [
+      0.9963931540420093,
+      1.006768366199864
+    ],
+    "matchedDragMean": 0.9933602054305988
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "permeability": 0.1,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.037037225222085,
+    "poroRange": [
+      1.0010810101626992,
+      1.0806028263218694
+    ],
+    "matchedDragMean": 1.0389328629150283
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "distributed",
+    "permeability": 0.1,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9869969521652437,
+    "poroRange": [
+      0.9488303919811495,
+      1.0058956596616513
+    ],
+    "matchedDragMean": 0.9879585007685154
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "permeability": 0.001,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.0006939900427991,
+    "poroRange": [
+      1.0002766682863498,
+      1.00098330612209
+    ],
+    "matchedDragMean": 1.000555487349629
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "permeability": 0.001,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9996835045866707,
+    "poroRange": [
+      0.9995677723620304,
+      0.9997773722067145
+    ],
+    "matchedDragMean": 0.9997625774034518
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "permeability": 0.1,
+    "metric": "selfAmplitude",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 1.000553558633748,
+    "poroRange": [
+      1.0001950145302465,
+      1.0007427529508295
+    ],
+    "matchedDragMean": 1.000555487349629
+  },
+  {
+    "n": 14,
+    "family": "modular",
+    "pattern": "clustered",
+    "permeability": 0.1,
+    "metric": "farRms",
+    "resolvedDirectionPairs": 10,
+    "seedsBothDirections": 5,
+    "poroMean": 0.9997513446199736,
+    "poroRange": [
+      0.9996941755426838,
+      0.9998283695600112
+    ],
+    "matchedDragMean": 0.9997625774034518
+  }
+]

@@ -10,8 +10,8 @@
   "scope": "Original 450-run baseline, 252-run directional-strain experiment, and separate paired crosslink experiment. Static application and browser-local computation; no server or package installation. Density sweep uses 6,300 paired configurations at two resolutions. Separate CDSM species pilot contains backbone geometry only, without molecular mechanical calibration.",
   "files": {
     "index.html": {
-      "bytes": 16904,
-      "sha256": "552671b8b0391880e6a068cca48ab1ecf46b2acccc9a58850844b82ca3d96c20"
+      "bytes": 16961,
+      "sha256": "f0c86301b202fbf0ca91704ef51e74848f5947feb0c46293cf9838af0f81c54d"
     },
     "style.css": {
       "bytes": 13374,
@@ -94,8 +94,8 @@
       "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
     },
     "aging.html": {
-      "bytes": 13316,
-      "sha256": "82aee968215d50328f24350df84b426b9b5f535c72fbbb5ed45bd663c7daf412"
+      "bytes": 13373,
+      "sha256": "e8d4b58888414e9209709816aab013ead2dfced0f3e5a43f10da267a652faae7"
     },
     "aging.css": {
       "bytes": 1305,
@@ -186,8 +186,8 @@
       "sha256": "213a9a1e240147dcd7ff563951da7b5cc10d154450c70836c4cdfbffc856046e"
     },
     "topology-aging.html": {
-      "bytes": 6813,
-      "sha256": "e82f172176a30bfad29c77604135004c181bf7d057224e0b8c423d7be046b76d"
+      "bytes": 6870,
+      "sha256": "65ad5bce854e11f3c9d07f352bdc042739369710b4b2e075b78f58f287631ffe"
     },
     "topology-aging.css": {
       "bytes": 1830,
@@ -274,8 +274,8 @@
       "sha256": "b015e61c8f4ee1769fa04bac0dd5c311713beb16e3ca2c53159242c6c13d3676"
     },
     "microrheology/index.html": {
-      "bytes": 5669,
-      "sha256": "57d262929adf347ac37181ac00917edb16cffb798159c144d7d78a1d5808b479"
+      "bytes": 5754,
+      "sha256": "c71c48d0645aad746c018280f26832f8e7f60f7c9201929c2b0fe041a39777aa"
     },
     "microrheology/ui.js": {
       "bytes": 2722,
@@ -384,6 +384,83 @@
       "figures/sliding-memory.gif": {
         "bytes": 508514,
         "sha256": "aac921634fdd7a5ceb5b8f5b89ff91d0ed78e3a78aff1b3f54a17af8c9d63730"
+      }
+    }
+  },
+  "poroelasticity": {
+    "scope": "Matched discrete-solid and FEniCSx Darcy-Biot fluid coupling; uncalibrated harmonic response with pressure-mesh screening.",
+    "files": {
+      "index.html": {
+        "bytes": 7101,
+        "sha256": "15893bacd3b3ac624c65b5be5394a151f59e86fb0a87305d19f39cd6a0d67a28"
+      },
+      "style.css": {
+        "bytes": 1069,
+        "sha256": "86eff52d9e364031fe3f4601dba698d0a5680cd8d53505106a76474c7f3bc975"
+      },
+      "ui.js": {
+        "bytes": 4255,
+        "sha256": "ff6acb35b491e3330d3b9af2fe037c189d03ec158f321daaf8211163af803991"
+      },
+      "data.js": {
+        "bytes": 858915,
+        "sha256": "81d5c6931a9ee095f1115a8cc493d5e79c6f37c494f7c4c2ed66febb09240f69"
+      },
+      "METHODS.md": {
+        "bytes": 6674,
+        "sha256": "50fd35b32f2f4da4f0beaf2923e32ac30f7e7f2d0cb6bb520d09df7c41b7785b"
+      },
+      "local-poro-vs-drag.png": {
+        "bytes": 272599,
+        "sha256": "9c1ac2dd7053c9dd5221a0f82e9eb027220e1b4a029f29257d242133495f2cff"
+      },
+      "local-poro-vs-drag.svg": {
+        "bytes": 130602,
+        "sha256": "6c85b9968b3b3196db50e44265d63df4269db84f994687c2c58e04fdeaffc58a"
+      },
+      "remote-poro-vs-drag.png": {
+        "bytes": 274056,
+        "sha256": "3763f19b555eb9dcc20e96c859077ecb90530163f89940dd173bcaf2cba77907"
+      },
+      "remote-poro-vs-drag.svg": {
+        "bytes": 139066,
+        "sha256": "9448aba455833668322d2a1f0312865f20585583a71de5511c6a049f18e60ea7"
+      },
+      "damage-comparison.png": {
+        "bytes": 85614,
+        "sha256": "acf14a66716dc4dc23090254b60f0e165ba4169264e27366ce84ce64f98d34be"
+      },
+      "poro-versus-drag-motion.gif": {
+        "bytes": 10938626,
+        "sha256": "3b8c3422c8ec0bf23357752a689342f34536b07c9b94646d6286b0da4a13193b"
+      },
+      "poro-damage-change.gif": {
+        "bytes": 9027549,
+        "sha256": "7bf1dcd8740aa6ed9a8ce9965cc1ab27e426dc9dc44c6e23019c389eccb4fde5"
+      },
+      "poro-versus-drag-motion-still.png": {
+        "bytes": 688264,
+        "sha256": "a20d634eea2eff3394fd9d1cbcbb4089432e100a8c77b02759894a79ba394172"
+      },
+      "poro-damage-change-still.png": {
+        "bytes": 625591,
+        "sha256": "bfb7d25f28a02418aef0c39a0f3254320007e053c0b6736a9ff02514125eb62d"
+      },
+      "validation.json": {
+        "bytes": 646,
+        "sha256": "179c78b3176309814638235c419166b2336f65f6a53499a08e527e1c1a9fba89"
+      },
+      "summary.json": {
+        "bytes": 11153,
+        "sha256": "e176e7214cbe68c9c719d356c2fdda5335cb16f656e841690ae356b5fbc3812f"
+      },
+      "results.json": {
+        "bytes": 4691390,
+        "sha256": "02d7f2d18996fd5220c0e66c726d6b6045e02f419d6f9938a4bc15380ddcfccb"
+      },
+      "comparisons.csv": {
+        "bytes": 211149,
+        "sha256": "811a4688e4758b696ba2ac3c0f06f656d6f9901801872109a5da350a6f82080b"
       }
     }
   }

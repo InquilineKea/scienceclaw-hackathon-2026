@@ -1,13 +1,13 @@
 {
-  "scope": "Published scientific archives and applications, preserving concurrent transition updates and larger-network microrheology; excludes this manifest and ignored scratch or large raw files.",
+  "scope": "Published scientific archives and applications, including preserved concurrent transition studies and matched FEniCSx poroelastic microrheology; excludes this manifest and ignored scratch/large raw files.",
   "files": {
     ".gitignore": {
       "bytes": 62,
       "sha256": "3efb159c398290c843c5c1f5b283023ffdf04fc9d943a840b2c29231f466617f"
     },
     "ARCHIVE_INDEX.md": {
-      "bytes": 6304,
-      "sha256": "ed57806282cfddd0c062c310c2f320de3f1e15649b95229091d0d00b392708ef"
+      "bytes": 7040,
+      "sha256": "1f5c21049b1e8a22da6594f0e839b21e98f49a416efc2d841abb7e778837c19b"
     },
     "ARCHIVE_PROVENANCE.json": {
       "bytes": 188852,
@@ -30,12 +30,12 @@
       "sha256": "6f0df48d5ee01682cef40c5e5e38fea1dac125ffda78df15a74e0cb3d3a659da"
     },
     "PAGES.md": {
-      "bytes": 5765,
-      "sha256": "e31da8853ca5eef1ff56199bd997142ca52b4c0a65561d086775182754e4ea94"
+      "bytes": 6307,
+      "sha256": "410a288b3bc5923689e5df525cfc5cc75ecb61369e36001d31da93a7934aed0d"
     },
     "README.md": {
-      "bytes": 7987,
-      "sha256": "4c2842e53752a109704f570d9d2f385260e01f2c22538a3dab3c1e78ffe73ee5"
+      "bytes": 8780,
+      "sha256": "48aacc3920d5e7f6e79618c633d11aca122d6b10d25d8d7e6b97ebf979cdc744"
     },
     "archives/2026-10-31/README.md": {
       "bytes": 2011,
@@ -72,6 +72,206 @@
     "archives/2026-10-31/public-scienceclaw-collagen-results-complete.zip": {
       "bytes": 669506,
       "sha256": "858dc8af54880beea10e507f504304707c7c5270bf0ae20f8042320918d3582a"
+    },
+    "collagen-fenicsx-poroelastic/README.md": {
+      "bytes": 3075,
+      "sha256": "7cce3a90be04ab758e49ef8461a7939f8fd205d35b514e3d8dcdcbb53164cc64"
+    },
+    "collagen-fenicsx-poroelastic/RUN_RECEIPT.json": {
+      "bytes": 1073,
+      "sha256": "650c2cb232254b2bb0acd81e68892561c37533126df01f8958040d825f04fa6b"
+    },
+    "collagen-fenicsx-poroelastic/attempt-1/execution.json": {
+      "bytes": 960,
+      "sha256": "cd42ccd46d0ed9e02c27d344565a2f8e42f5c98db84ba34b0dc1e7ed43dbfe3e"
+    },
+    "collagen-fenicsx-poroelastic/attempt-1/poro-results.zip": {
+      "bytes": 2397700,
+      "sha256": "c35aad9982666e739d8514a8d3c2a9043aa2efc59ddb242add9188f3db6bf729"
+    },
+    "collagen-fenicsx-poroelastic/job/INPUT_MANIFEST.json": {
+      "bytes": 434,
+      "sha256": "0f73570bbd5af8e41fd827061063f046804f9eafe383a3fc31dbb302629a729e"
+    },
+    "collagen-fenicsx-poroelastic/job/baseline.json.gz": {
+      "bytes": 334436,
+      "sha256": "c2056d4fa09785a2b54b12dd608b9ab5d69bea8ec62252a5505c16a51ef94d76"
+    },
+    "collagen-fenicsx-poroelastic/job/cloud-bootstrap.py": {
+      "bytes": 3859,
+      "sha256": "9fe3cee6906abebbfffebcc694dc361da5b90881f80599ee39ae122848df9212"
+    },
+    "collagen-fenicsx-poroelastic/job/coupled.py": {
+      "bytes": 8859,
+      "sha256": "acd6d984e069b2ac8bc15733a82ace4e30ed894d9dec0291aa06aaa3926bc168"
+    },
+    "collagen-fenicsx-poroelastic/job/export-network.js": {
+      "bytes": 1061,
+      "sha256": "3b13fb14269b28ac7ed37376b3be2cf541cbc518cef95b1eeb4a0c93022bf0f0"
+    },
+    "collagen-fenicsx-poroelastic/job/isolation.py": {
+      "bytes": 1031,
+      "sha256": "20bd4971a4e11fd5b118f5dd8a9d383a17d85440de687ed2004ecf71e5af6928"
+    },
+    "collagen-fenicsx-poroelastic/job/make-input.py": {
+      "bytes": 533,
+      "sha256": "1e86b361740bf0d237258e551c0b7856ac8dcad5cd538f93a13afd564cd2e22f"
+    },
+    "collagen-fenicsx-poroelastic/job/network-original.js": {
+      "bytes": 7143,
+      "sha256": "eccb84a2396ada718d07d5b36200200bdbda4d2d1f783478950f68f2909a7449"
+    },
+    "collagen-fenicsx-poroelastic/job/networks.json.gz": {
+      "bytes": 2052847,
+      "sha256": "8fced75260f077f7d5c44fe7760ee9839aeab501537b352f31e3f54c45959c5c"
+    },
+    "collagen-fenicsx-poroelastic/job/plot.py": {
+      "bytes": 11623,
+      "sha256": "49b6ee61b78f61681be181fe4fea0b80a134ba6f611b21cd285f8ffb7356cee6"
+    },
+    "collagen-fenicsx-poroelastic/job/poro-inputs-v2.zip": {
+      "bytes": 2395824,
+      "sha256": "c1fe9a23de45415845e3a1843c431b92ed8f82193f3c666a0936ae74a91e87fa"
+    },
+    "collagen-fenicsx-poroelastic/job/poro-inputs.zip": {
+      "bytes": 2395811,
+      "sha256": "6925a2db9978886dfaa0a4d60011fbc0a62e197c7e8e2f713b311947d3ca0ed2"
+    },
+    "collagen-fenicsx-poroelastic/job/solid-source/aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "collagen-fenicsx-poroelastic/job/solid-source/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "collagen-fenicsx-poroelastic/job/solid-source/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-fenicsx-poroelastic/package-results.py": {
+      "bytes": 1566,
+      "sha256": "c2c6465de00fae0eaeec0a94ac4695865bc95379d98bb30467131892dcceb412"
+    },
+    "collagen-fenicsx-poroelastic/poro-results-v2.zip": {
+      "bytes": 25570444,
+      "sha256": "6efceca6cbde6461a938cd7bbf8568325a90334e1d51eb55dbd406189eebca73"
+    },
+    "collagen-fenicsx-poroelastic/review/Dockerfile.end-user": {
+      "bytes": 7386,
+      "sha256": "25ebc1d017e47f97bfaa1c513e3ae0d15bceac31629e012fbb14978a9a51940f"
+    },
+    "collagen-fenicsx-poroelastic/review/Dockerfile.test-env": {
+      "bytes": 13579,
+      "sha256": "8105c7d6db24f6462cbf270c7b9a1b160b08e670f813191754e4b8c58ff37ca0"
+    },
+    "collagen-fenicsx-poroelastic/review/SECURITY_REVIEW.md": {
+      "bytes": 4046,
+      "sha256": "5e4be1cfc7d20c33372cc3a2d8f5dcf98716b34bdd54114f5247e9fa01ec1448"
+    },
+    "collagen-fenicsx-poroelastic/review/image-config.json": {
+      "bytes": 23730,
+      "sha256": "435cbcb02ebd05a9cd5c39e98b7c21d1d6c317134501b7f663bfdc0598edbe73"
+    },
+    "collagen-fenicsx-poroelastic/review/image-index.json": {
+      "bytes": 685,
+      "sha256": "25a4952542107766402a1de448ab1b387df70243e10f9d3f717d8c353f2acae4"
+    },
+    "collagen-fenicsx-poroelastic/review/image-manifest.json": {
+      "bytes": 4114,
+      "sha256": "f3e532f96eb91454f13e7aae5289990cd0348124302c003a2002b4cfadb26b1a"
+    },
+    "collagen-fenicsx-poroelastic/review/inspect-image.py": {
+      "bytes": 1545,
+      "sha256": "b9cfe25ed67d14964601557e9437eec886cc6d1ca0ee472c302ac079370e6112"
+    },
+    "collagen-fenicsx-poroelastic/web/FINISHED.json": {
+      "bytes": 82,
+      "sha256": "86d955e912bf5e740bced1c3f8d4dfd5efc5f911130a5da689ab2c395ecb8f63"
+    },
+    "collagen-fenicsx-poroelastic/web/MANIFEST.json": {
+      "bytes": 2168,
+      "sha256": "2be47f6e73d91354b0fe598194b84c1a3f3a319286cd28f2e268cc867c881c10"
+    },
+    "collagen-fenicsx-poroelastic/web/METHODS.md": {
+      "bytes": 6674,
+      "sha256": "50fd35b32f2f4da4f0beaf2923e32ac30f7e7f2d0cb6bb520d09df7c41b7785b"
+    },
+    "collagen-fenicsx-poroelastic/web/animation.json": {
+      "bytes": 927054,
+      "sha256": "c6db9f977d99cfc9480f7a48ac06638390c9199463d7a1c934a3004b922aa59d"
+    },
+    "collagen-fenicsx-poroelastic/web/comparisons.csv": {
+      "bytes": 211149,
+      "sha256": "811a4688e4758b696ba2ac3c0f06f656d6f9901801872109a5da350a6f82080b"
+    },
+    "collagen-fenicsx-poroelastic/web/comparisons.json": {
+      "bytes": 523014,
+      "sha256": "e9ddea0fa6fb4cb9ce38274bd02560cd04296acf09b063c6ede4d7fa27a3b96e"
+    },
+    "collagen-fenicsx-poroelastic/web/damage-comparison.png": {
+      "bytes": 85614,
+      "sha256": "acf14a66716dc4dc23090254b60f0e165ba4169264e27366ce84ce64f98d34be"
+    },
+    "collagen-fenicsx-poroelastic/web/data.js": {
+      "bytes": 858915,
+      "sha256": "81d5c6931a9ee095f1115a8cc493d5e79c6f37c494f7c4c2ed66febb09240f69"
+    },
+    "collagen-fenicsx-poroelastic/web/index.html": {
+      "bytes": 7101,
+      "sha256": "15893bacd3b3ac624c65b5be5394a151f59e86fb0a87305d19f39cd6a0d67a28"
+    },
+    "collagen-fenicsx-poroelastic/web/local-poro-vs-drag.png": {
+      "bytes": 272599,
+      "sha256": "9c1ac2dd7053c9dd5221a0f82e9eb027220e1b4a029f29257d242133495f2cff"
+    },
+    "collagen-fenicsx-poroelastic/web/local-poro-vs-drag.svg": {
+      "bytes": 130602,
+      "sha256": "6c85b9968b3b3196db50e44265d63df4269db84f994687c2c58e04fdeaffc58a"
+    },
+    "collagen-fenicsx-poroelastic/web/poro-damage-change-still.png": {
+      "bytes": 625591,
+      "sha256": "bfb7d25f28a02418aef0c39a0f3254320007e053c0b6736a9ff02514125eb62d"
+    },
+    "collagen-fenicsx-poroelastic/web/poro-damage-change.gif": {
+      "bytes": 9027549,
+      "sha256": "7bf1dcd8740aa6ed9a8ce9965cc1ab27e426dc9dc44c6e23019c389eccb4fde5"
+    },
+    "collagen-fenicsx-poroelastic/web/poro-versus-drag-motion-still.png": {
+      "bytes": 688264,
+      "sha256": "a20d634eea2eff3394fd9d1cbcbb4089432e100a8c77b02759894a79ba394172"
+    },
+    "collagen-fenicsx-poroelastic/web/poro-versus-drag-motion.gif": {
+      "bytes": 10938626,
+      "sha256": "3b8c3422c8ec0bf23357752a689342f34536b07c9b94646d6286b0da4a13193b"
+    },
+    "collagen-fenicsx-poroelastic/web/remote-poro-vs-drag.png": {
+      "bytes": 274056,
+      "sha256": "3763f19b555eb9dcc20e96c859077ecb90530163f89940dd173bcaf2cba77907"
+    },
+    "collagen-fenicsx-poroelastic/web/remote-poro-vs-drag.svg": {
+      "bytes": 139066,
+      "sha256": "9448aba455833668322d2a1f0312865f20585583a71de5511c6a049f18e60ea7"
+    },
+    "collagen-fenicsx-poroelastic/web/results.json": {
+      "bytes": 4691390,
+      "sha256": "02d7f2d18996fd5220c0e66c726d6b6045e02f419d6f9938a4bc15380ddcfccb"
+    },
+    "collagen-fenicsx-poroelastic/web/style.css": {
+      "bytes": 1069,
+      "sha256": "86eff52d9e364031fe3f4601dba698d0a5680cd8d53505106a76474c7f3bc975"
+    },
+    "collagen-fenicsx-poroelastic/web/summary.json": {
+      "bytes": 11153,
+      "sha256": "e176e7214cbe68c9c719d356c2fdda5335cb16f656e841690ae356b5fbc3812f"
+    },
+    "collagen-fenicsx-poroelastic/web/ui.js": {
+      "bytes": 4255,
+      "sha256": "ff6acb35b491e3330d3b9af2fe037c189d03ec158f321daaf8211163af803991"
+    },
+    "collagen-fenicsx-poroelastic/web/validation.json": {
+      "bytes": 646,
+      "sha256": "179c78b3176309814638235c419166b2336f65f6a53499a08e527e1c1a9fba89"
     },
     "collagen-molecular-pilot/.gitignore": {
       "bytes": 49,
@@ -1390,8 +1590,8 @@
       "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
     },
     "collagen-network-atlas/aging.html": {
-      "bytes": 13316,
-      "sha256": "82aee968215d50328f24350df84b426b9b5f535c72fbbb5ed45bd663c7daf412"
+      "bytes": 13373,
+      "sha256": "e8d4b58888414e9209709816aab013ead2dfced0f3e5a43f10da267a652faae7"
     },
     "collagen-network-atlas/aging.js": {
       "bytes": 6862,
@@ -1894,8 +2094,8 @@
       "sha256": "173f9598b7ca1191122b9c5374fcdfb0fce341e22313642e363dfcada6e42e52"
     },
     "collagen-network-atlas/index.html": {
-      "bytes": 16904,
-      "sha256": "552671b8b0391880e6a068cca48ab1ecf46b2acccc9a58850844b82ca3d96c20"
+      "bytes": 16961,
+      "sha256": "f0c86301b202fbf0ca91704ef51e74848f5947feb0c46293cf9838af0f81c54d"
     },
     "collagen-network-atlas/large_data.py": {
       "bytes": 14401,
@@ -1950,8 +2150,8 @@
       "sha256": "5fb9c13254c44a934af13cc90f3c181ffe421e976a1e908f1e3b2ad1d7fd71ac"
     },
     "collagen-network-atlas/microrheology/index.html": {
-      "bytes": 5669,
-      "sha256": "57d262929adf347ac37181ac00917edb16cffb798159c144d7d78a1d5808b479"
+      "bytes": 5754,
+      "sha256": "c71c48d0645aad746c018280f26832f8e7f60f7c9201929c2b0fe041a39777aa"
     },
     "collagen-network-atlas/microrheology/local-compliance.png": {
       "bytes": 165376,
@@ -2858,8 +3058,8 @@
       "sha256": "e53d4f2f8bd82b7cfd08c21aba40075b894e655043dbd64822e55627db4aca1b"
     },
     "collagen-network-atlas/topology-aging.html": {
-      "bytes": 6813,
-      "sha256": "e82f172176a30bfad29c77604135004c181bf7d057224e0b8c423d7be046b76d"
+      "bytes": 6870,
+      "sha256": "65ad5bce854e11f3c9d07f352bdc042739369710b4b2e075b78f58f287631ffe"
     },
     "collagen-network-atlas/topology-aging.js": {
       "bytes": 2888,
@@ -4726,8 +4926,8 @@
       "sha256": "c64859609c4dca8481daa89305ebf299c6d2905ffee91774565bd0e27fa612b3"
     },
     "docs/DEPLOYMENT.json": {
-      "bytes": 14506,
-      "sha256": "6eef865aea3589f8a547a84568e2d903af5e543af8b0546ae66142d91a5040e1"
+      "bytes": 17357,
+      "sha256": "8119395b7179f4418d0acf8c7ba8596409b54d438b39ad623860f5dab39d7c8e"
     },
     "docs/DIRECTIONAL_METHODS.md": {
       "bytes": 5849,
@@ -4762,8 +4962,8 @@
       "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
     },
     "docs/aging.html": {
-      "bytes": 13316,
-      "sha256": "82aee968215d50328f24350df84b426b9b5f535c72fbbb5ed45bd663c7daf412"
+      "bytes": 13373,
+      "sha256": "e8d4b58888414e9209709816aab013ead2dfced0f3e5a43f10da267a652faae7"
     },
     "docs/aging.js": {
       "bytes": 6862,
@@ -4938,8 +5138,8 @@
       "sha256": "b0c31c2e9192d74fe7c6c5de74a2d999116f8e5e6479e404dd2cd07b727bf6e4"
     },
     "docs/index.html": {
-      "bytes": 16904,
-      "sha256": "552671b8b0391880e6a068cca48ab1ecf46b2acccc9a58850844b82ca3d96c20"
+      "bytes": 16961,
+      "sha256": "f0c86301b202fbf0ca91704ef51e74848f5947feb0c46293cf9838af0f81c54d"
     },
     "docs/load-guide.js": {
       "bytes": 5783,
@@ -4958,8 +5158,8 @@
       "sha256": "5fb9c13254c44a934af13cc90f3c181ffe421e976a1e908f1e3b2ad1d7fd71ac"
     },
     "docs/microrheology/index.html": {
-      "bytes": 5669,
-      "sha256": "57d262929adf347ac37181ac00917edb16cffb798159c144d7d78a1d5808b479"
+      "bytes": 5754,
+      "sha256": "c71c48d0645aad746c018280f26832f8e7f60f7c9201929c2b0fe041a39777aa"
     },
     "docs/microrheology/local-compliance.png": {
       "bytes": 165376,
@@ -4997,6 +5197,78 @@
       "bytes": 18846,
       "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
     },
+    "docs/poroelasticity/METHODS.md": {
+      "bytes": 6674,
+      "sha256": "50fd35b32f2f4da4f0beaf2923e32ac30f7e7f2d0cb6bb520d09df7c41b7785b"
+    },
+    "docs/poroelasticity/comparisons.csv": {
+      "bytes": 211149,
+      "sha256": "811a4688e4758b696ba2ac3c0f06f656d6f9901801872109a5da350a6f82080b"
+    },
+    "docs/poroelasticity/damage-comparison.png": {
+      "bytes": 85614,
+      "sha256": "acf14a66716dc4dc23090254b60f0e165ba4169264e27366ce84ce64f98d34be"
+    },
+    "docs/poroelasticity/data.js": {
+      "bytes": 858915,
+      "sha256": "81d5c6931a9ee095f1115a8cc493d5e79c6f37c494f7c4c2ed66febb09240f69"
+    },
+    "docs/poroelasticity/index.html": {
+      "bytes": 7101,
+      "sha256": "15893bacd3b3ac624c65b5be5394a151f59e86fb0a87305d19f39cd6a0d67a28"
+    },
+    "docs/poroelasticity/local-poro-vs-drag.png": {
+      "bytes": 272599,
+      "sha256": "9c1ac2dd7053c9dd5221a0f82e9eb027220e1b4a029f29257d242133495f2cff"
+    },
+    "docs/poroelasticity/local-poro-vs-drag.svg": {
+      "bytes": 130602,
+      "sha256": "6c85b9968b3b3196db50e44265d63df4269db84f994687c2c58e04fdeaffc58a"
+    },
+    "docs/poroelasticity/poro-damage-change-still.png": {
+      "bytes": 625591,
+      "sha256": "bfb7d25f28a02418aef0c39a0f3254320007e053c0b6736a9ff02514125eb62d"
+    },
+    "docs/poroelasticity/poro-damage-change.gif": {
+      "bytes": 9027549,
+      "sha256": "7bf1dcd8740aa6ed9a8ce9965cc1ab27e426dc9dc44c6e23019c389eccb4fde5"
+    },
+    "docs/poroelasticity/poro-versus-drag-motion-still.png": {
+      "bytes": 688264,
+      "sha256": "a20d634eea2eff3394fd9d1cbcbb4089432e100a8c77b02759894a79ba394172"
+    },
+    "docs/poroelasticity/poro-versus-drag-motion.gif": {
+      "bytes": 10938626,
+      "sha256": "3b8c3422c8ec0bf23357752a689342f34536b07c9b94646d6286b0da4a13193b"
+    },
+    "docs/poroelasticity/remote-poro-vs-drag.png": {
+      "bytes": 274056,
+      "sha256": "3763f19b555eb9dcc20e96c859077ecb90530163f89940dd173bcaf2cba77907"
+    },
+    "docs/poroelasticity/remote-poro-vs-drag.svg": {
+      "bytes": 139066,
+      "sha256": "9448aba455833668322d2a1f0312865f20585583a71de5511c6a049f18e60ea7"
+    },
+    "docs/poroelasticity/results.json": {
+      "bytes": 4691390,
+      "sha256": "02d7f2d18996fd5220c0e66c726d6b6045e02f419d6f9938a4bc15380ddcfccb"
+    },
+    "docs/poroelasticity/style.css": {
+      "bytes": 1069,
+      "sha256": "86eff52d9e364031fe3f4601dba698d0a5680cd8d53505106a76474c7f3bc975"
+    },
+    "docs/poroelasticity/summary.json": {
+      "bytes": 11153,
+      "sha256": "e176e7214cbe68c9c719d356c2fdda5335cb16f656e841690ae356b5fbc3812f"
+    },
+    "docs/poroelasticity/ui.js": {
+      "bytes": 4255,
+      "sha256": "ff6acb35b491e3330d3b9af2fe037c189d03ec158f321daaf8211163af803991"
+    },
+    "docs/poroelasticity/validation.json": {
+      "bytes": 646,
+      "sha256": "179c78b3176309814638235c419166b2336f65f6a53499a08e527e1c1a9fba89"
+    },
     "docs/species-ui.js": {
       "bytes": 2684,
       "sha256": "1f1af387668ca0cb8f9e25e1846efc26895ce61518c71eba03d22b97525383c4"
@@ -5018,8 +5290,8 @@
       "sha256": "e53d4f2f8bd82b7cfd08c21aba40075b894e655043dbd64822e55627db4aca1b"
     },
     "docs/topology-aging.html": {
-      "bytes": 6813,
-      "sha256": "e82f172176a30bfad29c77604135004c181bf7d057224e0b8c423d7be046b76d"
+      "bytes": 6870,
+      "sha256": "65ad5bce854e11f3c9d07f352bdc042739369710b4b2e075b78f58f287631ffe"
     },
     "docs/topology-aging.js": {
       "bytes": 2888,
@@ -5510,8 +5782,8 @@
       "sha256": "80e5000bb346f2493609b2fe5a8f3d63ff9374e31a632411589ef679b6ea98b1"
     },
     "publish-pages.py": {
-      "bytes": 6196,
-      "sha256": "157a1dff311e08250a01ec9d8f6c68f388dbfc0efb49cc5374d59e419c224ceb"
+      "bytes": 7168,
+      "sha256": "85c4515d00d235a4723703a465cc195ddc702bf080aa4f709f0d63135bb52dbe"
     },
     "verify-archives.py": {
       "bytes": 786,

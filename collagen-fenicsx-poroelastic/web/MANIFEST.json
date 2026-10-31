@@ -1,0 +1,64 @@
+{
+  "files": {
+    "poro-versus-drag-motion.gif": {
+      "bytes": 10938626,
+      "sha256": "3b8c3422c8ec0bf23357752a689342f34536b07c9b94646d6286b0da4a13193b"
+    },
+    "poro-versus-drag-motion-still.png": {
+      "bytes": 688264,
+      "sha256": "a20d634eea2eff3394fd9d1cbcbb4089432e100a8c77b02759894a79ba394172"
+    },
+    "summary.json": {
+      "bytes": 11153,
+      "sha256": "e176e7214cbe68c9c719d356c2fdda5335cb16f656e841690ae356b5fbc3812f"
+    },
+    "local-poro-vs-drag.png": {
+      "bytes": 272599,
+      "sha256": "9c1ac2dd7053c9dd5221a0f82e9eb027220e1b4a029f29257d242133495f2cff"
+    },
+    "validation.json": {
+      "bytes": 646,
+      "sha256": "179c78b3176309814638235c419166b2336f65f6a53499a08e527e1c1a9fba89"
+    },
+    "remote-poro-vs-drag.svg": {
+      "bytes": 139066,
+      "sha256": "9448aba455833668322d2a1f0312865f20585583a71de5511c6a049f18e60ea7"
+    },
+    "local-poro-vs-drag.svg": {
+      "bytes": 130602,
+      "sha256": "6c85b9968b3b3196db50e44265d63df4269db84f994687c2c58e04fdeaffc58a"
+    },
+    "poro-damage-change.gif": {
+      "bytes": 9027549,
+      "sha256": "7bf1dcd8740aa6ed9a8ce9965cc1ab27e426dc9dc44c6e23019c389eccb4fde5"
+    },
+    "damage-comparison.png": {
+      "bytes": 85614,
+      "sha256": "acf14a66716dc4dc23090254b60f0e165ba4169264e27366ce84ce64f98d34be"
+    },
+    "remote-poro-vs-drag.png": {
+      "bytes": 274056,
+      "sha256": "3763f19b555eb9dcc20e96c859077ecb90530163f89940dd173bcaf2cba77907"
+    },
+    "comparisons.csv": {
+      "bytes": 211149,
+      "sha256": "811a4688e4758b696ba2ac3c0f06f656d6f9901801872109a5da350a6f82080b"
+    },
+    "animation.json": {
+      "bytes": 927054,
+      "sha256": "c6db9f977d99cfc9480f7a48ac06638390c9199463d7a1c934a3004b922aa59d"
+    },
+    "results.json": {
+      "bytes": 4691390,
+      "sha256": "02d7f2d18996fd5220c0e66c726d6b6045e02f419d6f9938a4bc15380ddcfccb"
+    },
+    "comparisons.json": {
+      "bytes": 523014,
+      "sha256": "e9ddea0fa6fb4cb9ce38274bd02560cd04296acf09b063c6ede4d7fa27a3b96e"
+    },
+    "poro-damage-change-still.png": {
+      "bytes": 625591,
+      "sha256": "bfb7d25f28a02418aef0c39a0f3254320007e053c0b6736a9ff02514125eb62d"
+    }
+  }
+}
