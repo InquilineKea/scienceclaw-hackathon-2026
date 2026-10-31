@@ -1847,8 +1847,8 @@
       "sha256": "3481aabac5a16d918d5630ef6f33f81f31ee9abe3ab0c09d5e440a98345551f6"
     },
     "collagen-network-atlas/force-robustness/analyze.py": {
-      "bytes": 2905,
-      "sha256": "29148699798968a333fd3c7805cf957c1fe5a60c3f946886d4550a61bf0d49e4"
+      "bytes": 2925,
+      "sha256": "0276f732a0f3d28232b22071e68ab5a9edcd9d94d95a10f837baf0cea9fe3607"
     },
     "collagen-network-atlas/force-robustness/check.js": {
       "bytes": 1037,
@@ -1871,8 +1871,8 @@
       "sha256": "fedf2b35c318d08a91d257a0c0ebccb90cec7100ec735cfb29d9d0c7a5755124"
     },
     "collagen-network-atlas/force-robustness/results.csv": {
-      "bytes": 75591,
-      "sha256": "42af228e68c78a6d518858a8f638b23a157f05e8bad72184466046dc8ded594d"
+      "bytes": 75110,
+      "sha256": "6e18b744b10668a60d1b3bbe004559b6d9ab81406456114545fa5311320b2d11"
     },
     "collagen-network-atlas/force-robustness/results.json": {
       "bytes": 313594,
@@ -3096,7 +3096,7 @@
     },
     "docs/DEPLOYMENT.json": {
       "bytes": 10346,
-      "sha256": "947d3b9836612922c113fa1d9780f3516f478ecaa497602c14d05c4fd18c93d9"
+      "sha256": "5fa384edd8fe8a2e531349c24ba0c22a9c491ca57ae2ccd8c04c4fbc2d237e9b"
     },
     "docs/DIRECTIONAL_METHODS.md": {
       "bytes": 5849,
@@ -3299,8 +3299,8 @@
       "sha256": "f8bd321a61e5369b469dc84321f421a66a57b7eeea675ff5008b998b51910c7f"
     },
     "docs/force-robustness/results.csv": {
-      "bytes": 75591,
-      "sha256": "42af228e68c78a6d518858a8f638b23a157f05e8bad72184466046dc8ded594d"
+      "bytes": 75110,
+      "sha256": "6e18b744b10668a60d1b3bbe004559b6d9ab81406456114545fa5311320b2d11"
     },
     "docs/force-robustness/summary.json": {
       "bytes": 3765,

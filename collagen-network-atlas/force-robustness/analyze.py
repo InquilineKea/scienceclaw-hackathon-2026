@@ -20,7 +20,7 @@ for family in ['isotropic','modular']:
 d['rows']=rows;Path('checked-results.json').write_text(json.dumps(d,separators=(',',':'))+'\n');Path('summary.json').write_text(json.dumps(summary,indent=2)+'\n')
 keys=['family','seed','angle','pattern','participation','maxShare','spread','patch','damageAtSample','strainAtDamage']
 with Path('results.csv').open('w') as f:
- w=csv.writer(f);w.writerow(keys+[k+'Unresolved' for k in metrics]);w.writerows([[r[k] for k in keys]+[r['unresolved'][k] for k in metrics] for r in rows])
+ w=csv.writer(f,lineterminator="\n");w.writerow(keys+[k+'Unresolved' for k in metrics]);w.writerows([[r[k] for k in keys]+[r['unresolved'][k] for k in metrics] for r in rows])
 labels={'participation':'Effective load-bearing fiber fraction','maxShare':'Largest single-fiber force share','spread':'Damage radius / domain diagonal','patch':'Largest connected damage patch fraction'}
 tr=''
 for s in summary:
