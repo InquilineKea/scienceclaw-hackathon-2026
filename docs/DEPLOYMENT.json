@@ -4,12 +4,14 @@
   "baseline_runs": 450,
   "historical_archive_snapshot": "02b533d81e2de8a05227ab37284f2f553398735c",
   "directional_runs": 252,
+  "aging_runs": 756,
+  "aging_source_sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8",
   "directional_source_sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee",
-  "scope": "Original 450-run baseline plus a separate 252-run directional-strain experiment. Static application and browser-local computation; no server or package installation.",
+  "scope": "Original 450-run baseline, 252-run directional-strain experiment, and separate paired crosslink experiment. Static application and browser-local computation; no server or package installation.",
   "files": {
     "index.html": {
-      "bytes": 16674,
-      "sha256": "70f7a85ed0655aa8c00f3c9e51ba2ff3bee4cc8ff12f90e427a838a160fb150e"
+      "bytes": 16756,
+      "sha256": "cacf29cfdc23facad271035be76493eb1bfda3a5f0bd823a49256fcf09d87c42"
     },
     "style.css": {
       "bytes": 13374,
@@ -90,6 +92,42 @@
     "data/directional.csv": {
       "bytes": 60148,
       "sha256": "a94ed2a72deeaa1597b65f02b1192c9ed2fd8ed22b1922710110bdaf944d0a81"
+    },
+    "aging.html": {
+      "bytes": 9800,
+      "sha256": "052a55b303d858005a2b175d152d745399b947186bb746f575fd08087ff33305"
+    },
+    "aging.css": {
+      "bytes": 1305,
+      "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
+    },
+    "aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "aging-ui.js": {
+      "bytes": 15510,
+      "sha256": "349bfe53dad708927dbc380b4c25c962d20ca7f65c55e865d049d3b6cd8f86d3"
+    },
+    "aging-worker.js": {
+      "bytes": 735,
+      "sha256": "e20e0dc7de2022206b283b9ef1442451b1d70e4cee96b81aad6f08cea49821c3"
+    },
+    "AGING_METHODS.md": {
+      "bytes": 8224,
+      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
+    },
+    "data/aging-data.js": {
+      "bytes": 458679,
+      "sha256": "ddc126b127e648a37f22131f594e9c73440f6d4524e0d8222ad783c449f1f95f"
+    },
+    "data/aging.json": {
+      "bytes": 623269,
+      "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
+    },
+    "data/aging.csv": {
+      "bytes": 149638,
+      "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
     }
   }
 }

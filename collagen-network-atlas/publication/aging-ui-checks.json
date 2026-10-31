@@ -1,0 +1,20 @@
+{
+  "date": "2026-10-31",
+  "browser": "Chromium in-app browser",
+  "local_url": "http://127.0.0.1:8773/aging.html",
+  "status": "passed",
+  "checks": [
+    "Default pair, specimen rendering and strain replay",
+    "Zero connectors: exact paired stiffness, peak, work, failure and damage equality",
+    "Custom disordered seed-29 clustered 8 connectors, stiffness 0.35, rupture 0.15, angle 37: completed paired solve and 12-angle sweep",
+    "Export JSON retains custom settings, original coordinates, paired traces, model hashes and 12 angle rows",
+    "Copy experiment link reports success",
+    "Default clustered disordered seed-17 at 0 degrees: known step-sensitive work ratio and affected mean ratio withheld",
+    "No browser error or warning logs during checked calculations",
+    "Parameterized URL loads all seven selected control values"
+  ],
+  "limits": [
+    "Custom controls have not all been step-refinement checked",
+    "Copy-link action reports success; clipboard contents could not be read back by the browser tool"
+  ]
+}

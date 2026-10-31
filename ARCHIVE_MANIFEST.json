@@ -1,10 +1,10 @@
 {
   "createdAt": "2026-10-31T12:54:28.640114+00:00",
-  "scope": "Published research archives, live static application and separate directional-strain dataset; manifest excludes itself.",
+  "scope": "Published research archives, live static application, separate directional-strain and age-related connector hypothesis datasets; manifest excludes itself.",
   "files": {
     "ARCHIVE_INDEX.md": {
-      "bytes": 5057,
-      "sha256": "afd5a5b6a8a4c1eb482fb7d9ad21f4801a155b28bac10a60db0a8516e46ed10d"
+      "bytes": 5265,
+      "sha256": "55fd6653632f3da9ef92d900a7e28cfd9e4aaf4a8838871dd2274f2bd3ff7a7c"
     },
     "ARCHIVE_PROVENANCE.json": {
       "bytes": 188852,
@@ -1415,8 +1415,8 @@
       "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
     },
     "collagen-network-atlas/index.html": {
-      "bytes": 16674,
-      "sha256": "70f7a85ed0655aa8c00f3c9e51ba2ff3bee4cc8ff12f90e427a838a160fb150e"
+      "bytes": 16756,
+      "sha256": "cacf29cfdc23facad271035be76493eb1bfda3a5f0bd823a49256fcf09d87c42"
     },
     "collagen-network-atlas/make-archive.py": {
       "bytes": 1205,
@@ -1999,12 +1999,12 @@
       "sha256": "d67faff8d33fe2cc776a80f61090a7d99aea23dc053e06c7c71336d0f590c83e"
     },
     "PAGES.md": {
-      "bytes": 4731,
-      "sha256": "d037b5c61e0011ff14e9171bc4be114641c0d3ff08e6bd6d416856255afeddf6"
+      "bytes": 5765,
+      "sha256": "e31da8853ca5eef1ff56199bd997142ca52b4c0a65561d086775182754e4ea94"
     },
     "publish-pages.py": {
-      "bytes": 2071,
-      "sha256": "0ecceef673785bc826c14154fb3d93055ec61ad179a832709a78bbc696307286"
+      "bytes": 2747,
+      "sha256": "dfae9de1fe8b8a9dcaddf6180ccc349ce7d4e6770ebb82272f54083971b33600"
     },
     "collagen-network-atlas/load-guide.js": {
       "bytes": 5783,
@@ -2019,12 +2019,12 @@
       "sha256": "5c29a8aef134048f7f5e88a3101adf39b77cfc3e5946cb9c295a4a606d3b615f"
     },
     "docs/index.html": {
-      "bytes": 16674,
-      "sha256": "70f7a85ed0655aa8c00f3c9e51ba2ff3bee4cc8ff12f90e427a838a160fb150e"
+      "bytes": 16756,
+      "sha256": "cacf29cfdc23facad271035be76493eb1bfda3a5f0bd823a49256fcf09d87c42"
     },
     "docs/DEPLOYMENT.json": {
-      "bytes": 3419,
-      "sha256": "683e52effc67cff0202c130a3048faa571876d89e7f735b1ead2bc3fe49c4c9a"
+      "bytes": 4771,
+      "sha256": "a931012ee8cb98ce12339ca388c04ebb8abe511b1487b3ecc62fef761fdafe48"
     },
     "docs/load-guide.js": {
       "bytes": 5783,
@@ -2249,8 +2249,136 @@
     "large-data-validation/verification.json": {
       "bytes": 2590,
       "sha256": "8a9ec3f2c153a3a560c34cdad3b5bb7612e8114be6dc4b6cdd8660c7a534a0fb"
+    },
+    "collagen-network-atlas/AGING_METHODS.md": {
+      "bytes": 8224,
+      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/AGING_METHODS.md": {
+      "bytes": 8224,
+      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/CHECKS.json": {
+      "bytes": 476,
+      "sha256": "0be42e0aa69f8e9ab0fc8a316562b08cfa217824e5ba77ede86d54f34f59e15c"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/MANIFEST.json": {
+      "bytes": 1442,
+      "sha256": "9ddf7b569a8839165f02148322b5181e118f5152ce41b805a3da1af39f73b7f6"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging-data.js": {
+      "bytes": 458679,
+      "sha256": "ddc126b127e648a37f22131f594e9c73440f6d4524e0d8222ad783c449f1f95f"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging.csv": {
+      "bytes": 149638,
+      "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/aging.json": {
+      "bytes": 623269,
+      "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/benchmark-aging.js": {
+      "bytes": 2729,
+      "sha256": "bf08005898199fe1abea31ddf3c3f7296f698098675da420724993f0c5af1008"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/check-aging.js": {
+      "bytes": 2506,
+      "sha256": "691da0cac5d2c3491c13a530903afa95ea76dd30b4504056062eb5c80ddd26a0"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/directional.js": {
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    "collagen-network-atlas/aging-runs/20261031-connectors-v1/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "collagen-network-atlas/aging-ui.js": {
+      "bytes": 15510,
+      "sha256": "349bfe53dad708927dbc380b4c25c962d20ca7f65c55e865d049d3b6cd8f86d3"
+    },
+    "collagen-network-atlas/aging-worker.js": {
+      "bytes": 735,
+      "sha256": "e20e0dc7de2022206b283b9ef1442451b1d70e4cee96b81aad6f08cea49821c3"
+    },
+    "collagen-network-atlas/aging.css": {
+      "bytes": 1305,
+      "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
+    },
+    "collagen-network-atlas/aging.html": {
+      "bytes": 9800,
+      "sha256": "052a55b303d858005a2b175d152d745399b947186bb746f575fd08087ff33305"
+    },
+    "collagen-network-atlas/aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "collagen-network-atlas/benchmark-aging.js": {
+      "bytes": 2729,
+      "sha256": "bf08005898199fe1abea31ddf3c3f7296f698098675da420724993f0c5af1008"
+    },
+    "collagen-network-atlas/check-aging.js": {
+      "bytes": 2506,
+      "sha256": "691da0cac5d2c3491c13a530903afa95ea76dd30b4504056062eb5c80ddd26a0"
+    },
+    "collagen-network-atlas/data/aging-data.js": {
+      "bytes": 458679,
+      "sha256": "ddc126b127e648a37f22131f594e9c73440f6d4524e0d8222ad783c449f1f95f"
+    },
+    "collagen-network-atlas/data/aging.csv": {
+      "bytes": 149638,
+      "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
+    },
+    "collagen-network-atlas/data/aging.json": {
+      "bytes": 623269,
+      "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
+    },
+    "collagen-network-atlas/publication/aging-ui-checks.json": {
+      "bytes": 1041,
+      "sha256": "8170570cdce3faf8ab215ddaf7f6a9df4e90430911a9a0851f193c45f08a8cb9"
+    },
+    "docs/AGING_METHODS.md": {
+      "bytes": 8224,
+      "sha256": "c494fb21eb040dfb74809718001252a285fc88848825e8bdef1fd7bf41e1623b"
+    },
+    "docs/aging-ui.js": {
+      "bytes": 15510,
+      "sha256": "349bfe53dad708927dbc380b4c25c962d20ca7f65c55e865d049d3b6cd8f86d3"
+    },
+    "docs/aging-worker.js": {
+      "bytes": 735,
+      "sha256": "e20e0dc7de2022206b283b9ef1442451b1d70e4cee96b81aad6f08cea49821c3"
+    },
+    "docs/aging.css": {
+      "bytes": 1305,
+      "sha256": "f9fe5df08e8fe4078cb06a250e78c60f41b69e343ad920ff0892b0fa89477671"
+    },
+    "docs/aging.html": {
+      "bytes": 9800,
+      "sha256": "052a55b303d858005a2b175d152d745399b947186bb746f575fd08087ff33305"
+    },
+    "docs/aging.js": {
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    "docs/data/aging-data.js": {
+      "bytes": 458679,
+      "sha256": "ddc126b127e648a37f22131f594e9c73440f6d4524e0d8222ad783c449f1f95f"
+    },
+    "docs/data/aging.csv": {
+      "bytes": 149638,
+      "sha256": "f3bae306a1afe0410ceaa415b4060da7c6328521477ae0b2d2bca87c78030b69"
+    },
+    "docs/data/aging.json": {
+      "bytes": 623269,
+      "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
     }
   },
   "note": "Updated live workflow files for automatic publication; frozen run files remain unchanged.",
-  "updatedAt": "2026-10-31T16:19:42.614040+00:00"
+  "updatedAt": "2026-10-31T16:33:18.450011+00:00"
 }
