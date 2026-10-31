@@ -1,5 +1,7 @@
 # Fracture Atlas
 
+**[Launch the public interactive explorer](https://inquilinekea.github.io/scienceclaw-hackathon-2026/).** Green arrows show prescribed motion/body-force directions; cyan marks identify held coordinates. Initial fiber orientation is reported separately from loading direction. Public hosting uses the bounded static `/docs` copy described in [PAGES.md](../PAGES.md); the numerical model and frozen archives are unchanged.
+
 Interactive collagen-inspired network comparison with original numerical code, 450 bounded local runs, seed variability, held-out predictor tests, static plots and real simulation-derived animations. No packages or network services are required for the core explorer.
 
 Open `index.html` directly in a modern browser, or serve this folder on loopback:

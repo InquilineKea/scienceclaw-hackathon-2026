@@ -1,5 +1,7 @@
 # ScienceClaw Hackathon 2026: Oxidative Tensegrity
 
+**[Open the interactive Fracture Atlas](https://inquilinekea.github.io/scienceclaw-hackathon-2026/)** — seven architectures, eight loading protocols, explicit support/load diagrams, orientation readouts, animation replay, and custom browser computations. [Hosting and loading details](PAGES.md).
+
 Work from the MIT Media Lab ScienceClaw hackathon (30 Oct – 1 Nov 2026). One question, followed from chemical bonds
 to the heart: **what happens to tissue when oxidative crosslinks pile up on a healthy, enzymatically crosslinked
 collagen matrix?**

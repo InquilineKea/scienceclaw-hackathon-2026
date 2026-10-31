@@ -1,0 +1,65 @@
+{
+  "site": "Fracture Atlas",
+  "model_sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+  "baseline_runs": 450,
+  "historical_archive_snapshot": "02b533d81e2de8a05227ab37284f2f553398735c",
+  "scope": "Browser UI and exact frozen numerical assets. No server, package installation or scientific rerun. Loading annotations are display-only.",
+  "files": {
+    "index.html": {
+      "bytes": 12164,
+      "sha256": "c543c932d7f3487a324fff99a3b64623355c021d765583f4870c18802429f58d"
+    },
+    "style.css": {
+      "bytes": 11893,
+      "sha256": "8b33805914aca42ede32c702014f878fb2af2c470de2a27d8501176d63ea790f"
+    },
+    "app.js": {
+      "bytes": 20543,
+      "sha256": "37ca08684ed57654f167559b4e81393ae989943bde7505a22f33618671b27603"
+    },
+    "model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "load-guide.js": {
+      "bytes": 5783,
+      "sha256": "9735a5df66d437fc31d7752d5a7bcff9d084805f09145226559522bf2b947eca"
+    },
+    "worker.js": {
+      "bytes": 298,
+      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+    },
+    "METHODS.md": {
+      "bytes": 15339,
+      "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
+    },
+    "EVIDENCE.md": {
+      "bytes": 5196,
+      "sha256": "c5690ab4a8eb5a35144ee566b815bce97f6063671026e055cf9a38fce460ab04"
+    },
+    "data/benchmark.js": {
+      "bytes": 577593,
+      "sha256": "53e5785f3a3ef962a4c700e13c7c4aa688c3e58178afe9a764af2f03a84a97af"
+    },
+    "data/replays.js": {
+      "bytes": 8683031,
+      "sha256": "d79bfe429b45474b730195341975214d92fabad5301d05e79b4241fb4ca64c46"
+    },
+    "data/results.json": {
+      "bytes": 824546,
+      "sha256": "b3c01f927ed40d9467f8a2fe599382a28d9bbcd5bfb6224629a6b6dad17e8f0f"
+    },
+    "data/summary.csv": {
+      "bytes": 201413,
+      "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
+    },
+    "data/curves.csv": {
+      "bytes": 4637534,
+      "sha256": "be25548e5eab953bf8b569a31171e0d258e6cae591937efd37daf76a8d899ec2"
+    },
+    "figures/benchmark.svg": {
+      "bytes": 9610,
+      "sha256": "ac72f272400c1d6008e18209dbfe433733965829beb9d1287f39492a024f9b19"
+    }
+  }
+}
