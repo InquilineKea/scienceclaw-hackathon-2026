@@ -1,0 +1,10 @@
+{
+  "input": "outputs/collagen-transition-h100/prepared-v4/transport_v4.py",
+  "bytes": 46631,
+  "inputSHA256": "c9fe875f8403a6622956d8abba5850b5715815c037b546de0d12337e2a2cdc9d",
+  "reconstructedBootstrapSHA256": "5127908146e17d4e9026e20f31e2de92b50876cb69f031d14c8e26d9eceaa7c0",
+  "dependencyObject": "cloud_job_v2.py",
+  "dependencySHA256": "08a2a50030982187e5080ec64a8d6f36c4a8ab276a0641080cea7b9c898dd86d",
+  "purpose": "Fit the provider injected-file request limit without overwriting a bucket object",
+  "sourcePatchOperations": 1593
+}

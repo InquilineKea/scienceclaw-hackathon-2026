@@ -1,0 +1,14 @@
+{
+  "status": "complete",
+  "kind": "archive",
+  "provenance": {
+    "study": "collagen-transition-atlas",
+    "profile": "commission",
+    "validation": "CHECKS.json and per-sample convergence flags; uncalibrated hypotheses",
+    "convergence": {
+      "samples": 400,
+      "converged": 398
+    },
+    "source": "RUN_CONTEXT.json"
+  }
+}

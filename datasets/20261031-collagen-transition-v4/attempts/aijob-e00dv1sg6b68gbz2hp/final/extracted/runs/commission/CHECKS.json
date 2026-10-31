@@ -1,0 +1,59 @@
+[
+  {
+    "name": "Analytic triangular lattice shear modulus",
+    "passed": true,
+    "measured": 0.4330127018753459,
+    "analytic": 0.4330127018922193
+  },
+  {
+    "name": "Force finite difference",
+    "passed": true,
+    "finiteDifference": 0.050998159526876315,
+    "autograd": 0.050998159520063036
+  },
+  {
+    "name": "Rigid rotation and translation invariance",
+    "passed": true
+  },
+  {
+    "name": "Zero sliding mobility leaves rest lengths unchanged",
+    "passed": true
+  },
+  {
+    "name": "Plastic update dissipates energy",
+    "passed": true,
+    "dissipated": 0.020737579195872297
+  },
+  {
+    "name": "Zero inclusion control has no contact energy",
+    "passed": true
+  },
+  {
+    "name": "Nonzero contact force finite difference",
+    "passed": true,
+    "finiteDifference": 5.410988540788253,
+    "autograd": 5.410988539961134
+  },
+  {
+    "name": "Zero-feedback control has one stable equilibrium",
+    "passed": true
+  },
+  {
+    "name": "Feedback stability evaluated at every equilibrium",
+    "passed": true
+  },
+  {
+    "name": "Feedback records serialize as strict JSON",
+    "passed": true
+  },
+  {
+    "name": "Transfer-matrix folded fractions remain bounded",
+    "passed": true
+  },
+  {
+    "name": "CPU/GPU energy agreement",
+    "passed": true,
+    "CPU": 0.002699658828892062,
+    "selectedDevice": 0.0026996588288920502
+  }
+]

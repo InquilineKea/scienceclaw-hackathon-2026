@@ -1,0 +1,13 @@
+{
+  "status": "not_run",
+  "reason": "No matched force-field-validated Hyp/crosslink/hydration ensemble or adequately sampled melting protocol exists in this new run. A short hot trajectory cannot determine an equilibrium melting point.",
+  "required": [
+    "Matched triple-helix sequences and termini",
+    "Verified Hyp and covalent crosslink parameters and stereochemistry",
+    "Explicit hydration definition and matched controls",
+    "Multiple independent replicas and reversible or enhanced sampling",
+    "Native contacts, hydrogen bonds and helix observables with block uncertainty",
+    "Heating/cooling rate and finite-length dependence",
+    "Compare avian and human material only under matched assay conditions"
+  ]
+}

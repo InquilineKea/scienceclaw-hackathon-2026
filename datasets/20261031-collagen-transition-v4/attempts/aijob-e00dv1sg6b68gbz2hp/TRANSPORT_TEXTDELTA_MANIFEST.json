@@ -1,0 +1,11 @@
+{
+  "input": "outputs/collagen-transition-h100/prepared-v4/transport_v4c.py",
+  "bytes": 9954,
+  "inputSHA256": "1fc6b68ca59e01759b24cd8d7b5746a2c06e17b30d9f8aecdbb92eae56757f8a",
+  "reconstructedBootstrapSHA256": "5127908146e17d4e9026e20f31e2de92b50876cb69f031d14c8e26d9eceaa7c0",
+  "sourceZipSHA256": "c42ab12d1b8e3ce68d286cf9642e4ccc1a3646300bd78a2ada897b0e788ac1d5",
+  "dependencyObject": "cloud_job_v2.py",
+  "dependencySHA256": "08a2a50030982187e5080ec64a8d6f36c4a8ab276a0641080cea7b9c898dd86d",
+  "encoding": "base85/gzip text deltas plus reproducible ZIP; both reconstructed hashes checked before execution",
+  "localDataOnlyReconstruction": "byte-identical canonical source ZIP"
+}

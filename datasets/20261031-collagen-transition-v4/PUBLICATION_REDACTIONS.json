@@ -1,0 +1,53 @@
+[
+  {
+    "file": "attempts/aijob-e00dv1sg6b68gbz2hp/NEBIUS_RUN_RECEIPT.json",
+    "originalSHA256": "6ee94b6c8895c03a4b7a87af99637372686159c6320ef6831d4f8744d5f21f8b",
+    "publishedSHA256": "6ee94b6c8895c03a4b7a87af99637372686159c6320ef6831d4f8744d5f21f8b",
+    "publication": "Private console/bucket identifiers omitted from public launch receipt; scientific job identity and costs retained."
+  },
+  {
+    "file": "attempts/aijob-e00dv1sg6b68gbz2hp/console-log.txt",
+    "originalSHA256": "e542703e5bde03c20167924521d7354643801bf8fe034dff2187dcc1ae73d40e",
+    "publishedSHA256": "e542703e5bde03c20167924521d7354643801bf8fe034dff2187dcc1ae73d40e",
+    "publication": "Provider UI navigation removed; private resource IDs redacted. Workload stdout/stderr in recovered archives is unchanged."
+  },
+  {
+    "file": "attempts/aijob-e00dv1sg6b68gbz2hp/job-completed.jpg",
+    "originalSHA256": "4f472cb29b850d0dd7d0c4863dbdcff34245ce0dd3a98497d97aa7f73d955cd3",
+    "publication": "Private provider UI screenshot retained locally; may contain unrelated account navigation. All scientific output preserved separately."
+  },
+  {
+    "file": "attempts/aijob-e00ngbb7wmy88429pa/NEBIUS_RUN_RECEIPT.json",
+    "originalSHA256": "c6151b6de5e1601407da3d03c7d4348eb15e8c700c3c544e590312785641b134",
+    "publishedSHA256": "392ca822b8fc43e25925907cf09ba5a639a53d38cb11ddf29b6b42a8e712c937",
+    "publication": "Private console/bucket identifiers omitted from public launch receipt; scientific job identity and costs retained."
+  },
+  {
+    "file": "attempts/aijob-e00ngbb7wmy88429pa/console-log.txt",
+    "originalSHA256": "976b9c64d1d72739c3c79cbfaf4986893c1924e61315a3eea5b10dd25e1a6d06",
+    "publishedSHA256": "3fe74b2b119706ef1662390ca3d9d1413e6577c8d0c1e49eae69a7cf72567ded",
+    "publication": "Provider UI navigation removed; private resource IDs redacted. Workload stdout/stderr in recovered archives is unchanged."
+  },
+  {
+    "file": "attempts/aijob-e00ngbb7wmy88429pa/job-failed.jpg",
+    "originalSHA256": "a31510cdf704a72062484e24be48794340c52619c9259d6d8484e5f8a3b865d5",
+    "publication": "Private provider UI screenshot retained locally; may contain unrelated account navigation. All scientific output preserved separately."
+  },
+  {
+    "file": "attempts/aijob-e00rxabfzdn5yamng9/NEBIUS_RUN_RECEIPT.json",
+    "originalSHA256": "4545e65bed0feab528a350e10bfebd2429593b6bdd10927f26aad6e50023ef2a",
+    "publishedSHA256": "4545e65bed0feab528a350e10bfebd2429593b6bdd10927f26aad6e50023ef2a",
+    "publication": "Private console/bucket identifiers omitted from public launch receipt; scientific job identity and costs retained."
+  },
+  {
+    "file": "attempts/aijob-e00rxabfzdn5yamng9/console-log.txt",
+    "originalSHA256": "3be93e6a53db11cf995d973cc793dfc018ed75c63e51f53a5637b885173980ed",
+    "publishedSHA256": "1ece7c759032482b1b690e2f7c6ded0e814b05d9193a3433d5baee2bec4c54e0",
+    "publication": "Provider UI navigation removed; private resource IDs redacted. Workload stdout/stderr in recovered archives is unchanged."
+  },
+  {
+    "file": "attempts/aijob-e00rxabfzdn5yamng9/job-failed.jpg",
+    "originalSHA256": "6d2d18e44df61f4695181d51ba51571882bc8d36f40afeb28299b27da2475cda",
+    "publication": "Private provider UI screenshot retained locally; may contain unrelated account navigation. All scientific output preserved separately."
+  }
+]

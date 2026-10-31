@@ -1,0 +1,50 @@
+{
+  "CHECKS.json": {
+    "bytes": 1363,
+    "sha256": "a444342037b77b261154c34a4ba12804e59efbd544d0865019992b9b01861520"
+  },
+  "FINISHED.json": {
+    "bytes": 331,
+    "sha256": "c113fa341d7dd58eaf9bda5cb76d240757da259526765b22f5e2598d5534acc1"
+  },
+  "METHODS.md": {
+    "bytes": 7556,
+    "sha256": "21fee1d673505d6960e1578610e1a56d3e34498a8ffd0bed3b5957f725c0e815"
+  },
+  "RESULTS.json": {
+    "bytes": 751,
+    "sha256": "ace90b4437947f1d904988492715098176fd76c39cf5fbea09a62384a2f42e65"
+  },
+  "RUN_CONTEXT.json": {
+    "bytes": 827,
+    "sha256": "253c8e10b2cae6076901a17f62c70167aff51f73242fa25994bfb4c4e4dd3193"
+  },
+  "SECURITY_REVIEW.md": {
+    "bytes": 7451,
+    "sha256": "2099befa046637fee16819443e846a84e9f848d26933ad2727ae539f58b09452"
+  },
+  "core_network.py": {
+    "bytes": 12229,
+    "sha256": "a781e092c608cded0350befb4d9d7786359d8287780c9703e8f087452a1f7dc6"
+  },
+  "plot_results.py": {
+    "bytes": 12174,
+    "sha256": "71c1511809541991675880b30725708c689e5ed295bb03775195463df4cd394c"
+  },
+  "progress.jsonl": {
+    "bytes": 143,
+    "sha256": "c145dc3d9554cde27ce40a9dc2958ad652bdac57411d3c0a9a2a97b5ddbee474"
+  },
+  "run_transitions.py": {
+    "bytes": 25575,
+    "sha256": "d1a4953377bb6f3c402e69b77a65a258fce4d03cd312ccaa48bfeac5d8cdc92e"
+  },
+  "sandbox_exec.py": {
+    "bytes": 1594,
+    "sha256": "fd069983e8c21bcfa2c364563b5db91b6490a259e5f729b8834cd2deda502c77"
+  },
+  "transitions.py": {
+    "bytes": 12362,
+    "sha256": "1d81182614bb979dc65291fcb797ee9f8bdf6ca6722d19cd56e30bd6715dfc6e"
+  }
+}

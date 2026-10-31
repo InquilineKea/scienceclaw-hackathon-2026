@@ -1,0 +1,14 @@
+WARNING: The directory '/tmp/transition-cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing ./wheels/matplotlib-3.10.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Processing ./wheels/pillow-11.3.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Processing ./wheels/contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+Processing ./wheels/cycler-0.12.1-py3-none-any.whl
+Processing ./wheels/fonttools-4.60.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Processing ./wheels/kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+Processing ./wheels/packaging-25.0-py3-none-any.whl
+Processing ./wheels/pyparsing-3.2.5-py3-none-any.whl
+Processing ./wheels/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+Processing ./wheels/six-1.17.0-py2.py3-none-any.whl
+Installing collected packages: six, python-dateutil, pyparsing, pillow, packaging, matplotlib, kiwisolver, fonttools, cycler, contourpy
+Successfully installed contourpy-1.3.3 cycler-0.12.1 fonttools-4.60.1 kiwisolver-1.4.9 matplotlib-3.10.7 packaging-25.0 pillow-11.3.0 pyparsing-3.2.5 python-dateutil-2.9.0.post0 six-1.17.0
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning.

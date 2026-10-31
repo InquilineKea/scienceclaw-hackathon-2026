@@ -1,0 +1,74 @@
+{
+  "CHECKS.json": {
+    "bytes": 1120,
+    "sha256": "18e28e2d07e87386be3bcd37cd6d89ee3168a158fa2c2c88000287bea6939dd1"
+  },
+  "FAILED.json": {
+    "bytes": 2560,
+    "sha256": "373afec2d63d86429b9e12aad85304873a99e9c10214b4ceeccd5274298bc406"
+  },
+  "METHODS.md": {
+    "bytes": 5988,
+    "sha256": "a7281d89956c712d9953b1b91511e7c44a449c9f972df8f76076f4314fce3a32"
+  },
+  "RUN_CONTEXT.json": {
+    "bytes": 832,
+    "sha256": "cc54b2484465cb1820ce866b0691e0dab8b5d4a00fdafd003f1fa57f5451e7b6"
+  },
+  "SECURITY_REVIEW.md": {
+    "bytes": 5517,
+    "sha256": "e48e0f75bbc9dc37c1f533249af50f5088285895606f5825cc8198c258650d88"
+  },
+  "core_network.py": {
+    "bytes": 12229,
+    "sha256": "a781e092c608cded0350befb4d9d7786359d8287780c9703e8f087452a1f7dc6"
+  },
+  "data/inclusions.json": {
+    "bytes": 280278,
+    "sha256": "cab3d66da2c76c77b06b06ed204e7ccaad265e65918aabe1e1e7deab8175e65a"
+  },
+  "data/plastic-memory-matrix.json": {
+    "bytes": 280838,
+    "sha256": "b44272c0bf916b337c3aba5af732730fef6dccca86056b30ac8f75e4d370ba85"
+  },
+  "data/rigidity.json": {
+    "bytes": 273191,
+    "sha256": "c967951a622d154803f272e75af6611ae036f6a798b0043f6586faa5f9381951"
+  },
+  "data/sliding-failure.json": {
+    "bytes": 502991,
+    "sha256": "b7c61f034cf3e39773b1ac56206f9c6a1f1f2d67c98534f3f23d59e458666794"
+  },
+  "data/sliding-memory.json": {
+    "bytes": 674238,
+    "sha256": "d3dd363a2c119f15ede3049ffd9c20e47f4868a31b6b761b271578fbd3cdb033"
+  },
+  "data/stiffness-percolation.json": {
+    "bytes": 56477,
+    "sha256": "8a2968cdbf1c4810826ed618ef8508c5dc598c7726b7237cadcebd970eb0e7c6"
+  },
+  "data/targeted-damage.json": {
+    "bytes": 254237,
+    "sha256": "1bbd400390e2c8395c18278ad93310981597e0275b19eb81d3f279de2cce94cf"
+  },
+  "plot_results.py": {
+    "bytes": 11874,
+    "sha256": "f646b45306c66fefbb0c8742a8b5117c7393bec6c0c58ebba02ce494cdc389bd"
+  },
+  "progress.jsonl": {
+    "bytes": 698,
+    "sha256": "1188a2358ff31f83225714b0c86b9d9b0c08c484a3276fe38b87b341de241252"
+  },
+  "run_transitions.py": {
+    "bytes": 24051,
+    "sha256": "f0b7789269d59979ae8ebadf689658d72a6e875e9b75c76025e6737ec8229c90"
+  },
+  "sandbox_exec.py": {
+    "bytes": 1594,
+    "sha256": "fd069983e8c21bcfa2c364563b5db91b6490a259e5f729b8834cd2deda502c77"
+  },
+  "transitions.py": {
+    "bytes": 9175,
+    "sha256": "4b75114d2587f35c9ab939169ff0b42ba88d0e16afb38ef6c1775ef9926def3b"
+  }
+}

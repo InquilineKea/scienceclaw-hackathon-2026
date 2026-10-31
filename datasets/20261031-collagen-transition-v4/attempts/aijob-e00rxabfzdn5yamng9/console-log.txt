@@ -1,0 +1,244 @@
+- generic: Time
+- generic: Message
+- text: 31 Oct 13:38:14
+- generic: ".994"
+- generic: "CHECKPOINT {\"object\": \"collagen-transition-v2-3db564b466e3-final.zip\", \"bytes\": 436686, \"sha256\": \"2c9807a319d268105f4001eafb27c98dd11c0060cf90ca6bc21260541d348826\", \"status\": \"failed\", \"elapsedSeconds\": 503.7546925544739, \"steps\": [{\"name\": \"install-reviewed-wheels\", \"returncode\": 0, \"elapsedSeconds\": 1.000765323638916}, {\"name\": \"numerical-checks\", \"returncode\": 0, \"elapsedSeconds\": 4.001155138015747}, {\"name\": \"commission\", \"returncode\": 1, \"elapsedSeconds\": 498.0883312225342}]}"
+- text: 31 Oct 13:38:14
+- generic: ".796"
+- text: 31 Oct 13:38:14
+- generic: ".796"
+- generic: "RuntimeError: commission failed: 1"
+- text: 31 Oct 13:38:14
+- generic: ".796"
+- generic: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- text: 31 Oct 13:38:14
+- generic: ".796"
+- generic: "if rc:raise RuntimeError(name+' failed: '+str(rc))"
+- text: 31 Oct 13:38:14
+- generic: ".796"
+- generic: File "/output/cloud_job_v2.py", line 66, in run_step
+- text: 31 Oct 13:38:14
+- generic: ".796"
+- generic: run_step('commission',[sys.executable,'-I',wrapper,runner,'--out',str(runs/'commission'),'--profile','commission','--device','cuda','--minutes','12'],780)
+- text: 31 Oct 13:38:14
+- generic: ".796"
+- generic: File "/output/cloud_job_v2.py", line 90, in <module>
+- text: 31 Oct 13:38:14
+- generic: ".796"
+- generic: "Traceback (most recent call last):"
+- text: 31 Oct 13:38:14
+- generic: ".726"
+- generic: "{\"name\": \"commission\", \"returncode\": 1, \"elapsedSeconds\": 498.0883312225342}"
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: "TypeError: Object of type bool is not JSON serializable"
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: "raise TypeError(f'Object of type {o.__class__.__name__} '"
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/encoder.py", line 180, in default
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: ^^^^^^^^^^^
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: o = _default(o)
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/encoder.py", line 439, in _iterencode
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: yield from chunks
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: yield from chunks
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: yield from chunks
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: yield from chunks
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/encoder.py", line 326, in _iterencode_list
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: yield from chunks
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/encoder.py", line 406, in _iterencode_dict
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: yield from _iterencode_dict(o, _current_indent_level)
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/encoder.py", line 432, in _iterencode
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: ^^^^^^^^^^^^
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: chunks = list(chunks)
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/encoder.py", line 202, in encode
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: ^^^^^^^^^^^
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: "**kw).encode(obj)"
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/opt/conda/lib/python3.11/json/__init__.py", line 238, in dumps
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: p.write_text(json.dumps(data,indent=2,allow_nan=False)+'\n')
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/tmp/collagen-transition-job-v2/source/run_transitions.py", line 18, in save
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: "save('data/lox-feedback.json',{'equilibria':records,'up':up,'down':down,'interpretation':'Hypothetical three-stage saturating feedback. Bistability requires two stable equilibria and an intervening unstable equilibrium; gain alone is not sufficient.'})"
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/tmp/collagen-transition-job-v2/source/run_transitions.py", line 267, in feedback_and_thermal
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: rigidity(args.device,args.profile);sliding_and_memory(args.device,args.profile);sliding_failure(args.device,args.profile);percolation(args.device,args.profile);inclusions(args.device,args.profile);feedback_and_thermal(args.device)
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/tmp/collagen-transition-job-v2/source/run_transitions.py", line 292, in main
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: ^^^^^^
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: if __name__=='__main__':main()
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: File "/tmp/collagen-transition-job-v2/source/run_transitions.py", line 315, in <module>
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: "Traceback (most recent call last):"
+- text: 31 Oct 13:38:13
+- generic: ".726"
+- generic: "{\"elapsedSeconds\": 495.647, \"event\": \"failed\", \"error\": \"Object of type bool is not JSON serializable\"}"
+- text: 31 Oct 13:38:11
+- generic: ".725"
+- generic: "{\"elapsedSeconds\": 493.352, \"event\": \"inclusions_done\", \"cases\": 3}"
+- text: 31 Oct 13:37:23
+- generic: ".716"
+- generic: "{\"elapsedSeconds\": 445.957, \"event\": \"targeted_damage_done\", \"cases\": 2}"
+- text: 31 Oct 13:36:43
+- generic: ".709"
+- generic: "{\"elapsedSeconds\": 405.779, \"event\": \"stiffness_percolation_done\", \"cases\": 14}"
+- text: 31 Oct 13:36:36
+- generic: ".709"
+- generic: "{\"elapsedSeconds\": 398.301, \"event\": \"sliding_failure_done\", \"cases\": 3}"
+- text: 31 Oct 13:34:58
+- generic: ".692"
+- generic: "{\"elapsedSeconds\": 300.299, \"event\": \"memory_matrix_done\", \"cases\": 8}"
+- text: 31 Oct 13:32:57
+- generic: ".671"
+- generic: "{\"elapsedSeconds\": 179.695, \"event\": \"sliding_memory_done\", \"cases\": 3}"
+- text: 31 Oct 13:30:27
+- generic: ".643"
+- generic: "{\"elapsedSeconds\": 29.625, \"event\": \"rigidity_group\", \"W\": 6, \"kappa\": 0.0001, \"cases\": 3}"
+- text: 31 Oct 13:29:59
+- generic: ".638"
+- generic: "{\"elapsedSeconds\": 1.499, \"event\": \"checks_passed\", \"checks\": 10}"
+- text: 31 Oct 13:29:57
+- generic: ".638"
+- generic: "ISOLATION verified: unprivileged worker; IPv4/IPv6 sockets denied; minimal environment"
+- text: 31 Oct 13:29:56
+- generic: ".637"
+- generic: "CHECKPOINT {\"object\": \"collagen-transition-v2-3db564b466e3-checks.zip\", \"bytes\": 134563, \"sha256\": \"9fc931759e3c56408634d878c46620d7f290fa6f31bef121a14da3ff082d8d49\", \"status\": \"checks_passed\", \"elapsedSeconds\": 5.438438653945923, \"steps\": [{\"name\": \"install-reviewed-wheels\", \"returncode\": 0, \"elapsedSeconds\": 1.000765323638916}, {\"name\": \"numerical-checks\", \"returncode\": 0, \"elapsedSeconds\": 4.001155138015747}]}"
+- text: 31 Oct 13:29:56
+- generic: ".480"
+- generic: "{\"name\": \"numerical-checks\", \"returncode\": 0, \"elapsedSeconds\": 4.001155138015747}"
+- text: 31 Oct 13:29:55
+- generic: ".480"
+- generic: "{\"elapsedSeconds\": 1.659, \"event\": \"finished\", \"samples\": 0, \"converged\": 0}"
+- text: 31 Oct 13:29:55
+- generic: ".480"
+- generic: "{\"elapsedSeconds\": 1.659, \"event\": \"checks_passed\", \"checks\": 10}"
+- text: 31 Oct 13:29:53
+- generic: ".480"
+- generic: "ISOLATION verified: unprivileged worker; IPv4/IPv6 sockets denied; minimal environment"
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: "{\"name\": \"install-reviewed-wheels\", \"returncode\": 0, \"elapsedSeconds\": 1.000765323638916}"
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: "WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager, possibly rendering your system unusable.It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv. Use the --root-user-action option if you know what you are doing and want to suppress this warning."
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Successfully installed contourpy-1.3.3 cycler-0.12.1 fonttools-4.60.1 kiwisolver-1.4.9 matplotlib-3.10.7 packaging-25.0 pillow-11.3.0 pyparsing-3.2.5 python-dateutil-2.9.0.post0 six-1.17.0
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: "Installing collected packages: six, python-dateutil, pyparsing, pillow, packaging, matplotlib, kiwisolver, fonttools, cycler, contourpy"
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/six-1.17.0-py2.py3-none-any.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/python_dateutil-2.9.0.post0-py2.py3-none-any.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/pyparsing-3.2.5-py3-none-any.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/packaging-25.0-py3-none-any.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/kiwisolver-1.4.9-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/fonttools-4.60.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/cycler-0.12.1-py3-none-any.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/pillow-11.3.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: Processing ./wheels/matplotlib-3.10.7-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl
+- text: 31 Oct 13:29:52
+- generic: ".479"
+- generic: "WARNING: The directory '/tmp/transition-cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag."
+- text: 31 Oct 13:29:51
+- generic: ".081"
+- generic: "STORAGE_PREFLIGHT {\"object\": \"storage-preflight-v2-3db564b466e3.json\", \"bytes\": 125, \"sha256\": \"9710d9535be8abcccd1127b23f3498fcff5f8c45fa8d7a9166b71c334630c5fc\"}"
+- text: 31 Oct 13:29:49
+- generic: ".903"
+- generic: Starting workload container
+- text: 31 Oct 13:27:39
+- generic: ".857"
+- generic: Downloading container image
+- text: 31 Oct 13:27:25
+- generic: ".947"
+- generic: Workload initialization started
+- text: 31 Oct 13:26:03
+- generic: ".505"
+- generic: Provisioning resources for the workload

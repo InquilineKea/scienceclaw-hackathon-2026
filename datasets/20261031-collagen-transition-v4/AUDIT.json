@@ -1,0 +1,670 @@
+{
+  "manifestSHA256": "4f58b6963eb7cc31441d01541aa63f30a7989c0d71172be9d5e8ba3dacaf5227",
+  "manifestFiles": 42,
+  "integrityErrors": [],
+  "checks": [
+    {
+      "name": "Analytic triangular lattice shear modulus",
+      "passed": true,
+      "measured": 0.4330127018753459,
+      "analytic": 0.4330127018922193
+    },
+    {
+      "name": "Force finite difference",
+      "passed": true,
+      "finiteDifference": 0.050998159526876315,
+      "autograd": 0.050998159520063036
+    },
+    {
+      "name": "Rigid rotation and translation invariance",
+      "passed": true
+    },
+    {
+      "name": "Zero sliding mobility leaves rest lengths unchanged",
+      "passed": true
+    },
+    {
+      "name": "Plastic update dissipates energy",
+      "passed": true,
+      "dissipated": 0.020737579195872297
+    },
+    {
+      "name": "Zero inclusion control has no contact energy",
+      "passed": true
+    },
+    {
+      "name": "Nonzero contact force finite difference",
+      "passed": true,
+      "finiteDifference": 5.410988540788253,
+      "autograd": 5.410988539961134
+    },
+    {
+      "name": "Zero-feedback control has one stable equilibrium",
+      "passed": true
+    },
+    {
+      "name": "Feedback stability evaluated at every equilibrium",
+      "passed": true
+    },
+    {
+      "name": "Feedback records serialize as strict JSON",
+      "passed": true
+    },
+    {
+      "name": "Transfer-matrix folded fractions remain bounded",
+      "passed": true
+    },
+    {
+      "name": "CPU/GPU energy agreement",
+      "passed": true,
+      "CPU": 0.002699658828892062,
+      "selectedDevice": 0.0026996588288920502
+    }
+  ],
+  "context": {
+    "profile": "commission",
+    "device": "cuda",
+    "runtimeMinutesLimit": 38.0,
+    "python": "3.11.11 | packaged by conda-forge | (main, Dec  5 2024, 14:17:24) [GCC 13.3.0]",
+    "torch": "2.6.0+cu124",
+    "numpy": "2.2.2",
+    "cudaRuntime": "12.4",
+    "gpu": "NVIDIA H100 80GB HBM3",
+    "config": {
+      "tol": 3e-08,
+      "rounds": 5,
+      "iters": 200
+    },
+    "sourceSHA256": {
+      "plot_results.py": "71c1511809541991675880b30725708c689e5ed295bb03775195463df4cd394c",
+      "run_transitions.py": "d1a4953377bb6f3c402e69b77a65a258fce4d03cd312ccaa48bfeac5d8cdc92e",
+      "transitions.py": "1d81182614bb979dc65291fcb797ee9f8bdf6ca6722d19cd56e30bd6715dfc6e",
+      "sandbox_exec.py": "fd069983e8c21bcfa2c364563b5db91b6490a259e5f729b8834cd2deda502c77",
+      "core_network.py": "a781e092c608cded0350befb4d9d7786359d8287780c9703e8f087452a1f7dc6"
+    }
+  },
+  "suites": {
+    "inclusions": {
+      "cases": 3,
+      "samples": 30,
+      "convergedSamples": 28,
+      "fullyConvergedRecordedPaths": 1,
+      "maxResidual": 0.0182046168752882
+    },
+    "plastic-memory-matrix": {
+      "cases": 8,
+      "samples": 144,
+      "convergedSamples": 144,
+      "fullyConvergedRecordedPaths": 8,
+      "maxResidual": 2.692319668595733e-08
+    },
+    "rigidity": {
+      "cases": 3,
+      "samples": 27,
+      "convergedSamples": 27,
+      "fullyConvergedRecordedPaths": 3,
+      "maxResidual": 1.0725621563264457e-08
+    },
+    "sliding-failure": {
+      "cases": 3,
+      "samples": 54,
+      "convergedSamples": 54,
+      "fullyConvergedRecordedPaths": 3,
+      "maxResidual": 2.99787756979919e-08
+    },
+    "sliding-memory": {
+      "cases": 3,
+      "samples": 75,
+      "convergedSamples": 75,
+      "fullyConvergedRecordedPaths": 3,
+      "maxResidual": 2.9424300018116912e-08
+    },
+    "stiffness-percolation": {
+      "cases": 14,
+      "samples": 42,
+      "convergedSamples": 42,
+      "fullyConvergedRecordedPaths": 14,
+      "maxResidual": 1.6764262317881884e-12
+    },
+    "targeted-damage": {
+      "cases": 2,
+      "samples": 28,
+      "convergedSamples": 28,
+      "fullyConvergedRecordedPaths": 2,
+      "maxResidual": 2.7864800425950827e-08
+    }
+  },
+  "caveats": [
+    "Only recorded protocol samples are included in convergence counts; internal optimizer iterates and intermediate plastic-hold steps are not a trajectory archive.",
+    "A later converged point after an unconverged path-dependent update is insufficient to validate the entire history. Fully recorded converged paths are the conservative comparison subset.",
+    "Residual-strain root estimates have finite bisection resolution; the final zero-stress residual itself was not archived.",
+    "Prescribed microscopic rupture thresholds, plastic mobility and disk contact laws are model assumptions.",
+    "No atomistic thermal melting MD was run."
+  ],
+  "rigidity": [
+    {
+      "W": 6,
+      "seed": 17,
+      "z": 3.0,
+      "kappa": 0.0001,
+      "realizedZ": 3.0,
+      "graphLambda2": 0.19765855598532983,
+      "validSamples": 9,
+      "sampleCount": 9,
+      "peakNonaffinityStrain": 0.4,
+      "peakIsInterior": true,
+      "initialTangent": 3.94391763502948e-05,
+      "finalTangent": 0.22394435196336443
+    },
+    {
+      "W": 6,
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "realizedZ": 3.611111111111111,
+      "graphLambda2": 0.39316244162502956,
+      "validSamples": 9,
+      "sampleCount": 9,
+      "peakNonaffinityStrain": 0.2,
+      "peakIsInterior": true,
+      "initialTangent": 0.0026495448827650687,
+      "finalTangent": 0.2248355037851852
+    },
+    {
+      "W": 6,
+      "seed": 17,
+      "z": 4.2,
+      "kappa": 0.0001,
+      "realizedZ": 4.222222222222222,
+      "graphLambda2": 0.4289740298442312,
+      "validSamples": 9,
+      "sampleCount": 9,
+      "peakNonaffinityStrain": 0.30000000000000004,
+      "peakIsInterior": true,
+      "initialTangent": 0.07668673813541146,
+      "finalTangent": 0.3823349216060477
+    }
+  ],
+  "slidingMemory": [
+    {
+      "seed": 17,
+      "z": 3.4,
+      "kappa": 0.0001,
+      "locking": 0,
+      "mobility": 2.0,
+      "allRecordedLoadHoldConverged": true,
+      "stressRetainedAfterHold": 0.25559978457640997,
+      "rawStressRetention": 0.25559978457640997,
+      "plasticDissipation": 0.09948983114937929,
+      "residualStrainEstimate": 0.13081741333007812,
+      "residualRootConverged": true
+    },
+    {
+      "seed": 17,
+      "z": 3.4,
+      "kappa": 0.0001,
+      "locking": 0.5,
+      "mobility": 0.09957413673572789,
+      "allRecordedLoadHoldConverged": true,
+      "stressRetainedAfterHold": 0.8640626619843682,
+      "rawStressRetention": 0.8640626619843682,
+      "plasticDissipation": 0.026480996443613472,
+      "residualStrainEstimate": 0.021770477294921875,
+      "residualRootConverged": true
+    },
+    {
+      "seed": 17,
+      "z": 3.4,
+      "kappa": 0.0001,
+      "locking": 1,
+      "mobility": 0.004957504353332717,
+      "allRecordedLoadHoldConverged": true,
+      "stressRetainedAfterHold": 0.9924912462717758,
+      "rawStressRetention": 0.9924912462717758,
+      "plasticDissipation": 0.0015512759199896725,
+      "residualStrainEstimate": 0.060131072998046875,
+      "residualRootConverged": true
+    }
+  ],
+  "matchedInitialControls": [
+    {
+      "seed": 17,
+      "identicalInitialGraphs": true,
+      "maximumPreHoldStressDifference": 0.0,
+      "lockingCases": 3
+    }
+  ],
+  "slidingFailure": [
+    {
+      "seed": 17,
+      "z": 3.4,
+      "kappa": 0.0001,
+      "locking": 0,
+      "mobility": 2.0,
+      "rupture": 0.2,
+      "fullyConvergedRecordedPath": true,
+      "rawStrainAt20PercentBondLoss": null,
+      "failureCensored": true,
+      "finalBrokenFraction": 0.0,
+      "maxValidTension": 0.05221447893995452
+    },
+    {
+      "seed": 17,
+      "z": 3.4,
+      "kappa": 0.0001,
+      "locking": 0.5,
+      "mobility": 0.09957413673572789,
+      "rupture": 0.2,
+      "fullyConvergedRecordedPath": true,
+      "rawStrainAt20PercentBondLoss": null,
+      "failureCensored": true,
+      "finalBrokenFraction": 0.049180327868852514,
+      "maxValidTension": 0.044849753917969186
+    },
+    {
+      "seed": 17,
+      "z": 3.4,
+      "kappa": 0.0001,
+      "locking": 1,
+      "mobility": 0.004957504353332717,
+      "rupture": 0.2,
+      "fullyConvergedRecordedPath": true,
+      "rawStrainAt20PercentBondLoss": null,
+      "failureCensored": true,
+      "finalBrokenFraction": 0.049180327868852514,
+      "maxValidTension": 0.04613780880723159
+    }
+  ],
+  "inclusions": [
+    {
+      "seed": 17,
+      "z": 3.2,
+      "kappa": 0.0001,
+      "areaFraction": 0,
+      "fullyConvergedRecordedPath": false,
+      "initialContacts": 0,
+      "finalContacts": 0,
+      "initialCompressionReaction": -6.420237702841443e-17,
+      "finalCompressionReaction": null
+    },
+    {
+      "seed": 17,
+      "z": 3.2,
+      "kappa": 0.0001,
+      "areaFraction": 0.4,
+      "fullyConvergedRecordedPath": false,
+      "initialContacts": 0,
+      "finalContacts": 56,
+      "initialCompressionReaction": -6.420237702841443e-17,
+      "finalCompressionReaction": 0.2966574646396311
+    },
+    {
+      "seed": 17,
+      "z": 3.2,
+      "kappa": 0.0001,
+      "areaFraction": 0.75,
+      "fullyConvergedRecordedPath": true,
+      "initialContacts": 2,
+      "finalContacts": 108,
+      "initialCompressionReaction": 3.885850895675568e-08,
+      "finalCompressionReaction": 38.44108387680947
+    }
+  ],
+  "placement": [
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.0,
+      "placement": "random",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011506048921796855
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.16666666666666666,
+      "placement": "random",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011518790522992458
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.3333333333333333,
+      "placement": "random",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011548380312734036
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.5,
+      "placement": "random",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011586558193484187
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.6666666666666666,
+      "placement": "random",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011617782634648988
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.8333333333333333,
+      "placement": "random",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011694497095472395
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 1.0,
+      "placement": "random",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011727255236953433
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.0,
+      "placement": "clustered",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011506048921796855
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.16666666666666666,
+      "placement": "clustered",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011512184159530139
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.3333333333333333,
+      "placement": "clustered",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011587847430536136
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.5,
+      "placement": "clustered",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011633522600015286
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.6666666666666666,
+      "placement": "clustered",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011689810017207788
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 0.8333333333333333,
+      "placement": "clustered",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011709758425055875
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "stiffFraction": 1.0,
+      "placement": "clustered",
+      "eligible": true,
+      "rawSmallShearModulus": 0.0011727255236953433
+    }
+  ],
+  "cuts": [
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "cutMode": "random",
+      "fullyConvergedRecordedPath": true,
+      "initialTension": 0.007687423895705406,
+      "finalTension": 3.4992196969430115e-15,
+      "finalValid": true
+    },
+    {
+      "seed": 17,
+      "z": 3.6,
+      "kappa": 0.0001,
+      "cutMode": "high_tension",
+      "fullyConvergedRecordedPath": true,
+      "initialTension": 0.007687423895705406,
+      "finalTension": 2.62540089368402e-17,
+      "finalValid": true
+    }
+  ],
+  "feedback": {
+    "parameterPairs": 969,
+    "pairsWithTwoStableEquilibria": 323,
+    "maximumEquilibriumResidual": 8.881784197001252e-16,
+    "dynamicSamples": 202,
+    "dynamicConverged": 202,
+    "maximumMatchedBranchSeparation": 3.892132308731533,
+    "bistableAtCouplingOne": [
+      1.4000000000000001,
+      1.5,
+      1.6,
+      1.7000000000000002,
+      1.8,
+      1.9000000000000001,
+      2.0,
+      2.1,
+      2.2,
+      2.3000000000000003,
+      2.4000000000000004,
+      2.5,
+      2.6,
+      2.7,
+      2.8000000000000003,
+      2.9000000000000004,
+      3.0,
+      3.1,
+      3.2,
+      3.3000000000000003,
+      3.4000000000000004,
+      3.5,
+      3.6,
+      3.7,
+      3.8000000000000003,
+      3.9000000000000004,
+      4.0
+    ]
+  },
+  "thermal": [
+    {
+      "hypothesisHypFraction": 0,
+      "hypothesisHydration": 0,
+      "hypothesisCrosslink": 0,
+      "halfFoldedDimensionlessTemperature": 0.799999999999999,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 7.438494264988549e-15
+    },
+    {
+      "hypothesisHypFraction": 0,
+      "hypothesisHydration": 0,
+      "hypothesisCrosslink": 0.5,
+      "halfFoldedDimensionlessTemperature": 0.849999999999999,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 9.547918011776346e-15
+    },
+    {
+      "hypothesisHypFraction": 0,
+      "hypothesisHydration": 0.5,
+      "hypothesisCrosslink": 0,
+      "halfFoldedDimensionlessTemperature": 0.8749999999999989,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.1213252548714081e-14
+    },
+    {
+      "hypothesisHypFraction": 0,
+      "hypothesisHydration": 0.5,
+      "hypothesisCrosslink": 0.5,
+      "halfFoldedDimensionlessTemperature": 0.9249999999999996,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 6.772360450213455e-15
+    },
+    {
+      "hypothesisHypFraction": 0,
+      "hypothesisHydration": 1,
+      "hypothesisCrosslink": 0,
+      "halfFoldedDimensionlessTemperature": 0.9499999999999995,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 7.993605777301127e-15
+    },
+    {
+      "hypothesisHypFraction": 0,
+      "hypothesisHydration": 1,
+      "hypothesisCrosslink": 0.5,
+      "halfFoldedDimensionlessTemperature": 0.9999999999999988,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.3100631690576847e-14
+    },
+    {
+      "hypothesisHypFraction": 0.5,
+      "hypothesisHydration": 0,
+      "hypothesisCrosslink": 0,
+      "halfFoldedDimensionlessTemperature": 0.9249999999999988,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.2323475573339238e-14
+    },
+    {
+      "hypothesisHypFraction": 0.5,
+      "hypothesisHydration": 0,
+      "hypothesisCrosslink": 0.5,
+      "halfFoldedDimensionlessTemperature": 0.9749999999999988,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.3100631690576847e-14
+    },
+    {
+      "hypothesisHypFraction": 0.5,
+      "hypothesisHydration": 0.5,
+      "hypothesisCrosslink": 0,
+      "halfFoldedDimensionlessTemperature": 0.9999999999999986,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.1879386363489175e-14
+    },
+    {
+      "hypothesisHypFraction": 0.5,
+      "hypothesisHydration": 0.5,
+      "hypothesisCrosslink": 0.5,
+      "halfFoldedDimensionlessTemperature": 1.0499999999999987,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.3211653993039363e-14
+    },
+    {
+      "hypothesisHypFraction": 0.5,
+      "hypothesisHydration": 1,
+      "hypothesisCrosslink": 0,
+      "halfFoldedDimensionlessTemperature": 1.0749999999999995,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.432187701766452e-14
+    },
+    {
+      "hypothesisHypFraction": 0.5,
+      "hypothesisHydration": 1,
+      "hypothesisCrosslink": 0.5,
+      "halfFoldedDimensionlessTemperature": 1.1249999999999984,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.8207657603852567e-14
+    },
+    {
+      "hypothesisHypFraction": 1,
+      "hypothesisHydration": 0,
+      "hypothesisCrosslink": 0,
+      "halfFoldedDimensionlessTemperature": 1.0499999999999985,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 9.2148511043888e-15
+    },
+    {
+      "hypothesisHypFraction": 1,
+      "hypothesisHydration": 0,
+      "hypothesisCrosslink": 0.5,
+      "halfFoldedDimensionlessTemperature": 1.0999999999999988,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.3877787807814457e-14
+    },
+    {
+      "hypothesisHypFraction": 1,
+      "hypothesisHydration": 0.5,
+      "hypothesisCrosslink": 0,
+      "halfFoldedDimensionlessTemperature": 1.1249999999999993,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.2989609388114332e-14
+    },
+    {
+      "hypothesisHypFraction": 1,
+      "hypothesisHydration": 0.5,
+      "hypothesisCrosslink": 0.5,
+      "halfFoldedDimensionlessTemperature": 1.1749999999999994,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 2.1316282072803006e-14
+    },
+    {
+      "hypothesisHypFraction": 1,
+      "hypothesisHydration": 1,
+      "hypothesisCrosslink": 0,
+      "halfFoldedDimensionlessTemperature": 1.1999999999999984,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.3877787807814457e-14
+    },
+    {
+      "hypothesisHypFraction": 1,
+      "hypothesisHydration": 1,
+      "hypothesisCrosslink": 0.5,
+      "halfFoldedDimensionlessTemperature": 1.2499999999999982,
+      "monotoneDecreasing": true,
+      "bounded": true,
+      "maxIndependentProbabilityRecurrenceDifference": 1.2989609388114332e-14
+    }
+  ],
+  "mechanicalTotal": {
+    "cases": 36,
+    "samples": 400,
+    "convergedSamples": 398,
+    "fullyConvergedRecordedPaths": 34
+  }
+}

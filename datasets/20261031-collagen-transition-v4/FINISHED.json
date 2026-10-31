@@ -1,0 +1,12 @@
+{
+  "status": "complete",
+  "kind": "archive",
+  "finishedAt": "2026-10-31T18:09:41.810112+00:00",
+  "provenance": {
+    "study": "collagen-transition-atlas",
+    "purpose": "Preserve all available inputs, raw outputs, numerical failures, analysis, figures and logs from the three recorded attempts",
+    "scientificStatus": "See individual attempt outcomes and AUDIT.json; archival completion is not universal numerical convergence",
+    "firstAttemptRawData": "unavailable after output-writer failure; gap preserved explicitly",
+    "remoteCredentialExposure": "No account secrets or SSH keys provided to scientific worker"
+  }
+}

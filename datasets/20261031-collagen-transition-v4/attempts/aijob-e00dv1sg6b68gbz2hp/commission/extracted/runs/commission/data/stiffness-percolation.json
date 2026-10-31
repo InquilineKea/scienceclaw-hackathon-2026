@@ -1,0 +1,3472 @@
+{
+  "lattice": {
+    "W": 6,
+    "nodes": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        1.0,
+        0.0
+      ],
+      [
+        2.0,
+        0.0
+      ],
+      [
+        3.0,
+        0.0
+      ],
+      [
+        4.0,
+        0.0
+      ],
+      [
+        5.0,
+        0.0
+      ],
+      [
+        0.5,
+        0.8660254037844386
+      ],
+      [
+        1.5,
+        0.8660254037844386
+      ],
+      [
+        2.5,
+        0.8660254037844386
+      ],
+      [
+        3.5,
+        0.8660254037844386
+      ],
+      [
+        4.5,
+        0.8660254037844386
+      ],
+      [
+        5.5,
+        0.8660254037844386
+      ],
+      [
+        0.0,
+        1.7320508075688772
+      ],
+      [
+        1.0,
+        1.7320508075688772
+      ],
+      [
+        2.0,
+        1.7320508075688772
+      ],
+      [
+        3.0,
+        1.7320508075688772
+      ],
+      [
+        4.0,
+        1.7320508075688772
+      ],
+      [
+        5.0,
+        1.7320508075688772
+      ],
+      [
+        0.5,
+        2.598076211353316
+      ],
+      [
+        1.5,
+        2.598076211353316
+      ],
+      [
+        2.5,
+        2.598076211353316
+      ],
+      [
+        3.5,
+        2.598076211353316
+      ],
+      [
+        4.5,
+        2.598076211353316
+      ],
+      [
+        5.5,
+        2.598076211353316
+      ],
+      [
+        0.0,
+        3.4641016151377544
+      ],
+      [
+        1.0,
+        3.4641016151377544
+      ],
+      [
+        2.0,
+        3.4641016151377544
+      ],
+      [
+        3.0,
+        3.4641016151377544
+      ],
+      [
+        4.0,
+        3.4641016151377544
+      ],
+      [
+        5.0,
+        3.4641016151377544
+      ],
+      [
+        0.5,
+        4.330127018922193
+      ],
+      [
+        1.5,
+        4.330127018922193
+      ],
+      [
+        2.5,
+        4.330127018922193
+      ],
+      [
+        3.5,
+        4.330127018922193
+      ],
+      [
+        4.5,
+        4.330127018922193
+      ],
+      [
+        5.5,
+        4.330127018922193
+      ]
+    ],
+    "edges": [
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        0,
+        11
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        7
+      ],
+      [
+        1,
+        6
+      ],
+      [
+        2,
+        3
+      ],
+      [
+        2,
+        8
+      ],
+      [
+        2,
+        7
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        3,
+        9
+      ],
+      [
+        3,
+        8
+      ],
+      [
+        4,
+        5
+      ],
+      [
+        4,
+        10
+      ],
+      [
+        4,
+        9
+      ],
+      [
+        5,
+        0
+      ],
+      [
+        5,
+        11
+      ],
+      [
+        5,
+        10
+      ],
+      [
+        6,
+        7
+      ],
+      [
+        6,
+        13
+      ],
+      [
+        6,
+        12
+      ],
+      [
+        7,
+        8
+      ],
+      [
+        7,
+        14
+      ],
+      [
+        7,
+        13
+      ],
+      [
+        8,
+        9
+      ],
+      [
+        8,
+        15
+      ],
+      [
+        8,
+        14
+      ],
+      [
+        9,
+        10
+      ],
+      [
+        9,
+        16
+      ],
+      [
+        9,
+        15
+      ],
+      [
+        10,
+        11
+      ],
+      [
+        10,
+        17
+      ],
+      [
+        10,
+        16
+      ],
+      [
+        11,
+        6
+      ],
+      [
+        11,
+        12
+      ],
+      [
+        11,
+        17
+      ],
+      [
+        12,
+        13
+      ],
+      [
+        12,
+        18
+      ],
+      [
+        12,
+        23
+      ],
+      [
+        13,
+        14
+      ],
+      [
+        13,
+        19
+      ],
+      [
+        13,
+        18
+      ],
+      [
+        14,
+        15
+      ],
+      [
+        14,
+        20
+      ],
+      [
+        14,
+        19
+      ],
+      [
+        15,
+        16
+      ],
+      [
+        15,
+        21
+      ],
+      [
+        15,
+        20
+      ],
+      [
+        16,
+        17
+      ],
+      [
+        16,
+        22
+      ],
+      [
+        16,
+        21
+      ],
+      [
+        17,
+        12
+      ],
+      [
+        17,
+        23
+      ],
+      [
+        17,
+        22
+      ],
+      [
+        18,
+        19
+      ],
+      [
+        18,
+        25
+      ],
+      [
+        18,
+        24
+      ],
+      [
+        19,
+        20
+      ],
+      [
+        19,
+        26
+      ],
+      [
+        19,
+        25
+      ],
+      [
+        20,
+        21
+      ],
+      [
+        20,
+        27
+      ],
+      [
+        20,
+        26
+      ],
+      [
+        21,
+        22
+      ],
+      [
+        21,
+        28
+      ],
+      [
+        21,
+        27
+      ],
+      [
+        22,
+        23
+      ],
+      [
+        22,
+        29
+      ],
+      [
+        22,
+        28
+      ],
+      [
+        23,
+        18
+      ],
+      [
+        23,
+        24
+      ],
+      [
+        23,
+        29
+      ],
+      [
+        24,
+        25
+      ],
+      [
+        24,
+        30
+      ],
+      [
+        24,
+        35
+      ],
+      [
+        25,
+        26
+      ],
+      [
+        25,
+        31
+      ],
+      [
+        25,
+        30
+      ],
+      [
+        26,
+        27
+      ],
+      [
+        26,
+        32
+      ],
+      [
+        26,
+        31
+      ],
+      [
+        27,
+        28
+      ],
+      [
+        27,
+        33
+      ],
+      [
+        27,
+        32
+      ],
+      [
+        28,
+        29
+      ],
+      [
+        28,
+        34
+      ],
+      [
+        28,
+        33
+      ],
+      [
+        29,
+        24
+      ],
+      [
+        29,
+        35
+      ],
+      [
+        29,
+        34
+      ],
+      [
+        30,
+        31
+      ],
+      [
+        30,
+        1
+      ],
+      [
+        30,
+        0
+      ],
+      [
+        31,
+        32
+      ],
+      [
+        31,
+        2
+      ],
+      [
+        31,
+        1
+      ],
+      [
+        32,
+        33
+      ],
+      [
+        32,
+        3
+      ],
+      [
+        32,
+        2
+      ],
+      [
+        33,
+        34
+      ],
+      [
+        33,
+        4
+      ],
+      [
+        33,
+        3
+      ],
+      [
+        34,
+        35
+      ],
+      [
+        34,
+        5
+      ],
+      [
+        34,
+        4
+      ],
+      [
+        35,
+        30
+      ],
+      [
+        35,
+        0
+      ],
+      [
+        35,
+        5
+      ]
+    ],
+    "imageShifts": [
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        -6.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        -0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        -6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ],
+      [
+        6.0,
+        0.0
+      ],
+      [
+        6.0,
+        5.196152422706632
+      ],
+      [
+        0.0,
+        5.196152422706632
+      ]
+    ],
+    "area": 31.176914536239792
+  },
+  "cases": [
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.0,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.399724115038522e-17,
+          "Pyy": 5.128187304637532e-16,
+          "energy": 1.3929126544665355e-30,
+          "residual": 9.615424054581367e-16,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 9.615424054581367e-16,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.943696777332274e-06,
+          "Pxy": 5.602324285568201e-06,
+          "Pyy": 3.710982876079125e-07,
+          "energy": 4.3328183669543265e-07,
+          "residual": 1.714111776238321e-15,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 2.498217798808152e-19,
+          "preRefinementResidual": 1.218916887099967e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.44919292661396e-06,
+          "Pxy": 1.1506048921870854e-05,
+          "Pyy": 1.155854506485379e-06,
+          "energy": 1.7622898206967682e-06,
+          "residual": 1.1920531835935e-15,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 5.293955920339377e-21,
+          "preRefinementResidual": 1.1342653029359937e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011506048921796855
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.16666666666666666,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 1.4802797390089163e-15,
+          "Pyy": 2.9485714665496015e-15,
+          "energy": 6.779353522928756e-30,
+          "residual": 1.1730133449206096e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.1730133449206096e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.948970908682564e-06,
+          "Pxy": 5.6076608182938845e-06,
+          "Pyy": 3.779539514344473e-07,
+          "energy": 4.336745751180279e-07,
+          "residual": 1.5856145064475913e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 2.998496633280223e-19,
+          "preRefinementResidual": 1.0900895812941353e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.462169061376176e-06,
+          "Pxy": 1.1518790524472738e-05,
+          "Pyy": 1.1718985264376809e-06,
+          "energy": 1.7640609543135616e-06,
+          "residual": 1.02193085130221e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 3.909057051578596e-19,
+          "preRefinementResidual": 1.397624199792652e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011518790522992458
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.3333333333333333,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": -1.8160759148776908e-16,
+          "Pxy": 7.771384900796508e-16,
+          "Pyy": 4.166447834592526e-15,
+          "energy": 9.823863579016099e-30,
+          "residual": 1.5383762553334868e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.5383762553334868e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.9584845208614303e-06,
+          "Pxy": 5.6210505950540076e-06,
+          "Pyy": 3.782148265492002e-07,
+          "energy": 4.346885805481472e-07,
+          "residual": 1.6764262317881884e-12,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 1.2906712179390684e-16,
+          "preRefinementResidual": 1.7215720066469426e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.485290088140647e-06,
+          "Pxy": 1.1548380313511175e-05,
+          "Pyy": 1.1756123790819122e-06,
+          "energy": 1.768381226425541e-06,
+          "residual": 2.5611856351839737e-13,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 2.0842939733086568e-17,
+          "preRefinementResidual": 1.2326435167984403e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011548380312734036
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.5,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336924e-16,
+          "Pxy": 7.771384900796508e-16,
+          "Pyy": 6.602200570678374e-15,
+          "energy": 1.4859014825622088e-29,
+          "residual": 1.7306719688603312e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.7306719688603312e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.9707310014833355e-06,
+          "Pxy": 5.6384049632122355e-06,
+          "Pyy": 3.843263245283176e-07,
+          "energy": 4.3600257989953536e-07,
+          "residual": 5.975312983937022e-13,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 4.858025120079031e-17,
+          "preRefinementResidual": 1.2601015794062191e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.5138333010767325e-06,
+          "Pxy": 1.1586558194261327e-05,
+          "Pyy": 1.1908421773857652e-06,
+          "energy": 1.773971840206372e-06,
+          "residual": 8.101837614422208e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 6.472602266443736e-18,
+          "preRefinementResidual": 1.1029459288559732e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011586558193484187
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.6666666666666666,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336924e-16,
+          "Pxy": 7.771384900796507e-16,
+          "Pyy": 9.037953306764221e-15,
+          "energy": 2.083093839717803e-29,
+          "residual": 1.7306719688603315e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.7306719688603315e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.98047507507727e-06,
+          "Pxy": 5.652484303050677e-06,
+          "Pyy": 3.87554643555291e-07,
+          "energy": 4.370673182717761e-07,
+          "residual": 3.0620394525613e-13,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 2.4683387115937566e-17,
+          "preRefinementResidual": 7.63045311928874e-07,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.537665248798262e-06,
+          "Pxy": 1.1617782635426128e-05,
+          "Pyy": 1.2004311675246955e-06,
+          "energy": 1.7785203527378666e-06,
+          "residual": 2.711647083395894e-13,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 2.13488301608342e-17,
+          "preRefinementResidual": 1.6547832960415489e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011617782634648988
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.8333333333333333,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336924e-16,
+          "Pxy": 7.771384900796507e-16,
+          "Pyy": 9.037953306764221e-15,
+          "energy": 2.2587386506459188e-29,
+          "residual": 1.7306719688603315e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.7306719688603315e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 3.0072146186851743e-06,
+          "Pxy": 5.685700842360242e-06,
+          "Pyy": 4.049823873689653e-07,
+          "energy": 4.395428340352098e-07,
+          "residual": 5.198649357065935e-13,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 4.103001126720229e-17,
+          "preRefinementResidual": 2.4506897630967713e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.603630288779745e-06,
+          "Pxy": 1.1694497096249534e-05,
+          "Pyy": 1.2452149096352725e-06,
+          "energy": 1.7894094888350206e-06,
+          "residual": 1.199977142933746e-13,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 9.497145162852029e-18,
+          "preRefinementResidual": 2.823070673579822e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011694497095472395
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 1.0,
+        "placement": "random"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336923e-16,
+          "Pxy": 1.4802797390089163e-15,
+          "Pyy": 1.0255829674807145e-14,
+          "energy": 2.7856730834302665e-29,
+          "residual": 1.9229687926101997e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.9229687926101997e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 3.017695400348963e-06,
+          "Pxy": 5.700414495295311e-06,
+          "Pyy": 4.055322647468065e-07,
+          "energy": 4.4065342247698425e-07,
+          "residual": 4.459535632482872e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 3.1783852554533552e-18,
+          "preRefinementResidual": 1.3604868051663279e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.6286596286131394e-06,
+          "Pxy": 1.1727255238433712e-05,
+          "Pyy": 1.2491960790244938e-06,
+          "energy": 1.7941695121759754e-06,
+          "residual": 4.4317345288463284e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 2.3814331312054654e-18,
+          "preRefinementResidual": 4.608897836124712e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011727255236953433
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.0,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.399724115038522e-17,
+          "Pyy": 5.128187304637532e-16,
+          "energy": 1.3929126544665355e-30,
+          "residual": 9.615424054581367e-16,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 9.615424054581367e-16,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.943696777332274e-06,
+          "Pxy": 5.602324285568201e-06,
+          "Pyy": 3.710982876079125e-07,
+          "energy": 4.3328183669543265e-07,
+          "residual": 1.714111776238321e-15,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 2.498217798808152e-19,
+          "preRefinementResidual": 1.218916887099967e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.44919292661396e-06,
+          "Pxy": 1.1506048921870854e-05,
+          "Pyy": 1.155854506485379e-06,
+          "energy": 1.7622898206967682e-06,
+          "residual": 1.1920531835935e-15,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 5.293955920339377e-21,
+          "preRefinementResidual": 1.1342653029359937e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011506048921796855
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.16666666666666666,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.399724115038522e-17,
+          "Pyy": 5.128187304637532e-16,
+          "energy": 3.8519400074601584e-30,
+          "residual": 5.865047295700116e-15,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 5.865047295700116e-15,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.9452037315690654e-06,
+          "Pxy": 5.604979448930102e-06,
+          "Pyy": 3.7369623265091036e-07,
+          "energy": 4.334808104917291e-07,
+          "residual": 1.1277920761379868e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 1.0831433813014366e-18,
+          "preRefinementResidual": 9.993209736106028e-07,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.45376089358005e-06,
+          "Pxy": 1.1512184159604136e-05,
+          "Pyy": 1.1628074755842833e-06,
+          "energy": 1.7631604730398228e-06,
+          "residual": 2.3705305042732343e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 9.30889209032476e-19,
+          "preRefinementResidual": 1.8102924035967346e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011512184159530139
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.3333333333333333,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.399724115038522e-17,
+          "Pyy": 5.128187304637532e-16,
+          "energy": 6.428063901072524e-30,
+          "residual": 1.1537803873876999e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.1537803873876999e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.9699430180470096e-06,
+          "Pxy": 5.638295367519684e-06,
+          "Pyy": 3.886594196201545e-07,
+          "energy": 4.359769801067816e-07,
+          "residual": 1.9579337676438498e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 9.284010497499166e-19,
+          "preRefinementResidual": 1.7124391373952551e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.513758294091484e-06,
+          "Pxy": 1.1587847430610132e-05,
+          "Pyy": 1.2007210756122046e-06,
+          "energy": 1.7740158338653143e-06,
+          "residual": 2.0045702158735454e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 2.577097742021209e-19,
+          "preRefinementResidual": 1.6268674226505817e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011587847430536136
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.5,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.771384900796508e-16,
+          "Pyy": 1.7306950985066776e-15,
+          "energy": 1.0058056660253587e-29,
+          "residual": 1.1537803873876999e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.1537803873876999e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 2.9864544628667505e-06,
+          "Pxy": 5.658113753967444e-06,
+          "Pyy": 3.994881868883559e-07,
+          "energy": 4.3745497531074964e-07,
+          "residual": 2.689645042601961e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 5.317778721980904e-19,
+          "preRefinementResidual": 1.4417626225382378e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.554016309168072e-06,
+          "Pxy": 1.1633522600792426e-05,
+          "Pyy": 1.2279709479001615e-06,
+          "energy": 1.7805077673397517e-06,
+          "residual": 6.396666652106983e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 4.039711883692572e-18,
+          "preRefinementResidual": 2.596024335238401e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011633522600015286
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.6666666666666666,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 2.137180318605158e-17,
+          "Pxy": 7.771384900796509e-16,
+          "Pyy": 6.6022005706783744e-15,
+          "energy": 1.9425779909753102e-29,
+          "residual": 1.7306719688603315e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.7306719688603315e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 3.0040335740733416e-06,
+          "Pxy": 5.683907270072385e-06,
+          "Pyy": 4.039825787163853e-07,
+          "energy": 4.3941509651969966e-07,
+          "residual": 3.3145899744926833e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 3.321957340012959e-19,
+          "preRefinementResidual": 1.3954099767196485e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.595577282570645e-06,
+          "Pxy": 1.1689810017984927e-05,
+          "Pyy": 1.2420260678373877e-06,
+          "energy": 1.7887932885461585e-06,
+          "residual": 2.8108974701882353e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 5.293955920339377e-19,
+          "preRefinementResidual": 4.751573331056959e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011689810017207788
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 0.8333333333333333,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": -3.8458698616158975e-16,
+          "Pxy": 1.4802797390089165e-15,
+          "Pyy": 7.820076938721298e-15,
+          "energy": 2.293867612831542e-29,
+          "residual": 1.9229687926101997e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.9229687926101997e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 3.0125608286707484e-06,
+          "Pxy": 5.692438162025364e-06,
+          "Pyy": 4.064174543087361e-07,
+          "energy": 4.4004790356880967e-07,
+          "residual": 7.430727608136937e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 4.0461175703561825e-18,
+          "preRefinementResidual": 1.177795209506639e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.61617673895533e-06,
+          "Pxy": 1.1709758426536156e-05,
+          "Pyy": 1.2493293306357318e-06,
+          "energy": 1.79160265917787e-06,
+          "residual": 4.383741091483484e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 3.1045875099238243e-18,
+          "preRefinementResidual": 5.363742808870809e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011709758425055875
+    },
+    {
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "stiffFraction": 1.0,
+        "placement": "clustered"
+      },
+      "graph": {
+        "z": 3.611111111111111,
+        "degreeVariance": 0.8487654320987654,
+        "lambda2": 0.39316244162502956,
+        "zeroModesGraph": 1,
+        "largestComponentFraction": 1.0,
+        "spectralRadius": 7.317972046379353
+      },
+      "initialAlive": [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        false,
+        false,
+        true,
+        true,
+        false,
+        true,
+        false,
+        true,
+        true,
+        true,
+        true,
+        true,
+        false
+      ],
+      "curve": [
+        {
+          "control": 0.0,
+          "stage": "small_shear",
+          "Pxx": 4.273305925336923e-16,
+          "Pxy": 1.4802797390089163e-15,
+          "Pyy": 1.0255829674807145e-14,
+          "energy": 2.7856730834302665e-29,
+          "residual": 1.9229687926101997e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 0.0,
+          "preRefinementResidual": 1.9229687926101997e-14,
+          "newtonAcceptedSteps": 0
+        },
+        {
+          "control": 0.005,
+          "stage": "small_shear",
+          "Pxx": 3.017695400348963e-06,
+          "Pxy": 5.700414495295311e-06,
+          "Pyy": 4.055322647468065e-07,
+          "energy": 4.4065342247698425e-07,
+          "residual": 4.459535632482872e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 3.1783852554533552e-18,
+          "preRefinementResidual": 1.3604868051663279e-06,
+          "newtonAcceptedSteps": 3
+        },
+        {
+          "control": 0.01,
+          "stage": "small_shear",
+          "Pxx": 6.6286596286131394e-06,
+          "Pxy": 1.1727255238433712e-05,
+          "Pyy": 1.2491960790244938e-06,
+          "energy": 1.7941695121759754e-06,
+          "residual": 4.4317345288463284e-14,
+          "converged": true,
+          "aliveBonds": 65,
+          "meanRestLength": 1.0,
+          "energyChange": 2.3814331312054654e-18,
+          "preRefinementResidual": 4.608897836124712e-06,
+          "newtonAcceptedSteps": 3
+        }
+      ],
+      "smallShearModulus": 0.0011727255236953433
+    }
+  ]
+}

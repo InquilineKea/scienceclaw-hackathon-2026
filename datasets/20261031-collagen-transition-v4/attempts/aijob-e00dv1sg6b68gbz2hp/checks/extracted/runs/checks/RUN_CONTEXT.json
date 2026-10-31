@@ -1,0 +1,22 @@
+{
+  "profile": "checks",
+  "device": "cuda",
+  "runtimeMinutesLimit": 4.0,
+  "python": "3.11.11 | packaged by conda-forge | (main, Dec  5 2024, 14:17:24) [GCC 13.3.0]",
+  "torch": "2.6.0+cu124",
+  "numpy": "2.2.2",
+  "cudaRuntime": "12.4",
+  "gpu": "NVIDIA H100 80GB HBM3",
+  "config": {
+    "tol": 3e-08,
+    "rounds": 5,
+    "iters": 200
+  },
+  "sourceSHA256": {
+    "plot_results.py": "71c1511809541991675880b30725708c689e5ed295bb03775195463df4cd394c",
+    "run_transitions.py": "d1a4953377bb6f3c402e69b77a65a258fce4d03cd312ccaa48bfeac5d8cdc92e",
+    "transitions.py": "1d81182614bb979dc65291fcb797ee9f8bdf6ca6722d19cd56e30bd6715dfc6e",
+    "sandbox_exec.py": "fd069983e8c21bcfa2c364563b5db91b6490a259e5f729b8834cd2deda502c77",
+    "core_network.py": "a781e092c608cded0350befb4d9d7786359d8287780c9703e8f087452a1f7dc6"
+  }
+}

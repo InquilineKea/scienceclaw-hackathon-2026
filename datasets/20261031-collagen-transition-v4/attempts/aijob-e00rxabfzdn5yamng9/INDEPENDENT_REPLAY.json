@@ -1,0 +1,373 @@
+{
+  "method": "Independent scalar-math energy evaluation and central finite differences on frozen saved coordinates; no NumPy/PyTorch execution",
+  "energyFramesChecked": 238,
+  "maximumAbsoluteEnergyDifference": 1.4210854715202004e-14,
+  "forceCasesChecked": 17,
+  "maximumFiniteDifferenceResidualAtSmallerStep": 2.9687363678476683e-08,
+  "cases": [
+    {
+      "suite": "rigidity",
+      "parameters": {
+        "seed": 17,
+        "z": 3.0,
+        "kappa": 0.0001
+      },
+      "stage": "shear",
+      "control": 0.8,
+      "savedResidual": 2.9687851094043143e-08,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        2.968458812091512e-08,
+        2.9687363678476683e-08
+      ]
+    },
+    {
+      "suite": "rigidity",
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001
+      },
+      "stage": "shear",
+      "control": 0.8,
+      "savedResidual": 2.8563511509082382e-08,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        2.8538282847989646e-08,
+        2.8554936193359023e-08
+      ]
+    },
+    {
+      "suite": "rigidity",
+      "parameters": {
+        "seed": 17,
+        "z": 4.2,
+        "kappa": 0.0001
+      },
+      "stage": "shear",
+      "control": 0.8,
+      "savedResidual": 1.497926373911218e-08,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        1.4976908602193362e-08,
+        1.496580637194711e-08
+      ]
+    },
+    {
+      "suite": "sliding-memory",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "locking": 0,
+        "mobility": 2.0
+      },
+      "stage": "fast_load",
+      "control": 0.0,
+      "savedResidual": 1.153883083017478e-15,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        3.749650290057323e-11,
+        9.374340831078611e-12
+      ]
+    },
+    {
+      "suite": "sliding-memory",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "locking": 0.5,
+        "mobility": 0.09957413673572789
+      },
+      "stage": "fast_load",
+      "control": 0.0,
+      "savedResidual": 1.153883083017478e-15,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        3.749650290057323e-11,
+        9.374340831078611e-12
+      ]
+    },
+    {
+      "suite": "sliding-memory",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "locking": 1,
+        "mobility": 0.004957504353332717
+      },
+      "stage": "hold",
+      "control": 1.25,
+      "savedResidual": 1.9096209433189237e-08,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        1.911179547953168e-08,
+        1.9099999359895037e-08
+      ]
+    },
+    {
+      "suite": "plastic-memory-matrix",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "amplitude": 0.15,
+        "holdTime": 0.2,
+        "locking": 0,
+        "mobility": 2.0
+      },
+      "stage": "hold_end",
+      "control": 1.0,
+      "savedResidual": 6.825315630938869e-09,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        6.823862763911947e-09,
+        6.824952387095295e-09
+      ]
+    },
+    {
+      "suite": "plastic-memory-matrix",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "amplitude": 0.15,
+        "holdTime": 0.2,
+        "locking": 1,
+        "mobility": 0.004957504353332717
+      },
+      "stage": "hold_end",
+      "control": 1.0,
+      "savedResidual": 6.825315630938869e-09,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        6.823862763911947e-09,
+        6.824952387095295e-09
+      ]
+    },
+    {
+      "suite": "plastic-memory-matrix",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "amplitude": 0.15,
+        "holdTime": 2.0,
+        "locking": 0,
+        "mobility": 2.0
+      },
+      "stage": "hold_end",
+      "control": 1.0,
+      "savedResidual": 6.825315630938869e-09,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        6.823862763911947e-09,
+        6.824952387095295e-09
+      ]
+    },
+    {
+      "suite": "plastic-memory-matrix",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "amplitude": 0.15,
+        "holdTime": 2.0,
+        "locking": 1,
+        "mobility": 0.004957504353332717
+      },
+      "stage": "hold_end",
+      "control": 1.0,
+      "savedResidual": 6.825315630938869e-09,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        6.823862763911947e-09,
+        6.824952387095295e-09
+      ]
+    },
+    {
+      "suite": "sliding-failure",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "locking": 0,
+        "mobility": 2.0,
+        "rupture": 0.2
+      },
+      "stage": "tension_with_sliding_and_rupture",
+      "control": 0.85,
+      "savedResidual": 3.633331115138194e-09,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        3.6484704146744203e-09,
+        3.641531520770513e-09
+      ]
+    },
+    {
+      "suite": "sliding-failure",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "locking": 0.5,
+        "mobility": 0.09957413673572789,
+        "rupture": 0.2
+      },
+      "stage": "tension_with_sliding_and_rupture",
+      "control": 0.7,
+      "savedResidual": 2.939498299631138e-08,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        2.937788901036242e-08,
+        2.938760346182789e-08
+      ]
+    },
+    {
+      "suite": "sliding-failure",
+      "parameters": {
+        "seed": 17,
+        "z": 3.4,
+        "kappa": 0.0001,
+        "locking": 1,
+        "mobility": 0.004957504353332717,
+        "rupture": 0.2
+      },
+      "stage": "tension_with_sliding_and_rupture",
+      "control": 0.7,
+      "savedResidual": 5.2530411548401545e-09,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        5.272171588188711e-09,
+        5.25135490647699e-09
+      ]
+    },
+    {
+      "suite": "targeted-damage",
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "cutMode": "random"
+      },
+      "stage": "cut_sweep",
+      "control": 0.0,
+      "savedResidual": 2.7864800425950827e-08,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        2.7883121159200105e-08,
+        2.786937347565299e-08
+      ]
+    },
+    {
+      "suite": "targeted-damage",
+      "parameters": {
+        "seed": 17,
+        "z": 3.6,
+        "kappa": 0.0001,
+        "cutMode": "high_tension"
+      },
+      "stage": "cut_sweep",
+      "control": 0.0,
+      "savedResidual": 2.7864800425950827e-08,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        2.7883121159200105e-08,
+        2.786937347565299e-08
+      ]
+    },
+    {
+      "suite": "inclusions",
+      "parameters": {
+        "seed": 17,
+        "z": 3.2,
+        "kappa": 0.0001,
+        "areaFraction": 0
+      },
+      "stage": "compression",
+      "control": 0.0,
+      "savedResidual": 1.7987338857938562e-14,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        3.7500058612530443e-11,
+        9.375533840152663e-12
+      ]
+    },
+    {
+      "suite": "inclusions",
+      "parameters": {
+        "seed": 17,
+        "z": 3.2,
+        "kappa": 0.0001,
+        "areaFraction": 0.4
+      },
+      "stage": "compression",
+      "control": 0.0,
+      "savedResidual": 1.7987338857938562e-14,
+      "finiteDifferenceSteps": [
+        1e-05,
+        5e-06
+      ],
+      "finiteDifferenceMaxResiduals": [
+        3.7500058612530443e-11,
+        9.375533840152663e-12
+      ]
+    }
+  ],
+  "limitations": [
+    "Only stored frames in the six uniform-spring suites were replayed; stiff-bond placement has no saved coordinates.",
+    "Finite differences have truncation and cancellation error, especially at disk contacts; they do not replace the original force/energy acceptance test.",
+    "The last recorded converged frame is a spot check of the force, not validation of an earlier invalid history.",
+    "No equilibrium was recomputed and no raw state or convergence flag was changed."
+  ]
+}

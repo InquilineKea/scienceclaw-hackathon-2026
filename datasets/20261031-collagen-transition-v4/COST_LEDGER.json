@@ -1,0 +1,32 @@
+{
+  "authorizedMaximumUSD": 15,
+  "displayedRateUSDPerHour": 4.51,
+  "currency": "USD",
+  "basis": "Provisioning-start to last output at displayed compute plus temporary disk rate; estimates, not invoices. Taxes, discounts and separately billed private Object Storage are not finalized.",
+  "attempts": [
+    {
+      "jobID": "aijob-e00ngbb7wmy88429pa",
+      "providerState": "Failed",
+      "estimatedUSD": 1.149,
+      "scientificOutput": "not recoverable after archive-writing failure"
+    },
+    {
+      "jobID": "aijob-e00rxabfzdn5yamng9",
+      "providerState": "Failed",
+      "estimatedUSD": 0.9163931638888889,
+      "scientificOutput": "partial mechanical outputs recovered and retained"
+    },
+    {
+      "jobID": "aijob-e00dv1sg6b68gbz2hp",
+      "providerState": "Completed",
+      "estimatedUSD": 1.0608296722222224,
+      "scientificOutput": "full commissioning output recovered; 398/400 accepted mechanical samples"
+    }
+  ],
+  "cumulativeComputeEquivalentUSD": 3.1262228361111113,
+  "newGPUJobsRunning": 0,
+  "temporaryGPUComputeStopped": true,
+  "privateStorageRetained": "5.517 MiB displayed, quota 1 GiB, retained for recovery; no new persistent VM",
+  "rejectedForms": "Request-size refusals created no job ID or compute workload",
+  "actualInvoiceUSD": null
+}

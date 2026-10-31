@@ -1,0 +1,170 @@
+{
+  "CHECKS.json": {
+    "bytes": 1363,
+    "sha256": "a444342037b77b261154c34a4ba12804e59efbd544d0865019992b9b01861520"
+  },
+  "FINISHED.json": {
+    "bytes": 339,
+    "sha256": "fa2d90c11aedd30c126511d6554f8e68372e65e8bbbd8f77eeb65deab7c13f59"
+  },
+  "METHODS.md": {
+    "bytes": 7556,
+    "sha256": "21fee1d673505d6960e1578610e1a56d3e34498a8ffd0bed3b5957f725c0e815"
+  },
+  "RESULTS.json": {
+    "bytes": 1578,
+    "sha256": "fc206da8c3296e4b22d0821120feeb7aaf77c1c514aeb7d03dca181ac9a81799"
+  },
+  "RUN_CONTEXT.json": {
+    "bytes": 832,
+    "sha256": "c6cd254fe1144a82c9a5d5801c25d27fe705ab3a7dea8f78ba82e7f425a49ece"
+  },
+  "SECURITY_REVIEW.md": {
+    "bytes": 7451,
+    "sha256": "2099befa046637fee16819443e846a84e9f848d26933ad2727ae539f58b09452"
+  },
+  "THERMAL_MD_GATE.json": {
+    "bytes": 732,
+    "sha256": "664e7536a14348450f41e64dc65db1e9bff7a7945285d240a1e22ffbea8e51de"
+  },
+  "core_network.py": {
+    "bytes": 12229,
+    "sha256": "a781e092c608cded0350befb4d9d7786359d8287780c9703e8f087452a1f7dc6"
+  },
+  "data/helix-coil-sensitivity.json": {
+    "bytes": 100585,
+    "sha256": "5789565c89980c9cc94402911d0ee0a0672f4fc1a407051c32662829bcc879a2"
+  },
+  "data/inclusions.json": {
+    "bytes": 284563,
+    "sha256": "453fb0463e57987b12b83c0e635486a9e1d087792342a2d2e58766701d7dbb1f"
+  },
+  "data/lox-feedback.json": {
+    "bytes": 615130,
+    "sha256": "e21fd5407fece100e3f05989f80a5d5068e44b7214837d854f1e955e5702e177"
+  },
+  "data/plastic-memory-matrix.json": {
+    "bytes": 301356,
+    "sha256": "258087891dbcbb7f698e419f8daec5d64a13808e9dcacc8b06b51c5d968e24d2"
+  },
+  "data/rigidity.json": {
+    "bytes": 277149,
+    "sha256": "70e0ab3858b6d1d8a2659b09636cb4179f86a8efe9406c504b6257b2526fda0d"
+  },
+  "data/sliding-failure.json": {
+    "bytes": 510425,
+    "sha256": "832477279e8307eee937a489913569a268e4f44ffcc2f2ecd398e81e5fa994a0"
+  },
+  "data/sliding-memory.json": {
+    "bytes": 684918,
+    "sha256": "4d364a4180d4d503f1e2aee786d0dc268928d999759058d0f1806457a343d385"
+  },
+  "data/stiffness-percolation.json": {
+    "bytes": 62224,
+    "sha256": "b712168accbc87fdd3f4124ad8efa3e4a5689e06d97b35bc0bfb38a021e6ec67"
+  },
+  "data/targeted-damage.json": {
+    "bytes": 257957,
+    "sha256": "c51e8716d459c9956700113d0aabf4c3e341962813ff64cf15906ea38680e56e"
+  },
+  "explorer-data.json": {
+    "bytes": 572798,
+    "sha256": "d1c8d91fbb020eecb3a31a39d474790f5ea07f50abd131596b2800f94b5f0d4f"
+  },
+  "figures/01-strain-rigidity.png": {
+    "bytes": 93941,
+    "sha256": "d673f495077a79606bdb13db62e267db1a4e1ebd89c021c54eed75af251b7513"
+  },
+  "figures/01-strain-rigidity.svg": {
+    "bytes": 68290,
+    "sha256": "289143352086a6bfc79e3f13b4e5f67a98aba41acbc4b51f9c270c8d471b376d"
+  },
+  "figures/02-sliding-locking.png": {
+    "bytes": 97843,
+    "sha256": "74cfe7e7283569b72e961f3e4c2a078d2f9e1891aefc74a38627d25914a63a9f"
+  },
+  "figures/02-sliding-locking.svg": {
+    "bytes": 75401,
+    "sha256": "da84a351ad8fde1994d6559796da0957d1187fbf6e28d8131b4c514e9a860bdc"
+  },
+  "figures/02b-sliding-failure.png": {
+    "bytes": 81586,
+    "sha256": "b2507b5c7b0a4b7e78d0ea16e7f48f9fb45a0c988498861f3b2b3c4693c788be"
+  },
+  "figures/02b-sliding-failure.svg": {
+    "bytes": 61860,
+    "sha256": "49b2d82fb7b370fa40c3a899acf3cdcc3cf6bd26f8915094e5e435690406a2f7"
+  },
+  "figures/03-plastic-memory.png": {
+    "bytes": 48991,
+    "sha256": "c5bdbcd9bacd2dc66124b6992bc04a05f4c1b31b48686efc2828bd875a3dad68"
+  },
+  "figures/03-plastic-memory.svg": {
+    "bytes": 57608,
+    "sha256": "3d46f7b8e193a3e8932a9df78571fd97e681821a7d9af72fa0f1af9b0d5e47e0"
+  },
+  "figures/04-stiffening-and-damage.png": {
+    "bytes": 91641,
+    "sha256": "6d4a79f2c8620331d23ea07e1f91370d45950cdef78efb365fe2290300ec3aa3"
+  },
+  "figures/04-stiffening-and-damage.svg": {
+    "bytes": 70035,
+    "sha256": "e1276d7d9d174afc96499d8be43519f04b4657c783e9a586fed47da80a3e1de5"
+  },
+  "figures/05-inclusion-compression.png": {
+    "bytes": 73837,
+    "sha256": "1919e60e1a5254d6dd428b15234800efe8db7cada097856332883629f099c534"
+  },
+  "figures/05-inclusion-compression.svg": {
+    "bytes": 59038,
+    "sha256": "6bfdd6ffa839e6aafd51f4f07097b6863974aff76cf0865f2a803b8c3dc34266"
+  },
+  "figures/06-lox-feedback.png": {
+    "bytes": 71207,
+    "sha256": "588832dc5550d67449e72519bf1437261c360b30c9bffd2be06443de860d410a"
+  },
+  "figures/06-lox-feedback.svg": {
+    "bytes": 81739,
+    "sha256": "d827456b1a8ea388b57607fc739c32ad7c2ede06f8e4b9928d2a5a8212fdb6aa"
+  },
+  "figures/07-helix-coil.png": {
+    "bytes": 79256,
+    "sha256": "6f1da4a48ca691ab884de05a19db7d2db7dab988f65eb1845953ae2d740a3b64"
+  },
+  "figures/07-helix-coil.svg": {
+    "bytes": 60082,
+    "sha256": "25f26510f8762e6ccd1dd5d989e2261151b7af94468393ac9522d8ea3d55bc9e"
+  },
+  "figures/inclusion-contact.gif": {
+    "bytes": 438435,
+    "sha256": "98a56376417361cc05dd2a8e0193db50225cf88ebbe3dc9f58830e9f9bb5857e"
+  },
+  "figures/sliding-memory.gif": {
+    "bytes": 508514,
+    "sha256": "aac921634fdd7a5ceb5b8f5b89ff91d0ed78e3a78aff1b3f54a17af8c9d63730"
+  },
+  "plot_results.py": {
+    "bytes": 12174,
+    "sha256": "71c1511809541991675880b30725708c689e5ed295bb03775195463df4cd394c"
+  },
+  "progress.jsonl": {
+    "bytes": 737,
+    "sha256": "f1dcc20cff5a23a384f0235738d8af4e28678b0c65d24d6a2b0ba511f910d0c8"
+  },
+  "raw-samples.jsonl": {
+    "bytes": 907795,
+    "sha256": "a24fbc08df225c89bb0186c3f11ad891cf39fa7f5af428e14e9057fa363d8fda"
+  },
+  "run_transitions.py": {
+    "bytes": 25575,
+    "sha256": "d1a4953377bb6f3c402e69b77a65a258fce4d03cd312ccaa48bfeac5d8cdc92e"
+  },
+  "sandbox_exec.py": {
+    "bytes": 1594,
+    "sha256": "fd069983e8c21bcfa2c364563b5db91b6490a259e5f729b8834cd2deda502c77"
+  },
+  "transitions.py": {
+    "bytes": 12362,
+    "sha256": "1d81182614bb979dc65291fcb797ee9f8bdf6ca6722d19cd56e30bd6715dfc6e"
+  }
+}
