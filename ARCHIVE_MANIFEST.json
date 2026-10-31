@@ -15,8 +15,8 @@
       "sha256": "a447e48778d4ed605cd30804bfab8333cbebe2a6aa7c4e9376a2fe2309a3ed28"
     },
     "README.md": {
-      "bytes": 5231,
-      "sha256": "a7c2454aca1c2d438111e2530fe97c2410f2b6f4ad588d7eca39c4416362ca67"
+      "bytes": 5530,
+      "sha256": "01d2aa8bc566b34d917c25087d8bfa66c2c518728bf48f67cae570a7d46bfa6a"
     },
     "archives/2026-10-31/README.md": {
       "bytes": 2011,
@@ -1255,8 +1255,8 @@
       "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
     },
     "collagen-network-atlas/README.md": {
-      "bytes": 4246,
-      "sha256": "4feb6ea3cc7cf8b9e609d565a58bee8e6795ebf8de171284c881a561d2dc1602"
+      "bytes": 4668,
+      "sha256": "0653312f01f932e7477aa9b6525a80bc66b33404bc4345c63b18b43ef9b8d7b3"
     },
     "collagen-network-atlas/REPORT.md": {
       "bytes": 9882,
@@ -1271,8 +1271,8 @@
       "sha256": "0f3b86689c1fd4a48cfbfa6e2578a1683e8e388df581351dac5e23862562bfe7"
     },
     "collagen-network-atlas/app.js": {
-      "bytes": 18360,
-      "sha256": "227b8eddfe58e958ed54f9ec7afdd942df2c3601b14520954147fd468a6347d8"
+      "bytes": 20543,
+      "sha256": "37ca08684ed57654f167559b4e81393ae989943bde7505a22f33618671b27603"
     },
     "collagen-network-atlas/audit.js": {
       "bytes": 2171,
@@ -1415,8 +1415,8 @@
       "sha256": "ce0d5e3f5356c01fd322d56dcc0c28a8a58ca0801bce702f1e7698eb46ba19ab"
     },
     "collagen-network-atlas/index.html": {
-      "bytes": 10540,
-      "sha256": "aeafc92bd281b49a7dac82c9acc5e00b8a85fd5c1987303247110b5e970bc990"
+      "bytes": 12164,
+      "sha256": "c543c932d7f3487a324fff99a3b64623355c021d765583f4870c18802429f58d"
     },
     "collagen-network-atlas/make-archive.py": {
       "bytes": 1205,
@@ -1927,8 +1927,8 @@
       "sha256": "5d6699cbaa683fa8d7ea7e5bd84b52c2409e4939e6dbb2f6f3a7e97e1686796c"
     },
     "collagen-network-atlas/style.css": {
-      "bytes": 9907,
-      "sha256": "45df16d1b63ed15d7d35512d9afe6e1ed8b0eb19e89e77545e0a0aa240ebfd09"
+      "bytes": 11893,
+      "sha256": "8b33805914aca42ede32c702014f878fb2af2c470de2a27d8501176d63ea790f"
     },
     "collagen-network-atlas/test_run_storage.py": {
       "bytes": 2943,
@@ -1997,8 +1997,92 @@
     "collagen-network-atlas/publication/final-f0a5034f44aa/MANIFEST.json": {
       "bytes": 2390,
       "sha256": "d67faff8d33fe2cc776a80f61090a7d99aea23dc053e06c7c71336d0f590c83e"
+    },
+    "PAGES.md": {
+      "bytes": 3484,
+      "sha256": "7e8131f3681a60674c4641972aae576247cfd30bb518f3a951cc45090763751f"
+    },
+    "publish-pages.py": {
+      "bytes": 1764,
+      "sha256": "0641dd7a6caf0fec39dafc0bf41f10522ef0cfca8cda399c3db8c403f9a436ef"
+    },
+    "collagen-network-atlas/load-guide.js": {
+      "bytes": 5783,
+      "sha256": "9735a5df66d437fc31d7752d5a7bcff9d084805f09145226559522bf2b947eca"
+    },
+    "collagen-network-atlas/check-load-guide.js": {
+      "bytes": 1452,
+      "sha256": "38b8887bb39acbc94b1e1a8f15b928f611b3432d8c189f110cde0102de00a714"
+    },
+    "collagen-network-atlas/publication/pages-ui-checks.json": {
+      "bytes": 763,
+      "sha256": "5c29a8aef134048f7f5e88a3101adf39b77cfc3e5946cb9c295a4a606d3b615f"
+    },
+    "docs/index.html": {
+      "bytes": 12164,
+      "sha256": "c543c932d7f3487a324fff99a3b64623355c021d765583f4870c18802429f58d"
+    },
+    "docs/DEPLOYMENT.json": {
+      "bytes": 2273,
+      "sha256": "5cb7d23ece2790b1aadbae04e634ed5077df21d60b4442103e7a880dda925b59"
+    },
+    "docs/load-guide.js": {
+      "bytes": 5783,
+      "sha256": "9735a5df66d437fc31d7752d5a7bcff9d084805f09145226559522bf2b947eca"
+    },
+    "docs/EVIDENCE.md": {
+      "bytes": 5196,
+      "sha256": "c5690ab4a8eb5a35144ee566b815bce97f6063671026e055cf9a38fce460ab04"
+    },
+    "docs/worker.js": {
+      "bytes": 298,
+      "sha256": "6b8b3ee4008b8d20d7e5a28f9da71f08bd9b11d4d4c7067994ae2a6e0425c80d"
+    },
+    "docs/.nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "docs/METHODS.md": {
+      "bytes": 15339,
+      "sha256": "251d42379560c767c2958091dc8d7e1bd1c3e5ef5db6bd4a5d1c79527c761ff7"
+    },
+    "docs/style.css": {
+      "bytes": 11893,
+      "sha256": "8b33805914aca42ede32c702014f878fb2af2c470de2a27d8501176d63ea790f"
+    },
+    "docs/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "docs/app.js": {
+      "bytes": 20543,
+      "sha256": "37ca08684ed57654f167559b4e81393ae989943bde7505a22f33618671b27603"
+    },
+    "docs/figures/benchmark.svg": {
+      "bytes": 9610,
+      "sha256": "ac72f272400c1d6008e18209dbfe433733965829beb9d1287f39492a024f9b19"
+    },
+    "docs/data/replays.js": {
+      "bytes": 8683031,
+      "sha256": "d79bfe429b45474b730195341975214d92fabad5301d05e79b4241fb4ca64c46"
+    },
+    "docs/data/summary.csv": {
+      "bytes": 201413,
+      "sha256": "fc89f17a62500ae0a5871cff8d15e8cccf333a26b1422a6b504cf1170959426e"
+    },
+    "docs/data/results.json": {
+      "bytes": 824546,
+      "sha256": "b3c01f927ed40d9467f8a2fe599382a28d9bbcd5bfb6224629a6b6dad17e8f0f"
+    },
+    "docs/data/benchmark.js": {
+      "bytes": 577593,
+      "sha256": "53e5785f3a3ef962a4c700e13c7c4aa688c3e58178afe9a764af2f03a84a97af"
+    },
+    "docs/data/curves.csv": {
+      "bytes": 4637534,
+      "sha256": "be25548e5eab953bf8b569a31171e0d258e6cae591937efd37daf76a8d899ec2"
     }
   },
-  "note": "Preserves concurrent upstream PM7 work and adds the exact corrected WordPress packages and publication provenance audit. Historical archives and frozen scientific runs are unchanged.",
-  "updatedAt": "2026-10-31T12:59:42.114558+00:00"
+  "note": "Adds the static GitHub Pages export and display-only loading/orientation annotations; numerical model, frozen runs, corrected ZIPs and prior scientific outputs are unchanged.",
+  "updatedAt": "2026-10-31T15:39:17.533287+00:00"
 }

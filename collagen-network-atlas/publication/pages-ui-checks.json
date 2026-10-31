@@ -1,0 +1,15 @@
+{
+  "checked_date": "2026-10-31",
+  "model_sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+  "source": "original static Pages export served on loopback",
+  "boundary_coordinate_checks": 576,
+  "loading_modes_checked": ["tension", "tensionY", "shear", "compression", "confined", "biaxial", "pulse", "free"],
+  "fabric_comparisons_with_saved_data": 7,
+  "browser_all_modes_and_scrubbing_passed": true,
+  "shared_query_link_selected_expected_families_and_mode": true,
+  "custom_worker_computation": {"mode": "pulse", "acceleration": 0.012, "both_panels_completed": true},
+  "browser_console_errors_or_warnings": [],
+  "scientific_benchmark_rerun": false,
+  "frozen_runs_and_archives_modified": false,
+  "mobile_viewport_tested": false
+}
