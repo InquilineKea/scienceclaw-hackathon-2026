@@ -1,5 +1,5 @@
 {
-  "scope": "Published scientific archives and applications, including preserved concurrent transition study and new larger-network microrheology pilot. Excludes this manifest and ignored scratch or large raw copies.",
+  "scope": "Published scientific archives and applications, preserving concurrent transition updates and larger-network microrheology; excludes this manifest and ignored scratch or large raw files.",
   "files": {
     ".gitignore": {
       "bytes": 62,
@@ -3250,8 +3250,8 @@
       "sha256": "d4cb4375fba10d7471b1fd95e80805f81ca20483bcb92775cd56a6666cc788c3"
     },
     "collagen-transition-atlas/web/style.css": {
-      "bytes": 3532,
-      "sha256": "5623b24d8082bf41386d83dffc5c89c6b33596c9a41df8b3db9fb89963a91b01"
+      "bytes": 3590,
+      "sha256": "318501f4a523746365c414dd50fbee654838d1a51beef6f6a58a86b2e928804e"
     },
     "collagen-transition-atlas/web/transition-view.json": {
       "bytes": 161643,
@@ -4727,7 +4727,7 @@
     },
     "docs/DEPLOYMENT.json": {
       "bytes": 14506,
-      "sha256": "85f887ebbc85a0c3e0e386297f10e447ce376cfa678174881e8e6c748ac3ac76"
+      "sha256": "6eef865aea3589f8a547a84568e2d903af5e543af8b0546ae66142d91a5040e1"
     },
     "docs/DIRECTIONAL_METHODS.md": {
       "bytes": 5849,
@@ -5078,8 +5078,8 @@
       "sha256": "d4cb4375fba10d7471b1fd95e80805f81ca20483bcb92775cd56a6666cc788c3"
     },
     "docs/transitions/style.css": {
-      "bytes": 3532,
-      "sha256": "5623b24d8082bf41386d83dffc5c89c6b33596c9a41df8b3db9fb89963a91b01"
+      "bytes": 3590,
+      "sha256": "318501f4a523746365c414dd50fbee654838d1a51beef6f6a58a86b2e928804e"
     },
     "docs/transitions/transition-view.json": {
       "bytes": 161643,
