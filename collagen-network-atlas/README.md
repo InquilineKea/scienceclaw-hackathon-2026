@@ -20,7 +20,7 @@ node benchmark.js
 node benchmark.js --render
 ```
 
-Every command reserves a new `runs/<UTC-timestamp>-<random-id>/` folder, snapshots the current source, and records parameters, results, logs and file checksums there. Failed jobs retain their folder and logs. An explicit `--run-id NAME` is optional and **fails if NAME already exists**. There is no overwrite/resume option. `--prepare-only` creates a source snapshot without running the model.
+Every command reserves a new `runs/<UTC-timestamp>-<random-id>/` folder, snapshots the current source, and records parameters, results, logs and file checksums there. Failed jobs retain their folder and logs. The completed run automatically uploads to ScienceClaw GitHub after sealing; upload failures remain pending for retry. `--no-upload` explicitly keeps a run local. An explicit `--run-id NAME` is optional and **fails if NAME already exists**. There is no overwrite/resume option. `--prepare-only` creates a source snapshot without running the model.
 
 The pipeline runs the original numerical checks, 450-case benchmark, audit, media preparation and report generation. `--render` adds native macOS rendering. Open the resulting run's `index.html` to inspect that run; the root viewer continues to show the frozen baseline. Do not redirect output into an older run's files or invoke historical writer scripts from a frozen folder.
 

@@ -34,4 +34,4 @@ Replay states were originally sampled and retained only for selected cases. JSON
 
 Run `node benchmark.js --render` from collagen-network-atlas on macOS, or omit --render for the numerical/analysis pipeline. It creates a timestamped unique folder, snapshots source, retains success/failure logs, verifies media inputs, and writes a checksum manifest. Existing run IDs are rejected, even after failure. The live molecular launcher likewise creates a distinct run folder. See RUN_STORAGE.md in the atlas.
 
-Completed local runs require a deliberate GitHub upload. This change does not install a background uploader or start a paid GPU job.
+Completed runs now upload automatically through the trusted host uploader, with periodic retries for pending completed folders. Existing run data are never replaced. No paid GPU job is started by upload or retry. See the atlas RUN_STORAGE.md for scope, limits and receipts.

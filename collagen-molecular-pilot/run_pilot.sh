@@ -26,6 +26,8 @@ fi
 mkdir -p runs
 out=$(mktemp -d "$(pwd)/runs/collagen-fragment-pilot-$(date -u +%Y%m%dT%H%M%SZ)-XXXXXX")
 job=$(basename "$out")
+cp pilot.py "$out/pilot.py"
+cp run_pilot.sh "$out/run_pilot.sh"
 image='python@sha256:78c6833ca878fd221957db5d580f7f2e9e31265b38656e97368caf23f12e24c8'
 cleanup() { "${DOCKER[@]}" rm -f "$job" >/dev/null 2>&1 || true; }
 trap cleanup EXIT INT TERM
@@ -39,7 +41,7 @@ timeout --signal=TERM --kill-after=10 600 "${DOCKER[@]}" run --name "$job" --pul
   --user "$(id -u):$(id -g)" --pids-limit 256 --memory 6g --cpus 2 \
   --device nvidia.com/gpu=0 \
   --tmpfs /tmp:rw,exec,nosuid,nodev,size=2g,mode=1777 \
-  --mount "type=bind,src=$(pwd)/pilot.py,dst=/app/pilot.py,readonly" \
+  --mount "type=bind,src=$out/pilot.py,dst=/app/pilot.py,readonly" \
   --mount "type=bind,src=$out,dst=/out" \
   --mount type=volume,src=oxt-alchemi-venv,dst=/opt/venv,readonly \
   --mount type=volume,src=oxt-cache,dst=/models,readonly \
@@ -55,4 +57,9 @@ date -u +%FT%TZ > "$out/finished.txt"
 "${DOCKER[@]}" inspect "$job" --format '{{.Id}} {{.State.ExitCode}} {{.State.OOMKilled}} {{.State.StartedAt}} {{.State.FinishedAt}}' > "$out/container-execution.txt" || true
 nvidia-smi --query-gpu=name,memory.used,utilization.gpu --format=csv > "$out/gpu-after.csv"
 cat "$out/console.log"
+if [ "$rc" -eq 0 ]; then
+  if ! python3 -I ./upload-run.py "$out" --kind molecular --seal-molecular; then
+    echo "Science completed; upload pending. Retain this run for host-side retry." >&2
+  fi
+fi
 exit "$rc"

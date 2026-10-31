@@ -76,6 +76,7 @@ def main():
     ap.add_argument('--run-id',help='Optional unique name; an existing name is an error')
     ap.add_argument('--prepare-only',action='store_true',help='Reserve and snapshot without simulation')
     ap.add_argument('--render',action='store_true',help='Also render PNG/GIF on macOS with system Swift')
+    ap.add_argument('--no-upload',action='store_true',help='Explicitly keep this run local')
     args=ap.parse_args()
     root=Path(__file__).resolve().parent
     if (root/'RUN_CONTEXT.json').exists() or (root/'FREEZE.md').exists():
@@ -120,6 +121,11 @@ def main():
         raise
     write_new(run/'MANIFEST.json',inventory(run))
     print('Finished and checksummed: '+str(run),flush=True)
+    if not args.no_upload:
+        published=subprocess.run([sys.executable,'-I',str(root/'upload-run.py'),str(run),'--kind','atlas'])
+        if published.returncode:
+            print('Computation is complete; GitHub upload is pending and can be retried without rerunning.',file=sys.stderr)
+            return 3
     return 0
 
 
