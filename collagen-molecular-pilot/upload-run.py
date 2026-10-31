@@ -2,9 +2,12 @@
 """Publish sealed scientific runs by adding a new Git tree; never replace a run."""
 from pathlib import Path, PurePosixPath
 import argparse, datetime, hashlib, json, os, re, shutil, subprocess, sys, tempfile, time, uuid
+import importlib.util
+_spec=importlib.util.spec_from_file_location('large_data',Path(__file__).with_name('large_data.py'))
+large_data=importlib.util.module_from_spec(_spec);_spec.loader.exec_module(large_data)
 
 REPOSITORY='InquilineKea/scienceclaw-hackathon-2026'
-PREFIXES={'atlas':'collagen-network-atlas/runs','molecular':'collagen-molecular-pilot/runs'}
+PREFIXES={'atlas':'collagen-network-atlas/runs','molecular':'collagen-molecular-pilot/runs','archive':'datasets'}
 LIMIT=95*1024*1024
 SECRET=re.compile(rb'gh[pousr]_[A-Za-z0-9]{30,}|github_pat_[A-Za-z0-9_]{30,}|sk-[A-Za-z0-9_-]{30,}|-----BEGIN (?:RSA |OPENSSH |EC )?PRIVATE KEY-----|(?i:authorization\s*:\s*bearer\s+)[A-Za-z0-9_.-]{20,}')
 DENIED={'.env','.git','.aws','.ssh','credentials','credentials.json','auth.json','hosts.yml','cookies.sqlite','login data'}
@@ -35,11 +38,16 @@ def validated_files(run,kind):
     for name in sorted(actual):
         parts=PurePosixPath(name)
         if (parts.is_absolute() or '..' in parts.parts or '\\' in name or
-            any(ord(c)<32 for c in name) or any(x.lower() in DENIED for x in parts.parts) or
+            any(ord(c)<32 for c in name) or parts.parts[0]=='_release' or any(x.lower() in DENIED for x in parts.parts) or
             Path(name).suffix.lower() in {'.pem','.key','.p12','.pfx'}):
             raise ValueError('Sensitive or unsafe file path: '+name)
         p=run/name
-        if p.stat().st_size>LIMIT:raise ValueError('File exceeds direct GitHub upload limit; retained locally: '+name)
+        if p.stat().st_size>LIMIT:
+            info=large_data.inspect_file(p,SECRET)
+            m=manifest[name]
+            if info['bytes']!=m['bytes'] or info['sha256']!=m['sha256']:raise ValueError('Changed file: '+name)
+            payload[name]=info
+            continue
         data=p.read_bytes()
         if SECRET.search(data):raise ValueError('Potential credential in '+name)
         if name!='MANIFEST.json':
@@ -47,12 +55,15 @@ def validated_files(run,kind):
             if len(data)!=m['bytes'] or sha(data)!=m['sha256']:raise ValueError('Changed file: '+name)
         payload[name]=data
     if kind=='atlas':
-        d=json.loads(payload['data/results.json'])
-        if d['modelHash']!=sha(payload['model.js']):raise ValueError('Model/results mismatch')
+        d=json.loads((run/'data/results.json').read_text())
+        if d['modelHash']!=large_data.inspect_file(run/'model.js')['sha256']:raise ValueError('Model/results mismatch')
         if not d['rows'] or not all(x.get('valid') for x in d['rows']):raise ValueError('Invalid atlas run')
     elif kind=='molecular':
-        d=json.loads(payload['results.json'])
+        d=json.loads((run/'results.json').read_text())
         if not d.get('all_validated') or d.get('timed_out'):raise ValueError('Unvalidated molecular run')
+    elif kind=='archive':
+        if finished.get('kind')!='archive' or not finished.get('provenance'):
+            raise ValueError('Archive requires explicit provenance; it is not a scientific run')
     else:raise ValueError('Unknown run kind')
     return payload,sha(manifest_bytes)
 
@@ -139,7 +150,14 @@ def upload(run,kind,test_remote=None):
     run=Path(run).absolute();payload,fingerprint=validated_files(run,kind)
     prefix=PREFIXES[kind]+'/'+run.name
     publisher=Publisher(test_remote,test=test_remote is not None)
-    try:result=publisher.publish(payload,prefix)
+    try:
+        large={n:b for n,b in payload.items() if isinstance(b,dict)}
+        if large:
+            if test_remote is not None:raise ValueError('Use a fake Releases transport for offline large-data tests')
+            small={n:b for n,b in payload.items() if isinstance(b,bytes)}
+            payload,finish=large_data.prepare(publisher,small,large,kind,run.name,fingerprint,prefix)
+        result=publisher.publish(payload,prefix)
+        if large:result.update(finish(result['commit']))
     finally:publisher.close()
     result.update({'runId':run.name,'kind':kind,'repository':REPOSITORY,'path':prefix,
                    'manifestSHA256':fingerprint,'verifiedAt':now(),
@@ -153,7 +171,7 @@ def seal_molecular(run):
     d=json.loads((run/'results.json').read_text())
     if not d.get('all_validated') or d.get('timed_out'):raise ValueError('Molecular result did not validate')
     write_new(run/'FINISHED.json',{'status':'complete','finishedAt':now(),'kind':'molecular'})
-    manifest={str(p.relative_to(run)):{'bytes':p.stat().st_size,'sha256':sha(p.read_bytes())}
+    manifest={str(p.relative_to(run)):{'bytes':p.stat().st_size,'sha256':large_data.inspect_file(p)['sha256']}
               for p in sorted(run.rglob('*')) if p.is_file()}
     write_new(run/'MANIFEST.json',manifest)
 

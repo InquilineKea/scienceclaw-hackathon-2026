@@ -70,3 +70,7 @@ isolated containers or disposable VMs; see `SECURITY-REVIEW.md` before running a
 
 MacBook (Python/SciPy/PyTorch), Google Cloud 32-vCPU VM, NVIDIA Brev L4 with ALCHEMI, Docker sandboxes, Gemini via
 Google AI Studio (ScienceClaw swarms and critic swarms). Built with Claude Code, coordinated with Codex.
+
+## Complete large datasets
+
+Files above 95 MiB now upload automatically through [GitHub Releases](https://github.com/InquilineKea/scienceclaw-hackathon-2026/releases). [Dataset links, checksums and exact recovery instructions](LARGE_DATASETS.md) cover the original large files; downloading the GitHub repository ZIP alone does not include release assets.
