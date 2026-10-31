@@ -24,3 +24,10 @@ The interface also reports the initial volume-weighted fabric tensor anisotropy 
 Edit the live source in `collagen-network-atlas/`, then run the original bounded publisher `python3 -I publish-pages.py`. It copies only the explicit public asset list into `docs/` and writes `DEPLOYMENT.json` with model and asset hashes. Check loading markers with `node collagen-network-atlas/check-load-guide.js` and verify browser interactions before pushing. This does not run the scientific benchmark or modify frozen runs or ZIPs. The archived numerical model remains `f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1`.
 
 The 450-run baseline is a hypothetical, dimensionless 2D model, not experimentally calibrated tissue toughness. Numerical and pressure-model limitations remain visible in the explorer and methods. Historical publication packages remain pinned to their original snapshot.
+
+
+## Directional mechanical anisotropy extension
+
+The [load-angle view](https://inquilinekea.github.io/scienceclaw-hackathon-2026/?angle=0&network=aligned&directionSeed=mean#direction) adds an independent prescribed-perimeter tension experiment. A 0–180° slider solves a selected network at any integer angle in a browser worker. The seven stiffness and work-to-criterion curves cover twelve directions and three seeds (252 new runs); 180° repeats 0°. Mean curves and individual seeds, numerical checks, censoring markers, exact-angle JSON exports, and a CSV are available. See `collagen-network-atlas/DIRECTIONAL_METHODS.md` for the explicit boundary condition, metric definitions and limits. The 450 original runs and their model remain frozen.
+
+The new files are original dependency-free code. `node collagen-network-atlas/check-directional.js` checks boundary derivatives, virtual work, rotational covariance, periodicity, analytical single-fiber stiffness and censoring. `node collagen-network-atlas/benchmark-directional.js /new/output/directory` creates a separate directional dataset and refuses to overwrite an existing directory. The published data are frozen under `collagen-network-atlas/directional-runs/20261031-perimeter-v1/`.
