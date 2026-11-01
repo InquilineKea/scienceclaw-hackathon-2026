@@ -173,7 +173,7 @@
       el(
         'span',
         'sc-explorer-nav__title',
-        'Related collagen explorers by geometry & evidence type (13 studies)',
+        'Related collagen explorers by geometry & evidence type ('+CATEGORIES.reduce((n,c)=>n+c.items.length,0)+' studies)',
       ),
     );
     const sumHint = el(

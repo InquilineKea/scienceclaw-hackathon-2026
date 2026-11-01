@@ -104,3 +104,5 @@
 .spatial-swatch{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:6px}
 
 .spatial-swatch-observed{background:#0f766e}.spatial-swatch-predicted{background:#c2410c}.spatial-swatch-selected{background:#0f172a}
+.spatial-inspector-bar,.spatial-inspector-row,.spatial-readout,.spatial-overlay-legend{min-width:0;max-width:100%;box-sizing:border-box}.spatial-inspector-row label{flex-wrap:wrap;min-width:0;max-width:100%}.spatial-inspector-row select{min-width:0;max-width:100%;box-sizing:border-box}.spatial-slab-status,.spatial-readout{overflow-wrap:anywhere}.spatial-inspector-row{width:100%}
+body:has(.spatial-inspector-bar) main table{display:block;max-width:100%;overflow-x:auto}

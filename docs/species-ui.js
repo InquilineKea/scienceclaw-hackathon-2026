@@ -342,6 +342,7 @@
     const yawDeg = camera ? camera.yaw : 18;
     const pitchDeg = camera ? camera.pitch : 16;
     const zoom = camera ? camera.zoom : 1;
+    const status=$('speciesCameraStatus');if(status&&Math.abs(yawDeg-270)<.01&&Math.abs(pitchDeg)<.01)status.textContent='End-on down helix x axis · shared scale · zoom '+zoom.toFixed(2)+'× (linked panes)';
 
     // Compute original x bounds across both species for the displayed residue count
     let xmin = Infinity;

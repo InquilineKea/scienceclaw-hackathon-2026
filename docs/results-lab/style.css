@@ -624,3 +624,5 @@ a:focus-visible {
 
 .result-color-0::before{content:"● ";color:#166d66;font-weight:bold}.result-color-1::before{content:"● ";color:#a1472b;font-weight:bold}.result-color-2::before{content:"● ";color:#6f42a0;font-weight:bold}.result-color-3::before{content:"● ";color:#326aa7;font-weight:bold}.result-color-4::before{content:"● ";color:#8b6c13;font-weight:bold}.result-color-5::before{content:"● ";color:#a23768;font-weight:bold}.result-color-6::before{content:"● ";color:#434e5a;font-weight:bold}
 [hidden]{display:none!important}.kv-item{overflow-wrap:anywhere}
+/* Keep intrinsic tables and SVGs inside the responsive grid. */
+.workspace-split>*{min-width:0;max-width:100%}.chart-column,.detail-column,.chart-card,.chart-header>*{min-width:0}.table-scroll{max-width:100%}.svg-wrapper{background:#f8fafc}.sci-svg text{fill:#24364a}.swatch-gp-obs{background:#166d66}.swatch-gp-pred{background:#56a69c}.swatch-gpp-obs{background:#a1472b}.swatch-gpp-pred{background:#db8a62}

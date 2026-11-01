@@ -200,10 +200,10 @@
         maxInput.disabled = false;
         minInput.min = String(b[0]);
         minInput.max = String(b[1]);
-        minInput.step = String(step);
+        minInput.step = 'any';
         maxInput.min = String(b[0]);
         maxInput.max = String(b[1]);
-        maxInput.step = String(step);
+        maxInput.step = 'any';
         if (resetRange) {
           state.min = b[0];
           state.max = b[1];
@@ -234,7 +234,7 @@
 
       const axisWrap = document.createElement('label');
       axisWrap.textContent = axisLabelPrefix + ' ';
-      axisSel = document.createElement('select');
+      axisSel = document.createElement('select');axisSel.setAttribute('aria-label',axisLabelPrefix);
       const axisOptions = opts.axisOptions || [
         { value: 'all', label: 'All axes (full volume)' },
         { value: 'x', label: 'X slab' },
@@ -252,13 +252,13 @@
       const minWrap = document.createElement('label');
       minWrap.textContent = 'Slab min ';
       minInput = document.createElement('input');
-      minInput.type = 'range';
+      minInput.type = 'range';minInput.setAttribute('aria-label','Slab min');
       minWrap.appendChild(minInput);
 
       const maxWrap = document.createElement('label');
       maxWrap.textContent = 'Slab max ';
       maxInput = document.createElement('input');
-      maxInput.type = 'range';
+      maxInput.type = 'range';maxInput.setAttribute('aria-label','Slab max');
       maxWrap.appendChild(maxInput);
 
       resetSliceBtn = document.createElement('button');
@@ -277,7 +277,7 @@
 
       const sampleWrap = document.createElement('label');
       sampleWrap.textContent = sampleLabel + ' ';
-      sampleSel = document.createElement('select');
+      sampleSel = document.createElement('select');sampleSel.setAttribute('aria-label',sampleLabel);
       sampleWrap.appendChild(sampleSel);
 
       prevBtn = document.createElement('button');
