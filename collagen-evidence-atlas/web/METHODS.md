@@ -40,4 +40,37 @@ The atlas now includes crosslink density/aging hypotheses, saved damage replays,
 
 ## Selection-responsive animations
 
-Force/damage and uniform-drag microrheology can now calculate selected conditions in a browser worker. These are new single-realization synthetic calculations, separate from the unchanged saved ensemble plots. [Animation methods and coverage](ANIMATION-METHODS.md) describe controls, cancellation, qualification and the remaining exact-match-only fluid fields.
+Force/damage and uniform-drag microrheology can now calculate selected conditions in a browser worker. These are new single-realization synthetic calculations, separate from the unchanged saved ensemble plots. [Animation methods and coverage](METHODS.md#selection-responsive-force-damage-and-microrheology-animation) describe controls, cancellation, qualification and the remaining exact-match-only fluid fields.
+
+
+# Selection-responsive force/damage and microrheology animation
+
+This extension replaces fixed demonstration playback with new browser-local single-realization calculations using the existing original project laws. It does not change the saved ensemble tables, measured3D field data, fitted parameters or scientific evidence level. Local worker computation needs no account, cloud instance or paid API.
+
+## Force and damage
+
+Open the force replay inside the crosslink laboratory. Choose whether to animate its left or right selected network. It follows that network family, connector count, loading angle and seed. All seven families, counts0–24 (steps2), twelve directions0–165° and three study seeds are supported. If the curve shows all seeds, choose a representative seed; a trajectory is never an ensemble average.
+
+The worker copies unmodified original model.js, directional.js and aging.js. It builds each placement independently on the same seeded collagen skeleton, with connector stiffness0.2 and rupture strain0.3, then calls the original simulate routine with960 steps. The original secant probe, perimeter affine directional strain, interior relaxation, irreversible damage avalanches, stopping criterion and failure flags are unchanged. Orange direction arrows locate the imposed loading orientation. The left/right animation panels always compare distributed and clustered placement for the chosen single architecture.
+
+Playback selects the last computed frame at or below requested strain. Once one placement stops, its last available state is held and labeled. No interpolation, extrapolation or healing is introduced. Force magnitudes and geometry bounds share a fixed scale across both placements and the entire trajectory. Changing conditions can change that scale; numerical values retain their original units. This one-seed960-step calculation does not establish step convergence for a new comparison or replace saved metric-specific qualification flags.
+
+## Uniform-drag microrheology
+
+The animation follows the microrheology laboratory's family (disordered/modular), size (100/196nodes), frequency and single seed. When the curves show all five seeds, the animation seed selector chooses one realization. Its connector-density and drive-angle controls are explicit: connector count is round(density×nodeCount), with target density0–24/36; the actual count/density is displayed. The saved ensemble curves above remain at their original24/36 target density, with their original x/y drive aggregation. A changed animation density or oblique angle is a new single-specimen calculation, not a new ensemble curve.
+
+The builder, gradient finite-difference tangent, complex-symmetric preconditioned iterative solve and response metrics reuse the pure numerical functions from the original microrheology/run.js. Node filesystem/batch entry points are removed. The full perimeter is clamped; the same four-node probe and three-fiber lesion are used. Added connectors stay intact during the prescribed lesion. At drive angleθ, each probe node receives(0.25cosθ,0.25sinθ), and the displacement readout uses the same energy-conjugate direction. “Follow x/y” uses0° for x and90° for y; if the curves display the x/y mean, it animates the explicitly labeled x realization, never a mean vector field.
+
+We solve (K/k_ref+iΩI)u=b about the unprestressed reference, separately intact and damaged. Tangents are computed at h=1e−6 and h/2; the matrix is symmetrized after recording asymmetry. Each field requires finite phasors, positive local compliance, true relative residual<1e−7, tangent-step relative change<1e−5 and relative asymmetry<1e−5. Any failed intact/damaged pair is not drawn. In particular, the saved singular damaged196-node modular/distributed seed43 static case remains unavailable, not zero compliance. Ω=0 is rendered as a static response; phase/play are disabled.
+
+Playback traverses phase at a fixed display speed, not a clock calibrated to physical time. ChangingΩ changes the solved amplitude and phase lag. For positiveΩ, displayed displacement is Re(u)cosφ−Im(u)sinφ. Total and damaged-minus-intact modes each derive one common scale from both placements; the scale is fixed during phase playback and shown numerically. Density/frequency/angle changes may rescale the view, so compare physical model amplitudes in the numerical readouts, not arrow length across different selections. Optional magnification applies equally to both placements. No new rupture develops during the harmonic cycle. Ω is normalized, not Hz; this is not calibrated tissue G′/G″ or damage propagation in time.
+
+## Fluid-coupled coverage
+
+No new FEniCSx pressure solver has been ported into the browser. The legacy saved fluid example is available only for196nodes,seed17, target density24/36,0° drive,Ω=0.1,κ=0.001, in each of the two available architectures. Changing any of those conditions clears the field and explicitly reports that no matching pressure solve exists. It never rotates, rescales or relabels old fluid fields as a new solution. Its original model assumptions and observable-specific pressure-mesh limitations remain as described in the integration methods. Uniform drag is the available on-demand response model.
+
+## Cancellation, provenance and checks
+
+Calculation runs in a dedicated worker, bounded to60 seconds and an eight-entry in-memory result cache. Controls debounce180ms. A new selection terminates the previous worker, clears old fields, disables playback while pending, and rejects stale completion messages. Closing the details cancels a running calculation. Pause, cancellation and retry are available; playback pauses when hidden or scrolled away. Completed results export as JSON with full selection parameters, geometry, fields/frames and numerical checks. This is local scientific data, not telemetry.
+
+The isolated original Node/stdlib harness verifies force metrics against saved density rows, validates microrheology amplitudes and qualification against saved responses, preserves the singular static exclusion and irreversible damage, and independently checks that45° complex fields equal the normalized sum of0° and90° solutions. Native browser QA tests selection changes, phase play/pause, stale-result cancellation and exact saved-fluid coverage. See the responsive-animation source provenance and validation records. None of these checks is new biological/material validation.

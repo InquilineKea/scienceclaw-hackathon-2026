@@ -1,0 +1,12 @@
+{
+  "sha256": "95104a4b5f9e7dbcbc90cc6a6f40782a586b546ac4463a1c95b73a05206c9a38",
+  "bytes": 36916,
+  "sources": [
+    "solver/model.js",
+    "solver/directional.js",
+    "solver/aging.js",
+    "solver/micro.js",
+    "animation-worker.js"
+  ],
+  "change": "Concatenate original sources; remove importScripts only. No eval, network imports or new dependency. Blob worker revoked after use."
+}

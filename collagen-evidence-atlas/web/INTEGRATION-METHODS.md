@@ -1,6 +1,6 @@
 # Current animation extension
 
-The ensemble comparisons below are unchanged. Force/damage and uniform-drag animations now calculate selected conditions on demand; [responsive animation methods](ANIMATION-METHODS.md) supersede the fixed-example playback descriptions in this historical integration record. Fluid fields remain exact-match saved coverage only.
+The ensemble comparisons below are unchanged. Force/damage and uniform-drag animations now calculate selected conditions on demand; [responsive animation methods](METHODS.md#selection-responsive-force-damage-and-microrheology-animation) supersede the fixed-example playback descriptions in this historical integration record. Fluid fields remain exact-match saved coverage only.
 
 # Integrated crosslink and microrheology comparisons
 
