@@ -1,0 +1,7 @@
+# Native browser QA, 2026-11-01
+
+Original integration served on localhost using a disposable stdlib preview server. Fresh tab51 reported no error/warning logs after controls and both saved replay modules ran. Checked measured3D data/rendering retained, all7 crosslink choices, work/stiffness/count/angle controls, count0 paired ratios exactly1.000, density12 disordered cluster qualification marker, force replay last available STOPPED state, harmonic phase advancement and pause, fluid model and damaged-minus-intact mode. The first rendering pass exposed a return36 typo; corrected before publication. Long-page smooth scrolling interfered with control targeting after responsive resizing; the integrated page now uses stable immediate section navigation.
+
+Microrheology checks: damaged static modular/distributed seed43 produces unavailable, never zero; all-seed comparison intersects to17,29,67,83 on both panels. The100-node disordered distributed fluid-vs-drag mesh-qualified example retains common seeds29,67,83 and matches the original summary. Default196-node disordered uniform-drag means/paired ratios match source aggregation.
+
+At390 CSS-pixel viewport, document width371≤390 and paired articles stack in one column at equal width335px. Reset viewport override afterward. Network examples preserve explicit fixed-context labels and shared scales. No new scientific computation or third-party execution.

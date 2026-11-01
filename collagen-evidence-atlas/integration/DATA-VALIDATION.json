@@ -1,0 +1,85 @@
+{
+  "qualified_poro_example": {
+    "seeds": [
+      29,
+      67,
+      83
+    ],
+    "poro_ratio": 1.0255820508283633,
+    "matched_drag_ratio": 1.0339678385345192,
+    "matches_original_qualified_summary": true
+  },
+  "density_rows_exact": 6300,
+  "shared_zero_controls": 252,
+  "uniform_drag_rows_exact": 960,
+  "fine_poro_rows_exact": 1600,
+  "mesh_comparisons_preserved": 1600,
+  "uniform_drag_unresolved_static_rows": 2,
+  "matched_modular_static_seed_set": [
+    17,
+    29,
+    67,
+    83
+  ],
+  "fixed_field_cases": 4,
+  "force_replay_cases": 4,
+  "no_healing_or_interpolation_added": true,
+  "measured_3D_data_unchanged": true,
+  "density_example_summaries": [
+    {
+      "family": "isotropic",
+      "pattern": "distributed",
+      "count": 12,
+      "angle": 0,
+      "stiffness": {
+        "mean_paired_ratio": 1.887307334293709,
+        "qualified": true
+      },
+      "work": {
+        "mean_paired_ratio": 1.2042718637004295,
+        "qualified": true
+      },
+      "failureStrain": {
+        "mean_paired_ratio": 1.0213270240576686,
+        "qualified": true
+      }
+    },
+    {
+      "family": "isotropic",
+      "pattern": "clustered",
+      "count": 12,
+      "angle": 0,
+      "stiffness": {
+        "mean_paired_ratio": 1.3935194604673735,
+        "qualified": true
+      },
+      "work": {
+        "mean_paired_ratio": 0.9264912281925924,
+        "qualified": false
+      },
+      "failureStrain": {
+        "mean_paired_ratio": 0.8730270217539752,
+        "qualified": false
+      }
+    },
+    {
+      "family": "modular",
+      "pattern": "clustered",
+      "count": 12,
+      "angle": 0,
+      "stiffness": {
+        "mean_paired_ratio": 2.244415984947708,
+        "qualified": true
+      },
+      "work": {
+        "mean_paired_ratio": 2.162735510090782,
+        "qualified": true
+      },
+      "failureStrain": {
+        "mean_paired_ratio": 1.1661385293060051,
+        "qualified": true
+      }
+    }
+  ],
+  "scope": "Saved-data integrity and matched aggregation checks; no new solver or biological validation."
+}

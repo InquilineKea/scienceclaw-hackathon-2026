@@ -31,3 +31,8 @@ Only the primary combined candidate received the full20-step/302-direction refin
 Argon proposed synchronized3D views, residual lenses, tomographic slicing, a dual ledger for frozen/global versus conditional/local scores, pairwise model comparison, point inspection, an evidence map and restrained archival styling. We adopted those features. We did not implement suggestions requiring unavailable data (all-node eligibility/stencil membership/radial distance from the cell surface), infer fiber architecture, or adopt unverified claims that a custom palette is perceptually uniform or achieves a particular contrast ratio. The design model's output is advice, not scientific evidence.
 
 See the GitHub source folder for the design brief, final design, review receipts, implementation decisions, data hashes and browser checks. Only final non-thought model text and usage metadata are retained. Existing VM costs are separate from estimated API token cost; estimates are not billing receipts.
+
+
+## Integrated comparisons, November 1
+
+The atlas now includes crosslink density/aging hypotheses, saved damage replays, and paired uniform-drag/fluid-coupled microrheology. See [integration methods](INTEGRATION-METHODS.md) and [comparison provenance](COMPARISON-PROVENANCE.json). These saved synthetic studies remain distinct from the measured-field benchmark above.

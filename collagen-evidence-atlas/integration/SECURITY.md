@@ -1,0 +1,3 @@
+# Scope and security review
+
+New code is original stdlib Python and native JavaScript/SVG/Canvas. No installer, third-party dependency, external runtime import, credentials, browser storage, telemetry or cloud mutation. Saved data.js was decoded as inert JSON, never executed. Reviewed runtime imports are local modules only; all fetches are local public static JSON. External links are navigation to existing public scientific sources. Native browser QA executes only this original presentation code. Input data retains scientific uncertainty and is never treated as instructions. A static review cannot prove absence of every software defect.
