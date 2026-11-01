@@ -1,0 +1,61 @@
+{
+  "run_id": "openmm_cuda_20261031T090236Z",
+  "status": "pass",
+  "files": [
+    {
+      "path": "README.txt",
+      "bytes": 3290,
+      "sha256": "7332aa1bdeeef6d67a07417f8bd0c34d8769fddfbac59e089d8ffe67eccfc2c3"
+    },
+    {
+      "path": "evidence/execution_tool_checks.json",
+      "bytes": 4828,
+      "sha256": "6f4a9c84dad7db41017e06e123243f9243c806efed6b4f2bd6a2302507d7cdc0"
+    },
+    {
+      "path": "evidence/execution_tool_checks_unrestricted.json",
+      "bytes": 1050,
+      "sha256": "556249aa781a4cd568383a8ef12e2cf0466883156bfbeca0db49056e33ebede8"
+    },
+    {
+      "path": "evidence/openmm_cuda_20261031T090236Z.log",
+      "bytes": 9988,
+      "sha256": "9960b3b13b2387f123847b2f024c5802123618b2c3a7686b08b05e1145876d57"
+    },
+    {
+      "path": "evidence/openmm_cuda_20261031T090236Z_packages.txt",
+      "bytes": 253,
+      "sha256": "73abf458fe0eb4fc91d54b20b3e997020bdbced058d789b989b23cb101342025"
+    },
+    {
+      "path": "publication_metadata.json",
+      "bytes": 634,
+      "sha256": "453ba50c29be3c6ed2230f9cfe228a519b29e6157d1cdf0fd26804d6b9cab77a"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 253,
+      "sha256": "73abf458fe0eb4fc91d54b20b3e997020bdbced058d789b989b23cb101342025"
+    },
+    {
+      "path": "results/openmm_cuda_20261031T090236Z.json",
+      "bytes": 2676,
+      "sha256": "125ba97ae704b4f2ebe42311bb21a6be0c63f653e24d4ff5e7f399b1da66155d"
+    },
+    {
+      "path": "results/openmm_cuda_execution_tool.json",
+      "bytes": 542,
+      "sha256": "7499c1086b93432ab8e054d4195edf7855701badce00475c8968195a0dcee92e"
+    },
+    {
+      "path": "scripts/openmm_cuda_smoke.py",
+      "bytes": 4517,
+      "sha256": "84f0c4070472ffda9e18b7942589d687fdd60ff7a96ce751ca1583c4f9d9e26b"
+    },
+    {
+      "path": "scripts/run_openmm_cuda_smoke.sh",
+      "bytes": 2023,
+      "sha256": "58de92451540259320317ed7c445edff731485993741ca46cb441f360eb5d914"
+    }
+  ]
+}

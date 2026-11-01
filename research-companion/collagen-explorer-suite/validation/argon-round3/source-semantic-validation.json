@@ -1,0 +1,174 @@
+{
+  "counts": {
+    "studies": 33,
+    "models": 155,
+    "savedFrames": 4824
+  },
+  "studies": [
+    {
+      "id": "collagen-elastin-load-sharing",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "historical-denominators",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "sliding-stiffness-damage",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "junction-angle-controlled",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "interface-gripping",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "setpoint-negative-control",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "controlled-topology-cpu",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "graph-audit-largest-size-controls",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "rigidity-audit",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "bonded-particle-bundle",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "organoid-scaffold-pareto",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "shell-patch-damage",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "finite-attachment",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "percolation-rigidity",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "matched-budget-topologies",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "degree-controlled-triangles",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "junction-ownership",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "carbonyl-scenarios",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "comparative-evidence-design",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "coupled-3d-law",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "cross-scale-provenance",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "decorin-collagen-gag",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "four-bead-calibration",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "hne-candidate-precision",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "hydroxylation-prestress",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "mace-fragments",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "martini-pulling-virial",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "reference-1dzi",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "reference-1k6f",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "short-crosslink-md",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "snt-ligand-ensemble",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "study-design-and-gates",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    },
+    {
+      "id": "wet-transfer-gates",
+      "source_tables_semantically_identical": true,
+      "saved_model_geometry_checked": true
+    }
+  ]
+}

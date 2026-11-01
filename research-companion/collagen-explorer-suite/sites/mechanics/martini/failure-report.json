@@ -1,0 +1,27 @@
+{
+  "schema": 1,
+  "status": "failed_constraint_validation",
+  "chemistry_attempted": "HLKNL",
+  "failed_at_time_ps_approximately": 586.6,
+  "requested_duration_ns_per_case": 45,
+  "required_discard_ns": 30,
+  "accepted_post_equilibration_ns": 0,
+  "PYD_production_started": false,
+  "failure_type": "LINCS constraint warnings, nonzero exit",
+  "root_cause": "Unresolved; runtime/protocol choices and model stability require diagnosis. This does not establish invalidity of the published model.",
+  "numerical_checks": "Single-frame force/energy and axial-virial comparisons passed, but did not establish dynamical stability.",
+  "molecular_network_calibration": false,
+  "native_controls": "PYD/DPD hydroxylation-pattern starting geometries prepared; compatible force-field parameters and dynamic validation unresolved. Not completed controls or Martini fibril controls.",
+  "glucosepane_simulated_by_this_Martini_study": false,
+  "paper_doi": "10.1016/j.bpj.2025.10.012",
+  "dataset_doi": "10.17617/3.MF8BBT",
+  "protocol_deviations": [
+    "Balanced relative cap pairs replace equal/opposite absolute coordinates.",
+    "Listed-pair table extension increased to retain long Go-contact tails.",
+    "Verlet neighbor settings optimized after single-frame numerical comparisons."
+  ],
+  "force_convention": "|k|1806kJ/mol/nm, approximately2998.93pN per three-chain cap group; archived filename1000pN is not the per-group force.",
+  "input_temperature_K": 303,
+  "reference_sampling": "Archived reduced trajectories have11frames from0to110ns, not dense independent replicas.",
+  "prediction_scope": "No calibrated cell adhesion forces, physiological relaxation times, rupture rates or YAP/TAZ prediction."
+}
