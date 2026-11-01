@@ -91,3 +91,5 @@
 }
 
 .spatial-canvas{touch-action:none;cursor:grab;max-width:100%;height:auto}.spatial-pane canvas{aspect-ratio:auto}.spatial-toolbar label{display:grid;gap:4px}.replay-legend{display:flex;flex-wrap:wrap;gap:14px}.replay-status{line-height:1.6}.spatial-grid>*{min-width:0}
+
+.spatial-table-scroll{max-width:100%;overflow-x:auto}
