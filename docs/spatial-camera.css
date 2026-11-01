@@ -93,3 +93,16 @@
 .spatial-canvas{touch-action:none;cursor:grab;max-width:100%;height:auto}.spatial-pane canvas{aspect-ratio:auto}.spatial-toolbar label{display:grid;gap:4px}.replay-legend{display:flex;flex-wrap:wrap;gap:14px}.replay-status{line-height:1.6}.spatial-grid>*{min-width:0}
 
 .spatial-table-scroll{max-width:100%;overflow-x:auto}
+.spatial-inspector-bar{margin:10px 0 14px;padding:10px 12px;background:#f8fafc;border:1px solid #d5e0ea;border-radius:8px;font-size:14px;display:grid;gap:8px}
+.spatial-inspector-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.spatial-inspector-row label{display:inline-flex;align-items:center;gap:6px;font-size:13px}
+.spatial-inspector-row button,.spatial-inspector-row select{padding:5px 9px;font-size:13px;border:1px solid #9fb0c2;background:#fff;border-radius:5px;color:#172b42}
+.spatial-slab-status{font-size:13px;color:#41566d;margin-left:auto}
+.spatial-readout{padding:8px 10px;background:#ffffff;border:1px solid #dce4ec;border-radius:6px;font-size:13px;line-height:1.5}
+.spatial-readout-grid{display:grid;gap:4px;margin-top:4px}
+.spatial-overlay-legend{display:flex;flex-wrap:wrap;gap:14px;font-size:13px;color:#173047;padding:4px 2px}
+.spatial-swatch{display:inline-block;width:14px;height:3px;vertical-align:middle;margin-right:6px}
+
+.spatial-swatch-observed{background:#0f766e}.spatial-swatch-predicted{background:#c2410c}.spatial-swatch-selected{background:#0f172a}
+.spatial-inspector-bar,.spatial-inspector-row,.spatial-readout,.spatial-overlay-legend{min-width:0;max-width:100%;box-sizing:border-box}.spatial-inspector-row label{flex-wrap:wrap;min-width:0;max-width:100%}.spatial-inspector-row select{min-width:0;max-width:100%;box-sizing:border-box}.spatial-slab-status,.spatial-readout{overflow-wrap:anywhere}.spatial-inspector-row{width:100%}
+body:has(.spatial-inspector-bar) main table{display:block;max-width:100%;overflow-x:auto}
