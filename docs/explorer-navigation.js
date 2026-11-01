@@ -8,6 +8,7 @@
     : new URL('./', window.location.href);
 
   const CATEGORIES = [
+    {title:'Collagen saved-study observatory',subtitle:'33 separate saved-data studies; actual 3D coordinates where archived, explicit gates and uncertainty.',items:[{id:'collagen-studies',title:'33 collagen dashboards: molecular structures, networks and evidence',relPath:'collagen-studies/',geometry:'155 saved coordinate models with frame and node inspectors',evidence:'Saved pilots, synthetic models and observed evidence kept distinct',note:'Actual molecular reference coordinates, coarse-grained mappings, bond breakage, signed spectra, distribution overlays and source-linked records.'},{id:'controlled-networks',title:'Controlled 1,600-comparison finite-element network benchmark',relPath:'controlled-networks-20261101/',geometry:'Saved mesh and topology comparisons',evidence:'Separate qualified comparisons and algebraic solver counts',note:'Existing controlled benchmark remains available alongside the new gallery.'}]},
     {title:'Saved results: measured and simulated',subtitle:'Separate evidence types; no new fits, simulations or molecular calibration.',items:[{id:'results-lab',title:'Organoid model & held-out rheology results',relPath:'results-lab/',geometry:'2D numerical plots with selected-record readouts',evidence:'156 synthetic gels / 210 rheology measurements',note:'Synthetic gene outputs and measured small-strain bovine hydrogel tests occupy separate tabs. Residuals are not predictive uncertainty.'}]},
     {
       title: 'Molecular backbones',
