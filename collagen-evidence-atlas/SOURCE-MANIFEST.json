@@ -1,6 +1,6 @@
 {
-  "scope": "Original visualization, saved public data, integration methods and immutable historical Argon design records. No credentials or raw private transports.",
-  "implementation_commit": "a18724c1d1688d0bedb1ef87d27926772c6d99ff",
+  "scope": "Original presentation of saved ensemble studies and bounded browser-local single-realization force/damage and uniform-drag microrheology solves; fluid fields exact saved coverage only. No cloud/API spend or new calibration.",
+  "implementation_commit": "ecca993c09e41f027f7d792e523ff73961bffbe7",
   "files": [
     {
       "file": "BROWSER-VERIFICATION.json",
@@ -19,8 +19,8 @@
     },
     {
       "file": "README.md",
-      "bytes": 2127,
-      "sha256": "086192be3c9d016b17e1e043a3a47ba037032e02f7ae26ebef912787cfaac9e5"
+      "bytes": 2604,
+      "sha256": "bdb11653faf107ea6848b42efc98e15e25860498432161708b4a20d281ebaf9c"
     },
     {
       "file": "REVIEW-RESOLUTION.md",
@@ -118,6 +118,36 @@
       "sha256": "bd0c60352b85f8c9a79b162c0835ab0c4d3643d2666c1720fdbc8e461714574c"
     },
     {
+      "file": "responsive-animation/BROWSER-QA.md",
+      "bytes": 1331,
+      "sha256": "ff030924de5e10864e41b40a2df31bcb51ceb6f971bb3400885927dc4c73b2ea"
+    },
+    {
+      "file": "responsive-animation/README.md",
+      "bytes": 1132,
+      "sha256": "6e5591129d533244b097904a743f412aa8add955be65ce04ad326d25bb734f02"
+    },
+    {
+      "file": "responsive-animation/SECURITY.md",
+      "bytes": 1317,
+      "sha256": "32dc2ae41f5d566a79257191465cfcbff3920a229d4ec59ca7d34d093e72ebb8"
+    },
+    {
+      "file": "responsive-animation/SOURCE-PROVENANCE.json",
+      "bytes": 954,
+      "sha256": "ef191c0443ffb0dec6864442bfebcdb0b92f1041cd03c2043c553a490164b3d5"
+    },
+    {
+      "file": "responsive-animation/VALIDATION.json",
+      "bytes": 4729,
+      "sha256": "2555f54b64c372d5ad2c36aff1a987d20a54b9171e4644f4ebd5e5e32a3e9360"
+    },
+    {
+      "file": "responsive-animation/check-worker.cjs",
+      "bytes": 4075,
+      "sha256": "8fe5f387153155070f1809b2c5653412434b9f5c2936e0c47d0ed93375e1f878"
+    },
+    {
       "file": "stage-public.py",
       "bytes": 1390,
       "sha256": "a27138947e7f83378a246cd82ccb91c8142b27204786420c1152ff87709c5bf8"
@@ -126,6 +156,11 @@
       "file": "validate-data.py",
       "bytes": 2303,
       "sha256": "295ef3180d73da0763f5627b13f2c5286670f686c9f8cf6bb8967185a9f37667"
+    },
+    {
+      "file": "web/ANIMATION-METHODS.md",
+      "bytes": 6474,
+      "sha256": "578ddf59e60e447e259a42bab03dd3e4a81e66e622da74fca1dd00f20fc071d8"
     },
     {
       "file": "web/COMPARISON-PROVENANCE.json",
@@ -139,23 +174,28 @@
     },
     {
       "file": "web/INTEGRATION-METHODS.md",
-      "bytes": 7105,
-      "sha256": "1be6501119ce43992e775d2ddc6720eb0b7850dd388b99f904a75ffea55e0dbd"
+      "bytes": 7464,
+      "sha256": "18ac8c2964a6e059d280d7b8d07ac36f3528095434f7eab5205f5a7212f11b16"
     },
     {
       "file": "web/METHODS.md",
-      "bytes": 6248,
-      "sha256": "e0b647b9d9b981aef5aa185b81c913857e6e8b6ef0963f2cbba563e930fc6c27"
+      "bytes": 6647,
+      "sha256": "a6cc48588d7d294f7a0e585549a6bb57d18f2371363d95e5e1bd73fc4c02fc53"
     },
     {
       "file": "web/WEB-MANIFEST.json",
-      "bytes": 2885,
-      "sha256": "9e60dd0373c1413cb711bbc9df1f67c08fdda01e51d329a83248e7aed65ac9f3"
+      "bytes": 3882,
+      "sha256": "be57156f81ce22a3beff246cd9392213308fc923f406966b9854d0c418e50006"
+    },
+    {
+      "file": "web/animation-worker.js",
+      "bytes": 3277,
+      "sha256": "52591d01871fcb8e980a35a0ca34bbcabfd4b0c51aa5719ae532dc9e169b39cf"
     },
     {
       "file": "web/app.js",
-      "bytes": 19272,
-      "sha256": "645f9df1ece7f59c78e31ba8419185e27f708bd34b0c136d056336e17801c41e"
+      "bytes": 19276,
+      "sha256": "b3dbaad1f43aa21fac1ff2bbedc267390e88b561747534f8bd873ff37010ee29"
     },
     {
       "file": "web/comparison-plots.js",
@@ -169,8 +209,8 @@
     },
     {
       "file": "web/comparisons.js",
-      "bytes": 12996,
-      "sha256": "8f4018c4236593660c34d3b303d73c715c039303c676bc448fcd95074955479d"
+      "bytes": 13048,
+      "sha256": "e32598d3170a1c2db3f1003d20ce1320d02a870fb7a97ff9322e50033b5776fc"
     },
     {
       "file": "web/crosslink-replay.json",
@@ -189,13 +229,13 @@
     },
     {
       "file": "web/evidence-atlas.zip",
-      "bytes": 3560126,
-      "sha256": "e61eaaa0c282987315a57c4d2645d80ae58b0ad2403f1d02e976bf75c69efae7"
+      "bytes": 3583144,
+      "sha256": "9907dc58a465122f973784cf56ba82f3891c01a018eace1b2a4358fd4679b2c6"
     },
     {
       "file": "web/index.html",
-      "bytes": 25839,
-      "sha256": "b602e2b52153d30c4cd65fa8a1e329f05095389dbee5814346414f7a3f52417d"
+      "bytes": 28930,
+      "sha256": "62166db987c75a77c9e561f378c2915b3afa622b1a6ebd1f331c4d68fae6b644"
     },
     {
       "file": "web/micro-fields.json",
@@ -209,13 +249,33 @@
     },
     {
       "file": "web/network-scenes.js",
-      "bytes": 7430,
-      "sha256": "bdf10de5fea6f83e7e190d3d91e7ad2d7698707b897b2fd7ebc7ae12ce02d1a1"
+      "bytes": 14753,
+      "sha256": "539a12258c0c676a8f88fe26f0cb2038da0524758a5151113c8c4b26567b5634"
     },
     {
       "file": "web/render.js",
       "bytes": 10586,
       "sha256": "ecb71d71a6a5228b1518e85a99db5cef1067b980eb475520a13d74ead2e79113"
+    },
+    {
+      "file": "web/solver/aging.js",
+      "bytes": 6862,
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+    },
+    {
+      "file": "web/solver/directional.js",
+      "bytes": 3224,
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+    },
+    {
+      "file": "web/solver/micro.js",
+      "bytes": 4796,
+      "sha256": "19712cdfa5bf20a7367ce874d8b5be0391de801192ce638c752b78afd9feab3c"
+    },
+    {
+      "file": "web/solver/model.js",
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
     },
     {
       "file": "web/style.css",

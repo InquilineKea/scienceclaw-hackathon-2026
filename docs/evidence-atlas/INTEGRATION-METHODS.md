@@ -1,3 +1,7 @@
+# Current animation extension
+
+The ensemble comparisons below are unchanged. Force/damage and uniform-drag animations now calculate selected conditions on demand; [responsive animation methods](ANIMATION-METHODS.md) supersede the fixed-example playback descriptions in this historical integration record. Fluid fields remain exact-match saved coverage only.
+
 # Integrated crosslink and microrheology comparisons
 
 This original buildless extension displays saved outputs from source snapshot `7b314da640105d37b27105721c88bb87404b6429` in the existing Collagen Evidence Atlas. It runs no solver and changes no fitted parameters. `COMPARISON-PROVENANCE.json` records exact source paths, SHA-256 hashes, exports and exclusions; the integration folder contains preparation and independent validation scripts. The original measured-field data and renderer are unchanged.

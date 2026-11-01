@@ -36,3 +36,8 @@ See the GitHub source folder for the design brief, final design, review receipts
 ## Integrated comparisons, November 1
 
 The atlas now includes crosslink density/aging hypotheses, saved damage replays, and paired uniform-drag/fluid-coupled microrheology. See [integration methods](INTEGRATION-METHODS.md) and [comparison provenance](COMPARISON-PROVENANCE.json). These saved synthetic studies remain distinct from the measured-field benchmark above.
+
+
+## Selection-responsive animations
+
+Force/damage and uniform-drag microrheology can now calculate selected conditions in a browser worker. These are new single-realization synthetic calculations, separate from the unchanged saved ensemble plots. [Animation methods and coverage](ANIMATION-METHODS.md) describe controls, cancellation, qualification and the remaining exact-match-only fluid fields.

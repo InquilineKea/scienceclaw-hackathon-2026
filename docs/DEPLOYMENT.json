@@ -617,16 +617,20 @@
     }
   },
   "evidence_atlas": {
-    "scope": "Original integrated presentation of saved, separately qualified measured-field and synthetic-network studies; no new solver or Argon call.",
-    "implementation_commit": "a18724c1d1688d0bedb1ef87d27926772c6d99ff",
+    "scope": "Original presentation of saved ensemble studies and bounded browser-local single-realization force/damage and uniform-drag microrheology solves; fluid fields exact saved coverage only. No cloud/API spend or new calibration.",
+    "implementation_commit": "ecca993c09e41f027f7d792e523ff73961bffbe7",
     "files": {
+      "animation-worker.js": {
+        "bytes": 3277,
+        "sha256": "52591d01871fcb8e980a35a0ca34bbcabfd4b0c51aa5719ae532dc9e169b39cf"
+      },
       "index.html": {
-        "bytes": 25839,
-        "sha256": "b602e2b52153d30c4cd65fa8a1e329f05095389dbee5814346414f7a3f52417d"
+        "bytes": 28930,
+        "sha256": "62166db987c75a77c9e561f378c2915b3afa622b1a6ebd1f331c4d68fae6b644"
       },
       "WEB-MANIFEST.json": {
-        "bytes": 2885,
-        "sha256": "9e60dd0373c1413cb711bbc9df1f67c08fdda01e51d329a83248e7aed65ac9f3"
+        "bytes": 3882,
+        "sha256": "be57156f81ce22a3beff246cd9392213308fc923f406966b9854d0c418e50006"
       },
       "comparisons.css": {
         "bytes": 4213,
@@ -637,16 +641,16 @@
         "sha256": "56154722b12d2d3b9cacdb752fe9a71440023702a42f5a77e916e0e8ace965e5"
       },
       "INTEGRATION-METHODS.md": {
-        "bytes": 7105,
-        "sha256": "1be6501119ce43992e775d2ddc6720eb0b7850dd388b99f904a75ffea55e0dbd"
+        "bytes": 7464,
+        "sha256": "18ac8c2964a6e059d280d7b8d07ac36f3528095434f7eab5205f5a7212f11b16"
       },
       "render.js": {
         "bytes": 10586,
         "sha256": "ecb71d71a6a5228b1518e85a99db5cef1067b980eb475520a13d74ead2e79113"
       },
       "comparisons.js": {
-        "bytes": 12996,
-        "sha256": "8f4018c4236593660c34d3b303d73c715c039303c676bc448fcd95074955479d"
+        "bytes": 13048,
+        "sha256": "e32598d3170a1c2db3f1003d20ce1320d02a870fb7a97ff9322e50033b5776fc"
       },
       "microrheology.json": {
         "bytes": 2991273,
@@ -657,12 +661,12 @@
         "sha256": "464de1608cc7030548d794cca870fbe49ff738289578b0db1e62dcc22d05c2a9"
       },
       "evidence-atlas.zip": {
-        "bytes": 3560126,
-        "sha256": "e61eaaa0c282987315a57c4d2645d80ae58b0ad2403f1d02e976bf75c69efae7"
+        "bytes": 3583144,
+        "sha256": "9907dc58a465122f973784cf56ba82f3891c01a018eace1b2a4358fd4679b2c6"
       },
       "network-scenes.js": {
-        "bytes": 7430,
-        "sha256": "bdf10de5fea6f83e7e190d3d91e7ad2d7698707b897b2fd7ebc7ae12ce02d1a1"
+        "bytes": 14753,
+        "sha256": "539a12258c0c676a8f88fe26f0cb2038da0524758a5151113c8c4b26567b5634"
       },
       "data.json": {
         "bytes": 1164462,
@@ -673,12 +677,16 @@
         "sha256": "6ae97c071829d31226dc1f43cbe2a843e041dc1b845bea6f6d4e02940210ba2b"
       },
       "METHODS.md": {
-        "bytes": 6248,
-        "sha256": "e0b647b9d9b981aef5aa185b81c913857e6e8b6ef0963f2cbba563e930fc6c27"
+        "bytes": 6647,
+        "sha256": "a6cc48588d7d294f7a0e585549a6bb57d18f2371363d95e5e1bd73fc4c02fc53"
       },
       "style.css": {
         "bytes": 17129,
         "sha256": "d36dfb4d7a07c66d6cc5a8ad65b5531012e053aa9a6a63b225737aecbba68edf"
+      },
+      "ANIMATION-METHODS.md": {
+        "bytes": 6474,
+        "sha256": "578ddf59e60e447e259a42bab03dd3e4a81e66e622da74fca1dd00f20fc071d8"
       },
       "crosslinks.json": {
         "bytes": 4435043,
@@ -693,8 +701,24 @@
         "sha256": "c4e3860075b9ca6dbf4475bb36949201deb2cdf9ccf6722ece50f145c6c39168"
       },
       "app.js": {
-        "bytes": 19272,
-        "sha256": "645f9df1ece7f59c78e31ba8419185e27f708bd34b0c136d056336e17801c41e"
+        "bytes": 19276,
+        "sha256": "b3dbaad1f43aa21fac1ff2bbedc267390e88b561747534f8bd873ff37010ee29"
+      },
+      "solver/micro.js": {
+        "bytes": 4796,
+        "sha256": "19712cdfa5bf20a7367ce874d8b5be0391de801192ce638c752b78afd9feab3c"
+      },
+      "solver/aging.js": {
+        "bytes": 6862,
+        "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8"
+      },
+      "solver/directional.js": {
+        "bytes": 3224,
+        "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee"
+      },
+      "solver/model.js": {
+        "bytes": 18846,
+        "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
       }
     }
   }
