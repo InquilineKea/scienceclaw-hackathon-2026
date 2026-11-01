@@ -202,7 +202,7 @@ async function loadCatalog() {
   banner.textContent = 'Loading catalog.json...';
   el('error-banner').hidden = true;
   try {
-    const res = await fetch(new URL('./catalog.json', document.baseURI));
+    const res = await fetch(new URL('./catalog.json?v=20261101r3h', document.baseURI));
     if (!res.ok) throw new Error(`Catalog HTTP ${res.status}`);
     const data = await res.json();
     state.catalog = Array.isArray(data?.studies) ? data.studies : [];
