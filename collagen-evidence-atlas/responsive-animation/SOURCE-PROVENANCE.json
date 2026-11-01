@@ -1,0 +1,22 @@
+{
+  "prior_public_snapshot": "d2faa005fb0052f94b01c00dcb84bba109d1b34c",
+  "original_scientific_modules": [
+    {
+      "source": "collagen-network-atlas/model.js",
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+      "unmodified": true
+    },
+    {
+      "source": "collagen-network-atlas/directional.js",
+      "sha256": "28ff680deb0c053bb472864c589a65dc6c6bbf4c36e247a82569034dd32c30ee",
+      "unmodified": true
+    },
+    {
+      "source": "collagen-network-atlas/aging.js",
+      "sha256": "3374c2588c15e1c488b1d6fb586f2d8b5f6ef28fc2e9d8a5868b348233b74ae8",
+      "unmodified": true
+    }
+  ],
+  "micro_adaptation": "Pure original build/hessian/complex solve/metrics functions; no Node fs/batch entry. Added density argument; arbitrary-angle drive uses cos/sin force components.",
+  "browser_computation": "New single-realization solves; saved ensemble tables retained unchanged. No new fluid-coupled solver."
+}

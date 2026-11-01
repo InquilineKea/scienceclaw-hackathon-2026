@@ -14,3 +14,8 @@ Argon made two bounded calls. Design and static review, prompt hashes, model IDs
 ## Integrated crosslinks and microrheology
 
 [Crosslink comparisons](https://inquilinekea.github.io/scienceclaw-hackathon-2026/evidence-atlas/#crosslinks) and [microrheology](https://inquilinekea.github.io/scienceclaw-hackathon-2026/evidence-atlas/#micro) now run directly in this atlas, with matched axes, paired seeds, qualification flags and saved field replays. See web/INTEGRATION-METHODS.md and integration/ for exact source provenance and validation. No new solver or Argon call was used for this extension.
+
+
+## Selection-responsive animations
+
+Force/damage now solves the selected network/count/angle/seed at960 steps in a bounded browser worker. Uniform-drag microrheology solves selected architecture,size,seed,frequency,density and drive angle; exact saved fluid coverage remains labeled and unsupported pressure selections stay unavailable. See web/ANIMATION-METHODS.md and responsive-animation/ for provenance and commissioning. No external dependencies, cloud run or paid API.

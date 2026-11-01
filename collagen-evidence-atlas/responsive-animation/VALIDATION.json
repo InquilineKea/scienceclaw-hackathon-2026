@@ -1,0 +1,180 @@
+{
+  "checks": [
+    {
+      "kind": "force",
+      "family": "isotropic",
+      "seed": 17,
+      "count": 12,
+      "angle": 0,
+      "seconds": 0.900748333,
+      "sourceMetricsMatch": true
+    },
+    {
+      "kind": "force",
+      "family": "aligned",
+      "seed": 29,
+      "count": 0,
+      "angle": 90,
+      "seconds": 1.8596574160000001,
+      "sourceMetricsMatch": true
+    },
+    {
+      "kind": "micro",
+      "family": "isotropic",
+      "seed": 17,
+      "n": 14,
+      "density": 0.6666666666666666,
+      "angle": 0,
+      "omega": 0.1,
+      "seconds": 1.35604925,
+      "sourceMatch": true,
+      "checks": [
+        {
+          "pattern": "distributed",
+          "checks": [
+            {
+              "damaged": false,
+              "stepRelative": 1.622410820800306e-10,
+              "asymmetry": 5.383430796596724e-11,
+              "residual": 7.483448733313524e-10,
+              "resolved": true
+            },
+            {
+              "damaged": true,
+              "stepRelative": 1.6148896357727335e-10,
+              "asymmetry": 5.383430796596724e-11,
+              "residual": 8.062870250810356e-10,
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "pattern": "clustered",
+          "checks": [
+            {
+              "damaged": false,
+              "stepRelative": 2.010536236984119e-10,
+              "asymmetry": 5.234017300255998e-11,
+              "residual": 7.300174586448299e-10,
+              "resolved": true
+            },
+            {
+              "damaged": true,
+              "stepRelative": 2.0059213902411224e-10,
+              "asymmetry": 5.234132881621231e-11,
+              "residual": 9.717767696529316e-10,
+              "resolved": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "micro",
+      "family": "modular",
+      "seed": 43,
+      "n": 14,
+      "density": 0.6666666666666666,
+      "angle": 90,
+      "omega": 0,
+      "seconds": 1.2934989589999994,
+      "sourceMatch": true,
+      "checks": [
+        {
+          "pattern": "distributed",
+          "checks": [
+            {
+              "damaged": false,
+              "stepRelative": 1.5100172728875204e-10,
+              "asymmetry": 5.536924859917326e-11,
+              "residual": 8.046721656993128e-10,
+              "resolved": true
+            },
+            {
+              "damaged": true,
+              "stepRelative": 1.498973582473791e-10,
+              "asymmetry": 5.545240893454205e-11,
+              "residual": 1,
+              "resolved": false
+            }
+          ]
+        },
+        {
+          "pattern": "clustered",
+          "checks": [
+            {
+              "damaged": false,
+              "stepRelative": 2.0055544345680878e-10,
+              "asymmetry": 3.907558118150457e-11,
+              "residual": 6.032021568731799e-10,
+              "resolved": true
+            },
+            {
+              "damaged": true,
+              "stepRelative": 1.9937498880988214e-10,
+              "asymmetry": 4.239795371169002e-11,
+              "residual": 5.842632543809808e-10,
+              "resolved": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "kind": "micro",
+      "family": "modular",
+      "seed": 29,
+      "n": 10,
+      "density": 0.3333333333333333,
+      "angle": 45,
+      "omega": 0.3,
+      "seconds": 0.27730816700000016,
+      "sourceMatch": false,
+      "checks": [
+        {
+          "pattern": "distributed",
+          "checks": [
+            {
+              "damaged": false,
+              "stepRelative": 1.621296159906773e-10,
+              "asymmetry": 6.404251906907626e-11,
+              "residual": 3.8697295074160937e-10,
+              "resolved": true
+            },
+            {
+              "damaged": true,
+              "stepRelative": 1.6167345058725784e-10,
+              "asymmetry": 6.404251906907626e-11,
+              "residual": 8.522219390724623e-10,
+              "resolved": true
+            }
+          ]
+        },
+        {
+          "pattern": "clustered",
+          "checks": [
+            {
+              "damaged": false,
+              "stepRelative": 1.5944444222651412e-10,
+              "asymmetry": 8.1706023031707e-11,
+              "residual": 9.769530689207833e-10,
+              "resolved": true
+            },
+            {
+              "damaged": true,
+              "stepRelative": 1.575713377998904e-10,
+              "asymmetry": 8.1706023031707e-11,
+              "residual": 5.774170086443122e-10,
+              "resolved": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "check": "oblique phasor superposition",
+      "relativeError": 6.623926417463217e-10
+    }
+  ],
+  "pass": true
+}
