@@ -56,6 +56,15 @@ let pair = [],
   bounds = [0, 0, 1, 1],
   customized = false,
   runSerial = 0;
+const compareProbe = globalThis.AtlasCanvasProbe?.createGroup({
+  label: 'Specimen A and B network element inspector',
+  mountAfter: document.querySelector('#compare .legend'),
+  panels: [
+    { id: 'leftCanvas', title: 'Specimen A (left)' },
+    { id: 'rightCanvas', title: 'Specimen B (right)' },
+  ],
+  onSelect: () => render(),
+});
 const fmt = (x, d = 3) =>
   x === null || x === undefined
     ? '—'
@@ -161,6 +170,18 @@ function drawNet(el, net, frame, mini = false) {
     c.fillText('X →', w - 48, h - 14);
     c.fillText('Y ↑', 15, 18);
     c.fillText('L₀ = 1', 16, h - 14);
+    if (compareProbe && el.id) {
+      compareProbe.updateScene(el.id, c, {
+        title: el.id === 'leftCanvas' ? `A · ${names[net.family]}` : `B · ${names[net.family]}`,
+        items: globalThis.AtlasCanvasProbe.buildMechanicalItems({
+          net,
+          frame,
+          pt,
+          fixedDofs: b.fixed,
+        }),
+        note: 'Dimensionless 2D unit cell; shared force scale',
+      });
+    }
   }
 }
 function drawLoadMarkers(c, pt, X, net, mode) {

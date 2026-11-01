@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; connect-src 'self'; img-src 'self' data:;">
+  <title>Results Lab — Synthetic Organoid Model &amp; Measured Rheology</title>
+  <link rel="stylesheet" href="../explorer-navigation.css?v=20261101-argon2">
+  <link rel="stylesheet" href="style.css?v=20261101-argon2">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main results</a>
+
+  <header class="site-header">
+    <div class="header-inner">
+      <div class="header-title-block">
+        <p class="eyebrow">Oxidative Tensegrity — Quantitative Results Explorer</p>
+        <h1>Results Lab: Synthetic Organoid Readouts &amp; Measured Hydrogel Rheology</h1>
+        <p class="subtitle">Exact saved simulation trajectories and held-out rheological calibration curves. Scalar 2D SVG charts preserve zero and negative values without smoothing or refitting.</p>
+      </div>
+      <nav class="local-nav" aria-label="Explorer pages">
+        <a class="nav-pill" href="../index.html">Overview</a>
+        <a class="nav-pill" href="../species.html">Molecular Species (3D)</a>
+        <a class="nav-pill active" href="index.html" aria-current="page">Results Lab (2D Data)</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main-content" class="main-container">
+    <section id="status-banner" class="status-banner" role="status" aria-live="polite">
+      Loading saved datasets (<code>organoid.json</code> and <code>rheology.json</code>)…
+    </section>
+
+    <div class="tab-bar" role="tablist" aria-label="Dataset sections">
+      <button id="tab-btn-organoid" class="tab-btn active" role="tab" aria-selected="true" aria-controls="panel-organoid" type="button">
+        1. Synthetic Organoid Model (156 Gels, Days 0–7)
+      </button>
+      <button id="tab-btn-rheology" class="tab-btn" role="tab" aria-selected="false" aria-controls="panel-rheology" type="button">
+        2. Measured Hydrogel Rheology (210 Measurements / 1,260 Predictions)
+      </button>
+    </div>
+
+    <!-- TAB 1: ORGANOID -->
+    <section id="panel-organoid" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-organoid">
+      <div class="caveat-card" role="region" aria-label="Organoid model limitations and provenance">
+        <div class="caveat-header">
+          <h2>Model Scope &amp; Persistent Limitations (Synthetic Organoid)</h2>
+          <span class="badge badge-synthetic">Synthetic Simulation Output</span>
+        </div>
+        <ul id="organoid-limitations-list" class="limitations-list">
+          <li>Synthetic network/organoid model outputs; gene values are assumed dimensionless model readouts, not measured expression.</li>
+          <li>One saved trajectory per gel; variation across gels is not replicate uncertainty.</li>
+        </ul>
+        <div id="organoid-provenance" class="provenance-links"></div>
+      </div>
+
+      <div class="controls-grid" role="region" aria-label="Organoid chart controls">
+        <div class="control-group">
+          <label for="org-day-select">Saved Timepoint (Day)</label>
+          <select id="org-day-select"></select>
+        </div>
+        <div class="control-group">
+          <label for="org-readout-select">Y-Axis Readout</label>
+          <select id="org-readout-select"></select>
+        </div>
+        <div class="control-group">
+          <label for="org-color-select">Color Coding</label>
+          <select id="org-color-select">
+            <option value="mode">Crosslink Mode (mode)</option>
+            <option value="chem">Crosslink Chemistry (chem)</option>
+          </select>
+        </div>
+        <div class="control-group">
+          <label for="org-gel-select">Selected Gel (0–155)</label>
+          <select id="org-gel-select"></select>
+        </div>
+      </div>
+
+      <div class="workspace-split">
+        <div class="chart-card">
+          <div class="chart-header">
+            <div>
+              <h3 id="org-scatter-title">Organoid Readout vs. Linear Elastic Modulus (E_lin_Pa)</h3>
+              <p id="org-scatter-subtitle" class="chart-subtitle">Click or press Enter/Space on any point, or use the Gel selector, to inspect its full saved trajectory.</p>
+            </div>
+            <div id="org-legend" class="chart-legend" aria-label="Scatter color legend"></div>
+          </div>
+          <div class="svg-wrapper">
+            <svg id="org-scatter-svg" class="sci-svg" viewBox="0 0 760 430" role="img" aria-labelledby="org-scatter-title org-scatter-subtitle"></svg>
+          </div>
+          <details class="data-details">
+            <summary>Accessible Data Table: Current Day Slice Across All 156 Saved Gels</summary>
+            <div class="table-scroll">
+              <table class="sci-table" id="org-slice-table">
+                <thead>
+                  <tr>
+                    <th>Gel ID</th>
+                    <th>Collagen</th>
+                    <th>Mode</th>
+                    <th>Chemistry</th>
+                    <th>Dose</th>
+                    <th>E_lin (Pa)</th>
+                    <th id="org-slice-readout-th">Selected Readout</th>
+                  </tr>
+                </thead>
+                <tbody id="org-slice-tbody"></tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+
+        <div class="detail-column">
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h3 id="org-traj-title">Saved Time Trajectory (Days 0–7)</h3>
+                <p id="org-traj-subtitle" class="chart-subtitle">Single saved trajectory for selected gel.</p>
+              </div>
+            </div>
+            <div class="svg-wrapper">
+              <svg id="org-traj-svg" class="sci-svg" viewBox="0 0 540 300" role="img" aria-labelledby="org-traj-title org-traj-subtitle"></svg>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <h3 id="org-detail-heading">Selected Gel Saved Parameters &amp; Day Readouts</h3>
+            <div id="org-gel-params" class="kv-grid" aria-live="polite"></div>
+            <details class="data-details" open>
+              <summary>Selected Gel Trajectory Table (Days 0–7)</summary>
+              <div class="table-scroll">
+                <table class="sci-table" id="org-traj-table">
+                  <thead>
+                    <tr>
+                      <th>Day</th>
+                      <th>R_um (µm)</th>
+                      <th>Wnt</th>
+                      <th>eps_mean</th>
+                      <th id="org-traj-col-readout">Readout</th>
+                    </tr>
+                  </thead>
+                  <tbody id="org-traj-tbody"></tbody>
+                </table>
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+
+      <details class="aggregate-details" open>
+        <summary>Saved 389-Pair Matched Day-7 Aggregate Summary (<code>matched_day7_aggregate</code>)</summary>
+        <div class="aggregate-body">
+          <p class="caveat-inline">
+            <strong>Explicit Pairing Caveat:</strong> These rows report the saved aggregate statistics across <code>n_pairs = 389</code> stiffness-matched gel comparisons at Day 7. Individual pair identities and exact pair-level match selections are not present in the saved dataset, and no ad-hoc or reconstructed pair matching is performed here.
+          </p>
+          <div class="table-scroll">
+            <table class="sci-table" id="org-matched-table">
+              <thead>
+                <tr>
+                  <th>Readout Field (relative differences dimensionless)</th>
+                  <th>n_pairs</th>
+                  <th>Median Relative Diff</th>
+                  <th>90th Percentile (p90) Relative Diff</th>
+                  <th>Max Relative Diff</th>
+                </tr>
+              </thead>
+              <tbody id="org-matched-tbody"></tbody>
+            </table>
+          </div>
+        </div>
+      </details>
+    </section>
+
+    <!-- TAB 2: RHEOLOGY -->
+    <section id="panel-rheology" class="tab-panel" role="tabpanel" aria-labelledby="tab-btn-rheology" hidden>
+      <div class="caveat-card" role="region" aria-label="Rheology limitations and provenance">
+        <div class="caveat-header">
+          <h2>Calibration Scope &amp; Persistent Limitations (Measured Hydrogel Rheology)</h2>
+          <span class="badge badge-measured">Measured Small-Strain Rheology + Held-Out Fits</span>
+        </div>
+        <ul id="rheology-limitations-list" class="limitations-list">
+          <li>Measured small-strain bovine hydrogel rheology with saved model fits and held-out predictions; not molecular or cell-force calibration.</li>
+          <li>Observed standard deviation is between saved replicates, not a predictive confidence interval.</li>
+        </ul>
+        <div id="rheology-provenance" class="provenance-links"></div>
+      </div>
+
+      <div class="controls-grid controls-grid-5" role="region" aria-label="Rheology chart controls">
+        <div class="control-group">
+          <label for="rheo-view-select">Evaluation Mode</label>
+          <select id="rheo-view-select">
+            <option value="leave_file">Held-Out: leave_file (Curve-level)</option>
+            <option value="leave_concentration">Held-Out: leave_concentration</option>
+            <option value="full_fit_mean">Full-Fit Concentration Mean ± Replicate SD</option>
+          </select>
+        </div>
+        <div class="control-group" id="rheo-curve-group">
+          <label for="rheo-curve-select">Saved Curve ID (0–9)</label>
+          <select id="rheo-curve-select"></select>
+        </div>
+        <div class="control-group" id="rheo-conc-group" hidden>
+          <label for="rheo-conc-select">Concentration (mg/mL)</label>
+          <select id="rheo-conc-select"></select>
+        </div>
+        <div class="control-group">
+          <label for="rheo-model-select">Viscoelastic Model (3 Saved)</label>
+          <select id="rheo-model-select"></select>
+        </div>
+        <div class="control-group">
+          <label for="rheo-point-select">Selected Frequency Point (ω)</label>
+          <select id="rheo-point-select"></select>
+        </div>
+      </div>
+
+      <div class="workspace-split">
+        <div class="chart-column">
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h3 id="rheo-main-title">Observed vs. Saved Predicted Moduli G′(ω) and G″(ω)</h3>
+                <p id="rheo-main-subtitle" class="chart-subtitle">Log10 angular frequency ω (rad/s) vs. linear signed modulus (Pa). Zero and negative measurements are plotted directly without log-clipping.</p>
+              </div>
+              <div class="chart-legend">
+                <span class="legend-item"><span class="swatch swatch-gp-obs"></span>Obs G′ (Pa)</span>
+                <span class="legend-item"><span class="swatch swatch-gp-pred"></span>Pred/Fit G′ (Pa)</span>
+                <span class="legend-item"><span class="swatch swatch-gpp-obs"></span>Obs G″ (Pa)</span>
+                <span class="legend-item"><span class="swatch swatch-gpp-pred"></span>Pred/Fit G″ (Pa)</span>
+              </div>
+            </div>
+            <div class="svg-wrapper">
+              <svg id="rheo-main-svg" class="sci-svg" viewBox="0 0 760 360" role="img" aria-labelledby="rheo-main-title rheo-main-subtitle"></svg>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <div class="chart-header">
+              <div>
+                <h3 id="rheo-res-title">Signed Residuals (Predicted − Observed, Pa)</h3>
+                <p id="rheo-res-subtitle" class="chart-subtitle">Linear signed residual in Pascals across log10(ω). Click or press Enter/Space on any point to inspect exact values.</p>
+              </div>
+              <div class="chart-legend">
+                <span class="legend-item"><span class="swatch swatch-gp-obs"></span>ΔG′ = Pred G′ − Obs G′ (Pa)</span>
+                <span class="legend-item"><span class="swatch swatch-gpp-obs"></span>ΔG″ = Pred G″ − Obs G″ (Pa)</span>
+              </div>
+            </div>
+            <div class="svg-wrapper">
+              <svg id="rheo-res-svg" class="sci-svg" viewBox="0 0 760 270" role="img" aria-labelledby="rheo-res-title rheo-res-subtitle"></svg>
+            </div>
+          </div>
+
+          <details class="data-details">
+            <summary>Accessible Data Table: Current Curve / Concentration Frequency Sweep</summary>
+            <div class="table-scroll">
+              <table class="sci-table" id="rheo-sweep-table">
+                <thead>
+                  <tr>
+                    <th>ω (rad/s)</th>
+                    <th>f (Hz)</th>
+                    <th>Band</th>
+                    <th>Obs G′ (Pa)</th>
+                    <th>Pred/Fit G′ (Pa)</th>
+                    <th>Residual ΔG′ (Pa)</th>
+                    <th>Obs G″ (Pa)</th>
+                    <th>Pred/Fit G″ (Pa)</th>
+                    <th>Residual ΔG″ (Pa)</th>
+                  </tr>
+                </thead>
+                <tbody id="rheo-sweep-tbody"></tbody>
+              </table>
+            </div>
+          </details>
+        </div>
+
+        <div class="detail-column">
+          <div class="chart-card">
+            <h3>Selected Frequency Point &amp; Residual Detail</h3>
+            <div id="rheo-point-detail" class="kv-grid" aria-live="polite"></div>
+          </div>
+
+          <div class="chart-card">
+            <h3>Matching Saved Error Scores (<code>scores</code>, 120 Total Rows)</h3>
+            <p class="chart-subtitle" id="rheo-score-subtitle">Saved band-specific NRMSE and RMSE (Pa) for the active mode, curve, and viscoelastic model.</p>
+            <div class="table-scroll">
+              <table class="sci-table" id="rheo-score-table">
+                <thead>
+                  <tr>
+                    <th>Band</th>
+                    <th>Points</th>
+                    <th>Complex NRMSE</th>
+                    <th>Complex RMSE (Pa)</th>
+                    <th>G′ NRMSE</th>
+                    <th>G″ NRMSE</th>
+                    <th>Scale (Pa)</th>
+                  </tr>
+                </thead>
+                <tbody id="rheo-score-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="chart-card">
+            <h3>Saved Bootstrap Parameter Intervals (<code>bootstrap_parameters</code>)</h3>
+            <p class="caveat-inline">
+              <strong>Parameter Interval Caveat:</strong> These quantiles (<code>q025</code>, <code>median</code>, <code>q975</code>) are bootstrap <strong>parameter</strong> intervals for the fitted constitutive model parameters. They are <strong>not</strong> curve prediction intervals or observation confidence bands.
+            </p>
+            <div class="table-scroll">
+              <table class="sci-table" id="rheo-boot-table">
+                <thead>
+                  <tr>
+                    <th>Model</th>
+                    <th>Parameter</th>
+                    <th>Full Fit</th>
+                    <th>q025 (2.5%)</th>
+                    <th>Median (50%)</th>
+                    <th>q975 (97.5%)</th>
+                  </tr>
+                </thead>
+                <tbody id="rheo-boot-tbody"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <strong>Primary Sources &amp; Provenance:</strong>
+        <a href="https://doi.org/10.5281/zenodo.17413651" target="_blank" rel="noopener noreferrer">Ruiz-Mateos Brea et al. Zenodo Dataset (CC BY 4.0)</a> ·
+        <a href="https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-calibration-results.xlsx" target="_blank" rel="noopener noreferrer">Collagen Calibration Workbook (.xlsx)</a> ·
+        <a href="https://humanavianaisymbiosis.wordpress.com/" target="_blank" rel="noopener noreferrer">Primary WordPress Research Posts</a> ·
+        <a href="../species.html">Molecular Species Explorer</a>
+      </div>
+      <div class="footer-meta">
+        No client-side refitting or smoothing · Exact saved JSON arrays · Strict CSP
+      </div>
+    </div>
+  </footer>
+
+  <script src="../explorer-navigation.js?v=20261101-argon2" defer></script>
+  <script src="app.js?v=20261101-argon2" defer></script>
+</body>
+</html>

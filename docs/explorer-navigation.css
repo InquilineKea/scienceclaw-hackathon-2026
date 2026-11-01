@@ -1,0 +1,191 @@
+.sc-explorer-nav {
+  box-sizing: border-box;
+  max-width: 1200px;
+  margin: 2.25rem auto 1.5rem;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+  color: #183c43;
+  line-height: 1.5;
+}
+.sc-explorer-nav *,
+.sc-explorer-nav *::before,
+.sc-explorer-nav *::after {
+  box-sizing: border-box;
+}
+.sc-explorer-nav__details {
+  border: 1px solid #c9d5cf;
+  border-radius: 12px;
+  background: #f8faf8;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(24, 60, 67, 0.04);
+}
+.sc-explorer-nav__summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 14px 18px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  background: #eef3ef;
+  user-select: none;
+}
+.sc-explorer-nav__summary::-webkit-details-marker {
+  display: none;
+}
+.sc-explorer-nav__summary:focus-visible {
+  outline: 3px solid rgba(0, 110, 117, 0.35);
+  outline-offset: -3px;
+}
+.sc-explorer-nav__summary-main {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+.sc-explorer-nav__eyebrow {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  color: #8c4227;
+  text-transform: uppercase;
+}
+.sc-explorer-nav__title {
+  font-size: 0.95rem;
+  font-weight: 650;
+  color: #16363c;
+}
+.sc-explorer-nav__toggle-hint {
+  font-size: 0.76rem;
+  color: #3f5d63;
+  background: #e2ebe5;
+  border: 1px solid #c2d1ca;
+  padding: 4px 10px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+.sc-explorer-nav__toggle-hint::after {
+  content: '▾';
+  font-size: 0.85em;
+  transition: transform 0.15s ease;
+}
+.sc-explorer-nav__details[open] .sc-explorer-nav__toggle-hint::after {
+  transform: rotate(180deg);
+}
+.sc-explorer-nav__body {
+  padding: 16px 18px 20px;
+  border-top: 1px solid #d5dfd9;
+}
+.sc-explorer-nav__disclaimer {
+  margin: 0 0 16px;
+  padding: 10px 14px;
+  background: #f2ece1;
+  border-left: 3px solid #c8863a;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  color: #3b352a;
+}
+.sc-explorer-nav__categories {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+.sc-explorer-nav__category {
+  background: #ffffff;
+  border: 1px solid #dce5e0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.sc-explorer-nav__cat-title {
+  margin: 0;
+  font-size: 0.88rem;
+  font-weight: 700;
+  color: #16363c;
+  letter-spacing: -0.01em;
+}
+.sc-explorer-nav__cat-sub {
+  margin: 0;
+  font-size: 0.76rem;
+  color: #516a70;
+  line-height: 1.45;
+}
+.sc-explorer-nav__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.sc-explorer-nav__item {
+  padding: 9px 10px;
+  border: 1px solid #e6ede9;
+  border-radius: 8px;
+  background: #fbfcfb;
+}
+.sc-explorer-nav__item.is-current {
+  border-color: #007f86;
+  background: #f0f7f7;
+}
+.sc-explorer-nav__item-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.sc-explorer-nav__link {
+  font-size: 0.84rem;
+  font-weight: 650;
+  color: #006a71;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+.sc-explorer-nav__link:hover,
+.sc-explorer-nav__link:focus-visible {
+  color: #00494e;
+}
+.sc-explorer-nav__here {
+  font-size: 0.68rem;
+  font-weight: 700;
+  color: #005f66;
+  background: #d7eeee;
+  padding: 1px 7px;
+  border-radius: 999px;
+}
+.sc-explorer-nav__badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  margin-top: 5px;
+}
+.sc-explorer-nav__badge {
+  font-size: 0.69rem;
+  line-height: 1.3;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-weight: 550;
+}
+.sc-explorer-nav__badge.geo {
+  background: #e8f0ec;
+  color: #214a45;
+}
+.sc-explorer-nav__badge.ev {
+  background: #f4ebe2;
+  color: #6e3b1e;
+}
+.sc-explorer-nav__note {
+  margin: 5px 0 0;
+  font-size: 0.74rem;
+  color: #4f666b;
+  line-height: 1.4;
+}
+@media (max-width: 960px) {
+  .sc-explorer-nav__categories {
+    grid-template-columns: 1fr;
+  }
+}

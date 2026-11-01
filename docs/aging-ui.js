@@ -44,6 +44,15 @@
     angleMax = 1,
     bounds = [-0.12, -0.12, 1.12, 1.12],
     forceMax = 1;
+  const ageProbe = globalThis.AtlasCanvasProbe?.createGroup({
+    label: 'Reference and added-crosslink element inspector',
+    mountAfter: document.querySelector('#experiment .age-legend'),
+    panels: [
+      { id: 'ageReference', title: 'A · Reference skeleton' },
+      { id: 'ageModified', title: 'B · Added-crosslink hypothesis' },
+    ],
+    onSelect: () => render(),
+  });
   for (const [f, n] of Object.entries(names)) {
     const o = document.createElement('option');
     o.value = f;
@@ -177,14 +186,19 @@
       px = (x) => (w - sc * (bounds[2] - bounds[0])) / 2 + (x - bounds[0]) * sc,
       py = (y) =>
         h - (h - sc * (bounds[3] - bounds[1])) / 2 - (y - bounds[1]) * sc;
-    function line(e, color, width, dashed) {
+    function line(e, color, width, dashed, coords = X) {
       c.strokeStyle = color;
       c.lineWidth = width;
       c.setLineDash(dashed ? [3, 4] : []);
       c.beginPath();
-      c.moveTo(px(X[2 * e.i]), py(X[2 * e.i + 1]));
-      c.lineTo(px(X[2 * e.j]), py(X[2 * e.j + 1]));
+      c.moveTo(px(coords[2 * e.i]), py(coords[2 * e.i + 1]));
+      c.lineTo(px(coords[2 * e.j]), py(coords[2 * e.j + 1]));
       c.stroke();
+    }
+    if ($('ageGhost')?.checked) {
+      for (const e of net.edges) line(e, '#41615966', 0.75, false, net.X);
+      for (const e of net.links) line(e, '#856b9155', 0.75, true, net.X);
+      c.setLineDash([]);
     }
     net.edges.forEach((e, k) => {
       const alive = frame?.alive[k] ?? true,
@@ -239,6 +253,21 @@
     c.font = '11px system-ui';
     c.fillText('X →', w - 45, h - 12);
     c.fillText('Y ↑', 12, 18);
+    if (ageProbe) {
+      ageProbe.updateScene(id, c, {
+        title: id === 'ageReference' ? 'A · Reference skeleton' : 'B · Added-crosslink hypothesis',
+        items: globalThis.AtlasCanvasProbe.buildMechanicalItems({
+          net,
+          frame,
+          pt: (x, y) => [px(x), py(y)],
+          fixedDofs: b.fixed,
+          links: net.links,
+          linkAlive: frame?.linkAlive,
+          linkForces: frame?.linkForces,
+        }),
+        note: 'Uncalibrated dimensionless model; connectors are effective springs',
+      });
+    }
   }
   function summary() {
     if (!pair) {
@@ -360,6 +389,8 @@
     outputs();
     benchmark();
     if (!pair) {
+      ageProbe?.clearScene('ageReference');
+      ageProbe?.clearScene('ageModified');
       for (const id of [
         'ageReference',
         'ageModified',
@@ -612,6 +643,7 @@
     progress = Number($('ageReplay').value) / 1000;
     render();
   };
+  if ($('ageGhost')) $('ageGhost').onchange = render;
   $('agePlay').onclick = () => {
     if (!pair) return;
     playing = !playing;

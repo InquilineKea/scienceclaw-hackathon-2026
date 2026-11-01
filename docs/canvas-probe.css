@@ -1,0 +1,49 @@
+.canvas-probe {
+  margin: 0.65rem 0 0.9rem;
+  padding: 0.6rem 0.8rem;
+  border: 1px solid rgba(72, 99, 92, 0.28);
+  border-radius: 6px;
+  background: rgba(244, 243, 238, 0.78);
+  font-size: 0.82rem;
+  line-height: 1.4;
+  color: #243833;
+}
+.canvas-probe-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.5rem 0.75rem;
+  margin-bottom: 0.35rem;
+}
+.canvas-probe-tag {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: #3b5a52;
+  background: rgba(91, 124, 108, 0.14);
+  padding: 0.15rem 0.45rem;
+  border-radius: 3px;
+}
+.canvas-probe-controls label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+.canvas-probe-controls select {
+  max-width: 15rem;
+  padding: 0.2rem 0.4rem;
+  font-size: 0.78rem;
+}
+.canvas-probe-controls button {
+  padding: 0.2rem 0.5rem;
+  font-size: 0.76rem;
+}
+.canvas-probe-readout {
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.77rem;
+  color: #1f332e;
+  word-break: break-word;
+}

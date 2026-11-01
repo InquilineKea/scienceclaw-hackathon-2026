@@ -1,3 +1,63 @@
-.species-controls{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin:24px 0}.species-controls label{display:flex;flex-direction:column;gap:10px;font-size:12px}.species-controls select{width:100%}.specimen h3{margin:20px}.specimen canvas{display:block;width:100%;height:230px}#speciesSequences code{white-space:normal;word-break:break-all;font-size:11px;line-height:1.8}#speciesSequences table{min-width:620px}#speciesStatus{font-size:11px}main p{line-height:1.65}@media(max-width:800px){.species-controls{grid-template-columns:1fr 1fr}.comparison{grid-template-columns:1fr}}
+.species-controls{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin:20px 0 14px}
+.species-controls label,.species-camera-sliders label,.species-bend-controls label,.species-picker-bar label{display:flex;flex-direction:column;gap:6px;font-size:12px;color:#233b35}
+.species-controls select,.species-picker-bar select,.species-bend-controls select{width:100%}
+.control-val{font-weight:600;color:#173e62;font-variant-numeric:tabular-nums}
+.species-3d-panel{background:#f4f7f4;border:1px solid #d5dfd5;border-radius:8px;padding:12px 14px;margin:12px 0}
+.species-camera-sliders{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:10px}
+.species-bend-panel{background:#fbfaf5;border:1px solid #e2dcc5;border-radius:8px;padding:12px 14px;margin:12px 0}
+.species-bend-controls{display:grid;grid-template-columns:1.4fr 1fr auto auto;gap:14px;align-items:end}
+.species-bend-warning{margin:0 0 10px;padding:8px 10px;border-radius:6px;background:#f3f4f6;border-left:4px solid #64748b;font-size:12px;color:#334155;font-weight:500}
+.species-bend-warning.is-active{background:#fffbeb;border-left-color:#d97706;color:#92400e;font-weight:600}
+.species-picker-bar{display:flex;flex-wrap:wrap;gap:12px;align-items:end;background:#f8faf8;border:1px solid #d9dfd5;border-radius:8px;padding:10px 14px;margin:12px 0}
+.species-picker-bar button,.species-bend-controls button{padding:6px 10px;font-size:12px;border:1px solid #9fb0a5;background:#ffffff;color:#1f352e;border-radius:5px;cursor:pointer}
+.species-picker-bar button:hover,.species-bend-controls button:hover{background:#e9f0ec}
+.checkbox-inline{flex-direction:row !important;align-items:center;gap:6px !important;cursor:pointer;padding-bottom:4px}
+.specimen{background:#fbfcf8;color:#233b35;border:1px solid #d9dfd5;border-radius:8px;overflow:hidden}
+.specimen-header{display:flex;justify-content:space-between;align-items:baseline;padding:12px 16px 6px}
+.specimen h3{margin:0;font-size:16px}
+.specimen-sub{font-size:11px;color:#5c6b64}
+.specimen canvas{display:block;width:100%;height:320px;touch-action:none;cursor:grab;background:#fbfcf8}
+.specimen canvas:active{cursor:grabbing}
+.species-legend{display:flex;flex-wrap:wrap;gap:16px;align-items:center;font-size:12px;margin:10px 0;color:#2f443e}
+.legend-item{display:inline-flex;align-items:center;gap:6px}
+.chain-dot{display:inline-block;width:10px;height:10px;border-radius:50%}
+.mismatch-ring-icon{display:inline-block;width:11px;height:11px;border-radius:50%;background:#fffbeb;border:2px solid #d97706}
+.selected-ring-icon{display:inline-block;width:11px;height:11px;border-radius:50%;border:2px solid #111827}
+.species-inspector{background:#f6f9f7;border:1px solid #cdd8d0;border-radius:8px;padding:12px 14px;margin:14px 0}
+.inspector-head{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:10px;font-size:13px}
+.inspector-chain-pill{color:#fff;padding:2px 8px;border-radius:999px;font-size:11px;font-weight:600}
+.inspector-match-badge{padding:2px 8px;border-radius:4px;font-size:12px;font-weight:600}
+.badge-mismatch{background:#fef3c7;color:#92400e;border:1px solid #f59e0b}
+.badge-match{background:#e2f2ea;color:#165b44;border:1px solid #94ceb8}
+.inspector-vis-note{font-size:11px;color:#b45309}
+.inspector-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.inspector-card{background:#ffffff;border:1px solid #dce4de;border-radius:6px;padding:8px 10px}
+.inspector-card h4{margin:0 0 4px;font-size:11px;text-transform:uppercase;letter-spacing:0.04em;color:#52665e}
+.inspector-card code{font-size:12px;font-weight:600;color:#182c25;display:block}
+.inspector-subnote{display:block;font-size:11px;color:#5c6b64;margin-top:4px;line-height:1.35}
+#speciesSequences table{width:100%;border-collapse:collapse}
+.seq-comparison-table th,.seq-comparison-table td{padding:8px 10px;vertical-align:top;border-bottom:1px solid #e2e8e4}
+.seq-row-human th,.seq-row-human td{border-bottom:2px solid #cbd5ce}
+.chain-header{width:130px;font-size:12px;text-align:left;background:#f4f7f5}
+.chain-diff-note{font-size:11px;font-weight:400;color:#52665e;margin-top:4px}
+.species-subhead{width:64px;font-size:11px;color:#475952;font-weight:600}
+.seq-strip{display:flex;flex-wrap:wrap;gap:2px}
+.seq-res-btn{display:inline-flex;align-items:center;justify-content:center;min-width:20px;height:22px;padding:0 3px;font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-size:11px;line-height:1;border:1px solid #e2e8e4;background:#ffffff;color:#233b35;border-radius:3px;cursor:pointer}
+.seq-res-btn:hover{border-color:#20775b;background:#eef7f3}
+.seq-res-btn.is-mismatch{background:#fef3c7;border-color:#f59e0b;color:#78350f;font-weight:700}
+.seq-res-btn.is-mismatch .mm-mark{font-size:9px;margin-left:1px;color:#b45309}
+.seq-res-btn.is-selected{outline:2px solid #111827;outline-offset:1px;background:#111827 !important;color:#ffffff !important;z-index:2}
+.seq-res-btn.is-selected .mm-mark{color:#fde68a}
+.seq-res-btn.is-outside-window{opacity:0.48}
+.seq-res-btn:focus-visible{outline:2px solid #176297;outline-offset:1px}
+#speciesStatus{font-size:11px}
+main p{line-height:1.65}
+@media(max-width:850px){
+  .species-controls,.species-camera-sliders,.species-bend-controls,.inspector-grid{grid-template-columns:1fr 1fr}
+  .comparison{grid-template-columns:1fr}
+}
+@media(max-width:560px){
+  .species-controls,.species-camera-sliders,.species-bend-controls,.inspector-grid{grid-template-columns:1fr}
+}
 
-.specimen{background:#fbfcf8;color:#233b35;border:1px solid #d9dfd5}
+#structures .chain-color-0{background:#20775b}#structures .chain-color-1{background:#8950a0}#structures .chain-color-2{background:#c96b32}
