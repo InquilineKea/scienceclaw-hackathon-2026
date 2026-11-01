@@ -1,0 +1,34 @@
+{
+  "stage": "review",
+  "model_requested": "gemini-4-argon",
+  "prompt_sha256": "fc7475d3921b7029283aef88ca0f2bd56225e740005e4039b5cc058148076cc6",
+  "input_bytes": 63019,
+  "max_output_tokens": 10000,
+  "automatic_retries": 0,
+  "started_utc": "2026-11-01T03:03:54.158203+00:00",
+  "status": "completed",
+  "model_returned": "gemini-4-argon",
+  "usage": {
+    "promptTokenCount": 20826,
+    "candidatesTokenCount": 4959,
+    "totalTokenCount": 29231,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 20826
+      }
+    ],
+    "candidatesTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 4959
+      }
+    ],
+    "thoughtsTokenCount": 3446
+  },
+  "finish": [
+    "STOP"
+  ],
+  "seconds": 106.7754955291748,
+  "finished_utc": "2026-11-01T03:05:40.933759+00:00"
+}

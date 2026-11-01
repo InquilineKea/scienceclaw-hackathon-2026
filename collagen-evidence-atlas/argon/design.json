@@ -1,0 +1,374 @@
+{
+  "design_name": "Collagen Evidence Atlas: Guarded 3D Benchmark & Metrology Workbench (Pos008)",
+  "candidate_experience_critique": {
+    "existing_viewer_deficiencies": [
+      "Two static 2D projected panels flatten a 353.82 x 353.82 x 356.63 µm volume containing 14,400 grid nodes and 753 cell boundary points, causing severe depth occlusion and hiding how residual errors cluster radially around the guarded interior.",
+      "Pre-rendered bar images and a basic model dropdown decouple global summary metrics from spatial inspection; users cannot see why buckling-only (RMSE 0.879195) outperforms combined (RMSE 0.897603) or where sliding-only (RMSE 1.308340) fails.",
+      "Lack of interactive vector differencing forces users to visually subtract dense arrow fields across separate panels, which is perceptually impossible for small displacement magnitudes."
+    ],
+    "candidate_experience_strengths": [
+      "Synchronized GPU-rendered 3D views (Observed, Predicted, Residual) directly address the mental-subtraction problem and expose spatial error anisotropy across the 8 octants.",
+      "Axis-aligned slab slicing and octant filtering transform an unreadable 3D point/vector cloud into an inspectable tomographic workbench.",
+      "Linking a clickable global score chart with a conditional local error histogram bridges summary benchmark tables and node-level residuals without requiring runtime solver execution."
+    ],
+    "candidate_blind_spots_and_required_refinements": [
+      {
+        "flaw": "3D Vector Hairball & Occlusion in Triptych View",
+        "critique": "Rendering all 14,400 nodes or even all 4,355 score-eligible vectors simultaneously across three smaller side-by-side WebGL canvases will produce overlapping arrow shafts that obscure the 753-point reference cell.",
+        "design_fix": "Default the 3D view to the 4,355 score-eligible nodes within an active 60 µm tomographic slab (with a one-click 'Full Box' toggle), use zoom-adaptive instanced glyph scaling, and provide a 'Single-Canvas Difference Lens' mode that renders direct residual vectors (u_pred - u_obs) at 100% viewport width."
+      },
+      {
+        "flaw": "Metric Contradiction Between Global Score and Filtered Histogram",
+        "critique": "The frozen benchmark global vector RMSE (e.g., 0.897603 for Combined) is an equal-weighted mean across the 8 octants, whereas an interactive histogram of visible nodes naturally computes a node-pooled RMSE. Displaying both without strict visual separation will make users think the calculation is broken when all 8 octants are selected.",
+        "design_fix": "Architect a dual-ledger metric header: a locked 'Frozen Benchmark Score (8-Octant Equal Mean)' badge paired with a dynamically updating 'Active Subset Metric (Node-Pooled RMSE, n = X / 4,355)' readout, bridged by an 8-octant spark-matrix showing per-octant sample counts and errors."
+      },
+      {
+        "flaw": "Subconscious Misinterpretation of Grid Stencils as Collagen Fibers",
+        "critique": "When displaying P1-strain descriptors derived from the 76,176 tetrahedra or 303 complete guarded 5x5x5 stencils, rendering tetrahedral edges as wireframe lines will immediately be misread by mechanobiologists as a reconstructed collagen fiber network.",
+        "design_fix": "Strictly forbid wireframe mesh edge rendering in strain mode. Render nodal P1-strain norms/errors using volumetric point glyphs or continuous cross-sectional slab heatmaps on the 24x24x25 PIV grid, accompanied by an unhideable canvas watermark: 'Regular PIV Sampling Grid (24x24x25) — Not Fiber Architecture'."
+      },
+      {
+        "flaw": "Illusion of Time or Mechanical Loading During Camera & Increment Inspection",
+        "critique": "Smooth camera auto-rotation or scrubbing through the 10/20 increment work/dissipation history risks implying time-resolved live cell contraction or progressive fiber fracture.",
+        "design_fix": "Eliminate continuous turntable auto-play; use discrete orthographic/isometric camera presets with instant or 250ms damped transitions labeled 'Spatial Camera Angle (Static Single-Frame Assay)', and frame the 10/20 solver increments strictly as 'Quasi-Static Numerical Continuation Steps (Not Physical Time)'."
+      }
+    ]
+  },
+  "visual_system": {
+    "art_direction": "Precision Optical Metrology & Archival Monograph. Inspired by high-contrast interferometry plates and scientific atlases. Rejects dark-mode neon clichés, vague glassmorphism, and marketing cards in favor of crisp 1px structural hairlines, warm low-glare ivory paper surfaces, high-legibility tabular numerals, and explicit epistemic badges.",
+    "color_palette": {
+      "surfaces": {
+        "canvas_ivory_primary": "#F7F4EB",
+        "panel_alabaster_secondary": "#EFECE2",
+        "elevated_inspector_surface": "#FFFFFF",
+        "webgl_viewport_well": "#F0EDE4",
+        "structural_hairline_border": "#D5D0C3",
+        "strong_divider_ink": "#182428"
+      },
+      "typography_ink": {
+        "primary_ink": "#142024",
+        "secondary_slate": "#425257",
+        "muted_caption": "#68767A",
+        "epistemic_warning_ochre": "#8C4A1F"
+      },
+      "semantic_data_encoding": {
+        "observed_displacement_teal": "#0D5C63",
+        "predicted_displacement_copper": "#B8532A",
+        "buckling_highlight_verdigris": "#177E76",
+        "sliding_penalty_rust": "#A63A2B",
+        "control_baseline_slate": "#5A6B70",
+        "reference_cell_753_points": "#737D80",
+        "masked_ineligible_nodes_ghost": "rgba(115, 125, 128, 0.16)"
+      },
+      "continuous_colormaps": {
+        "displacement_and_error_magnitude_sequential": {
+          "name": "Metrology Ivory-Gold-Copper-Espresso (Perceptually Uniform Sequential)",
+          "stops": [
+            { "t": 0.0, "hex": "#F2ECE1", "label": "0.00 µm" },
+            { "t": 0.25, "hex": "#E0C078", "label": "0.50 µm" },
+            { "t": 0.5, "hex": "#C87D44", "label": "1.00 µm" },
+            { "t": 0.75, "hex": "#9E3D22", "label": "1.75 µm" },
+            { "t": 1.0, "hex": "#4A1410", "label": ">= 2.50 µm (Clamped)" }
+          ],
+          "usage": "Used for absolute displacement norm ||u||_2 (µm), vector residual magnitude ||u_pred - u_obs||_2 (µm), and local P1-strain norm. Never rescales dynamically during slab slicing so visual comparisons across octants remain truthful."
+        },
+        "model_comparison_delta_diverging": {
+          "name": "Teal-Alabaster-Copper Diverging",
+          "stops": [
+            { "t": -1.0, "hex": "#0A5258", "label": "Model A Lower Error (-0.50 µm)" },
+            { "t": -0.5, "hex": "#629C9E", "label": "-0.25 µm" },
+            { "t": 0.0, "hex": "#F4F1E8", "label": "0.00 µm (Parity)" },
+            { "t": 0.5, "hex": "#D4886A", "label": "+0.25 µm" },
+            { "t": 1.0, "hex": "#9E3316", "label": "Model A Higher Error (+0.50 µm)" }
+          ],
+          "usage": "Used when comparing two candidate models directly (e.g., Combined minus Buckling-only to visualize the +4.231% MSE sliding penalty in 3D space)."
+        }
+      }
+    },
+    "typography": {
+      "constraint_note": "Zero external CDN/font requests. Uses resilient cross-platform system font stacks with strict typographic rules.",
+      "font_stacks": {
+        "editorial_serif": "'Iowan Old Style', 'Palatino Linotype', 'URW Palladio L', P052, Georgia, serif",
+        "ui_sans": "-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif",
+        "technical_mono": "'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, Courier, monospace"
+      },
+      "scale_and_rules": {
+        "atlas_title": "clamp(1.35rem, 2vw, 1.75rem) / 1.2 editorial_serif, weight 700, letter-spacing -0.01em",
+        "section_header": "0.875rem / 1.3 ui_sans, weight 700, uppercase, letter-spacing 0.06em",
+        "body_copy": "0.9375rem / 1.55 ui_sans, max-width 68ch",
+        "metric_readout_large": "1.25rem / 1.15 technical_mono, weight 600, font-variant-numeric: tabular-nums",
+        "table_and_axis_numerals": "0.75rem / 1.2 technical_mono, font-variant-numeric: tabular-nums",
+        "epistemic_badge": "0.6875rem / 1.2 technical_mono, weight 600, uppercase, letter-spacing 0.04em, bordered pill"
+      }
+    },
+    "spatial_glyph_and_legend_rules": {
+      "grid_nodes_vs_fibers": "Nodes are rendered as crisp screen-space circles or instanced low-poly octahedra at (x, y, z) µm coordinates. Zero connecting lines are drawn between grid neighbors.",
+      "displacement_arrows": "3D instanced shaft-and-cone glyphs anchored at PIV grid coordinates. Legend explicitly states both physical unit (µm) and active visual magnification factor (e.g., 'Display Scale: 8x [1 µm displacement = 8 µm screen arrow length]').",
+      "reference_cell_cloud": "753 cell sample points rendered as distinct matte mineral-gray spheres (radius 2.2 µm) with an optional depth-cued bounding hull outline so users immediately see the inner guarded boundary.",
+      "bounding_box_and_octants": "Wireframe outer box (353.82 x 353.82 x 356.63 µm) with subtle tick marks every 50 µm and faint dashed mid-planes dividing Octants I–VIII."
+    }
+  },
+  "ranked_interactions": [
+    {
+      "rank": 1,
+      "id": "sync_3d_triptych_and_residual_lens",
+      "title": "Synchronized 3D WebGL Triptych & Direct Residual Lens",
+      "priority": "P0 — Core Spatial Proof",
+      "user_action": "Orbit (left-drag / arrow keys), pan (Shift+drag), zoom (wheel / +/-), or pick camera presets (Isometric, XY Top, XZ Front, YZ Side, Near-Cell Close-Up) across synchronized Observed, Predicted, and Residual (u_pred - u_obs) 3D viewports; or toggle 'Single-Canvas Difference Lens' for full-width inspection.",
+      "system_response": "Updates a single shared camera matrix (`mat4`) across all active WebGL viewports at 60 FPS using instanced rendering (`ANGLE_instanced_arrays` / WebGL2). Toggle switches smoothly between 3-up side-by-side panels and a 1-up superimposed view where Observed (Teal) and Predicted (Copper) vectors share node anchors, or only Residual error vectors are drawn.",
+      "scientific_guardrail": "Viewport corner badge permanently displays: 'Displacement Field (µm) — Not Force Vectors | Display Magnification: [1x / 5x / 10x] | Static Assay (Camera Motion != Time)'."
+    },
+    {
+      "rank": 2,
+      "id": "benchmark_model_matrix_switcher",
+      "title": "Interactive 5-Model Benchmark Ledger & Pairwise Delta Selector",
+      "priority": "P0 — Core Quantitative Comparison",
+      "user_action": "Click any of the 5 candidate model rows (Buckling-only, Combined [Primary], Harmonic, Control [Tensile-Stiffening], Sliding-only) to set the active Predicted view, or Shift-click a second row to engage 'Pairwise Model Delta Mode' (e.g., Combined vs. Buckling-only).",
+      "system_response": "Immediately swaps the precomputed prediction buffer `predictions[model][14400][3]` in GPU memory, updates the 8-octant breakdown chart, and highlights the exact frozen benchmark metrics: Buckling-only lowest descriptive error (0.879195 vector RMSE / 0.530915 guarded strain NRMSE), Combined primary candidate (0.897603 / 0.533428; -28.582% vector MSE vs. Harmonic 1.062138), and the +4.231% MSE degradation when adding sliding to buckling.",
+      "scientific_guardrail": "Displays a locked structural footnote explaining why `Combined` is the primary refined candidate (full 20-step / 302-direction refinements and 32-step Hessian screens performed) while `Buckling-only` retains the lowest raw descriptive error on Pos008."
+    },
+    {
+      "rank": 3,
+      "id": "tomographic_slab_slicer_and_octant_mask",
+      "title": "Axis-Aligned Tomographic Slab Slicer & 8-Octant Spatial Filter",
+      "priority": "P1 — Occlusion Elimination & Interior Inspection",
+      "user_action": "Select slice axis (X, Y, Z, or Radial Distance from Cell Surface), drag the center coordinate slider (0 to 356.63 µm), adjust slab thickness (15 µm single grid layer up to 357 µm full box), or click individual cubes in the interactive 2x2x2 Octant Map.",
+      "system_response": "Vertex shader discards or ghosts nodes outside the active slab/octant bounds in real time. A translucent cutting plane frame in the 3D box shows the exact slice position relative to the 753 cell points. Simultaneously updates the conditional local error histogram.",
+      "scientific_guardrail": "Includes a 3-state 'Node Eligibility Filter' toggle: (1) Score-Eligible Interior Only (4,355 nodes — Default), (2) Complete Guarded 5x5x5 Strain Stencil Centers (303 nodes), (3) All Sampling Grid Nodes (14,400 nodes, revealing outer-face/near-cell boundary condition zones and missing/null targets)."
+    },
+    {
+      "rank": 4,
+      "id": "dual_ledger_histogram_and_octant_parity",
+      "title": "Dual-Ledger Local Error Histogram & 8-Octant Parity Plot",
+      "priority": "P1 — Statistical Clarity & Metric Reconciliation",
+      "user_action": "Hover or brush bins in the SVG residual magnitude histogram, or click an octant row in the 8-octant Cleveland dot plot.",
+      "system_response": "Brushing a histogram bin (e.g., residuals > 1.5 µm) highlights those specific nodes in the 3D WebGL viewports while dimming others. The panel header presents two visually distinct boxes: Left Box (Locked Slate Border) = 'Frozen Global Score (Equal-Weighted 8-Octant Mean)'; Right Box (Active Copper Border) = 'Visible Subset RMSE (Node-Pooled, n = active_count / 4,355)'.",
+      "scientific_guardrail": "Prevents confusion between the published equal-octant benchmark score and dynamic subset pooling, and states: 'Single correlated volume (Pos008, adaptively reused after Pos007 selection) — octant spread measures spatial heterogeneity, not independent biological replicates.'"
+    },
+    {
+      "rank": 5,
+      "id": "nodal_and_stencil_raycast_inspector",
+      "title": "Point-and-Click Node & 5x5x5 Strain Stencil Inspector",
+      "priority": "P2 — Granular Data Provenance",
+      "user_action": "Click any node in the 3D viewport (or enter a node index 0–14399 / step with `[` and `]` keys).",
+      "system_response": "Draws a high-contrast target reticle around the selected node in all 3D panels and populates the Inspector Card with: Grid Index `(i, j, k)`, Position `(x, y, z) µm`, Eligibility Mask (`score[N]`), Guarded 5x5x5 Stencil Membership (`true/false` among the 303 stencils), Observed Vector `(ux, uy, uz) µm`, and a miniature comparison table of Predicted Vectors, Residual Norms, and derived P1-strain error descriptors across all 5 models.",
+      "scientific_guardrail": "When P1-strain descriptors are viewed, displays: 'Derived kinematically from the same PIV displacement field on guarded tetrahedra — not an independent mechanical or optical strain assay.'"
+    },
+    {
+      "rank": 6,
+      "id": "pos007_selection_and_numerical_gates_drawer",
+      "title": "Pos007 12-Arm Selection & Numerical Verification Drawer",
+      "priority": "P2 — Methodological Audit & Convergence Transparency",
+      "user_action": "Expand the 'Model Selection, Continuation History & Numerical Gates' workbench drawer below the primary viewport.",
+      "system_response": "Renders three clean SVG/tabular audit views from the local JSON: (A) The 12 selection configuration rows from Pos007 showing fixed parameters (lambda_s = 0.04, d_s = 0.05, H = 0.05) and selected combined parameters (buck_scale = 0.0025, yield = 0.04); (B) Solver increment 10 vs. 20 reaction work, stored energy, and dissipated history curves; (C) The 10 passed numerical verification gates, step refinement sensitivity (20 steps: 0.000319% field L2 change, 0.54498% reaction work change), direction refinement (302 directions: 0.233527% field L2 change, 0.00663% work change), and the 32-step seeded Hessian screen status.",
+      "scientific_guardrail": "Explicitly labels work quantities as 'Normalized Numerical Work (Not Physical Fracture Toughness or Absolute Modulus)' and annotates the Hessian badge: '32-step seeded Hessian screens detect no negative curvature along tested directions — not a mathematical proof of global stability.'"
+    }
+  ],
+  "layout_blueprint": {
+    "structural_grid_system": "CSS Grid layout (`max-width: 1680px`, centered, `1px solid #D5D0C3` exposed hairline grid cells) designed for zero-build execution. Avoids floating overlapping HUDs so legends and epistemic caveats never obscure 3D data.",
+    "desktop_viewport_allocation_1280px_plus": {
+      "top_masthead_bar": {
+        "height": "Auto (~72px)",
+        "contents": [
+          "Left: Atlas Title, Pos008 Benchmark Identifier, and Breadcrumb to Root Atlas (`https://inquilinekea.github.io/scienceclaw-hackathon-2026/`).",
+          "Center-Right: Persistent Epistemic Scope Strip (4 compact pill badges: 'Single Correlated Volume Pos008', '24x24x25 PIV Grid != Fibers', 'Displacement (µm) != Force', 'Guarded Interior BCs').",
+          "Far-Right: Direct link button to Companion WordPress Narrative (`nonlinear-collagen-benchmark-buckling-lowers-prediction-error-sliding-does-not-help`) and 'Cross-Study Atlas Map' jump button."
+        ]
+      },
+      "main_workbench_above_the_fold": {
+        "grid_template": "320px (Left Control & Model Ledger) | 1fr (Center 3D Spatial Stage) | 360px (Right Quantitative & Node Inspector)",
+        "left_column_model_and_slice_controls": [
+          "Section 1: Interactive 5-Model Benchmark Table (Rows: Buckling-only, Combined [Primary], Harmonic, Control, Sliding-only; Columns: Vector RMSE, Raw Strain NRMSE, Guarded Strain NRMSE, MSE Delta vs Harmonic). Clicking selects model; Shift-clicking compares two models.",
+          "Section 2: Spatial Subset & Tomographic Slicer (Eligibility radio buttons: 4,355 Score-Eligible / 303 Strain Stencils / 14,400 All; Interactive 2x2x2 Octant selector; Axis X/Y/Z slab center and thickness sliders).",
+          "Section 3: Encoding & Glyph Controls (Field selector: Displacement Vectors vs. Nodal P1-Strain Norm; Arrow Magnification toggle: 1x, 5x, 10x; Point Cloud vs. Vector Glyph switch; Reference Cell 753-point visibility toggle)."
+        ],
+        "center_column_3d_spatial_stage": [
+          "Top Stage Toolbar: Layout Switcher ('3-Up Triptych: Observed | Predicted | Residual' vs. '1-Up Superimposed Difference Lens'), Camera Preset Buttons (Isometric, XY, XZ, YZ, Cell-Proximal, Reset), and Keyboard Shortcut Hint (`?`).",
+          "Primary WebGL Canvas Area (540px min-height): In 3-Up mode, three synchronized canvases share a unified bottom coordinate triad and a locked top-banner readout showing the active model name, slab bounds in µm, and visible node count.",
+          "Bottom Locked Color & Scale Bar: Full-width horizontal SVG legend showing exact µm color stops (0.00 to >=2.50 µm), current arrow magnification scale bar in µm, and cell boundary point key."
+        ],
+        "right_column_quantitative_and_nodal_inspector": [
+          "Panel A: Dual-Ledger Score Header (Side-by-side cards contrasting 'Frozen Global Score [Equal-Octant Mean]' vs. 'Active View Score [Node-Pooled Subset]' with live sample count `n`).",
+          "Panel B: Conditional Residual Histogram & 8-Octant Dot Plot (SVG histogram of `||u_pred - u_obs||_2` for visible nodes + 8-row octant breakdown showing how octant variance drives the global score).",
+          "Panel C: Selected Node & Stencil Inspector (Displays coordinates, mask flags, and all 5 model predictions/errors for the clicked node, or summary statistics when no single node is pinned)."
+        ]
+      },
+      "below_the_fold_methodological_and_atlas_sections": {
+        "section_1_verification_drawer": "3-column analytical strip: (1) Pos007 12-Arm Parameter Selection Table (`lambda_s=0.04, d_s=0.05, H=0.05`, `buck_scale=0.0025, yield=0.04`), (2) Increment 10/20 Normalized Work & Dissipation Curves, (3) 10 Numerical Gates & Step/Direction/Hessian Convergence Ledger.",
+        "section_2_cross_study_evidence_map": "Structured 10-card Evidence Atlas Grid linking sibling studies with strict Evidence Tier badges and boundary notes (explicitly forbidding cross-study league tables)."
+      }
+    },
+    "tablet_and_mobile_breakpoints": {
+      "tablet_768px_to_1279px": "2-column layout: 3D Spatial Stage spans 100% top width (440px height); Left Control Ledger and Right Quantitative Inspector sit side-by-side (50% / 50%) directly beneath.",
+      "mobile_under_768px": "Single-column progressive disclosure with sticky top 'Active Model & Slice Summary Bar'. The 3D stage defaults to the 'Single-Canvas Difference Lens' (one WebGL context instead of three to conserve mobile GPU memory and screen width) with a segmented tab bar `[Observed | Predicted | Residual | Superimposed]` to flip buffers instantly in-place."
+    }
+  },
+  "cross_study_map": {
+    "architectural_rule": "No Mixed-Unit League Table. The 10 modules in the ScienceClaw 2026 repository operate across different dimensionalities (2D vs. 3D), constitutive formulations (continuum Darcy-Biot vs. discrete fiber networks vs. phenomenological continuum surrogates), and validation regimes (synthetic vs. bulk bovine rheology vs. single-position PIV). They are organized as a matrix of scoped cards grouped by Epistemic Evidence Tier, never ranked on a shared numeric axis.",
+    "narrative_integration": {
+      "wordpress_companion_url": "https://humanavianaisymbiosis.wordpress.com/2026/10/31/nonlinear-collagen-benchmark-buckling-lowers-prediction-error-sliding-does-not-help/",
+      "integration_pattern": "Provide a prominent 'Read the Companion Research Post' link in the masthead and a 'Cite / Embed Static Summary Card' drawer that gives WordPress readers direct deep-links into specific viewer states via URL hash parameters (e.g., `#model=buckling&Compare=combined&slabZ=180&view=residual`)."
+    },
+    "study_directory": [
+      {
+        "module_id": "nonlinear-3d",
+        "title": "3D Guarded Nonlinear Benchmark (Current Study — Pos008)",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/nonlinear-3d/",
+        "evidence_tier": "Tier 1A: Measured 3D PIV Interior Holdout (Single Correlated Position, Adaptively Reused)",
+        "primary_quantity_and_unit": "3D Displacement Vector RMSE (µm) & Guarded Strain Stencil NRMSE (dimensionless)",
+        "scope_and_comparability_boundary": "Evaluates phenomenological compression buckling and plastic sliding surrogates on a 24x24x25 PIV grid (4,355 score-eligible nodes) given measured outer-face and near-cell displacements. Not comparable to force-driven or bulk rheometer modulus assays."
+      },
+      {
+        "module_id": "measured-3d",
+        "title": "Measured 3D PIV Field & Separate Held-Out Bulk Batch",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/measured-3d/",
+        "evidence_tier": "Tier 1B: Measured 3D PIV + Separate Bulk Batch Context",
+        "primary_quantity_and_unit": "3D PIV Displacement Field (µm) & Bulk Rheological Context",
+        "scope_and_comparability_boundary": "Provides the broader measured 3D PIV dataset and separate held-out bulk batch context without the Pos007->Pos008 12-arm nonlinear constitutive selection protocol."
+      },
+      {
+        "module_id": "bovine-3d",
+        "title": "Synthetic 3D Network Scaled to Bovine Bulk Response",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/",
+        "evidence_tier": "Tier 2A: Macro-Calibrated Synthetic 3D Simulation",
+        "primary_quantity_and_unit": "Macroscopic Shear/Tensile Stress-Strain Scaling",
+        "scope_and_comparability_boundary": "Synthetic 3D architecture scaled to match macroscopic bovine bulk rheology; lacks point-by-point interior 3D PIV displacement matching around a live cell."
+      },
+      {
+        "module_id": "poroelasticity",
+        "title": "FEniCSx Darcy-Biot Poroelastic Continuum Study",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/poroelasticity/",
+        "evidence_tier": "Tier 2B: Continuum Biphasic PDE Simulation (FEniCSx)",
+        "primary_quantity_and_unit": "Pore Pressure (Pa) & Fluid-Solid Coupling Relaxation",
+        "scope_and_comparability_boundary": "Models transient fluid permeation and Darcy-Biot poroelasticity; orthogonal to the quasi-static, drained phenomenological buckling/sliding comparison in `nonlinear-3d`."
+      },
+      {
+        "module_id": "microrheology",
+        "title": "Active/Passive Probe Drag & Microrheology",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/microrheology/",
+        "evidence_tier": "Tier 2C: Local Probe Drag Simulation",
+        "primary_quantity_and_unit": "Bead Force-Displacement & Local Compliance",
+        "scope_and_comparability_boundary": "Investigates localized probe drag regimes rather than full-field 3D cell-induced matrix displacements."
+      },
+      {
+        "module_id": "transitions",
+        "title": "Mechanistic Finite-Network Rigidity & Buckling Transitions",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/transitions/",
+        "evidence_tier": "Tier 3A: Mechanistic Discrete Fiber Network Theory",
+        "primary_quantity_and_unit": "Network Stiffness & Critical Strain Transition Regimes",
+        "scope_and_comparability_boundary": "Explores theoretical finite-network phase transitions on explicit synthetic graphs; contrast with `nonlinear-3d`, which operates on a regular continuum PIV sampling grid without observed fiber topology."
+      },
+      {
+        "module_id": "force-replay",
+        "title": "Force + Damage Replay Study",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/force-replay/",
+        "evidence_tier": "Tier 3B: Synthetic Force & Damage Protocol Replay",
+        "primary_quantity_and_unit": "Synthetic Force History & Damage Accumulation",
+        "scope_and_comparability_boundary": "Uses prescribed synthetic force/damage histories; in `nonlinear-3d`, cellular tractions are unknown and boundaries are displacement-driven."
+      },
+      {
+        "module_id": "force-robustness",
+        "title": "Force Robustness Across Random Seeds & Angles",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/force-robustness/",
+        "evidence_tier": "Tier 3C: Synthetic Sensitivity & Seed Ensemble",
+        "primary_quantity_and_unit": "Angular & Seed Variance under Prescribed Loading",
+        "scope_and_comparability_boundary": "Evaluates synthetic ensemble variance across seeds and loading angles; does not confer multi-replicate biological significance onto Pos008."
+      },
+      {
+        "module_id": "aging",
+        "title": "Age & Crosslink Surrogate Exploration",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/aging.html",
+        "evidence_tier": "Tier 3D: Parametric Crosslink/Aging Surrogate",
+        "primary_quantity_and_unit": "Surrogate Crosslink Parameter Sweep",
+        "scope_and_comparability_boundary": "Theoretical parameter sweep of aging/crosslink surrogates. `nonlinear-3d` contains zero age, chemical crosslink, or fracture validation."
+      },
+      {
+        "module_id": "atlas-root",
+        "title": "Baseline & Directional Network Atlas Root",
+        "url": "https://inquilinekea.github.io/scienceclaw-hackathon-2026/",
+        "evidence_tier": "Atlas Hub: Program Overview & Navigation Index",
+        "primary_quantity_and_unit": "Cross-Module Index",
+        "scope_and_comparability_boundary": "Entry portal for the ScienceClaw 2026 collagen modeling suite."
+      }
+    ]
+  },
+  "scientific_risks": [
+    {
+      "risk_id": "SR-01",
+      "misinterpretation_hazard": "Users mistake the 24x24x25 nodes or 76,176 tetrahedral elements for imaged collagen fibers and crosslinks.",
+      "visual_and_copy_countermeasure": "Never draw wireframe lines connecting grid nodes or tetrahedra in the 3D scene. Render only discrete node markers/vectors and smooth cutting-plane heatmaps. Pin a permanent label in the 3D viewport header: '24x24x25 Regular PIV Sampling Grid (14,400 Nodes) — Not Measured Fiber Architecture'."
+    },
+    {
+      "risk_id": "SR-02",
+      "misinterpretation_hazard": "Users interpret 3D arrows as cellular traction forces (nN/Pa) rather than matrix displacements (µm).",
+      "visual_and_copy_countermeasure": "Every legend, tooltip, and axis label explicitly appends 'Displacement (µm)'. The boundary-condition toggle explains: 'Interior predicted from measured outer-face and near-cell displacements; cellular forces are unmeasured'."
+    },
+    {
+      "risk_id": "SR-03",
+      "misinterpretation_hazard": "Users treat the 8 octants or 4,355 vectors as independent statistical replicates proving universal biological superiority of the buckling model.",
+      "visual_and_copy_countermeasure": "Display an 'N = 1 Correlated Position (Pos008, Adaptively Reused)' badge next to all benchmark scores. Frame all error reductions (28.582% MSE drop for Combined vs. Harmonic; +4.231% MSE worsening from adding sliding to buckling) as 'descriptive error reductions on Pos008 after Pos007 family selection, without independent-replicate p-values'."
+    },
+    {
+      "risk_id": "SR-04",
+      "misinterpretation_hazard": "Users view the guarded strain NRMSE (0.530915 buckling-only / 0.533428 combined) as an independent experimental validation of the displacement fit.",
+      "visual_and_copy_countermeasure": "Group Vector RMSE and Strain NRMSE under a shared bracket titled 'Kinematics Derived from the Same Measured PIV Displacement Field (303 Guarded 5x5x5 Stencils)' with a tooltip clarifying that strain is a spatial derivative check, not a second experimental assay."
+    },
+    {
+      "risk_id": "SR-05",
+      "misinterpretation_hazard": "Users assume the 32-step seeded Hessian screens prove global material stability or that normalized reaction work measures physical fracture toughness.",
+      "visual_and_copy_countermeasure": "In the verification drawer, badge the Hessian indicator as 'Local Directional Screen (32-step seeded; no negative curvature detected != global stability proof)' and label work curves as 'Dimensionless/Normalized Solver Work (No absolute stiffness, fracture toughness, or crosslink chemistry calibration)'."
+    }
+  ],
+  "accessibility_spec": {
+    "keyboard_navigation_and_webgl_control": {
+      "canvas_focus_ring": "Each interactive WebGL stage and SVG chart is focusable (`tabindex='0'`) with a high-contrast 2px `#0D5C63` focus outline and `#F7F4EB` offset.",
+      "spatial_keyboard_bindings": "When the 3D stage is focused: Arrow keys orbit camera in 5-degree steps; `Shift + Arrow keys` pan; `+` / `-` zoom; `1`–`5` switch active model (`Buckling`, `Combined`, `Harmonic`, `Control`, `Sliding`); `X`, `Y`, `Z` cycle slice axis; `<` and `>` step the tomographic slab by 15 µm (one grid layer); `[` and `]` cycle pinned score-eligible nodes; `R` resets camera and slice to default.",
+      "no_keyboard_traps": "`Escape` immediately exits node-inspection mode and returns focus to the main stage toolbar."
+    },
+    "screen_reader_and_aria_architecture": {
+      "live_metric_announcements": "An `aria-live='polite'` region announces model switches and slice updates concisely (e.g., 'Selected Combined model: Frozen Equal-Octant Vector RMSE 0.897603 micrometers, 28.582 percent MSE reduction versus Harmonic. Active Z-slab 150 to 210 micrometers showing 912 of 4,355 score-eligible nodes, pooled subset RMSE 0.884 micrometers').",
+      "accessible_data_equivalents": "Because WebGL canvases are opaque to assistive tech, the 5-model global benchmark table, the 8-octant breakdown table, the 12-arm Pos007 selection table, and the 10 numerical gate results are rendered as semantic HTML `<table>` elements with `<th scope='col'>` and `<th scope='row'>` headers, accessible without touching the 3D canvas."
+    },
+    "color_vision_deficiency_and_contrast": {
+      "cvd_safe_encoding": "Teal (`#0D5C63`) vs. Copper (`#B8532A`) and the Ivory-Gold-Copper-Espresso sequential ramp are luminance-monotonic and distinguishable under deuteranopia, protanopia, and tritanopia.",
+      "redundant_double_encoding": "In superimposed 3D mode and charts, Observed vs. Predicted vectors are differentiated by both hue and glyph geometry (Observed = solid cylindrical shaft with wide arrowhead; Predicted = hollow/ringed cone with diamond base; Cell points = matte spheres).",
+      "wcag_contrast_compliance": "All body and tabular text meets WCAG 2.1 AAA (>= 7:1 contrast: `#142024` on `#F7F4EB` is 14.8:1); UI controls and secondary labels meet WCAG AA (>= 4.5:1)."
+    },
+    "reduced_motion_and_low_power_fallback": {
+      "prefers_reduced_motion": "Respects `@media (prefers-reduced-motion: reduce)` by disabling camera interpolation damping (camera presets snap instantly in 0ms) and replacing histogram bar transitions with instant updates.",
+      "webgl_context_loss_or_fallback": "If WebGL is unavailable or fails on constrained mobile hardware, automatically falls back to a synchronized 3-axis orthographic 2D HTML5 Canvas projector (XY, XZ, YZ slab projections) using the exact same slab sliders, colormaps, and node inspector."
+    }
+  },
+  "usability_acceptance_checks": [
+    {
+      "check_id": "UAC-01",
+      "category": "Buildless Technical Integrity",
+      "criterion": "Opening `index.html` over static HTTP/GitHub Pages loads with zero external network requests to CDNs, font servers, analytics, or npm bundles; all WebGL shaders, SVG charts, and JSON data loaders execute in native vanilla JS."
+    },
+    {
+      "check_id": "UAC-02",
+      "category": "Quantitative Fidelity to Frozen Benchmark",
+      "criterion": "The 5-model benchmark table displays exact frozen values to 6 decimal places: Harmonic (1.062138 / 0.742073 / 0.604762), Control (1.265618 / 0.789113 / 0.691600), Buckling-only (0.879195 / 0.701325 / 0.530915), Sliding-only (1.308340 / 0.805266 / 0.708565), and Combined (0.897603 / 0.703336 / 0.533428), along with the 28.582% Combined MSE reduction vs. Harmonic and the +4.231% MSE worsening from adding sliding to buckling."
+    },
+    {
+      "check_id": "UAC-03",
+      "category": "Equal-Octant vs. Node-Pooled Disambiguation",
+      "criterion": "When filtering by octants or slab slices, the 'Frozen Global Score (Equal-Octant Mean)' remains locked and visually distinct from the dynamically updated 'Visible Subset RMSE (Node-Pooled)', preventing user confusion when all 4,355 score-eligible nodes are visible."
+    },
+    {
+      "check_id": "UAC-04",
+      "category": "Synchronized 3D Triptych & Fixed Colormap Scale",
+      "criterion": "Orbiting, zooming, or slicing in any 3D panel updates Observed, Predicted, and Residual views in lockstep at >= 30 FPS on integrated laptop GPUs, and the color legend remains clamped to a fixed µm domain across all models and slices."
+    },
+    {
+      "check_id": "UAC-05",
+      "category": "Epistemic Guardrail Persistence",
+      "criterion": "In both displacement and P1-strain modes, no wireframe lines connect PIV grid nodes into a fake fiber network, arrow magnification and µm units are permanently labeled, and the Pos008 single-position / non-force caveats remain visible without requiring hover discovery."
+    },
+    {
+      "check_id": "UAC-06",
+      "category": "Cross-Study Navigation & WordPress Deep-Linking",
+      "criterion": "All 10 ScienceClaw 2026 study links and the WordPress companion post resolve correctly, display explicit Evidence Tier badges without a mixed-unit league table, and URL hash states restore specific model/slice configurations on page load."
+    }
+  ]
+}

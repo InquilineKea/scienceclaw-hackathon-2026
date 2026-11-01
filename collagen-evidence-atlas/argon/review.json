@@ -1,0 +1,208 @@
+{
+  "design_name": "Collagen Evidence Atlas — Warm Archival Metrology Edition",
+  "overall_assessment": "PASS WITH MINOR NON-BLOCKING REFINEMENTS. The implementation is a major usability, visual, and architectural upgrade over the legacy two-panel static report while strictly preserving every scientific guardrail, quantitative benchmark value, and evidence boundary. It delivers a dependency-free synchronized 3D WebGL triptych with a 2D Canvas fallback, an explicit pairwise model-error delta lens, a default 60 µm Z-slab for immediate interior legibility, linked regional and global analytical views, direct node inspection with CSV export, and an evidence-tagged cross-study map. No scientific misrepresentations were found. Only four medium/low implementation bugs exist: a low-contrast yellow point highlight on the warm paper canvas (and missing highlight in the 2D fallback), a 650px vs 760px responsive breakpoint mismatch between JS and CSS for single-pane switching, non-synced node ID input box when picking on the canvas, and sub-10px metadata typography.",
+  "findings": [
+    {
+      "severity": "medium",
+      "file": "render.js",
+      "issue": "Selected node highlight uses pale yellow RGB (1.0, 0.88, 0.45) against the warm archival canvas background (#f0ede4 / RGB 0.941, 0.929, 0.894), resulting in a ~1.18:1 contrast ratio that is nearly invisible. Additionally, the 2D canvas fallback branch in draw() omits rendering the selected node highlight entirely.",
+      "fix": "Change the selected node highlight color in render.js to a high-contrast dark ink/crimson marker (such as RGB [0.65, 0.18, 0.12] or [0.07, 0.19, 0.22] at size 9*dpr) and add the corresponding arc draw call at the end of the 2D Canvas fallback branch when this.s.node !== null."
+    },
+    {
+      "severity": "medium",
+      "file": "render.js, style.css, app.js",
+      "issue": "Responsive breakpoint mismatch between CSS (@media(max-width: 760px)) and JS (mobile() checks this.c.clientWidth < 650). At viewport widths between 686px and 760px, CSS displays the .mobile-switch bar and collapses .pane-headings to a single column, while renderer.single() remains false in triptych mode—causing the canvas to render 3 panes while the mobile view switcher buttons appear active but do not change the 3-pane canvas.",
+      "fix": "Align the single-pane check in render.js with the CSS breakpoint by checking window.matchMedia('(max-width: 760px)').matches (or adjusting the canvas width threshold to match 760px viewport width), and hide or synchronize the .scene-toolbar layout toggle buttons when mobile single-pane mode is active."
+    },
+    {
+      "severity": "low",
+      "file": "app.js",
+      "issue": "Bidirectional inspector input sync: clicking a vector in the 3D scene or pressing '[' / ']' updates #nodeDetail and highlights the node, but does not update the #nodeId numeric input value to reflect the currently inspected source node ID.",
+      "fix": "Inside inspect(i) in app.js, set $('nodeId').value = i === null ? '' : data.nodeIds[i] so the numeric input always reflects the active point in the inspector."
+    },
+    {
+      "severity": "low",
+      "file": "style.css",
+      "issue": "Several metadata and legend captions (.pane-headings span, .pane-headings small, .scene-top, .scene-foot, .region-summary small, .inspector-tools label) use 8px–9px font sizes, which fall below comfortable legibility thresholds on standard-DPI desktop and mobile screens. Additionally, #5f7677 on #f0ede4 is ~4.25:1 (slightly below WCAG AA 4.5:1 for small text).",
+      "fix": "Increase minimum UI metadata and axis/legend caption font sizes from 8px–9px to 10.5px–11px and darken secondary warm-surface labels from #5f7677 / #607672 to #435857 (~5.9:1 contrast ratio on #f0ede4)."
+    },
+    {
+      "severity": "low",
+      "file": "app.js, index.html",
+      "issue": "Dead visibilitychange timer cleanup in app.js references a removed continuous camera rotation timer and sets #rotate text to 'Rotate camera' (whereas #rotate is now a discrete 'Next camera preset' button). Also, index.html defaults #slice to 'all' and #thickness to '80' before app.js initializes state to slice='2' and thickness=60.",
+      "fix": "Remove the unused timer variable and visibilitychange listener in app.js, and set default HTML attributes on #slice, #sliceControls, and #thickness in index.html to match the initial 60 µm Z-slab state."
+    }
+  ],
+  "scientific_misrepresentations": [],
+  "concrete_acceptance_checks": [
+    {
+      "id": "AC-01",
+      "category": "Quantitative Fidelity",
+      "check": "Verify that the global comparison chart and data bindings exactly match frozen benchmark metrics: Harmonic (vector RMSE 1.062 µm, raw strain NRMSE 0.742, guarded strain NRMSE 0.605), Control (1.266 / 0.789 / 0.692), Buckling only (0.879 / 0.701 / 0.531), Sliding only (1.308 / 0.805 / 0.709), and Primary Combined (0.898 / 0.703 / 0.533), with 28.6% (28.582%) MSE reduction vs Harmonic and +4.231% MSE worsening when adding sliding to buckling.",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-02",
+      "category": "Scientific Guardrails",
+      "check": "Confirm that no 3D or 2D view connects PIV grid nodes into a synthetic fiber mesh, that arrows are explicitly labeled as displacement (not force), that camera motion and boundary loading fraction (0→1) are explicitly distinguished from experimental time, and that Position 008 is badged as an adaptively reused single correlated position (4,355 eligible vectors, 8 spatial octants, not independent replicates).",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-03",
+      "category": "Synchronized 3D Triptych & Pairwise Delta Lens",
+      "check": "Verify that orbiting, panning, zooming, or selecting orthographic camera presets (Isometric, XY, XZ, YZ) synchronously updates Observed, Predicted, and Residual/Delta panes; switching Difference Lens to 'Error change vs reference model' renders signed |e_model| - |e_ref| on a fixed -1 to +1 µm diverging scale (teal = lower error, copper = higher error).",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-04",
+      "category": "Score Aggregation Distinction",
+      "check": "Confirm that filtering by X/Y/Z slab or octant updates the pooled regional RMSE, eligible vector count, and residual histogram for the active subset, while keeping the frozen equal-octant global score chart invariant and clearly labeled.",
+      "status": "PASS"
+    },
+    {
+      "id": "AC-05",
+      "category": "Point Inspector, Keyboard Navigation & CSV Export",
+      "check": "Verify that clicking a vector, entering a source node ID (0–14399), or pressing '[' and ']' on the focused canvas displays exact 3D coordinates, observed displacement, predicted displacement, residual norm, and raw P1 strain mismatch, and that CSV export downloads only the currently filtered eligible vectors.",
+      "status": "PASS (with minor fix recommended for highlight contrast and input sync)"
+    },
+    {
+      "id": "AC-06",
+      "category": "Buildless & Privacy Constraints",
+      "check": "Confirm zero external JS/CSS/font/image requests, zero npm/CDN dependencies, zero analytics/telemetry calls, and clean fallback to 2D Canvas if WebGL context creation fails.",
+      "status": "PASS"
+    }
+  ],
+  "visual_system": {
+    "aesthetic_direction": "Warm Archival Metrology — inspired by precision optical metrology plates, laboratory notebooks, and scientific monographs rather than dark gaming HUDs or generic SaaS dashboards.",
+    "color_palette": {
+      "surfaces": {
+        "page_paper": "#f5f3ec",
+        "panel_cream": "#faf9f4",
+        "viewport_warm_plate": "#f0ede4",
+        "toolbar_slate_sand": "#e5e8df",
+        "structural_hairline": "#d8dfd8"
+      },
+      "typography_and_accents": {
+        "primary_ink": "#123138",
+        "muted_ink": "#435857",
+        "primary_teal": "#137d79",
+        "warm_copper": "#b9673f",
+        "caution_amber": "#8b601d",
+        "focus_ring": "#c78842"
+      },
+      "scientific_encodings": {
+        "displacement_and_error_sequential": "4-stop warm archival ramp (#c4c8bf -> #d3ac65 -> #b36436 -> #4a1410) mapped to fixed physical domains (0–8 µm for |u|, 0–4 µm for |residual|, 0–0.15 for raw P1 strain mismatch) with explicit saturation callouts.",
+        "pairwise_delta_diverging": "Centered diverging scale (#0d5c63 deep teal for error reduction -> #f4f1e8 neutral paper at 0 -> #a63a2b copper-red for error increase) clamped to [-1, +1] µm.",
+        "missing_or_ineligible_data": "Neutral medium gray (#808080) for nodes lacking complete eligible P1 tetrahedra."
+      }
+    },
+    "typography": {
+      "display_serif": "'Iowan Old Style', 'Palatino Linotype', Georgia, serif for editorial headings, section numbers, and primary quantitative callouts.",
+      "ui_sans": "System humanist sans (-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif) with tabular numerals (font-variant-numeric: tabular-nums) for all tables, readouts, and score bars.",
+      "technical_mono": "ui-monospace, monospace for 3D axis triad labels (X, Y, Z) and coordinate inspection."
+    }
+  },
+  "ranked_interactions": [
+    {
+      "rank": 1,
+      "name": "Synchronized 3D Triptych & Focus View Modes",
+      "purpose": "Simultaneously compare Observed PIV displacement, Model Prediction, and Residual/Delta fields under identical camera projection, with one-click switching to full-width Prediction or Difference focus lenses and orthographic presets (Isometric, XY, XZ, YZ)."
+    },
+    {
+      "rank": 2,
+      "name": "Pairwise Model Error Delta Lens",
+      "purpose": "Directly visualize where a candidate mechanism (e.g., Buckling + Sliding or Buckling Only) lowers or worsens vector error relative to any chosen reference model (e.g., Harmonic or Buckling Only) in 3D space."
+    },
+    {
+      "rank": 3,
+      "name": "Axis Slab Slicer & Octant Isolator",
+      "purpose": "Mitigate 3D vector occlusion by defaulting to a 60 µm Z-slab and allowing continuous slab center (-180 to +180 µm) and thickness (20 to 360 µm) adjustments across X, Y, or Z, plus one-click spatial octant isolation."
+    },
+    {
+      "rank": 4,
+      "name": "Linked Global Score Table & Conditional Regional Histogram",
+      "purpose": "Allow clicking any of the 5 models in the frozen equal-octant global benchmark chart to update the 3D field immediately, paired with a live residual distribution histogram and octant breakdown conditioned on the active spatial subset."
+    },
+    {
+      "rank": 5,
+      "name": "Direct Source Node Inspector & Filtered CSV Export",
+      "purpose": "Support pointer picking, keyboard cycling ('[' and ']'), and direct source node ID lookup (0–14399) to inspect exact nodal vectors and P1 strain mismatch, plus instant CSV export of the filtered subset."
+    }
+  ],
+  "layout_blueprint": {
+    "header_mast": "Sticky archival masthead with brand mark, section jump links (Field laboratory, Evidence & checks, Research map), and direct GitHub source provenance link.",
+    "hero_brief": "Two-column editorial intro pairing study framing and evidence badges (Measured PIV displacement, Reused benchmark · one position, Precomputed results) with a typographic callout of the 28.6% vector MSE reduction and the immediate caveat that buckling alone achieves the lowest descriptive error while sliding adds no benefit.",
+    "section_01_field_laboratory": "Left 226px control rail (Prediction model selector, Model Color encoding, Difference Lens & Reference Model selector, Glyph mode, Axis Slab & Octant filters, collapsible Display & Camera parameters) + Right scene workspace (status bar, layout/camera/share toolbar, 3-pane header with fixed-unit legends, synchronized WebGL canvas, pooled regional RMSE summary bar, source node lookup/export bar, and point inspector readout) + Two-column analytical deck (Global Comparison chart on left, Regional Residual Histogram and 8-octant selector grid on right).",
+    "section_02_evidence_and_checks": "Two-column methodological critique and numerical audit: Left column explains the withholding protocol, adaptive reuse of Position 008 after 12-arm selection on Position 007, and collapsible physical/strain limits; Right column presents the 20-vs-10 step and 302-vs-110 direction refinement table, the 10 passed numerical gates, the 32-step seeded Hessian screen caveat, the collapsible normalized loading-path work/dissipation SVG chart, and the full 12-candidate selection matrix.",
+    "section_03_research_map": "Filterable cross-study index organized by evidence tier (All studies, Measured challenge, Bulk calibration, Mechanism exploration) with explicit scope tags and non-promotion warnings."
+  },
+  "cross_study_map": {
+    "policy": "Organize all 10 studies in the broader collagen research program by epistemic status and experimental grounding. Never combine synthetic, bulk-calibrated, and measured-field studies into a unified league table.",
+    "tiers": [
+      {
+        "tier": "Measured challenge",
+        "badge": "Measured PIV / withheld field",
+        "studies": [
+          "measured-3d/ (Measured-field challenge: separate held-out bulk batch summaries + measured PIV field)",
+          "nonlinear-3d/ (Buckling & sliding: this adaptively reused guarded interior benchmark on Position 008)"
+        ]
+      },
+      {
+        "tier": "Bulk calibration",
+        "badge": "Bulk-scaled synthetic networks",
+        "studies": [
+          "bovine-3d/ (Bovine-scaled 3D mechanics: synthetic 3D network cells scaled to bovine bulk response)"
+        ]
+      },
+      {
+        "tier": "Mechanism exploration",
+        "badge": "Unvalidated synthetic exploration",
+        "studies": [
+          "Root compare (?mode=tension&left=aligned&right=loops#compare: network architecture & loading direction)",
+          "aging.html (Crosslink placement & aging surrogate)",
+          "transitions/ (Finite-network mechanism & locking studies)",
+          "force-replay/ (Saved network force redistribution & damage replay)",
+          "force-robustness/ (Paired seed & loading-angle robustness screening)",
+          "microrheology/ (Uniform-drag local & remote microrheology)",
+          "poroelasticity/ (FEniCSx Darcy–Biot fluid-coupled microrheology comparison)"
+        ]
+      }
+    ]
+  },
+  "scientific_risks": [
+    {
+      "risk": "Misinterpreting the 24x24x25 PIV sampling grid or 76,176 tetrahedra as reconstructed collagen fibers.",
+      "mitigation": "Never draw mesh edges between interior sampling nodes; render only discrete sample points or displacement vectors anchored at grid locations, and keep the persistent footer note 'Sampling points != measured fibers'."
+    },
+    {
+      "risk": "Mistaking displacement vectors for cellular traction forces or stress vectors.",
+      "mitigation": "Display bold section subtitle 'These arrows show displacement, not force' and label all vector legends and inspector outputs strictly in micrometers (µm)."
+    },
+    {
+      "risk": "Over-interpreting the primary combined candidate (buckling + sliding) as validating plastic fiber sliding.",
+      "mitigation": "Pair the 28.6% MSE reduction headline directly with the finding note that buckling alone achieves lower error (0.879 µm vs 0.898 µm RMSE) and adding the sliding surrogate worsens MSE by 4.231%."
+    },
+    {
+      "risk": "Confusing pooled subset RMSE during interactive slicing with the frozen benchmark metric.",
+      "mitigation": "Label the live filter readout as 'pooled regional score' alongside a matched Harmonic baseline for the exact same subset, while keeping the frozen equal-octant global benchmark chart invariant below."
+    },
+    {
+      "risk": "Treating camera rotation or the 0-to-1 boundary ramp in the work chart as experimental time or fracture toughness.",
+      "mitigation": "Eliminate continuous camera autoplay, label camera controls explicitly as view presets, and caption the loading-path chart as 'Imposed boundary fraction (0->1), not experimental time' and 'Normalized surrogate work, not fracture toughness'."
+    }
+  ],
+  "accessibility_spec": {
+    "keyboard_navigation": "All controls use native HTML form elements (<select>, <input type='range'>, <button>, <details>) with visible 3px #c78842 focus outlines. The 3D canvas has tabindex='0' with keyboard bindings: Arrow keys to orbit, '+'/'-' to zoom, 'Home' to reset camera, '[' and ']' to cycle through visible eligible nodes in the point inspector, and 'Escape' to clear node selection.",
+    "screen_reader_and_live_regions": "ARIA live status region (#sceneStatus) announces empty filter states; interactive buttons maintain aria-pressed state; SVG charts include role='img', aria-label, and per-bar <title> tooltips; a numeric Source Node ID input provides non-pointer access to every eligible node.",
+    "color_and_encoding_redundancy": "Color encodings are never the sole channel of quantitative information: vector length encodes magnitude in arrow mode, interactive picking and keyboard stepping provide exact numerical readouts for every point, and diverging delta views pair color with explicit signed micrometer legends.",
+    "motion_and_responsive": "Respects prefers-reduced-motion: reduce by disabling smooth scroll and transitions; includes no auto-rotating 3D animations; provides touch pinch-to-zoom, drag-to-orbit, and single-pane view switching on narrow screens."
+  },
+  "usability_acceptance_checks": [
+    "Default view opens with a 60 µm Z-slab at density=2 so the interior vector field is immediately legible rather than an occluded 3D hairball.",
+    "Switching models updates the 3D scene, regional RMSE, histogram, octant cards, and URL share link in under 50 ms without resetting the user's camera orientation or active slice.",
+    "Selecting 'Error change vs reference model' automatically reveals the Reference Model dropdown and switches the third pane to a clean dot-cloud delta encoding so sign and magnitude of model differences are effortless to read.",
+    "Clicking 'Reset region & slice' restores the full guarded interior across all 8 octants with one click.",
+    "Deep-linking via 'Link to this selection' restores model, reference model, difference lens, color mode, slice axis, slab center, slab thickness, octant, and layout mode from URL query parameters."
+  ],
+  "critique": "The candidate implementation is an exemplary scientific interface redesign. Moving from dark-mode WebGL panels to a warm archival metrology surface (#f0ede4) substantially reduces visual fatigue and makes the 3D viewports feel integrated with the editorial typography. The addition of the Pairwise Error Delta lens directly answers the central scientific question—showing spatially why compression-softening (buckling) reduces error against Harmonic interpolation while the plastic-sliding surrogate slightly degrades the buckling prediction. Starting in a 60 µm Z-slab solves the classic 3D vector field occlusion problem on first load. The only blemishes found in code audit are the low-contrast pale-yellow point highlight on the new warm background (plus its omission in the 2D Canvas fallback), the 650px vs 760px responsive breakpoint discrepancy between JS and CSS, and overly small 8px–9px micro-labels; fixing those items will make the release production-ready."
+}

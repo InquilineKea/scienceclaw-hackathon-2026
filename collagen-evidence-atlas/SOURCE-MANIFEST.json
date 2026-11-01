@@ -1,0 +1,120 @@
+{
+  "scope": "Original visualization source, derived public data, final non-thought Argon design/review and usage/provenance. No credentials, hidden thinking, raw images, cloud-account metadata, dependencies or binaries.",
+  "files": [
+    {
+      "file": "README.md",
+      "bytes": 1611,
+      "sha256": "fc4f4d81b3c188b2c3583e8dec0abdd8aac97a4e0398ac09720c720c4b253520"
+    },
+    {
+      "file": "SECURITY.md",
+      "bytes": 1740,
+      "sha256": "f3ea97abf2ec566dc3e23bdb9213ea551e5d143d90aa632633e200424cb013c7"
+    },
+    {
+      "file": "REVIEW-RESOLUTION.md",
+      "bytes": 2985,
+      "sha256": "a4dd71e4b2a8d3cb261d7a35280bcb40cfc927bd54c4db349d11e54924c3ec61"
+    },
+    {
+      "file": "DATA-PROVENANCE.json",
+      "bytes": 1072,
+      "sha256": "56154722b12d2d3b9cacdb752fe9a71440023702a42f5a77e916e0e8ace965e5"
+    },
+    {
+      "file": "DATA-VALIDATION.json",
+      "bytes": 1758,
+      "sha256": "ce66b83803b9eba8dcbf30e495edfa0b08a8a9a4c114f8bb10b4b1ba122c66f3"
+    },
+    {
+      "file": "BROWSER-VERIFICATION.json",
+      "bytes": 542,
+      "sha256": "b3860e084459e11b81c3ef421cf6152d97f25c36812ed5bb17910d25e6835f42"
+    },
+    {
+      "file": "prepare-data.mjs",
+      "bytes": 3689,
+      "sha256": "bd0c60352b85f8c9a79b162c0835ab0c4d3643d2666c1720fdbc8e461714574c"
+    },
+    {
+      "file": "validate-data.py",
+      "bytes": 2303,
+      "sha256": "295ef3180d73da0763f5627b13f2c5286670f686c9f8cf6bb8967185a9f37667"
+    },
+    {
+      "file": "stage-public.py",
+      "bytes": 1390,
+      "sha256": "a27138947e7f83378a246cd82ccb91c8142b27204786420c1152ff87709c5bf8"
+    },
+    {
+      "file": "web/index.html",
+      "bytes": 13370,
+      "sha256": "826c82e6f4c835a9267dbea9d4bbb0882e3c54e910ead283cc003db6b3aabb15"
+    },
+    {
+      "file": "web/style.css",
+      "bytes": 17129,
+      "sha256": "d36dfb4d7a07c66d6cc5a8ad65b5531012e053aa9a6a63b225737aecbba68edf"
+    },
+    {
+      "file": "web/app.js",
+      "bytes": 19211,
+      "sha256": "c04c191567f9b8ec482bc0236414e7225b19ed346fcf3e11c6edac79867c2549"
+    },
+    {
+      "file": "web/render.js",
+      "bytes": 10586,
+      "sha256": "ecb71d71a6a5228b1518e85a99db5cef1067b980eb475520a13d74ead2e79113"
+    },
+    {
+      "file": "web/data.json",
+      "bytes": 1164462,
+      "sha256": "ac0bb60b76b9b9f707278a6d7950c5d326cfc5c57ba95ccd003936c979ede56f"
+    },
+    {
+      "file": "web/METHODS.md",
+      "bytes": 5879,
+      "sha256": "833c7820db0224e4d63abc574cb3bd1d730ea4854d5623e9e99425ab98aa6753"
+    },
+    {
+      "file": "argon/BRIEF.md",
+      "bytes": 4955,
+      "sha256": "b326739a2fa9f5214da7a329d9288a13fe591278e04db420f6721fe19f48ba68"
+    },
+    {
+      "file": "argon/worker.py",
+      "bytes": 2696,
+      "sha256": "e03c9af23a4c592370468d70f44396454de7e290886cb5250ecae72aba1c5598"
+    },
+    {
+      "file": "argon/design.json",
+      "bytes": 35785,
+      "sha256": "b28729caa9d38cde93868c0be463f2948391916dd861e6e3f96c1089a0489864"
+    },
+    {
+      "file": "argon/design-receipt.json",
+      "bytes": 821,
+      "sha256": "9ef6b04641afe022cde61dfc2c59164015ec7a247dbef79d7ed640feea66c9b1"
+    },
+    {
+      "file": "argon/REVIEW-PACKET.md",
+      "bytes": 63019,
+      "sha256": "fc7475d3921b7029283aef88ca0f2bd56225e740005e4039b5cc058148076cc6"
+    },
+    {
+      "file": "argon/review.json",
+      "bytes": 19404,
+      "sha256": "810e226221fc6ee0e5c59fbe72d3c8c165de627d5b372b25f2302b70295c0571"
+    },
+    {
+      "file": "argon/review-receipt.json",
+      "bytes": 824,
+      "sha256": "7fb3a2eb6d6a33e0772e920343b804797e3e0d7bedf4ab3515952ce0bac63d94"
+    },
+    {
+      "file": "argon/USAGE-SUMMARY.json",
+      "bytes": 2111,
+      "sha256": "ec7de90c4c611a48e6f35f824d748a92b9600f093b3a7d4f60c7bfb428d09f00"
+    }
+  ]
+}

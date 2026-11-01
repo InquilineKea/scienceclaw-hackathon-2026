@@ -1,0 +1,46 @@
+{
+  "score_ids_exact": true,
+  "eligible_vectors": 4355,
+  "default_Z60_slab_count": 744,
+  "max_coordinate_or_vector_rounding_um": 4.999918604031706e-06,
+  "model_checks": [
+    {
+      "model": "Harmonic",
+      "display_recomputed_equal_octant_RMSE_um": 1.062138140607863,
+      "published_RMSE_um": 1.062138057325317,
+      "rounding_drift_um": 8.328254597067541e-08,
+      "frozen_global_metrics_exactly_preserved": true
+    },
+    {
+      "model": "control",
+      "display_recomputed_equal_octant_RMSE_um": 1.2656178733573553,
+      "published_RMSE_um": 1.2656178646011147,
+      "rounding_drift_um": 8.75624062146585e-09,
+      "frozen_global_metrics_exactly_preserved": true
+    },
+    {
+      "model": "buckling",
+      "display_recomputed_equal_octant_RMSE_um": 0.8791954797478566,
+      "published_RMSE_um": 0.8791954164527658,
+      "rounding_drift_um": 6.329509083524698e-08,
+      "frozen_global_metrics_exactly_preserved": true
+    },
+    {
+      "model": "sliding",
+      "display_recomputed_equal_octant_RMSE_um": 1.3083399860645903,
+      "published_RMSE_um": 1.3083399263346651,
+      "rounding_drift_um": 5.972992522806919e-08,
+      "frozen_global_metrics_exactly_preserved": true
+    },
+    {
+      "model": "combined",
+      "display_recomputed_equal_octant_RMSE_um": 0.897603248452294,
+      "published_RMSE_um": 0.8976031203133252,
+      "rounding_drift_um": 1.2813896876906483e-07,
+      "frozen_global_metrics_exactly_preserved": true
+    }
+  ],
+  "source_snapshot": "11b57e1daf9724ac6d169c3fa1289f5e09ce18ab",
+  "data_sha256": "ac0bb60b76b9b9f707278a6d7950c5d326cfc5c57ba95ccd003936c979ede56f",
+  "scope": "Checks preserve exported values, frozen score membership and exact global metrics; not new biological/model validation."
+}

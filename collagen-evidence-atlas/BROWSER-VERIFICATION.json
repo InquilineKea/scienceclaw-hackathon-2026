@@ -1,0 +1,16 @@
+{
+  "checked_utc": "2026-11-01T07:27:26.526998+00:00",
+  "WebGL_loaded": true,
+  "browser_console_errors": [],
+  "octant0_filter_vectors": 737,
+  "global_scores_invariant_after_filter": true,
+  "empty_slice_no_score_not_zero": true,
+  "source_node_inspection": 1878,
+  "CSV_export_rows": 737,
+  "mobile_inner_width": 390,
+  "mobile_client_width": 371,
+  "mobile_scroll_width": 371,
+  "mobile_single_pane_switching": true,
+  "Canvas_fallback_and_inspector": true,
+  "scope": "Browser interaction QA, not new mechanics/biological validation."
+}

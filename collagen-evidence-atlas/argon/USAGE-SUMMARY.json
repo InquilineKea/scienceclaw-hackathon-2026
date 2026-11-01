@@ -1,0 +1,78 @@
+{
+  "requests": 2,
+  "model": "gemini-4-argon",
+  "estimated_api_USD": 0.268694,
+  "not_a_billing_receipt": true,
+  "new_VM_created": false,
+  "VM_costs_separate": true,
+  "receipts": [
+    {
+      "stage": "design",
+      "model_requested": "gemini-4-argon",
+      "prompt_sha256": "b326739a2fa9f5214da7a329d9288a13fe591278e04db420f6721fe19f48ba68",
+      "input_bytes": 4955,
+      "max_output_tokens": 16000,
+      "automatic_retries": 0,
+      "started_utc": "2026-11-01T02:54:43.368797+00:00",
+      "status": "completed",
+      "model_returned": "gemini-4-argon",
+      "usage": {
+        "promptTokenCount": 1431,
+        "candidatesTokenCount": 9916,
+        "totalTokenCount": 15444,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 1431
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 9916
+          }
+        ],
+        "thoughtsTokenCount": 4097
+      },
+      "finish": [
+        "STOP"
+      ],
+      "seconds": 178.6304042339325,
+      "finished_utc": "2026-11-01T02:57:41.999252+00:00"
+    },
+    {
+      "stage": "review",
+      "model_requested": "gemini-4-argon",
+      "prompt_sha256": "fc7475d3921b7029283aef88ca0f2bd56225e740005e4039b5cc058148076cc6",
+      "input_bytes": 63019,
+      "max_output_tokens": 10000,
+      "automatic_retries": 0,
+      "started_utc": "2026-11-01T03:03:54.158203+00:00",
+      "status": "completed",
+      "model_returned": "gemini-4-argon",
+      "usage": {
+        "promptTokenCount": 20826,
+        "candidatesTokenCount": 4959,
+        "totalTokenCount": 29231,
+        "promptTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 20826
+          }
+        ],
+        "candidatesTokensDetails": [
+          {
+            "modality": "TEXT",
+            "tokenCount": 4959
+          }
+        ],
+        "thoughtsTokenCount": 3446
+      },
+      "finish": [
+        "STOP"
+      ],
+      "seconds": 106.7754955291748,
+      "finished_utc": "2026-11-01T03:05:40.933759+00:00"
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "sourceSnapshot": "11b57e1daf9724ac6d169c3fa1289f5e09ce18ab",
+  "sourceFiles": {
+    "fields.json": "2aebff46d2fdbbf495f999792c6f2cff8ab99c1d54da23bfc3a6f7bedf8f54d9",
+    "results.json": "a39b1db36b423870957c85072f075ea464205ffc8e71fd3b022a96a1964297c9",
+    "SELECTION.json": "b83ef7d6c60aea534a8a09c9b7a255192f379fcfc63d04544b2fe915a4083ed3",
+    "numerical-controls.json": "c354fb0a5ecd651ecdf728f91b481f20de6b0f3e35dfe2d6ef901e942f099b90"
+  },
+  "export": "web/data.json",
+  "export_sha256": "ac0bb60b76b9b9f707278a6d7950c5d326cfc5c57ba95ccd003936c979ede56f",
+  "coordinates_and_vectors_rounding_um": 0.00001,
+  "score_ids_preserved": true,
+  "scoreVectors": 4355,
+  "rawStrainTetrahedra": 18931,
+  "scope": "Visualization of immutable saved outputs, no new fitting or solver execution. Reused conditional benchmark.",
+  "descriptor": "Per displayed node, square root of volume-weighted incident-eligible-tetrahedra mean squared Frobenius strain mismatch. Exploratory P1 derivative descriptor, not independent local strain measurement. Global scores unchanged."
+}
