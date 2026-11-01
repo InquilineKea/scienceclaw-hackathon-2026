@@ -37,6 +37,7 @@ Driver `run_sweep.py` (profiles `smoke`, `local`, `gpu`), figures `make_figures.
 | Agent team on one benchmark (Claude Code; `team/team.py`, `team/jobs.py`) | running 2026-10-31 on GCP `oxt-cpu32` (user `oxt`, venv `~/v`, separate dir `~/team-20261031`; no installs) with Vertex `gemini-3.6-flash` via the `scienceclaw` gcloud login (no API key). Question: does clustered AGE crosslinking cut damage tolerance by blocking sliding, concentrating load, or hydration? Architecture / sliding / hydration / molecular-evidence / validator agents only choose whitelisted solver jobs; code adjudicates paired clustered-vs-dispersed seeds and registers `team-*` experiments here, verifying only when a different calculation (autograd linear-response G, closed-form fibril limits) agrees AND a validator falsification rerun keeps the verdict. Also re-checks the phase map G by linear response (first point: 0.9% agreement). Output `team/runs/<stamp>/REPORT.md`. |
 | Bioelectric ageing test (Claude Code; new `oxt/bioelectric.py`, `run_bioelectric.py`, `tests/test_bioelectric.py`) | done 2026-10-31 on Nebius H100 `bioelectric-ageing-h100-20261031` via Brev (pinned PyTorch image, no network, no installs; 41 min; stopped, disk kept). Results `results/bioelectric/gpu/`. Depolarisation is built in; Vmem Moran's I rises with crosslinking (opposite to senescent keratinocytes); 0/108 sets match all four signs; spatially correlated stiffness nucleates switching; pattern memory depends on prestress-gated junctions and net restoration is ~0. Critique: 4 Gemini calls, source-checked, appended to `swarm/LEVIN_LENS_CRITIQUE_20261031.md`. Not published. |
 
+
 ## Brev job queue (Codex: pick these up on Brev)
 
 Claude Code now drives Brev from this Mac (org NCA-f3c7-49497, L4 `collagen-md-20261031`, kept running at the user's request). Other sessions: claim a job by writing your name
@@ -51,7 +52,7 @@ Do not run on the instance anything not listed here without the user's say-so.
 | B3 | LAMMPS reduced-network oscillatory shear CPU reference | `python -m oxt.lammps_export remote/lammps/colI_none.in` in reviewed isolated CPU runtime; explicit material stem required, no wildcard/bare lmp | `remote/lammps/*_stress.txt` | Codex, existing GCP CPU commissioning | CPU validation41/41done; complete six-system rheology production remains open; GPU blocked pending native exact-angle validation and explicit bounded authorization |
 | B4 | GAG models × crosslinks under cyclic load (bridge / sliding / polyelectrolyte), 40x40, 8 seeds | `python run_gag.py --profile gpu --device cuda` | `results/gpu/gag.csv`, `gag_summary.csv` | — | open (12x12 version done on GCP: `results/cpu32/gag*.csv`) |
 | B5 | Collagen–GAG interface vs glycation (Lys/Arg vs CML/MG-H1 × DS 0/1/2 sulfates), AIMNet2 via ALCHEMI | in the ALCHEMI venv plus `aimnet==0.2.5`: `python alchemi_collagen_gag.py --device cuda --orient 24` | `results/alchemi_gag/collagen_gag_brev_L4.json` | Claude Code, Brev L4 | done |
-| B7 | Collagen network → organoid gene expression (156 Col I/IV gels: z × crosslinker × dose × alignment → motor-clutch/tensegrity YAP → 7-day organoid growth + YAP/MRTF/Wnt gene network) | `bash remote/brev_organoid.sh gpu` (`run_organoid.py`, `oxt/organoid.py`) | `results/organoid/gpu/` | Claude Code, Brev A6000 `organoid-a6000-20261031` (SSH via direct IP port 22; Brev gateway ports timed out 2026-10-31) | running |
+| B7 | Collagen network → organoid gene expression (156 Col I/IV gels: z × crosslinker × dose × alignment → motor-clutch/tensegrity YAP → 7-day organoid growth + YAP/MRTF/Wnt gene network) | `bash remote/brev_organoid.sh gpu` (`run_organoid.py`, `oxt/organoid.py`) | `results/organoid/gpu/` | Claude Code, Brev A6000 `organoid-a6000-20261031` (SSH as `shadeform` via direct IP port 22; Brev gateway ports timed out 2026-10-31) | done 2026-10-31; takeaway `results/organoid/ORGANOID_TAKEAWAY.md`; instance deleted after results were copied back |
 | B6 | Fibril scale: ColBuilder + Martini 3 Col I fibril, PYD/HLKNL vs added crosslinks, GROMACS tension (Gräter group tools) | **needs a security review and user approval first** (ColBuilder, GROMACS, Martini topologies not yet reviewed) | proposal only | — | blocked |
 
 Context for B4–B6: a ChatGPT session proposed testing whether added crosslinking stiffens a network yet costs it
@@ -64,6 +65,7 @@ positions); see `SECURITY-REVIEW.md`. A CPU pilot is in `results/alchemi_pilot/`
 converged. If the two MLIPs disagree by >30% on a chemistry's `k_rel`, report it rather than averaging.
 
 Findings from Brev jobs:
+- B7 organoid (Claude Code, Brev A6000): organoid radius is the cleanest gel-stiffness read-out (R² 0.90); YAP targets are biphasic with a 0.2–5 kPa plateau where all crosslinkers look alike; strain-stiffening/failure strain add no prediction beyond linear stiffness (growth tears nearly every gel at the interface); gene panel decodes stiffness (R² 0.79 at day 7) but not crosslink dose (0.22); glycation alone shifts LGR5/KRT20 via assumed Wnt sequestration. Published as WordPress post 643 (Collagen & ECM Aging, Collagen Network Mechanics, ScienceClaw Hackathon, Simulation Results; newsletter email and social sharing off): https://humanavianaisymbiosis.wordpress.com/2026/10/31/organoid-gene-expression-collagen-network-156-gel-simulation/
 - B1 (source correction, Codex follow-up): completed initial relaxations reach fmax ≈ 0.02 eV/Å. Normalized stiffness differs 5.60× for HLNL and 5.77× for sulfilimine. Dityrosine is above the reference in both models but is not stiffest in MACE-OFF (HLNL 16.29 vs dityrosine 4.31). Glucosepane is 1.04× reference in OFF versus 1.55× in MP. Boundary minima affect OFF sulfilimine and the MP pyridinoline reference; inspect scans before quantitative interpretation. Not fed into the network model.
 - B1 PM7 check (Claude Code): PM7 matches both MACE models on peak force from the shared seed-7 conformer (Spearman 0.95–0.98), but PM7 from two other conformers gives 0.48 against seed 7, and k_rel disagrees everywhere (0.40–0.48). The scan measures conformer slack. Robust: dityrosine stiff; disulfide and TG2 soft. Glucosepane vs pyridinoline, HLNL, pentosidine, sulfilimine: undetermined. Next: ≥20-conformer ensembles or pre-extended fragments.
 - Phase map (Claude Code, GCP, not a Brev job): healthy Col I is connected above z ≈ 2.4, rigid by bending from ≈ 3.0, stretching-dominated above ≈ 3.9 (G extrapolates to 0 at 3.8–3.9), and brittle (avalanche > 5% of bonds) above ≈ 5. Strength and extensibility trade off at roughly constant work to peak; the 4-seed "optimum at 3.5" did not survive 12 seeds. AGE dose 1 at matched z: G 2–3× higher, ε_peak 10–35% lower, useful window shifts from 3.5–3.8 to 3.2–3.55. LOX locking stiffens only below z ≈ 4.
@@ -259,6 +261,36 @@ returned an internal connector error after saving; fresh readback confirmed one
 new group and all 96 original blocks unchanged, so no duplicate retry occurred.
 No cloud instance was resumed for the editorial reconciliation.
 
+### Wet-fit diagnostic follow-up completed (2026-10-31)
+
+User authorized diagnosing/rerunning solvent controls on the existing H100,
+conditional 3D transfer only if laws pass, Avian updates and shutdown. Registry
+`wet-fit-controls-20261031` is done, independently unvalidated. Package
+`experiments/wet-fit-controls-20261031/` records frozen/amended protocol,
+security reuse review, matched controls and all failures.
+
+24 fixed-coordinate cutoff/PME controls: none pass every derivative direction.
+Switched direct Ewald1e-10 passes all five unchanged derivative checks on two
+poses. The numerical contribution is supported; it is not the sole identified
+cause. Six stricter PME/FIRE references fail; three Ewald/Armijo unlinked
+profiles fail. The deterministic futility gate stops remaining linked work;
+do not represent nested grids, paired wet curves or new3D/YAP as executed.
+Oversized PME1e-8/1e-9 grids give implausible energies at fixed coordinates;
+their exact backend cause remains unresolved and those configurations rejected.
+
+54-file evidence archive SHA256
+fa3cc1f9f1e98c01673a7278f4245d4c5d83263ede41ba9274f5a45990c737be
+matches the retrieved archive; executed source/runtime snapshots match locally.
+Updated post407 and upstream164/165/183/215/271 with a scoped control addendum.
+All original block hashes are preserved. Synced pattern580 supplies their
+shared current status; one clarifying pattern edit rendered publicly in all
+six, with complete section-text verification. Claim dependency map covers34
+posts and a29-post wet-claim review queue; existing historical results remain
+their original scope. Read EDIT-PROPAGATION.md before further broad edits.
+
+Task H100 stop returned a server error, but `brev ls` confirmed STOPPED.
+Network H100 was not resumed. Retained disks and unrelated workloads untouched.
+
 
 ## FCC3D numerical commissioning and atlas readiness (Codex, 2026-10-31)
 
@@ -270,3 +302,39 @@ The proposed 360-record atlas (720 E1/E2 branches) is NOT launched or matched-pr
 ## LAMMPS rotational bonded-particle bundle pilot (Codex, 2026-10-31)
 
 `experiments/lammps-bpm-pilot-20261031/REPORT.md`: seven 36-bead bundle trajectories plus analytic/contact probes on the existing Nebius worker; 40 checks pass; 102 remote file hashes verified. Native BPM rotational beams plus gran/hooke/history friction, weak/strong generic links, time-step/rate/output controls. Six of nine weak links break; strong nine and 33 backbone bonds remain intact. CPU only: reviewed 2025.7.22.2.0 engine has BPM/GRANULAR but no GPU/KOKKOS. No GPU speedup, calibrated chemistry, pure-dissipation/fracture-energy or tissue-mechanics claim. External loop work and total translational+rotational kinetic energy reported separately. No new capacity, no other workload modified, no external publication in this task. Full raw/interactive packet path in ARTIFACT_LOCATION.md.
+
+
+## Bovine bulk-calibrated 3D comparator and campaigns (Codex, 2026-10-31)
+
+`../collagen-3d-bovine-calibration/REPORT.md`: completed 160/160 paired synthetic periodic-network damage cases, 80/80 refinement pairs and40 accepted stiffness states. All160 force/energy gates pass;58 conditional numerical pairs,0 strict positive-curvature pairs,3 additionally resolved-peak-qualified pairs. Prior54 results preserved byte for byte. At30% locks/20% assumed rupture, complete four-seed conditional C/D ratios0.9948 maximum stress and1.0012 cap work (2/2 seed signs). Distributed placement stiffer in3/4 seeds at15% and30%; no universal fracture ranking. Bulk matching to bovine rheology is not measured architecture/chemical aging validation. Raw measured3D architecture remains onrequest; wet dityrosine bridge0/3 admissible; focusedBOV/RAT figure-derived comparison data-gated. Public explorer https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/; GitHub61b763bc4294108f912a44d871ba49813927de59; WordPress215/217/178 bounded insertions verified with all old blocks preserved. CPU job completed, retained bucket untouched; no new molecular/GPU job. Registry done/unvalidated. Local publication/provenance records in PUBLICATION.json and PUBLIC_READBACK.json.
+
+
+## E2 guard and curvature-resolution controls (Codex,2026-10-31)
+
+User-requested study codex-e2-curvature-controls-20261031 is complete on existing GCP. Shared dependency-free oxt/normalization.py guards both atlas denominator paths, baseline selection, tabular output and fracture E2 exports;12tests pass locally/GCP. Final reviewed sources/patch are in /Users/simfish/Documents/Codex/2026-10-31/https-claude-ai-artifact-xrqknqjnytbutcwtrwpx31-https/outputs/collagen-e2-curvature-controls-20261031/source/final and E2_FIX_REVIEWED.patch. Other running atlas campaign was not modified; its earlier results are not retroactively corrected.
+
+13bounded nonlinear rod cases took1576.76seconds:6qualified endpoints,2equilibrium failures,5timeouts. Common-path4-to6 stress differences37.09%/36.43%; graph17six-toeight12.15%; loading-step control0.00354%.12-vs16 and endpoint tolerance gates remain unevaluable. Nominal residual tolerance is multiplied by max(1,EA), unchanged from original solver. E2 math/finite-output guards do not certify caller-supplied E1flags or upstream convergence; full atlas/fibre/fracture qualification remains separate. No fine-curvature production ranking is established.
+
+Six Gemini4Argon requests (five-role audit plus post-fix verification), estimated$0.258846. WordPress post598 published under Agent Critiques,Collagen & ECM Aging,ScienceClaw Hackathon; exact saved content/categories and133public text units verified. Public URL:https://humanavianaisymbiosis.wordpress.com/2026/10/31/gcp-e2-curvature-resolution-argon-reviewed-controls/ . No new VM/GPU/package or GitHub push. Existing shared GCP retained; paused upload automation unchanged.
+
+
+## Measured3D collagen held-out benchmark (Codex, 2026-10-31)
+
+`../collagen-measured-3d-validation/REPORT.md`: public SaenopyClassic image/PIV positions004/007/008 and separate NaturePhysics2024 batchA/B/C nonlinear rheology. FitA/selectB/testC; primary1.2mg/mL NRMSE0.685506 vslinear0.697353, bias−8.88Pa. Selectν on007, test008 with frozen reference masks/support guards.4355validtestvectors, primary equal-octant displacementRMSE1.17353µm selectedelasticν0 vs1.06214µm harmonic (harmonicwins6/8octants). RawP1strainexploratory; post-test wider-support303centers givesNRMSE0.658elastic/0.605harmonic, no reselection. Samplingmesh retainscellregion and usespartialDirichletinternalnodalconstraints, not actualfiberconnectivity or independentforcevalidation; materialscale cancels. NineanalyticFEchecks+independentstdlibreadbackpassed. No importedscientificcode/cloud/GPUjob. Registrydone/unvalidated. PublishedGitHubb050dd6c1a823f10f0bc8cb95f2d3f113d1d14f2; Pages/measured-3d/; WordPress636 plus bounded215/217/178links witholdblockhashespreserved. Publicarchive/GIFhashreadbackpassed; rawsimageassets/XLSXs linkednotredistributed. SeePUBLICATION.json andfrozenprotocol forauditedlimitations.
+
+
+## Nonlinear measured-field benchmark, 2026-10-31 (Codex)
+
+Completed12Pos007selection arms +4frozenPos008predictions +2independentrefinements, all converged. `../collagen-nonlinear-heldout/REPORT.md`: primary combined buckling0.0025/slidingyield0.04 RMSE0.897603µm vs harmonic1.062138µm (28.582% lower vectorMSE); rawstrainNRMSE0.703336 vs0.742073, guarded303centerstrain0.533428 vs0.604762. BucklingonlyRMSE0.879195, slidingonly1.308340, matchedcontrol1.265618; sliding adds no descriptive benefit. Combined primary passes work/KKT/J/equilibrium checks, separate20step(field0.000319%,work0.545%) and302direction(field0.234%,work0.00663%) refinements and bounded32stepfinalHessian screens, not proof of global stability. Pos008adaptivelyreused; PIVsamplingmesh/internalpartialDirichletbox, no measured fiberconnectivity/absolute stiffness/aging/fracture validation. OriginalstdlibJS/Python/C++, no importedpackageexecution/cloudjob. Registrydone/unvalidated. GitHub11b57e1daf9724ac6d169c3fa1289f5e09ce18ab; Pages/nonlinear-3d/; WordPress663 plus636/215/217/178links, oldblockhashespreserved. SeePUBLICATION.json andaudits.
+
+## ColBuilder spatial-metric ↔ stiffness check (Claude Code, 2026-10-31, local CPU only)
+
+`experiments/equal-span-shearlag-20261031/REPORT.md`. For Codex's ColBuilder thread: (1) an independent
+explicit-junction numpy solve reproduces the 16-case three-owner shear-lag toy (registry
+`pyd-ownership-shearlag-20261031`, verified; numbers only). Equal-span controls refute "dispersal stiffens via
+lower clumpiness" (`equal-span-clumpiness-20261031`): span explains 3-owner K (R² 0.90) and KDE C adds ≈0.
+(2) GLU5/GLU10 = 0.45/0.91 per molecule against ≈0.58 in old skin and ≈1.2 in old diabetic skin, but all 10
+bridges are one site in a 0.25-nm band. (3) Atomistic: 5-ps commissioning ramps are far below the 50–130 ps
+acoustic transit across 65 nm. Global-slope MDE is infeasible, so local per-site sliding is the recommended
+readout. Plan and costs are in `colbuilder-local-sliding-plan-20261031` (proposed, owned by the Codex
+pipeline, needs approval for paid GPUs). No cloud job was run; L40S/H100 untouched.

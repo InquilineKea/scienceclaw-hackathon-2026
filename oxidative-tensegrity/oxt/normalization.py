@@ -55,3 +55,26 @@ def select_e2_target(moduli, is_baseline):
     target = float(median(item["G"] for item in moduli))
     matched_stiffness_scale(target, target)
     return target
+
+def derive_e2_curve(traction, peak, gc, initial, target, e1_ok):
+    """Validate the curve export independently of the tabular E2 path."""
+    gate = assess_e2(initial, target)
+    result = dict(status=gate["e2_status"], reason=gate["e2_reason"],
+                  method="posthoc_uniform_stiffness_scaling_not_rerun")
+    if e1_ok is not True:
+        result.update(status="rejected", reason="E1 row is not accepted")
+        return result
+    if gate["e2_status"] != "accepted":
+        return result
+    try:
+        values = list(traction) + [peak, gc]
+        if not values[:-2] or any(isinstance(v,bool) or not isinstance(v,Real) or not math.isfinite(v) for v in values):
+            raise ValueError("invalid or nonfinite fracture observable")
+        scaled = [float(v*gate["scale"]) for v in values]
+        if any(not math.isfinite(v) for v in scaled):
+            raise ValueError("nonfinite scaled fracture observable")
+    except (ValueError,TypeError,OverflowError) as exc:
+        result.update(status="rejected", reason=str(exc))
+        return result
+    result.update(scale=gate["scale"], traction=scaled[:-2], T_peak=scaled[-2], Gc=scaled[-1])
+    return result

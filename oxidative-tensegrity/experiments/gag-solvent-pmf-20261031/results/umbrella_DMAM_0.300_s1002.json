@@ -1,0 +1,18 @@
+{
+ "tag": "umbrella_DMAM_0.300_s1002",
+ "n_atoms": 3743,
+ "box_volume_nm3": 36.82266947131869,
+ "seconds": 1651.5,
+ "platform": "CUDA",
+ "finite": true,
+ "potential_kJ": -53308.059064661764,
+ "kind": "umbrella",
+ "cation": "DMAM",
+ "r0": 0.3,
+ "seed": 1002,
+ "out": "/results",
+ "equil_ps": 100,
+ "prod_ps": 750,
+ "sample_ps": 0.5,
+ "box": 3.4
+}

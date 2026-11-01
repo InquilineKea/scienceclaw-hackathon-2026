@@ -85,8 +85,13 @@ class Budget:
 
 
 def _token():
-    return subprocess.run(["gcloud", "--configuration=scienceclaw", "auth", "print-access-token"],
-                          capture_output=True, text=True, check=True).stdout.strip()
+    for attempt in range(6):  # gcloud occasionally fails transiently; one failure killed a 3-hour run
+        r = subprocess.run(["gcloud", "--configuration=scienceclaw", "auth", "print-access-token"],
+                           capture_output=True, text=True)
+        if r.returncode == 0 and r.stdout.strip():
+            return r.stdout.strip()
+        time.sleep(10 * (attempt + 1))
+    raise RuntimeError("gcloud could not issue an access token")
 
 
 def gemini(budget, run_dir, tag, system, user, model=FAST, json_mode=True, search=False):
@@ -126,11 +131,17 @@ def gemini(budget, run_dir, tag, system, user, model=FAST, json_mode=True, searc
     (run_dir / "agents" / f"{budget.calls:03d}-{tag}.json").write_text(json.dumps(rec, indent=1))
     if not json_mode:
         return text
+    return parse_agent(text)
+
+
+def parse_agent(text):
+    """The JSON object in an agent reply, or {} (a bare list or malformed reply proposes nothing)."""
     m_ = re.search(r"\{.*\}", text, re.S)
     try:
-        return json.loads(m_.group(0) if m_ else text)
+        out = json.loads(m_.group(0) if m_ else text)
     except json.JSONDecodeError:
         return {}
+    return out if isinstance(out, dict) else {}
 
 
 def menu():
@@ -340,17 +351,27 @@ def main():
     ap.add_argument("--max-calls", type=int, default=40)
     ap.add_argument("--rounds", type=int, default=2)
     ap.add_argument("--per-agent", type=int, default=3)
+    ap.add_argument("--resume", help="existing run dir: reuse its finished rounds, saved agent proposals and VM results")
     a = ap.parse_args()
-    stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
-    run_dir = HERE / "runs" / stamp
-    run_dir.mkdir(parents=True)
+    if a.resume:
+        run_dir = Path(a.resume).resolve()
+        stamp = run_dir.name
+        log = json.loads((run_dir / "decisions.json").read_text())
+    else:
+        stamp = datetime.now(timezone.utc).strftime("%Y%m%dT%H%M%SZ")
+        run_dir = HERE / "runs" / stamp
+        run_dir.mkdir(parents=True)
+        log = dict(run=stamp, question=QUESTION, experiments=[], evidence=[], backlog={}, rounds=[])
     budget = Budget(a.max_calls)
+    saved = {f.stem.split("-", 1)[1]: f for f in sorted((run_dir / "agents").glob("*.json")) if "EMPTY" not in f.name} \
+        if (run_dir / "agents").exists() else {}
+    budget.calls = len(list((run_dir / "agents").glob("*.json"))) if a.resume else 0
+    budget.max_calls += budget.calls
     conn = registry.connect()
-    log = dict(run=stamp, question=QUESTION, experiments=[], evidence=[], backlog={}, rounds=[])
     save = lambda: (run_dir / "decisions.json").write_text(json.dumps(log, indent=1, default=str))
 
     # --- evidence (molecular agent), grounded search; DOIs checked against Crossref by code
-    for tag, q in EVIDENCE:
+    for tag, q in ([] if log["evidence"] else EVIDENCE):
         txt = gemini(budget, run_dir, f"molecular-{tag}", "You are a biomaterials literature curator helping decide which published "
                      "tissue-mechanics parameters can transfer into a fibril or network model. Prefer primary measurements. "
                      "Never invent values or DOIs; write 'not found' instead.",
@@ -365,12 +386,18 @@ def main():
         for r in rows:
             doi = str(r.get("doi") or "").strip().removeprefix("https://doi.org/")
             r["crossref"] = crossref(doi) if doi.startswith("10.") else dict(resolved=False, error="no DOI")
+            # a resolving DOI is not evidence: require the Crossref title to share a content word with the claim
+            stop = {"the", "and", "for", "with", "from", "into", "via", "its", "are", "was", "cell", "cells", "role", "study"}
+            words = lambda t: {w for w in re.findall(r"[a-z]{3,}", str(t).lower())} - stop
+            if r["crossref"].get("resolved"):
+                shared = words(r["crossref"].get("title")) & words(f"{r.get('quantity')} {r.get('system')} {q}")
+                r["crossref"]["title_matches_claim"] = bool(shared)
         log["evidence"].append(dict(tag=tag, rows=rows))
         save()
 
     # --- backlog: independent validation of the phase map (rule-based, no agent needed)
-    bl = phase_map_backlog("backlog-phase")
-    bres = run_on_vm(run_dir, "backlog", bl)
+    bl = [] if log["backlog"] else phase_map_backlog("backlog-phase")
+    bres = run_on_vm(run_dir, "backlog", bl) if bl else {}
     rel = [abs(bres[t["task_id"]]["result"]["G"] - t["ref_G"]) / max(abs(bres[t["task_id"]]["result"]["G"]), 1e-12)
            for t in bl if bres.get(t["task_id"], {}).get("ok")]
     by_z = {}
@@ -378,20 +405,21 @@ def main():
         if bres.get(t["task_id"], {}).get("ok"):
             g = bres[t["task_id"]]["result"]["G"]
             by_z.setdefault((t["params"]["z"], t["params"]["lock"]), []).append(abs(g - t["ref_G"]) / max(abs(g), 1e-12))
-    log["backlog"] = dict(n=len(rel), within_3pct=float(np.mean(np.array(rel) <= 0.03)) if rel else None,
+    log["backlog"] = log["backlog"] or dict(n=len(rel), within_3pct=float(np.mean(np.array(rel) <= 0.03)) if rel else None,
                           median_rel=float(np.median(rel)) if rel else None,
                           worst_by_z_lock={f"z{k[0]}_lock{k[1]}": float(max(v)) for k, v in sorted(by_z.items())})
     save()
 
     # --- mechanism rounds
-    history = []
-    for rnd in range(a.rounds):
+    history = list(log["experiments"])
+    for rnd in range(len(log["rounds"]), a.rounds):
         summary = json.dumps([dict(id=e["id"], agent=e["agent"], hypothesis=e["hypothesis"], job=e["job"],
                                    fixed=e.get("fixed"), vary=e.get("vary"), result=e["result"], status=e["status"])
                               for e in history], default=str)[:30000]
         proposals = []
         for role, sysmsg in ROLES.items():
-            js = gemini(budget, run_dir, f"r{rnd}-{role}", sysmsg,
+            js = parse_agent(json.loads(saved[f"r{rnd}-{role}"].read_text())["text"]) \
+                if f"r{rnd}-{role}" in saved else gemini(budget, run_dir, f"r{rnd}-{role}", sysmsg,
                         f"QUESTION: {QUESTION}\n\nJOB MENU:\n{menu()}\n\nRESULTS SO FAR (code-adjudicated):\n{summary or 'none'}\n\n"
                         + PROPOSE_FMT % (a.per_agent if rnd == 0 else 2, METRICS))
             for e in js.get("experiments", [])[: a.per_agent]:
@@ -534,7 +562,7 @@ def write_report(run_dir, log):
         for r in ev["rows"]:
             c = r.get("crossref", {})
             L.append(f"| {r.get('quantity')} | {r.get('value')} | {r.get('unit')} | {r.get('system')} | {r.get('doi')} | "
-                     f"{'✓ ' + str(c.get('title', ''))[:60] if c.get('resolved') else '✗ ' + str(c.get('error'))} |")
+                     f"{('✓ ' if c.get('title_matches_claim', True) else '✗ UNRELATED TITLE: ') + str(c.get('title', ''))[:60] if c.get('resolved') else '✗ ' + str(c.get('error'))} |")
         L.append("")
     L += ["## Synthesis agent (interpretation only)", "", log.get("synthesis", ""), "",
           f"Budget: {log.get('budget')}"]

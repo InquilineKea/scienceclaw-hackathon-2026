@@ -1,0 +1,59 @@
+{
+ "n_evaluated": {
+  "ga": 104,
+  "pymoo": 168
+ },
+ "n_front": {
+  "ga": 21,
+  "pymoo": 18
+ },
+ "hv": {
+  "ga": 0.069505,
+  "pymoo": 0.10972,
+  "union": 0.12774
+ },
+ "pattern": {
+  "ga": {
+   "uniform": 0.52,
+   "aligned": 0.24,
+   "clustered": 0.14,
+   "layered": 0.1
+  },
+  "pymoo": {
+   "graded": 0.56,
+   "aligned": 0.17,
+   "layered": 0.17,
+   "clustered": 0.11
+  }
+ },
+ "place": {
+  "ga": {
+   "random": 0.52,
+   "far_pore": 0.19,
+   "crossings": 0.19,
+   "near_pore": 0.1
+  },
+  "pymoo": {
+   "random": 0.61,
+   "crossings": 0.17,
+   "far_pore": 0.17,
+   "near_pore": 0.06
+  }
+ },
+ "z_front": {
+  "ga": [
+   3.06716,
+   3.689192
+  ],
+  "pymoo": [
+   2.757634331432488,
+   3.589114808907993
+  ]
+ },
+ "share_not_dominated_by_other": {
+  "ga": 0.6666666666666666,
+  "pymoo": 0.9444444444444444
+ },
+ "verdict": "front reproduced",
+ "z_overlap_fraction": 0.6277415081262322
+}

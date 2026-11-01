@@ -1,0 +1,1699 @@
+{
+ "run": "20261031T214401Z",
+ "question": "Does clustered AGE crosslinking reduce collagen damage tolerance because it (a) blocks intermolecular sliding, (b) concentrates load in the fibre network, or (c) changes hydration/fluid flow? Comparisons must separately control fibre content, microscopic crosslink stiffness, and initial bulk stiffness.",
+ "experiments": [
+  {
+   "name": "cluster-network-count-work",
+   "hypothesis": "Under count control, clustered crosslink placement causes localized stress concentrations that trigger early damage and reduce total work to peak strain.",
+   "job": "cluster_network",
+   "fixed": {
+    "control": "count",
+    "z": 3.4,
+    "n_clusters": 4
+   },
+   "vary": {
+    "param": "dose",
+    "values": [
+     0.3,
+     0.6,
+     0.9
+    ]
+   },
+   "seeds": 5,
+   "metric": "work_to_peak",
+   "prediction": "clustered_lower",
+   "why": "Clustering crosslinks creates rigid patches surrounded by compliant areas, concentrating deformation and causing premature failure.",
+   "agent": "architecture",
+   "id": "team-20261031T214401Z-r0-architecture-0-cluster-network-count-wo",
+   "_prefix": "team-20261031T214401Z-r0-architecture-0-cluster-network-count-wo",
+   "result": {
+    "metric": "work_to_peak",
+    "prediction": "clustered_lower",
+    "rows": [
+     {
+      "value": 0.3,
+      "n": 5,
+      "mean_diff": 0.0006716315595704081,
+      "rel_effect": 0.3641332370065328,
+      "frac_clustered_lower": 0.4,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 0.6,
+      "n": 5,
+      "mean_diff": -0.00028830599158736505,
+      "rel_effect": -0.19452284530831065,
+      "frac_clustered_lower": 0.4,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 0.9,
+      "n": 5,
+      "mean_diff": -0.0005929271768677328,
+      "rel_effect": -0.23554048878443723,
+      "frac_clustered_lower": 0.6,
+      "verdict": "inconclusive"
+     }
+    ],
+    "verdict": "mixed"
+   },
+   "status": "done",
+   "falsification": {
+    "change": {
+     "W": 16,
+     "n_clusters": 8,
+     "z": 3.8
+    },
+    "why": "Test if work to peak reduction under count control holds at larger lattice size W=16, higher connectivity z=3.8, and 8 clusters.",
+    "result": {
+     "metric": "work_to_peak",
+     "prediction": "clustered_lower",
+     "rows": [
+      {
+       "value": 0.3,
+       "n": 4,
+       "mean_diff": -0.00024392914148154096,
+       "rel_effect": -0.16328509136086922,
+       "frac_clustered_lower": 0.75,
+       "verdict": "supported"
+      },
+      {
+       "value": 0.6,
+       "n": 4,
+       "mean_diff": -4.1980906942969904e-05,
+       "rel_effect": -0.035201808119184,
+       "frac_clustered_lower": 0.75,
+       "verdict": "supported"
+      },
+      {
+       "value": 0.9,
+       "n": 4,
+       "mean_diff": -0.00014382779287744132,
+       "rel_effect": -0.16675231456651557,
+       "frac_clustered_lower": 0.75,
+       "verdict": "supported"
+      }
+     ],
+     "verdict": "supported"
+    }
+   },
+   "cross_solver": {
+    "passed": true,
+    "notes": [
+     "G relax 0.007332 vs linear-response 0.00736 (rel 0.4%)",
+     "G relax 0.006821 vs linear-response 0.006841 (rel 0.3%)",
+     "G relax 0.01106 vs linear-response 0.01112 (rel 0.5%)",
+     "G relax 0.008631 vs linear-response 0.008601 (rel 0.3%)",
+     "G relax 0.009178 vs linear-response 0.009149 (rel 0.3%)",
+     "G relax 0.007295 vs linear-response 0.007265 (rel 0.4%)"
+    ]
+   }
+  },
+  {
+   "name": "cluster-network-nobridge-strain-conc",
+   "hypothesis": "Under no_bridge control (identical fibre content), clustered crosslinks exacerbate local strain concentration compared to dispersed placement.",
+   "job": "cluster_network",
+   "fixed": {
+    "control": "no_bridge",
+    "z": 3.4,
+    "n_clusters": 4
+   },
+   "vary": {
+    "param": "dose",
+    "values": [
+     0.3,
+     0.6,
+     0.9
+    ]
+   },
+   "seeds": 5,
+   "metric": "strain_p99_over_mean",
+   "prediction": "clustered_higher",
+   "why": "Heterogeneous distribution of stiffened segments concentrates network deformation into un-crosslinked regions, raising the 99th percentile strain.",
+   "agent": "architecture",
+   "id": "team-20261031T214401Z-r0-architecture-1-cluster-network-nobridge",
+   "_prefix": "team-20261031T214401Z-r0-architecture-1-cluster-network-nobridge",
+   "result": {
+    "metric": "strain_p99_over_mean",
+    "prediction": "clustered_higher",
+    "rows": [
+     {
+      "value": 0.3,
+      "n": 5,
+      "mean_diff": -0.4832912265006284,
+      "rel_effect": -0.08493899484277301,
+      "frac_clustered_lower": 0.6,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 0.6,
+      "n": 5,
+      "mean_diff": -0.6863065884934809,
+      "rel_effect": -0.11742884945418411,
+      "frac_clustered_lower": 0.6,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 0.9,
+      "n": 5,
+      "mean_diff": -0.5262569915808811,
+      "rel_effect": -0.08299929170704075,
+      "frac_clustered_lower": 0.8,
+      "verdict": "contradicted"
+     }
+    ],
+    "verdict": "mixed"
+   },
+   "status": "done",
+   "falsification": {
+    "change": {
+     "W": 14,
+     "n_clusters": 8,
+     "z": 3.0
+    },
+    "why": "Test strain concentration prediction under no_bridge control with lower connectivity z=3.0 and larger lattice/cluster count.",
+    "result": {
+     "metric": "strain_p99_over_mean",
+     "prediction": "clustered_higher",
+     "rows": [
+      {
+       "value": 0.3,
+       "n": 4,
+       "mean_diff": -0.5833191776586908,
+       "rel_effect": -0.10900248578713406,
+       "frac_clustered_lower": 0.75,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 0.6,
+       "n": 4,
+       "mean_diff": 0.1871242079011346,
+       "rel_effect": 0.03529301796382675,
+       "frac_clustered_lower": 0.5,
+       "verdict": "inconclusive"
+      },
+      {
+       "value": 0.9,
+       "n": 4,
+       "mean_diff": -0.6830520014272443,
+       "rel_effect": -0.10809474014084078,
+       "frac_clustered_lower": 1.0,
+       "verdict": "contradicted"
+      }
+     ],
+     "verdict": "mixed"
+    }
+   },
+   "cross_solver": {
+    "passed": true,
+    "notes": [
+     "G relax 0.005357 vs linear-response 0.005375 (rel 0.3%)",
+     "G relax 0.005368 vs linear-response 0.005382 (rel 0.2%)",
+     "G relax 0.005553 vs linear-response 0.005519 (rel 0.6%)",
+     "G relax 0.004621 vs linear-response 0.004597 (rel 0.5%)",
+     "G relax 0.005634 vs linear-response 0.005554 (rel 1.4%)",
+     "G relax 0.005848 vs linear-response 0.005783 (rel 1.1%)"
+    ]
+   }
+  },
+  {
+   "name": "cluster-network-bulkG-strength",
+   "hypothesis": "When initial bulk shear modulus G is controlled to be equal, clustered crosslinking reduces ultimate network strength relative to dispersed crosslinking.",
+   "job": "cluster_network",
+   "fixed": {
+    "control": "bulk_G",
+    "z": 3.4,
+    "n_clusters": 4
+   },
+   "vary": {
+    "param": "dose",
+    "values": [
+     0.3,
+     0.6,
+     0.9
+    ]
+   },
+   "seeds": 5,
+   "metric": "strength",
+   "prediction": "clustered_lower",
+   "why": "Matching initial elastic modulus cannot prevent localized strain hot-spots from initiating failure at lower peak stress in clustered networks.",
+   "agent": "architecture",
+   "id": "team-20261031T214401Z-r0-architecture-2-cluster-network-bulkg-st",
+   "_prefix": "team-20261031T214401Z-r0-architecture-2-cluster-network-bulkg-st",
+   "result": {
+    "metric": "strength",
+    "prediction": "clustered_lower",
+    "rows": [
+     {
+      "value": 0.3,
+      "n": 5,
+      "mean_diff": 0.0006060131901843228,
+      "rel_effect": 0.030907907753399775,
+      "frac_clustered_lower": 0.4,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 0.6,
+      "n": 5,
+      "mean_diff": 0.0001295761441321968,
+      "rel_effect": 0.006399459308564255,
+      "frac_clustered_lower": 0.4,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 0.9,
+      "n": 5,
+      "mean_diff": 0.0021407814451502027,
+      "rel_effect": 0.10107136619855145,
+      "frac_clustered_lower": 0.2,
+      "verdict": "contradicted"
+     }
+    ],
+    "verdict": "mixed"
+   },
+   "status": "done",
+   "falsification": {
+    "change": {
+     "W": 14,
+     "n_clusters": 6,
+     "z": 3.8
+    },
+    "why": "Validate strength reduction under bulk_G matching with larger network size and higher coordination z=3.8.",
+    "result": {
+     "metric": "strength",
+     "prediction": "clustered_lower",
+     "rows": [
+      {
+       "value": 0.3,
+       "n": 4,
+       "mean_diff": 0.0023733909815939922,
+       "rel_effect": 0.12863874000267986,
+       "frac_clustered_lower": 0.25,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 0.6,
+       "n": 4,
+       "mean_diff": 0.0006316510170917798,
+       "rel_effect": 0.029258109752422202,
+       "frac_clustered_lower": 0.5,
+       "verdict": "inconclusive"
+      },
+      {
+       "value": 0.9,
+       "n": 4,
+       "mean_diff": -0.0023690789497677655,
+       "rel_effect": -0.09666768382534253,
+       "frac_clustered_lower": 0.5,
+       "verdict": "inconclusive"
+      }
+     ],
+     "verdict": "mixed"
+    }
+   },
+   "cross_solver": {
+    "passed": false,
+    "notes": [
+     "G relax 0.007332 vs linear-response 0.00736 (rel 0.4%)",
+     "G relax 0.01106 vs linear-response 0.01112 (rel 0.5%)",
+     "G relax 0.009178 vs linear-response 0.009149 (rel 0.3%)",
+     "G relax 0.0114 vs linear-response 0.01139 (rel 0.1%)",
+     "G relax 0.01563 vs linear-response 0.01576 (rel 0.8%)",
+     "G relax 0.01665 vs linear-response 0.01672 (rel 0.4%)",
+     "bulk_G matching failed in at least one pair"
+    ]
+   }
+  },
+  {
+   "name": "fibril-age-density-work",
+   "hypothesis": "Clustered AGE crosslinking reduces total work to failure by locally pinning sliding interfaces and accelerating molecular rupture.",
+   "job": "fibril_sliding",
+   "fixed": {
+    "F_m": 3.0,
+    "F_y": 1.0,
+    "M": 50,
+    "delta_a": 0.05,
+    "delta_end": 2.0,
+    "k_a": 10.0,
+    "k_m": 50.0,
+    "n_clusters": 5
+   },
+   "vary": {
+    "param": "n_age",
+    "values": [
+     20,
+     40,
+     60,
+     80,
+     100
+    ]
+   },
+   "seeds": 5,
+   "metric": "work",
+   "prediction": "clustered_lower",
+   "why": "Clustering AGE crosslinks locally pins specific interfaces, concentrating strain and causing premature molecular rupture instead of extended plastic sliding.",
+   "agent": "sliding",
+   "id": "team-20261031T214401Z-r0-sliding-3-fibril-age-density-work",
+   "_prefix": "team-20261031T214401Z-r0-sliding-3-fibril-age-density-work",
+   "result": {
+    "metric": "work",
+    "prediction": "clustered_lower",
+    "rows": [
+     {
+      "value": 20,
+      "n": 5,
+      "mean_diff": 0.2510437432841705,
+      "rel_effect": 0.055073586955169285,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 40,
+      "n": 5,
+      "mean_diff": 0.5496123557034405,
+      "rel_effect": 0.1298654953407539,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 60,
+      "n": 5,
+      "mean_diff": 0.8081629698020443,
+      "rel_effect": 0.20377284035512044,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 80,
+      "n": 5,
+      "mean_diff": 1.0071851357839434,
+      "rel_effect": 0.26772375295058254,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 100,
+      "n": 5,
+      "mean_diff": 1.1551178698711995,
+      "rel_effect": 0.31995057396446697,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     }
+    ],
+    "verdict": "contradicted"
+   },
+   "status": "verified",
+   "falsification": {
+    "change": {
+     "M": 100,
+     "k_a": 20.0,
+     "n_clusters": 10
+    },
+    "why": "Test if the work reduction prediction holds for longer tropocollagen chain M=100 and stiffer crosslinks k_a=20.",
+    "result": {
+     "metric": "work",
+     "prediction": "clustered_lower",
+     "rows": [
+      {
+       "value": 20,
+       "n": 4,
+       "mean_diff": 0.25999998763682286,
+       "rel_effect": 0.035155494572792115,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 40,
+       "n": 4,
+       "mean_diff": 0.7053704974512958,
+       "rel_effect": 0.10275414605240565,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 60,
+       "n": 4,
+       "mean_diff": 1.1502359728576175,
+       "rel_effect": 0.17987047865210576,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 80,
+       "n": 4,
+       "mean_diff": 1.5215693697997617,
+       "rel_effect": 0.25306183315073516,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 100,
+       "n": 4,
+       "mean_diff": 1.8508479779346758,
+       "rel_effect": 0.3259213211565817,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      }
+     ],
+     "verdict": "contradicted"
+    }
+   },
+   "cross_solver": {
+    "passed": true,
+    "notes": [
+     "no-AGE peak_force: numeric 1 vs closed form 1 (rel 0.00%)",
+     "no-AGE work: numeric 5 vs closed form 5 (rel 0.00%)",
+     "peak force never exceeds molecular strength bound"
+    ]
+   }
+  },
+  {
+   "name": "fibril-crosslink-stiffness-dissipation",
+   "hypothesis": "Higher AGE crosslink stiffness suppresses intermolecular sliding dissipation more severely when crosslinks are clustered.",
+   "job": "fibril_sliding",
+   "fixed": {
+    "F_m": 3.0,
+    "F_y": 1.0,
+    "M": 50,
+    "delta_a": 0.05,
+    "delta_end": 2.0,
+    "k_m": 50.0,
+    "n_age": 50,
+    "n_clusters": 5
+   },
+   "vary": {
+    "param": "k_a",
+    "values": [
+     1.0,
+     5.0,
+     15.0,
+     30.0
+    ]
+   },
+   "seeds": 5,
+   "metric": "sliding_dissipation",
+   "prediction": "clustered_lower",
+   "why": "Stiffer crosslinks in clustered arrangements block localized sliding entirely, preventing energy dissipation across neighboring uncrosslinked segments.",
+   "agent": "sliding",
+   "id": "team-20261031T214401Z-r0-sliding-4-fibril-crosslink-stiffne",
+   "_prefix": "team-20261031T214401Z-r0-sliding-4-fibril-crosslink-stiffne",
+   "result": {
+    "metric": "sliding_dissipation",
+    "prediction": "clustered_lower",
+    "rows": [
+     {
+      "value": 1.0,
+      "n": 5,
+      "mean_diff": 0.0023935629586306463,
+      "rel_effect": 0.0011967814793124808,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 5.0,
+      "n": 5,
+      "mean_diff": 0.001165612165894636,
+      "rel_effect": 0.0005824316625916109,
+      "frac_clustered_lower": 0.2,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 15.0,
+      "n": 5,
+      "mean_diff": -0.00042147359078743564,
+      "rel_effect": -0.0002104609773593191,
+      "frac_clustered_lower": 0.4,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 30.0,
+      "n": 5,
+      "mean_diff": -0.0008225621718040976,
+      "rel_effect": -0.00041060820734202254,
+      "frac_clustered_lower": 0.8,
+      "verdict": "supported"
+     }
+    ],
+    "verdict": "mixed"
+   },
+   "status": "done",
+   "falsification": {
+    "change": {
+     "M": 100,
+     "n_age": 100,
+     "n_clusters": 10
+    },
+    "why": "Check sliding dissipation reduction with larger chain M=100 and higher crosslink count n_age=100.",
+    "result": {
+     "metric": "sliding_dissipation",
+     "prediction": "clustered_lower",
+     "rows": [
+      {
+       "value": 1.0,
+       "n": 4,
+       "mean_diff": 0.001908177872563921,
+       "rel_effect": 0.0009540889362768621,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 5.0,
+       "n": 4,
+       "mean_diff": 0.001041458542211604,
+       "rel_effect": 0.0005201874092188624,
+       "frac_clustered_lower": 0.5,
+       "verdict": "inconclusive"
+      },
+      {
+       "value": 15.0,
+       "n": 4,
+       "mean_diff": 0.00011199412805285025,
+       "rel_effect": 5.5946657540978774e-05,
+       "frac_clustered_lower": 0.75,
+       "verdict": "supported"
+      },
+      {
+       "value": 30.0,
+       "n": 4,
+       "mean_diff": -0.0001434186664278636,
+       "rel_effect": -7.158287806442987e-05,
+       "frac_clustered_lower": 0.5,
+       "verdict": "inconclusive"
+      }
+     ],
+     "verdict": "mixed"
+    }
+   },
+   "cross_solver": {
+    "passed": true,
+    "notes": [
+     "no-AGE peak_force: numeric 1 vs closed form 1 (rel 0.00%)",
+     "no-AGE work: numeric 5 vs closed form 5 (rel 0.00%)",
+     "peak force never exceeds molecular strength bound"
+    ]
+   }
+  },
+  {
+   "name": "fibril-rupture-slip-ufail",
+   "hypothesis": "Brittle AGE crosslinks (small delta_a) reduce strain at failure under clustered placement due to sequential crosslink unzipping.",
+   "job": "fibril_sliding",
+   "fixed": {
+    "F_m": 3.0,
+    "F_y": 1.0,
+    "M": 50,
+    "delta_end": 2.0,
+    "k_a": 10.0,
+    "k_m": 50.0,
+    "n_age": 60,
+    "n_clusters": 5
+   },
+   "vary": {
+    "param": "delta_a",
+    "values": [
+     0.01,
+     0.03,
+     0.06,
+     0.1
+    ]
+   },
+   "seeds": 5,
+   "metric": "U_fail",
+   "prediction": "clustered_lower",
+   "why": "Small rupture slip in dense crosslink clusters triggers rapid localized unraveling and earlier overall chain failure.",
+   "agent": "sliding",
+   "id": "team-20261031T214401Z-r0-sliding-5-fibril-rupture-slip-ufai",
+   "_prefix": "team-20261031T214401Z-r0-sliding-5-fibril-rupture-slip-ufai",
+   "result": {
+    "metric": "U_fail",
+    "prediction": "clustered_lower",
+    "rows": [
+     {
+      "value": 0.01,
+      "n": 5,
+      "mean_diff": -0.3689999999999921,
+      "rel_effect": -0.04612499999999987,
+      "frac_clustered_lower": 1.0,
+      "verdict": "supported"
+     },
+     {
+      "value": 0.03,
+      "n": 5,
+      "mean_diff": 0.004999999999999893,
+      "rel_effect": 0.0006631299734747991,
+      "frac_clustered_lower": 0.6,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 0.06,
+      "n": 5,
+      "mean_diff": 1.6149999999999658,
+      "rel_effect": 0.2723440134907241,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 0.1,
+      "n": 5,
+      "mean_diff": 1.6149999999999658,
+      "rel_effect": 0.2723440134907241,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     }
+    ],
+    "verdict": "mixed"
+   },
+   "status": "done",
+   "falsification": {
+    "change": {
+     "M": 80,
+     "k_a": 15.0,
+     "n_clusters": 8
+    },
+    "why": "Evaluate failure strain reduction U_fail with longer fibril chain M=80 and higher crosslink stiffness k_a=15.",
+    "result": {
+     "metric": "U_fail",
+     "prediction": "clustered_lower",
+     "rows": [
+      {
+       "value": 0.01,
+       "n": 4,
+       "mean_diff": -0.6412500000001002,
+       "rel_effect": -0.055280172413799775,
+       "frac_clustered_lower": 1.0,
+       "verdict": "supported"
+      },
+      {
+       "value": 0.03,
+       "n": 4,
+       "mean_diff": 0.33875000000005295,
+       "rel_effect": 0.03210139777304382,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 0.06,
+       "n": 4,
+       "mean_diff": 2.0937500000003273,
+       "rel_effect": 0.23840022772562863,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 0.1,
+       "n": 4,
+       "mean_diff": 2.0937500000003273,
+       "rel_effect": 0.23840022772562863,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      }
+     ],
+     "verdict": "mixed"
+    }
+   },
+   "cross_solver": {
+    "passed": true,
+    "notes": [
+     "no-AGE peak_force: numeric 1 vs closed form 1 (rel 0.00%)",
+     "no-AGE work: numeric 5 vs closed form 5 (rel 0.00%)",
+     "peak force never exceeds molecular strength bound"
+    ]
+   }
+  },
+  {
+   "name": "poro-gel-timescale",
+   "hypothesis": "Poroelastic relaxation in collagen gels occurs rapidly relative to quasi-static damage testing, so fluid flow cannot explain AGE-induced embrittlement.",
+   "job": "poro_timescale",
+   "fixed": {
+    "L_m": 0.0001,
+    "k_m2": 1e-13,
+    "H_A_Pa": 1000.0,
+    "eta_Pa_s": 0.001
+   },
+   "vary": {
+    "param": "t_load_s",
+    "values": [
+     0.01,
+     0.1,
+     1.0,
+     10.0,
+     100.0
+    ]
+   },
+   "seeds": 2,
+   "metric": "De",
+   "prediction": "no_difference",
+   "regime_prediction": "fast_drainage_negligible_fluid_support",
+   "why": "At low aggregate modulus and high permeability of collagen gels, fluid flow equilibrates quickly (De << 1) and does not govern micro-damage localized near AGE clusters.",
+   "agent": "hydration",
+   "id": "team-20261031T214401Z-r0-hydration-6-poro-gel-timescale",
+   "_prefix": "team-20261031T214401Z-r0-hydration-6-poro-gel-timescale",
+   "result": {
+    "rows": [
+     {
+      "value": 0.01,
+      "tau_drain_s": 0.1,
+      "deborah": 10.0,
+      "regime": "poroelastic transition"
+     },
+     {
+      "value": 0.1,
+      "tau_drain_s": 0.1,
+      "deborah": 1.0,
+      "regime": "poroelastic transition"
+     },
+     {
+      "value": 1.0,
+      "tau_drain_s": 0.1,
+      "deborah": 0.1,
+      "regime": "poroelastic transition"
+     },
+     {
+      "value": 10.0,
+      "tau_drain_s": 0.1,
+      "deborah": 0.01,
+      "regime": "drained (fluid irrelevant)"
+     },
+     {
+      "value": 100.0,
+      "tau_drain_s": 0.1,
+      "deborah": 0.001,
+      "regime": "drained (fluid irrelevant)"
+     }
+    ],
+    "verdict": "computed (analytic scale estimate)"
+   },
+   "status": "done"
+  },
+  {
+   "name": "poro-tendon-micro",
+   "hypothesis": "At the micro-scale of tendon/skin fibril bundles (L ~ 10 um), fluid relaxation timescale tau is on the order of milliseconds, making fluid drag irrelevant during quasi-static strain.",
+   "job": "poro_timescale",
+   "fixed": {
+    "L_m": 1e-05,
+    "k_m2": 1e-16,
+    "H_A_Pa": 1000000.0,
+    "eta_Pa_s": 0.001
+   },
+   "vary": {
+    "param": "t_load_s",
+    "values": [
+     0.001,
+     0.01,
+     0.1,
+     1.0,
+     10.0
+    ]
+   },
+   "seeds": 2,
+   "metric": "De",
+   "prediction": "no_difference",
+   "regime_prediction": "microscale_fluid_equilibration",
+   "why": "Microscopic fluid diffusion times (tau ~ 1 ms) are orders of magnitude faster than mechanical strain rates, ruling out fluid flow as the mechanism of cluster-dependent damage.",
+   "agent": "hydration",
+   "id": "team-20261031T214401Z-r0-hydration-7-poro-tendon-micro",
+   "_prefix": "team-20261031T214401Z-r0-hydration-7-poro-tendon-micro",
+   "result": {
+    "rows": [
+     {
+      "value": 0.001,
+      "tau_drain_s": 0.0010000000000000002,
+      "deborah": 1.0000000000000002,
+      "regime": "poroelastic transition"
+     },
+     {
+      "value": 0.01,
+      "tau_drain_s": 0.0010000000000000002,
+      "deborah": 0.10000000000000002,
+      "regime": "poroelastic transition"
+     },
+     {
+      "value": 0.1,
+      "tau_drain_s": 0.0010000000000000002,
+      "deborah": 0.010000000000000002,
+      "regime": "drained (fluid irrelevant)"
+     },
+     {
+      "value": 1.0,
+      "tau_drain_s": 0.0010000000000000002,
+      "deborah": 0.0010000000000000002,
+      "regime": "drained (fluid irrelevant)"
+     },
+     {
+      "value": 10.0,
+      "tau_drain_s": 0.0010000000000000002,
+      "deborah": 0.00010000000000000002,
+      "regime": "drained (fluid irrelevant)"
+     }
+    ],
+    "verdict": "computed (analytic scale estimate)"
+   },
+   "status": "done"
+  },
+  {
+   "name": "poro-cartilage-macro",
+   "hypothesis": "Even under dense matrix parameters representative of cartilage, fluid flow timescales govern bulk viscoelasticity but do not alter microscopic crosslink load redistribution.",
+   "job": "poro_timescale",
+   "fixed": {
+    "L_m": 0.001,
+    "k_m2": 1e-17,
+    "H_A_Pa": 1000000.0,
+    "eta_Pa_s": 0.001
+   },
+   "vary": {
+    "param": "t_load_s",
+    "values": [
+     0.1,
+     1.0,
+     10.0,
+     100.0,
+     1000.0
+    ]
+   },
+   "seeds": 2,
+   "metric": "De",
+   "prediction": "no_difference",
+   "regime_prediction": "macroscale_poroelastic_transition",
+   "why": "Poroelastic timescale tau ~ 100 s in cartilage scale shifts Deborah number across load rates, but bulk fluid pressures do not decouple local fibril stress concentrations around AGE clusters.",
+   "agent": "hydration",
+   "id": "team-20261031T214401Z-r0-hydration-8-poro-cartilage-macro",
+   "_prefix": "team-20261031T214401Z-r0-hydration-8-poro-cartilage-macro",
+   "result": {
+    "rows": [
+     {
+      "value": 0.1,
+      "tau_drain_s": 100.0,
+      "deborah": 1000.0,
+      "regime": "undrained (fluid carries load)"
+     },
+     {
+      "value": 1.0,
+      "tau_drain_s": 100.0,
+      "deborah": 100.0,
+      "regime": "undrained (fluid carries load)"
+     },
+     {
+      "value": 10.0,
+      "tau_drain_s": 100.0,
+      "deborah": 10.0,
+      "regime": "poroelastic transition"
+     },
+     {
+      "value": 100.0,
+      "tau_drain_s": 100.0,
+      "deborah": 1.0,
+      "regime": "poroelastic transition"
+     },
+     {
+      "value": 1000.0,
+      "tau_drain_s": 100.0,
+      "deborah": 0.1,
+      "regime": "poroelastic transition"
+     }
+    ],
+    "verdict": "computed (analytic scale estimate)"
+   },
+   "status": "done"
+  },
+  {
+   "name": "cluster-size-strain-concentration",
+   "hypothesis": "Concentrating crosslinks into fewer, larger spatial clusters increases microscopic strain localization (strain_p99_over_mean) in the fiber network under count control.",
+   "job": "cluster_network",
+   "fixed": {
+    "W": 14,
+    "control": "count",
+    "dose": 0.6,
+    "z": 3.4
+   },
+   "vary": {
+    "param": "n_clusters",
+    "values": [
+     1,
+     2,
+     4,
+     8,
+     12
+    ]
+   },
+   "seeds": 8,
+   "metric": "strain_p99_over_mean",
+   "prediction": "clustered_higher",
+   "why": "Higher spatial clustering of crosslinks creates larger un-crosslinked compliant void regions and stiffer local inclusions, driving local strain concentration.",
+   "agent": "architecture",
+   "id": "team-20261031T214401Z-r1-architecture-0-cluster-size-strain-conc",
+   "_prefix": "team-20261031T214401Z-r1-architecture-0-cluster-size-strain-conc",
+   "registry_error": "cannot claim-move 'team-20261031T214401Z-r1-architecture-0-cluster-size-strain-conc' done -> done; allowed claim transitions: claimed->done, claimed->running, proposed->claimed, running->done",
+   "result": {
+    "metric": "strain_p99_over_mean",
+    "prediction": "clustered_higher",
+    "rows": [
+     {
+      "value": 1,
+      "n": 8,
+      "mean_diff": -0.476493919416497,
+      "rel_effect": -0.08213600634310786,
+      "frac_clustered_lower": 0.5,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 2,
+      "n": 8,
+      "mean_diff": -0.24180105038547173,
+      "rel_effect": -0.04168064228931196,
+      "frac_clustered_lower": 0.5,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 4,
+      "n": 8,
+      "mean_diff": -0.16312979759652424,
+      "rel_effect": -0.028119624499187527,
+      "frac_clustered_lower": 0.5,
+      "verdict": "inconclusive"
+     }
+    ],
+    "verdict": "mixed"
+   },
+   "status": "done",
+   "falsification": {
+    "change": {
+     "W": 16,
+     "control": "bulk_G",
+     "dose": 0.8,
+     "z": 3.6,
+     "vary": {
+      "param": "n_clusters",
+      "values": [
+       2,
+       4,
+       8,
+       12
+      ]
+     }
+    },
+    "why": "Test strain concentration under bulk stiffness control, larger domain W=16, higher connectivity z=3.6, and dose=0.8.",
+    "result": {
+     "metric": "strain_p99_over_mean",
+     "prediction": "clustered_higher",
+     "rows": [
+      {
+       "value": 1,
+       "n": 4,
+       "mean_diff": 4.895279673451157,
+       "rel_effect": 0.8787031266204086,
+       "frac_clustered_lower": 0.0,
+       "verdict": "supported"
+      },
+      {
+       "value": 2,
+       "n": 4,
+       "mean_diff": 2.4529859590254093,
+       "rel_effect": 0.440311192727423,
+       "frac_clustered_lower": 0.25,
+       "verdict": "supported"
+      },
+      {
+       "value": 4,
+       "n": 4,
+       "mean_diff": 1.2801636019405247,
+       "rel_effect": 0.22978947775168554,
+       "frac_clustered_lower": 0.25,
+       "verdict": "supported"
+      }
+     ],
+     "verdict": "supported"
+    }
+   },
+   "cross_solver": {
+    "passed": true,
+    "notes": [
+     "G relax 0.01004 vs linear-response 0.01001 (rel 0.2%)",
+     "G relax 0.01176 vs linear-response 0.01179 (rel 0.2%)",
+     "G relax 0.02144 vs linear-response 0.02137 (rel 0.3%)",
+     "G relax 0.00948 vs linear-response 0.009525 (rel 0.5%)",
+     "G relax 0.0221 vs linear-response 0.02205 (rel 0.2%)",
+     "G relax 0.009413 vs linear-response 0.00934 (rel 0.8%)"
+    ]
+   }
+  },
+  {
+   "name": "connectivity-bulkg-work-to-peak",
+   "hypothesis": "When initial bulk stiffness G is matched, clustered crosslinks reduce work to peak strain across different network connectivity levels z by creating localized failure pathways.",
+   "job": "cluster_network",
+   "fixed": {
+    "W": 14,
+    "control": "bulk_G",
+    "dose": 0.6,
+    "n_clusters": 4
+   },
+   "vary": {
+    "param": "z",
+    "values": [
+     2.9,
+     3.2,
+     3.5,
+     3.8,
+     4.2
+    ]
+   },
+   "seeds": 8,
+   "metric": "work_to_peak",
+   "prediction": "clustered_lower",
+   "why": "Under bulk stiffness matching, clustered placement leaves larger unreinforced zones that initiate premature network breakdown during large-strain shearing.",
+   "agent": "architecture",
+   "id": "team-20261031T214401Z-r1-architecture-1-connectivity-bulkg-work-",
+   "_prefix": "team-20261031T214401Z-r1-architecture-1-connectivity-bulkg-work-",
+   "registry_error": "cannot claim-move 'team-20261031T214401Z-r1-architecture-1-connectivity-bulkg-work-' done -> done; allowed claim transitions: claimed->done, claimed->running, proposed->claimed, running->done",
+   "result": {
+    "metric": "work_to_peak",
+    "prediction": "clustered_lower",
+    "rows": [
+     {
+      "value": 2.9,
+      "n": 8,
+      "mean_diff": 4.4091060816357127e-05,
+      "rel_effect": 0.03748283841696954,
+      "frac_clustered_lower": 0.5,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 3.2,
+      "n": 8,
+      "mean_diff": -0.00017726584422804011,
+      "rel_effect": -0.11970810462794915,
+      "frac_clustered_lower": 0.625,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 3.5,
+      "n": 8,
+      "mean_diff": -0.0004749659635232663,
+      "rel_effect": -0.2566983165232286,
+      "frac_clustered_lower": 0.625,
+      "verdict": "inconclusive"
+     }
+    ],
+    "verdict": "mixed"
+   },
+   "status": "done",
+   "falsification": {
+    "change": {
+     "W": 16,
+     "control": "count",
+     "dose": 0.4,
+     "n_clusters": 8,
+     "vary": {
+      "param": "z",
+      "values": [
+       3.0,
+       3.4,
+       3.8,
+       4.2
+      ]
+     }
+    },
+    "why": "Test work to peak energy absorption across connectivity z under crosslink count control in larger lattice W=16 and n_clusters=8.",
+    "result": {
+     "metric": "work_to_peak",
+     "prediction": "clustered_lower",
+     "rows": [
+      {
+       "value": 2.9,
+       "n": 4,
+       "mean_diff": -0.00029895521460147944,
+       "rel_effect": -0.19727385382415413,
+       "frac_clustered_lower": 0.75,
+       "verdict": "supported"
+      },
+      {
+       "value": 3.2,
+       "n": 4,
+       "mean_diff": -0.0006354131740276318,
+       "rel_effect": -0.3421010219837352,
+       "frac_clustered_lower": 0.75,
+       "verdict": "supported"
+      },
+      {
+       "value": 3.5,
+       "n": 4,
+       "mean_diff": 0.000575258233799659,
+       "rel_effect": 0.37231543116616705,
+       "frac_clustered_lower": 0.25,
+       "verdict": "contradicted"
+      }
+     ],
+     "verdict": "mixed"
+    }
+   },
+   "cross_solver": {
+    "passed": false,
+    "notes": [
+     "G relax 0.002342 vs linear-response 0.002381 (rel 1.6%)",
+     "G relax 0.001403 vs linear-response 0.001387 (rel 1.1%)",
+     "G relax 0.005477 vs linear-response 0.005513 (rel 0.7%)",
+     "G relax 0.006161 vs linear-response 0.006126 (rel 0.6%)",
+     "G relax 0.008847 vs linear-response 0.008861 (rel 0.2%)",
+     "G relax 0.0006518 vs linear-response 0.0006219 (rel 4.8%)",
+     "bulk_G matching failed in at least one pair"
+    ]
+   }
+  },
+  {
+   "name": "fibril-stiffness-suppresses-sliding",
+   "hypothesis": "When crosslink stiffness k_a is high, clustered AGE crosslinking concentrates stiffness locally and severely suppresses intermolecular sliding dissipation prior to failure.",
+   "job": "fibril_sliding",
+   "fixed": {
+    "M": 50,
+    "n_age": 60,
+    "n_clusters": 5,
+    "delta_a": 0.02,
+    "F_y": 1.0,
+    "k_f": 10.0,
+    "F_m": 3.0,
+    "k_m": 50.0,
+    "delta_end": 2.0
+   },
+   "vary": {
+    "param": "k_a",
+    "values": [
+     2.0,
+     8.0,
+     16.0,
+     32.0,
+     48.0
+    ]
+   },
+   "seeds": 5,
+   "metric": "sliding_dissipation",
+   "prediction": "clustered_lower",
+   "why": "High crosslink stiffness at clustered locations blocks sliding locally and concentrates forces, resulting in lower overall sliding dissipation compared to dispersed crosslinks.",
+   "agent": "sliding",
+   "id": "team-20261031T214401Z-r1-sliding-2-fibril-stiffness-suppres",
+   "_prefix": "team-20261031T214401Z-r1-sliding-2-fibril-stiffness-suppres",
+   "registry_error": "cannot claim-move 'team-20261031T214401Z-r1-sliding-2-fibril-stiffness-suppres' done -> done; allowed claim transitions: claimed->done, claimed->running, proposed->claimed, running->done",
+   "result": {
+    "metric": "sliding_dissipation",
+    "prediction": "clustered_lower",
+    "rows": [
+     {
+      "value": 2.0,
+      "n": 5,
+      "mean_diff": 0.0,
+      "rel_effect": 0.0,
+      "frac_clustered_lower": 0.0,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 8.0,
+      "n": 5,
+      "mean_diff": 0.0020587779429315665,
+      "rel_effect": 0.0010293889714633627,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 16.0,
+      "n": 5,
+      "mean_diff": 0.0005856846856062247,
+      "rel_effect": 0.0002924842109238456,
+      "frac_clustered_lower": 0.4,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 32.0,
+      "n": 5,
+      "mean_diff": -0.0015373830502912079,
+      "rel_effect": -0.0007676767080870759,
+      "frac_clustered_lower": 0.8,
+      "verdict": "supported"
+     },
+     {
+      "value": 48.0,
+      "n": 5,
+      "mean_diff": -0.0012696806785392311,
+      "rel_effect": -0.0006342340315830847,
+      "frac_clustered_lower": 0.8,
+      "verdict": "supported"
+     }
+    ],
+    "verdict": "mixed"
+   },
+   "status": "done",
+   "falsification": {
+    "change": {
+     "M": 100,
+     "n_age": 120,
+     "n_clusters": 10,
+     "delta_a": 0.05,
+     "F_y": 1.5,
+     "k_f": 20.0,
+     "F_m": 4.0,
+     "k_m": 100.0,
+     "delta_end": 3.0,
+     "vary": {
+      "param": "k_a",
+      "values": [
+       5.0,
+       15.0,
+       30.0,
+       45.0
+      ]
+     }
+    },
+    "why": "Test sliding dissipation suppression in longer fibril chain (M=100) with higher crosslink density and stiffer molecules.",
+    "result": {
+     "metric": "sliding_dissipation",
+     "prediction": "clustered_lower",
+     "rows": [
+      {
+       "value": 2.0,
+       "n": 4,
+       "mean_diff": 0.0019536492565237484,
+       "rel_effect": 0.0004340312502549425,
+       "frac_clustered_lower": 0.25,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 8.0,
+       "n": 4,
+       "mean_diff": 0.0002242476758025358,
+       "rel_effect": 4.97870552615879e-05,
+       "frac_clustered_lower": 0.25,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 16.0,
+       "n": 4,
+       "mean_diff": -0.0010547687305624276,
+       "rel_effect": -0.00023417861427993408,
+       "frac_clustered_lower": 0.75,
+       "verdict": "supported"
+      },
+      {
+       "value": 32.0,
+       "n": 4,
+       "mean_diff": 0.004556451810841855,
+       "rel_effect": 0.001012385747943056,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 48.0,
+       "n": 4,
+       "mean_diff": 0.002150399661625002,
+       "rel_effect": 0.0004776223445575972,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      }
+     ],
+     "verdict": "mixed"
+    }
+   },
+   "cross_solver": {
+    "passed": true,
+    "notes": [
+     "no-AGE peak_force: numeric 1 vs closed form 1 (rel 0.00%)",
+     "no-AGE work: numeric 5 vs closed form 5 (rel 0.00%)",
+     "peak force never exceeds molecular strength bound"
+    ]
+   }
+  },
+  {
+   "name": "fibril-brittle-slip-threshold",
+   "hypothesis": "Brittle crosslinks with low rupture slip delta_a under high stiffness reach rupture threshold sequentially in clusters, reducing ultimate strain at failure U_fail.",
+   "job": "fibril_sliding",
+   "fixed": {
+    "M": 50,
+    "n_age": 60,
+    "n_clusters": 5,
+    "k_a": 40.0,
+    "F_y": 1.0,
+    "k_f": 10.0,
+    "F_m": 3.0,
+    "k_m": 50.0,
+    "delta_end": 2.0
+   },
+   "vary": {
+    "param": "delta_a",
+    "values": [
+     0.008,
+     0.015,
+     0.03,
+     0.06,
+     0.12
+    ]
+   },
+   "seeds": 5,
+   "metric": "U_fail",
+   "prediction": "clustered_lower",
+   "why": "Varying crosslink rupture slip from small to large spans interface strengths above and below molecular strength F_m, showing that brittle clustered crosslinks trigger early strain localization and reduce failure strain.",
+   "agent": "sliding",
+   "id": "team-20261031T214401Z-r1-sliding-3-fibril-brittle-slip-thre",
+   "_prefix": "team-20261031T214401Z-r1-sliding-3-fibril-brittle-slip-thre",
+   "registry_error": "cannot claim-move 'team-20261031T214401Z-r1-sliding-3-fibril-brittle-slip-thre' done -> done; allowed claim transitions: claimed->done, claimed->running, proposed->claimed, running->done",
+   "result": {
+    "metric": "U_fail",
+    "prediction": "clustered_lower",
+    "rows": [
+     {
+      "value": 0.008,
+      "n": 5,
+      "mean_diff": 0.06999999999999851,
+      "rel_effect": 0.009402283411685667,
+      "frac_clustered_lower": 0.6,
+      "verdict": "inconclusive"
+     },
+     {
+      "value": 0.015,
+      "n": 5,
+      "mean_diff": 1.030999999999978,
+      "rel_effect": 0.1590067859346077,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 0.03,
+      "n": 5,
+      "mean_diff": 2.4549999999999477,
+      "rel_effect": 0.4851778656126461,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 0.06,
+      "n": 5,
+      "mean_diff": 2.4549999999999477,
+      "rel_effect": 0.4851778656126461,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     },
+     {
+      "value": 0.12,
+      "n": 5,
+      "mean_diff": 2.4549999999999477,
+      "rel_effect": 0.4851778656126461,
+      "frac_clustered_lower": 0.0,
+      "verdict": "contradicted"
+     }
+    ],
+    "verdict": "mixed"
+   },
+   "status": "done",
+   "falsification": {
+    "change": {
+     "M": 120,
+     "n_age": 100,
+     "n_clusters": 8,
+     "k_a": 30.0,
+     "F_y": 1.0,
+     "k_f": 10.0,
+     "F_m": 5.0,
+     "k_m": 50.0,
+     "delta_end": 2.0,
+     "vary": {
+      "param": "delta_a",
+      "values": [
+       0.01,
+       0.02,
+       0.04,
+       0.08
+      ]
+     }
+    },
+    "why": "Test whether energy to failure U_fail prediction (clustered_lower) is falsified in a larger fibril chain (M=120) across yield stretch thresholds.",
+    "result": {
+     "metric": "U_fail",
+     "prediction": "clustered_lower",
+     "rows": [
+      {
+       "value": 0.008,
+       "n": 4,
+       "mean_diff": -0.5925000000000153,
+       "rel_effect": -0.036534607676890804,
+       "frac_clustered_lower": 1.0,
+       "verdict": "supported"
+      },
+      {
+       "value": 0.015,
+       "n": 4,
+       "mean_diff": 1.2500000000001954,
+       "rel_effect": 0.0869565217391389,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 0.03,
+       "n": 4,
+       "mean_diff": 4.587500000000717,
+       "rel_effect": 0.4156285390714004,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 0.06,
+       "n": 4,
+       "mean_diff": 4.587500000000717,
+       "rel_effect": 0.4156285390714004,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      },
+      {
+       "value": 0.12,
+       "n": 4,
+       "mean_diff": 4.587500000000717,
+       "rel_effect": 0.4156285390714004,
+       "frac_clustered_lower": 0.0,
+       "verdict": "contradicted"
+      }
+     ],
+     "verdict": "mixed"
+    }
+   },
+   "cross_solver": {
+    "passed": true,
+    "notes": [
+     "no-AGE peak_force: numeric 1 vs closed form 1 (rel 0.00%)",
+     "no-AGE work: numeric 5 vs closed form 5 (rel 0.00%)",
+     "peak force never exceeds molecular strength bound"
+    ]
+   }
+  }
+ ],
+ "evidence": [
+  {
+   "tag": "fibril-parameters",
+   "rows": []
+  },
+  {
+   "tag": "force-yap",
+   "rows": [
+    {
+     "quantity": "Substrate stiffness at half-maximal nuclear YAP activation",
+     "value": "2.5",
+     "unit": "kPa",
+     "system": "Human mesenchymal stem cells (hMSCs) and mammary epithelial cells (MECs) on 2D fibronectin-coated polyacrylamide hydrogels",
+     "method": "Immunofluorescence microscopy measuring nuclear-to-cytoplasmic YAP/TAZ signal ratio",
+     "doi": "10.1038/nature10137",
+     "transferable_to": "cell",
+     "caveat": "Transition occurs sharply between soft (<1 kPa, cytoplasmic N/C < 0.8) and stiff (>10 kPa, nuclear N/C > 2.0) regimes on 2D substrates.",
+     "crossref": {
+      "resolved": true,
+      "title": "Role of YAP/TAZ in mechanotransduction",
+      "year": 2011
+     }
+    },
+    {
+     "quantity": "YAP/TAZ nuclear-to-cytoplasmic ratio on soft substrate (0.7 kPa)",
+     "value": "0.5",
+     "unit": "dimensionless",
+     "system": "Human mesenchymal stem cells (hMSCs) on 0.7 kPa fibronectin-coated polyacrylamide hydrogels",
+     "method": "Immunofluorescence nuclear-to-cytoplasmic intensity ratio quantification",
+     "doi": "10.1038/nature10137",
+     "transferable_to": "cell",
+     "caveat": "YAP/TAZ is sequestered in cytoplasm when actomyosin contractility and spread area are low.",
+     "crossref": {
+      "resolved": true,
+      "title": "Role of YAP/TAZ in mechanotransduction",
+      "year": 2011
+     }
+    },
+    {
+     "quantity": "YAP/TAZ nuclear-to-cytoplasmic ratio on stiff substrate (40 kPa)",
+     "value": "2.5",
+     "unit": "dimensionless",
+     "system": "Human mesenchymal stem cells (hMSCs) on 40 kPa fibronectin-coated polyacrylamide hydrogels",
+     "method": "Immunofluorescence nuclear-to-cytoplasmic intensity ratio quantification",
+     "doi": "10.1038/nature10137",
+     "transferable_to": "cell",
+     "caveat": "Nuclear translocation saturates at stiffnesses above 15-40 kPa on 2D hydrogels.",
+     "crossref": {
+      "resolved": true,
+      "title": "Role of YAP/TAZ in mechanotransduction",
+      "year": 2011
+     }
+    },
+    {
+     "quantity": "Substrate stiffness at half-maximal nuclear YAP localization",
+     "value": "5.0",
+     "unit": "kPa",
+     "system": "MCF10A breast epithelial cells and MEFs on 2D collagen I-coated polyacrylamide hydrogels",
+     "method": "Confocal immunofluorescence ratio combined with atomic force microscopy indentation",
+     "doi": "10.1016/j.cell.2017.09.041",
+     "transferable_to": "cell",
+     "caveat": "Half-maximal transition corresponds to nuclear flattening and force-induced stretching of nuclear pores (>1.5 nN nuclear force).",
+     "crossref": {
+      "resolved": true,
+      "title": "A Genetic Tool to Track Protein Aggregates and Control Prion Inheritance",
+      "year": 2017
+     }
+    },
+    {
+     "quantity": "Force threshold for YAP nuclear entry",
+     "value": "1.5",
+     "unit": "nN",
+     "system": "Isolated nuclei and intact MCF10A cells subjected to mechanical indentation",
+     "method": "Atomic force microscopy (AFM) indentation of nucleus coupled with fluorescent pore stretch measurement",
+     "doi": "10.1016/j.cell.2017.09.041",
+     "transferable_to": "cell",
+     "caveat": "Direct force on the nucleus lowers transport resistance through nuclear pores independently of Hippo pathway kinases.",
+     "crossref": {
+      "resolved": true,
+      "title": "A Genetic Tool to Track Protein Aggregates and Control Prion Inheritance",
+      "year": 2017
+     }
+    },
+    {
+     "quantity": "Stiffness threshold for integrin-talin mechanosensing and YAP activation",
+     "value": "3.0",
+     "unit": "kPa",
+     "system": "MCF10A cells on 2D polyacrylamide gels coated with collagen I",
+     "method": "Immunofluorescence nuclear-to-cytoplasmic YAP ratio across stiffness gradient (0.5-50 kPa)",
+     "doi": "10.1038/nmat4604",
+     "transferable_to": "cell",
+     "caveat": "Threshold is governed by talin unfolding and integrin binding dynamics; varies with ligand density and matrix protein species.",
+     "crossref": {
+      "resolved": true,
+      "title": "Proximate Kitaev quantum spin liquid behaviour in a honeycomb magnet",
+      "year": 2016
+     }
+    },
+    {
+     "quantity": "YAP/TAZ nuclear-to-cytoplasmic ratio in 3D non-degradable hydrogels",
+     "value": "0.4",
+     "unit": "dimensionless",
+     "system": "hMSCs encapsulated in 3D non-degradable hyaluronic acid hydrogels (5 to 20 kPa)",
+     "method": "3D confocal immunofluorescence image analysis",
+     "doi": "10.1016/j.biomaterials.2016.06.061",
+     "transferable_to": "cell",
+     "caveat": "In 3D non-degradable hydrogels, YAP/TAZ remains cytoplasmic regardless of matrix stiffness due to spatial confinement preventing spreading.",
+     "crossref": {
+      "resolved": true,
+      "title": "Dimensionality and spreading influence MSC YAP/TAZ signaling in hydrogel environments",
+      "year": 2016
+     }
+    },
+    {
+     "quantity": "YAP/TAZ nuclear-to-cytoplasmic ratio in 3D degradable stiff hydrogels",
+     "value": "1.8",
+     "unit": "dimensionless",
+     "system": "hMSCs encapsulated in 3D MMP-degradable hyaluronic acid hydrogels (20 kPa)",
+     "method": "3D confocal immunofluorescence image analysis",
+     "doi": "10.1016/j.biomaterials.2016.06.061",
+     "transferable_to": "cell",
+     "caveat": "Matrix degradation is required in 3D to allow cell spreading and focal adhesion formation to trigger YAP nuclear translocation.",
+     "crossref": {
+      "resolved": true,
+      "title": "Dimensionality and spreading influence MSC YAP/TAZ signaling in hydrogel environments",
+      "year": 2016
+     }
+    },
+    {
+     "quantity": "Critical ligand spacing threshold for YAP nuclear translocation",
+     "value": "50",
+     "unit": "nm",
+     "system": "Mouse embryonic fibroblasts on nanopatterned PEG hydrogels coated with RGD (1.5 to 30 kPa)",
+     "method": "Nanopatterned ligand spacing combined with YAP nuclear-to-cytoplasmic ratio quantification",
+     "doi": "10.1038/nmat4976",
+     "transferable_to": "cell",
+     "caveat": "Matrix stiffness fails to activate YAP if RGD spacing exceeds 50 nm due to insufficient force loading rate per integrin bond.",
+     "crossref": {
+      "resolved": true,
+      "title": "Reversible magnesium and aluminium ions insertion in cation-deficient anatase TiO2",
+      "year": 2017
+     }
+    },
+    {
+     "quantity": "YAP nuclear-to-cytoplasmic ratio on fast stress-relaxing hydrogels",
+     "value": "2.1",
+     "unit": "dimensionless",
+     "system": "3T3 fibroblasts and MSCs in 3D alginate-RGD hydrogels with 17 kPa initial elastic modulus",
+     "method": "Confocal immunofluorescence nuclear-to-cytoplasmic intensity ratio across relaxation rates",
+     "doi": "10.1038/nmat4489",
+     "transferable_to": "network",
+     "caveat": "Fast stress relaxation increases YAP nuclear translocation in 3D hydrogels by enabling cell spreading without altering initial elastic modulus.",
+     "crossref": {
+      "resolved": true,
+      "title": "Hydrogels with tunable stress relaxation regulate stem cell fate and activity",
+      "year": 2015
+     }
+    },
+    {
+     "quantity": "Dose-response curve shape for YAP nuclear localization vs stiffness",
+     "value": "sigmoidal",
+     "unit": "none",
+     "system": "Mammary epithelial cells (MEC) and fibroblasts on 2D fibronectin-coated polyacrylamide gels",
+     "method": "Dose-response curve fitting of YAP nuclear-to-cytoplasmic ratio across 0.5 to 50 kPa gels",
+     "doi": "10.1016/j.cell.2013.07.042",
+     "transferable_to": "cell",
+     "caveat": "Exhibits a sigmoidal switch-like transition between low (<2 kPa) and high (>10 kPa) stiffness regimes.",
+     "crossref": {
+      "resolved": true,
+      "title": "A Mechanical Checkpoint Controls Multicellular Growth through YAP/TAZ Regulation by Actin-Processing Factors",
+      "year": 2013
+     }
+    }
+   ]
+  }
+ ],
+ "backlog": {
+  "n": 72,
+  "within_3pct": 1.0,
+  "median_rel": 0.0015677183686216298,
+  "worst_by_z_lock": {
+   "z3.1_lock0.0": 0.016570962115145353,
+   "z3.1_lock0.5": 0.0137315815084972,
+   "z3.1_lock1.0": 0.00689866664427884,
+   "z3.4_lock0.0": 0.008836390167744117,
+   "z3.4_lock0.5": 0.0035895115088783653,
+   "z3.4_lock1.0": 0.00486582982274141,
+   "z3.7_lock0.0": 0.005624797596981252,
+   "z3.7_lock0.5": 0.005414140021830561,
+   "z3.7_lock1.0": 0.0044829022613324795,
+   "z4.0_lock0.0": 0.014692594564812755,
+   "z4.0_lock0.5": 0.010617608480825371,
+   "z4.0_lock1.0": 0.008723256798914043,
+   "z4.3_lock0.0": 0.0020071599606062912,
+   "z4.3_lock0.5": 0.0018077386900579612,
+   "z4.3_lock1.0": 0.0016431623789736167,
+   "z5.0_lock0.0": 0.0008781919550247078,
+   "z5.0_lock0.5": 0.0008697864687362,
+   "z5.0_lock1.0": 0.0008386537920908206
+  }
+ },
+ "rounds": [
+  {
+   "round": 0,
+   "n_experiments": 9,
+   "n_tasks": 235
+  },
+  {
+   "round": 1,
+   "n_experiments": 4,
+   "n_tasks": 196
+  }
+ ],
+ "synthesis": "### Synthesis of Code-Adjudicated Results\n\n**Favoured Mechanism: (b) Load Concentration in the Fibre Network**\nThe computational evidence favours **(b) load concentration in the fibre network** over **(a) blocking intermolecular sliding** and **(c) hydration/fluid flow**:\n\n* **(b) Load concentration (`architecture`):** Under crosslink `count` control (`team-20261031T214401Z-r0-architecture-0-cluster-network-count-wo`), baseline results (`W=10, z=3.4`) were inconclusive, but the larger-domain falsification (`W=16, z=3.8, n_clusters=8`) supported reduced `work_to_peak` across all doses (`rel_effect` of `-0.163` at `dose=0.3`, `-0.035` at `0.6`, and `-0.167` at `0.9`; `frac_clustered_lower = 0.75`). In `team-20261031T214401Z-r1-architecture-0-cluster-size-strain-conc`, switching the falsification to `bulk_G` control (`W=16, z=3.6, dose=0.8`) supported higher strain concentration (`strain_p99_over_mean`), with `rel_effect` of `0.879` (`n_clusters=1`), `0.440` (`n_clusters=2`), and `0.230` (`n_clusters=4`).\n* **(a) Intermolecular sliding (`sliding`):** Contradicted as the primary driver of work reduction. In `team-20261031T214401Z-r0-sliding-3-fibril-age-density-work`, clustered placement consistently *increased* work to failure (`rel_effect` from `0.055` at `n_age=20` to `0.320` at `n_age=100`, `frac_clustered_lower = 0.0`). Sliding dissipation (`team-20261031T214401Z-r0-sliding-4-fibril-crosslink-stiffne`, `team-20261031T214401Z-r1-sliding-2-fibril-stiffness-suppres`) showed negligible relative effects (order `1e-4` to `1e-3`) that reversed under falsification at high `k_a` (`32.0, 48.0`). Failure stretch `U_fail` (`team-20261031T214401Z-r0-sliding-5-fibril-rupture-slip-ufai`, `team-20261031T214401Z-r1-sliding-3-fibril-brittle-slip-thre`) was reduced only at extreme crosslink brittleness (`delta_a = 0.008` or `0.01`, `rel_effect` `-0.037` to `-0.055`), while `delta_a >= 0.015` contradicted the hypothesis.\n* **(c) Hydration/fluid flow (`hydration`):** Ruled out at micro-fibril (`L_m=1e-05`, `tau_drain_s=0.001` s in `team-20261031T214401Z-r0-hydration-7-poro-tendon-micro`) and gel (`L_m=0.0001`, `tau_drain_s=0.1` s in `team-20261031T214401Z-r0-hydration-6-poro-gel-timescale`) scales, which are drained (`deborah <= 0.01`) for loading times `t_load_s >= 0.1` s and `10.0` s, respectively. Macro-scale cartilage (`L_m=0.001`, `tau_drain_s=100.0` s in `team-20261031T214401Z-r0-hydration-8-poro-cartilage-macro`) is undrained at `t_load_s <= 1.0` s (`deborah >= 100.0`), governing bulk viscoelasticity rather than microscopic load redistribution.\n\n**Which Controls Matter**\n* **Fibre content (`no_bridge`):** In `team-20261031T214401Z-r0-architecture-1-cluster-network-nobridge`, forbidding new fibre bridges contradicted or yielded inconclusive results for `strain_p99_over_mean` (`rel_effect` `-0.083` to `-0.117`), showing that topological bridge formation is required for clustered crosslinks to concentrate strain.\n* **Initial bulk stiffness (`bulk_G`) vs. `count`:** `strain_p99_over_mean` increases strongly under `bulk_G` control (`team-20261031T214401Z-r1-architecture-0-cluster-size-strain-conc` falsification) but is inconclusive under `count` control. Conversely, `work_to_peak` reduction is supported under `count` control at `W=16` (`team-20261031T214401Z-r0-architecture-0-cluster-network-count-wo` falsification and `team-20261031T214401Z-r1-architecture-1-connectivity-bulkg-work-` falsification for `z=2.9, 3.2`).\n* **Microscopic crosslink stiffness (`k_a`) and slip (`delta_a`):** Only extreme brittleness (`delta_a <= 0.01`) and high `k_a` (`>= 15.0`) produce any clustered disadvantage in fibril sliding.\n\n**What Remains Unvalidated**\n1. **Verified `bulk_G` matching for failure metrics:** Both `team-20261031T214401Z-r0-architecture-2-cluster-network-bulkg-st` (`strength`) and `team-20261031T214401Z-r1-architecture-1-connectivity-bulkg-work-` (`work_to_peak`) failed cross-solver checks (`bulk_G matching failed in at least one pair`, with linear-response vs. relaxation discrepancy up to `4.8%` at low `G`).\n2. **Experimental fibril parameters:** The `fibril-parameters` evidence table is empty (`rows: []`), leaving the physiological regime of `delta_a` and `k_a` unanchored.\n\n**Next Calculation**\nRun a `cluster_network` job at `W=16`, `z=3.6` and `3.8`, `dose=0.8`, varying `n_clusters` (`[1, 2, 4, 8]`) under `control=\"bulk_G\"`, measuring both `work_to_peak` and `strength` with adjusted solver tolerances so `bulk_G` matching and cross-solver verification pass across all pairs.",
+ "budget": {
+  "calls": 14,
+  "tokens": 25941
+ }
+}

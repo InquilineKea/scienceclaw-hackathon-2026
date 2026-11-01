@@ -1,0 +1,26 @@
+{
+ "series_chain": {
+  "slope_ok": true,
+  "work_ok": true,
+  "U_fail_ok": true
+ },
+ "hill_inflection": {
+  "inflection": [
+   "sqrt(3)*K/3"
+  ],
+  "claim_ok": true,
+  "yap_at_inflection": "1/4"
+ },
+ "biot_drainage": {
+  "c_units": "m**2/s",
+  "tau_units": "s",
+  "ok": true
+ },
+ "wham_jacobian": {
+  "ok": true
+ },
+ "binding_constant": {
+  "derived": "-V*p/(p - 1)",
+  "ok": true
+ }
+}

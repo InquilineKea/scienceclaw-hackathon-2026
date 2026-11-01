@@ -1,0 +1,18 @@
+{
+ "tag": "umbrella_MAMM_0.800_s1101",
+ "n_atoms": 3746,
+ "box_volume_nm3": 37.18667341427677,
+ "seconds": 1563.9,
+ "platform": "CUDA",
+ "finite": true,
+ "potential_kJ": -53846.8967457001,
+ "kind": "umbrella",
+ "cation": "MAMM",
+ "r0": 0.8,
+ "seed": 1101,
+ "out": "/results",
+ "equil_ps": 100,
+ "prod_ps": 750,
+ "sample_ps": 0.5,
+ "box": 3.4
+}

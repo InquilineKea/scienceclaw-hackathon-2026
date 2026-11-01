@@ -1,0 +1,166 @@
+[cell] tensegrity table 9s
+[cell] 7020 cell conditions in 128s
+# Collagen network -> organoid gene expression (gpu)
+
+Model outputs, not measurements. Gene-network parameters are assumptions (oxt/organoid.py).
+
+Gels: 156; network W=32, seeds=4; timings (s): {"network": 0, "cell": 137, "organoid": 3}
+
+## Day 1: how much of each read-out does linear stiffness explain?
+
+| readout     |   spread |   R2_stiffness_only |   R2_network_descriptors |
+|:------------|---------:|--------------------:|-------------------------:|
+| R_um        |    8.069 |               0.964 |                    0.958 |
+| CYR61_mean  |    0.114 |               0.753 |                    0.697 |
+| CTGF_mean   |    0.12  |               0.755 |                    0.702 |
+| ANKRD1_mean |    0.189 |               0.769 |                    0.727 |
+| AMOTL2_mean |    0.122 |               0.758 |                    0.709 |
+| ACTA2_mean  |    0.475 |               0.872 |                    0.906 |
+| LOX_mean    |    0.292 |               0.871 |                    0.897 |
+| MMP14_mean  |    0.122 |               0.761 |                    0.719 |
+| LY6A_mean   |    0.17  |               0.768 |                    0.742 |
+| LGR5_mean   |    0.312 |               0.052 |                    0.023 |
+| KRT20_mean  |    0.163 |              -0.013 |                   -0.075 |
+| MKI67_mean  |    0.196 |              -0.005 |                   -0.065 |
+
+## Day 1: matched linear stiffness (within 10 %), different network
+
+| readout     |   n_pairs |   median_rel_diff |   p90_rel_diff |   max_rel_diff |
+|:------------|----------:|------------------:|---------------:|---------------:|
+| CTGF_mean   |       389 |             0.006 |          0.041 |          0.192 |
+| ANKRD1_mean |       389 |             0.007 |          0.047 |          0.18  |
+| LY6A_mean   |       389 |             0.005 |          0.029 |          0.148 |
+| LGR5_mean   |       389 |             0.011 |          0.65  |          0.762 |
+| ACTA2_mean  |       389 |             0.003 |          0.037 |          0.168 |
+| MKI67_mean  |       389 |             0.014 |          0.817 |          0.842 |
+| R_um        |       389 |             0.034 |          0.124 |          0.269 |
+
+Largest ANKRD1 difference at matched stiffness:
+
+| collagen   |     z | chem       | mode   |   dose |   E_lin_Pa |   stiffening_E20_over_E0 |   strain_at_peak |   R_um |   eps_mean |   Y_mean |   CTGF_mean |   ANKRD1_mean |   LY6A_mean |   LGR5_mean |
+|:-----------|------:|:-----------|:-------|-------:|-----------:|-------------------------:|-----------------:|-------:|-----------:|---------:|------------:|--------------:|------------:|------------:|
+| I          | 3.002 | dityrosine | aniso  |    0.5 |    168.342 |                    2.18  |             0.42 | 59.152 |      0.144 |    0.492 |       0.604 |         0.316 |       0.431 |       0.426 |
+| I          | 3.131 | none       | none   |    0   |    158.759 |                    2.571 |             0.24 | 59.228 |      0.107 |    0.513 |       0.622 |         0.349 |       0.449 |       0.414 |
+
+## Day 1: decode gel network from the organoid (15 % noise, 8 replicates)
+
+| target         |   R2_full_panel |   R2_best4 | best4                                    |
+|:---------------|----------------:|-----------:|:-----------------------------------------|
+| log10_E_lin    |           0.451 |      0.444 | ACTA2_tip, ACTA2_mean, R_um, LOX_mean    |
+| stiffening     |           0.412 |      0.408 | ACTA2_tip, ACTA2_mean, R_um, LOX_mean    |
+| strain_at_peak |           0.215 |      0.209 | ACTA2_tip, ACTA2_mean, R_um, LOX_tip     |
+| log10_mesh     |           0.256 |      0.265 | ACTA2_tip, ACTA2_mean, R_um, LOX_mean    |
+| dose           |           0.133 |      0.153 | LGR5_tip, ACTA2_tip, LOX_tip, ACTA2_mean |
+| z              |           0.234 |      0.237 | ACTA2_tip, R_um, ACTA2_mean, AMOTL2_mean |
+
+## Day 3: how much of each read-out does linear stiffness explain?
+
+| readout     |   spread |   R2_stiffness_only |   R2_network_descriptors |
+|:------------|---------:|--------------------:|-------------------------:|
+| R_um        |   30.884 |               0.945 |                    0.958 |
+| CYR61_mean  |    0.254 |               0.338 |                    0.228 |
+| CTGF_mean   |    0.239 |               0.374 |                    0.266 |
+| ANKRD1_mean |    0.196 |               0.564 |                    0.499 |
+| AMOTL2_mean |    0.208 |               0.423 |                    0.322 |
+| ACTA2_mean  |    0.475 |               0.8   |                    0.781 |
+| LOX_mean    |    0.294 |               0.742 |                    0.699 |
+| MMP14_mean  |    0.194 |               0.452 |                    0.35  |
+| LY6A_mean   |    0.17  |               0.612 |                    0.526 |
+| LGR5_mean   |    0.311 |               0.071 |                    0.032 |
+| KRT20_mean  |    0.182 |              -0.008 |                   -0.068 |
+| MKI67_mean  |    0.211 |               0.001 |                   -0.053 |
+
+## Day 3: matched linear stiffness (within 10 %), different network
+
+| readout     |   n_pairs |   median_rel_diff |   p90_rel_diff |   max_rel_diff |
+|:------------|----------:|------------------:|---------------:|---------------:|
+| CTGF_mean   |       389 |             0.006 |          0.063 |          0.858 |
+| ANKRD1_mean |       389 |             0.014 |          0.141 |          0.771 |
+| LY6A_mean   |       389 |             0.013 |          0.104 |          0.708 |
+| LGR5_mean   |       389 |             0.029 |          0.648 |          0.781 |
+| ACTA2_mean  |       389 |             0.005 |          0.127 |          0.57  |
+| MKI67_mean  |       389 |             0.036 |          0.76  |          0.814 |
+| R_um        |       389 |             0.044 |          0.151 |          0.328 |
+
+Largest ANKRD1 difference at matched stiffness:
+
+| collagen   |     z | chem           | mode   |   dose |   E_lin_Pa |   stiffening_E20_over_E0 |   strain_at_peak |   R_um |   eps_mean |   Y_mean |   CTGF_mean |   ANKRD1_mean |   LY6A_mean |   LGR5_mean |
+|:-----------|------:|:---------------|:-------|-------:|-----------:|-------------------------:|-----------------:|-------:|-----------:|---------:|------------:|--------------:|------------:|------------:|
+| I          | 3.215 | glucosepane    | aniso  |   0.25 |    249.071 |                    2.355 |             0.27 | 78.301 |      0.221 |    0.406 |       0.491 |         0.208 |       0.336 |       0.415 |
+| I          | 3.22  | isopeptide_TG2 | aniso  |   0.25 |    236.805 |                    2.258 |             0.39 | 77.779 |      0.185 |    0.519 |       0.627 |         0.359 |       0.455 |       0.409 |
+
+## Day 3: decode gel network from the organoid (15 % noise, 8 replicates)
+
+| target         |   R2_full_panel |   R2_best4 | best4                                   |
+|:---------------|----------------:|-----------:|:----------------------------------------|
+| log10_E_lin    |           0.612 |      0.615 | R_um, ACTA2_mean, ACTA2_tip, ANKRD1_tip |
+| stiffening     |           0.509 |      0.511 | R_um, ACTA2_mean, LOX_mean, ACTA2_tip   |
+| strain_at_peak |           0.299 |      0.302 | R_um, ACTA2_mean, CYR61_tip, ACTA2_tip  |
+| log10_mesh     |           0.497 |      0.509 | R_um, ACTA2_tip, ACTA2_mean, ANKRD1_tip |
+| dose           |           0.12  |      0.138 | R_um, LGR5_tip, ACTA2_mean, MKI67_tip   |
+| z              |           0.484 |      0.484 | R_um, ACTA2_tip, ANKRD1_tip, ACTA2_mean |
+
+## Day 7: how much of each read-out does linear stiffness explain?
+
+| readout     |   spread |   R2_stiffness_only |   R2_network_descriptors |
+|:------------|---------:|--------------------:|-------------------------:|
+| R_um        |  104.72  |               0.895 |                    0.931 |
+| CYR61_mean  |    0.3   |               0.338 |                    0.249 |
+| CTGF_mean   |    0.278 |               0.383 |                    0.3   |
+| ANKRD1_mean |    0.204 |               0.629 |                    0.596 |
+| AMOTL2_mean |    0.236 |               0.447 |                    0.373 |
+| ACTA2_mean  |    0.472 |               0.702 |                    0.68  |
+| LOX_mean    |    0.33  |               0.593 |                    0.539 |
+| MMP14_mean  |    0.237 |               0.441 |                    0.366 |
+| LY6A_mean   |    0.226 |               0.535 |                    0.477 |
+| LGR5_mean   |    0.339 |               0.07  |                    0.017 |
+| KRT20_mean  |    0.214 |               0.038 |                   -0.012 |
+| MKI67_mean  |    0.233 |               0.062 |                    0.018 |
+
+## Day 7: matched linear stiffness (within 10 %), different network
+
+| readout     |   n_pairs |   median_rel_diff |   p90_rel_diff |   max_rel_diff |
+|:------------|----------:|------------------:|---------------:|---------------:|
+| CTGF_mean   |       389 |             0.013 |          0.087 |          0.914 |
+| ANKRD1_mean |       389 |             0.032 |          0.203 |          0.773 |
+| LY6A_mean   |       389 |             0.026 |          0.156 |          0.821 |
+| LGR5_mean   |       389 |             0.073 |          0.595 |          0.77  |
+| ACTA2_mean  |       389 |             0.004 |          0.162 |          0.691 |
+| MKI67_mean  |       389 |             0.058 |          0.687 |          0.771 |
+| R_um        |       389 |             0.036 |          0.197 |          0.499 |
+
+Largest ANKRD1 difference at matched stiffness:
+
+| collagen   |     z | chem           | mode   |   dose |   E_lin_Pa |   stiffening_E20_over_E0 |   strain_at_peak |    R_um |   eps_mean |   Y_mean |   CTGF_mean |   ANKRD1_mean |   LY6A_mean |   LGR5_mean |
+|:-----------|------:|:---------------|:-------|-------:|-----------:|-------------------------:|-----------------:|--------:|-----------:|---------:|------------:|--------------:|------------:|------------:|
+| I          | 3.215 | glucosepane    | aniso  |   0.25 |    249.071 |                    2.355 |             0.27 | 135.603 |      0.256 |    0.414 |       0.506 |         0.204 |       0.299 |       0.435 |
+| I          | 3.22  | isopeptide_TG2 | aniso  |   0.25 |    236.805 |                    2.258 |             0.39 | 123.534 |      0.176 |    0.52  |       0.629 |         0.361 |       0.458 |       0.407 |
+
+## Day 7: decode gel network from the organoid (15 % noise, 8 replicates)
+
+| target         |   R2_full_panel |   R2_best4 | best4                                    |
+|:---------------|----------------:|-----------:|:-----------------------------------------|
+| log10_E_lin    |           0.792 |      0.785 | R_um, ACTA2_mean, ANKRD1_mean, LOX_mean  |
+| stiffening     |           0.668 |      0.665 | R_um, ACTA2_mean, ANKRD1_mean, LOX_mean  |
+| strain_at_peak |           0.406 |      0.428 | R_um, KRT20_mean, CYR61_tip, ACTA2_tip   |
+| log10_mesh     |           0.662 |      0.653 | R_um, ACTA2_tip, ANKRD1_tip, ANKRD1_mean |
+| dose           |           0.222 |      0.228 | R_um, KRT20_tip, ACTA2_mean, MKI67_tip   |
+| z              |           0.661 |      0.644 | R_um, ANKRD1_mean, ACTA2_tip, ANKRD1_tip |
+
+## Day 7: medians by crosslinker and alignment (over z and dose)
+
+| collagen   | chem           | mode   |   E_lin_Pa |    R_um |     Y |   CTGF |   ANKRD1 |   LY6A |   LGR5 |   KRT20 |   ACTA2 |   tip_minus_inter_ANKRD1 |
+|:-----------|:---------------|:-------|-----------:|--------:|------:|-------:|---------:|-------:|-------:|--------:|--------:|-------------------------:|
+| I          | dityrosine     | aniso  |   2333.95  |  69.788 | 0.514 |  0.623 |    0.351 |  0.453 |  0.409 |   0.124 |   0.736 |                   -0.005 |
+| I          | dityrosine     | iso    |   3080.68  |  66.197 | 0.496 |  0.605 |    0.319 |  0.427 |  0.425 |   0.13  |   0.74  |                   -0.043 |
+| I          | glucosepane    | aniso  |   2453.21  |  74.046 | 0.509 |  0.618 |    0.342 |  0.444 |  0.298 |   0.2   |   0.736 |                   -0.013 |
+| I          | glucosepane    | iso    |   2759.02  |  68.897 | 0.509 |  0.618 |    0.34  |  0.441 |  0.301 |   0.192 |   0.74  |                   -0.026 |
+| I          | isopeptide_TG2 | aniso  |   2597.29  |  76.132 | 0.519 |  0.627 |    0.359 |  0.457 |  0.407 |   0.123 |   0.739 |                    0.001 |
+| I          | isopeptide_TG2 | iso    |   2641.24  |  72.98  | 0.515 |  0.623 |    0.351 |  0.448 |  0.413 |   0.124 |   0.74  |                   -0.017 |
+| I          | none           | none   |    911.648 | 120.885 | 0.517 |  0.626 |    0.356 |  0.454 |  0.408 |   0.123 |   0.721 |                   -0.001 |
+| I          | pyridinoline   | aniso  |   2164.42  |  77.277 | 0.518 |  0.627 |    0.357 |  0.456 |  0.408 |   0.123 |   0.736 |                    0.001 |
+| I          | pyridinoline   | iso    |   2529.28  |  75.334 | 0.515 |  0.624 |    0.352 |  0.452 |  0.41  |   0.124 |   0.739 |                   -0.012 |
+| IV         | none           | none   |    228.915 | 146.263 | 0.498 |  0.608 |    0.322 |  0.425 |  0.427 |   0.13  |   0.609 |                   -0.009 |
+
+figures in results/organoid/gpu/figures
+ALLDONE

@@ -74,7 +74,7 @@ from pathlib import Path
 import numpy as np
 import torch
 
-from oxt.normalization import assess_e2, derive_e2_rows, matched_stiffness_scale, select_e2_target
+from oxt.normalization import assess_e2, derive_e2_rows, matched_stiffness_scale, select_e2_target, derive_e2_curve
 
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "results" / "atlas3d"
@@ -395,15 +395,9 @@ def run_battery(cond, items, P, device, out_dir):
                     traction_SI="T * force_scale / length_scale**2 [Pa]",
                     Gc_SI="Gc * force_scale / length_scale [J/m^2]"),
             )
-            payload["E2_matched_bulk"] = dict(
-                status=it.get("e2_gate", {}).get("e2_status", "not_evaluated"),
-                reason=it.get("e2_gate", {}).get("e2_reason", ""),
-                method="posthoc_uniform_stiffness_scaling_not_rerun")
-            if it.get("e2_scale") is not None:
-                s = it["e2_scale"]
-                payload["E2_matched_bulk"].update(
-                    scale=float(s), traction=[float(x * s) for x in te],
-                    T_peak=float(m["T_peak"][i] * s), Gc=float(m["Gc"][i] * s))
+            payload["E2_matched_bulk"] = derive_e2_curve(
+                te.tolist(), float(m["T_peak"][i]), float(m["Gc"][i]),
+                initial=it["moduli"]["G"], target=it.get("e2_target"), e1_ok=row["ok"])
             fdir = out_dir / "fracture_laws" / cond["name"] / f"mode_{mode_roman}"
             fdir.mkdir(parents=True, exist_ok=True)
             fp = fdir / f"seed{it['seed']}.json"
@@ -562,6 +556,7 @@ def run(P, device, out_dir, profile):
             gate = assess_e2(it["moduli"]["G"], g_target)
             it["e2_scale"] = gate["scale"]
             it["e2_gate"] = gate
+            it["e2_target"] = g_target
         rows, cyc_rows, secs = run_battery(cond, items, P, device, out_dir)
         for r, it in zip(rows, items):
             r["control"] = "E1"

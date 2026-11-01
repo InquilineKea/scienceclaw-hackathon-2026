@@ -61,8 +61,8 @@ def main(out: Path):
     for ax in axes[1]:
         ax.set_xlabel("gel linear Young's modulus (Pa)", fontsize=8, color=INK2)
     h, l = axes[0, 0].get_legend_handles_labels()
-    fig.legend(h, l, loc="upper center", ncol=6, frameon=False, fontsize=8, title="crosslinker",
-               title_fontsize=8)
+    fig.legend(h, l, loc="upper center", ncol=6, frameon=False, fontsize=8,
+               bbox_to_anchor=(0.5, 0.965))
     fig.suptitle(f"Day {last}: organoid read-outs against gel stiffness", fontsize=10, color=INK, y=0.995)
     fig.tight_layout(rect=(0, 0, 1, 0.92))
     fig.savefig(figs / "readouts_vs_stiffness.png", dpi=160)
