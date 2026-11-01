@@ -1,0 +1,95 @@
+.spatial-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 14px;
+  padding: 10px 12px;
+  background: #f1f5f9;
+  border: 1px solid #d5e0ea;
+  border-radius: 8px;
+  font-size: 14px;
+}
+.spatial-toolbar .preset-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  align-items: center;
+}
+.spatial-toolbar button {
+  padding: 6px 10px;
+  font-size: 13px;
+  line-height: 1.2;
+  border: 1px solid #9fb0c2;
+  background: #ffffff;
+  color: #172b42;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.spatial-toolbar button:hover {
+  background: #e6eef6;
+}
+.spatial-toolbar button[aria-pressed="true"] {
+  background: #173e62;
+  color: #ffffff;
+  border-color: #173e62;
+}
+.spatial-toolbar button:focus-visible,
+.spatial-pane canvas:focus-visible {
+  outline: 2px solid #176297;
+  outline-offset: 2px;
+}
+.spatial-status {
+  font-size: 13px;
+  color: #41566d;
+  margin-left: auto;
+}
+.spatial-hint {
+  font-size: 13px;
+  color: #52657a;
+  margin: 6px 0 12px;
+}
+.spatial-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  align-items: start;
+}
+.spatial-pane {
+  min-width: 0;
+}
+.spatial-pane h3 {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+.spatial-pane canvas {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  aspect-ratio: 560 / 450;
+  display: block;
+  background: #f8fafc;
+  border: 1px solid #d8e2ec;
+  border-radius: 8px;
+  touch-action: none;
+  cursor: grab;
+}
+.spatial-pane canvas:active {
+  cursor: grabbing;
+}
+@media (max-width: 750px) {
+  .spatial-grid {
+    grid-template-columns: 1fr;
+  }
+  .spatial-status {
+    width: 100%;
+    margin-left: 0;
+  }
+  .spatial-toolbar {
+    padding: 8px 10px;
+  }
+}
+
+.spatial-canvas{touch-action:none;cursor:grab;max-width:100%;height:auto}.spatial-pane canvas{aspect-ratio:auto}.spatial-toolbar label{display:grid;gap:4px}.replay-legend{display:flex;flex-wrap:wrap;gap:14px}.replay-status{line-height:1.6}.spatial-grid>*{min-width:0}
+
+.spatial-table-scroll{max-width:100%;overflow-x:auto}
