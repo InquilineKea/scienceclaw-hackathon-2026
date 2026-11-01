@@ -156,3 +156,8 @@ BatchC1.2mg/mL stress NRMSE0.686; selected elasticity on held-out position008 di
 ## Nonlinear buckling and sliding prediction test
 
 [Open the nonlinear 3D comparison](https://inquilinekea.github.io/scienceclaw-hackathon-2026/nonlinear-3d/) for the twelve-arm selection, harmonic baseline, guarded displacement/local-strain scores, numerical qualification and interactive final-field comparison. [Report](collagen-nonlinear-heldout/REPORT.md). This is an adaptively reused conditional benchmark, not a fresh biological validation.
+
+
+## Collagen Evidence Atlas — Argon-co-designed interactive workbench
+
+[Open the new evidence atlas](https://inquilinekea.github.io/scienceclaw-hackathon-2026/evidence-atlas/) for synchronized3D fields, pairwise error maps, slice/octant filters, point inspection, CSV export and a ten-study evidence map. [Design, source, usage and audits](collagen-evidence-atlas/README.md). Saved predictions and scientific limitations are unchanged.

@@ -48,8 +48,8 @@
     },
     {
       "file": "web/index.html",
-      "bytes": 13370,
-      "sha256": "826c82e6f4c835a9267dbea9d4bbb0882e3c54e910ead283cc003db6b3aabb15"
+      "bytes": 13476,
+      "sha256": "918878b966aacf792b3cd05eaaf21d47ccd06e3213640b7fef58132efbacdacb"
     },
     {
       "file": "web/style.css",
@@ -116,5 +116,9 @@
       "bytes": 2111,
       "sha256": "ec7de90c4c611a48e6f35f824d748a92b9600f093b3a7d4f60c7bfb428d09f00"
     }
+  ],
+  "implementation_commit": "dff6991a3d64f81ad00864bfe7c00d45d0efa653",
+  "publication_only_changes": [
+    "web/index.html: pin implementation source link and add artifact/provenance links."
   ]
 }

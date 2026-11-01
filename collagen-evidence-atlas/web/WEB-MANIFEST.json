@@ -1,0 +1,35 @@
+{
+  "implementation_commit": "dff6991a3d64f81ad00864bfe7c00d45d0efa653",
+  "implementation_url": "https://github.com/InquilineKea/scienceclaw-hackathon-2026/tree/dff6991a3d64f81ad00864bfe7c00d45d0efa653/collagen-evidence-atlas",
+  "scientific_source_snapshot": "11b57e1daf9724ac6d169c3fa1289f5e09ce18ab",
+  "files": {
+    "index.html": {
+      "bytes": 13476,
+      "sha256": "918878b966aacf792b3cd05eaaf21d47ccd06e3213640b7fef58132efbacdacb"
+    },
+    "DATA-PROVENANCE.json": {
+      "bytes": 1072,
+      "sha256": "56154722b12d2d3b9cacdb752fe9a71440023702a42f5a77e916e0e8ace965e5"
+    },
+    "render.js": {
+      "bytes": 10586,
+      "sha256": "ecb71d71a6a5228b1518e85a99db5cef1067b980eb475520a13d74ead2e79113"
+    },
+    "data.json": {
+      "bytes": 1164462,
+      "sha256": "ac0bb60b76b9b9f707278a6d7950c5d326cfc5c57ba95ccd003936c979ede56f"
+    },
+    "METHODS.md": {
+      "bytes": 5879,
+      "sha256": "833c7820db0224e4d63abc574cb3bd1d730ea4854d5623e9e99425ab98aa6753"
+    },
+    "style.css": {
+      "bytes": 17129,
+      "sha256": "d36dfb4d7a07c66d6cc5a8ad65b5531012e053aa9a6a63b225737aecbba68edf"
+    },
+    "app.js": {
+      "bytes": 19211,
+      "sha256": "c04c191567f9b8ec482bc0236414e7225b19ed346fcf3e11c6edac79867c2549"
+    }
+  }
+}
