@@ -1,0 +1,85 @@
+{
+  "run_id": "atlas-sixcase-20261031T230849Z-e24e4e64",
+  "execution": {
+    "status": "completed",
+    "exit_code": 0,
+    "elapsed_seconds": 0.779888
+  },
+  "isolation": {
+    "exit_code": 0,
+    "stdout": "read-denied; network-denied\n",
+    "stderr": ""
+  },
+  "verified_files": 17,
+  "rows": [
+    {
+      "family": "aligned",
+      "mode": "tension",
+      "pass": true,
+      "work": 0.0005141879531102891,
+      "strength": 0.004875295037794823,
+      "damage": 0.2043473935192009,
+      "maxResidual": 1.9819808180897172e-07,
+      "energyBalanceError": null,
+      "relativeEnergyBalanceError": null
+    },
+    {
+      "family": "isotropic",
+      "mode": "confined",
+      "pass": true,
+      "work": 1.8477617283982345e-05,
+      "strength": 8.319221194702487e-05,
+      "damage": 0,
+      "maxResidual": 1.9951985878034582e-07,
+      "energyBalanceError": null,
+      "relativeEnergyBalanceError": null
+    },
+    {
+      "family": "isotropic",
+      "mode": "free",
+      "pass": true,
+      "work": 4.323465196233093e-30,
+      "strength": 0,
+      "damage": 0,
+      "maxResidual": null,
+      "energyBalanceError": 8.099999999942355e-06,
+      "relativeEnergyBalanceError": 0.0019239561084144858
+    },
+    {
+      "family": "isotropic",
+      "mode": "pulse",
+      "pass": true,
+      "work": 0.0014668159382227757,
+      "strength": 0.0074229421817964955,
+      "damage": 0.16952707086368873,
+      "maxResidual": null,
+      "energyBalanceError": 8.014736915459841e-07,
+      "relativeEnergyBalanceError": 0.00033243363350714104
+    },
+    {
+      "family": "isotropic",
+      "mode": "shear",
+      "pass": true,
+      "work": 0.00030337754992049317,
+      "strength": 0.0016790500270864213,
+      "damage": 0.07008646743930545,
+      "maxResidual": 1.9985174685613354e-07,
+      "energyBalanceError": null,
+      "relativeEnergyBalanceError": null
+    },
+    {
+      "family": "isotropic",
+      "mode": "tension",
+      "pass": true,
+      "work": 0.00040347933910750845,
+      "strength": 0.0020960078464620406,
+      "damage": 0.09933942918611774,
+      "maxResidual": 1.987645802325702e-07,
+      "energyBalanceError": null,
+      "relativeEnergyBalanceError": null
+    }
+  ],
+  "all_pass": true,
+  "new_cloud_cost": 0,
+  "interpretation": "Same-source repeatability; not independent implementation, geometry robustness, or biological calibration."
+}

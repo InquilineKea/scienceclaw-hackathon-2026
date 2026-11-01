@@ -1,5 +1,6 @@
-from pathlib import Path
 import json
+from pathlib import Path
+
 s=json.loads(Path('summary.json').read_text());tr=''
 for r in s:
  if r['omega']!=.1:continue

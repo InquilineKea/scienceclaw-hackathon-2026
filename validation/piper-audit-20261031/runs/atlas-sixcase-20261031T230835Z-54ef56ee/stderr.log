@@ -1,0 +1,14 @@
+node:internal/modules/helpers:89
+    modulesBinding.getNearestParentPackageJSONType(checkPath),
+                   ^
+
+Error: Cannot read package config /Users/simfish/package.json: operation not permitted.
+    at getNearestParentPackageJSONType (node:internal/modules/helpers:89:20)
+    at Object.loaderMethodWrapper [as getNearestParentPackageJSONType] (node:internal/modules/helpers:123:12)
+    at shouldUseESMLoader (node:internal/modules/run_main:77:30)
+    at Module.executeUserEntryPoint [as runMain] (node:internal/modules/run_main:164:20)
+    at node:internal/main/run_main_module:33:47 {
+  code: 'ERR_INVALID_PACKAGE_CONFIG'
+}
+
+Node.js v26.12.1

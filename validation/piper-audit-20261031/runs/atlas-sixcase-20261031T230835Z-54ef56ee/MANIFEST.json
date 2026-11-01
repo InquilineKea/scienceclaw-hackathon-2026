@@ -1,0 +1,40 @@
+{
+  "files": {
+    "stderr.log": {
+      "bytes": 654,
+      "sha256": "cb59d598e0793744eda1028cec493936d7ff1ef79b27c55a3b797454f5f4f8cb"
+    },
+    "isolation.sb": {
+      "bytes": 1140,
+      "sha256": "eb3e680fd394b4b246622c8495625013c2c1e3e5ae20e51b69ef7cc05d15399d"
+    },
+    "isolation-check.json": {
+      "bytes": 81,
+      "sha256": "e79cd9b3dc33d4816a16e6a2e692260050cd14798955d12d74736104863b0f7e"
+    },
+    "config.json": {
+      "bytes": 362,
+      "sha256": "ed39d6b469ea0af2ea8d18ce86a96ebc8984af28c6c7bf956b0885c3e15a064f"
+    },
+    "stdout.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "execution.json": {
+      "bytes": 73,
+      "sha256": "4c71ee6e062defd82a939151445d51ce31201941719157fe6c0b6fd26dddca28"
+    },
+    "source/reproduce.js": {
+      "bytes": 1881,
+      "sha256": "cecb78d209205bd685c2641872dcc0894e906cce4c3f48f3dcb2c65f33822e0f"
+    },
+    "source/baseline.json": {
+      "bytes": 824546,
+      "sha256": "b3c01f927ed40d9467f8a2fe599382a28d9bbcd5bfb6224629a6b6dad17e8f0f"
+    },
+    "source/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    }
+  }
+}

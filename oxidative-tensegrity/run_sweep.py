@@ -14,7 +14,6 @@ import json
 import os
 import time
 from concurrent.futures import ProcessPoolExecutor
-from dataclasses import asdict
 from pathlib import Path
 
 import numpy as np
@@ -23,23 +22,23 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent
 
 PROFILES = {
-    "smoke": dict(W=8, seeds=1, batch=16, workers=4, threads=1, z=[3.4, 4.6], doses=[1.0],
-                  gammas=[0.01, 0.1, 0.3], fail=[0.05, 0.2, 0.4], ages=[20, 80], clutch_T=8.0),
-    "local": dict(W=12, seeds=2, batch=6, workers=6, threads=2,
-                  z=[3.0, 3.6, 4.4], doses=[0.5, 1.0],
-                  gammas=[0.005, 0.03, 0.1, 0.2, 0.35],
-                  fail=list(np.round(np.linspace(0.04, 0.6, 9), 3)),
-                  ages=[20, 50, 80], clutch_T=40.0),
-    "cpu32": dict(W=16, seeds=4, batch=4, workers=30, threads=1,
-                  z=[2.8, 3.0, 3.2, 3.4, 3.6, 4.0, 4.4, 5.0], doses=[0.25, 0.5, 0.75, 1.0],
-                  gammas=[0.005, 0.02, 0.05, 0.1, 0.2, 0.3, 0.4],
-                  fail=list(np.round(np.linspace(0.03, 0.6, 16), 3)),
-                  ages=[20, 35, 50, 65, 80], clutch_T=80.0),
-    "gpu": dict(W=48, seeds=8, batch=64, workers=1, threads=8,
-                z=list(np.round(np.linspace(2.6, 5.4, 15), 2)), doses=[0.1, 0.2, 0.35, 0.5, 0.75, 1.0],
-                gammas=[0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5],
-                fail=list(np.round(np.linspace(0.02, 0.8, 40), 3)),
-                ages=[10, 20, 30, 40, 50, 60, 70, 80, 90], clutch_T=120.0),
+    "smoke": {"W": 8, "seeds": 1, "batch": 16, "workers": 4, "threads": 1, "z": [3.4, 4.6], "doses": [1.0],
+                  "gammas": [0.01, 0.1, 0.3], "fail": [0.05, 0.2, 0.4], "ages": [20, 80], "clutch_T": 8.0},
+    "local": {"W": 12, "seeds": 2, "batch": 6, "workers": 6, "threads": 2,
+                  "z": [3.0, 3.6, 4.4], "doses": [0.5, 1.0],
+                  "gammas": [0.005, 0.03, 0.1, 0.2, 0.35],
+                  "fail": list(np.round(np.linspace(0.04, 0.6, 9), 3)),
+                  "ages": [20, 50, 80], "clutch_T": 40.0},
+    "cpu32": {"W": 16, "seeds": 4, "batch": 4, "workers": 30, "threads": 1,
+                  "z": [2.8, 3.0, 3.2, 3.4, 3.6, 4.0, 4.4, 5.0], "doses": [0.25, 0.5, 0.75, 1.0],
+                  "gammas": [0.005, 0.02, 0.05, 0.1, 0.2, 0.3, 0.4],
+                  "fail": list(np.round(np.linspace(0.03, 0.6, 16), 3)),
+                  "ages": [20, 35, 50, 65, 80], "clutch_T": 80.0},
+    "gpu": {"W": 48, "seeds": 8, "batch": 64, "workers": 1, "threads": 8,
+                "z": list(np.round(np.linspace(2.6, 5.4, 15), 2)), "doses": [0.1, 0.2, 0.35, 0.5, 0.75, 1.0],
+                "gammas": [0.002, 0.005, 0.01, 0.02, 0.05, 0.1, 0.15, 0.2, 0.3, 0.4, 0.5],
+                "fail": list(np.round(np.linspace(0.02, 0.8, 40), 3)),
+                "ages": [10, 20, 30, 40, 50, 60, 70, 80, 90], "clutch_T": 120.0},
 }
 
 
@@ -50,7 +49,14 @@ def _worker(task):
     import torch
 
     torch.set_num_threads(task["threads"])
-    from oxt.materials import COLLAGENS, TISSUES, Damage, build_spec, load_crosslink_overrides, tissue_spec
+    from oxt.materials import (
+        COLLAGENS,
+        TISSUES,
+        Damage,
+        build_spec,
+        load_crosslink_overrides,
+        tissue_spec,
+    )
     from oxt.network import Batch, Lattice, coordination, mesh_size
 
     load_crosslink_overrides()
@@ -95,8 +101,8 @@ def _worker(task):
 def run_tasks(items, protocols, P, device, label):
     tasks = []
     for k in range(0, len(items), P["batch"]):
-        tasks.append(dict(items=items[k:k + P["batch"]], protocols=protocols, W=P["W"], device=device,
-                          threads=P["threads"], gammas=P["gammas"], fail=P["fail"]))
+        tasks.append({"items": items[k:k + P["batch"]], "protocols": protocols, "W": P["W"], "device": device,
+                          "threads": P["threads"], "gammas": P["gammas"], "fail": P["fail"]})
     print(f"[{label}] {len(items)} systems in {len(tasks)} batches", flush=True)
     rows = []
     if P["workers"] > 1 and device == "cpu":
@@ -130,10 +136,10 @@ def stage_network(P, device):
         for z in P["z"]:
             for mode, d in configs(P):
                 for s in range(P["seeds"]):
-                    items.append(dict(collagen=col, z=z, mode=mode, dose=d, seed=1000 + s))
+                    items.append({"collagen": col, "z": z, "mode": mode, "dose": d, "seed": 1000 + s})
         for mode, d in configs(P):
             for s in range(P["seeds"]):
-                fail_items.append(dict(collagen=col, z=COLLAGENS[col].z, mode=mode, dose=d, seed=2000 + s))
+                fail_items.append({"collagen": col, "z": COLLAGENS[col].z, "mode": mode, "dose": d, "seed": 2000 + s})
     net = run_tasks(items, ["moduli", "shear"], P, device, "network")
     fail = run_tasks(fail_items, ["moduli", "shear", "failure"], P, device, "failure")
     return net, fail
@@ -142,7 +148,7 @@ def stage_network(P, device):
 def stage_tissues(P, device):
     from oxt.materials import TISSUES
 
-    items = [dict(tissue=t, age=a, seed=3000 + s) for t in TISSUES for a in P["ages"] for s in range(P["seeds"])]
+    items = [{"tissue": t, "age": a, "seed": 3000 + s} for t in TISSUES for a in P["ages"] for s in range(P["seeds"])]
     return run_tasks(items, ["moduli", "shear", "failure"], P, device, "tissues")
 
 
@@ -185,7 +191,14 @@ def stage_cell(fail, tissues, P, S_pa, seed=0):
 
 def stage_organ(tissues, P, S_pa):
     from oxt.materials import TISSUES, tissue_dose
-    from oxt.physio import MOLECULES, heart, matrix_recovery_rate, phi_collagen, pwv, transport
+    from oxt.physio import (
+        MOLECULES,
+        heart,
+        matrix_recovery_rate,
+        phi_collagen,
+        pwv,
+        transport,
+    )
 
     g = tissues.groupby(["tissue", "age"], as_index=False).mean(numeric_only=True)
     g["E_lin_Pa"] = 3 * g["G"] * S_pa
@@ -195,10 +208,10 @@ def stage_organ(tissues, P, S_pa):
         t = TISSUES[r.tissue]
         y = young[r.tissue]
         Er = r.E_lin_Pa / y.E_lin_Pa
-        row = dict(tissue=r.tissue, age=r.age, dose=tissue_dose(t, r.age), E_lin_Pa=r.E_lin_Pa, E_ratio=Er,
-                   strength=r.strength, toughness=r.toughness, strain_at_peak=r.strain_at_peak,
-                   anisotropy=r.Cx / max(r.Cy, 1e-12),
-                   matrix_recovery_per_yr=matrix_recovery_rate(t.half_life_yr, tissue_dose(t, r.age)))
+        row = {"tissue": r.tissue, "age": r.age, "dose": tissue_dose(t, r.age), "E_lin_Pa": r.E_lin_Pa, "E_ratio": Er,
+                   "strength": r.strength, "toughness": r.toughness, "strain_at_peak": r.strain_at_peak,
+                   "anisotropy": r.Cx / max(r.Cy, 1e-12),
+                   "matrix_recovery_per_yr": matrix_recovery_rate(t.half_life_yr, tissue_dose(t, r.age))}
         rows.append(row)
         dens = r.bonds / y.bonds
         for mol in MOLECULES:
@@ -259,8 +272,8 @@ def main():
 
     from oxt.materials import CROSSLINKS
 
-    summary = dict(profile=args.profile, params=P, device=args.device, S_pa_per_unit=S_pa,
-                   crosslinks=CROSSLINKS, seconds=time.time() - t0)
+    summary = {"profile": args.profile, "params": P, "device": args.device, "S_pa_per_unit": S_pa,
+                   "crosslinks": CROSSLINKS, "seconds": time.time() - t0}
     (out / "summary.json").write_text(json.dumps(summary, indent=2, default=str))
     print(f"done in {time.time() - t0:.0f}s -> {out}")
 

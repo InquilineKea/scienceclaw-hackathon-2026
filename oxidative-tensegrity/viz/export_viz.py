@@ -11,9 +11,9 @@ import torch
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from oxt.cell import TensegrityCell  # noqa: E402
-from oxt.materials import COLLAGENS, Damage, build_spec  # noqa: E402
-from oxt.network import Batch, Lattice  # noqa: E402
+from oxt.cell import TensegrityCell
+from oxt.materials import COLLAGENS, Damage, build_spec
+from oxt.network import Batch, Lattice
 
 torch.set_num_threads(4)
 R = lambda a, n=4: np.round(np.asarray(a, float), n).tolist()
@@ -32,16 +32,16 @@ for g in gammas:
     b.move_affine(Fp, F)
     b.relax(F)
     strain = b.bond_strain(F).numpy()
-    frames.append(dict(gamma=g, x=[R(b.x[i].numpy().reshape(-1), 3) for i in range(3)],
-                       strain=[R(strain[i], 4) for i in range(3)],
-                       stress=R(b.stress(F)[:, 0, 1].numpy(), 6)))
+    frames.append({"gamma": g, "x": [R(b.x[i].numpy().reshape(-1), 3) for i in range(3)],
+                       "strain": [R(strain[i], 4) for i in range(3)],
+                       "stress": R(b.stress(F)[:, 0, 1].numpy(), 6)})
     Fp = F
-out["network"] = dict(W=12, L=R(lat.L), bi=lat.bi.tolist(), bj=lat.bj.tolist(), shift=R(lat.shift, 3),
-                      alive=[s.alive.astype(int).tolist() for s in specs],
-                      rigid=[(s.rigid_node > 0).astype(int).tolist() for s in specs],
-                      stiffened=[(s.mu > COLLAGENS["I"].mu * 1.01).astype(int).tolist() for s in specs],
-                      labels=["healthy (enzymatic crosslinks only)", "oxidative, isotropic", "oxidative, anisotropic"],
-                      frames=frames)
+out["network"] = {"W": 12, "L": R(lat.L), "bi": lat.bi.tolist(), "bj": lat.bj.tolist(), "shift": R(lat.shift, 3),
+                      "alive": [s.alive.astype(int).tolist() for s in specs],
+                      "rigid": [(s.rigid_node > 0).astype(int).tolist() for s in specs],
+                      "stiffened": [(s.mu > COLLAGENS["I"].mu * 1.01).astype(int).tolist() for s in specs],
+                      "labels": ["healthy (enzymatic crosslinks only)", "oxidative, isotropic", "oxidative, anisotropic"],
+                      "frames": frames}
 
 # --- tensegrity shapes vs anchor stiffness (cable units), contractility 0.06
 cell = TensegrityCell()
@@ -52,10 +52,10 @@ for ka in [0.003, 0.01, 0.03, 0.1, 0.3, 1.0, 3.0, 10.0]:
     free = np.ones_like(P, bool)
     free[cell.basal, 2] = False
     P[free] = r["x"]
-    tens.append(dict(k=ka, P=R(P.reshape(-1), 3), prestress=round(r["prestress"], 4), height=round(r["height"], 4),
-                     footprint=round(r["footprint"], 4)))
-out["tensegrity"] = dict(struts=cell.S.tolist(), cables=cell.Cb.tolist(), basal=cell.basal.tolist(),
-                         rigid_prestress=round(cell.solve(0.06, 1e3)["prestress"], 4), frames=tens)
+    tens.append({"k": ka, "P": R(P.reshape(-1), 3), "prestress": round(r["prestress"], 4), "height": round(r["height"], 4),
+                     "footprint": round(r["footprint"], 4)})
+out["tensegrity"] = {"struts": cell.S.tolist(), "cables": cell.Cb.tolist(), "basal": cell.basal.tolist(),
+                         "rigid_prestress": round(cell.solve(0.06, 1e3)["prestress"], 4), "frames": tens}
 
 # --- summary series (GCP cpu32 unless noted)
 res = ROOT / "results" / "cpu32"
@@ -66,7 +66,7 @@ for col in ["I", "VII", "IV"]:
     for mode, dose in [("none", 0.0), ("iso", 1.0), ("aniso", 1.0)]:
         g = d[(d["mode"] == mode) & (d.dose == dose)].groupby("z_target").agg(z=("z", "mean"), G=("G", "mean"),
                                                                              s=("sig_g0.4", "mean")).reset_index()
-        br[f"{col}|{mode}"] = dict(z=R(g.z, 3), G=R(g.G, 6), KG=R((g.s / 0.4) / g.G, 3))
+        br[f"{col}|{mode}"] = {"z": R(g.z, 3), "G": R(g.G, 6), "KG": R((g.s / 0.4) / g.G, 3)}
 out["branching"] = br
 
 fail = pd.read_csv(res / "failure.csv")
@@ -76,8 +76,8 @@ fc = {}
 for col in ["I", "VII"]:
     for mode, dose in [("none", 0.0), ("iso", 1.0), ("aniso", 1.0)]:
         s = fail[(fail.collagen == col) & (fail["mode"] == mode) & (fail.dose == dose)]
-        fc[f"{col}|{mode}"] = dict(e=eps, s=R(s[cs].mean(), 5), strength=round(s.strength.mean(), 5),
-                                   peak=round(s.strain_at_peak.mean(), 3), tough=round(s.toughness.mean(), 5))
+        fc[f"{col}|{mode}"] = {"e": eps, "s": R(s[cs].mean(), 5), "strength": round(s.strength.mean(), 5),
+                                   "peak": round(s.strain_at_peak.mean(), 3), "tough": round(s.toughness.mean(), 5)}
 out["failure"] = fc
 
 cellc = pd.read_csv(res / "cell.csv")
@@ -86,14 +86,14 @@ for col in ["I", "VII", "IV"]:
     d = cellc[(cellc.source == "collagen") & (cellc.collagen == col)]
     for mode in ["iso", "aniso"]:
         s = pd.concat([d[d["mode"] == "none"], d[d["mode"] == mode]]).sort_values("dose")
-        cc[f"{col}|{mode}"] = dict(dose=R(s.dose, 2), yap=R(s.YAP_NC, 3), ps=R(s.prestress_ratio, 3),
-                                   rec=R(s.recovery_rate_per_h, 4), self=s.self_supporting.astype(int).tolist(),
-                                   E=R(s.E_lin_Pa, 1))
+        cc[f"{col}|{mode}"] = {"dose": R(s.dose, 2), "yap": R(s.YAP_NC, 3), "ps": R(s.prestress_ratio, 3),
+                                   "rec": R(s.recovery_rate_per_h, 4), "self": s.self_supporting.astype(int).tolist(),
+                                   "E": R(s.E_lin_Pa, 1)}
 out["cell"] = cc
 
 org = pd.read_csv(res / "organ.csv")
-out["tissues"] = {t: dict(age=R(g.age, 0), E=R(g.E_ratio, 3), tough=R(g.toughness / g.toughness.iloc[0], 3),
-                          repair=R(g.matrix_recovery_per_yr, 5), aniso=R(g.anisotropy, 3), dose=R(g.dose, 3))
+out["tissues"] = {t: {"age": R(g.age, 0), "E": R(g.E_ratio, 3), "tough": R(g.toughness / g.toughness.iloc[0], 3),
+                          "repair": R(g.matrix_recovery_per_yr, 5), "aniso": R(g.anisotropy, 3), "dose": R(g.dose, 3)}
                   for t, g in org.sort_values("age").groupby("tissue")}
 out["heart"] = pd.read_csv(res / "heart.csv").round(4).to_dict(orient="list")
 tr = pd.read_csv(res / "transport.csv")

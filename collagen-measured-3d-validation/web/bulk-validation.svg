@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="760" viewBox="0 0 1240 760"><rect width="100%" height="100%" fill="#f7f9fc"/>
+<text x="30" y="40" fill="#172b42" font-family="Arial,sans-serif" font-size="30" text-anchor="start">Measured collagen: held-out batch prediction</text>
+<text x="30" y="76" fill="#172b42" font-family="Arial,sans-serif" font-size="19" text-anchor="start">Fit batch A → select on B → test C · 1.2 mg/mL primary · fixed model, no C rescaling</text>
+<path d="M75,500.0H605" stroke="#dce4ed"/>
+<text x="65" y="505.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">0</text>
+<text x="75.0" y="524" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">0</text>
+<path d="M75,412.5H605" stroke="#dce4ed"/>
+<text x="65" y="417.5" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">13</text>
+<text x="207.5" y="524" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">0.048</text>
+<path d="M75,325.0H605" stroke="#dce4ed"/>
+<text x="65" y="330.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">27</text>
+<text x="340.0" y="524" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">0.095</text>
+<path d="M75,237.5H605" stroke="#dce4ed"/>
+<text x="65" y="242.5" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">40</text>
+<text x="472.5" y="524" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">0.14</text>
+<path d="M75,150.0H605" stroke="#dce4ed"/>
+<text x="65" y="155.0" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="end">54</text>
+<text x="605.0" y="524" fill="#172b42" font-family="Arial,sans-serif" font-size="14" text-anchor="middle">0.19</text>
+<text x="340.0" y="554" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="middle">Shear strain γ</text>
+<text x="75" y="137" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="start">Shear stress (Pa), 1.2 mg/mL</text>
+<polyline points="88.95,496.60 89.83,496.37 90.78,496.18 91.78,495.98 92.85,495.71 93.98,495.49 95.19,495.21 96.47,494.97 97.84,494.68 99.29,494.34 100.84,494.06 102.48,493.71 104.23,493.34 106.09,492.94 108.06,492.62 110.17,492.16 112.40,491.65 114.78,491.29 117.31,490.86 120.00,490.34 122.86,489.83 125.91,489.27 129.15,488.78 132.59,488.31 136.25,487.86 140.15,487.23 144.29,486.54 148.70,486.11 153.38,485.44 158.37,484.62 163.67,484.14 169.31,483.25 175.31,482.79 181.68,482.04 188.47,481.13 195.68,480.69 203.36,480.02 211.52,479.11 220.20,478.57 229.44,477.68 239.26,476.44 249.71,475.67 260.82,474.35 272.63,473.27 285.20,471.91 298.57,470.63 312.79,469.40 327.91,467.82 343.99,465.69 361.10,463.83 379.29,461.11 398.64,458.21 419.23,455.10 441.12,450.39 464.40,445.45 489.16,439.24 515.50,433.34 543.52,425.01 573.31,414.64 605.00,402.30" fill="none" stroke="#7254a3" stroke-width="2.5" stroke-dasharray=""/>
+<polyline points="88.95,498.84 89.83,498.77 90.78,498.73 91.78,498.66 92.85,498.59 93.98,498.51 95.19,498.44 96.47,498.37 97.84,498.26 99.29,498.16 100.84,498.04 102.48,497.96 104.23,497.88 106.09,497.75 108.06,497.62 110.17,497.48 112.40,497.33 114.78,497.26 117.31,497.07 120.00,496.91 122.86,496.77 125.91,496.57 129.15,496.42 132.59,496.15 136.25,495.98 140.15,495.79 144.29,495.54 148.70,495.28 153.38,494.99 158.37,494.83 163.67,494.49 169.31,494.15 175.31,493.86 181.68,493.49 188.47,493.13 195.68,492.77 203.36,492.36 211.52,491.89 220.20,491.42 229.44,490.92 239.26,490.21 249.71,489.78 260.82,489.06 272.63,488.18 285.20,487.47 298.57,486.46 312.79,485.48 327.91,484.33 343.99,483.06 361.10,481.80 379.29,480.31 398.64,478.46 419.23,476.21 441.12,473.78 464.40,470.76 489.16,466.93 515.50,462.16 543.52,456.28 573.31,449.56 605.00,439.57" fill="none" stroke="#23858b" stroke-width="2.5" stroke-dasharray=""/>
+<polyline points="88.95,488.09 89.83,487.28 90.78,486.33 91.78,485.71 92.85,484.92 93.98,484.09 95.19,483.23 96.47,482.33 97.84,481.72 99.29,480.78 100.84,479.80 102.48,478.07 104.23,476.98 106.09,475.74 108.06,474.77 110.17,473.30 112.40,472.21 114.78,470.52 117.31,469.00 120.00,467.51 122.86,465.99 125.91,464.39 129.15,461.48 132.59,460.34 136.25,457.37 140.15,456.10 144.29,453.20 148.70,451.77 153.38,449.88 158.37,446.70 163.67,444.28 169.31,441.75 175.31,438.38 181.68,435.79 188.47,432.90 195.68,430.16 203.36,426.89 211.52,422.05 220.20,418.64 229.44,414.80 239.26,410.70 249.71,405.74 260.82,399.91 272.63,396.15 285.20,388.78 298.57,382.36 312.79,376.33 327.91,369.38 343.99,360.58 361.10,352.42 379.29,343.54 398.64,333.57 419.23,322.36 441.12,308.88 464.40,296.88 489.16,281.76 515.50,260.23 543.52,242.69 573.31,217.03 605.00,187.50" fill="none" stroke="#172b42" stroke-width="2.5" stroke-dasharray=""/>
+<polyline points="88.95,496.97 89.83,496.80 90.78,496.62 91.78,496.44 92.85,496.25 93.98,496.04 95.19,495.83 96.47,495.61 97.84,495.38 99.29,495.13 100.84,494.88 102.48,494.61 104.23,494.33 106.09,494.03 108.06,493.73 110.17,493.40 112.40,493.06 114.78,492.70 117.31,492.33 120.00,491.93 122.86,491.51 125.91,491.07 129.15,490.61 132.59,490.12 136.25,489.60 140.15,489.05 144.29,488.46 148.70,487.85 153.38,487.19 158.37,486.49 163.67,485.75 169.31,484.96 175.31,484.12 181.68,483.22 188.47,482.26 195.68,481.23 203.36,480.14 211.52,478.97 220.20,477.71 229.44,476.37 239.26,474.93 249.71,473.38 260.82,471.73 272.63,469.95 285.20,468.03 298.57,465.98 312.79,463.76 327.91,461.34 343.99,458.69 361.10,455.77 379.29,452.51 398.64,448.87 419.23,444.75 441.12,440.09 464.40,434.76 489.16,428.63 515.50,421.52 543.52,413.23 573.31,403.49 605.00,391.94" fill="none" stroke="#cf6b26" stroke-width="2.5" stroke-dasharray="7 5"/>
+<text x="80" y="580" fill="#7254a3" font-family="Arial,sans-serif" font-size="17" text-anchor="start">A: fit</text>
+<text x="345" y="580" fill="#23858b" font-family="Arial,sans-serif" font-size="17" text-anchor="start">B: selection</text>
+<text x="80" y="607" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="start">C: final test</text>
+<text x="345" y="607" fill="#cf6b26" font-family="Arial,sans-serif" font-size="17" text-anchor="start">Frozen prediction</text>
+<text x="720" y="137" fill="#172b42" font-family="Arial,sans-serif" font-size="21" text-anchor="start">Final-test stress NRMSE</text>
+<rect x="735" y="228.40236359894607" width="35" height="271.59763640105393" fill="#888f99"/>
+<text x="752" y="216.40236359894607" fill="#172b42" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">0.849</text>
+<rect x="779" y="230.27260549288383" width="35" height="269.7273945071162" fill="#cf6b26"/>
+<text x="796" y="218.27260549288383" fill="#172b42" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">0.843</text>
+<text x="775" y="528" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">0.6 mg/mL</text>
+<rect x="890" y="276.8470656967062" width="35" height="223.15293430329382" fill="#888f99"/>
+<text x="907" y="264.8470656967062" fill="#172b42" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">0.697</text>
+<rect x="934" y="280.638206221148" width="35" height="219.36179377885202" fill="#cf6b26"/>
+<text x="951" y="268.638206221148" fill="#172b42" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">0.686</text>
+<text x="930" y="528" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">1.2 mg/mL</text>
+<rect x="1045" y="253.44943918819592" width="35" height="246.55056081180408" fill="#888f99"/>
+<text x="1062" y="241.44943918819592" fill="#172b42" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">0.770</text>
+<rect x="1089" y="255.19522428167576" width="35" height="244.80477571832424" fill="#cf6b26"/>
+<text x="1106" y="243.19522428167576" fill="#172b42" font-family="Arial,sans-serif" font-size="15" text-anchor="middle">0.765</text>
+<text x="1085" y="528" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="middle">2.4 mg/mL</text>
+<text x="720" y="568" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="start">Gray: linear · Orange: selected fiber law</text>
+<text x="720" y="595" fill="#172b42" font-family="Arial,sans-serif" font-size="15" text-anchor="start">NRMSE = RMSE / RMS measured stress</text>
+<text x="30" y="653" fill="#172b42" font-family="Arial,sans-serif" font-size="18" text-anchor="start">The test batch is substantially underpredicted; nonlinear fitting gives only a small improvement over linear elasticity.</text>
+<text x="30" y="686" fill="#172b42" font-family="Arial,sans-serif" font-size="17" text-anchor="start">Published batch-average ramp curves; not raw replicate histories, oscillatory G′/G″, or matched 3D architecture tests.</text>
+<text x="30" y="722" fill="#172b42" font-family="Arial,sans-serif" font-size="16" text-anchor="start">Source: Böhringer et al., Nature Physics (2024), Extended Data Fig. 2 source data. Common strain domain 0.005–0.19.</text>
+</svg>

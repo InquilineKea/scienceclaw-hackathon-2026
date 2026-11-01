@@ -101,8 +101,8 @@ def build_systems(n_orient):
                     dmin = np.min(np.linalg.norm(Xc[:, None] - Xd[None], axis=-1))
                     if dmin < 1.6:
                         continue
-                    systems.append(dict(pair=(cn, gn), orient=o, d=d, Z=np.concatenate([Zc, Zg]),
-                                        X=np.vstack([Xc, Xd]), q=cq + gq, n_c=len(Zc)))
+                    systems.append({"pair": (cn, gn), "orient": o, "d": d, "Z": np.concatenate([Zc, Zg]),
+                                        "X": np.vstack([Xc, Xd]), "q": cq + gq, "n_c": len(Zc)})
     return systems, monomers
 
 
@@ -179,16 +179,16 @@ def main():
             v = [s["E_sr"] + s["E_es"] for s in rows if s["d"] == d]
             if v:
                 by_d[str(d)] = float(np.min(v))
-        table[f"{cn}|{gn}"] = dict(min_total_eV=best["E_sr"] + best["E_es"], E_sr_at_min=best["E_sr"],
-                                   E_es_at_min=best["E_es"], d_at_min=best["d"], orient_at_min=best["orient"],
-                                   min_over_orient_by_distance=by_d)
+        table[f"{cn}|{gn}"] = {"min_total_eV": best["E_sr"] + best["E_es"], "E_sr_at_min": best["E_sr"],
+                                   "E_es_at_min": best["E_es"], "d_at_min": best["d"], "orient_at_min": best["orient"],
+                                   "min_over_orient_by_distance": by_d}
     out = Path(a.out)
     out.parent.mkdir(parents=True, exist_ok=True)
-    out.write_text(json.dumps(dict(source="alchemi:aimnet2_wb97m_d3_3", seconds=time.time() - t0,
-                                   caveats=["rigid fragments", "no explicit solvent/counterions",
+    out.write_text(json.dumps({"source": "alchemi:aimnet2_wb97m_d3_3", "seconds": time.time() - t0,
+                                   "caveats": ["rigid fragments", "no explicit solvent/counterions",
                                             "screened Coulomb uses AIMNet2 charges, eps 78.5, Debye 8 A",
                                             "contact energies, not binding free energies"],
-                                   pairs=table), indent=2))
+                                   "pairs": table}, indent=2))
     for k in sorted(table):
         r = table[k]
         print(f"{k:22s} min E = {r['min_total_eV']:+.3f} eV  (short-range {r['E_sr_at_min']:+.3f}, "

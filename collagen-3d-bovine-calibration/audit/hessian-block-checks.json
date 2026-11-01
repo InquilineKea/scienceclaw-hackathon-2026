@@ -1,0 +1,167 @@
+{
+  "scope": "Independent stdlib check of analytic cosine Hessian blocks, 32 deformed angles",
+  "all_pass": true,
+  "max_relative_Hvp_error": 1.7490985170828354e-09,
+  "records": [
+    {
+      "seed": 29,
+      "angle": 0,
+      "relative_Hvp_error": 7.19117902970628e-12
+    },
+    {
+      "seed": 29,
+      "angle": 1,
+      "relative_Hvp_error": 3.724386055521419e-11
+    },
+    {
+      "seed": 29,
+      "angle": 2,
+      "relative_Hvp_error": 1.4646053441609254e-10
+    },
+    {
+      "seed": 29,
+      "angle": 3,
+      "relative_Hvp_error": 8.683264921945404e-13
+    },
+    {
+      "seed": 29,
+      "angle": 4,
+      "relative_Hvp_error": 8.077704824658091e-10
+    },
+    {
+      "seed": 29,
+      "angle": 5,
+      "relative_Hvp_error": 4.6250387776997244e-11
+    },
+    {
+      "seed": 29,
+      "angle": 6,
+      "relative_Hvp_error": 9.09428024302526e-11
+    },
+    {
+      "seed": 29,
+      "angle": 7,
+      "relative_Hvp_error": 1.8059658738655293e-10
+    },
+    {
+      "seed": 30,
+      "angle": 0,
+      "relative_Hvp_error": 9.904373716384538e-11
+    },
+    {
+      "seed": 30,
+      "angle": 1,
+      "relative_Hvp_error": 1.189251686628245e-09
+    },
+    {
+      "seed": 30,
+      "angle": 2,
+      "relative_Hvp_error": 1.5572881892611035e-10
+    },
+    {
+      "seed": 30,
+      "angle": 3,
+      "relative_Hvp_error": 1.3690732446813684e-11
+    },
+    {
+      "seed": 30,
+      "angle": 4,
+      "relative_Hvp_error": 1.276706452029554e-10
+    },
+    {
+      "seed": 30,
+      "angle": 5,
+      "relative_Hvp_error": 3.762590398939096e-11
+    },
+    {
+      "seed": 30,
+      "angle": 6,
+      "relative_Hvp_error": 3.307379199223111e-10
+    },
+    {
+      "seed": 30,
+      "angle": 7,
+      "relative_Hvp_error": 4.069060538028696e-10
+    },
+    {
+      "seed": 31,
+      "angle": 0,
+      "relative_Hvp_error": 2.932925868238501e-10
+    },
+    {
+      "seed": 31,
+      "angle": 1,
+      "relative_Hvp_error": 2.8710389319025683e-10
+    },
+    {
+      "seed": 31,
+      "angle": 2,
+      "relative_Hvp_error": 6.568018818902953e-11
+    },
+    {
+      "seed": 31,
+      "angle": 3,
+      "relative_Hvp_error": 1.7490985170828354e-09
+    },
+    {
+      "seed": 31,
+      "angle": 4,
+      "relative_Hvp_error": 1.066661456996207e-11
+    },
+    {
+      "seed": 31,
+      "angle": 5,
+      "relative_Hvp_error": 1.6296491897360369e-10
+    },
+    {
+      "seed": 31,
+      "angle": 6,
+      "relative_Hvp_error": 9.847220716810218e-11
+    },
+    {
+      "seed": 31,
+      "angle": 7,
+      "relative_Hvp_error": 9.772763511696031e-11
+    },
+    {
+      "seed": 32,
+      "angle": 0,
+      "relative_Hvp_error": 4.792970834904968e-11
+    },
+    {
+      "seed": 32,
+      "angle": 1,
+      "relative_Hvp_error": 1.0194743169809855e-10
+    },
+    {
+      "seed": 32,
+      "angle": 2,
+      "relative_Hvp_error": 3.9195237951291835e-10
+    },
+    {
+      "seed": 32,
+      "angle": 3,
+      "relative_Hvp_error": 2.7694870530195896e-11
+    },
+    {
+      "seed": 32,
+      "angle": 4,
+      "relative_Hvp_error": 6.104537605349274e-10
+    },
+    {
+      "seed": 32,
+      "angle": 5,
+      "relative_Hvp_error": 2.8595228319323367e-11
+    },
+    {
+      "seed": 32,
+      "angle": 6,
+      "relative_Hvp_error": 5.283592155527932e-12
+    },
+    {
+      "seed": 32,
+      "angle": 7,
+      "relative_Hvp_error": 7.724093312812544e-11
+    }
+  ]
+}

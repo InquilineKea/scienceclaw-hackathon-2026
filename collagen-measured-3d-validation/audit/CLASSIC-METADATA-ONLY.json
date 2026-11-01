@@ -1,0 +1,354 @@
+{
+  "1_ClassicSingleCellTFM_evaluated.zip": {
+    "entries": 3,
+    "compressed_bytes": 5335341,
+    "expanded_bytes": 6426403,
+    "first_names": [
+      "Pos004_S001_z{z}_ch{c00}_eval.saenopy",
+      "Pos007_S001_z{z}_ch{c00}_eval.saenopy",
+      "Pos008_S001_z{z}_ch{c00}_eval.saenopy"
+    ],
+    "suffix_counts": {
+      ".saenopy": 3
+    },
+    "inner_archives": [
+      {
+        "name": "Pos004_S001_z{z}_ch{c00}_eval.saenopy",
+        "member_count": 94,
+        "piv_headers": [
+          {
+            "name": "mesh_piv.npy",
+            "shape": [],
+            "dtype": "<U4",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0.npy",
+            "shape": [],
+            "dtype": "<U4",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0/nodes.npy",
+            "shape": [
+              14400,
+              3
+            ],
+            "dtype": "<f8",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0/tetrahedra.npy",
+            "shape": [
+              76176,
+              4
+            ],
+            "dtype": "<i8",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0/displacements_measured.npy",
+            "shape": [
+              14400,
+              3
+            ],
+            "dtype": "<f8",
+            "fortran_order": true,
+            "npy_version": [
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pos007_S001_z{z}_ch{c00}_eval.saenopy",
+        "member_count": 94,
+        "piv_headers": [
+          {
+            "name": "mesh_piv.npy",
+            "shape": [],
+            "dtype": "<U4",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0.npy",
+            "shape": [],
+            "dtype": "<U4",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0/nodes.npy",
+            "shape": [
+              14400,
+              3
+            ],
+            "dtype": "<f8",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0/tetrahedra.npy",
+            "shape": [
+              76176,
+              4
+            ],
+            "dtype": "<i8",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0/displacements_measured.npy",
+            "shape": [
+              14400,
+              3
+            ],
+            "dtype": "<f8",
+            "fortran_order": true,
+            "npy_version": [
+              1,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Pos008_S001_z{z}_ch{c00}_eval.saenopy",
+        "member_count": 94,
+        "piv_headers": [
+          {
+            "name": "mesh_piv.npy",
+            "shape": [],
+            "dtype": "<U4",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0.npy",
+            "shape": [],
+            "dtype": "<U4",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0/nodes.npy",
+            "shape": [
+              14400,
+              3
+            ],
+            "dtype": "<f8",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0/tetrahedra.npy",
+            "shape": [
+              76176,
+              4
+            ],
+            "dtype": "<i8",
+            "fortran_order": false,
+            "npy_version": [
+              1,
+              0
+            ]
+          },
+          {
+            "name": "mesh_piv/0/displacements_measured.npy",
+            "shape": [
+              14400,
+              3
+            ],
+            "dtype": "<f8",
+            "fortran_order": true,
+            "npy_version": [
+              1,
+              0
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "1_ClassicSingleCellTFM.zip": {
+    "entries": 6804,
+    "compressed_bytes": 816400958,
+    "expanded_bytes": 1778524143,
+    "first_names": [
+      "1_ClassicSingleCellTFM/",
+      "1_ClassicSingleCellTFM/Deformed/",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos008_S001ch2LUT.tif",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001.xml",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_Properties.xml",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z000_ch00.tif",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z000_ch01.tif",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z001_ch00.tif",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z001_ch01.tif",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z002_ch00.tif",
+      "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z002_ch01.tif"
+    ],
+    "suffix_counts": {
+      "": 5,
+      ".tif": 6786,
+      ".xml": 12,
+      ".txt": 1
+    },
+    "first_actual_stack_tiff_metadata": {
+      "file": "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z000_ch00.tif",
+      "byte_order": "II",
+      "magic": 42,
+      "first_ifd_offset": 262152,
+      "ifd_in_first_4096": false
+    },
+    "stack_counts_by_group": {
+      "Deformed/Pos004/ch00": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Deformed/Pos004/ch01": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Deformed/Pos007/ch00": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Deformed/Pos007/ch01": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Deformed/Pos008/ch00": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Deformed/Pos008/ch01": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Deformed/Pos004/ch02": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Deformed/Pos007/ch02": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Deformed/Pos008/ch02": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Relaxed/Pos004/ch00": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Relaxed/Pos004/ch01": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Relaxed/Pos007/ch00": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Relaxed/Pos007/ch01": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Relaxed/Pos008/ch00": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Relaxed/Pos008/ch01": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Relaxed/Pos004/ch02": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Relaxed/Pos007/ch02": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      },
+      "Relaxed/Pos008/ch02": {
+        "slices": 376,
+        "z_min": 0,
+        "z_max": 375,
+        "contiguous": true
+      }
+    }
+  }
+}

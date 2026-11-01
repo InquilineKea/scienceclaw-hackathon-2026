@@ -41,7 +41,7 @@ def attach_gag(spec: SystemSpec, lat: Lattice, mode: str, density: float, rng: n
         spec.k_gag = max(spec.k_gag, k_embed)
     spec.meta.update(gag_mode=mode, gag_density=density if mode in ("bridge", "sliding") else 0.0,
                      gag_links=int(gag.sum()))
-    return dict(gag=gag, k_g=np.where(gag, k_g, 0.0), slip=slip)
+    return {"gag": gag, "k_g": np.where(gag, k_g, 0.0), "slip": slip}
 
 
 class GAGBatch(Batch):
@@ -114,8 +114,8 @@ def loop_metrics(path, sig, n_half, n_cycles):
         peak1 = s[n_half - 1]
         peakN = s[(n_cycles - 1) * per + n_half - 1]
         amp = path[n_half - 1]
-        out.append(dict(diss_c1=diss[0], diss_last=diss[-1], peak_c1=peak1, peak_last=peakN,
-                        secant_c1=peak1 / amp, secant_last=peakN / amp,
-                        stiffness_retained=peakN / peak1 if peak1 else np.nan,
-                        residual_stress=s[-1], loss_ratio=diss[0] / max(0.5 * peak1 * amp, 1e-12)))
+        out.append({"diss_c1": diss[0], "diss_last": diss[-1], "peak_c1": peak1, "peak_last": peakN,
+                        "secant_c1": peak1 / amp, "secant_last": peakN / amp,
+                        "stiffness_retained": peakN / peak1 if peak1 else np.nan,
+                        "residual_stress": s[-1], "loss_ratio": diss[0] / max(0.5 * peak1 * amp, 1e-12)})
     return out

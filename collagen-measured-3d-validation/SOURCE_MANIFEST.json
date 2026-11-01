@@ -1,0 +1,287 @@
+{
+  "scope": "Explicit original source/derived-results export. Raw authors image assets, publisher spreadsheets, full article HTML and imported package source are not redistributed.",
+  "files": [
+    {
+      "path": "REPORT.md",
+      "source": "REPORT.md",
+      "bytes": 7886,
+      "sha256": "bbebc15f96f2b834c8dc8c61dd140e6fa9e158aec53b3b5cd7fadf498dd0b2a9"
+    },
+    {
+      "path": "SECURITY.md",
+      "source": "SECURITY.md",
+      "bytes": 653,
+      "sha256": "09311b2199631523f13ab352d0aa62c91aae68983d5c17762d3dd9f8e93cfec0"
+    },
+    {
+      "path": "PROTOCOL-DRAFT.md",
+      "source": "PROTOCOL-DRAFT.md",
+      "bytes": 19032,
+      "sha256": "c5391257a4d544fcc9bd8ca34852a59ed0b0b98c195de529ad18a462ba5b4fc0"
+    },
+    {
+      "path": "PROTOCOL-FROZEN.md",
+      "source": "PROTOCOL-FROZEN.md",
+      "bytes": 11332,
+      "sha256": "3106b86d710cae042433ab6aa3b33f6bd3d7599da40b62997a8e33e785215664"
+    },
+    {
+      "path": "FINAL-STATISTICAL-AUDIT.md",
+      "source": "FINAL-STATISTICAL-AUDIT.md",
+      "bytes": 7997,
+      "sha256": "e202bc4b449dbc4ba0c6254708dd464d5b2f134d951fc2d4b1729f0d9ddd77e9"
+    },
+    {
+      "path": "INPUT_HASHES.json",
+      "source": "INPUT_HASHES.json",
+      "bytes": 2259,
+      "sha256": "8369c9b39f9da16fe6e3360ade03c68c453c59e899dc678bb05911d9d50bbb59"
+    },
+    {
+      "path": "BULK-MODEL-FROZEN.json",
+      "source": "BULK-MODEL-FROZEN.json",
+      "bytes": 34441,
+      "sha256": "2865fa40b7dbed12b8d2db67b7e2ffe5959deab2fb62fbacf93b6d333c9026bf"
+    },
+    {
+      "path": "SPATIAL-MODEL-FROZEN.json",
+      "source": "SPATIAL-MODEL-FROZEN.json",
+      "bytes": 10835,
+      "sha256": "164103801e88400d54b1163ee18e1525fcfc00c4f67d64b4e5ae8cc7a072484a"
+    },
+    {
+      "path": "bulk-results.json",
+      "source": "bulk-results.json",
+      "bytes": 52409,
+      "sha256": "af60e2a099f513b2968aa6b3cd1eded7bd7501611f00ff7b95da772c3a161d39"
+    },
+    {
+      "path": "Pos004-results.json",
+      "source": "Pos004-results.json",
+      "bytes": 10988,
+      "sha256": "d49198166e70ee34494be961b665f97b6e93f9d79826c2880bc3db4e387a6de9"
+    },
+    {
+      "path": "Pos007-results.json",
+      "source": "Pos007-results.json",
+      "bytes": 10988,
+      "sha256": "4438876960e3d72ec02b0f29212764940f9eef82e415f8f32e0e6846b0c83e9c"
+    },
+    {
+      "path": "Pos008-results.json",
+      "source": "Pos008-results.json",
+      "bytes": 7331,
+      "sha256": "a4b20528692c5cf326bd0314d4633710a9e5b68b96b8d800f52655e0f05ad277"
+    },
+    {
+      "path": "strain-support-diagnostic.json",
+      "source": "strain-support-diagnostic.json",
+      "bytes": 195360,
+      "sha256": "bc5d8ccafa8019bb703637352d90ed2b705b2fff4e7f3ef88623f2f2e9bd61a9"
+    },
+    {
+      "path": "source/read-data.py",
+      "source": "read-data.py",
+      "bytes": 2791,
+      "sha256": "56853abe647d80193c327046e291f0e914d749cfb661ef3574e152acf269d73c"
+    },
+    {
+      "path": "source/extract-classic.py",
+      "source": "extract-classic.py",
+      "bytes": 2209,
+      "sha256": "5128611ce2e0b7f7933e1547263c6870266f48bdae1426da305412a32cb68a83"
+    },
+    {
+      "path": "source/read-rheology.py",
+      "source": "read-rheology.py",
+      "bytes": 1565,
+      "sha256": "79371aff504389a28dc68eab2d1ef1092f0068948677ec24536fba790b6f2f29"
+    },
+    {
+      "path": "source/inspect-images.py",
+      "source": "inspect-images.py",
+      "bytes": 2175,
+      "sha256": "d81ba6ddef014e406a9da9ac5d2a82fdb16a1f87977e8d211465204e3471c8e7"
+    },
+    {
+      "path": "source/freeze-spatial.py",
+      "source": "freeze-spatial.py",
+      "bytes": 3813,
+      "sha256": "bf961187ac26fee08996191f39983655aedf926ac283671b6e3b41b6c2607c7f"
+    },
+    {
+      "path": "source/purge-mask-supports.py",
+      "source": "purge-mask-supports.py",
+      "bytes": 1622,
+      "sha256": "7db12d97e35c7d795f1da1a4c7fc06259868526cb740b5b391cae36958779c16"
+    },
+    {
+      "path": "source/bulk-validation.mjs",
+      "source": "bulk-validation.mjs",
+      "bytes": 4749,
+      "sha256": "c5a9858ab16f60efb2890ae0ea14155b40108663f816e239ed6da7b0e29dfbe9"
+    },
+    {
+      "path": "source/linear-fe.mjs",
+      "source": "linear-fe.mjs",
+      "bytes": 4837,
+      "sha256": "25a1683c95bd81506f24ab4c74dd6f7a76fdee3b7adb9b15abad6485decdb09e"
+    },
+    {
+      "path": "source/spatial-validation.mjs",
+      "source": "spatial-validation.mjs",
+      "bytes": 5521,
+      "sha256": "1f5c3430dac205cd02de2bc3e2e6269f5e668552bcaa3eb4001ca249df9aa5b0"
+    },
+    {
+      "path": "source/check-fe.mjs",
+      "source": "check-fe.mjs",
+      "bytes": 2328,
+      "sha256": "ebb866fce080f3aa312ede6ace8ef8b727c0773ffcad65b431dc21cd0c75151f"
+    },
+    {
+      "path": "source/check-quadrature.mjs",
+      "source": "check-quadrature.mjs",
+      "bytes": 1333,
+      "sha256": "e1b2c8d5b73db66aa2e695cf3315ea3a3437f491b1b37a6e926fff3f0ef2d015"
+    },
+    {
+      "path": "source/strain-support-diagnostic.mjs",
+      "source": "strain-support-diagnostic.mjs",
+      "bytes": 2736,
+      "sha256": "45786ec398dd317f41df913940e7b6897d2050d93692b07f838b49a9040299f6"
+    },
+    {
+      "path": "source/make-figures.py",
+      "source": "make-figures.py",
+      "bytes": 5425,
+      "sha256": "9297018ba1347469844b804a650ddbbf7ef0c641c1d93bea22bb27dc3986fcc8"
+    },
+    {
+      "path": "source/make-animation.py",
+      "source": "make-animation.py",
+      "bytes": 2114,
+      "sha256": "303844db9dd90fd88b94f7f6e9f0c9c5ebd422bac79f2cc0ea219abaf0c7680c"
+    },
+    {
+      "path": "source/gif-helpers.py",
+      "source": "gif-helpers.py",
+      "bytes": 4076,
+      "sha256": "4d9935f78c6754ae97d410ad7364f59d7e7d67370b35aa1cb1aaa6a201b28d88"
+    },
+    {
+      "path": "source/build-report.py",
+      "source": "build-report.py",
+      "bytes": 9877,
+      "sha256": "57a7c108ce9d09ea8f79b9e8aaea97c6703238b0ed9a7921739951f4c55a8723"
+    },
+    {
+      "path": "audit/CLASSIC-AUDITED-SOURCE-HASHES.json",
+      "source": "audit/CLASSIC-AUDITED-SOURCE-HASHES.json",
+      "bytes": 416,
+      "sha256": "59074391a586627e5779bd90a8bc8653dfd1d7f2af0e816d26d53315e0e738ef"
+    },
+    {
+      "path": "audit/CLASSIC-METADATA-ONLY.json",
+      "source": "audit/CLASSIC-METADATA-ONLY.json",
+      "bytes": 8584,
+      "sha256": "f6c26828dda09e9d6c88464b44ca4768787dc8354eff6c96ab303fd5349071b5"
+    },
+    {
+      "path": "audit/CLASSIC-PIV-GEOMETRY-ONLY.json",
+      "source": "audit/CLASSIC-PIV-GEOMETRY-ONLY.json",
+      "bytes": 2558,
+      "sha256": "8631d5bfbb4251081c616433136d28add8e4fe0936eb7611629ce42c2be5ce8b"
+    },
+    {
+      "path": "audit/CLASSIC-TIFF-TAGS.json",
+      "source": "audit/CLASSIC-TIFF-TAGS.json",
+      "bytes": 3644,
+      "sha256": "960a2cfcf3cbefdd6c0992f752db7148347589cf4f9e9b15452ae739ca4f7a60"
+    },
+    {
+      "path": "audit/FE-CHECKS.json",
+      "source": "audit/FE-CHECKS.json",
+      "bytes": 1233,
+      "sha256": "818d28c34f8f4fa2fb84d37a7bf335bff35b26da8458b6b84f1906805e94f5aa"
+    },
+    {
+      "path": "audit/FORWARD-MECHANICS-AND-READER-REVIEW.md",
+      "source": "audit/FORWARD-MECHANICS-AND-READER-REVIEW.md",
+      "bytes": 10928,
+      "sha256": "c721c59fb31dcc553bf6294a1c67a9adfa367acceac9147b78745fe9bb9ec135"
+    },
+    {
+      "path": "audit/INDEPENDENT-FE-READBACK.json",
+      "source": "audit/INDEPENDENT-FE-READBACK.json",
+      "bytes": 6176,
+      "sha256": "4f87dd6d3b6802109ac7a594467c83f5d3ff385715071f3a5c930f925775e407"
+    },
+    {
+      "path": "audit/POST-SCORE-FE-AUDIT.md",
+      "source": "audit/POST-SCORE-FE-AUDIT.md",
+      "bytes": 7450,
+      "sha256": "cbcea9c6a41edca187e3a572d1da19fc64885a55622c2c4a31fe51bd4fd71b63"
+    },
+    {
+      "path": "audit/QUADRATURE.json",
+      "source": "audit/QUADRATURE.json",
+      "bytes": 29759,
+      "sha256": "a262daa860d9f14940c9584ed4ec6d36eb3d41ce760dbe3ee138f1846f53cefa"
+    },
+    {
+      "path": "audit/independent-fe-readback.py",
+      "source": "audit/independent-fe-readback.py",
+      "bytes": 5020,
+      "sha256": "4982739fd5b8a4f76bd5aedfb44ba6bcd799e6a14a255e898d8cabca41031eef"
+    },
+    {
+      "path": "evidence/OPEN-DATA-READINESS.md",
+      "source": "evidence/OPEN-DATA-READINESS.md",
+      "bytes": 12085,
+      "sha256": "5e8312e1f8329e8a61811631de2c1e6cb97a92c3fd1b838dcfec7df95e6ed5f3"
+    },
+    {
+      "path": "evidence/CLASSIC-GEOMETRY-INVENTORY.json",
+      "source": "evidence/CLASSIC-GEOMETRY-INVENTORY.json",
+      "bytes": 1610,
+      "sha256": "1630096a7329118346a9aac922c93174fca081d1c9ed79f618b537cd3c151dcc"
+    },
+    {
+      "path": "evidence/CLASSIC-IMAGE-INVENTORY.json",
+      "source": "evidence/CLASSIC-IMAGE-INVENTORY.json",
+      "bytes": 812653,
+      "sha256": "dc52aae8331a0fc4d593b6e0b2b3e876735050959c86e6cf2150d4262c9c864d"
+    },
+    {
+      "path": "evidence/PIV-GEOMETRY-INVENTORY.json",
+      "source": "evidence/PIV-GEOMETRY-INVENTORY.json",
+      "bytes": 558,
+      "sha256": "62529c2ea4015395b54f6fab5551778ef24b97d60b70450bcc001dc668fe4b03"
+    },
+    {
+      "path": "evidence/saenopy-organoid-inventory.json",
+      "source": "evidence/saenopy-organoid-inventory.json",
+      "bytes": 10176,
+      "sha256": "8c091113b663bdcc4336d84153a875e1be1eee4819c677854a2d6477effcfcd8"
+    },
+    {
+      "path": "masks/Pos004.json",
+      "source": "data/Pos004/frozen-mask.json",
+      "bytes": 458964,
+      "sha256": "7f7565019b85df8f56d65be9c49f9404b1131fc9829410bd7e4cd01e4fbd671b"
+    },
+    {
+      "path": "masks/Pos007.json",
+      "source": "data/Pos007/frozen-mask.json",
+      "bytes": 456199,
+      "sha256": "0c8d4bba8c83f9f3f169d4730ec56f68ce05df5975e11ea0566ad1d058db3146"
+    },
+    {
+      "path": "masks/Pos008.json",
+      "source": "data/Pos008/frozen-mask.json",
+      "bytes": 459848,
+      "sha256": "5cff4fa049869321213697341502284133b11d511a8bc6c920f402ed4710a303"
+    }
+  ]
+}

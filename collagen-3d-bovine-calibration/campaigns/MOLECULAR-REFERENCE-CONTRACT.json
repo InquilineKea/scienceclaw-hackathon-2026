@@ -1,0 +1,32 @@
+{
+  "status": "prospective; no new computation launched",
+  "primary_observable": "Paired linked-minus-unlinked symmetric stretch/rotation energy Hessian in a shared, explicitly specified reference coordinate system and environment",
+  "chemistry": {
+    "link": "Tyr4-Tyr6 CE2-CE2 intramolecular telopeptide loop hypothesis",
+    "removed_atoms": "two HE2 hydrogens",
+    "phenolic_hydrogens": "retained neutral phenols",
+    "caps": "ACE/CT3",
+    "net_solute_charge_e": -1,
+    "limitation": "Neither measured site assignment nor validated intermolecular network junction"
+  },
+  "reference_benchmarks": [
+    "Independent electronic-structure inter-ring torsion profile with documented method, convergence, solvent treatment and chemical fragment/cap sensitivity",
+    "Coupled stretch/rotation energies and generalized forces at the same coordinates as the classical potential",
+    "Common reference conformation and a separately defined common ensemble; distinguish fixed-coordinate chemical effect from relaxed ensemble differences",
+    "Finite-difference energy/force and mixed derivative symmetry checks across multiple step sizes",
+    "Hamiltonian completeness, restored omitted solute bond terms and consistent treatment of constrained-water tangent forces"
+  ],
+  "candidate_local_fit_window": {"relative_stretch": [-0.01, 0.01], "rotation_degrees": [-5, 5], "use": "Existing local-law window; not an identified physical range of linearity"},
+  "acceptance": "Prespecify tolerances from independent reference precision, numerical convergence and ensemble variability. Do not select tolerances or reference states to obtain a preferred network sign.",
+  "current_stop_gate": "Global wet energy/force consistency unresolved; 0/3 existing hydrated paired laws admissible. No hydrated coefficient can be transferred as calibrated while this gate fails.",
+  "homogenization": [
+    "Map molecular generalized coordinates to fiber/junction coordinates with the actual Jacobian and units",
+    "Retain prestress and geometric terms in T-transpose H T plus the coordinate-map curvature contribution",
+    "Use series compliance or parallel stiffness averaging only for justified load sharing; ratios of medians are not homogenization",
+    "Retain joint molecular orientation and geometry distributions and propagate mapping uncertainty",
+    "Audit local network excursions against the fit window; explicitly label extrapolation"
+  ],
+  "network_controls": ["identical diagonal coefficients with mixed term zero versus retained", "coupled unlinked versus coupled linked", "raw response beside matched-initial-stiffness isolation control", "same network seed, geometry, mass, volume, connectivity and selected placements"],
+  "replication": "Short-trajectory frames are correlated; summarize within replica and network seed before combining. Accepted molecular pairs and common accepted network seed intersections must be counted explicitly.",
+  "scientific_validation": false
+}

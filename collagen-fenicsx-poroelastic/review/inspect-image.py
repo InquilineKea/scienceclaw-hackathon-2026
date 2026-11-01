@@ -1,7 +1,10 @@
-import subprocess,json,hashlib
+import hashlib
+import json
+import subprocess
 from pathlib import Path
+
 root='https://ghcr.io/v2/fenics/dolfinx/dolfinx/'
-def curl(url,headers=[]):return subprocess.check_output(['/usr/bin/curl','-fsSL',*sum((['-H',h] for h in headers),[]),url])
+def curl(url,headers=None):return subprocess.check_output(['/usr/bin/curl','-fsSL',*sum((['-H',h] for h in (headers or ())),[]),url])
 t=json.loads(curl('https://ghcr.io/token?service=ghcr.io&scope=repository:fenics/dolfinx/dolfinx:pull'))['token'];headers=['Authorization: Bearer '+t,'Accept: application/vnd.oci.image.index.v1+json,application/vnd.docker.distribution.manifest.list.v2+json,application/vnd.oci.image.manifest.v1+json,application/vnd.docker.distribution.manifest.v2+json']
 b=curl(root+'manifests/v0.10.0-r1',headers);index=json.loads(b);Path('image-index.json').write_bytes(b)
 if 'manifests' in index:

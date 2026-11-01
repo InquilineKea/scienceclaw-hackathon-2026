@@ -1,7 +1,14 @@
 """Recover the public data/source ZIP from the supplement HTML; no network or execution."""
+import base64
+import hashlib
+import io
+import re
+import sys
+import zipfile
 from html.parser import HTMLParser
 from pathlib import Path
-import base64,hashlib,re,sys,zipfile,io
+
+
 class Codes(HTMLParser):
     def __init__(self):
         super().__init__(convert_charrefs=True);self.active=False;self.parts=[];self.blocks=[]
@@ -14,7 +21,7 @@ class Codes(HTMLParser):
 def recover(html):
     parser=Codes();parser.feed(html)
     for block in parser.blocks:
-        m=re.fullmatch(r'FRACTURE_ATLAS_ARCHIVE_SHA256: ([0-9a-f]{64})\s+BASE64_BEGIN\s+(.+?)\s+BASE64_END\s*',block,re.S)
+        m=re.fullmatch(r'FRACTURE_ATLAS_ARCHIVE_SHA256: ([0-9a-f]{64})\s+BASE64_BEGIN\s+(.+?)\s+BASE64_END\s*',block,re.DOTALL)
         if m:
             payload=base64.b64decode(re.sub(r'\s','',m[2]),validate=True)
             assert hashlib.sha256(payload).hexdigest()==m[1],'Archive checksum mismatch'

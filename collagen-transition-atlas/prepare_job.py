@@ -1,7 +1,16 @@
 #!/usr/bin/env python3
 """Prepare an exclusive, reproducible remote job input using only the stdlib."""
+import argparse
+import ast
+import base64
+import hashlib
+import io
+import json
+import re
+import zipfile
 from pathlib import Path
-import argparse,io,zipfile,json,base64,hashlib,ast,re
+
+
 def prepare(dest,revision):
     if not re.fullmatch(r'v[1-9][0-9]*',revision):raise ValueError('Revision must be v followed by a positive integer')
     source=Path(__file__).resolve().parent;dest=Path(dest);dest.mkdir(parents=True,exist_ok=False)

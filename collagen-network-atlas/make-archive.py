@@ -1,7 +1,11 @@
 #!/usr/bin/env python3
 """Package one already finished run; never replace an existing archive."""
+import argparse
+import hashlib
+import json
+import zipfile
 from pathlib import Path
-import argparse,hashlib,json,zipfile
+
 root=Path(__file__).resolve().parent
 ap=argparse.ArgumentParser(description=__doc__);ap.add_argument('run_id');args=ap.parse_args()
 run=(root/'runs'/args.run_id).resolve()

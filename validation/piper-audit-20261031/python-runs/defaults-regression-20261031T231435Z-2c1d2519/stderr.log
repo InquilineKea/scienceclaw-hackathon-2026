@@ -1,0 +1,12 @@
+test_default_motor_clutch_before_after (__main__.Regression) ... ok
+test_default_values_preserved (__main__.Regression) ... ok
+test_explicit_objects_preserved (__main__.Regression) ... ok
+test_heart_before_after (__main__.Regression) ... ok
+test_original_shared_defaults_reproduced (__main__.Regression) ... ok
+test_patched_instance_isolation (__main__.Regression) ... ok
+test_short_motor_clutch_before_after (__main__.Regression) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.568s
+
+OK

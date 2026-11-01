@@ -1,6 +1,11 @@
 """Offline tests with disposable local Git repositories; no account credentials."""
+import importlib.util
+import json
+import subprocess
+import tempfile
+import unittest
 from pathlib import Path
-import importlib.util,sys,tempfile,subprocess,json,unittest
+
 spec=importlib.util.spec_from_file_location('uploader',Path(__file__).with_name('upload-run.py'))
 u=importlib.util.module_from_spec(spec);spec.loader.exec_module(u)
 

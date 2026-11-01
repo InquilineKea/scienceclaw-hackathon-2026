@@ -1,0 +1,44 @@
+{
+  "amendment_sha256": "f310ee0dc2b2cbf057ccb98e67a2058693306bc5ec38c37a7e265cf8c3a46bd0",
+  "bootstrap_sha256": "49afe5c32cf1b34b57a3d8bb9a371bb02360619c49ecd92ff81ed2d7e4e23a82",
+  "members": [
+    {
+      "name": "cpu-solver.py",
+      "bytes": 9164,
+      "sha256": "2c553fbd63b847dcfbc1dcdb6bda53381da8653dde6dc7a3be0222c5508d4c33",
+      "local_exists": true,
+      "local_matches": true,
+      "syntax_checked": true
+    },
+    {
+      "name": "models.json",
+      "bytes": 2561122,
+      "sha256": "32df14e3ba4525b0326f115756540795d26a8825c9fe2c9ece806cd57a39d854",
+      "local_exists": true,
+      "local_matches": true
+    },
+    {
+      "name": "true_hessian_check.py",
+      "bytes": 5532,
+      "sha256": "4d5f4fb0ba074bd1e4bd919190d7e442cbc49f6792b5d272399edb1c86e5959f",
+      "local_exists": true,
+      "local_matches": true,
+      "syntax_checked": true
+    },
+    {
+      "name": "placement-controls.json",
+      "bytes": 3814,
+      "sha256": "67bf1d34531004db9ade707d32f7cca60bb133bd340ec98bc27b1f9a83239e70",
+      "local_exists": true,
+      "local_matches": true
+    },
+    {
+      "name": "amplitude-calibration-final.json",
+      "bytes": 9667,
+      "sha256": "4cb0d684a56a922f4a26b856fa0f3d7c7b53040cf6895609931541279b2df6a3",
+      "local_exists": true,
+      "local_matches": true
+    }
+  ],
+  "all_local_matches": true
+}

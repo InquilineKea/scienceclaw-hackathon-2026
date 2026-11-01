@@ -1,0 +1,227 @@
+[
+  {
+    "file": "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z000_ch00.tif",
+    "tags": {
+      "256": [
+        512
+      ],
+      "257": [
+        512
+      ],
+      "258": [
+        8
+      ],
+      "259": [
+        1
+      ],
+      "262": [
+        1
+      ],
+      "270": null,
+      "273": {
+        "type": 4,
+        "count": 4,
+        "offset": 262374
+      },
+      "277": [
+        1
+      ],
+      "278": [
+        128
+      ],
+      "279": {
+        "type": 4,
+        "count": 4,
+        "offset": 262390
+      },
+      "282": {
+        "type": 5,
+        "count": 1,
+        "offset": 262406
+      },
+      "283": {
+        "type": 5,
+        "count": 1,
+        "offset": 262414
+      },
+      "284": [
+        1
+      ],
+      "296": [
+        3
+      ],
+      "305": {
+        "type": 2,
+        "count": 7,
+        "offset": 262422
+      },
+      "306": {
+        "type": 2,
+        "count": 20,
+        "offset": 262430
+      },
+      "315": {
+        "type": 2,
+        "count": 8,
+        "offset": 262450
+      },
+      "316": {
+        "type": 2,
+        "count": 58,
+        "offset": 262458
+      }
+    },
+    "next_ifd": 0,
+    "read_only_header_metadata": true
+  },
+  {
+    "file": "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z000_ch01.tif",
+    "tags": {
+      "256": [
+        512
+      ],
+      "257": [
+        512
+      ],
+      "258": [
+        8
+      ],
+      "259": [
+        1
+      ],
+      "262": [
+        1
+      ],
+      "270": null,
+      "273": {
+        "type": 4,
+        "count": 4,
+        "offset": 262374
+      },
+      "277": [
+        1
+      ],
+      "278": [
+        128
+      ],
+      "279": {
+        "type": 4,
+        "count": 4,
+        "offset": 262390
+      },
+      "282": {
+        "type": 5,
+        "count": 1,
+        "offset": 262406
+      },
+      "283": {
+        "type": 5,
+        "count": 1,
+        "offset": 262414
+      },
+      "284": [
+        1
+      ],
+      "296": [
+        3
+      ],
+      "305": {
+        "type": 2,
+        "count": 7,
+        "offset": 262422
+      },
+      "306": {
+        "type": 2,
+        "count": 20,
+        "offset": 262430
+      },
+      "315": {
+        "type": 2,
+        "count": 8,
+        "offset": 262450
+      },
+      "316": {
+        "type": 2,
+        "count": 58,
+        "offset": 262458
+      }
+    },
+    "next_ifd": 0,
+    "read_only_header_metadata": true
+  },
+  {
+    "file": "1_ClassicSingleCellTFM/Deformed/Mark_and_Find_001/Pos004_S001_z000_ch02.tif",
+    "tags": {
+      "256": [
+        512
+      ],
+      "257": [
+        512
+      ],
+      "258": [
+        8
+      ],
+      "259": [
+        1
+      ],
+      "262": [
+        1
+      ],
+      "270": null,
+      "273": {
+        "type": 4,
+        "count": 4,
+        "offset": 262374
+      },
+      "277": [
+        1
+      ],
+      "278": [
+        128
+      ],
+      "279": {
+        "type": 4,
+        "count": 4,
+        "offset": 262390
+      },
+      "282": {
+        "type": 5,
+        "count": 1,
+        "offset": 262406
+      },
+      "283": {
+        "type": 5,
+        "count": 1,
+        "offset": 262414
+      },
+      "284": [
+        1
+      ],
+      "296": [
+        3
+      ],
+      "305": {
+        "type": 2,
+        "count": 7,
+        "offset": 262422
+      },
+      "306": {
+        "type": 2,
+        "count": 20,
+        "offset": 262430
+      },
+      "315": {
+        "type": 2,
+        "count": 8,
+        "offset": 262450
+      },
+      "316": {
+        "type": 2,
+        "count": 58,
+        "offset": 262458
+      }
+    },
+    "next_ifd": 0,
+    "read_only_header_metadata": true
+  }
+]

@@ -199,8 +199,8 @@ def analyse(jobs, energies, strains):
         coef = np.polyfit(L[near], e[near], 2)
         k[jb["name"]] = 2 * coef[0]
         Fpk[jb["name"]] = float(np.max(np.gradient(e, L)))
-        out[jb["name"]] = dict(L0_A=jb["L0"], k_eV_A2=2 * coef[0], peak_force_eV_A=Fpk[jb["name"]],
-                               E_eV=e.tolist(), L_A=L.tolist(), smiles=FRAGMENTS[jb["name"]])
+        out[jb["name"]] = {"L0_A": jb["L0"], "k_eV_A2": 2 * coef[0], "peak_force_eV_A": Fpk[jb["name"]],
+                               "E_eV": e.tolist(), "L_A": L.tolist(), "smiles": FRAGMENTS[jb["name"]]}
     ref = k.get("pyridinoline") or np.median(list(k.values()))
     for name in out:
         out[name]["k_rel"] = float(k[name] / ref)
@@ -227,7 +227,7 @@ def main():
     for name, smi in FRAGMENTS.items():
         atoms, anchors = build_atoms(smi, seed=args.seed)
         imgs, L0 = stretched_images(atoms, anchors, strains)
-        jobs.append(dict(name=name, images=imgs, anchors=anchors, L0=L0))
+        jobs.append({"name": name, "images": imgs, "anchors": anchors, "L0": L0})
     n_img = sum(len(j["images"]) for j in jobs)
     per = args.chem_per_batch or len(jobs)
     print(f"{len(jobs)} chemistries x {len(strains)} strains = {n_img} systems, {per} chemistries per GPU batch")
@@ -242,12 +242,12 @@ def main():
         E = np.concatenate([E, e])
         steps, fmax = max(steps, s), max(fmax, f)
     res = analyse(jobs, E, strains)
-    payload = dict(
-        source=f"{args.backend}:{args.model}", seed=args.seed, seconds=time.time() - t0, steps=steps, final_fmax=fmax,
-        caveats=["non-reactive MLIP: peak force is a stiffness proxy, not a rupture force",
+    payload = {
+        "source": f"{args.backend}:{args.model}", "seed": args.seed, "seconds": time.time() - t0, "steps": steps, "final_fmax": fmax,
+        "caveats": ["non-reactive MLIP: peak force is a stiffness proxy, not a rupture force",
                  "minimal neutral fragments, not crosslinked triple helices",
                  "k_rel is relative to the pyridinoline fragment"],
-        crosslinks=res)
+        "crosslinks": res}
     out = Path(args.out)
     out.parent.mkdir(exist_ok=True)
     out.write_text(json.dumps(payload, indent=2))

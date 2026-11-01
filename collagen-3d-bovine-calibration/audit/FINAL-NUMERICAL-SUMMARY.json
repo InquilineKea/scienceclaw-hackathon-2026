@@ -1,0 +1,1574 @@
+{
+  "source_sha256": "4a7635bd206fe6628d4a4c25c6dfd636d3d943dd623275d0b5bfbf9a9ee9e4c2",
+  "inventory_complete": true,
+  "scientific_validation": false,
+  "counts": {
+    "expected_final_cases": 160,
+    "final_cases_loaded": 160,
+    "missing_final_cases": 0,
+    "ignored_partial_files": 106,
+    "explicit_or_parse_errors": 0,
+    "duplicate_case_keys": 0,
+    "unexpected_files": 0,
+    "expected_resolution_pairs": 80,
+    "complete_resolution_pairs": 80,
+    "fine_cases_loaded": 80,
+    "completed_trajectories": 160,
+    "force_qualified_cases": 160,
+    "energy_qualified_cases": 160,
+    "resolved_peak_cases": 29,
+    "right_censored_cases": 69,
+    "numerical_qualified_strict_pairs": 0,
+    "numerical_qualified_conditional_pairs": 58,
+    "fracture_endpoint_qualified_strict_pairs": 0,
+    "fracture_endpoint_qualified_conditional_pairs": 3
+  },
+  "gates": {
+    "relative_step_limit": 0.05,
+    "relative_energy_limit": 0.02,
+    "free_gradient_limit_model_units": 1e-07,
+    "cap_shear": 0.5,
+    "fine_stability_labels": [
+      "initial_state",
+      "peak_state",
+      "terminal_state"
+    ],
+    "coarse_steps": 25,
+    "fine_steps": 50
+  },
+  "selected_state_classes": {
+    "no_resolved_negative_curvature_marginal": 145,
+    "positive_curvature_at_checked_state": 95
+  },
+  "endpoint_counts": {
+    "25": {
+      "right_censored_maximum_at_cap": 35,
+      "peak_not_resolved_by_postpeak_criterion": 34,
+      "resolved_peak_and_postpeak_drop": 11
+    },
+    "50": {
+      "peak_not_resolved_by_postpeak_criterion": 28,
+      "resolved_peak_and_postpeak_drop": 18,
+      "right_censored_maximum_at_cap": 34
+    }
+  },
+  "damage_resolution": {
+    "resolution_pairs_with_damage_comparison": 80,
+    "absolute_damage_fraction_step_difference_range": [
+      0.0,
+      0.0151898734177216
+    ],
+    "mean_absolute_damage_fraction_step_difference": 0.002117949693005049,
+    "absolute_damage_percentage_point_step_difference_range": [
+      0.0,
+      1.51898734177216
+    ],
+    "exact_equal_damage_fraction_pairs": 46,
+    "placement_direction_counts": {
+      "opposite_directions_resolution_sensitive": 4,
+      "same_nonzero_direction": 10,
+      "both_zero_no_rank_difference": 14,
+      "zero_vs_nonzero_resolution_sensitive": 4
+    },
+    "precision_tolerance_prespecified": false,
+    "interpretation": "Stress/work5% gates do not establish damage-fraction precision. Ranking tiers additionally require the clustered-minus-distributed contrast direction to agree at both resolutions; zero/zero means no rank difference. No new numerical tolerance was selected."
+  },
+  "placement_comparisons": [
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 0.0012591507288347292,
+      "seed_mean_difference_range": [
+        -0.0012345679012346067,
+        0.0037974683544304
+      ],
+      "mean_of_seed_mean_ratios": 1.0956890331890334,
+      "seed_mean_ratio_range": [
+        0.9444444444444428,
+        1.2454545454545454
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": -1.5698968638004063,
+      "seed_mean_difference_range": [
+        -8.405504219950888,
+        4.236485189962799
+      ],
+      "mean_of_seed_mean_ratios": 0.9783779816334874,
+      "seed_mean_ratio_range": [
+        0.8744782669669845,
+        1.0641723419913884
+      ],
+      "seed_signs": {
+        "positive": 1,
+        "negative": 3,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 1,
+      "paired_angle_records": 3,
+      "mean_of_seed_mean_differences": -0.6309212744437787,
+      "seed_mean_difference_range": [
+        -0.6309212744437787,
+        -0.6309212744437787
+      ],
+      "mean_of_seed_mean_ratios": 0.9908234358614822,
+      "seed_mean_ratio_range": [
+        0.9908234358614822,
+        0.9908234358614822
+      ],
+      "seed_signs": {
+        "positive": 0,
+        "negative": 1,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": -0.0956212216178236,
+      "seed_mean_difference_range": [
+        -0.4955734534745888,
+        0.10069497249289139
+      ],
+      "mean_of_seed_mean_ratios": 0.9924167021540515,
+      "seed_mean_ratio_range": [
+        0.9608465205063819,
+        1.009057735605895
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 1,
+      "paired_angle_records": 3,
+      "mean_of_seed_mean_differences": -0.000720170487642946,
+      "seed_mean_difference_range": [
+        -0.000720170487642946,
+        -0.000720170487642946
+      ],
+      "mean_of_seed_mean_ratios": 0.9991442733291157,
+      "seed_mean_ratio_range": [
+        0.9991442733291157,
+        0.9991442733291157
+      ],
+      "seed_signs": {
+        "positive": 0,
+        "negative": 1,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 5.007451621634462e-05,
+      "seed_mean_difference_range": [
+        -0.0060975609756097615,
+        0.005063291139240533
+      ],
+      "mean_of_seed_mean_ratios": 1.0590097402597416,
+      "seed_mean_ratio_range": [
+        0.7727272727272727,
+        1.4000000000000035
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 1,
+        "zero": 1
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 1.6095417153670502,
+      "seed_mean_difference_range": [
+        -5.16228171166949,
+        12.338081284671865
+      ],
+      "mean_of_seed_mean_ratios": 1.0291998409769594,
+      "seed_mean_ratio_range": [
+        0.9331749824977811,
+        1.1898953907942174
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 2,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": -0.006185267687357721,
+      "seed_mean_difference_range": [
+        -0.1657255406942273,
+        0.2598430415843431
+      ],
+      "mean_of_seed_mean_ratios": 1.0009789497343153,
+      "seed_mean_ratio_range": [
+        0.9868841312865001,
+        1.0243118885258775
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 2,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 0.0003086419753086378,
+      "seed_mean_difference_range": [
+        0.0,
+        0.0012345679012345512
+      ],
+      "mean_of_seed_mean_ratios": 1.0,
+      "seed_mean_ratio_range": [
+        1.0,
+        1.0
+      ],
+      "seed_signs": {
+        "positive": 1,
+        "negative": 0,
+        "zero": 3
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 1.2778859584815514,
+      "seed_mean_difference_range": [
+        -0.9241623684181874,
+        3.4654828777664193
+      ],
+      "mean_of_seed_mean_ratios": 1.0125244661008526,
+      "seed_mean_ratio_range": [
+        0.9922063492321911,
+        1.033951190585671
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 0.025025295118801694,
+      "seed_mean_difference_range": [
+        -0.2644717232959408,
+        0.40852278412861054
+      ],
+      "mean_of_seed_mean_ratios": 1.0026478095632716,
+      "seed_mean_ratio_range": [
+        0.9846777016931447,
+        1.0256578651738002
+      ],
+      "seed_signs": {
+        "positive": 1,
+        "negative": 3,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 0.0003086419753086378,
+      "seed_mean_difference_range": [
+        0.0,
+        0.0012345679012345512
+      ],
+      "mean_of_seed_mean_ratios": 1.0,
+      "seed_mean_ratio_range": [
+        1.0,
+        1.0
+      ],
+      "seed_signs": {
+        "positive": 1,
+        "negative": 0,
+        "zero": 3
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": -0.6478483742556005,
+      "seed_mean_difference_range": [
+        -3.807946615121061,
+        0.990264464358475
+      ],
+      "mean_of_seed_mean_ratios": 0.9947857314607862,
+      "seed_mean_ratio_range": [
+        0.9699168451856892,
+        1.0084481608280422
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 0.017389137093822837,
+      "seed_mean_difference_range": [
+        -0.3114993697768176,
+        0.3624132290323274
+      ],
+      "mean_of_seed_mean_ratios": 1.001187156966104,
+      "seed_mean_ratio_range": [
+        0.9827526877442379,
+        1.0211276160486742
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": false,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "descriptive",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Descriptive output only"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 2,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 2,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 1,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 2,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 1,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 1,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 1,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 1,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 2,
+      "paired_angle_records": 6,
+      "mean_of_seed_mean_differences": 0.0006172839506172756,
+      "seed_mean_difference_range": [
+        0.0,
+        0.0012345679012345512
+      ],
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 1,
+        "negative": 0,
+        "zero": 1
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 2,
+      "paired_angle_records": 6,
+      "mean_of_seed_mean_differences": -0.6441208124120301,
+      "seed_mean_difference_range": [
+        -0.9241623684181874,
+        -0.3640792564058728
+      ],
+      "mean_of_seed_mean_ratios": 0.9946626919663526,
+      "seed_mean_ratio_range": [
+        0.9922063492321911,
+        0.9971190347005141
+      ],
+      "seed_signs": {
+        "positive": 0,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 2,
+      "paired_angle_records": 6,
+      "mean_of_seed_mean_differences": -0.14280350428701105,
+      "seed_mean_difference_range": [
+        -0.2644717232959408,
+        -0.021135285278081284
+      ],
+      "mean_of_seed_mean_ratios": 0.9917376050935074,
+      "seed_mean_ratio_range": [
+        0.9846777016931447,
+        0.9987975084938701
+      ],
+      "seed_signs": {
+        "positive": 0,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 0.0003086419753086378,
+      "seed_mean_difference_range": [
+        0.0,
+        0.0012345679012345512
+      ],
+      "mean_of_seed_mean_ratios": 1.0,
+      "seed_mean_ratio_range": [
+        1.0,
+        1.0
+      ],
+      "seed_signs": {
+        "positive": 1,
+        "negative": 0,
+        "zero": 3
+      },
+      "complete_four_seed_numerical_comparison": true,
+      "subset_estimate": false,
+      "interpretation": "Complete four-seed qualified comparison; constitutive assumptions remain"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": -0.6478483742556005,
+      "seed_mean_difference_range": [
+        -3.807946615121061,
+        0.990264464358475
+      ],
+      "mean_of_seed_mean_ratios": 0.9947857314607862,
+      "seed_mean_ratio_range": [
+        0.9699168451856892,
+        1.0084481608280422
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": true,
+      "subset_estimate": false,
+      "interpretation": "Complete four-seed qualified comparison; constitutive assumptions remain"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 4,
+      "paired_angle_records": 8,
+      "mean_of_seed_mean_differences": 0.017389137093822837,
+      "seed_mean_difference_range": [
+        -0.3114993697768176,
+        0.3624132290323274
+      ],
+      "mean_of_seed_mean_ratios": 1.001187156966104,
+      "seed_mean_ratio_range": [
+        0.9827526877442379,
+        1.0211276160486742
+      ],
+      "seed_signs": {
+        "positive": 2,
+        "negative": 2,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": true,
+      "subset_estimate": false,
+      "interpretation": "Complete four-seed qualified comparison; constitutive assumptions remain"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "maximum_observed_stress_Pa",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "resolved_peak_stress_Pa",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "work_through_cap_J_m3",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "work_to_resolved_peak_J_m3",
+      "qualification_tier": "qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    }
+  ],
+  "damage_comparisons": [
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "damage_rank_qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 2,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "damage_rank_qualified_conditional",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "damage_rank_qualified_conditional",
+      "seeds_with_both_angles": 2,
+      "paired_angle_records": 6,
+      "mean_of_seed_mean_differences": 0.0006172839506172756,
+      "seed_mean_difference_range": [
+        0.0,
+        0.0012345679012345512
+      ],
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 1,
+        "negative": 0,
+        "zero": 1
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "damage_rank_qualified_conditional",
+      "seeds_with_both_angles": 3,
+      "paired_angle_records": 7,
+      "mean_of_seed_mean_differences": 0.0004115226337448504,
+      "seed_mean_difference_range": [
+        0.0,
+        0.0012345679012345512
+      ],
+      "mean_of_seed_mean_ratios": 1.0,
+      "seed_mean_ratio_range": [
+        1.0,
+        1.0
+      ],
+      "seed_signs": {
+        "positive": 1,
+        "negative": 0,
+        "zero": 2
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "damage_rank_qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.1,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "damage_rank_qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.15,
+      "metric": "damage_at_cap",
+      "qualification_tier": "damage_rank_qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    },
+    {
+      "threshold": 0.2,
+      "density": 0.3,
+      "metric": "damage_at_cap",
+      "qualification_tier": "damage_rank_qualified_strict",
+      "seeds_with_both_angles": 0,
+      "paired_angle_records": 0,
+      "mean_of_seed_mean_differences": null,
+      "seed_mean_difference_range": null,
+      "mean_of_seed_mean_ratios": null,
+      "seed_mean_ratio_range": null,
+      "seed_signs": {
+        "positive": 0,
+        "negative": 0,
+        "zero": 0
+      },
+      "complete_four_seed_numerical_comparison": false,
+      "subset_estimate": true,
+      "interpretation": "Qualified available subset only; no complete four-seed comparator claim"
+    }
+  ],
+  "limitations": [
+    "Marginal selected-state classification is not a proof of stability.",
+    "Checked states do not establish stability along the whole trajectory.",
+    "Observed cap work is not toughness; unresolved and right-censored peaks remain distinct.",
+    "Stress/work refinement gates do not establish damage-fraction precision.",
+    "Four synthetic seeds; loading planes, thresholds and resolutions are repeated conditions.",
+    "Bulk-matched Pa and J/m^3 scales are conditional; no Gc or measured architecture validation."
+  ]
+}

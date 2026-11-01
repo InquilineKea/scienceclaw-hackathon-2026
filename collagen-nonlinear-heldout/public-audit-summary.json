@@ -1,0 +1,332 @@
+{
+  "scope": "Adaptively reused measured-boundary-conditioned Pos008 benchmark; not a fresh confirmatory holdout",
+  "combined_complete": true,
+  "frozen_selection_parameters_match": true,
+  "vector_mse_fractional_improvement": 0.285821508346531,
+  "practical_gates": {
+    "vector_mse_5percent": true,
+    "raw_strain_no_worse": true,
+    "guarded_strain_no_worse": true,
+    "common_coverage": true
+  },
+  "numerical_gates": {
+    "equilibrium": true,
+    "finite_energy_history": true,
+    "nonnegative_dissipation": true,
+    "work_balance": true,
+    "kkt": true,
+    "positive_jacobian": true,
+    "step_refinement": true,
+    "angular_refinement": true,
+    "no_detected_negative_curvature": true,
+    "hvp_fd": true
+  },
+  "unknown_numerical_gates": [],
+  "numerical_qualified": true,
+  "qualified_practical_win": true,
+  "conclusion": "The selected combined surrogate passes the frozen practical and numerical criteria on the adaptively reused conditional benchmark.",
+  "independent_biological_validation": false,
+  "tests": [
+    {
+      "label": "Harmonic",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.1281372528187985,
+        "balanced_vector_RMSE_um": 1.062138057325317,
+        "balanced_vector_NRMSE": 0.35519891565582584,
+        "pooled_vector_RMSE_um": 1.0527192782089794,
+        "pooled_vector_NRMSE": 0.37761843357236113,
+        "strain_Frobenius_RMSE": 0.028444507154249617,
+        "strain_Frobenius_NRMSE": 0.7420726542232889,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.5520255377436184,
+            "NRMSE": 0.47948228399001863
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.6819991316940712,
+            "NRMSE": 0.31762231282201053
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 0.9714998777181602,
+            "NRMSE": 0.22268135008928555
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.5753513181013099,
+            "NRMSE": 0.4311864385733489
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 0.8797902581339482,
+            "NRMSE": 0.37554270463391987
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.3629604527376813,
+            "NRMSE": 0.3156217917637003
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.5110537355012468,
+            "NRMSE": 0.4753353772845897
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.4371591336187859,
+            "NRMSE": 0.4426409954045803
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.6047619794239361
+      }
+    },
+    {
+      "label": "control",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.6017885791974857,
+        "balanced_vector_RMSE_um": 1.2656178646011147,
+        "balanced_vector_NRMSE": 0.42324638500667955,
+        "pooled_vector_RMSE_um": 1.2547619385390527,
+        "pooled_vector_NRMSE": 0.450092676694837,
+        "strain_Frobenius_RMSE": 0.0302476143247996,
+        "strain_Frobenius_NRMSE": 0.7891128970597399,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.5063249772166161,
+            "NRMSE": 0.43978736474646685
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.7989992993888896,
+            "NRMSE": 0.3721119186540327
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 1.1541169256975607,
+            "NRMSE": 0.26453972982360613
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.5163976743401313,
+            "NRMSE": 0.38700471708500334
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 1.233187759752993,
+            "NRMSE": 0.5263921285072632
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.665285439573688,
+            "NRMSE": 0.3856314195914583
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.7883491331091426,
+            "NRMSE": 0.5625647784266384
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.6818950818657208,
+            "NRMSE": 0.5180189832760627
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.6915997953595148
+      }
+    },
+    {
+      "label": "buckling",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 0.7729845803115523,
+        "balanced_vector_RMSE_um": 0.8791954164527658,
+        "balanced_vector_NRMSE": 0.2940194604833231,
+        "pooled_vector_RMSE_um": 0.8778671089185486,
+        "pooled_vector_NRMSE": 0.31489762695189527,
+        "strain_Frobenius_RMSE": 0.026882592406667113,
+        "strain_Frobenius_NRMSE": 0.7013247440512582,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.3220596185728824,
+            "NRMSE": 0.27973684356247897
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.5283494050027199,
+            "NRMSE": 0.2460641842435294
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 0.6384124291325979,
+            "NRMSE": 0.1463330514944951
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.4306174176620691,
+            "NRMSE": 0.3227182851029209
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 0.7509818524102783,
+            "NRMSE": 0.32056021691275494
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.229875799576104,
+            "NRMSE": 0.28480327710853454
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.378454004629138,
+            "NRMSE": 0.43362319880867284
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.1096376403289514,
+            "NRMSE": 0.34176529109676346
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.5309146428134669
+      }
+    },
+    {
+      "label": "sliding",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 1.7117533628413968,
+        "balanced_vector_RMSE_um": 1.3083399263346651,
+        "balanced_vector_NRMSE": 0.4375334448645587,
+        "pooled_vector_RMSE_um": 1.2940131902469967,
+        "pooled_vector_NRMSE": 0.46417240002898674,
+        "strain_Frobenius_RMSE": 0.030866772381447943,
+        "strain_Frobenius_NRMSE": 0.8052657613013032,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.502442190963802,
+            "NRMSE": 0.43641482653319136
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.8283187355240196,
+            "NRMSE": 0.3857666385548413
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 1.2308847821097022,
+            "NRMSE": 0.28213599545512424
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.5148475936605085,
+            "NRMSE": 0.3858430376958719
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 1.2752117393975866,
+            "NRMSE": 0.5443302664092274
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.7253001878643845,
+            "NRMSE": 0.3995290806348948
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.823450801630682,
+            "NRMSE": 0.5736067847153624
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.7457155793007688,
+            "NRMSE": 0.5376755180682345
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.7085650101745439
+      }
+    },
+    {
+      "label": "combined",
+      "metrics": {
+        "primary_equal_octant_vector_MSE_um2": 0.8056913615962178,
+        "balanced_vector_RMSE_um": 0.8976031203133252,
+        "balanced_vector_NRMSE": 0.3001753423914145,
+        "pooled_vector_RMSE_um": 0.8952598786054881,
+        "pooled_vector_NRMSE": 0.3211365460831579,
+        "strain_Frobenius_RMSE": 0.02695970091071165,
+        "strain_Frobenius_NRMSE": 0.7033363841879364,
+        "octants": [
+          {
+            "nodes": 737,
+            "RMSE_um": 0.32189697245803967,
+            "NRMSE": 0.27959557123847434
+          },
+          {
+            "nodes": 463,
+            "RMSE_um": 0.5476710775250858,
+            "NRMSE": 0.2550627210875562
+          },
+          {
+            "nodes": 261,
+            "RMSE_um": 0.665177445162592,
+            "NRMSE": 0.15246796724839037
+          },
+          {
+            "nodes": 576,
+            "RMSE_um": 0.43605688290034916,
+            "NRMSE": 0.326794792047543
+          },
+          {
+            "nodes": 670,
+            "RMSE_um": 0.7647950593206733,
+            "NRMSE": 0.3264564507421683
+          },
+          {
+            "nodes": 487,
+            "RMSE_um": 1.2545717862887438,
+            "NRMSE": 0.29052214559071204
+          },
+          {
+            "nodes": 588,
+            "RMSE_um": 1.3976662035407357,
+            "NRMSE": 0.4396668209536401
+          },
+          {
+            "nodes": 573,
+            "RMSE_um": 1.13887238873536,
+            "NRMSE": 0.35076951187670646
+          }
+        ],
+        "strain_tetrahedra": 18931
+      },
+      "support": {
+        "centers": 303,
+        "strain_Frobenius_NRMSE": 0.5334281796024011
+      }
+    }
+  ],
+  "input_sha256": {
+    "results.json": "a39b1db36b423870957c85072f075ea464205ffc8e71fd3b022a96a1964297c9",
+    "SELECTION.json": "b83ef7d6c60aea534a8a09c9b7a255192f379fcfc63d04544b2fe915a4083ed3",
+    "numerical-controls.json": "c354fb0a5ecd651ecdf728f91b481f20de6b0f3e35dfe2d6ef901e942f099b90",
+    "PROTOCOL-FROZEN.md": "135dbd89d3f7662ddd2a0a7b5093794754cc55608f8a53283f90ab85262757b2"
+  }
+}

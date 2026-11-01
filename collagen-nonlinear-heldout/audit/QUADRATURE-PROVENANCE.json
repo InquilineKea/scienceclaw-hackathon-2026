@@ -1,0 +1,18 @@
+{
+  "source": "https://people.sc.fsu.edu/~jburkardt/datasets/sphere_lebedev_rule/",
+  "scope": "Numeric integration tables, not executable code. Academic directory labels data/code LGPL; exact linked license file unavailable. Tables are not redistributed in public package.",
+  "tables": [
+    {
+      "name": "lebedev_017.txt",
+      "url": "https://people.sc.fsu.edu/~jburkardt/datasets/sphere_lebedev_rule/lebedev_017.txt",
+      "bytes": 7150,
+      "sha256": "1ebf6ee8425e2a61c4b94b9b12dbca3fc114d34b4bd70e4c1e2b1dc044fe2f13"
+    },
+    {
+      "name": "lebedev_029.txt",
+      "url": "https://people.sc.fsu.edu/~jburkardt/datasets/sphere_lebedev_rule/lebedev_029.txt",
+      "bytes": 19630,
+      "sha256": "ea8fe85543f4bdacf1a7cd44fffdf50c633edd8554cf689e718b6c716cab26f5"
+    }
+  ]
+}

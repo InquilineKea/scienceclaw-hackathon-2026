@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="760" viewBox="0 0 1200 760"><rect width="1200" height="760" fill="#f7f9fc"/>
+<text x="36" y="43" font-family="Arial,sans-serif" font-size="29" fill="#172b42" text-anchor="start">Crosslink placement and stiffness in bulk-matched 3D cells</text>
+<text x="36" y="81" font-family="Arial,sans-serif" font-size="18" fill="#172b42" text-anchor="start">Same graph, selected-site degree counts and total angular locking budget within each paired comparison</text>
+<path d="M95 503.3333333333333H1115" stroke="#d4dfeb"/>
+<text x="80" y="508.3333333333333" font-family="Arial,sans-serif" font-size="16" fill="#172b42" text-anchor="end">1.0</text>
+<path d="M95 420.0H1115" stroke="#d4dfeb"/>
+<text x="80" y="425.0" font-family="Arial,sans-serif" font-size="16" fill="#172b42" text-anchor="end">1.5</text>
+<path d="M95 336.66666666666663H1115" stroke="#d4dfeb"/>
+<text x="80" y="341.66666666666663" font-family="Arial,sans-serif" font-size="16" fill="#172b42" text-anchor="end">2.0</text>
+<path d="M95 253.33333333333337H1115" stroke="#d4dfeb"/>
+<text x="80" y="258.33333333333337" font-family="Arial,sans-serif" font-size="16" fill="#172b42" text-anchor="end">2.5</text>
+<path d="M95 170.0H1115" stroke="#d4dfeb"/>
+<text x="80" y="175.0" font-family="Arial,sans-serif" font-size="16" fill="#172b42" text-anchor="end">3.0</text>
+<text x="95.0" y="552" font-family="Arial,sans-serif" font-size="17" fill="#172b42" text-anchor="middle">0%</text>
+<text x="605.0" y="552" font-family="Arial,sans-serif" font-size="17" fill="#172b42" text-anchor="middle">15%</text>
+<text x="1115.0" y="552" font-family="Arial,sans-serif" font-size="17" fill="#172b42" text-anchor="middle">30%</text>
+<polyline points="95.0,503.3333333333333 605.0,452.4247828024759 1115.0,374.7163514013364" fill="none" stroke="#7b3ab2" stroke-width="2" opacity=".55"/>
+<circle cx="95.0" cy="503.3333333333333" r="4" fill="#7b3ab2" opacity=".7"/>
+<circle cx="605.0" cy="452.4247828024759" r="4" fill="#7b3ab2" opacity=".7"/>
+<circle cx="1115.0" cy="374.7163514013364" r="4" fill="#7b3ab2" opacity=".7"/>
+<polyline points="95.0,503.3333333333333 605.0,415.86790549566757 1115.0,335.8815904825109" fill="none" stroke="#7b3ab2" stroke-width="2" opacity=".55"/>
+<circle cx="95.0" cy="503.3333333333333" r="4" fill="#7b3ab2" opacity=".7"/>
+<circle cx="605.0" cy="415.86790549566757" r="4" fill="#7b3ab2" opacity=".7"/>
+<circle cx="1115.0" cy="335.8815904825109" r="4" fill="#7b3ab2" opacity=".7"/>
+<polyline points="95.0,503.3333333333333 605.0,436.3777229658488 1115.0,353.78597507442805" fill="none" stroke="#7b3ab2" stroke-width="2" opacity=".55"/>
+<circle cx="95.0" cy="503.3333333333333" r="4" fill="#7b3ab2" opacity=".7"/>
+<circle cx="605.0" cy="436.3777229658488" r="4" fill="#7b3ab2" opacity=".7"/>
+<circle cx="1115.0" cy="353.78597507442805" r="4" fill="#7b3ab2" opacity=".7"/>
+<polyline points="95.0,503.3333333333333 605.0,411.6063145323494 1115.0,295.9866216234952" fill="none" stroke="#7b3ab2" stroke-width="2" opacity=".55"/>
+<circle cx="95.0" cy="503.3333333333333" r="4" fill="#7b3ab2" opacity=".7"/>
+<circle cx="605.0" cy="411.6063145323494" r="4" fill="#7b3ab2" opacity=".7"/>
+<circle cx="1115.0" cy="295.9866216234952" r="4" fill="#7b3ab2" opacity=".7"/>
+<polyline points="95.0,503.3333333333333 605.0,429.0691814490854 1115.0,340.0926346454426" fill="none" stroke="#7b3ab2" stroke-width="5"/>
+<polyline points="95.0,503.3333333333333 605.0,396.44705077242435 1115.0,281.43466544459966" fill="none" stroke="#168273" stroke-width="2" opacity=".55"/>
+<circle cx="95.0" cy="503.3333333333333" r="4" fill="#168273" opacity=".7"/>
+<circle cx="605.0" cy="396.44705077242435" r="4" fill="#168273" opacity=".7"/>
+<circle cx="1115.0" cy="281.43466544459966" r="4" fill="#168273" opacity=".7"/>
+<polyline points="95.0,503.3333333333333 605.0,415.02952766108734 1115.0,232.08186055764116" fill="none" stroke="#168273" stroke-width="2" opacity=".55"/>
+<circle cx="95.0" cy="503.3333333333333" r="4" fill="#168273" opacity=".7"/>
+<circle cx="605.0" cy="415.02952766108734" r="4" fill="#168273" opacity=".7"/>
+<circle cx="1115.0" cy="232.08186055764116" r="4" fill="#168273" opacity=".7"/>
+<polyline points="95.0,503.3333333333333 605.0,430.92314104995233 1115.0,324.22085107740054" fill="none" stroke="#168273" stroke-width="2" opacity=".55"/>
+<circle cx="95.0" cy="503.3333333333333" r="4" fill="#168273" opacity=".7"/>
+<circle cx="605.0" cy="430.92314104995233" r="4" fill="#168273" opacity=".7"/>
+<circle cx="1115.0" cy="324.22085107740054" r="4" fill="#168273" opacity=".7"/>
+<polyline points="95.0,503.3333333333333 605.0,450.97729941070384 1115.0,328.83416734625666" fill="none" stroke="#168273" stroke-width="2" opacity=".55"/>
+<circle cx="95.0" cy="503.3333333333333" r="4" fill="#168273" opacity=".7"/>
+<circle cx="605.0" cy="450.97729941070384" r="4" fill="#168273" opacity=".7"/>
+<circle cx="1115.0" cy="328.83416734625666" r="4" fill="#168273" opacity=".7"/>
+<polyline points="95.0,503.3333333333333 605.0,423.34425472354195 1115.0,291.6428861064745" fill="none" stroke="#168273" stroke-width="5"/>
+<text x="95" y="132" font-family="Arial,sans-serif" font-size="18" fill="#7b3ab2" text-anchor="start">Purple: clustered angular locks</text>
+<text x="595" y="132" font-family="Arial,sans-serif" font-size="18" fill="#168273" text-anchor="start">Green: degree-matched distributed locks</text>
+<text x="95" y="170" font-family="Arial,sans-serif" font-size="18" fill="#172b42" text-anchor="start">Stiffness / same-specimen baseline</text>
+<text x="605" y="585" font-family="Arial,sans-serif" font-size="18" fill="#172b42" text-anchor="middle">Fraction of junctions given 10× angular locking</text>
+<text x="36" y="630" font-family="Arial,sans-serif" font-size="18" fill="#172b42" text-anchor="start">Mean stiffness at 15% locks: clustered 1.45×; distributed 1.48×.</text>
+<text x="36" y="663" font-family="Arial,sans-serif" font-size="18" fill="#172b42" text-anchor="start">At 30%: clustered 1.98×; distributed 2.27×. Distributed is stiffer in 3/4 seed means.</text>
+<text x="36" y="700" font-family="Arial,sans-serif" font-size="17" fill="#172b42" text-anchor="start">Thin lines: four synthetic seeds, each averaging two shear planes. Thick lines: equal-weight seed means.</text>
+<text x="36" y="733" font-family="Arial,sans-serif" font-size="17" fill="#172b42" text-anchor="start">Bulk calibration sets units. These locking parameters are not measured AGE chemistry or age in years.</text>
+</svg>

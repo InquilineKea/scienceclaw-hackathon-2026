@@ -1,5 +1,6 @@
-from pathlib import Path
 import json
+from pathlib import Path
+
 s=json.loads(Path('summary.json').read_text());labels={'participation':'Effective load-bearing fraction','maxShare':'Largest fiber force share','spread':'Damage radius / diagonal','patch':'Largest damage patch fraction'}
 lo=min(0,min(x['ci'][0]*100 for x in s));hi=max(0,max(x['ci'][1]*100 for x in s));lo-=1;hi+=1
 scale=lambda x:480+(x-lo)/(hi-lo)*510

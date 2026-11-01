@@ -1,0 +1,54 @@
+{
+  "dataset": "https://doi.org/10.12795/11441/188036",
+  "download_url": "https://idus.us.es/bitstreams/355817bd-b42d-4a57-8740-0b0dd14bed17/download",
+  "bytes": 6710494,
+  "sha256": "a6a2a6af87558d6719a1e13a020a7e0f49f2e8888bac4f4a0c52648afbcf6e5b",
+  "entries": [
+    {
+      "name": "Figures/",
+      "bytes": 0
+    },
+    {
+      "name": "Figures/Figura_1.tif",
+      "bytes": 806632
+    },
+    {
+      "name": "Figures/Figura_2.tif",
+      "bytes": 1023734
+    },
+    {
+      "name": "Figures/Figura_3.tif",
+      "bytes": 1183526
+    },
+    {
+      "name": "Figures/Figura_4.tif",
+      "bytes": 597398
+    },
+    {
+      "name": "Figures/Figura_5.tif",
+      "bytes": 794604
+    },
+    {
+      "name": "Figures/Figura_6.tif",
+      "bytes": 721746
+    },
+    {
+      "name": "Figures/Figura_7.tif",
+      "bytes": 292354
+    },
+    {
+      "name": "Figures/Figura_Suplementaria_1.tif",
+      "bytes": 911954
+    },
+    {
+      "name": "Figures/Figura_Suplementaria_2.tif",
+      "bytes": 331142
+    },
+    {
+      "name": "Figures/Figura_Suplementaria_3.tif",
+      "bytes": 780798
+    }
+  ],
+  "license_from_record": "CC BY-NC-ND4.0",
+  "full_zip_not_republished": true
+}

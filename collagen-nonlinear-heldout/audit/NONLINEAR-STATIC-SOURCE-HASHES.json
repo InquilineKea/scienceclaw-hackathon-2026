@@ -1,0 +1,22 @@
+{
+  "solver.cpp": {
+    "sha256": "21d679773a4424e778a818af7540f33aa91e183f2fd72b339f23b8765a65baf6",
+    "bytes": 9618
+  },
+  "material.mjs": {
+    "sha256": "119e75f122832f8adb808129bbbc596abf28c2aba76e7ce620e839c6e43e9e3b",
+    "bytes": 2850
+  },
+  "nonlinear-fe.mjs": {
+    "sha256": "39a5fcb26c581c8abd58e0dba5f6287e8411a33e33ed610d154f0d22d22b7997",
+    "bytes": 4907
+  },
+  "PROTOCOL-DRAFT.md": {
+    "sha256": "cf14235b2d78ec89c9354258ce47df845d2f73548c42a1847471677447cb924a",
+    "bytes": 12109
+  },
+  "audit/CPP-JS-CROSSCHECK.json": {
+    "sha256": "d2df8ee21d9001eb583d54cd4832345eb686be2d27f1d32aa2b6ed950b865e51",
+    "bytes": 1583
+  }
+}

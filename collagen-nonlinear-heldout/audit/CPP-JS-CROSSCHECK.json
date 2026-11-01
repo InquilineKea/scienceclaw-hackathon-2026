@@ -1,0 +1,95 @@
+{
+  "records": [
+    {
+      "parameters": {
+        "buckling": null,
+        "yield": null
+      },
+      "previousValue": 0,
+      "energy_relative": 5.333835699354989e-16,
+      "gradient_relative_L2": 1.34721249943803e-14,
+      "gradient_max_abs": 6.356373760674217e-14
+    },
+    {
+      "parameters": {
+        "buckling": 0.0025,
+        "yield": null
+      },
+      "previousValue": 0,
+      "energy_relative": 2.3960176812083734e-15,
+      "gradient_relative_L2": 1.870514731531675e-14,
+      "gradient_max_abs": 5.775935285612377e-14
+    },
+    {
+      "parameters": {
+        "buckling": 0.01,
+        "yield": 0.01,
+        "hardening": 0.05
+      },
+      "previousValue": 0,
+      "energy_relative": 2.9748132290059293e-15,
+      "gradient_relative_L2": 1.5633202140174764e-14,
+      "gradient_max_abs": 6.110389971780705e-14
+    },
+    {
+      "parameters": {
+        "buckling": 0.04,
+        "yield": 0.04,
+        "hardening": 0.05
+      },
+      "previousValue": 0,
+      "energy_relative": 2.5631657743006048e-15,
+      "gradient_relative_L2": 1.4076214551187745e-14,
+      "gradient_max_abs": 6.239106453698184e-14
+    },
+    {
+      "parameters": {
+        "buckling": null,
+        "yield": null
+      },
+      "previousValue": 0.015,
+      "energy_relative": 5.333835699354989e-16,
+      "gradient_relative_L2": 1.34721249943803e-14,
+      "gradient_max_abs": 6.356373760674217e-14
+    },
+    {
+      "parameters": {
+        "buckling": 0.0025,
+        "yield": null
+      },
+      "previousValue": 0.015,
+      "energy_relative": 2.3960176812083734e-15,
+      "gradient_relative_L2": 1.870514731531675e-14,
+      "gradient_max_abs": 5.775935285612377e-14
+    },
+    {
+      "parameters": {
+        "buckling": 0.01,
+        "yield": 0.01,
+        "hardening": 0.05
+      },
+      "previousValue": 0.015,
+      "energy_relative": 9.050294609858585e-16,
+      "gradient_relative_L2": 1.4209732575187253e-15,
+      "gradient_max_abs": 1.9251961136390605e-14
+    },
+    {
+      "parameters": {
+        "buckling": 0.04,
+        "yield": 0.04,
+        "hardening": 0.05
+      },
+      "previousValue": 0.015,
+      "energy_relative": 1.8824938983955638e-16,
+      "gradient_relative_L2": 2.3087840436648865e-15,
+      "gradient_max_abs": 4.6226911187829955e-14
+    }
+  ],
+  "hashes": {
+    "solver.cpp": "f409620b8d5b0fd39ead6b12572a78781448a8851711ac9993f027114a8d1476",
+    "solver-local": "f0eb6e18e1262441530968ae29b95a6916e7a87191780ad8132c55bc4400849b",
+    "nonlinear-fe.mjs": "39a5fcb26c581c8abd58e0dba5f6287e8411a33e33ed610d154f0d22d22b7997",
+    "material.mjs": "4774f42a6df28ab16364bb6e9b36b779779e8d63d36c01bf0184bbb8ab64a15d"
+  },
+  "scope": "Independent original JavaScript and original C++ implementations on the same controlled field; no held-out interior targets supplied to compiled input."
+}

@@ -97,7 +97,7 @@ def generate(out):
    ax.scatter(X[c['probe'],0],X[c['probe'],1],s=12,c='#d58610');ax.set_aspect('equal');ax.set_title(('Disordered' if c['family']=='isotropic' else 'Modular')+' / '+c['pattern']);ax.set_xticks([]);ax.set_yticks([]);artists.append((field,q,qb,pp,uu,bb,tri))
   fig.colorbar(artists[0][0],ax=list(axs.flat),label=('Damage-induced pressure change' if difference else 'Damaged poroelastic pressure')+' (normalized)',shrink=.65)
   title=fig.suptitle('');fig.supxlabel('196 nodes; seed 17; x drive; Ω=0.1; mobility 0.001. Shared pressure/vector scales; arrows enlarged.\n'+('Green: damaged−intact poroelastic displacement. Red dashed: three cut fibers.' if difference else 'Green: poroelastic; gray: uniform drag, both damaged. Red dashed: three cut fibers.'),fontsize=10)
-  def update(i):
+  def update(i, artists=artists, title=title, difference=difference):
    phase=2*np.pi*i/40;z=np.exp(1j*phase)
    for field,q,qb,pp,uu,bb,tri in artists:
     field.set_array(np.mean((pp*z).real[tri],axis=1));v=(uu*z).real.reshape(-1,2);q.set_UVC(v[:,0],v[:,1])

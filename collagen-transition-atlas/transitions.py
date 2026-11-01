@@ -3,10 +3,11 @@
 Uses the frozen user-owned network baseline. All new constitutive assumptions are
 explicit; no AGE chemistry, melting MD, or patient-specific predictions are implied.
 """
-import math, random, hashlib, json
+import math
+
 import numpy as np
 import torch
-from core_network import Lattice, SystemSpec, Batch
+from core_network import Batch, SystemSpec
 
 
 def specifications(lat, cases):

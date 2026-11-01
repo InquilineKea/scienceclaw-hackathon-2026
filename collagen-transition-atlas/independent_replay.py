@@ -4,8 +4,11 @@ Energy is checked for every stored frame in six uniform-spring suites. Finite
 force differences are checked at the last converged frame of each case. This
 corroborates saved residuals but does not prove uniqueness or stability.
 """
-import math,json,argparse
+import argparse
+import json
+import math
 from pathlib import Path
+
 
 def matrix(name,c,p):
  q=p['control'];stage=p['stage']

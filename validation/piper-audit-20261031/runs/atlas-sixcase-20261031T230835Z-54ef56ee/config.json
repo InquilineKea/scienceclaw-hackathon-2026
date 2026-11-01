@@ -1,0 +1,12 @@
+{
+  "run_id": "atlas-sixcase-20261031T230835Z-54ef56ee",
+  "model_sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1",
+  "timeout_seconds": 120,
+  "seed": 17,
+  "cases": 6,
+  "node_executable": "/opt/homebrew/Cellar/node/26.12.1/bin/node",
+  "network": "denied",
+  "credential_access": "denied",
+  "installations": 0,
+  "cloud_spend": 0
+}

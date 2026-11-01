@@ -1,0 +1,8 @@
+(version 1)
+(deny default)
+(allow process-exec (literal "/opt/homebrew/Cellar/node/26.12.1/bin/node"))
+(allow process-fork)
+(allow sysctl-read)
+(allow mach-lookup (global-name "com.apple.system.logger"))
+(allow file-read* (subpath "/usr") (subpath "/System") (subpath "/Library/Apple") (subpath "/private/var/db/dyld") (literal "/dev/urandom") (literal "/dev/random") (literal "/dev/null") (literal "/opt/homebrew/Cellar/node/26.12.1/bin/node") (subpath "/Users/simfish/Documents/Codex/2026-10-31/referenced-chatgpt-conversation-this-is-an-3/outputs/piper-audit-remediation-20261031/runs/atlas-sixcase-20261031T230753Z-1d45c0a6/source") (subpath "/Users/simfish/Documents/Codex/2026-10-31/referenced-chatgpt-conversation-this-is-an-3/outputs/piper-audit-remediation-20261031/runs/atlas-sixcase-20261031T230753Z-1d45c0a6"))
+(allow file-write* (subpath "/Users/simfish/Documents/Codex/2026-10-31/referenced-chatgpt-conversation-this-is-an-3/outputs/piper-audit-remediation-20261031/runs/atlas-sixcase-20261031T230753Z-1d45c0a6") (literal "/dev/null"))

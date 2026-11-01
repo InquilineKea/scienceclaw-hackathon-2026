@@ -1,0 +1,66 @@
+{
+  "material": "bovine-dermis type-I collagen hydrogel, same-study batch",
+  "domain": {
+    "concentration_mg_ml": [
+      0.8,
+      2.3
+    ],
+    "temperature_C": 37,
+    "oscillatory_strain_percent": 1,
+    "primary_frequency_hz": [
+      0.1,
+      1
+    ]
+  },
+  "quantity": "complex shear modulus in Pa",
+  "reference_concentration_mg_ml": 1.5,
+  "reference_angular_frequency_rad_s": 6.283185307179586,
+  "candidates": [
+    {
+      "dataset": 0,
+      "model": "Kelvin_Voigt",
+      "p": 2.2,
+      "q": 1.1,
+      "shape": 1.0,
+      "A_Pa": 9.522231628684587,
+      "B_Pa": 3.8911402496361376,
+      "weighted_loss": 1.7013747840991111,
+      "grid_index": 1353,
+      "cpu_exhaustive_loss_difference": 1.1102230246251565e-15
+    },
+    {
+      "dataset": 0,
+      "model": "Standard_linear_solid",
+      "p": 2.4000000000000004,
+      "q": 1.4000000000000001,
+      "shape": 0.31622776601683794,
+      "A_Pa": 7.71279505157603,
+      "B_Pa": 4.868072259907977,
+      "weighted_loss": 1.6085850327448188,
+      "grid_index": 94503,
+      "cpu_exhaustive_loss_difference": 1.5543122344752192e-15
+    },
+    {
+      "dataset": 0,
+      "model": "Fractional_Kelvin_Voigt",
+      "p": 2.7,
+      "q": 1.5,
+      "shape": 0.38,
+      "A_Pa": 5.867039314301882,
+      "B_Pa": 6.107056043653503,
+      "weighted_loss": 1.5255475176665407,
+      "grid_index": 68640,
+      "cpu_exhaustive_loss_difference": 0.0
+    }
+  ],
+  "validation": "leave whole file/concentration out within the source dataset",
+  "transfer_exclusions": [
+    "human tendon",
+    "decorin/GAG interactions",
+    "AGE or PYD crosslink chemistry",
+    "finite-strain stiffening",
+    "failure",
+    "long-time stress relaxation"
+  ],
+  "data_doi": "10.5281/zenodo.17413651"
+}

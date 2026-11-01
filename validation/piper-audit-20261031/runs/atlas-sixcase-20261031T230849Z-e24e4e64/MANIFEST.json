@@ -1,0 +1,72 @@
+{
+  "files": {
+    "stderr.log": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "isolation.sb": {
+      "bytes": 1140,
+      "sha256": "7cfe4f9a6c4d2e2afc74898b90b5b9d9e161e6d955ea1d38814ef4a51b933386"
+    },
+    "isolation-check.json": {
+      "bytes": 81,
+      "sha256": "e79cd9b3dc33d4816a16e6a2e692260050cd14798955d12d74736104863b0f7e"
+    },
+    "config.json": {
+      "bytes": 362,
+      "sha256": "e0b9d1832d58dbb925b69b17661825d5c88f6982e419bcfe155e0554f90091da"
+    },
+    "stdout.log": {
+      "bytes": 2322,
+      "sha256": "6edca2ba405765a7e4bd277024873f47c2449a9fef4dc12370257017dc8a0ecd"
+    },
+    "execution.json": {
+      "bytes": 76,
+      "sha256": "a89f01499f969bf12e53668c2a5717076b37169387952abf37f8d25a6ff68082"
+    },
+    "source/reproduce.js": {
+      "bytes": 1881,
+      "sha256": "cecb78d209205bd685c2641872dcc0894e906cce4c3f48f3dcb2c65f33822e0f"
+    },
+    "source/baseline.json": {
+      "bytes": 824546,
+      "sha256": "b3c01f927ed40d9467f8a2fe599382a28d9bbcd5bfb6224629a6b6dad17e8f0f"
+    },
+    "source/package.json": {
+      "bytes": 20,
+      "sha256": "dbf8353f77358bc12169b7bb7301e1978d5b503e002ee927229a8993672818fc"
+    },
+    "source/model.js": {
+      "bytes": 18846,
+      "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    },
+    "results/isotropic-free.json": {
+      "bytes": 1048186,
+      "sha256": "6bde4c05863dbe2c55374c29535f1ffc76701607520aec4aa9440307a836a975"
+    },
+    "results/isotropic-tension.json": {
+      "bytes": 319914,
+      "sha256": "b8ee905cab1f46f20b086d1471e867f17855da504f86eb41f82f7c1fd40cd6a6"
+    },
+    "results/aligned-tension.json": {
+      "bytes": 207313,
+      "sha256": "7f4ebe19e39f4d53be8c3e3c038e1cd0e4921684c73497240333813db88b55e8"
+    },
+    "results/isotropic-shear.json": {
+      "bytes": 440053,
+      "sha256": "2a19954f171dc5f081e6b31747765b84d59dffc2c2c638d4c9f241d645868e3b"
+    },
+    "results/validation.json": {
+      "bytes": 4416,
+      "sha256": "0f56bd2b6847b17371a1efaad0a6ae5c4230db9539ddc7fb53e60d968f40dfc1"
+    },
+    "results/isotropic-pulse.json": {
+      "bytes": 1096822,
+      "sha256": "764e878e81eab1bbb5f9e7524b5c7916024204d41a1c78e4f033d97341e3d831"
+    },
+    "results/isotropic-confined.json": {
+      "bytes": 697864,
+      "sha256": "ab718042a2493817e5e64a3d94233231c5721a6e71fbcbafb6503bfbfc66097a"
+    }
+  }
+}

@@ -11,9 +11,9 @@ from pathlib import Path
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from oxt.lammps_export import export  # noqa: E402
-from oxt.materials import COLLAGENS, Damage, build_spec  # noqa: E402
-from oxt.network import Lattice  # noqa: E402
+from oxt.lammps_export import export
+from oxt.materials import COLLAGENS, Damage, build_spec
+from oxt.network import Lattice
 
 out = Path(__file__).resolve().parent / "lammps"
 lat = Lattice(int(sys.argv[1]) if len(sys.argv) > 1 else 32)

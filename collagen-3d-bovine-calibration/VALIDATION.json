@@ -1,0 +1,39 @@
+{
+  "scope": "Synthetic periodic3D bulk-matched sensitivity; not measured-architecture or chemistry validation",
+  "counts": {
+    "expected_final_cases": 160,
+    "final_cases_loaded": 160,
+    "missing_final_cases": 0,
+    "ignored_partial_files": 106,
+    "explicit_or_parse_errors": 0,
+    "duplicate_case_keys": 0,
+    "unexpected_files": 0,
+    "expected_resolution_pairs": 80,
+    "complete_resolution_pairs": 80,
+    "fine_cases_loaded": 80,
+    "completed_trajectories": 160,
+    "force_qualified_cases": 160,
+    "energy_qualified_cases": 160,
+    "resolved_peak_cases": 29,
+    "right_censored_cases": 69,
+    "numerical_qualified_strict_pairs": 0,
+    "numerical_qualified_conditional_pairs": 58,
+    "fracture_endpoint_qualified_strict_pairs": 0,
+    "fracture_endpoint_qualified_conditional_pairs": 3
+  },
+  "runtime": {
+    "python": "3.10.19",
+    "numpy": "2.1.3",
+    "scipy": "1.14.1",
+    "image": "docker.io/library/python@sha256:7de0b3589a2b35452fab55d753aa773d59afcbb88220ab118d6604a398cd65e1"
+  },
+  "scientific_validation": false,
+  "excluded": [
+    "privateDrivearchive/variants",
+    "fullcopyrightedarticles/figures",
+    "provideraccount/resourceIDs",
+    "credentials",
+    "vendorbinaries",
+    "staleperiodicpartials"
+  ]
+}

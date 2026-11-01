@@ -1,0 +1,5 @@
+{
+  "source": "oxidative-tensegrity/experiments/junction-angle-20261031/three-d/verified/refined/networks.npz",
+  "sha256": "099af990c67a379a1a825aa96ec3c8d4e3a2a46cd91e7cb213fe155f1f927167",
+  "geometry": "periodic branched Voronoi, seeds29-32; synthetic, not imaged bovine microstructure"
+}

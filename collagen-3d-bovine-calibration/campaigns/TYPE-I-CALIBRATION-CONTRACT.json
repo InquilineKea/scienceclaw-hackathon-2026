@@ -1,0 +1,70 @@
+{
+  "question": "Matched small-amplitude response of reconstituted type-I bovine-dermis and rat-tail hydrogel sources",
+  "primary_pair": {
+    "study_doi": "10.1016/j.actbio.2024.07.002",
+    "sources": [
+      "BOV: bovine dermis, non-pepsinized acidified type-I",
+      "RAT: rat tail, non-pepsinized acidified type-I"
+    ],
+    "composition_control": "MIX, 1:1 BOV/RAT; not an organism",
+    "concentration_mg_ml": 1.5,
+    "concentration_challenge_mg_ml": [
+      0.8,
+      2.3
+    ],
+    "temperature_C": 37,
+    "pH": 7.4,
+    "medium": "DMEM/bicarbonate",
+    "polymerization_hours": 1,
+    "oscillatory_strain_percent": 1,
+    "primary_frequency_hz": [
+      0.1,
+      1
+    ],
+    "challenge_frequency_hz": [
+      1,
+      10
+    ],
+    "observables": [
+      "G_storage_Pa",
+      "G_loss_Pa"
+    ],
+    "not_identified": [
+      "single-fiber axial/bending law",
+      "microscopic viscosity distribution",
+      "crosslink chemistry/density",
+      "fracture law",
+      "species-only causal effect"
+    ]
+  },
+  "readiness": {
+    "bovine_raw_response_fit": "ready: ten retrieved whole-file frequency sweeps",
+    "BOV_RAT_summary_response_fit": "conditional: digitize official TIF; verify axis mapping, pixel uncertainty, trace aggregation, error-bar definition",
+    "BOV_RAT_raw_replicate_response_fit": "data gated: raw RAT/MIX sweeps not recovered",
+    "measured_3D_architecture_validation": "data gated: no coordinates/adjacency in figure archive",
+    "species_specific_fracture_fit": "data gated: raw specimen-linked failure histories not recovered",
+    "beaver_human_robustness": "open hypothesis, no supported ranking"
+  },
+  "data_sources": [
+    {
+      "doi": "10.5281/zenodo.17413651",
+      "role": "retrieved bovine frequency data"
+    },
+    {
+      "doi": "10.12795/11441/188036",
+      "role": "official ten-TIF figure archive, including species/source frequency curves and concentration summaries"
+    },
+    {
+      "doi": "10.1073/pnas.1920062117",
+      "role": "protocol-specific nonlinear/plasticity/fracture challenge; raw data on request"
+    }
+  ],
+  "holdout": "Freeze before fit: complete specimens/batches if recovered; otherwise concentration holdout is only a within-study summary challenge. Frequency points and digitized pixels are not biological replicas.",
+  "cautions": [
+    "Keep2.3mg/mL archive labels despite2.5 in some article prose.",
+    "Paper n3; retrieved bovine low-concentration archive contains4files.",
+    "BurlaHuman is atelo, neonatal-cell-derived; not adult human telocollagen.",
+    "Burla connectivity inferred from same rheology via2D model; not independent3Darchitecture.",
+    "Do not equate shear peakstrain/peakstress withGc."
+  ]
+}

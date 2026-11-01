@@ -25,7 +25,6 @@ from concurrent.futures import ProcessPoolExecutor
 from pathlib import Path
 
 import numpy as np
-
 from alchemi_crosslinks import FRAGMENTS, analyse, build_atoms, stretched_images
 
 ROOT = Path(__file__).resolve().parent
@@ -63,7 +62,7 @@ def scan(names, seed, strains, workers):
     for name in names:
         atoms, anchors = build_atoms(FRAGMENTS[name], seed=seed)
         imgs, L0 = stretched_images(atoms, anchors, strains)
-        jobs.append(dict(name=name, anchors=anchors, L0=L0))
+        jobs.append({"name": name, "anchors": anchors, "L0": L0})
         tasks += [(a.get_chemical_symbols(), a.get_positions(), set(anchors)) for a in imgs]
     with ProcessPoolExecutor(max_workers=workers) as ex:
         res = list(ex.map(run_image, tasks))
@@ -90,7 +89,7 @@ def main():
     per_seed, gmax, failures = {}, 0.0, []
     for seed in seeds:
         jobs, E, G, bad = scan(names, seed, strains, args.workers)
-        failures += [dict(seed=seed, chemistry=n, strain_index=i, status=s) for n, i, s in bad]
+        failures += [{"seed": seed, "chemistry": n, "strain_index": i, "status": s} for n, i, s in bad]
         if bad:  # interpolate isolated failures rather than dropping a whole chemistry
             for c in range(len(jobs)):
                 e = E[c * len(strains):(c + 1) * len(strains)]
@@ -110,15 +109,15 @@ def main():
         res[n]["k_rel_seed_mean"], res[n]["k_rel_seed_sd"] = float(np.mean(ks)), float(np.std(ks))
         res[n]["peak_force_by_seed"] = dict(zip(map(str, seeds), fs))
         res[n]["peak_force_seed_mean"], res[n]["peak_force_seed_sd"] = float(np.mean(fs)), float(np.std(fs))
-        res[n]["by_seed"] = {str(s): dict(L0_A=per_seed[s][n]["L0_A"], E_eV=per_seed[s][n]["E_eV"]) for s in seeds}
-    payload = dict(
-        source="mopac-23.2.5:PM7", seconds=time.time() - t0, seeds=seeds, keywords=KEYWORDS,
-        final_fmax=gmax * KCAL_TO_EV, final_fmax_note="max final MOPAC gradient norm over images, eV/A",
-        failures=failures,
-        caveats=["semi-empirical NDDO (PM7), gas phase, closed-shell neutral fragments",
+        res[n]["by_seed"] = {str(s): {"L0_A": per_seed[s][n]["L0_A"], "E_eV": per_seed[s][n]["E_eV"]} for s in seeds}
+    payload = {
+        "source": "mopac-23.2.5:PM7", "seconds": time.time() - t0, "seeds": seeds, "keywords": KEYWORDS,
+        "final_fmax": gmax * KCAL_TO_EV, "final_fmax_note": "max final MOPAC gradient norm over images, eV/A",
+        "failures": failures,
+        "caveats": ["semi-empirical NDDO (PM7), gas phase, closed-shell neutral fragments",
                  "same fragments, anchors and strains as the MACE scans; k_rel relative to pyridinoline",
                  "k_rel_seed_sd is the conformer spread across RDKit seeds, not a model error bar"],
-        crosslinks=res)
+        "crosslinks": res}
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(payload, indent=2))

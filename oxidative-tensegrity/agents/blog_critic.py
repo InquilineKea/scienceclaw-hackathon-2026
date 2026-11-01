@@ -67,8 +67,8 @@ def to_text(h):
 
 
 def chat(model, system, user, key, max_tokens=4000, retries=4):
-    body = json.dumps(dict(model=model, max_tokens=max_tokens, temperature=0.3,
-                           messages=[{"role": "system", "content": system}, {"role": "user", "content": user}])).encode()
+    body = json.dumps({"model": model, "max_tokens": max_tokens, "temperature": 0.3,
+                           "messages": [{"role": "system", "content": system}, {"role": "user", "content": user}]}).encode()
     for attempt in range(retries):
         try:
             req = urllib.request.Request(BASE + "chat/completions", data=body,
@@ -76,12 +76,12 @@ def chat(model, system, user, key, max_tokens=4000, retries=4):
             t0 = time.time()
             with urllib.request.urlopen(req, timeout=600) as r:
                 d = json.loads(r.read())
-            return dict(text=d["choices"][0]["message"]["content"], usage=d.get("usage", {}),
-                        seconds=round(time.time() - t0, 1), model=d.get("model", model), error=None)
+            return {"text": d["choices"][0]["message"]["content"], "usage": d.get("usage", {}),
+                        "seconds": round(time.time() - t0, 1), "model": d.get("model", model), "error": None}
         except Exception as e:  # rate limits / transient errors: back off and retry
             err = str(e)
             time.sleep(10 * (attempt + 1))
-    return dict(text="", usage={}, seconds=0, model=model, error=err)
+    return {"text": "", "usage": {}, "seconds": 0, "model": model, "error": err}
 
 
 def main():
@@ -108,8 +108,8 @@ def main():
         items = []
         for kind in ("post", "page"):
             for p in fetch(a.site, kind):
-                items.append(dict(id=p["ID"], kind=kind, title=html.unescape(p["title"]), url=p["URL"], date=p["date"],
-                                  text=to_text(p["content"])))
+                items.append({"id": p["ID"], "kind": kind, "title": html.unescape(p["title"]), "url": p["URL"], "date": p["date"],
+                                  "text": to_text(p["content"])})
         items.sort(key=lambda x: (x["date"], x["id"]))
         (out / "items.json").write_text(json.dumps(items, indent=1))
         print(f"{len(items)} items; {len(items) * len(ROLES)} critiques", flush=True)
@@ -138,14 +138,13 @@ def main():
         for r in old:
             n = new.get((r["item_id"], r["role"]))
             if n:
-                n["retry_of"] = dict(model=r["model_requested"], error=r["error"])
+                n["retry_of"] = {"model": r["model_requested"], "error": r["error"]}
                 merged.append(n)
             else:
                 merged.append(r)
         log = merged
     with open(out / "log.jsonl", "w") as f:
-        for rec in log:
-            f.write(json.dumps(rec) + "\n")
+        f.writelines(json.dumps(rec) + "\n" for rec in log)
 
     digest = "\n\n".join(f"### {r['title']} — {r['role']} ({r['model']})\n{r['text'][:3500]}" for r in log if r["text"])
     synth_sys = ("You are the editor-in-chief synthesising a panel of five independent reviewers who critiqued every "
@@ -158,9 +157,9 @@ def main():
     synth.update(system_prompt=synth_sys, role="synthesis", model_requested=SYNTH_MODEL)
     (out / "synthesis.json").write_text(json.dumps(synth, indent=1))
     usage = {k: sum(r.get("usage", {}).get(k, 0) or 0 for r in log + [synth]) for k in ("prompt_tokens", "completion_tokens")}
-    meta = dict(site=a.site, items=len(items), critiques=len(log), errors=sum(1 for r in log if r["error"]),
-                roles={k: v[0] for k, v in ROLES.items()}, synthesis_model=SYNTH_MODEL, usage=usage,
-                run_utc=time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime()))
+    meta = {"site": a.site, "items": len(items), "critiques": len(log), "errors": sum(1 for r in log if r["error"]),
+                "roles": {k: v[0] for k, v in ROLES.items()}, "synthesis_model": SYNTH_MODEL, "usage": usage,
+                "run_utc": time.strftime("%Y-%m-%dT%H:%M:%SZ", time.gmtime())}
     (out / "meta.json").write_text(json.dumps(meta, indent=1))
     print(json.dumps(meta, indent=1))
 

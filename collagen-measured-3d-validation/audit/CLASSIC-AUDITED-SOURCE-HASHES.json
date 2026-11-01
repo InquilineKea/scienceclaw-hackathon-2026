@@ -1,0 +1,14 @@
+[
+  {
+    "file": "1_ClassicSingleCellTFM.zip",
+    "bytes": 818176110,
+    "sha256": "436b056665c838f62c26ddbc69246312f2f603dc7a3575e2344a17d24a5c5a61",
+    "stable_size_and_mtime_during_hash": true
+  },
+  {
+    "file": "1_ClassicSingleCellTFM_evaluated.zip",
+    "bytes": 5336053,
+    "sha256": "302e1491300d1fbe5590ba8891ceb2161caf730d2a72bb10947371e21cd211f7",
+    "stable_size_and_mtime_during_hash": true
+  }
+]

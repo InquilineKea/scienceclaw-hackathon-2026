@@ -1,0 +1,69 @@
+{
+  "files": [
+    {
+      "path": "data/1_ClassicSingleCellTFM.zip",
+      "bytes": 818176110,
+      "sha256": "436b056665c838f62c26ddbc69246312f2f603dc7a3575e2344a17d24a5c5a61"
+    },
+    {
+      "path": "data/1_ClassicSingleCellTFM_evaluated.zip",
+      "bytes": 5336053,
+      "sha256": "302e1491300d1fbe5590ba8891ceb2161caf730d2a72bb10947371e21cd211f7"
+    },
+    {
+      "path": "data/4_OrganoidTFM.zip",
+      "bytes": 16345299,
+      "sha256": "20da6febe89e7d95f277ffc0f2db0efba4c180c689266cc0c20c096f9fea4190"
+    },
+    {
+      "path": "data/4_OrganoidTFM_evaluated.zip",
+      "bytes": 1026883,
+      "sha256": "d896a5f81c29af030f765eb67ea9129d4f5ed9857910250c34f73f096cc313dc"
+    },
+    {
+      "path": "data/41567_2024_2632_MOESM16_ESM.xlsx",
+      "bytes": 21155,
+      "sha256": "1629dce421254292b92c670f5c21c5e9c918692fa3f5c78dc4fa6f7c9441527f"
+    },
+    {
+      "path": "data/41567_2024_2632_MOESM17_ESM.xlsx",
+      "bytes": 21906,
+      "sha256": "c02e59528a80504e5fc196b29d14e848efe245cf4d1e5895c114339522f400e4"
+    },
+    {
+      "path": "data/41567_2024_2632_MOESM18_ESM.xlsx",
+      "bytes": 37406,
+      "sha256": "b5b93b0de2eee965410aae63d7b38ecb6eec0cca68426810f1a27d075a5c0fa2"
+    },
+    {
+      "path": "data/41567_2024_2632_MOESM19_ESM.xlsx",
+      "bytes": 679219,
+      "sha256": "734ec5cddfcbb3b8a82cae56174db3a6f0568284ca8e73397b3570489775d45e"
+    },
+    {
+      "path": "data/41567_2024_2632_MOESM20_ESM.xlsx",
+      "bytes": 6072,
+      "sha256": "fef62064740956fbf70cd6644718baac6631785f0e834b1c2dbaa3abe298b737"
+    },
+    {
+      "path": "data/41567_2024_2632_MOESM21_ESM.xlsx",
+      "bytes": 4501238,
+      "sha256": "bb30f0ece388e9b834f8e9f56a3eebb4c95370ace68e31e7d535f9d899c5f0dc"
+    },
+    {
+      "path": "data/41567_2024_2632_MOESM22_ESM.xlsx",
+      "bytes": 13623,
+      "sha256": "ddcf2471d98e27c0efe2f9cd6165544d48d37faba27f04b682fe3490f4a83a69"
+    },
+    {
+      "path": "data/41567_2024_2632_MOESM23_ESM.xlsx",
+      "bytes": 10172,
+      "sha256": "328e2f23e12d8ab6988768a9aa12f8674cb448d2143fc6ea5ebb63539aac4772"
+    },
+    {
+      "path": "data/41567_2024_2632_MOESM24_ESM.xlsx",
+      "bytes": 24786,
+      "sha256": "ae395bf8614e79fb50df0d3e7f2869409d996a7f63f591d918d30cb5c3c33f04"
+    }
+  ]
+}

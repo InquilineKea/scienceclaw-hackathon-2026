@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1240" height="780" viewBox="0 0 1240 780"><rect width="1240" height="780" fill="#f7f9fc"/>
+<text x="30" y="45" font-family="Arial,sans-serif" font-size="30" fill="#182c42">Can nonlinear collagen mechanics beat interpolation?</text>
+<text x="30" y="80" font-family="Arial,sans-serif" font-size="18" fill="#182c42">Adaptively reused position 008 · frozen position007 selection · 4,355 guarded vectors · lower is better</text>
+<text x="70" y="145" font-family="Arial,sans-serif" font-size="21" fill="#182c42">Displacement RMSE (µm)</text>
+<path d="M70,460.0h500" stroke="#d8e1eb"/>
+<text x="35" y="464.0" font-family="Arial,sans-serif" font-size="14" fill="#182c42">0</text>
+<path d="M70,392.5h500" stroke="#d8e1eb"/>
+<text x="35" y="396.5" font-family="Arial,sans-serif" font-size="14" fill="#182c42">0.57</text>
+<path d="M70,325.0h500" stroke="#d8e1eb"/>
+<text x="35" y="329.0" font-family="Arial,sans-serif" font-size="14" fill="#182c42">1.1</text>
+<path d="M70,257.5h500" stroke="#d8e1eb"/>
+<text x="35" y="261.5" font-family="Arial,sans-serif" font-size="14" fill="#182c42">1.7</text>
+<path d="M70,190.0h500" stroke="#d8e1eb"/>
+<text x="35" y="194.0" font-family="Arial,sans-serif" font-size="14" fill="#182c42">2.3</text>
+<rect x="90" y="335.31422805311496" width="55" height="124.68577194688504" fill="#22878d"/>
+<text x="90" y="323.31422805311496" font-family="Arial,sans-serif" font-size="16" fill="#182c42">1.062</text>
+<text x="82" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Harmonic</text>
+<rect x="185" y="311.4274680685648" width="55" height="148.5725319314352" fill="#7c8795"/>
+<text x="185" y="299.4274680685648" font-family="Arial,sans-serif" font-size="16" fill="#182c42">1.266</text>
+<text x="177" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Control</text>
+<rect x="280" y="356.7901032859797" width="55" height="103.20989671402032" fill="#aa702b"/>
+<text x="280" y="344.7901032859797" font-family="Arial,sans-serif" font-size="16" fill="#182c42">0.879</text>
+<text x="272" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Buckling</text>
+<rect x="375" y="306.4122695172349" width="55" height="153.5877304827651" fill="#845da7"/>
+<text x="375" y="294.4122695172349" font-family="Arial,sans-serif" font-size="16" fill="#182c42">1.308</text>
+<text x="367" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Sliding</text>
+<rect x="470" y="354.6291989197401" width="55" height="105.37080108025992" fill="#bd544f"/>
+<text x="470" y="342.6291989197401" font-family="Arial,sans-serif" font-size="16" fill="#182c42">0.898</text>
+<text x="462" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Combined</text>
+<text x="680" y="145" font-family="Arial,sans-serif" font-size="21" fill="#182c42">Raw P1 strain NRMSE</text>
+<path d="M680,460.0h500" stroke="#d8e1eb"/>
+<text x="645" y="464.0" font-family="Arial,sans-serif" font-size="14" fill="#182c42">0</text>
+<path d="M680,392.5h500" stroke="#d8e1eb"/>
+<text x="645" y="396.5" font-family="Arial,sans-serif" font-size="14" fill="#182c42">0.3</text>
+<path d="M680,325.0h500" stroke="#d8e1eb"/>
+<text x="645" y="329.0" font-family="Arial,sans-serif" font-size="14" fill="#182c42">0.6</text>
+<path d="M680,257.5h500" stroke="#d8e1eb"/>
+<text x="645" y="261.5" font-family="Arial,sans-serif" font-size="14" fill="#182c42">0.9</text>
+<path d="M680,190.0h500" stroke="#d8e1eb"/>
+<text x="645" y="194.0" font-family="Arial,sans-serif" font-size="14" fill="#182c42">1.2</text>
+<rect x="700" y="293.03365279976" width="55" height="166.96634720024002" fill="#22878d"/>
+<text x="700" y="281.03365279976" font-family="Arial,sans-serif" font-size="16" fill="#182c42">0.742</text>
+<text x="692" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Harmonic</text>
+<rect x="795" y="282.4495981615585" width="55" height="177.55040183844147" fill="#7c8795"/>
+<text x="795" y="270.4495981615585" font-family="Arial,sans-serif" font-size="16" fill="#182c42">0.789</text>
+<text x="787" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Control</text>
+<rect x="890" y="302.2019325884669" width="55" height="157.7980674115331" fill="#aa702b"/>
+<text x="890" y="290.2019325884669" font-family="Arial,sans-serif" font-size="16" fill="#182c42">0.701</text>
+<text x="882" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Buckling</text>
+<rect x="985" y="278.81520370720676" width="55" height="181.18479629279324" fill="#845da7"/>
+<text x="985" y="266.81520370720676" font-family="Arial,sans-serif" font-size="16" fill="#182c42">0.805</text>
+<text x="977" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Sliding</text>
+<rect x="1080" y="301.7493135577143" width="55" height="158.2506864422857" fill="#bd544f"/>
+<text x="1080" y="289.7493135577143" font-family="Arial,sans-serif" font-size="16" fill="#182c42">0.703</text>
+<text x="1072" y="492" font-family="Arial,sans-serif" font-size="13" fill="#182c42">Combined</text>
+<text x="30" y="550" font-family="Arial,sans-serif" font-size="19" fill="#182c42">Selected combined model: 28.6% lower vector MSE than harmonic interpolation.</text>
+<text x="30" y="579" font-family="Arial,sans-serif" font-size="17" fill="#182c42">Numerical/practical qualification: PASS</text>
+<text x="30" y="600" font-family="Arial,sans-serif" font-size="19" fill="#182c42">Averaged local strain (303 guarded 5³ stencils):</text>
+<text x="35" y="635" font-family="Arial,sans-serif" font-size="17" fill="#182c42">Harmonic: 0.605</text>
+<text x="275" y="635" font-family="Arial,sans-serif" font-size="17" fill="#182c42">control: 0.692</text>
+<text x="515" y="635" font-family="Arial,sans-serif" font-size="17" fill="#182c42">buckling: 0.531</text>
+<text x="755" y="635" font-family="Arial,sans-serif" font-size="17" fill="#182c42">sliding: 0.709</text>
+<text x="995" y="635" font-family="Arial,sans-serif" font-size="17" fill="#182c42">combined: 0.533</text>
+<text x="30" y="687" font-family="Arial,sans-serif" font-size="16" fill="#182c42">One position; no independent-sample significance. Strain derives from PIV displacement, not an independent strain assay.</text>
+<text x="30" y="724" font-family="Arial,sans-serif" font-size="16" fill="#182c42">Directional continuum + plastic lengthening surrogate; no measured fiber graph, absolute stiffness or fracture validation.</text>
+</svg>

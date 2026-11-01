@@ -8,8 +8,8 @@ crosslinks that give each tissue its tuned stiffness and strength. But collagen 
 longest-lived proteins you own: some of it persists for decades. Over those decades, a second,
 unwanted kind of crosslink accumulates — oxidative and sugar-driven damage (AGEs, in the
 literature) that glues fibers together in the wrong places. Arteries stiffen. Heart walls stop
-relaxing between beats. Wounds heal slowly. Much of the mechanical difference between a
-25-year-old aorta and a 75-year-old one is, at root, this slow chemistry.
+relaxing between beats. Wounds heal slowly. Age-related mechanics also depend on architecture, hydration, elastin and other processes.
+This project does not determine how much each process contributes to an aging artery.
 
 The hard part is that the damage lives at every scale at once. It starts as a single chemical
 bond, changes how a fiber network carries load, changes what a cell feels and how it responds,
@@ -17,9 +17,9 @@ and ends as an organ that works less well. No experiment can watch all of that h
 wait thirty years, and you can't instrument a molecule and a heart at the same time.
 
 This repository is a working attempt to follow one question across those scales in a computer:
-**what happens when oxidative crosslinks pile up on a healthy collagen matrix?** It links small
-molecular calculations to a fiber-network model, a mechanosensing cell, and simplified tissue and
-organ models — and it is unusually honest about what that buys you. Every result is labeled as a
+**what happens when oxidative crosslinks pile up on a healthy collagen matrix?** It places small
+molecular calculations alongside a fiber-network model, a mechanosensing cell, and simplified tissue and
+organ models. Quantitative molecular-to-network parameter transfer remains an open validation task. Every result is labeled as a
 model output with explicit limits, several of the project's own early claims were tested and
 *withdrawn* when better checks contradicted them, and every run is archived with checksums so
 anyone can verify that the published numbers match the code that made them. Nothing here is a
@@ -48,7 +48,7 @@ collagen matrix?**
 
 ## Complete collagen archives and separate run storage
 
-The [archive index](ARCHIVE_INDEX.md) links the frozen 450-run network atlas, corrected diagrams and animations, completed H100 molecular results, MACE-OFF/MACE-MP comparison, failed/successful job logs, and the recovered GROMACS trajectories. [File checksums](ARCHIVE_MANIFEST.json) cover the added deliverables.
+The [archive index](ARCHIVE_INDEX.md) links the frozen 450-run network atlas, corrected diagrams and animations, completed H100 molecular results, MACE-OFF/MACE-MP comparison, failed/successful job logs, and the recovered GROMACS trajectories. Each frozen folder carries its own run-level SHA-256 manifest.
 
 Future atlas runs now create separate timestamped folders with source snapshots and logs. Existing run names are rejected. These results retain their scientific limits: hypothetical network mechanics and molecular proxy calculations do not establish validated tissue toughness or native crosslink reactions.
 
@@ -69,7 +69,21 @@ Future atlas runs now create separate timestamped folders with source snapshots 
 | `AGENTS.md`, `CODEX_HANDOFF.md` | Shared context and runbook for Codex / Claude Code agents |
 | `tests/` | Hardware-free checks (analytic lattice moduli, tensegrity, transport, heart, LAMMPS export) |
 
+See [audit remediation and validation gates](validation/piper-audit-20261031/REMEDIATION.md) for the reproduced cases, tested code changes, and remaining scientific acceptance criteria.
+
 ## Main findings (model outputs, not measurements)
+
+**Comparison qualification:** The historical ~51× local and ~259× cpu32 branching ratios use
+different lattice sizes, seed counts and target-connectivity endpoints. They are not independent
+measurements of one universal effect. Recomputing ratios of mean G from the saved healthy Col I
+CSV rows over the common target interval z_target=3.0→4.4 gives 51.025× (12×12, 2 seeds) and
+68.736× (16×16, 4 seeds). Actual mean coordination also differs. This is a descriptive reanalysis
+of archived outputs, not a fresh solver reproduction or a size-controlled causal comparison.
+The ~259× ratio uses target z=2.8→5.0; its actual mean z is 2.977→5.117.
+
+Molecular proxy calculations and species backbone construction do not yet supply a calibrated
+chemistry/sequence-to-network constitutive law. Algebraic convergence, mesh acceptance and
+biological validation are separate gates.
 
 - Branching factor dominates network stiffness (~260× from z = 2.8 to 5). Oxidative crosslinks stiffen sparse,
   sub-isostatic networks most (~14×) and erase strain-stiffening (6–15× → ~3×).
@@ -78,7 +92,7 @@ Future atlas runs now create separate timestamped folders with source snapshots 
 - A tensegrity cell on healthy collagen VII cannot hold its prestress (14%) and YAP stays cytoplasmic; recovery of
   the YAP–myosin loop slows at the mechanosensing threshold.
 - With sliding GAGs, crosslinks raise stiffness ~6× while cutting dissipated energy per cycle from ~0.55 to 0.02–0.10;
-  only the sliding model matches tendon GAG-removal data.
+  this qualitative direction motivates comparison with tendon GAG-removal data; it is not a held-out quantitative fit.
 - ALCHEMI + AIMNet2: methylglyoxal-glycated arginine (MG-H1) loses contact with dermatan sulfate; CML-lysine does not.
 - ALCHEMI crosslink stretch scans, converged on a Brev L4 with two potentials (MACE-OFF, MACE-MP), then checked with
   semi-empirical PM7 (MOPAC) over three starting conformers: the three methods agree from a shared starting conformer,
@@ -119,3 +133,26 @@ The [transition explorer](https://inquilinekea.github.io/scienceclaw-hackathon-2
 ## Fluid-coupled microrheology
 
 The [FEniCSx poroelastic comparison](https://inquilinekea.github.io/scienceclaw-hackathon-2026/poroelasticity/) retains the exact discrete solid and compares uniform drag with added Darcy/Biot pressure coupling before/after a local three-fiber cut. Forty networks, 4,160 systems (4,158 resolved), two mobilities and two pressure meshes; 1,341/1,600 paired observable comparisons pass the stated mesh screen. The explorer includes pressure/displacement phase playback, three plots, two GIFs, explicit coverage and downloads. [Source, inputs, review and result archive](collagen-fenicsx-poroelastic/) preserve both the failed startup attempt and completed result. These normalized outputs do not calibrate tissue permeability, frequency, age or species effects.
+
+
+## Bovine bulk-calibrated 3D collagen comparator
+
+[Open the interactive 3D explorer](https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/) for measured-versus-fit bovine G′/G″, matched-budget junction-locking stiffness, paired force/damage replay, and explicit numerical qualification. [Scientific source and audit](collagen-3d-bovine-calibration/README.md) and [three-campaign evidence gates](collagen-3d-bovine-calibration/campaigns/CAMPAIGN-STATUS.md).
+
+160/160 final cases, 160 complete trajectories, 80/80 load-step pairs, and 40 accepted small-strain states. This uses synthetic periodic networks with a bovine bulk-response scale; measured architecture, chemical aging and species-specific fracture are not validated. Marginal curvature and capped maxima remain explicitly conditional/censored.
+
+[Download the bounded source/results archive](https://inquilinekea.github.io/scienceclaw-hackathon-2026/bovine-3d/bovine-3d-results.zip), 28,095,424 bytes, SHA-256 `55c493bf1d271e47632be6fffb580f48b1920e1b0a726ac506fff58a0931036a`.
+
+
+## Measured 3D collagen held-out benchmark
+
+[Open the measured-data benchmark](https://inquilinekea.github.io/scienceclaw-hackathon-2026/measured-3d/) for held-out batch shear curves, guarded3D displacement/strain comparisons and a rotating vector view. [Scientific report](collagen-measured-3d-validation/REPORT.md) and [frozen protocol/audits](collagen-measured-3d-validation/PROTOCOL-FROZEN.md).
+
+BatchC1.2mg/mL stress NRMSE0.686; selected elasticity on held-out position008 displacement RMSE1.174µm, versus1.062µm for harmonic interpolation. Substantial errors remain. This is separate batch-summary and internal boundary-conditioned field testing, not measured fiber-connectivity or joint specimen validation.
+
+[Download bounded derived results/source](https://inquilinekea.github.io/scienceclaw-hackathon-2026/measured-3d/measured-3d-results.zip): 2,169,094bytes; SHA256 `0c6db7a02c6c3d0dd44c389fe4e3402932a644da956c41def28740afec061c0b`. Raw authors images/spreadsheets are linked, not redistributed.
+
+
+## Nonlinear buckling and sliding prediction test
+
+[Open the nonlinear 3D comparison](https://inquilinekea.github.io/scienceclaw-hackathon-2026/nonlinear-3d/) for the twelve-arm selection, harmonic baseline, guarded displacement/local-strain scores, numerical qualification and interactive final-field comparison. [Report](collagen-nonlinear-heldout/REPORT.md). This is an adaptively reused conditional benchmark, not a fresh biological validation.

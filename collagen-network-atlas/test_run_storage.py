@@ -1,10 +1,10 @@
 """Meaningful storage checks; no model execution, downloads or third-party imports."""
-from pathlib import Path
 import concurrent.futures
 import importlib.util
 import json
 import tempfile
 import unittest
+from pathlib import Path
 
 spec=importlib.util.spec_from_file_location('storage',Path(__file__).with_name('run-atlas.py'))
 storage=importlib.util.module_from_spec(spec)

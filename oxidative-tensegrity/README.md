@@ -120,11 +120,16 @@ Figures in `results/local/figures/`, every number in `results/local/SUMMARY.md`.
 
 Known artefacts: the basement-membrane modulus moves within seed noise; myocardial crosslink dose plateaus at
 ~0.11 because of the assumed 5-year turnover; the "self-supporting" and "torn" thresholds are judgment calls.
-The 48×48, 8-seed GPU profile is what to trust.
+The prepared 48×48, 8-seed GPU profile is not validation until executed and checked.
 
 ## Results — GCP 32-vCPU run, 2026-10-31 (`results/cpu32/`, 16×16 lattices, 4 seeds, 8 branching values)
 
-Confirms the local trends with tighter error bars; one local number was a small-lattice artefact.
+The saved cpu32 results show similar qualitative trends, but use a different network size,
+seed count, strain grid and connectivity interval. The published error bars alone do not
+establish convergence with size. Over the common target z=3.0→4.4 interval, ratios of mean
+healthy Col I G are 51.025× (local, 12×12, 2 seeds) and 68.736× (cpu32, 16×16, 4 seeds).
+The historical ~259× cpu32 ratio instead spans target z=2.8→5.0 (actual mean z≈2.977→5.117).
+These are descriptive reanalyses of saved CSV rows; controlled new solves remain required.
 
 - **Branching:** healthy Col I G rises ~260× from z = 2.8 to 5.0. Dose-1 oxidative crosslinks multiply G ~14×
   at z = 2.8 but only 1.4–2.2× above z = 4.

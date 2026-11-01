@@ -1,0 +1,223 @@
+{
+  "specimen": "Pos008",
+  "scope": "Independent stdlib readback of frozen field predictions, no parameter fit or test reselection",
+  "source_hashes": {
+    "linear-fe.mjs": "25a1683c95bd81506f24ab4c74dd6f7a76fdee3b7adb9b15abad6485decdb09e",
+    "spatial-validation.mjs": "1f5c3430dac205cd02de2bc3e2e6269f5e668552bcaa3eb4001ca249df9aa5b0",
+    "Pos008-results.json": "a4b20528692c5cf326bd0314d4633710a9e5b68b96b8d800f52655e0f05ad277",
+    "Pos008-fields.json": "511942c6f41a11102ea9c08401e091557610988064bf0bcfeaee14a161c32058"
+  },
+  "boundary_mean_offset_um": [
+    0.043067262862036874,
+    -0.09191808638959259,
+    0.40827165244472624
+  ],
+  "max_centered_target_difference_um": 0.0,
+  "supplied_valid_boundary_nodes": 3385,
+  "missing_prescribed_boundary_nodes": 212,
+  "heldout_valid_nodes": 4355,
+  "results": [
+    {
+      "name": "zero",
+      "equal_octant_MSE_um2": 8.941670825749561,
+      "equal_octant_RMSE_um": 2.9902626683536617,
+      "reported_MSE_difference": 0.0,
+      "blocks": [
+        {
+          "n": 737,
+          "error2": 976.8788253357316,
+          "observed2": 976.8788253357316
+        },
+        {
+          "n": 463,
+          "error2": 2134.649749940356,
+          "observed2": 2134.649749940356
+        },
+        {
+          "n": 261,
+          "error2": 4967.733807721249,
+          "observed2": 4967.733807721249
+        },
+        {
+          "n": 576,
+          "error2": 1025.5539737864704,
+          "observed2": 1025.5539737864704
+        },
+        {
+          "n": 670,
+          "error2": 3677.1762020266297,
+          "observed2": 3677.1762020266297
+        },
+        {
+          "n": 487,
+          "error2": 9081.581998818829,
+          "observed2": 9081.581998818829
+        },
+        {
+          "n": 588,
+          "error2": 5942.057734142136,
+          "observed2": 5942.057734142136
+        },
+        {
+          "n": 573,
+          "error2": 6040.335659726854,
+          "observed2": 6040.335659726854
+        }
+      ]
+    },
+    {
+      "name": "affine_boundary_fit",
+      "equal_octant_MSE_um2": 2.866743300688311,
+      "equal_octant_RMSE_um": 1.6931459773712103,
+      "reported_MSE_difference": 0.0,
+      "blocks": [
+        {
+          "n": 737,
+          "error2": 575.9222980755528,
+          "observed2": 976.8788253357316
+        },
+        {
+          "n": 463,
+          "error2": 761.8812753272045,
+          "observed2": 2134.649749940356
+        },
+        {
+          "n": 261,
+          "error2": 1390.8648563908307,
+          "observed2": 4967.733807721249
+        },
+        {
+          "n": 576,
+          "error2": 476.9114117489372,
+          "observed2": 1025.5539737864704
+        },
+        {
+          "n": 670,
+          "error2": 1106.0310031050415,
+          "observed2": 3677.1762020266297
+        },
+        {
+          "n": 487,
+          "error2": 2049.4764222882363,
+          "observed2": 9081.581998818829
+        },
+        {
+          "n": 588,
+          "error2": 2693.6524899972333,
+          "observed2": 5942.057734142136
+        },
+        {
+          "n": 573,
+          "error2": 2240.322916807702,
+          "observed2": 6040.335659726854
+        }
+      ]
+    },
+    {
+      "name": "harmonic_interpolation",
+      "equal_octant_MSE_um2": 1.1281372528187985,
+      "equal_octant_RMSE_um": 1.062138057325317,
+      "reported_MSE_difference": 0.0,
+      "blocks": [
+        {
+          "n": 737,
+          "error2": 224.5876272146736,
+          "observed2": 976.8788253357316
+        },
+        {
+          "n": 463,
+          "error2": 215.35186363736926,
+          "observed2": 2134.649749940356
+        },
+        {
+          "n": 261,
+          "error2": 246.33493523807044,
+          "observed2": 4967.733807721249
+        },
+        {
+          "n": 576,
+          "error2": 190.6727842027669,
+          "observed2": 1025.5539737864704
+        },
+        {
+          "n": 670,
+          "error2": 518.6007018659575,
+          "observed2": 3677.1762020266297
+        },
+        {
+          "n": 487,
+          "error2": 904.6810023190027,
+          "observed2": 9081.581998818829
+        },
+        {
+          "n": 588,
+          "error2": 1342.570634244496,
+          "observed2": 5942.057734142136
+        },
+        {
+          "n": 573,
+          "error2": 1183.4893130720543,
+          "observed2": 6040.335659726854
+        }
+      ],
+      "independent_relative_free_residual": 9.379984549079859e-09,
+      "boundary_value_max_error_um": 0.0,
+      "operator_translation_relative_difference": 2.1936083075052846e-15,
+      "energy_half_u_Ku_relative_difference": 2.7049640253249643e-15,
+      "energy_translation_relative_difference": 0.0
+    },
+    {
+      "name": "elastic_nu_0",
+      "equal_octant_MSE_um2": 1.3771643920333798,
+      "equal_octant_RMSE_um": 1.173526476920474,
+      "reported_MSE_difference": 0.0,
+      "blocks": [
+        {
+          "n": 737,
+          "error2": 75.01626462027431,
+          "observed2": 976.8788253357316
+        },
+        {
+          "n": 463,
+          "error2": 237.52164746422147,
+          "observed2": 2134.649749940356
+        },
+        {
+          "n": 261,
+          "error2": 309.9631950452519,
+          "observed2": 4967.733807721249
+        },
+        {
+          "n": 576,
+          "error2": 83.19160311512957,
+          "observed2": 1025.5539737864704
+        },
+        {
+          "n": 670,
+          "error2": 797.6891822589301,
+          "observed2": 3677.1762020266297
+        },
+        {
+          "n": 487,
+          "error2": 1175.4567212263455,
+          "observed2": 9081.581998818829
+        },
+        {
+          "n": 588,
+          "error2": 1689.8787885474997,
+          "observed2": 5942.057734142136
+        },
+        {
+          "n": 573,
+          "error2": 1485.3889931389524,
+          "observed2": 6040.335659726854
+        }
+      ],
+      "independent_relative_free_residual": 9.499562038869116e-09,
+      "boundary_value_max_error_um": 0.0,
+      "operator_translation_relative_difference": 2.408598439219734e-15,
+      "energy_half_u_Ku_relative_difference": 1.6615270583383386e-14,
+      "energy_translation_relative_difference": 2.84021719374075e-16
+    }
+  ]
+}
