@@ -617,44 +617,84 @@
     }
   },
   "evidence_atlas": {
-    "scope": "Argon-co-designed original interactive presentation of immutable saved measured-field outputs and separate-study evidence map; no new mechanics calibration.",
-    "implementation_commit": "dff6991a3d64f81ad00864bfe7c00d45d0efa653",
+    "scope": "Original integrated presentation of saved, separately qualified measured-field and synthetic-network studies; no new solver or Argon call.",
+    "implementation_commit": "a18724c1d1688d0bedb1ef87d27926772c6d99ff",
     "files": {
+      "index.html": {
+        "bytes": 25809,
+        "sha256": "dd9af7bc115727aa7bff15a248a61bec9a07e45acccc832152d539cd93af3cc8"
+      },
+      "WEB-MANIFEST.json": {
+        "bytes": 2885,
+        "sha256": "aeb90560a9e2296adc41b22a79787ffccbaf8867cf29858e064d4cd93efbf37d"
+      },
+      "comparisons.css": {
+        "bytes": 4213,
+        "sha256": "b67bbf24a1e9865dea0261292e2515373602e322a806c3f5db79ba4d44c1f385"
+      },
       "DATA-PROVENANCE.json": {
         "bytes": 1072,
         "sha256": "56154722b12d2d3b9cacdb752fe9a71440023702a42f5a77e916e0e8ace965e5"
       },
-      "METHODS.md": {
-        "bytes": 5879,
-        "sha256": "833c7820db0224e4d63abc574cb3bd1d730ea4854d5623e9e99425ab98aa6753"
-      },
-      "WEB-MANIFEST.json": {
-        "bytes": 1249,
-        "sha256": "0fbc51794b75210b1f022b65f4ca9567f7162d8bd92aa19361d9d3cfd7119112"
-      },
-      "app.js": {
-        "bytes": 19211,
-        "sha256": "c04c191567f9b8ec482bc0236414e7225b19ed346fcf3e11c6edac79867c2549"
-      },
-      "data.json": {
-        "bytes": 1164462,
-        "sha256": "ac0bb60b76b9b9f707278a6d7950c5d326cfc5c57ba95ccd003936c979ede56f"
-      },
-      "evidence-atlas.zip": {
-        "bytes": 481563,
-        "sha256": "6196cec41a8210fbd193f49a22b5e9d5aa310c08a2e85d18aa9a2c0660ca0fb6"
-      },
-      "index.html": {
-        "bytes": 13476,
-        "sha256": "918878b966aacf792b3cd05eaaf21d47ccd06e3213640b7fef58132efbacdacb"
+      "INTEGRATION-METHODS.md": {
+        "bytes": 7105,
+        "sha256": "1be6501119ce43992e775d2ddc6720eb0b7850dd388b99f904a75ffea55e0dbd"
       },
       "render.js": {
         "bytes": 10586,
         "sha256": "ecb71d71a6a5228b1518e85a99db5cef1067b980eb475520a13d74ead2e79113"
       },
+      "comparisons.js": {
+        "bytes": 12996,
+        "sha256": "8f4018c4236593660c34d3b303d73c715c039303c676bc448fcd95074955479d"
+      },
+      "microrheology.json": {
+        "bytes": 2991273,
+        "sha256": "58f4733072ab3776d9e93753aabf3ab57d77ebf31825bd7572cb6428c86465f4"
+      },
+      "crosslink-replay.json": {
+        "bytes": 5411081,
+        "sha256": "464de1608cc7030548d794cca870fbe49ff738289578b0db1e62dcc22d05c2a9"
+      },
+      "evidence-atlas.zip": {
+        "bytes": 3560116,
+        "sha256": "9ff8d3955651e4b3be35a1977e44cdccca9ee4bd2507fbe3be3a8b8ec0ada26b"
+      },
+      "network-scenes.js": {
+        "bytes": 7430,
+        "sha256": "bdf10de5fea6f83e7e190d3d91e7ad2d7698707b897b2fd7ebc7ae12ce02d1a1"
+      },
+      "data.json": {
+        "bytes": 1164462,
+        "sha256": "ac0bb60b76b9b9f707278a6d7950c5d326cfc5c57ba95ccd003936c979ede56f"
+      },
+      "comparison-plots.js": {
+        "bytes": 4074,
+        "sha256": "6ae97c071829d31226dc1f43cbe2a843e041dc1b845bea6f6d4e02940210ba2b"
+      },
+      "METHODS.md": {
+        "bytes": 6248,
+        "sha256": "e0b647b9d9b981aef5aa185b81c913857e6e8b6ef0963f2cbba563e930fc6c27"
+      },
       "style.css": {
         "bytes": 17129,
         "sha256": "d36dfb4d7a07c66d6cc5a8ad65b5531012e053aa9a6a63b225737aecbba68edf"
+      },
+      "crosslinks.json": {
+        "bytes": 4435043,
+        "sha256": "fc45cee021e9e788f58e7b40b030460b89c95bb733ea6dc20504e68f960389fe"
+      },
+      "micro-fields.json": {
+        "bytes": 850147,
+        "sha256": "6751bbe064223866cca88c753795c6f1271b3f812fcc58d924dfd59ff817fe00"
+      },
+      "COMPARISON-PROVENANCE.json": {
+        "bytes": 2888,
+        "sha256": "c4e3860075b9ca6dbf4475bb36949201deb2cdf9ccf6722ece50f145c6c39168"
+      },
+      "app.js": {
+        "bytes": 19272,
+        "sha256": "645f9df1ece7f59c78e31ba8419185e27f708bd34b0c136d056336e17801c41e"
       }
     }
   }

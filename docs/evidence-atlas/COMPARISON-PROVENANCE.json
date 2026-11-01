@@ -1,0 +1,83 @@
+{
+  "source_snapshot": "7b314da640105d37b27105721c88bb87404b6429",
+  "inputs": [
+    {
+      "source": "collagen-network-atlas/data/density.json",
+      "private_input": "inputs/density.json",
+      "bytes": 15382266,
+      "sha256": "4ce2afe0bbd43bea9305f55fba988d78e9fa5f14a93cefaf8211acd4fce9fa20"
+    },
+    {
+      "source": "collagen-network-atlas/data/aging.json",
+      "private_input": "inputs/aging.json",
+      "bytes": 623269,
+      "sha256": "79e0d3b057c1202e0d81e3571a4599b8c0bfeff05eabc65af32c9da5c75d2092"
+    },
+    {
+      "source": "collagen-network-atlas/force-replay/replay.json",
+      "private_input": "inputs/replay.json",
+      "bytes": 5511669,
+      "sha256": "42e2a28650530d2358796903c1327f49fda53e365fb23dec6c28604a3e5f44e8"
+    },
+    {
+      "source": "collagen-network-atlas/microrheology/results.json",
+      "private_input": "inputs/results.json",
+      "bytes": 1415608,
+      "sha256": "d3f585754a17ec7f172296f735889d97704e193f2337017859172fb1f2e76775"
+    },
+    {
+      "source": "collagen-fenicsx-poroelastic/web/results.json",
+      "private_input": "inputs/collagen-fenicsx-poroelastic-results.json",
+      "bytes": 4691390,
+      "sha256": "02d7f2d18996fd5220c0e66c726d6b6045e02f419d6f9938a4bc15380ddcfccb"
+    },
+    {
+      "source": "collagen-fenicsx-poroelastic/web/comparisons.csv",
+      "private_input": "inputs/comparisons.csv",
+      "bytes": 211149,
+      "sha256": "811a4688e4758b696ba2ac3c0f06f656d6f9901801872109a5da350a6f82080b"
+    },
+    {
+      "source": "collagen-fenicsx-poroelastic/web/validation.json",
+      "private_input": "inputs/validation.json",
+      "bytes": 646,
+      "sha256": "179c78b3176309814638235c419166b2336f65f6a53499a08e527e1c1a9fba89"
+    },
+    {
+      "source": "collagen-fenicsx-poroelastic/web/summary.json",
+      "private_input": "inputs/summary.json",
+      "bytes": 11153,
+      "sha256": "e176e7214cbe68c9c719d356c2fdda5335cb16f656e841690ae356b5fbc3812f"
+    },
+    {
+      "source": "collagen-fenicsx-poroelastic/web/data.js",
+      "private_input": "inputs/data.js",
+      "bytes": 858915,
+      "sha256": "81d5c6931a9ee095f1115a8cc493d5e79c6f37c494f7c4c2ed66febb09240f69"
+    }
+  ],
+  "exports": [
+    {
+      "file": "crosslinks.json",
+      "bytes": 4435043,
+      "sha256": "fc45cee021e9e788f58e7b40b030460b89c95bb733ea6dc20504e68f960389fe"
+    },
+    {
+      "file": "crosslink-replay.json",
+      "bytes": 5411081,
+      "sha256": "464de1608cc7030548d794cca870fbe49ff738289578b0db1e62dcc22d05c2a9"
+    },
+    {
+      "file": "microrheology.json",
+      "bytes": 2991273,
+      "sha256": "58f4733072ab3776d9e93753aabf3ab57d77ebf31825bd7572cb6428c86465f4"
+    },
+    {
+      "file": "micro-fields.json",
+      "bytes": 850147,
+      "sha256": "6751bbe064223866cca88c753795c6f1271b3f812fcc58d924dfd59ff817fe00"
+    }
+  ],
+  "copied_values_without_fitting": true,
+  "new_simulations": false
+}
