@@ -1,3 +1,5 @@
+# Finite-size check summary — stiffness spread across lattice widths
+
 | series | W | seeds | z of largest G spread (CV) | max CV | G at z≈3.5 | G at z≈4.2 |
 |---|---|---|---|---|---|---|
 | LOX lock 0 | 12 | 4 | 2.88 | 0.67 | 8.2e-03 | 7.1e-02 |

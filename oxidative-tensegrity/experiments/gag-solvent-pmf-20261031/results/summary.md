@@ -1,3 +1,5 @@
+# Collagen–GAG solvent PMF summary — umbrella and unbiased free energies
+
 | analog | windows | contact r_c (nm) | well depth (kT) | ΔG° umbrella (kcal/mol) | ΔG° unbiased | agree |
 |---|---|---|---|---|---|---|
 | MGUA | 19 | 0.79 | -1.63 | -0.50 ± 0.03 | -0.63 ± 0.10 (18 ns) | yes |

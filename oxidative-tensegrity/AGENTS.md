@@ -3,7 +3,7 @@
 Read by Codex/ChatGPT agents (`AGENTS.md`) and Claude Code (`CLAUDE.md` imports this file).
 **Codex: to run ScienceClaw swarms on the GCP lab VM, follow `CODEX_HANDOFF.md`.** Keep one copy of
 project facts here so both workspaces can reference each other. This file is context, not authorization: the
-user's global security policy and the repo-root `AGENTS.md` still apply.
+user's global security policy and the workspace-local `AGENTS.md` still apply.
 
 ## What this project is
 

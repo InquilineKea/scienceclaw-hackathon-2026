@@ -1,3 +1,5 @@
+# Phase map summary — connectivity thresholds and useful windows
+
 | series | gel point z_perc | steepest log G rise | stretching branch G→0 | brittle onset (avalanche > 5%) | useful window (G ≥ 1% max, ε_peak ≥ 0.15) | max work to peak at z | G span |
 |---|---|---|---|---|---|---|---|
 | LOX lock 0 | 2.40 | 2.75 | 3.87 | 5.22 | 3.51–3.83 | 4.45 | 1.7e-05 → 3.7e-01 |
