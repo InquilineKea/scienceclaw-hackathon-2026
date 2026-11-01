@@ -1,0 +1,55 @@
+name: Publish research Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'docs/**'
+      - '.github/workflows/publish-research-pages.yml'
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: research-static-pages-v1
+  cancel-in-progress: true
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Read this repository
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1
+        with:
+          persist-credentials: false
+          sparse-checkout: docs
+          submodules: false
+      - name: Package existing static docs only
+        shell: bash
+        run: |
+          set -euo pipefail
+          test -f docs/index.html
+          test -f docs/evidence-atlas/index.html
+          if test -n "$(find docs -type l -print -quit)"; then
+            echo 'Static publication refuses symbolic links.' >&2
+            exit 1
+          fi
+          tar --directory docs -cf "$RUNNER_TEMP/artifact.tar" .
+      - name: Upload static artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: github-pages
+          path: ${{ runner.temp }}/artifact.tar
+          retention-days: 1
+          if-no-files-found: error
+          compression-level: 6
+      - name: Publish existing Pages site
+        id: deployment
+        uses: actions/deploy-pages@368f82528645a54fb793d4d04e342629a3f51346
+        with:
+          artifact_name: github-pages
