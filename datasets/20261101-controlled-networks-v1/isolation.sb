@@ -1,0 +1,8 @@
+(version 1)
+(deny default)
+(allow process-exec (subpath "/Library/Frameworks/Python.framework"))
+(allow process-fork)
+(allow sysctl-read)
+(allow file-read-metadata)
+(allow file-read* (literal "/") (subpath "/usr") (subpath "/System") (subpath "/Library/Frameworks/Python.framework") (subpath "/Library/Apple") (subpath "/private/var/db/dyld") (literal "/dev/urandom") (literal "/dev/random") (literal "/dev/null") (subpath "/Users/simfish/Documents/Codex/2026-10-31/referenced-chatgpt-conversation-this-is-an-3/outputs/controlled-networks-20261101"))
+(allow file-write* (subpath "/Users/simfish/Documents/Codex/2026-10-31/referenced-chatgpt-conversation-this-is-an-3/outputs/controlled-networks-20261101") (literal "/dev/null"))

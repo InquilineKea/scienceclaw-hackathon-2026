@@ -1,0 +1,110 @@
+[
+  {
+    "id": "triangular2d-101-intact-tension",
+    "status": "completed",
+    "relative_work_difference": 1.7142552392483526e-10,
+    "censoring_changed": false
+  },
+  {
+    "id": "triangular2d-101-intact-shear",
+    "status": "completed",
+    "relative_work_difference": 2.1215802747139725e-12,
+    "censoring_changed": false
+  },
+  {
+    "id": "triangular2d-101-clustered-tension",
+    "status": "completed",
+    "relative_work_difference": 2.970581092610128e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "triangular2d-101-clustered-shear",
+    "status": "completed",
+    "relative_work_difference": 2.7379437619897828e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "triangular2d-101-distributed-tension",
+    "status": "completed",
+    "relative_work_difference": 1.330854833803681e-10,
+    "censoring_changed": false
+  },
+  {
+    "id": "triangular2d-101-distributed-shear",
+    "status": "completed",
+    "relative_work_difference": 1.7611740441008426e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "fcc3d-101-intact-tension",
+    "status": "completed",
+    "relative_work_difference": 4.8916766207040346e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "fcc3d-101-intact-shear",
+    "status": "completed",
+    "relative_work_difference": 6.913450796554924e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "fcc3d-101-clustered-tension",
+    "status": "completed",
+    "relative_work_difference": 2.60271132701619e-10,
+    "censoring_changed": false
+  },
+  {
+    "id": "fcc3d-101-clustered-shear",
+    "status": "completed",
+    "relative_work_difference": 1.2785030076263546e-12,
+    "censoring_changed": false
+  },
+  {
+    "id": "fcc3d-101-distributed-tension",
+    "status": "completed",
+    "relative_work_difference": 6.22624351399748e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "fcc3d-101-distributed-shear",
+    "status": "completed",
+    "relative_work_difference": 3.206332314951907e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "disordered3d-101-intact-tension",
+    "status": "completed",
+    "relative_work_difference": 8.404690581973245e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "disordered3d-101-intact-shear",
+    "status": "completed",
+    "relative_work_difference": 2.4824506260879366e-10,
+    "censoring_changed": false
+  },
+  {
+    "id": "disordered3d-101-clustered-tension",
+    "status": "completed",
+    "relative_work_difference": 3.268678779703425e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "disordered3d-101-clustered-shear",
+    "status": "completed",
+    "relative_work_difference": 2.9701263704285785e-11,
+    "censoring_changed": false
+  },
+  {
+    "id": "disordered3d-101-distributed-tension",
+    "status": "completed",
+    "relative_work_difference": 2.097469453106393e-10,
+    "censoring_changed": false
+  },
+  {
+    "id": "disordered3d-101-distributed-shear",
+    "status": "completed",
+    "relative_work_difference": 1.2573612051984656e-11,
+    "censoring_changed": false
+  }
+]

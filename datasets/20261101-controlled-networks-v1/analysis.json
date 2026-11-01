@@ -1,0 +1,1579 @@
+{
+  "groups": [
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.002902698863604281,
+      "mean_ci95_bootstrap": [
+        0.0026205372484972966,
+        0.0031663792710369845
+      ],
+      "mean_failure_strain": 0.10200000000000001
+    },
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.0019278993513627387,
+      "mean_ci95_bootstrap": [
+        0.0017922960232034852,
+        0.002080860626905979
+      ],
+      "mean_failure_strain": 0.106
+    },
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.0019854048214046297,
+      "mean_ci95_bootstrap": [
+        0.0017435754362174582,
+        0.0022131993102066185
+      ],
+      "mean_failure_strain": 0.10200000000000001
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 6,
+      "mean_work": 0.0023196556948204914,
+      "mean_ci95_bootstrap": [
+        0.0021701469178014663,
+        0.0024850143151734214
+      ],
+      "mean_failure_strain": 0.2175
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 8,
+      "mean_work": 0.002024178027926939,
+      "mean_ci95_bootstrap": [
+        0.0019197074991344108,
+        0.002119918195052936
+      ],
+      "mean_failure_strain": 0.23
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 10,
+      "mean_work": 0.0019044202760317595,
+      "mean_ci95_bootstrap": [
+        0.0017658188907122543,
+        0.002049234983785069
+      ],
+      "mean_failure_strain": null
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.009733723605184742,
+      "mean_ci95_bootstrap": [
+        0.009463909105303366,
+        0.010000872646498201
+      ],
+      "mean_failure_strain": 0.1785
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.008000343635892153,
+      "mean_ci95_bootstrap": [
+        0.007625151347387121,
+        0.008453647351900573
+      ],
+      "mean_failure_strain": 0.1905
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.007636870051240222,
+      "mean_ci95_bootstrap": [
+        0.007031809240469492,
+        0.008171873368932598
+      ],
+      "mean_failure_strain": 0.191
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.0064571560003868584,
+      "mean_ci95_bootstrap": [
+        0.005807336653799474,
+        0.007219386907222829
+      ],
+      "mean_failure_strain": 0.183125
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 3,
+      "mean_work": 0.005759393862402703,
+      "mean_ci95_bootstrap": [
+        0.005393285046860962,
+        0.006083018484030221
+      ],
+      "mean_failure_strain": 0.22571428571428573
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 5,
+      "mean_work": 0.0056965621849756325,
+      "mean_ci95_bootstrap": [
+        0.005304635729763023,
+        0.006009846480222943
+      ],
+      "mean_failure_strain": 0.21
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 1,
+      "mean_work": 0.010350757950570352,
+      "mean_ci95_bootstrap": [
+        0.009914732261663168,
+        0.010795809715509315
+      ],
+      "mean_failure_strain": 0.19944444444444445
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.00832425694596278,
+      "mean_ci95_bootstrap": [
+        0.007713358014531402,
+        0.008937932053092663
+      ],
+      "mean_failure_strain": 0.204375
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.008285800323927414,
+      "mean_ci95_bootstrap": [
+        0.007717912080732734,
+        0.008848985495991266
+      ],
+      "mean_failure_strain": 0.20500000000000002
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.006359477915678103,
+      "mean_ci95_bootstrap": [
+        0.005929093472079537,
+        0.006854841730207581
+      ],
+      "mean_failure_strain": 0.18812500000000001
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 9,
+      "mean_work": 0.006012205787709199,
+      "mean_ci95_bootstrap": [
+        0.005645994059690022,
+        0.0064080265958354225
+      ],
+      "mean_failure_strain": 0.225
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 9,
+      "mean_work": 0.006253880726365458,
+      "mean_ci95_bootstrap": [
+        0.005902175938769548,
+        0.0066041204516900254
+      ],
+      "mean_failure_strain": 0.23
+    }
+  ],
+  "paired_damage_effects": [
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.31959876752714284,
+      "seed_effects": [
+        -0.28418921021502774,
+        -0.33389671896376427,
+        0.04646037713262796,
+        -0.38388712048532836,
+        -0.3666598990245957,
+        -0.40455747697766264,
+        -0.23045957775555648,
+        -0.3383571945603763,
+        -0.5085745098326757,
+        -0.3918663445890689
+      ]
+    },
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.303178409315327,
+      "seed_effects": [
+        -0.15846050842148007,
+        -0.3155705366571594,
+        -0.28593835454833727,
+        -0.5988937552834973,
+        -0.41512459874595575,
+        -0.41414491165987466,
+        -0.008744743087353402,
+        -0.36039419450549215,
+        -0.18713439993463665,
+        -0.2873780903094838
+      ]
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.11970330368520879,
+      "seed_effects": [
+        -0.10843613742578517,
+        -0.10944906368721574,
+        -0.009164551851830294,
+        -0.0749296887537153,
+        -0.2505569833293074,
+        -0.2175862185997679,
+        0.08539794585355831,
+        -0.19323502770568268,
+        -0.09911225704925619,
+        -0.21996105430308543
+      ]
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.1752483820816068,
+      "seed_effects": [
+        -0.08351234240660388,
+        -0.13753030151387413,
+        -0.19982048046121514,
+        -0.08785762353875759,
+        -0.26137527874250177,
+        -0.2134796724297503,
+        -0.20213887595086455,
+        -0.27863744798167567,
+        -1.6675609564309468e-06,
+        -0.28813013022986855
+      ]
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.17552911622003065,
+      "seed_effects": [
+        -0.07625561786111545,
+        -0.07247304500595542,
+        -0.21224564934875223,
+        -0.15327788007811383,
+        -0.23645048492533927,
+        -0.2588140632460141,
+        -0.25929078964340246,
+        -0.25589087290873314,
+        -0.22154683138436693,
+        -0.009045927798513653
+      ]
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.21461230597247805,
+      "seed_effects": [
+        -0.16654320823170776,
+        -0.18767859708711632,
+        -0.363661424432674,
+        -0.16781699407555406,
+        -0.1862494012042687,
+        -0.25854587393353035,
+        -0.4124203803003065,
+        -0.1468089784094183,
+        -0.11397150882727247,
+        -0.142426693222932
+      ]
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.08275081666719833,
+      "seed_effects": [
+        0.08713246728718249,
+        -0.3020780869596872,
+        -0.026363776535109684,
+        -0.10445212714355745,
+        -0.1590119850406364,
+        -0.28909556137678316,
+        -0.25161432044745735,
+        0.038231425077905445,
+        0.3008323315846442,
+        -0.12108853311848422
+      ]
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.09598487288592625,
+      "seed_effects": [
+        -0.0763578836212414,
+        -0.33239014414541723,
+        0.0017377270540492873,
+        -0.20746152419059105,
+        -0.08280589817725459,
+        -0.2212404033770834,
+        -0.0696839235556671,
+        0.037628880022733124,
+        0.25275974684929325,
+        -0.2620353057180834
+      ]
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.1936266695434378,
+      "seed_effects": [
+        -0.09675067989221298,
+        -0.23303570008886787,
+        -0.20408883432937763,
+        -0.2159738541733126,
+        -0.1173975466561693,
+        -0.2892004599489374,
+        -0.021510078358306095,
+        -0.19006201418693092,
+        -0.3827573632584784,
+        -0.18549016454178469
+      ]
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.19918984693981712,
+      "seed_effects": [
+        -0.16762472684699325,
+        -0.22515272125861396,
+        -0.18815760006961935,
+        -0.27392188969862274,
+        -0.013690014702689934,
+        -0.23155121687384672,
+        -0.2856386903490916,
+        -0.21880303859509465,
+        -0.23040019256300626,
+        -0.1569583784405928
+      ]
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.03701363017346465,
+      "seed_effects": [
+        0.20593913378125173,
+        0.015255356487861471,
+        -0.2632624900795647,
+        -0.004881756907881285,
+        -0.026195015994800563,
+        -0.19013540186094202,
+        -0.34603546761973514,
+        -0.0030635577535518266,
+        0.11339470801583196,
+        0.12884819019688387
+      ]
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "n": 10,
+      "mean_paired_work_fraction_change": -0.001538767186420631,
+      "seed_effects": [
+        0.05542423945182051,
+        0.019106957528333135,
+        -0.20375396540396684,
+        -0.1378087230362568,
+        0.19007369536576402,
+        -0.05482435665987462,
+        -0.20146613900156796,
+        -0.07116242289443997,
+        0.3299080445443672,
+        0.059114998241615035
+      ]
+    }
+  ],
+  "refinement": {
+    "pairs": 180,
+    "max_work_relative_difference": 0.3090636010254947,
+    "median_work_relative_difference": 0.021637813642245256,
+    "over_5percent": 51,
+    "censoring_changed": 13,
+    "details": [
+      {
+        "base_case": "triangular2d-101-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.008110889619165878,
+        "failure_strain_difference": 0.010000000000000009,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-101-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.003541791005269477,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-101-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.03721513047939514,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-101-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0035839106210818336,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-101-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.011290116975109052,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-101-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.06206899492995606,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "triangular2d-102-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.07214350267253318,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-102-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.014325579628040623,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-102-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.046601657586285185,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-102-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.014022671710691086,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-102-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.10600669131776398,
+        "failure_strain_difference": 0.01999999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-102-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.01750031125347237,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-103-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.06967694667816818,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-103-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.008903488184356764,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-103-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.18169486812720864,
+        "failure_strain_difference": 0.04500000000000001,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-103-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.009046558612513666,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-103-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.17864254990695588,
+        "failure_strain_difference": 0.024999999999999994,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-103-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.007194384528040448,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-104-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.1347753608547378,
+        "failure_strain_difference": 0.015,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-104-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.027073259046309115,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "triangular2d-104-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.14233978217423943,
+        "failure_strain_difference": 0.010000000000000009,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-104-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.02902514181643019,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "triangular2d-104-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.01693456715009114,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-104-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.034423042482618245,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-105-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.011809151202736045,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-105-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.016500716159458424,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-105-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.08146691150704277,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-105-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.01096454710490198,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-105-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.07443144514939407,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-105-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.04180077768158971,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-106-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.0863543589950431,
+        "failure_strain_difference": 0.03,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-106-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.022993011350888732,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-106-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.03131278006589673,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-106-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0006181725298931733,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-106-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.08204570989487574,
+        "failure_strain_difference": 0.015,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-106-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0010265555912443507,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-107-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.2341724817444331,
+        "failure_strain_difference": 0.039999999999999994,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-107-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.09395628667320366,
+        "failure_strain_difference": 0.020000000000000018,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-107-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.04623609552376778,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-107-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.05262703121031002,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "triangular2d-107-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.16165281496614597,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-107-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0008975057421973136,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-108-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.03203980678627055,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-108-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0544301797565575,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-108-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.010079183913926914,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-108-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0014464918787957508,
+        "failure_strain_difference": 0.004999999999999977,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-108-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.2708342969837643,
+        "failure_strain_difference": 0.02500000000000001,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-108-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.014583915049248152,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-109-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.0223211821257359,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-109-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.01314798738844661,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-109-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.012012896248434669,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-109-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.014019185393702232,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-109-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.05728639465377398,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-109-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.004220903635009987,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-110-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.03573948414723875,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-110-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.010235092661968793,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-110-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.06359243243773631,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-110-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.007007314402644437,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-110-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.0776785501834668,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "triangular2d-110-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.01599944533939437,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-101-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.016565494296349303,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-101-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0737993242953242,
+        "failure_strain_difference": 0.009999999999999981,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-101-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.03240347799344894,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-101-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.004736910473810617,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-101-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.1573963668861712,
+        "failure_strain_difference": 0.04000000000000001,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-101-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.007328325457746318,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "fcc3d-102-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.11452539822212555,
+        "failure_strain_difference": 0.035,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-102-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.04911125488204063,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-102-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.06885060353578468,
+        "failure_strain_difference": 0.01999999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-102-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.005944788499775384,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-102-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.0460211133903325,
+        "failure_strain_difference": 0.004999999999999977,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-102-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.018290296945618758,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-103-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.10946238296724216,
+        "failure_strain_difference": 0.035,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-103-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.042672580790932876,
+        "failure_strain_difference": 0.014999999999999986,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-103-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.019946326871430664,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-103-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.08654432621865549,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-103-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.2049818477990235,
+        "failure_strain_difference": 0.04500000000000001,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-103-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.010347518146358528,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-104-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.04994027107968167,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-104-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.06154498935287685,
+        "failure_strain_difference": 0.010000000000000009,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-104-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.10167491064843434,
+        "failure_strain_difference": 0.01999999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-104-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.006298893099611971,
+        "failure_strain_difference": 0.004999999999999977,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-104-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.201401396481763,
+        "failure_strain_difference": 0.05499999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-104-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.005257895610529815,
+        "failure_strain_difference": 0.004999999999999977,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-105-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.17731041091676983,
+        "failure_strain_difference": 0.06,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-105-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.1747910332540561,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "fcc3d-105-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.003400816234862798,
+        "failure_strain_difference": 0.024999999999999994,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-105-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.00017548084299996234,
+        "failure_strain_difference": 0.009999999999999981,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-105-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.007853995665236377,
+        "failure_strain_difference": 0.010000000000000009,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-105-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.020555105394746687,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-106-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.02225016275857579,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-106-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.011426218981758673,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-106-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.013517828866973997,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-106-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.02175732721541432,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-106-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.032101129740062205,
+        "failure_strain_difference": 0.010000000000000009,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-106-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.011899928987252489,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-107-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.06657477340112232,
+        "failure_strain_difference": 0.010000000000000009,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-107-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.24722201627707835,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "fcc3d-107-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.032178773416138944,
+        "failure_strain_difference": 0.009999999999999981,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-107-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0050152283562565,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-107-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.00936631314294678,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-107-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.012458852211519442,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-108-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.026916522950323294,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-108-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.018111397010303662,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-108-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.012319601719632018,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-108-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.012213865238683442,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-108-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.05965496620855936,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-108-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.05567023863029368,
+        "failure_strain_difference": 0.010000000000000009,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-109-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.07924727822381056,
+        "failure_strain_difference": 0.03,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-109-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.00672148754421176,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-109-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.02015723661948044,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-109-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.00949094083587593,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-109-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.22800331415624742,
+        "failure_strain_difference": 0.05499999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-109-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.16794114309156888,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "fcc3d-110-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.037027577730332474,
+        "failure_strain_difference": 0.01999999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-110-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.12718246725569143,
+        "failure_strain_difference": 0.015000000000000013,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-110-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.0020867021080024652,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-110-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.013622724876270458,
+        "failure_strain_difference": 0.004999999999999977,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-110-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.018689587752810908,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "fcc3d-110-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.032623517239701166,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-101-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.024795511091433242,
+        "failure_strain_difference": 0.01999999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-101-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.01558271468518528,
+        "failure_strain_difference": 0.004999999999999977,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-101-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.025007613772168216,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-101-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.04771257369185074,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-101-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.09373795629007675,
+        "failure_strain_difference": 0.01999999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-101-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0025947598603295115,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-102-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.021518300069076186,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-102-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.011803843880126699,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-102-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.07221505749778137,
+        "failure_strain_difference": 0.009999999999999981,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-102-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0003083492111970505,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-102-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.046092696175590774,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-102-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.008964019388137512,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-103-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.061183720743710826,
+        "failure_strain_difference": 0.014999999999999986,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-103-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.030798695135330192,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-103-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.08467564579267374,
+        "failure_strain_difference": 0.035,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-103-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.003719224950907299,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-103-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.0379926125082725,
+        "failure_strain_difference": 0.04000000000000001,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-103-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.03536798588669133,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-104-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.027506503233477468,
+        "failure_strain_difference": 0.01999999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-104-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.009135007189670386,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-104-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.013597489812079974,
+        "failure_strain_difference": 0.009999999999999981,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-104-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.015099972149935284,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-104-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 1.4714370879861341e-05,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-104-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.003398828504002284,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-105-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.01609517545438995,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-105-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0006095061351036619,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-105-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.000329829262997906,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-105-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.01728630637338469,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-105-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.018430017888825572,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-105-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0008086225652939281,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-106-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.01667884165179075,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-106-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.1053084203678255,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "disordered3d-106-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.0008189174298159262,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-106-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.0036564921354038985,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-106-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.01176045298179924,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-106-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.004449769283556706,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-107-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.11415918416021942,
+        "failure_strain_difference": 0.03999999999999998,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-107-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.011616791766308577,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "disordered3d-107-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.12995958901317275,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "disordered3d-107-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.01598922553967779,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-107-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.017214160075246752,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-107-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.005867451155957062,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-108-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.027019466678973567,
+        "failure_strain_difference": 0.01999999999999999,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-108-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.023808394190202573,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-108-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.01228906900581384,
+        "failure_strain_difference": 0.004999999999999977,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-108-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.026689699430091623,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-108-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.015088414563069223,
+        "failure_strain_difference": 0.004999999999999977,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-108-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.016989000067541418,
+        "failure_strain_difference": 0.0,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-109-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.048655477329054064,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "disordered3d-109-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.1431791722115411,
+        "failure_strain_difference": 0.03,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-109-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.012900376949785741,
+        "failure_strain_difference": 0.0050000000000000044,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-109-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.002701918657233509,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-109-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.00467869087354226,
+        "failure_strain_difference": 0.010000000000000009,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-109-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.001421284445773521,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-110-intact-tension-base-matched_tension_K",
+        "work_relative_difference": 0.05056699338985255,
+        "failure_strain_difference": null,
+        "censoring_changed": true
+      },
+      {
+        "base_case": "disordered3d-110-intact-shear-base-matched_tension_K",
+        "work_relative_difference": 0.3090636010254947,
+        "failure_strain_difference": 0.03999999999999998,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-110-clustered-tension-base-matched_tension_K",
+        "work_relative_difference": 0.026048718854086668,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-110-clustered-shear-base-matched_tension_K",
+        "work_relative_difference": 0.015498590502346973,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-110-distributed-tension-base-matched_tension_K",
+        "work_relative_difference": 0.028893736748155322,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      },
+      {
+        "base_case": "disordered3d-110-distributed-shear-base-matched_tension_K",
+        "work_relative_difference": 0.027751094152966446,
+        "failure_strain_difference": null,
+        "censoring_changed": false
+      }
+    ]
+  },
+  "max_residual": 9.999089716637591e-10,
+  "failed_reported_cases": 0,
+  "max_damage_energy_increase": 0,
+  "maximum_match_error": 1.1102230246251565e-16
+}

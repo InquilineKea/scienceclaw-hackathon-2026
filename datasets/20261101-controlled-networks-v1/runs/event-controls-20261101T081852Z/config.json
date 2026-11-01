@@ -1,0 +1,34 @@
+{
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
+  "families": [
+    "triangular2d",
+    "fcc3d",
+    "disordered3d"
+  ],
+  "loading": [
+    "tension",
+    "shear"
+  ],
+  "damage": [
+    "intact",
+    "clustered",
+    "distributed"
+  ],
+  "tolerance": 1e-10,
+  "control_tolerance": 1e-12,
+  "max_strain": 0.24,
+  "failure": "remaining stiffness <10% of pattern initial stiffness",
+  "integration": "exact elastic integral between resolved break events",
+  "normalization": "equal material and matched intact axial K; shared trajectories by exact linear scaling"
+}

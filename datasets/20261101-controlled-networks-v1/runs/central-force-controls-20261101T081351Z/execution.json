@@ -1,0 +1,8 @@
+{
+  "elapsed_seconds": 226.59315276145935,
+  "raw_simulations": 360,
+  "reported_normalization_cases": 720,
+  "failed": 0,
+  "max_residual": 9.999089716637591e-10,
+  "cloud_cost_usd": 0
+}

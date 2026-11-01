@@ -1,0 +1,41 @@
+{
+  "model": "linearized central-force brittle truss; original implementation",
+  "families": [
+    "triangular2d",
+    "fcc3d",
+    "disordered3d"
+  ],
+  "seeds": [
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110
+  ],
+  "normalizations": [
+    "equal_budget",
+    "matched_tension_K"
+  ],
+  "damage": [
+    "intact",
+    "clustered",
+    "distributed"
+  ],
+  "loading": [
+    "tension",
+    "shear"
+  ],
+  "max_strain": 0.24,
+  "step": 0.01,
+  "refined_step": 0.005,
+  "force_tolerance": 1e-09,
+  "refined_tolerance": 1e-10,
+  "match_target_K": 1.0,
+  "no_cloud_cost": true,
+  "no_experimental_calibration": true
+}

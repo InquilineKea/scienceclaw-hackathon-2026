@@ -1,0 +1,59 @@
+{
+  "source_sha256": "811a4688e4758b696ba2ac3c0f06f656d6f9901801872109a5da350a6f82080b",
+  "validation": {
+    "versions": {
+      "dolfinx": "0.10.0.post2",
+      "numpy": "2.2.6",
+      "scipy": "1.16.3",
+      "petsc": [
+        3,
+        24,
+        0
+      ],
+      "scalarType": "<class 'numpy.float64'>"
+    },
+    "records": 40,
+    "systems": 4160,
+    "resolvedSystems": 4158,
+    "maxResolvedResidual": 1.8506260143697933e-14,
+    "dragBaselineMaxRelative": 1.0499493067109096e-09,
+    "maxAlphaZeroDeviation": 0.0,
+    "maxAffineDivergenceRelative": 8.115254316713925e-16,
+    "maxDarcyRefinementRatio": 0.2559635205028135,
+    "comparisonCount": 1600,
+    "resolvedMeshComparisons": 1341,
+    "maxResponseMeshRelative": 0.22632197468332768,
+    "elapsedSeconds": 11.414278030395508
+  },
+  "group_acceptance": [
+    {
+      "family": "isotropic",
+      "pattern": "clustered",
+      "accepted": 368,
+      "total": 400,
+      "rate": 0.92
+    },
+    {
+      "family": "isotropic",
+      "pattern": "distributed",
+      "accepted": 307,
+      "total": 400,
+      "rate": 0.7675
+    },
+    {
+      "family": "modular",
+      "pattern": "clustered",
+      "accepted": 374,
+      "total": 400,
+      "rate": 0.935
+    },
+    {
+      "family": "modular",
+      "pattern": "distributed",
+      "accepted": 292,
+      "total": 400,
+      "rate": 0.73
+    }
+  ],
+  "accepted_count": 1341
+}

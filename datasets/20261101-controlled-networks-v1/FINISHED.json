@@ -1,0 +1,13 @@
+{
+  "status": "completed",
+  "kind": "archive",
+  "study": "controlled-network-comparison",
+  "created_utc": "2026-11-01T08:23:18.830764+00:00",
+  "primary_run": "event-controls-20261101T081852Z",
+  "raw_scientific_cases": 558,
+  "failed_preflight_attempts": 1,
+  "event_solve_failures": 0,
+  "finite_step_diagnostic_preserved": true,
+  "cloud_cost_usd": 0,
+  "provenance": "Original standard-library implementation; source-table FEniCSx reanalysis. See exact model limits in RESULTS.md."
+}
