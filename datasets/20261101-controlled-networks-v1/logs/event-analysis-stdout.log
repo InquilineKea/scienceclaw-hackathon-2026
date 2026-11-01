@@ -1,0 +1,379 @@
+{
+  "tolerance_checks": [
+    {
+      "id": "triangular2d-101-intact-tension",
+      "status": "completed",
+      "relative_work_difference": 1.7142552392483526e-10,
+      "censoring_changed": false
+    },
+    {
+      "id": "triangular2d-101-intact-shear",
+      "status": "completed",
+      "relative_work_difference": 2.1215802747139725e-12,
+      "censoring_changed": false
+    },
+    {
+      "id": "triangular2d-101-clustered-tension",
+      "status": "completed",
+      "relative_work_difference": 2.970581092610128e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "triangular2d-101-clustered-shear",
+      "status": "completed",
+      "relative_work_difference": 2.7379437619897828e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "triangular2d-101-distributed-tension",
+      "status": "completed",
+      "relative_work_difference": 1.330854833803681e-10,
+      "censoring_changed": false
+    },
+    {
+      "id": "triangular2d-101-distributed-shear",
+      "status": "completed",
+      "relative_work_difference": 1.7611740441008426e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "fcc3d-101-intact-tension",
+      "status": "completed",
+      "relative_work_difference": 4.8916766207040346e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "fcc3d-101-intact-shear",
+      "status": "completed",
+      "relative_work_difference": 6.913450796554924e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "fcc3d-101-clustered-tension",
+      "status": "completed",
+      "relative_work_difference": 2.60271132701619e-10,
+      "censoring_changed": false
+    },
+    {
+      "id": "fcc3d-101-clustered-shear",
+      "status": "completed",
+      "relative_work_difference": 1.2785030076263546e-12,
+      "censoring_changed": false
+    },
+    {
+      "id": "fcc3d-101-distributed-tension",
+      "status": "completed",
+      "relative_work_difference": 6.22624351399748e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "fcc3d-101-distributed-shear",
+      "status": "completed",
+      "relative_work_difference": 3.206332314951907e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "disordered3d-101-intact-tension",
+      "status": "completed",
+      "relative_work_difference": 8.404690581973245e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "disordered3d-101-intact-shear",
+      "status": "completed",
+      "relative_work_difference": 2.4824506260879366e-10,
+      "censoring_changed": false
+    },
+    {
+      "id": "disordered3d-101-clustered-tension",
+      "status": "completed",
+      "relative_work_difference": 3.268678779703425e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "disordered3d-101-clustered-shear",
+      "status": "completed",
+      "relative_work_difference": 2.9701263704285785e-11,
+      "censoring_changed": false
+    },
+    {
+      "id": "disordered3d-101-distributed-tension",
+      "status": "completed",
+      "relative_work_difference": 2.097469453106393e-10,
+      "censoring_changed": false
+    },
+    {
+      "id": "disordered3d-101-distributed-shear",
+      "status": "completed",
+      "relative_work_difference": 1.2573612051984656e-11,
+      "censoring_changed": false
+    }
+  ],
+  "max_residual": 9.997290163872609e-11,
+  "failed_reported_cases": 0,
+  "max_energy_balance_abs": 5.421010862427522e-19,
+  "maximum_match_error": 1.1102230246251565e-16
+}
+{
+  "groups": [
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.0027054817835992675,
+      "mean_ci95_bootstrap": [
+        0.0025440626615727325,
+        0.0028474702392834563
+      ],
+      "mean_failure_strain": 0.08806480777212046
+    },
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.0019412252979452175,
+      "mean_ci95_bootstrap": [
+        0.0017807224138759303,
+        0.0021277311369620466
+      ],
+      "mean_failure_strain": 0.1004970872302391
+    },
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.0020328501350092365,
+      "mean_ci95_bootstrap": [
+        0.001755200278844118,
+        0.0023292272822663914
+      ],
+      "mean_failure_strain": 0.10300952138239615
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 7,
+      "mean_work": 0.002359304952216738,
+      "mean_ci95_bootstrap": [
+        0.002223257993124642,
+        0.0024994099972996883
+      ],
+      "mean_failure_strain": 0.21517542666166914
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 10,
+      "mean_work": 0.0020499925907102277,
+      "mean_ci95_bootstrap": [
+        0.0019371432888778532,
+        0.002161001886880026
+      ],
+      "mean_failure_strain": null
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 9,
+      "mean_work": 0.0018953151147518324,
+      "mean_ci95_bootstrap": [
+        0.001759331850744976,
+        0.002031878953483464
+      ],
+      "mean_failure_strain": 0.2122443007050159
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.010074906982691364,
+      "mean_ci95_bootstrap": [
+        0.009650607159794745,
+        0.010529348974541466
+      ],
+      "mean_failure_strain": 0.1793760569454913
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.008231664337510524,
+      "mean_ci95_bootstrap": [
+        0.007887434703965092,
+        0.008632809083048084
+      ],
+      "mean_failure_strain": 0.19509682196527336
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.007762703687577066,
+      "mean_ci95_bootstrap": [
+        0.007266015878996009,
+        0.008201511778949289
+      ],
+      "mean_failure_strain": 0.19845651621715654
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.006092030937674576,
+      "mean_ci95_bootstrap": [
+        0.005440350807377426,
+        0.0068810274234385556
+      ],
+      "mean_failure_strain": 0.16659443638294275
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 3,
+      "mean_work": 0.005788570575361703,
+      "mean_ci95_bootstrap": [
+        0.005439725212529327,
+        0.006156536795108382
+      ],
+      "mean_failure_strain": 0.22379476521431674
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 5,
+      "mean_work": 0.005777945670847107,
+      "mean_ci95_bootstrap": [
+        0.005296935215550528,
+        0.006306962483912498
+      ],
+      "mean_failure_strain": 0.20144581028456118
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.010576504247034468,
+      "mean_ci95_bootstrap": [
+        0.010171653382963637,
+        0.01103482487495318
+      ],
+      "mean_failure_strain": 0.20225427783713987
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 5,
+      "mean_work": 0.00883670650808321,
+      "mean_ci95_bootstrap": [
+        0.008118522044501775,
+        0.009543509253782874
+      ],
+      "mean_failure_strain": 0.20587984276571278
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 3,
+      "mean_work": 0.008504788997092597,
+      "mean_ci95_bootstrap": [
+        0.007912682882253743,
+        0.009041114145687187
+      ],
+      "mean_failure_strain": 0.21382341325113022
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.006421612994087883,
+      "mean_ci95_bootstrap": [
+        0.005994297951167323,
+        0.00694128368413066
+      ],
+      "mean_failure_strain": 0.18568210010978375
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 9,
+      "mean_work": 0.006107422599945685,
+      "mean_ci95_bootstrap": [
+        0.0057116272400001425,
+        0.006542570224456235
+      ],
+      "mean_failure_strain": 0.22053668906265028
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 9,
+      "mean_work": 0.0063815265101269236,
+      "mean_ci95_bootstrap": [
+        0.005979433231771197,
+        0.0067737485822352275
+      ],
+      "mean_failure_strain": 0.22769249344790388
+    }
+  ],
+  "refinement": {
+    "pairs": 0,
+    "max_work_relative_difference": 0,
+    "median_work_relative_difference": null,
+    "over_5percent": 0,
+    "censoring_changed": 0
+  }
+}

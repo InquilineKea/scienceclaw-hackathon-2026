@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/Users/simfish/Documents/Codex/2026-10-31/referenced-chatgpt-conversation-this-is-an-3/outputs/controlled-networks-20261101/source/compare.py", line 132, in <module>
+    if __name__=='__main__':main()
+  File "/Users/simfish/Documents/Codex/2026-10-31/referenced-chatgpt-conversation-this-is-an-3/outputs/controlled-networks-20261101/source/compare.py", line 117, in main
+    (out/'config.json').write_text(json.dumps(config,indent=2));(out/'reference-checks.json').write_text(json.dumps(references(),indent=2));summary=[]
+  File "/Users/simfish/Documents/Codex/2026-10-31/referenced-chatgpt-conversation-this-is-an-3/outputs/controlled-networks-20261101/source/compare.py", line 111, in references
+    z=u[:];z[3*10]+=eps;z2=u[:];z2[3*10]-=eps;grad=(energy(z)-energy(z2))/(2*eps);assert abs(grad)<1e-7
+AssertionError

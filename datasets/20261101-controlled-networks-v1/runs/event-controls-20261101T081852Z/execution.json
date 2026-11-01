@@ -1,0 +1,8 @@
+{
+  "elapsed_seconds": 68.36373710632324,
+  "raw_cases": 180,
+  "additional_tight_checks": 18,
+  "normalization_rows": 360,
+  "cloud_cost_usd": 0,
+  "max_relative_work_tolerance_difference": 2.60271132701619e-10
+}

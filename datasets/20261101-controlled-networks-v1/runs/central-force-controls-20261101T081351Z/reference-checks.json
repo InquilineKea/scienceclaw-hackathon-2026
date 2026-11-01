@@ -1,0 +1,7 @@
+{
+  "cg_dense_max_abs_error": 4.440892098500626e-16,
+  "analytic_two_springs_K": 1.0,
+  "fcc_free_gradient_abs": 6.938893903907228e-12,
+  "fcc_residual": 5.082783993480319e-13,
+  "scope": "Independent dense linear algebra and analytic series-spring/energy-gradient checks; not an independent full network implementation."
+}

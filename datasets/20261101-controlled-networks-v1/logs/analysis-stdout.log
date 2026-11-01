@@ -1,0 +1,269 @@
+{
+  "max_residual": 9.999089716637591e-10,
+  "failed_reported_cases": 0,
+  "max_damage_energy_increase": 0,
+  "maximum_match_error": 1.1102230246251565e-16
+}
+{
+  "groups": [
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.002902698863604281,
+      "mean_ci95_bootstrap": [
+        0.0026205372484972966,
+        0.0031663792710369845
+      ],
+      "mean_failure_strain": 0.10200000000000001
+    },
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.0019278993513627387,
+      "mean_ci95_bootstrap": [
+        0.0017922960232034852,
+        0.002080860626905979
+      ],
+      "mean_failure_strain": 0.106
+    },
+    {
+      "family": "triangular2d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.0019854048214046297,
+      "mean_ci95_bootstrap": [
+        0.0017435754362174582,
+        0.0022131993102066185
+      ],
+      "mean_failure_strain": 0.10200000000000001
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 6,
+      "mean_work": 0.0023196556948204914,
+      "mean_ci95_bootstrap": [
+        0.0021701469178014663,
+        0.0024850143151734214
+      ],
+      "mean_failure_strain": 0.2175
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 8,
+      "mean_work": 0.002024178027926939,
+      "mean_ci95_bootstrap": [
+        0.0019197074991344108,
+        0.002119918195052936
+      ],
+      "mean_failure_strain": 0.23
+    },
+    {
+      "family": "triangular2d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 10,
+      "mean_work": 0.0019044202760317595,
+      "mean_ci95_bootstrap": [
+        0.0017658188907122543,
+        0.002049234983785069
+      ],
+      "mean_failure_strain": null
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.009733723605184742,
+      "mean_ci95_bootstrap": [
+        0.009463909105303366,
+        0.010000872646498201
+      ],
+      "mean_failure_strain": 0.1785
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.008000343635892153,
+      "mean_ci95_bootstrap": [
+        0.007625151347387121,
+        0.008453647351900573
+      ],
+      "mean_failure_strain": 0.1905
+    },
+    {
+      "family": "fcc3d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 0,
+      "mean_work": 0.007636870051240222,
+      "mean_ci95_bootstrap": [
+        0.007031809240469492,
+        0.008171873368932598
+      ],
+      "mean_failure_strain": 0.191
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.0064571560003868584,
+      "mean_ci95_bootstrap": [
+        0.005807336653799474,
+        0.007219386907222829
+      ],
+      "mean_failure_strain": 0.183125
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 3,
+      "mean_work": 0.005759393862402703,
+      "mean_ci95_bootstrap": [
+        0.005393285046860962,
+        0.006083018484030221
+      ],
+      "mean_failure_strain": 0.22571428571428573
+    },
+    {
+      "family": "fcc3d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 5,
+      "mean_work": 0.0056965621849756325,
+      "mean_ci95_bootstrap": [
+        0.005304635729763023,
+        0.006009846480222943
+      ],
+      "mean_failure_strain": 0.21
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 1,
+      "mean_work": 0.010350757950570352,
+      "mean_ci95_bootstrap": [
+        0.009914732261663168,
+        0.010795809715509315
+      ],
+      "mean_failure_strain": 0.19944444444444445
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.00832425694596278,
+      "mean_ci95_bootstrap": [
+        0.007713358014531402,
+        0.008937932053092663
+      ],
+      "mean_failure_strain": 0.204375
+    },
+    {
+      "family": "disordered3d",
+      "loading": "tension",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.008285800323927414,
+      "mean_ci95_bootstrap": [
+        0.007717912080732734,
+        0.008848985495991266
+      ],
+      "mean_failure_strain": 0.20500000000000002
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "intact",
+      "valid": 10,
+      "total": 10,
+      "censored": 2,
+      "mean_work": 0.006359477915678103,
+      "mean_ci95_bootstrap": [
+        0.005929093472079537,
+        0.006854841730207581
+      ],
+      "mean_failure_strain": 0.18812500000000001
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "clustered",
+      "valid": 10,
+      "total": 10,
+      "censored": 9,
+      "mean_work": 0.006012205787709199,
+      "mean_ci95_bootstrap": [
+        0.005645994059690022,
+        0.0064080265958354225
+      ],
+      "mean_failure_strain": 0.225
+    },
+    {
+      "family": "disordered3d",
+      "loading": "shear",
+      "pattern": "distributed",
+      "valid": 10,
+      "total": 10,
+      "censored": 9,
+      "mean_work": 0.006253880726365458,
+      "mean_ci95_bootstrap": [
+        0.005902175938769548,
+        0.0066041204516900254
+      ],
+      "mean_failure_strain": 0.23
+    }
+  ],
+  "refinement": {
+    "pairs": 180,
+    "max_work_relative_difference": 0.3090636010254947,
+    "median_work_relative_difference": 0.021637813642245256,
+    "over_5percent": 51,
+    "censoring_changed": 13
+  }
+}
