@@ -1,6 +1,6 @@
 // Original integration of saved crosslink and microrheology outputs. Native APIs only.
 import{finite,mean,fmt,names,plot,bounds,aggregate}from'./comparison-plots.js';
-import{initReplays}from'./network-scenes.js?v=responsive1';
+import{initReplays}from'./network-scenes.js?v=responsive2';
 const $=id=>document.getElementById(id),cache=new Map,load=n=>{if(!cache.has(n))cache.set(n,fetch(n).then(r=>{if(!r.ok)throw Error(n+' unavailable');return r.json()}));return cache.get(n)},colors={distributed:'#147d78',clustered:'#b16b41'},label={stiffness:'Initial stiffness K',work:'Work to failure criterion',failureStrain:'Strain at failure criterion',workBeforeDamage:'Work before first bond damage',workBeforeCollagenDamage:'Work before first collagen damage'};let X,M,xi,mi,mesh;
 function fromURL(pairs){let q=new URLSearchParams(location.search);for(let [key,id]of pairs){let value=q.get(key);if(value!==null&&[...$(id).options].some(o=>o.value===value))$(id).value=value}}
 function xrow(f,s,a,c,p){return xi.get([f,s,a,c,c===0?'distributed':p].join('|'))}

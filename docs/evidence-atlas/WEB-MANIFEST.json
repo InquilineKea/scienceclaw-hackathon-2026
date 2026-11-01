@@ -1,82 +1,12 @@
 {
-  "implementation_commit": "ecca993c09e41f027f7d792e523ff73961bffbe7",
-  "implementation_url": "https://github.com/InquilineKea/scienceclaw-hackathon-2026/tree/ecca993c09e41f027f7d792e523ff73961bffbe7/collagen-evidence-atlas",
-  "scientific_source_snapshot": "11b57e1daf9724ac6d169c3fa1289f5e09ce18ab",
-  "comparison_source_snapshot": "7b314da640105d37b27105721c88bb87404b6429",
-  "previous_integration_snapshot": "d2faa005fb0052f94b01c00dcb84bba109d1b34c",
-  "scope": "Original presentation of saved ensemble studies and bounded browser-local single-realization force/damage and uniform-drag microrheology solves; fluid fields exact saved coverage only. No cloud/API spend or new calibration.",
-  "files": {
+  "bundled_sources": {
     "ANIMATION-METHODS.md": {
       "bytes": 6474,
       "sha256": "578ddf59e60e447e259a42bab03dd3e4a81e66e622da74fca1dd00f20fc071d8"
     },
-    "COMPARISON-PROVENANCE.json": {
-      "bytes": 2888,
-      "sha256": "c4e3860075b9ca6dbf4475bb36949201deb2cdf9ccf6722ece50f145c6c39168"
-    },
-    "DATA-PROVENANCE.json": {
-      "bytes": 1072,
-      "sha256": "56154722b12d2d3b9cacdb752fe9a71440023702a42f5a77e916e0e8ace965e5"
-    },
-    "INTEGRATION-METHODS.md": {
-      "bytes": 7464,
-      "sha256": "18ac8c2964a6e059d280d7b8d07ac36f3528095434f7eab5205f5a7212f11b16"
-    },
-    "METHODS.md": {
-      "bytes": 6647,
-      "sha256": "a6cc48588d7d294f7a0e585549a6bb57d18f2371363d95e5e1bd73fc4c02fc53"
-    },
     "animation-worker.js": {
       "bytes": 3277,
       "sha256": "52591d01871fcb8e980a35a0ca34bbcabfd4b0c51aa5719ae532dc9e169b39cf"
-    },
-    "app.js": {
-      "bytes": 19276,
-      "sha256": "b3dbaad1f43aa21fac1ff2bbedc267390e88b561747534f8bd873ff37010ee29"
-    },
-    "comparison-plots.js": {
-      "bytes": 4074,
-      "sha256": "6ae97c071829d31226dc1f43cbe2a843e041dc1b845bea6f6d4e02940210ba2b"
-    },
-    "comparisons.css": {
-      "bytes": 4213,
-      "sha256": "b67bbf24a1e9865dea0261292e2515373602e322a806c3f5db79ba4d44c1f385"
-    },
-    "comparisons.js": {
-      "bytes": 13048,
-      "sha256": "e32598d3170a1c2db3f1003d20ce1320d02a870fb7a97ff9322e50033b5776fc"
-    },
-    "crosslink-replay.json": {
-      "bytes": 5411081,
-      "sha256": "464de1608cc7030548d794cca870fbe49ff738289578b0db1e62dcc22d05c2a9"
-    },
-    "crosslinks.json": {
-      "bytes": 4435043,
-      "sha256": "fc45cee021e9e788f58e7b40b030460b89c95bb733ea6dc20504e68f960389fe"
-    },
-    "data.json": {
-      "bytes": 1164462,
-      "sha256": "ac0bb60b76b9b9f707278a6d7950c5d326cfc5c57ba95ccd003936c979ede56f"
-    },
-    "index.html": {
-      "bytes": 28930,
-      "sha256": "62166db987c75a77c9e561f378c2915b3afa622b1a6ebd1f331c4d68fae6b644"
-    },
-    "micro-fields.json": {
-      "bytes": 850147,
-      "sha256": "6751bbe064223866cca88c753795c6f1271b3f812fcc58d924dfd59ff817fe00"
-    },
-    "microrheology.json": {
-      "bytes": 2991273,
-      "sha256": "58f4733072ab3776d9e93753aabf3ab57d77ebf31825bd7572cb6428c86465f4"
-    },
-    "network-scenes.js": {
-      "bytes": 14753,
-      "sha256": "539a12258c0c676a8f88fe26f0cb2038da0524758a5151113c8c4b26567b5634"
-    },
-    "render.js": {
-      "bytes": 10586,
-      "sha256": "ecb71d71a6a5228b1518e85a99db5cef1067b980eb475520a13d74ead2e79113"
     },
     "solver/aging.js": {
       "bytes": 6862,
@@ -93,6 +23,79 @@
     "solver/model.js": {
       "bytes": 18846,
       "sha256": "f0a5034f44aa7065c779f6e20209cd95ee13c7a3ffe6f3e40ae08172a7a489c1"
+    }
+  },
+  "bundled_source_location": "Individual files are included in evidence-atlas.zip and the immutable GitHub source; browser computation uses their embedded copy in network-scenes.js.",
+  "implementation_commit": "15d1fe52d328f5800d938cca5eb4026126bcc546",
+  "implementation_url": "https://github.com/InquilineKea/scienceclaw-hackathon-2026/tree/15d1fe52d328f5800d938cca5eb4026126bcc546/collagen-evidence-atlas",
+  "scientific_source_snapshot": "11b57e1daf9724ac6d169c3fa1289f5e09ce18ab",
+  "comparison_source_snapshot": "7b314da640105d37b27105721c88bb87404b6429",
+  "previous_integration_snapshot": "d2faa005fb0052f94b01c00dcb84bba109d1b34c",
+  "scope": "Original presentation of saved ensemble studies and bounded browser-local single-realization force/damage and uniform-drag microrheology solves; fluid fields exact saved coverage only. No cloud/API spend or new calibration.",
+  "files": {
+    "COMPARISON-PROVENANCE.json": {
+      "bytes": 2888,
+      "sha256": "c4e3860075b9ca6dbf4475bb36949201deb2cdf9ccf6722ece50f145c6c39168"
+    },
+    "DATA-PROVENANCE.json": {
+      "bytes": 1072,
+      "sha256": "56154722b12d2d3b9cacdb752fe9a71440023702a42f5a77e916e0e8ace965e5"
+    },
+    "INTEGRATION-METHODS.md": {
+      "bytes": 7516,
+      "sha256": "66372c98dcac4c7457ec3bacab5711bdf8d004b0656b2535695a4e56e3d7a0c6"
+    },
+    "METHODS.md": {
+      "bytes": 13175,
+      "sha256": "ceb7408c756157ceeb7df34d83c6a7c1e1e5005e25953db180a90293b18a627e"
+    },
+    "app.js": {
+      "bytes": 19276,
+      "sha256": "b3dbaad1f43aa21fac1ff2bbedc267390e88b561747534f8bd873ff37010ee29"
+    },
+    "comparison-plots.js": {
+      "bytes": 4074,
+      "sha256": "6ae97c071829d31226dc1f43cbe2a843e041dc1b845bea6f6d4e02940210ba2b"
+    },
+    "comparisons.css": {
+      "bytes": 4213,
+      "sha256": "b67bbf24a1e9865dea0261292e2515373602e322a806c3f5db79ba4d44c1f385"
+    },
+    "comparisons.js": {
+      "bytes": 13048,
+      "sha256": "f6868c3a0a8682c80cd8a6d5eaa9332092b84e93a90b4e5378c055f414c5f87c"
+    },
+    "crosslink-replay.json": {
+      "bytes": 5411081,
+      "sha256": "464de1608cc7030548d794cca870fbe49ff738289578b0db1e62dcc22d05c2a9"
+    },
+    "crosslinks.json": {
+      "bytes": 4435043,
+      "sha256": "fc45cee021e9e788f58e7b40b030460b89c95bb733ea6dc20504e68f960389fe"
+    },
+    "data.json": {
+      "bytes": 1164462,
+      "sha256": "ac0bb60b76b9b9f707278a6d7950c5d326cfc5c57ba95ccd003936c979ede56f"
+    },
+    "index.html": {
+      "bytes": 28930,
+      "sha256": "e0253649f85a5053fd02f71aca331199d13ce21093091c22a9e6894719554b94"
+    },
+    "micro-fields.json": {
+      "bytes": 850147,
+      "sha256": "6751bbe064223866cca88c753795c6f1271b3f812fcc58d924dfd59ff817fe00"
+    },
+    "microrheology.json": {
+      "bytes": 2991273,
+      "sha256": "58f4733072ab3776d9e93753aabf3ab57d77ebf31825bd7572cb6428c86465f4"
+    },
+    "network-scenes.js": {
+      "bytes": 52334,
+      "sha256": "407ac085d40b78eb184fa5358870f4d5fd8d8a2e436318b30f12ee0254fb0594"
+    },
+    "render.js": {
+      "bytes": 10586,
+      "sha256": "ecb71d71a6a5228b1518e85a99db5cef1067b980eb475520a13d74ead2e79113"
     },
     "style.css": {
       "bytes": 17129,

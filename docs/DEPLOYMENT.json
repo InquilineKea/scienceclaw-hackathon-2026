@@ -618,7 +618,7 @@
   },
   "evidence_atlas": {
     "scope": "Original presentation of saved ensemble studies and bounded browser-local single-realization force/damage and uniform-drag microrheology solves; fluid fields exact saved coverage only. No cloud/API spend or new calibration.",
-    "implementation_commit": "ecca993c09e41f027f7d792e523ff73961bffbe7",
+    "implementation_commit": "15d1fe52d328f5800d938cca5eb4026126bcc546",
     "files": {
       "animation-worker.js": {
         "bytes": 3277,
@@ -626,11 +626,11 @@
       },
       "index.html": {
         "bytes": 28930,
-        "sha256": "62166db987c75a77c9e561f378c2915b3afa622b1a6ebd1f331c4d68fae6b644"
+        "sha256": "e0253649f85a5053fd02f71aca331199d13ce21093091c22a9e6894719554b94"
       },
       "WEB-MANIFEST.json": {
-        "bytes": 3882,
-        "sha256": "be57156f81ce22a3beff246cd9392213308fc923f406966b9854d0c418e50006"
+        "bytes": 4094,
+        "sha256": "dc726f3172a87dd263aeb11d812f13ce0d8a8140a3e1ec309cf2dd9da6c9e0cb"
       },
       "comparisons.css": {
         "bytes": 4213,
@@ -641,8 +641,8 @@
         "sha256": "56154722b12d2d3b9cacdb752fe9a71440023702a42f5a77e916e0e8ace965e5"
       },
       "INTEGRATION-METHODS.md": {
-        "bytes": 7464,
-        "sha256": "18ac8c2964a6e059d280d7b8d07ac36f3528095434f7eab5205f5a7212f11b16"
+        "bytes": 7516,
+        "sha256": "66372c98dcac4c7457ec3bacab5711bdf8d004b0656b2535695a4e56e3d7a0c6"
       },
       "render.js": {
         "bytes": 10586,
@@ -650,7 +650,7 @@
       },
       "comparisons.js": {
         "bytes": 13048,
-        "sha256": "e32598d3170a1c2db3f1003d20ce1320d02a870fb7a97ff9322e50033b5776fc"
+        "sha256": "f6868c3a0a8682c80cd8a6d5eaa9332092b84e93a90b4e5378c055f414c5f87c"
       },
       "microrheology.json": {
         "bytes": 2991273,
@@ -661,12 +661,12 @@
         "sha256": "464de1608cc7030548d794cca870fbe49ff738289578b0db1e62dcc22d05c2a9"
       },
       "evidence-atlas.zip": {
-        "bytes": 3583144,
-        "sha256": "9907dc58a465122f973784cf56ba82f3891c01a018eace1b2a4358fd4679b2c6"
+        "bytes": 3597366,
+        "sha256": "458c41fe83f59ceb9b0b0d478bb4b916287d358ff4a16465c0371241e12049f8"
       },
       "network-scenes.js": {
-        "bytes": 14753,
-        "sha256": "539a12258c0c676a8f88fe26f0cb2038da0524758a5151113c8c4b26567b5634"
+        "bytes": 52334,
+        "sha256": "407ac085d40b78eb184fa5358870f4d5fd8d8a2e436318b30f12ee0254fb0594"
       },
       "data.json": {
         "bytes": 1164462,
@@ -677,8 +677,8 @@
         "sha256": "6ae97c071829d31226dc1f43cbe2a843e041dc1b845bea6f6d4e02940210ba2b"
       },
       "METHODS.md": {
-        "bytes": 6647,
-        "sha256": "a6cc48588d7d294f7a0e585549a6bb57d18f2371363d95e5e1bd73fc4c02fc53"
+        "bytes": 13175,
+        "sha256": "ceb7408c756157ceeb7df34d83c6a7c1e1e5005e25953db180a90293b18a627e"
       },
       "style.css": {
         "bytes": 17129,
