@@ -1,5 +1,11 @@
 # ScienceClaw Hackathon 2026: Oxidative Tensegrity
 
+**Project website and full research write-ups: [Human–Avian–AI Symbiosis on WordPress](https://humanavianaisymbiosis.wordpress.com/)**
+
+[Collagen research hub](https://humanavianaisymbiosis.wordpress.com/scienceclaw-comparative-collagen-aging-research-hub/) · [All research visualizations, interactive explorers and figures](https://humanavianaisymbiosis.wordpress.com/2026/10/31/all-research-visualizations-interactive-explorers-animations-figures/)
+
+The WordPress site collects the project's research articles, results, scientific limitations and links to the public interactive applications. This repository holds the corresponding code, data and reproducibility records.
+
 ## Why this could matter (the two-minute version)
 
 Collagen is the scaffolding protein that holds your body together — skin, tendons, arteries, heart
