@@ -1,0 +1,10 @@
+{
+  "writable_constraint_PDB_dump_verified": true,
+  "diagnostic_PDB_count": 4,
+  "default_warning_limit_negative_control_returncode": 0,
+  "default_negative_control_is_scientifically_failed": true,
+  "strict_warning_limit_negative_control_returncode": 1,
+  "strict_negative_control_fails_at_first_warning": true,
+  "zero_exit_code_is_not_sufficient": true,
+  "candidate_runner_syntax_check": true
+}

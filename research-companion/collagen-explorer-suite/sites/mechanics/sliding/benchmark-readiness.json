@@ -1,0 +1,800 @@
+{
+  "status": "reference_data_verified; independent Martini dynamics benchmark pending",
+  "paper": "https://doi.org/10.1016/j.bpj.2025.10.012",
+  "dataset": "https://doi.org/10.17617/3.MF8BBT",
+  "archives": [
+    {
+      "archive": "SI.zip",
+      "bytes": 12199433,
+      "sha256": "4c583a7595aec34200c420825775a20ded9cd7adbba2a18e7071e9201ce50d8c",
+      "md5": "99577ec965f09ccbba41bb3a3d92e682",
+      "crc_test": "passed",
+      "members": 133,
+      "inventory": [
+        {
+          "path": "SI/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/.~lock.logP Overview data.ods#",
+          "bytes": 72
+        },
+        {
+          "path": "SI/Go-model_compile/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/Go-model_compile/max_config_virtual_sites.yaml",
+          "bytes": 3809
+        },
+        {
+          "path": "SI/Go-model_compile/md_try.sh",
+          "bytes": 626
+        },
+        {
+          "path": "SI/analyse_crl/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/analyse_crl/AA_gapoverlapstrain.py",
+          "bytes": 13332
+        },
+        {
+          "path": "SI/analyse_crl/Entropicenthalpicforces.py",
+          "bytes": 10828
+        },
+        {
+          "path": "SI/analyse_crl/PlotAAoverlapgapboundaryeffect.py",
+          "bytes": 10667
+        },
+        {
+          "path": "SI/analyse_crl/div_crl/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/analyse_crl/div_crl/small_fib_analyse_crosslinc_bondlength_1902.py",
+          "bytes": 13280
+        },
+        {
+          "path": "SI/analyse_crl/div_crl/small_fib_angletoBB_div.py",
+          "bytes": 21268
+        },
+        {
+          "path": "SI/analyse_crl/div_crl/small_fib_div_anglesunderforce_incrl.py",
+          "bytes": 15885
+        },
+        {
+          "path": "SI/analyse_crl/triv_crl/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/analyse_crl/triv_crl/bondlength_underforce_triv_1303.py",
+          "bytes": 23591
+        },
+        {
+          "path": "SI/analyse_crl/triv_crl/mappinglogP.py",
+          "bytes": 6974
+        },
+        {
+          "path": "SI/analyse_crl/triv_crl/small_fib_triv_anglesunderforceCRLBB_1303.py",
+          "bytes": 28752
+        },
+        {
+          "path": "SI/analyse_crl/triv_crl/small_fib_triv_anglesunderforce_incrl_1303.py",
+          "bytes": 34780
+        },
+        {
+          "path": "SI/logP/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP Overview data.ods",
+          "bytes": 20335
+        },
+        {
+          "path": "SI/logP/CG_wet/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP/L45_water/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP/L45_water/L4Y.gro",
+          "bytes": 341
+        },
+        {
+          "path": "SI/logP/L45_water/L4Y.itp",
+          "bytes": 640
+        },
+        {
+          "path": "SI/logP/L45_water/TI.sh",
+          "bytes": 1593
+        },
+        {
+          "path": "SI/logP/L45_water/TI_only.sh",
+          "bytes": 827
+        },
+        {
+          "path": "SI/logP/L45_water/TI_run.mdp",
+          "bytes": 3109
+        },
+        {
+          "path": "SI/logP/L45_water/final.dat",
+          "bytes": 44
+        },
+        {
+          "path": "SI/logP/L45_water/local_TI.sh",
+          "bytes": 465
+        },
+        {
+          "path": "SI/logP/L45_water/martini.itp",
+          "bytes": 16030960
+        },
+        {
+          "path": "SI/logP/L45_water/martini_em.mdp",
+          "bytes": 4366
+        },
+        {
+          "path": "SI/logP/L45_water/martini_v3.0.0_ions_v1.itp",
+          "bytes": 7853
+        },
+        {
+          "path": "SI/logP/L45_water/martini_v3.0.0_solvents_v1.itp",
+          "bytes": 14432
+        },
+        {
+          "path": "SI/logP/L45_water/mdout.mdp",
+          "bytes": 10923
+        },
+        {
+          "path": "SI/logP/L45_water/min.gro",
+          "bytes": 143021
+        },
+        {
+          "path": "SI/logP/L45_water/npt.gro",
+          "bytes": 219269
+        },
+        {
+          "path": "SI/logP/L45_water/npt.mdp",
+          "bytes": 1298
+        },
+        {
+          "path": "SI/logP/L45_water/nvt.gro",
+          "bytes": 219269
+        },
+        {
+          "path": "SI/logP/L45_water/nvt.mdp",
+          "bytes": 1088
+        },
+        {
+          "path": "SI/logP/L45_water/solvated.gro",
+          "bytes": 143021
+        },
+        {
+          "path": "SI/logP/L45_water/system.top",
+          "bytes": 172
+        },
+        {
+          "path": "SI/logP/L45_water/topol.top",
+          "bytes": 194
+        },
+        {
+          "path": "SI/logP/L45_water/water.gro",
+          "bytes": 27643
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/L4Y.gro",
+          "bytes": 341
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/L4Y.itp",
+          "bytes": 640
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/TI.sh",
+          "bytes": 1395
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/TI_only.sh",
+          "bytes": 827
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/TI_run.mdp",
+          "bytes": 3109
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/bar.xvg",
+          "bytes": 1182
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/barint.xvg",
+          "bytes": 1058
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/final.dat",
+          "bytes": 44
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/local_TI.sh",
+          "bytes": 465
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/martini.itp",
+          "bytes": 16030960
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/martini_em.mdp",
+          "bytes": 4366
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/martini_v3.0.0_ions_v1.itp",
+          "bytes": 7853
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/martini_v3.0.0_solvents_v1.itp",
+          "bytes": 14432
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/mdout.mdp",
+          "bytes": 10924
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/min.gro",
+          "bytes": 516341
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/npt.gro",
+          "bytes": 791693
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/npt.mdp",
+          "bytes": 1298
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/nvt.gro",
+          "bytes": 791693
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/nvt.mdp",
+          "bytes": 1088
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/octa.sh",
+          "bytes": 449
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/octanol.gro",
+          "bytes": 268
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/out.gro",
+          "bytes": 507476
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/run_logP.sh",
+          "bytes": 89
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/solvated.gro",
+          "bytes": 516341
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/solvated_oct.gro",
+          "bytes": 501806
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/system.top",
+          "bytes": 172
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/topol.top",
+          "bytes": 216
+        },
+        {
+          "path": "SI/logP/L45_wet_octa/water.gro",
+          "bytes": 27643
+        },
+        {
+          "path": "SI/logP/LY23_water/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP/LY23_water/LYX.gro",
+          "bytes": 566
+        },
+        {
+          "path": "SI/logP/LY23_water/LYX.itp",
+          "bytes": 1734
+        },
+        {
+          "path": "SI/logP/LY23_water/TI.sh",
+          "bytes": 1604
+        },
+        {
+          "path": "SI/logP/LY23_water/TI_only.sh",
+          "bytes": 827
+        },
+        {
+          "path": "SI/logP/LY23_water/final.dat",
+          "bytes": 45
+        },
+        {
+          "path": "SI/logP/LY23_water/ions.gro",
+          "bytes": 143246
+        },
+        {
+          "path": "SI/logP/LY23_water/local_TI.sh",
+          "bytes": 465
+        },
+        {
+          "path": "SI/logP/LY23_water/martini.itp",
+          "bytes": 16030960
+        },
+        {
+          "path": "SI/logP/LY23_water/martini_v3.0.0_ions_v1.itp",
+          "bytes": 7853
+        },
+        {
+          "path": "SI/logP/LY23_water/martini_v3.0.0_solvents_v1.itp",
+          "bytes": 14432
+        },
+        {
+          "path": "SI/logP/LY23_water/min.gro",
+          "bytes": 143246
+        },
+        {
+          "path": "SI/logP/LY23_water/npt.gro",
+          "bytes": 219614
+        },
+        {
+          "path": "SI/logP/LY23_water/nvt.gro",
+          "bytes": 219614
+        },
+        {
+          "path": "SI/logP/LY23_water/octa.sh",
+          "bytes": 449
+        },
+        {
+          "path": "SI/logP/LY23_water/octanol.gro",
+          "bytes": 268
+        },
+        {
+          "path": "SI/logP/LY23_water/out.gro",
+          "bytes": 506936
+        },
+        {
+          "path": "SI/logP/LY23_water/run_logP.sh",
+          "bytes": 89
+        },
+        {
+          "path": "SI/logP/LY23_water/solvated.gro",
+          "bytes": 143246
+        },
+        {
+          "path": "SI/logP/LY23_water/solvated_oct.gro",
+          "bytes": 502031
+        },
+        {
+          "path": "SI/logP/LY23_water/system.top",
+          "bytes": 210
+        },
+        {
+          "path": "SI/logP/LY23_water/topol.top",
+          "bytes": 246
+        },
+        {
+          "path": "SI/logP/LY23_water/water.gro",
+          "bytes": 27643
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/L4Y.gro",
+          "bytes": 341
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/L4Y.itp",
+          "bytes": 640
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/TI.sh",
+          "bytes": 1395
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/TI_from15.sh",
+          "bytes": 715
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/TI_from17.sh",
+          "bytes": 780
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/TI_from19.sh",
+          "bytes": 780
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/TI_only.sh",
+          "bytes": 827
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/final.dat",
+          "bytes": 44
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/local_TI.sh",
+          "bytes": 465
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/martini.itp",
+          "bytes": 16030960
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/martini_v3.0.0_ions_v1.itp",
+          "bytes": 7853
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/martini_v3.0.0_solvents_v1.itp",
+          "bytes": 14432
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/min.gro",
+          "bytes": 516341
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/npt.gro",
+          "bytes": 791693
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/nvt.gro",
+          "bytes": 791693
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/octa.sh",
+          "bytes": 449
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/octanol.gro",
+          "bytes": 268
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/out.gro",
+          "bytes": 507476
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/run_logP.sh",
+          "bytes": 89
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/solvated.gro",
+          "bytes": 516341
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/solvated_oct.gro",
+          "bytes": 501806
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/system.top",
+          "bytes": 172
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/topol.top",
+          "bytes": 216
+        },
+        {
+          "path": "SI/logP/LY23_wet_octa/water.gro",
+          "bytes": 27643
+        },
+        {
+          "path": "SI/logP/QM_orca/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP/QM_orca/L4Y/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP/QM_orca/L4Y/octanol.out",
+          "bytes": 1945492
+        },
+        {
+          "path": "SI/logP/QM_orca/L4Y/orca_octanol.sh",
+          "bytes": 2836
+        },
+        {
+          "path": "SI/logP/QM_orca/L4Y/orca_water.sh",
+          "bytes": 2871
+        },
+        {
+          "path": "SI/logP/QM_orca/L4Y/water.out",
+          "bytes": 2216271
+        },
+        {
+          "path": "SI/logP/QM_orca/LY23/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP/QM_orca/LY23/octanol.out",
+          "bytes": 9312097
+        },
+        {
+          "path": "SI/logP/QM_orca/LY23/orca_octanol.sh",
+          "bytes": 3136
+        },
+        {
+          "path": "SI/logP/QM_orca/LY23/orca_water.sh",
+          "bytes": 3126
+        },
+        {
+          "path": "SI/logP/QM_orca/LY23/water.out",
+          "bytes": 9825606
+        },
+        {
+          "path": "SI/logP/rdkit/",
+          "bytes": 0
+        },
+        {
+          "path": "SI/logP/rdkit/rdkit.py",
+          "bytes": 394
+        }
+      ]
+    },
+    {
+      "archive": "Figure3.zip",
+      "bytes": 289911200,
+      "sha256": "bff147c6a7564330f6e3268f49f2deb5da3d63612d42b58c0f31b72b50784297",
+      "md5": "5aa8b8ee245d81dafcc634acc2fb807d",
+      "crc_test": "passed",
+      "members": 57,
+      "inventory": [
+        {
+          "path": "Figure3/",
+          "bytes": 0
+        },
+        {
+          "path": "Figure3/Figure3.svg",
+          "bytes": 226192
+        },
+        {
+          "path": "Figure3/analysis.sh",
+          "bytes": 1778
+        },
+        {
+          "path": "Figure3/helixAnalysis.py",
+          "bytes": 12111
+        },
+        {
+          "path": "Figure3/helixpic.png",
+          "bytes": 23949
+        },
+        {
+          "path": "Figure3/helixpic.svg",
+          "bytes": 135911
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/",
+          "bytes": 0
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/",
+          "bytes": 0
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/.mapped.xtc_offsets.lock",
+          "bytes": 0
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/.mapped.xtc_offsets.npz",
+          "bytes": 129028
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/angdist.xvg",
+          "bytes": 4746
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/angle0.xvg",
+          "bytes": 38600015
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/angle1.xvg",
+          "bytes": 39080050
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/angle2.xvg",
+          "bytes": 38600028
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/dihedral0.xvg",
+          "bytes": 38440019
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/dihedral1.xvg",
+          "bytes": 38920069
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/dihedral2.xvg",
+          "bytes": 38440031
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/dist0.xvg",
+          "bytes": 34754789
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/dist1.xvg",
+          "bytes": 35186818
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/dist2.xvg",
+          "bytes": 34754784
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/helixAngle.xvg",
+          "bytes": 38920032
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/helixDist.xvg",
+          "bytes": 104311126
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/helixDistAv.xvg",
+          "bytes": 336777
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/mapped.gro",
+          "bytes": 32722
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/mapped.xtc",
+          "bytes": 52416440
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/mergeAngles.xvg",
+          "bytes": 116278871
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/mergeDihedrals.xvg",
+          "bytes": 115798855
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/mergeDistances.xvg",
+          "bytes": 104695160
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/AA/rmsf.xvg",
+          "bytes": 11390
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/",
+          "bytes": 0
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/.md_whole.xtc_offsets.lock",
+          "bytes": 0
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/.md_whole.xtc_offsets.npz",
+          "bytes": 29828
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/angdist.xvg",
+          "bytes": 3609
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/angle0.xvg",
+          "bytes": 8685528
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/angle1.xvg",
+          "bytes": 8793548
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/angle2.xvg",
+          "bytes": 8685512
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/dihedral0.xvg",
+          "bytes": 8649524
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/dihedral1.xvg",
+          "bytes": 8757553
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/dihedral2.xvg",
+          "bytes": 8649523
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/dist0.xvg",
+          "bytes": 7821949
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/dist1.xvg",
+          "bytes": 7886767
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/dist2.xvg",
+          "bytes": 7757141
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/helixAngle.xvg",
+          "bytes": 8757529
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/helixDist.xvg",
+          "bytes": 23475488
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/helixDistAv.xvg",
+          "bytes": 76340
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/md-gpu.sh",
+          "bytes": 1142
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/md_whole.gro",
+          "bytes": 32775
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/md_whole.xtc",
+          "bytes": 11779344
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/mergeAngles.xvg",
+          "bytes": 26163448
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/mergeDihedrals.xvg",
+          "bytes": 26055424
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/mergeDistances.xvg",
+          "bytes": 23464693
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/CG/rmsf.xvg",
+          "bytes": 11426
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/viz/",
+          "bytes": 0
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/viz/addcy.tcl",
+          "bytes": 766
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/viz/bondfile1000.txt",
+          "bytes": 34487
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/viz/force.gro",
+          "bytes": 3287520
+        },
+        {
+          "path": "Figure3/triplehelix_metadata_equilibrium/viz/npt.gro",
+          "bytes": 3287520
+        }
+      ]
+    }
+  ],
+  "demonstrated_crosslinks": [
+    "HLKNL",
+    "PYD"
+  ],
+  "glucosepane_parameterization": "not demonstrated in this reference",
+  "inspection": "ZIP CRC, catalogue MD5, SHA256, member inventory and static text inspection. Author scripts not executed. Figure3 AA-mapped and CG equilibrium backbone GRO files each contain 726 sites.",
+  "missing_for_full_reproduction": [
+    "Full fibril Figure4 archive (catalogue 4.35 GB) not retrieved",
+    "Fresh independent Martini trajectory and geometry/mechanical benchmark comparison",
+    "Validated glucosepane coarse-grained bonded/nonbonded parameters",
+    "Hydroxylation-matched native precursor controls"
+  ],
+  "scope": "Availability and integrity audit, not reproduction of the published physical benchmark"
+}

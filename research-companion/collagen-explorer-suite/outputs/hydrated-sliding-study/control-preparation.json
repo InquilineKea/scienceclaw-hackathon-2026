@@ -1,0 +1,68 @@
+[
+  {
+    "model": "PYD_LYS_CONTROL",
+    "atoms": 1809,
+    "charge_e": 1.0000000000000193,
+    "rebuilt_sites": [
+      {
+        "resindex": 34,
+        "source_residue": "LYX",
+        "restored_residue": "LYS",
+        "chain": "B",
+        "id": 944
+      },
+      {
+        "resindex": 96,
+        "source_residue": "LY2",
+        "restored_residue": "LYS",
+        "chain": "K",
+        "id": 5
+      },
+      {
+        "resindex": 123,
+        "source_residue": "LY3",
+        "restored_residue": "LYS",
+        "chain": "L",
+        "id": 9
+      }
+    ],
+    "source_sha256": "e83327648292dcdff2b7b6e696fcadf9ec282c0ae15732e9c70fe6f67e1925a7",
+    "control_scope": "unlinked ordinary-lysine reconstruction; hydroxylation and charge are changed as well as crosslink connectivity",
+    "chemistry_matched_HYL_precursor_control": false,
+    "dynamic_validation": false,
+    "limitation": "Source force field has no free HYL template. Do not call this a hydroxylation-matched precursor or interpret a native linked-minus-control difference as connectivity alone."
+  },
+  {
+    "model": "DPD_LYS_CONTROL",
+    "atoms": 1809,
+    "charge_e": 1.0000000000000193,
+    "rebuilt_sites": [
+      {
+        "resindex": 34,
+        "source_residue": "LXX",
+        "restored_residue": "LYS",
+        "chain": "B",
+        "id": 944
+      },
+      {
+        "resindex": 96,
+        "source_residue": "LX2",
+        "restored_residue": "LYS",
+        "chain": "K",
+        "id": 5
+      },
+      {
+        "resindex": 123,
+        "source_residue": "LX3",
+        "restored_residue": "LYS",
+        "chain": "L",
+        "id": 9
+      }
+    ],
+    "source_sha256": "dfb52fe7f54f78752c1a873777783d1aa3b0be59e65463852072c3a0aeb23bcd",
+    "control_scope": "unlinked ordinary-lysine reconstruction; hydroxylation and charge are changed as well as crosslink connectivity",
+    "chemistry_matched_HYL_precursor_control": false,
+    "dynamic_validation": false,
+    "limitation": "Source force field has no free HYL template. Do not call this a hydroxylation-matched precursor or interpret a native linked-minus-control difference as connectivity alone."
+  }
+]

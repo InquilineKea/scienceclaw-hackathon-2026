@@ -1,0 +1,178 @@
+brev-enjgg7tq5
+NVIDIA L4, GPU-39ce8e40-b85b-b73f-3e9f-06f960239df7, 580.178.04, 23034 MiB
+{"hostname": "brev-enjgg7tq5", "python": "/home/ubuntu/workspace/collagen-md/.venv/bin/python", "cuInit_returncode": 0, "count_returncode": 0, "device_count": 1}
+HTTP/2 200 
+access-control-allow-origin: *
+access-control-allow-methods: GET
+access-control-allow-headers: Content-Type, If-Match, If-Modified-Since, If-None-Match, If-Unmodified-Since
+referrer-policy: origin-when-cross-origin
+etag: "ut+WZkRRjZL+FMZXIYhmyg"
+x-pypi-last-serial: 41423217
+server: gunicorn
+cache-control: max-age=600, public
+access-control-max-age: 86400
+content-security-policy: default-src 'none'; sandbox allow-top-navigation
+access-control-expose-headers: X-PyPI-Last-Serial
+accept-ranges: bytes
+date: Sat, 31 Oct 2026 09:02:36 GMT
+x-served-by: cache-iad-khef600077-IAD, cache-iad-khef600077-IAD, cache-iad-khef600068-IAD, cache-yyz-cyyz770059-YYZ
+x-cache: MISS, HIT, MISS
+x-cache-hits: 0, 1873, 0
+x-timer: S1793437357.903113,VS0,VE21
+content-type: text/html
+vary: Accept-Encoding, Accept
+strict-transport-security: max-age=31536000; includeSubDomains; preload
+x-frame-options: deny
+x-xss-protection: 1; mode=block
+x-content-type-options: nosniff
+x-permitted-cross-domain-policies: none
+permissions-policy: publickey-credentials-create=(self),publickey-credentials-get=(self),accelerometer=(),ambient-light-sensor=(),autoplay=(),battery=(),camera=(),display-capture=(),document-domain=(),encrypted-media=(),execution-while-not-rendered=(),execution-while-out-of-viewport=(),fullscreen=(),gamepad=(),geolocation=(),gyroscope=(),hid=(),identity-credentials-get=(),idle-detection=(),local-fonts=(),magnetometer=(),microphone=(),midi=(),otp-credentials=(),payment=(),picture-in-picture=(),screen-wake-lock=(),serial=(),speaker-selection=(),storage-access=(),usb=(),web-share=(),xr-spatial-tracking=()
+content-length: 286229
+
+/home/ubuntu/workspace/collagen-md/.venv/bin/python: No module named pip
+Collecting pip
+  Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting setuptools
+  Downloading setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel
+  Downloading wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting packaging>=24.0 (from wheel)
+  Downloading packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.8/1.8 MB 60.4 MB/s  0:00:00
+Downloading setuptools-84.2.1-py3-none-any.whl (876 kB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 876.3/876.3 kB 48.1 MB/s  0:00:00
+Downloading wheel-0.48.0-py3-none-any.whl (33 kB)
+Downloading packaging-26.3-py3-none-any.whl (129 kB)
+Installing collected packages: setuptools, pip, packaging, wheel
+
+Successfully installed packaging-26.3 pip-26.2.2 setuptools-84.2.1 wheel-0.48.0
+Collecting openmm[cuda12]
+  Downloading openmm-8.6.1-cp310-cp310-manylinux_2_34_x86_64.whl.metadata (1.4 kB)
+Collecting numpy (from openmm[cuda12])
+  Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.metadata (62 kB)
+Collecting OpenMM-CUDA-12==8.6.1 (from openmm[cuda12])
+  Downloading openmm_cuda_12-8.6.1-py3-none-manylinux_2_34_x86_64.whl.metadata (405 bytes)
+Collecting nvidia-cuda-runtime-cu12 (from OpenMM-CUDA-12==8.6.1->openmm[cuda12])
+  Downloading nvidia_cuda_runtime_cu12-12.9.79-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cuda-nvcc-cu12 (from OpenMM-CUDA-12==8.6.1->openmm[cuda12])
+  Downloading nvidia_cuda_nvcc_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cuda-nvrtc-cu12 (from OpenMM-CUDA-12==8.6.1->openmm[cuda12])
+  Downloading nvidia_cuda_nvrtc_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.7 kB)
+Collecting nvidia-cuda-cupti-cu12 (from OpenMM-CUDA-12==8.6.1->openmm[cuda12])
+  Downloading nvidia_cuda_cupti_cu12-12.9.79-py3-none-manylinux_2_25_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-cufft-cu12 (from OpenMM-CUDA-12==8.6.1->openmm[cuda12])
+  Downloading nvidia_cufft_cu12-11.4.1.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl.metadata (1.8 kB)
+Collecting nvidia-nvjitlink-cu12 (from nvidia-cufft-cu12->OpenMM-CUDA-12==8.6.1->openmm[cuda12])
+  Downloading nvidia_nvjitlink_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl.metadata (1.7 kB)
+Downloading openmm-8.6.1-cp310-cp310-manylinux_2_34_x86_64.whl (14.4 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.4/14.4 MB 117.7 MB/s  0:00:00
+Downloading openmm_cuda_12-8.6.1-py3-none-manylinux_2_34_x86_64.whl (2.3 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 107.1 MB/s  0:00:00
+Downloading numpy-2.2.6-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (16.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 16.8/16.8 MB 181.9 MB/s  0:00:00
+Downloading nvidia_cuda_cupti_cu12-12.9.79-py3-none-manylinux_2_25_x86_64.whl (10.8 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 10.8/10.8 MB 129.1 MB/s  0:00:00
+Downloading nvidia_cuda_nvcc_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (40.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.5/40.5 MB 106.6 MB/s  0:00:00
+Downloading nvidia_cuda_nvrtc_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (89.6 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.6/89.6 MB 100.0 MB/s  0:00:00
+Downloading nvidia_cuda_runtime_cu12-12.9.79-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (3.5 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.5/3.5 MB 121.5 MB/s  0:00:00
+Downloading nvidia_cufft_cu12-11.4.1.4-py3-none-manylinux2014_x86_64.manylinux_2_17_x86_64.whl (200.9 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 200.9/200.9 MB 95.0 MB/s  0:00:02
+Downloading nvidia_nvjitlink_cu12-12.9.86-py3-none-manylinux2010_x86_64.manylinux_2_12_x86_64.whl (39.7 MB)
+   ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 39.7/39.7 MB 156.3 MB/s  0:00:00
+Installing collected packages: nvidia-nvjitlink-cu12, nvidia-cuda-runtime-cu12, nvidia-cuda-nvrtc-cu12, nvidia-cuda-nvcc-cu12, nvidia-cuda-cupti-cu12, numpy, openmm, nvidia-cufft-cu12, OpenMM-CUDA-12
+
+Successfully installed OpenMM-CUDA-12-8.6.1 numpy-2.2.6 nvidia-cuda-cupti-cu12-12.9.79 nvidia-cuda-nvcc-cu12-12.9.86 nvidia-cuda-nvrtc-cu12-12.9.86 nvidia-cuda-runtime-cu12-12.9.79 nvidia-cufft-cu12-11.4.1.4 nvidia-nvjitlink-cu12-12.9.86 openmm-8.6.1
+{
+  "started_utc": "2026-10-31T09:02:56.750241+00:00",
+  "status": "pass",
+  "test": "harmonic dimer: CUDA vs Reference, then 1000 NVE steps",
+  "biological_validation": false,
+  "fallback_allowed": false,
+  "openmm_version": "8.6.1",
+  "platforms": [
+    "Reference",
+    "CPU",
+    "CUDA"
+  ],
+  "plugin_load_failures": [
+    "Error loading library /home/ubuntu/workspace/collagen-md/.venv/lib/python3.10/site-packages/OpenMM.libs/lib/plugins/libOpenMMOpenCL.so: libOpenCL.so.1: cannot open shared object file: No such file or directory",
+    "Error loading library /home/ubuntu/workspace/collagen-md/.venv/lib/python3.10/site-packages/OpenMM.libs/lib/plugins/libOpenMMRPMDOpenCL.so: libOpenCL.so.1: cannot open shared object file: No such file or directory",
+    "Error loading library /home/ubuntu/workspace/collagen-md/.venv/lib/python3.10/site-packages/OpenMM.libs/lib/plugins/libOpenMMDrudeOpenCL.so: libOpenCL.so.1: cannot open shared object file: No such file or directory",
+    "Error loading library /home/ubuntu/workspace/collagen-md/.venv/lib/python3.10/site-packages/OpenMM.libs/lib/plugins/libOpenMMAmoebaOpenCL.so: libOpenMMOpenCL.so: cannot open shared object file: No such file or directory"
+  ],
+  "parameters": {
+    "particles": 2,
+    "mass_da": 12,
+    "r0_nm": 0.1,
+    "k_kj_mol_nm2": 1000,
+    "initial_r_nm": 0.12,
+    "dt_fs": 1,
+    "steps": 1000,
+    "precision": "mixed"
+  },
+  "initial": {
+    "Reference": {
+      "potential_kj_mol": 0.1999999999999998,
+      "forces_kj_mol_nm": [
+        [
+          19.99999999999999,
+          0.0,
+          0.0
+        ],
+        [
+          -19.99999999999999,
+          0.0,
+          0.0
+        ]
+      ]
+    },
+    "CUDA": {
+      "potential_kj_mol": 0.19999991357326508,
+      "forces_kj_mol_nm": [
+        [
+          19.9999942779541,
+          0.0,
+          0.0
+        ],
+        [
+          -19.9999942779541,
+          0.0,
+          0.0
+        ]
+      ]
+    }
+  },
+  "actual_platform": "CUDA",
+  "platform_properties": {
+    "DeviceIndex": "0",
+    "DeviceName": "NVIDIA L4",
+    "UseBlockingSync": "false",
+    "Precision": "mixed",
+    "UseCpuPme": "false",
+    "CudaCompiler": "",
+    "TempDirectory": "/tmp",
+    "CudaHostCompiler": "",
+    "DisablePmeStream": "false",
+    "DeterministicForces": "false"
+  },
+  "initial_force_max_abs_difference_kj_mol_nm": 5.722045887779359e-06,
+  "final_total_kj_mol": 0.20000724328332525,
+  "relative_energy_drift": 3.664856613796798e-05,
+  "final_positions_nm": [
+    [
+      0.0006064845384074211,
+      0.0,
+      0.0
+    ],
+    [
+      0.11939351546159038,
+      0.0,
+      0.0
+    ]
+  ],
+  "finished_utc": "2026-10-31T09:02:59.306395+00:00"
+}
