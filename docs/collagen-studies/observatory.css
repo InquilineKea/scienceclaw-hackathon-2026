@@ -207,3 +207,9 @@ body {
 [hidden]{display:none!important}
 
 .evidence-record-card{border:1px solid #cbd5e1;background:#f8fafc;border-left:4px solid #0d9488;border-radius:8px;margin:12px 0;padding:12px;overflow-wrap:anywhere}.evidence-record-card p{margin:6px 0}.badge-row{flex-wrap:wrap} .study-header h2,.study-title{overflow-wrap:anywhere}.badge{white-space:normal!important}
+/* Keep long saved labels and wide tables inside their responsive panels. */
+.app-shell{grid-template-columns:300px minmax(0,1fr)}
+.app-shell>*,.workspace>*,.header-top>*,.meta-grid>*,.data-section>*,.stage-grid>*,.pane-toolbar>*,.pane-footer>*,.plot-controls>*,.plot-controls label{min-width:0;max-width:100%}
+.workspace{min-width:0}.tag,.study-item-title,.binding-note,.readout-box,.kv-val,.kv-cell{overflow-wrap:anywhere;white-space:normal}.study-item{min-width:0;max-width:100%}.header-top>div{max-width:100%}select{max-width:100%;min-width:0}.canvas-host{height:auto!important;min-height:390px}.kv-key{display:block;font-size:.75rem;color:#475569}.kv-val{display:block;font: .8rem ui-monospace,monospace}.kv-cell{padding:8px;border:1px solid #e2e8f0;border-radius:6px}.table-scroll{min-width:0} .plot-card{min-width:0} 
+@media(max-width:1024px){.app-shell{grid-template-columns:minmax(0,1fr)}.meta-grid,.data-section,.stage-grid.compare-active{grid-template-columns:minmax(0,1fr)}.workspace{max-width:100%}.sidebar{min-width:0}.tag{max-width:100%}}
+@media(max-width:480px){.pane-toolbar label,.pane-footer label,.plot-controls label{width:100%}.pane-toolbar select,.pane-footer select,#table-select{width:100%}.kv-grid{grid-template-columns:minmax(0,1fr)}.canvas-host{min-height:300px}}
