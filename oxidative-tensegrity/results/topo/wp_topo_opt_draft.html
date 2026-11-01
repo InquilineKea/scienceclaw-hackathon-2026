@@ -5,7 +5,11 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>Takeaway:</strong> at the stiffness cells read best in this model, collagen networks sit right at their rigidity transition. Fibre layout did not make them tougher, but one layout (fibres biased along one direction, with a few locked fibre crossings) passed about 3.5× more strain to an embedded organoid at the same stiffness.</p>
+<p><strong>Takeaway:</strong> at the stiffness cells read best in this model, collagen networks sit right at their rigidity transition. Fibre layout did not make them tougher, but one layout (fibres biased along one direction, with a few locked fibre crossings) passed about 3.5× more strain to an embedded organoid at the same stiffness in the smaller test box.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Update · 1 November 2026.</strong> A cross-check with a second optimiser, with 8 random builds per design at two box sizes, changed two claims below. Layouts graded around the pore can land in the stiffness window, but none did so at both box sizes. The aligned design matched the window only in the smaller box. The ranking by strain transmission held at both sizes. Details are in the update section after the results.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -64,7 +68,7 @@
 <!-- /wp:image -->
 
 <!-- wp:paragraph -->
-<p><strong>1. The readable stiffness sits on the rigidity transition.</strong> Every design that reliably landed in the stiffness window had connectivity z = 3.19–3.63: on the bending-stabilised rigidity onset of this model (z ≈ 3.2–3.5) and below the 2D central-force isostatic point (z = 4). Designs at z ≈ 3.9 that looked in-window in the search fell out of it on re-evaluation. Even the best designs were in the window in only 5–6 of 8 random builds, and plain uniform networks in at most 4 of 8. Scaffold-to-scaffold variability is as large as the window itself, so reproducibility, not layout, is the binding constraint.</p>
+<p><strong>1. The readable stiffness sits on the rigidity transition.</strong> Every design that reliably landed in the stiffness window had connectivity z = 3.19–3.63: on the bending-stabilised rigidity onset of this model (z ≈ 3.2–3.5) and below the 2D central-force isostatic point (z = 4). Designs at z ≈ 3.9 that looked in-window in the search fell out of it on re-evaluation. Even the best designs were in the window in only 5–6 of 8 random builds, and plain uniform networks in at most 4 of 8. Scaffold-to-scaffold variability is as large as the window itself, so reproducibility, not layout, is the binding constraint. A later re-run at two box sizes (see the update below) sharpened this: which designs land in the window changes between boxes of 12 and 16 lattice units, because the window sits where finite-size effects are largest.</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -72,7 +76,7 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>3. Layout does change what the organoid can sense.</strong> Fibres biased along one direction, with about 8% of junctions locked at fibre crossings, at z = 3.63, transmitted about 3.5× more bulk strain to the pore neighbourhood than a uniform network at z = 3.55 (0.14 ± 0.03 vs 0.040 ± 0.008, averaged over pulls along both axes). That matches the transmission of a uniform network at z = 3.82, which is out of the window. This design was also the most reproducible (6 of 8 builds in the window). The sensing ranking held up across both re-evaluations (rank correlation 0.86 and 0.73).</p>
+<p><strong>3. Layout does change what the organoid can sense.</strong> Fibres biased along one direction, with about 8% of junctions locked at fibre crossings, at z = 3.63, transmitted about 3.5× more bulk strain to the pore neighbourhood than a uniform network at z = 3.55 (0.14 ± 0.03 vs 0.040 ± 0.008, averaged over pulls along both axes). That matches the transmission of a uniform network at z = 3.82, which is out of the window. In the 12-unit box it was also the most reproducible design (6 of 8 builds in the window). In the 16-unit box its mean stiffness fell just below the window (in it in 2 of 8 builds), though it still transmitted more strain than the uniform, heavily locked design (0.074 vs 0.028). The sensing ranking held up across both re-evaluations (rank correlation 0.86 and 0.73).</p>
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
@@ -80,8 +84,26 @@
 <!-- /wp:paragraph -->
 
 <!-- wp:paragraph -->
-<p><strong>5. What did not work.</strong> Fibres concentrated around the pore never landed in the window (9 sampled; they overshot or undershot it). High-contrast clustered layouts were the least reproducible (the shear modulus varied by about twice its mean between builds). The transport proxy barely separated designs (D/D0 0.39–0.48), because collagen fibres alone hinder diffusion weakly. Lock placement and the variance-reducing effect of locking seen in the phase-map sweeps could not be resolved with this sample.</p>
+<p><strong>5. What did not work.</strong> In this search, layouts with fibre density graded towards or away from the pore never landed in the window (9 sampled; they overshot or undershot it). A second optimiser did find graded designs in the window, but none stayed there at both box sizes (see the update below). High-contrast clustered layouts were the least reproducible (the shear modulus varied by about twice its mean between builds). The transport proxy barely separated designs (D/D0 0.39–0.48), because collagen fibres alone hinder diffusion weakly. Lock placement and the variance-reducing effect of locking seen in the phase-map sweeps could not be resolved with this sample.</p>
 <!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Update, 1 November: a second optimiser and a bigger box</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>An independent run of the same search with a different optimiser (pymoo's NSGA-II, 168 designs, same design encoding, objectives and window) found a front that was more than half graded layouts, which this search had ruled out. To check whether those were real or luck from only two builds each, the 6 strongly graded designs were rebuilt 8 times each in 12- and 16-unit boxes, alongside this search's best designs and uniform networks. The pass rule was fixed before running: a graded design counts only if its mean stiffness is in the window at both box sizes and no comparator is at least as good on every objective.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><strong>No graded design passed:</strong> 0 of 6 had its mean stiffness in the window at both sizes. One design with fibres thinned near the pore was in the window only in the 12-unit box. Two with fibres denser near the pore were in it only in the 16-unit box.</li>
+<li><strong>Where they did land in the window, nothing beat them on every objective.</strong> The denser-near-pore designs had the highest strain transmission of anything tested. Graded designs are not worse; they are just not reliably in the window.</li>
+<li>Designs with fibres thinned near the pore passed essentially no strain to the pore in the larger box.</li>
+<li><strong>The same problem hits this search's own best design:</strong> the aligned design fell just below the window in the 16-unit box. Of everything rebuilt at both sizes, only the uniform, heavily locked design kept its mean stiffness in the window at both.</li>
+<li><strong>What held at both sizes</strong> is the strain-transmission ranking: aligned and denser-near-pore layouts first, uniform heavily locked next, thinned-near-pore last. At these box sizes, whether a design sits in the window should not be used to rank it.</li>
+</ul>
+<!-- /wp:list -->
 
 <!-- wp:heading -->
 <h2 class="wp-block-heading">How this connects to earlier posts</h2>
