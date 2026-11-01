@@ -1,0 +1,18 @@
+{
+ "tag": "unbiased_MAMM_s5103",
+ "n_atoms": 2082,
+ "box_volume_nm3": 20.10633947648398,
+ "seconds": 6057.3,
+ "platform": "CUDA",
+ "finite": true,
+ "potential_kJ": -29848.080421944585,
+ "kind": "unbiased",
+ "cation": "MAMM",
+ "r0": 0.45,
+ "seed": 5103,
+ "out": "/results",
+ "equil_ps": 200,
+ "prod_ps": 3000,
+ "sample_ps": 0.5,
+ "box": 2.8
+}

@@ -1,0 +1,18 @@
+{
+ "tag": "umbrella_MGUA_1.200_s1180",
+ "n_atoms": 3742,
+ "box_volume_nm3": 36.885211018473804,
+ "seconds": 1576.6,
+ "platform": "CUDA",
+ "finite": true,
+ "potential_kJ": -54256.85801437142,
+ "kind": "umbrella",
+ "cation": "MGUA",
+ "r0": 1.2,
+ "seed": 1180,
+ "out": "/results",
+ "equil_ps": 100,
+ "prod_ps": 750,
+ "sample_ps": 0.5,
+ "box": 3.4
+}

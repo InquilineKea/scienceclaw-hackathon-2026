@@ -1,0 +1,5 @@
+name, memory.total [MiB]
+NVIDIA RTX A6000, 46068 MiB
+torch 2.5.1+cu124 True NVIDIA RTX A6000
+[network] 6 systems in 1 batches
+Terminated

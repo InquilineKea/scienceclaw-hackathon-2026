@@ -1,0 +1,202 @@
+{
+  "I": {
+    "label": "synthetic-triangular",
+    "mode": "I",
+    "n_realizations": 8,
+    "n_complete": 8,
+    "n_incomplete": 0,
+    "all_complete": true,
+    "G_c": {
+      "mean": 15.104072548059134,
+      "sd": 1.3562466839080356
+    },
+    "T_max": {
+      "mean": 1540073.9610584597,
+      "sd": 88579.05574864493
+    },
+    "delta_peak": {
+      "mean": 9.899458459673919e-06,
+      "sd": 7.94867878365489e-07
+    },
+    "K0": {
+      "mean": 156630737066.79224,
+      "sd": 18409922309.00147
+    },
+    "delta_f": {
+      "mean": 1.9584171507614355e-05,
+      "sd": 1.5301524090232388e-06
+    },
+    "delta_f_note": "delta_f aggregated over 8 complete realization(s)",
+    "incomplete_sources": [],
+    "per_realization": [
+      {
+        "source": "/Users/simfish/Documents/GitHub/gaia-hackathon-2026/OpenBCI-PostFable/Science/oxidative-tensegrity/fracture_bridge/results/synthetic_8r/curves/realization_0.json",
+        "mode": "I",
+        "realization": 0,
+        "n_points": 498,
+        "G_c": 14.98502395270518,
+        "T_max": 1507081.2760248317,
+        "delta_peak": 1.0020759433299745e-05,
+        "delta_f": 1.9647002877672818e-05,
+        "K0": 150395914207.52863,
+        "incomplete": false,
+        "reason": "",
+        "G_c_lower_bound": false,
+        "delta_end": 2.4802625960530463e-05,
+        "T_end": 0.0,
+        "decay_threshold": 0.02,
+        "units": {
+          "delta": "m",
+          "traction": "Pa"
+        }
+      },
+      {
+        "source": "/Users/simfish/Documents/GitHub/gaia-hackathon-2026/OpenBCI-PostFable/Science/oxidative-tensegrity/fracture_bridge/results/synthetic_8r/curves/realization_1.json",
+        "mode": "I",
+        "realization": 1,
+        "n_points": 498,
+        "G_c": 16.069788927133843,
+        "T_max": 1562363.228884569,
+        "delta_peak": 1.0505324055959726e-05,
+        "delta_f": 2.079641218541082e-05,
+        "K0": 148721088522.56033,
+        "incomplete": false,
+        "reason": "",
+        "G_c_lower_bound": false,
+        "delta_end": 2.6263310139899316e-05,
+        "T_end": 0.0,
+        "decay_threshold": 0.02,
+        "units": {
+          "delta": "m",
+          "traction": "Pa"
+        }
+      },
+      {
+        "source": "/Users/simfish/Documents/GitHub/gaia-hackathon-2026/OpenBCI-PostFable/Science/oxidative-tensegrity/fracture_bridge/results/synthetic_8r/curves/realization_2.json",
+        "mode": "I",
+        "realization": 2,
+        "n_points": 498,
+        "G_c": 14.695243421486836,
+        "T_max": 1523535.2663205157,
+        "delta_peak": 9.73991828831045e-06,
+        "delta_f": 1.918588815906072e-05,
+        "K0": 156421770822.14496,
+        "incomplete": false,
+        "reason": "",
+        "G_c_lower_bound": false,
+        "delta_end": 2.4228046742172242e-05,
+        "T_end": 0.0,
+        "decay_threshold": 0.02,
+        "units": {
+          "delta": "m",
+          "traction": "Pa"
+        }
+      },
+      {
+        "source": "/Users/simfish/Documents/GitHub/gaia-hackathon-2026/OpenBCI-PostFable/Science/oxidative-tensegrity/fracture_bridge/results/synthetic_8r/curves/realization_3.json",
+        "mode": "I",
+        "realization": 3,
+        "n_points": 498,
+        "G_c": 14.551276883264448,
+        "T_max": 1714415.8931834523,
+        "delta_peak": 8.535273472940574e-06,
+        "delta_f": 1.6981694438996195e-05,
+        "K0": 200862444374.94296,
+        "incomplete": false,
+        "reason": "",
+        "G_c_lower_bound": false,
+        "delta_end": 2.1445952286807754e-05,
+        "T_end": 0.0,
+        "decay_threshold": 0.02,
+        "units": {
+          "delta": "m",
+          "traction": "Pa"
+        }
+      },
+      {
+        "source": "/Users/simfish/Documents/GitHub/gaia-hackathon-2026/OpenBCI-PostFable/Science/oxidative-tensegrity/fracture_bridge/results/synthetic_8r/curves/realization_4.json",
+        "mode": "I",
+        "realization": 4,
+        "n_points": 498,
+        "G_c": 14.289663131983033,
+        "T_max": 1458342.9537773973,
+        "delta_peak": 9.945444401976583e-06,
+        "delta_f": 1.9590751078451675e-05,
+        "K0": 146634267392.57248,
+        "incomplete": false,
+        "reason": "",
+        "G_c_lower_bound": false,
+        "delta_end": 2.473929294991675e-05,
+        "T_end": 0.0,
+        "decay_threshold": 0.02,
+        "units": {
+          "delta": "m",
+          "traction": "Pa"
+        }
+      },
+      {
+        "source": "/Users/simfish/Documents/GitHub/gaia-hackathon-2026/OpenBCI-PostFable/Science/oxidative-tensegrity/fracture_bridge/results/synthetic_8r/curves/realization_5.json",
+        "mode": "I",
+        "realization": 5,
+        "n_points": 498,
+        "G_c": 13.203956152989502,
+        "T_max": 1435689.9220684802,
+        "delta_peak": 9.143309935467675e-06,
+        "delta_f": 1.82866645022067e-05,
+        "K0": 157020808897.5872,
+        "incomplete": false,
+        "reason": "",
+        "G_c_lower_bound": false,
+        "delta_end": 2.3090338542615068e-05,
+        "T_end": 0.0,
+        "decay_threshold": 0.02,
+        "units": {
+          "delta": "m",
+          "traction": "Pa"
+        }
+      },
+      {
+        "source": "/Users/simfish/Documents/GitHub/gaia-hackathon-2026/OpenBCI-PostFable/Science/oxidative-tensegrity/fracture_bridge/results/synthetic_8r/curves/realization_6.json",
+        "mode": "I",
+        "realization": 6,
+        "n_points": 498,
+        "G_c": 17.779694395073395,
+        "T_max": 1606125.6300838126,
+        "delta_peak": 1.1124774645057217e-05,
+        "delta_f": 2.2028166277459202e-05,
+        "K0": 144373767678.73862,
+        "incomplete": false,
+        "reason": "",
+        "G_c_lower_bound": false,
+        "delta_end": 2.7811936612643043e-05,
+        "T_end": 0.0,
+        "decay_threshold": 0.02,
+        "units": {
+          "delta": "m",
+          "traction": "Pa"
+        }
+      },
+      {
+        "source": "/Users/simfish/Documents/GitHub/gaia-hackathon-2026/OpenBCI-PostFable/Science/oxidative-tensegrity/fracture_bridge/results/synthetic_8r/curves/realization_7.json",
+        "mode": "I",
+        "realization": 7,
+        "n_points": 498,
+        "G_c": 15.257933519836838,
+        "T_max": 1513037.51812462,
+        "delta_peak": 1.0180863444379385e-05,
+        "delta_f": 2.015679254165669e-05,
+        "K0": 148615834638.26266,
+        "incomplete": false,
+        "reason": "",
+        "G_c_lower_bound": false,
+        "delta_end": 2.545215861094846e-05,
+        "T_end": 0.0,
+        "decay_threshold": 0.02,
+        "units": {
+          "delta": "m",
+          "traction": "Pa"
+        }
+      }
+    ]
+  }
+}

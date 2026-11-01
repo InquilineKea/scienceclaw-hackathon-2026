@@ -1,0 +1,120 @@
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group">
+<!-- wp:paragraph -->
+<p><strong>Research context · 31 October 2026.</strong> Evidence: completed 2D fibre-network simulations (oxidative-tensegrity model, <code>oxt/network.py</code>). 104 searched designs, then 14 designs re-run with 8 random realisations and in a larger box. All parameters are model assumptions; nothing here is a measurement of collagen or organoids, and the design ranking is 2D only.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Takeaway:</strong> at the stiffness cells read best in this model, collagen networks sit right at their rigidity transition. Fibre layout did not make them tougher, but one layout (fibres biased along one direction, with a few locked fibre crossings) passed about 3.5× more strain to an embedded organoid at the same stiffness.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Related: <a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/hypothesis-collagen-junction-angle-spread-patterns-mechanosignaling-across-organoids/">Hypothesis: junction-angle spread and organoid mechanosignaling</a> · <a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/matched-stiffness-collagen-network-relaxation-h100-results/">Same initial stiffness, different relaxation</a> · <a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/collagen-aging-topology-crosslink-placement/">Why crosslink placement matters</a> · <a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/collagen-resilience-aging-big-picture-overview/">Big-picture overview</a></p>
+<!-- /wp:paragraph -->
+</div>
+<!-- /wp:group -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">The question</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>If you build a collagen scaffold around an organoid, which arrangement of fibres and crosslinks gives a matrix that is hard to break, sits at a stiffness the cells can actually read, and passes mechanical and chemical signals to the organoid? We treated this as a multi-objective design problem and searched for a set of best trade-offs (a Pareto front) rather than a single winner.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">What was varied and what was measured</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Each design is a periodic 2D diluted triangular fibre network with stretching, bending and optional angle-locked junctions (LOX/pyridinoline-type, one generic stiffness; no chemistry-specific crosslink values were used). An empty circular pore stands in for the organoid. Seven design variables: mean connectivity z (2.6–5.0); spatial pattern of fibres (uniform, graded around the pore, layered bands, clustered, or aligned along one lattice direction) and its strength and scale; fraction and placement of locked junctions; and pore radius.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><strong>Resilience:</strong> work to failure (toughness) and the largest single-step stress drop (brittleness) in a quasi-static pull with fibre rupture. Each design was built twice and pulled once along x and once along y; the worse result counts, so a design cannot win by aligning with the test axis.</li>
+<li><strong>Stiffness window (constraint):</strong> the range where the project's cell model (motor-clutch adhesion, tensegrity cytoskeleton, YAP feedback) is most responsive to matrix stiffness: E ≈ 120–284 Pa under the project's existing calibration. This window is an assumption, not a measured organoid optimum.</li>
+<li><strong>Sensing:</strong> how much bulk strain reaches the fibres around the pore, relative to a perfectly affine matrix; and how far a contraction at the pore reaches into the network, relative to a fully connected sheet with the same pore.</li>
+<li><strong>Transport:</strong> effective diffusivity of an exosome-sized particle from the outer boundary to the pore (Ogston fibre hindrance, shells in series). This is a crude proxy.</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:paragraph -->
+<p>The search was a plain-numpy NSGA-II genetic algorithm with constraint domination. It ran on a 32-vCPU Google Cloud VM: 104 designs over 4 generations in 40 minutes at W = 12. The 10 most informative front designs plus 4 plain uniform, unlocked baselines were then re-run in a larger box (W = 16) and with 8 realisations each at W = 12.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">A faster way to get small-strain mechanics: the Hessian</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The model normally finds how a network deforms by step-by-step energy minimisation (L-BFGS). Near the rigidity transition the network is almost floppy and this search crawls. For small deformations the energy is a quadratic bowl, E ≈ ½ uᵀHu, where H, the Hessian, holds the second derivatives of the energy with respect to every node position. With H in hand, the response to any force is a single linear solve (Hu = f). The shear and stretch moduli follow exactly as the uniform-deformation stiffness minus what the network relaxes away locally (a Schur complement). The same solve gives the full displacement field that the sensing measures need.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Checked against the model's own minimisation, the Hessian moduli agree to within 1–6% across z = 2.9–5.4 and are 10–100× faster near the transition. They are exact only for small strains: strain-stiffening and fibre rupture still come from the original nonlinear solver. H is invertible only because of the model's very weak background spring. That same weak spring fooled our first sensing measure: floppy networks slid around as a whole while their fibres carried almost no tension. The measure went through three versions before it stopped rewarding floppiness; all three are documented.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Results</h2>
+<!-- /wp:heading -->
+
+<!-- wp:image {"id":544,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-organoid-topology-pareto-w12.png"><img src="https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-organoid-topology-pareto-w12.png?w=1024" alt="Four scatter panels of 104 simulated 2D collagen network designs. Top left: toughness versus brittleness. Top right: transport versus sensing. Bottom left: shear modulus versus connectivity z on a log scale, with the YAP-responsive stiffness band (120 to 284 Pa) shaded horizontally, the bending onset shaded at z 3.2 to 3.5 and the isostatic point marked at z 4; Pareto-front designs cluster inside the band at z 3.1 to 3.9. Bottom right: toughness versus sensing. Grey points are outside the stiffness band, blue are in band but dominated, orange markers are Pareto-front designs, shaped by fibre pattern." class="wp-image-544"/></a><figcaption class="wp-element-caption">The W = 12 search before re-evaluation: 104 designs, 34 in the stiffness band, 21 on the front. The bottom-left panel shows the front sitting inside the stiffness band (shaded) on the rigidity onset, below the isostatic point. Only the re-evaluated claims below are results; many front points here reflect realisation noise.</figcaption></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><strong>1. The readable stiffness sits on the rigidity transition.</strong> Every design that reliably landed in the stiffness window had connectivity z = 3.19–3.63: on the bending-stabilised rigidity onset of this model (z ≈ 3.2–3.5) and below the 2D central-force isostatic point (z = 4). Designs at z ≈ 3.9 that looked in-window in the search fell out of it on re-evaluation. Even the best designs were in the window in only 5–6 of 8 random builds, and plain uniform networks in at most 4 of 8. Scaffold-to-scaffold variability is as large as the window itself, so reproducibility, not layout, is the binding constraint.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>2. Layout did not buy toughness (negative result).</strong> At matched stiffness, every in-window design had toughness 2.2–2.7 ×10⁻³ (model units) against 2.1–2.2 ×10⁻³ for the uniform baselines: at most 1–1.5 standard errors apart with 8 realisations. The search's own toughness ranking did not survive re-evaluation (rank correlation 0.19 in the larger box, 0.22 with 8 realisations). In this model, toughness at fixed stiffness is set by connectivity, not by arrangement.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>3. Layout does change what the organoid can sense.</strong> Fibres biased along one direction, with about 8% of junctions locked at fibre crossings, at z = 3.63, transmitted about 3.5× more bulk strain to the pore neighbourhood than a uniform network at z = 3.55 (0.14 ± 0.03 vs 0.040 ± 0.008, averaged over pulls along both axes). That matches the transmission of a uniform network at z = 3.82, which is out of the window. This design was also the most reproducible (6 of 8 builds in the window). The sensing ranking held up across both re-evaluations (rank correlation 0.86 and 0.73).</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>4. Junction locks substitute for connectivity.</strong> Heavy random locking lets a network reach the window at lower z (3.2 instead of about 3.55). That gives slightly better transport, a later stress peak, and a contraction that reaches further into the network, but the least bulk strain reaching the organoid. Controlling for z, lock fraction correlated with lower strain transmission (partial ρ −0.33) and higher brittleness (+0.32). Whether a scaffold should favour the organoid sensing its surroundings or signalling into them is a design choice the model cannot make.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>5. What did not work.</strong> Fibres concentrated around the pore never landed in the window (9 sampled; they overshot or undershot it). High-contrast clustered layouts were the least reproducible (the shear modulus varied by about twice its mean between builds). The transport proxy barely separated designs (D/D0 0.39–0.48), because collagen fibres alone hinder diffusion weakly. Lock placement and the variance-reducing effect of locking seen in the phase-map sweeps could not be resolved with this sample.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">How this connects to earlier posts</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list -->
+<ul class="wp-block-list">
+<li><a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/hypothesis-collagen-junction-angle-spread-patterns-mechanosignaling-across-organoids/">Junction-angle hypothesis for organoids</a>: same question (signals at matched bulk stiffness), different variable. This study supports its premise in a separate 2D model: architecture changes the signal reaching an organoid at matched stiffness. It does not test angle spread.</li>
+<li><a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/matched-stiffness-collagen-network-relaxation-h100-results/">Same initial stiffness, different relaxation</a>: the same kind of lattice and the same uniform-versus-clustered contrast. There, architecture changed relaxation; here, at matched stiffness it did not change toughness, and clustered layouts were the least reproducible.</li>
+<li><a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/collagen-aging-topology-crosslink-placement/">Why crosslink placement matters</a> and <a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/controlled-collagen-connectivity-clustering-hub-bias-cpu-sweeps/">connectivity, clustering and hub bias</a>: consistent with "no universal winner". Locks here trade local strain transmission against reach and transport.</li>
+<li><a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/fracture-atlas-collagen-network-toughness-pressure-acceleration/">Fracture Atlas</a>: there, aligned networks carried more peak force. Here, with worst-of-two-axes scoring, alignment did not raise toughness but did raise strain transmission.</li>
+<li><a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/controlled-h100-results-junction-geometry-reshapes-force-fields-and-conditional-yap-gene-activity/">Conditional YAP results</a>: that YAP surrogate is a different model. The stiffness window here comes from the original oxidative-tensegrity cell model.</li>
+<li><a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/fcc3d-normalization-full-solver-validation-architecture-atlas/">FCC3D commissioning</a>: a 3D generator in the wider project. In 3D, the isostatic point is z = 6, not 4, so the ranking here could change; re-running the aligned-plus-crossing-lock design and the uniform baselines there is the obvious next test.</li>
+</ul>
+<!-- /wp:list -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Limits</h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>2D only; small periodic boxes (12–16 lattice units, pore radius up to a quarter of the box); sensing measures are small-strain linear response; rupture is quasi-static with no viscoelasticity or remodelling; resilience was tested as uniaxial pulls, not as an organoid expanding against its matrix. The search was short (4 generations, 2 realisations per design during the search), so only the re-evaluated claims above should be read as results. Collagen parameters, the Pa calibration, the YAP window and the transport proxy are model assumptions.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading">Next tests</h2>
+<!-- /wp:heading -->
+
+<!-- wp:list {"ordered":true} -->
+<ol class="wp-block-list">
+<li>Search with more realisations rather than more generations, and score "fraction of builds inside the stiffness window" as its own objective.</li>
+<li>Re-run the aligned-plus-crossing-lock design and the uniform baselines on a 3D network and in larger 2D boxes, under pore expansion as well as pulls.</li>
+<li>Add AGE-type damage to the best designs to see which layouts keep an organoid in the window as the matrix ages.</li>
+<li>Replace the transport proxy with GAG-aware hindrance before using it to rank designs.</li>
+</ol>
+<!-- /wp:list -->

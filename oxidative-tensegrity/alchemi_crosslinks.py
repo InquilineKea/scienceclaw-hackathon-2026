@@ -219,12 +219,13 @@ def main():
     ap.add_argument("--n-strain", type=int, default=21)
     ap.add_argument("--out", default=str(ROOT / "results" / "crosslink_params.json"))
     ap.add_argument("--chem-per-batch", type=int, default=0, help="chemistries per batch; 0 = all in one")
+    ap.add_argument("--seed", type=int, default=7, help="RDKit conformer seed (7 = the original scans)")
     args = ap.parse_args()
 
     strains = np.linspace(args.min_strain, args.max_strain, args.n_strain)
     jobs = []
     for name, smi in FRAGMENTS.items():
-        atoms, anchors = build_atoms(smi)
+        atoms, anchors = build_atoms(smi, seed=args.seed)
         imgs, L0 = stretched_images(atoms, anchors, strains)
         jobs.append({"name": name, "images": imgs, "anchors": anchors, "L0": L0})
     n_img = sum(len(j["images"]) for j in jobs)
@@ -242,7 +243,7 @@ def main():
         steps, fmax = max(steps, s), max(fmax, f)
     res = analyse(jobs, E, strains)
     payload = {
-        "source": f"{args.backend}:{args.model}", "seconds": time.time() - t0, "steps": steps, "final_fmax": fmax,
+        "source": f"{args.backend}:{args.model}", "seed": args.seed, "seconds": time.time() - t0, "steps": steps, "final_fmax": fmax,
         "caveats": ["non-reactive MLIP: peak force is a stiffness proxy, not a rupture force",
                  "minimal neutral fragments, not crosslinked triple helices",
                  "k_rel is relative to the pyridinoline fragment"],

@@ -67,7 +67,7 @@ def _worker(task):
         if it.get("tissue"):
             s = tissue_spec(lat, TISSUES[it["tissue"]], it["age"], rng)
         else:
-            s = build_spec(lat, COLLAGENS[it["collagen"]], Damage(it["mode"], it["dose"]), rng,
+            s = build_spec(lat, COLLAGENS[it["collagen"]], Damage(it["mode"], it["dose"], chem=it.get("chem")), rng,
                            z=it["z"], mu_el=it.get("mu_el", 0.0), k_gag=it.get("k_gag", 1e-6))
         s.meta.update(seed=it["seed"])
         specs.append(s)

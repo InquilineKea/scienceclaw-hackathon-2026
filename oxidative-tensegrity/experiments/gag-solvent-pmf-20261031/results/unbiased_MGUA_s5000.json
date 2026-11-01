@@ -1,0 +1,18 @@
+{
+ "tag": "unbiased_MGUA_s5000",
+ "n_atoms": 2081,
+ "box_volume_nm3": 20.42710213815655,
+ "seconds": 5722.9,
+ "platform": "CUDA",
+ "finite": true,
+ "potential_kJ": -30778.614426356944,
+ "kind": "unbiased",
+ "cation": "MGUA",
+ "r0": 0.45,
+ "seed": 5000,
+ "out": "/results",
+ "equil_ps": 200,
+ "prod_ps": 3000,
+ "sample_ps": 0.5,
+ "box": 2.8
+}

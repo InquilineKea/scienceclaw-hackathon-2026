@@ -1,0 +1,8 @@
+{
+  "days": 90,
+  "dt_h": 0.2,
+  "conditions": 36,
+  "calibration": "results/topo/yap_calibration.csv",
+  "base_E_Pa": 180,
+  "scope": "frozen-radius local loop; not a full organoid or collective simulation"
+}

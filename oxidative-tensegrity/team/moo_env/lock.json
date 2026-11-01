@@ -1,0 +1,196 @@
+{
+ "packages": [
+  {
+   "name": "pymoo",
+   "version": "0.6.2",
+   "filename": "pymoo-0.6.2-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+   "url": "https://files.pythonhosted.org/packages/0d/a5/9d021ea98d01f85625e6ff71ba28cf5168567f2583d6177fec003ce9527d/pymoo-0.6.2-cp311-cp311-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+   "sha256": "7e7372a896135399fe2091ad56d8d919266d4047c8cc70213f05e93bfde18d91",
+   "uploaded": "2026-06-28"
+  },
+  {
+   "name": "sympy",
+   "version": "1.14.0",
+   "filename": "sympy-1.14.0-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/a2/09/77d55d46fd61b4a135c444fc97158ef34a095e5681d0a6c10b75bf356191/sympy-1.14.0-py3-none-any.whl",
+   "sha256": "e091cc3e99d2141a0ba2847328f5479b05d94a6635cb96148ccb3f34671bd8f5",
+   "uploaded": "2025-04-27"
+  },
+  {
+   "name": "mpmath",
+   "version": "1.3.0",
+   "filename": "mpmath-1.3.0-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/43/e3/7d92a15f894aa0c9c4b49b8ee9ac9850d6e63b03c9c32c0367a13ae62209/mpmath-1.3.0-py3-none-any.whl",
+   "sha256": "a0b2b9fe80bbcd81a6647ff13108738cfb482d481d826cc0e02f5b35e5c88d2c",
+   "uploaded": "2023-03-07"
+  },
+  {
+   "name": "about-time",
+   "version": "4.2.1",
+   "filename": "about_time-4.2.1-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/fb/cd/7ee00d6aa023b1d0551da0da5fee3bc23c3eeea632fbfc5126d1fec52b7e/about_time-4.2.1-py3-none-any.whl",
+   "sha256": "8bbf4c75fe13cbd3d72f49a03b02c5c7dca32169b6d49117c257e7eb3eaee341",
+   "uploaded": "2022-12-21"
+  },
+  {
+   "name": "graphemeu",
+   "version": "0.7.2",
+   "filename": "graphemeu-0.7.2-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/69/18/36503ea63e1ecd0a95590d7b6b8b7d227a1e4541a154e1612a231def1bdc/graphemeu-0.7.2-py3-none-any.whl",
+   "sha256": "1444520f6899fd30114fc2a39f297d86d10fa0f23bf7579f772f8bc7efaa2542",
+   "uploaded": "2025-01-15"
+  },
+  {
+   "name": "alive-progress",
+   "version": "3.3.0",
+   "filename": "alive_progress-3.3.0-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/26/85/ec72f6c885703d18f3b09769645e950e14c7d0cc0a0e35d94127983f666f/alive_progress-3.3.0-py3-none-any.whl",
+   "sha256": "63dd33bb94cde15ad9e5b666dbba8fedf71b72a4935d6fb9a92931e69402c9ff",
+   "uploaded": "2025-07-20"
+  },
+  {
+   "name": "Deprecated",
+   "version": "1.3.1",
+   "filename": "deprecated-1.3.1-py2.py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/84/d0/205d54408c08b13550c733c4b85429e7ead111c7f0014309637425520a9a/deprecated-1.3.1-py2.py3-none-any.whl",
+   "sha256": "597bfef186b6f60181535a29fbe44865ce137a5079f295b479886c82729d5f3f",
+   "uploaded": "2025-10-30"
+  },
+  {
+   "name": "moocore",
+   "version": "0.3.2",
+   "filename": "moocore-0.3.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+   "url": "https://files.pythonhosted.org/packages/1b/c7/94409509ade3775b4fe3e2af98c143ffbd8ee9d757f096a970ed191d41b3/moocore-0.3.2-cp310-abi3-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+   "sha256": "8557a411c1b3f9fee90263701ad3fe58dbbcdc8e2b695696358fda5f968accfb",
+   "uploaded": "2026-07-12"
+  },
+  {
+   "name": "autograd",
+   "version": "1.9.1",
+   "filename": "autograd-1.9.1-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/6e/ce/8c98e6604bb1ec9d03c8493c328185b69bb7533fe08f3640f0f3641bd9d1/autograd-1.9.1-py3-none-any.whl",
+   "sha256": "b788bae3fa010cbffb4cfb7b8ba2a3f0daa6072a8506da6164c779fe9cf3e05a",
+   "uploaded": "2026-07-02"
+  },
+  {
+   "name": "cma",
+   "version": "4.5.0",
+   "filename": "cma-4.5.0-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/7a/c2/859dcb6fc39476c78fde66005883edaab09f3fc561fa52a3b9d4cc036937/cma-4.5.0-py3-none-any.whl",
+   "sha256": "9b37fa8bd541f1f4cf8e2cc4f98e6f02ec89d6d39ded8ec8a90d4f44c88c62c8",
+   "uploaded": "2026-09-13"
+  },
+  {
+   "name": "matplotlib",
+   "version": "3.11.2",
+   "filename": "matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+   "url": "https://files.pythonhosted.org/packages/2e/a4/1ca765c63a60e3096ae2ad132eb25f6f7eab0377418cd0472808befd9665/matplotlib-3.11.2-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+   "sha256": "07d9b9fa60cd4c393692f50d0bb03123242ddf61c99bb0e95e75feb354e7c1a8",
+   "uploaded": "2026-09-11"
+  },
+  {
+   "name": "wrapt",
+   "version": "2.5.1",
+   "filename": "wrapt-2.5.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+   "url": "https://files.pythonhosted.org/packages/2b/bf/8edaec939d7411a58bccb4dc4310246caea5050576ff91b5f5abf6079a9c/wrapt-2.5.1-cp311-cp311-manylinux1_x86_64.manylinux_2_28_x86_64.manylinux_2_5_x86_64.whl",
+   "sha256": "c25c594f58ecb676358d6d6b0ff068b8bbbc506dc831c6d17876460c66ce39c2",
+   "uploaded": "2026-10-14"
+  },
+  {
+   "name": "cffi",
+   "version": "2.1.1",
+   "filename": "cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+   "url": "https://files.pythonhosted.org/packages/f7/a4/4399daaf8f7dfee9d7c3327fdb0426ee041cc63edc358b93911ceb2bfc7a/cffi-2.1.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+   "sha256": "34e261f78cb6ceaaa36f42f2613f4380d94d9c759a9c73c769ee6e0247364632",
+   "uploaded": "2026-08-03"
+  },
+  {
+   "name": "pycparser",
+   "version": "3.12",
+   "filename": "pycparser-3.12-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/b6/ae/315bbeee126a769cbde43cf4908acb4b40408d8bf8bbf334dd7368d8dadf/pycparser-3.12-py3-none-any.whl",
+   "sha256": "a076f3f489b39b43ed13563a1dafe42447445bec2e294154ec5c57fcdda4c85e",
+   "uploaded": "2026-10-22"
+  },
+  {
+   "name": "platformdirs",
+   "version": "4.13.5",
+   "filename": "platformdirs-4.13.5-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/6c/8a/1d8cb3842909dc193a73835adedf412e32e18f8ffd59f43983949622fe6f/platformdirs-4.13.5-py3-none-any.whl",
+   "sha256": "53d3ec4280b815c1e0b02edad7f9ee8fda1ba9c0865dd9c2e6e63849ce82fc1e",
+   "uploaded": "2026-10-19"
+  },
+  {
+   "name": "contourpy",
+   "version": "1.3.3",
+   "filename": "contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+   "url": "https://files.pythonhosted.org/packages/5f/4b/6157f24ca425b89fe2eb7e7be642375711ab671135be21e6faa100f7448c/contourpy-1.3.3-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+   "sha256": "51e79c1f7470158e838808d4a996fa9bac72c498e93d8ebe5119bc1e6becb0db",
+   "uploaded": "2025-07-26"
+  },
+  {
+   "name": "cycler",
+   "version": "0.12.1",
+   "filename": "cycler-0.12.1-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/e7/05/c19819d5e3d95294a6f5947fb9b9629efb316b96de511b418c53d245aae6/cycler-0.12.1-py3-none-any.whl",
+   "sha256": "85cef7cff222d8644161529808465972e51340599459b8ac3ccbac5a854e0d30",
+   "uploaded": "2023-10-07"
+  },
+  {
+   "name": "fonttools",
+   "version": "4.67.0",
+   "filename": "fonttools-4.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+   "url": "https://files.pythonhosted.org/packages/b3/74/6117d6bec5736133fffd5cc4500426ddd43c761df9b380c796cd2268c069/fonttools-4.67.0-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+   "sha256": "59f44309ce78851c9621ee88e3f667ca3fbcc89dc0e8641336be3f12ba06bfd4",
+   "uploaded": "2026-10-14"
+  },
+  {
+   "name": "kiwisolver",
+   "version": "1.5.1",
+   "filename": "kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+   "url": "https://files.pythonhosted.org/packages/89/00/05c2d0369ac322d22d5c05f84b5c4a6856fa6207fbae42869108a28f0383/kiwisolver-1.5.1-cp311-cp311-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+   "sha256": "95a02752aa032eef4aed01cda6d9b687c669bd0396bf4519eef8bba22a286720",
+   "uploaded": "2026-08-28"
+  },
+  {
+   "name": "packaging",
+   "version": "26.3",
+   "filename": "packaging-26.3-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/63/34/ba1c580383c9eada3711951fef0795c80b829a078d72188184bcab9dd527/packaging-26.3-py3-none-any.whl",
+   "sha256": "d7193f7c8e4e93f444fde0262bf90af30e16fa0ad0ad44cb553c87339b23cd1c",
+   "uploaded": "2026-08-04"
+  },
+  {
+   "name": "pillow",
+   "version": "13.0.0",
+   "filename": "pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+   "url": "https://files.pythonhosted.org/packages/36/46/f509b74787f40ce0627501089d630b2c741b63b244c1f40b640b3b01e181/pillow-13.0.0-cp311-cp311-manylinux_2_27_x86_64.manylinux_2_28_x86_64.whl",
+   "sha256": "a625df9a2a5597fa5e5266e01aefc82604bb85d291e3547981e863560d75da6c",
+   "uploaded": "2026-10-16"
+  },
+  {
+   "name": "pyparsing",
+   "version": "3.3.3",
+   "filename": "pyparsing-3.3.3-py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/38/bb/d215ee7c73b61497b28a5503f9f53523f294fcc936762b7caf90e0c1c2b5/pyparsing-3.3.3-py3-none-any.whl",
+   "sha256": "ece8c00a69cf01b45d0b1dedabb469c90d8caf996d4fda40f147627a122849a4",
+   "uploaded": "2026-09-20"
+  },
+  {
+   "name": "python-dateutil",
+   "version": "3.0.0",
+   "filename": "python_dateutil-3.0.0-py2.py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/5a/17/cebee01d1c0c1441174cf0456ddc91b280d79acb65340c05e41d77866ee8/python_dateutil-3.0.0-py2.py3-none-any.whl",
+   "sha256": "3c79630202e4152c6add678446984236efe4f57e84d8e892aab0637bab82e9fd",
+   "uploaded": "2026-10-21"
+  },
+  {
+   "name": "six",
+   "version": "1.17.0",
+   "filename": "six-1.17.0-py2.py3-none-any.whl",
+   "url": "https://files.pythonhosted.org/packages/b7/ce/149a00dd41f10bc29e5921b496af8b574d8413afcd5e30dfa0ed46c2cc5e/six-1.17.0-py2.py3-none-any.whl",
+   "sha256": "4721f391ed90541fddacab5acf947aa0d3dc7d27b2e1e8eda2be8970586c3274",
+   "uploaded": "2024-12-04"
+  }
+ ]
+}
