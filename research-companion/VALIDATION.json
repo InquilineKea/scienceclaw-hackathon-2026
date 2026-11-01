@@ -1,0 +1,8 @@
+{
+  "status": "pass",
+  "files_sha256": 11,
+  "curves_exact": 6,
+  "frames_exact": 186,
+  "seed_onsets_exact": 18,
+  "max_periodic_endpoint_error": 4.440892098500626e-16
+}
