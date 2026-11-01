@@ -621,12 +621,12 @@
     "implementation_commit": "a18724c1d1688d0bedb1ef87d27926772c6d99ff",
     "files": {
       "index.html": {
-        "bytes": 25809,
-        "sha256": "dd9af7bc115727aa7bff15a248a61bec9a07e45acccc832152d539cd93af3cc8"
+        "bytes": 25839,
+        "sha256": "b602e2b52153d30c4cd65fa8a1e329f05095389dbee5814346414f7a3f52417d"
       },
       "WEB-MANIFEST.json": {
         "bytes": 2885,
-        "sha256": "aeb90560a9e2296adc41b22a79787ffccbaf8867cf29858e064d4cd93efbf37d"
+        "sha256": "9e60dd0373c1413cb711bbc9df1f67c08fdda01e51d329a83248e7aed65ac9f3"
       },
       "comparisons.css": {
         "bytes": 4213,
@@ -657,8 +657,8 @@
         "sha256": "464de1608cc7030548d794cca870fbe49ff738289578b0db1e62dcc22d05c2a9"
       },
       "evidence-atlas.zip": {
-        "bytes": 3560116,
-        "sha256": "9ff8d3955651e4b3be35a1977e44cdccca9ee4bd2507fbe3be3a8b8ec0ada26b"
+        "bytes": 3560126,
+        "sha256": "e61eaaa0c282987315a57c4d2645d80ae58b0ad2403f1d02e976bf75c69efae7"
       },
       "network-scenes.js": {
         "bytes": 7430,
