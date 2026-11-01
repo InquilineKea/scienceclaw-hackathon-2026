@@ -1,0 +1,13 @@
+{
+  "organization_law_DID_strata_recomputed": 64,
+  "status": "pass",
+  "sha256_files": 28,
+  "case_summaries_exact": 1088,
+  "accepted_curves_exact_against_raw_CSV": 1082,
+  "initial_graphs_exact": 64,
+  "paired_law_strata_recomputed": 64,
+  "complete_8_seed_strata": 58,
+  "incomplete_7_seed_strata": 6,
+  "failed_cases_retained": 6,
+  "private_traceback_fields_excluded": true
+}

@@ -1,0 +1,93 @@
+"""Numerical and design commissioning; run remotely with the study runtime."""
+import argparse
+import json
+import math
+from pathlib import Path
+import time
+import numpy as np
+import study3d as s
+
+
+def require(value, message):
+    if not value:
+        raise AssertionError(message)
+
+
+def selftest(root):
+    checks=[]
+    for clustered,aligned in [(False,False),(True,True)]:
+        graph=s.make_graph(64,23,clustered,aligned)
+        require(graph['metrics']['components']==1,'Disconnected graph')
+        require(len(graph['edges'])==256,'Edge budget')
+        require(graph['metrics']['minimum_degree']>=5,'Minimum degree')
+        arms=[];masses=[]
+        for role in ['decorin_pair','fibronectin_assembly']:
+            for law in ['binding','locked']:
+                case=dict(role=role,law=law,k=4.,D=.1)
+                m=s.build_model(graph,case);alive=np.ones(len(m['edges']),bool)
+                require(np.all(m['rest']>0),'Zero rest length')
+                arms.append(int(np.sum(m['kinds']>0)));masses.append(float(m['mass'][64:].sum()))
+                x=m['x0'].copy();rng=np.random.default_rng(8261);x+=rng.normal(0,.015,x.shape)
+                e,g,H=s.evaluate(m,x,alive,True)
+                require(np.max(np.abs(g.sum(axis=0)))<1e-10,'Newton pair balance')
+                errors=[]
+                for dof in rng.choice(x.size,12,replace=False):
+                    h=1e-6;xp=x.copy().ravel();xm=x.copy().ravel();xp[dof]+=h;xm[dof]-=h
+                    derivative=(s.evaluate(m,xp.reshape(x.shape),alive)[0]-s.evaluate(m,xm.reshape(x.shape),alive)[0])/(2*h)
+                    errors.append(abs(derivative-g.ravel()[dof]))
+                require(max(errors)<2e-6,'Finite difference energy/gradient')
+                direction=rng.normal(size=x.shape);direction/=np.linalg.norm(direction)
+                numerical=(s.evaluate(m,x+1e-6*direction,alive)[1]-s.evaluate(m,x-1e-6*direction,alive)[1]).ravel()/2e-6
+                herr=float(np.max(np.abs(numerical-H@direction.ravel())))
+                require(herr<2e-5,'Hessian derivative')
+                Q,_=np.linalg.qr(rng.normal(size=(3,3)))
+                er,gr=s.evaluate(m,x@Q+np.array([3.,-2.,5.]),alive)
+                require(abs(er-e)<1e-9 and np.max(np.abs(gr-g@Q))<1e-8,'Rigid motion invariance')
+                require(float(np.max(np.abs((H-H.T).data),initial=0))<1e-10,'Hessian symmetry')
+                alive[3]=False
+                require(s.evaluate(m,x,alive)[0]<=e+1e-9,'Deletion increased energy')
+                checks.append(dict(clustered=clustered,aligned=aligned,role=role,law=law,max_gradient_error=max(errors),max_hessian_error=herr))
+        require(len(set(arms))==1 and np.ptp(masses)<1e-10,'Adapter budget mismatch')
+        case=dict(role='fibronectin_assembly',law='binding',k=1.,D=.4)
+        m=s.build_model(graph,case);alive=np.ones(len(m['edges']),bool)
+        x,row=s.equilibrium(m,m['x0'].copy(),alive,.02,time.monotonic()+120)
+        h=1e-4
+        xp,rp=s.equilibrium(m,x.copy(),alive,.02+h,time.monotonic()+120)
+        xm,rm=s.equilibrium(m,x.copy(),alive,.02-h,time.monotonic()+120)
+        reaction=(rp['energy']-rm['energy'])/(2*h*m['span'])
+        require(abs(reaction-row['force'])/max(abs(row['force']),1e-8)<.002,'Equilibrium energy/reaction mismatch')
+    # Per-contact constitutive matching, independent formulas.
+    for k,D in [(1.,.1),(1.,.4),(4.,.1),(4.,.4)]:
+        alpha=math.sqrt(k/(2*D));opening=math.sqrt(2*D/k)
+        require(abs(2*D*alpha**2-k)<1e-12 and abs(.5*k*opening**2-D)<1e-12,'Constitutive energy/stiffness mismatch')
+    report=dict(passed=True,gradient_hessian_rigid_motion_checks=checks,matched_contact_energy_and_curvature=True,matched_arm_mass_budgets=True,equilibrium_reaction_check=True)
+    s.write_json(Path(root)/'commissioning.json',report)
+    print(json.dumps(report),flush=True)
+
+
+def compare(root):
+    root=Path(root);coarse=json.loads((root/'pilot/summaries.json').read_text());fine=json.loads((root/'pilot-refined/summaries.json').read_text())
+    require(len(coarse)==len(fine)==16,'Pilot counts')
+    a={r['id']:r for r in coarse};b={r['id']:r for r in fine}
+    require(len(a)==len(b)==16 and set(a)==set(b),'Pilot pairing')
+    report=[]
+    for key,x in a.items():
+        y=b[key]
+        require(x['accepted'] and y['accepted'],f'Pilot rejected: {key}, {x.get("error")}, {y.get("error")}')
+        peak=abs(x['peak_stress']-y['peak_stress'])/max(abs(y['peak_stress']),1e-12)
+        modulus=abs(x['initial_modulus']-y['initial_modulus'])/max(abs(y['initial_modulus']),1e-12)
+        recoil=abs(x['recoil_fraction']-y['recoil_fraction'])
+        require(x['collagen_damage_censored']==y['collagen_damage_censored'],'Damage censor mismatch')
+        require(x['load_loss_censored']==y['load_loss_censored'],'Load-loss censor mismatch')
+        damage=abs(x['first_collagen_damage']-y['first_collagen_damage']) if not x['collagen_damage_censored'] else None
+        require(peak<=.02 and modulus<=.01 and recoil<=.005 and (damage is None or damage<=.002),f'Pilot refinement failed: {key}; peak {peak}, modulus {modulus}, recoil {recoil}, damage {damage}')
+        require(x['collagen_hash']==y['collagen_hash'] and x['adapter_hash']==y['adapter_hash'],'Refinement geometry mismatch')
+        report.append(dict(id=key,peak_relative=peak,modulus_relative=modulus,recoil_absolute=recoil,damage_absolute=damage))
+    result=dict(passed=True,pairs=report,max_peak_relative=max(r['peak_relative'] for r in report),max_modulus_relative=max(r['modulus_relative'] for r in report),max_recoil_absolute=max(r['recoil_absolute'] for r in report))
+    s.write_json(root/'pilot-comparison.json',result)
+    print(json.dumps({k:v for k,v in result.items() if k!='pairs'}),flush=True)
+
+
+if __name__=='__main__':
+    p=argparse.ArgumentParser();p.add_argument('--root',default='study');p.add_argument('--compare',action='store_true');args=p.parse_args();Path(args.root).mkdir(exist_ok=True)
+    compare(args.root) if args.compare else selftest(args.root)

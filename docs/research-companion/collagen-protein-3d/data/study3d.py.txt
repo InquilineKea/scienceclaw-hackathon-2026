@@ -1,0 +1,507 @@
+"""Original reduced 3D scaffold experiment. Uncalibrated protein-role proxies.
+Run only inside the reviewed remote container. No network or credential access.
+"""
+import argparse
+import collections
+from concurrent.futures import ProcessPoolExecutor, as_completed
+import csv
+from functools import lru_cache
+import hashlib
+import itertools
+import json
+import math
+from pathlib import Path
+import time
+import traceback
+
+import numpy as np
+from scipy.optimize import minimize
+from scipy.spatial import cKDTree
+from scipy.sparse import coo_matrix, eye
+from scipy.sparse.csgraph import minimum_spanning_tree, connected_components
+from scipy.sparse.linalg import spsolve
+
+SEEDS = [11, 23, 37, 41, 53, 67, 79, 97]
+SIZES = [512, 1024]
+FORCE_GATE = 1e-6
+ABSOLUTE_STOP = 1793554200  # 2026-11-01 17:30 UTC / 12:30 Eastern
+VERSION = '3d-segment-scaffold-v3-trust-fallback'
+TENSILE_LIMIT = .2
+
+
+def digest(value):
+    return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(',', ':'), allow_nan=False).encode()).hexdigest()
+
+
+def write_json(path, value):
+    path = Path(path)
+    temp = path.with_suffix(path.suffix + '.tmp')
+    temp.write_text(json.dumps(value, indent=2, allow_nan=False) + '\n')
+    temp.replace(path)
+
+
+def csv_write(path, rows):
+    if not rows:
+        return
+    with open(path, 'w', newline='') as f:
+        w = csv.DictWriter(f, fieldnames=list(rows[0]))
+        w.writeheader()
+        w.writerows(rows)
+
+
+def graph_id(n, seed, clustered, aligned):
+    return f'n{n}_s{seed}_cluster{int(clustered)}_align{int(aligned)}'
+
+
+def make_graph(n, seed, clustered, aligned):
+    rng = np.random.default_rng(np.random.SeedSequence([seed, n, 100]))
+    length = n ** (1 / 3)
+    points = []
+    while len(points) < n:
+        p = rng.uniform(0, length, 3)
+        if not points or min(np.linalg.norm(np.array(points) - p, axis=1)) > .22:
+            points.append(p)
+    x = np.array(points)
+    if clustered:
+        x += .65 * length / (2 * np.pi) * np.sin(2 * np.pi * x / length)
+    tree = cKDTree(x)
+    _, neighbors = tree.query(x, k=min(25, n))
+    pairs = sorted({tuple(sorted((i, int(j)))) for i, js in enumerate(neighbors) for j in js[1:]})
+    ij = np.array(pairs, dtype=int)
+    vectors = x[ij[:, 1]] - x[ij[:, 0]]
+    lengths = np.linalg.norm(vectors, axis=1)
+    order_rng = np.random.default_rng(np.random.SeedSequence([seed, n, 200]))
+    priority = lengths / (1 + (4 if aligned else 0) * (vectors[:, 0] / lengths) ** 2)
+    priority *= np.exp(order_rng.normal(0, .12, len(priority)))
+    weights = coo_matrix((lengths, (ij[:, 0], ij[:, 1])), shape=(n, n))
+    weights = weights + weights.T
+    mst = minimum_spanning_tree(weights).tocoo()
+    chosen = {tuple(sorted((int(i), int(j)))) for i, j in zip(mst.row, mst.col)}
+    degree = np.zeros(n, int)
+    for i, j in chosen:
+        degree[i] += 1
+        degree[j] += 1
+    ranked = sorted(range(len(ij)), key=lambda q: (priority[q], int(ij[q, 0]), int(ij[q, 1])))
+    for q in ranked:
+        i, j = map(int, ij[q])
+        if (degree[i] < 5 or degree[j] < 5) and (i, j) not in chosen:
+            chosen.add((i, j)); degree[i] += 1; degree[j] += 1
+    if len(chosen) > 4 * n:
+        raise RuntimeError('Minimum-degree construction exceeds edge budget')
+    for q in ranked:
+        if len(chosen) == 4 * n:
+            break
+        i, j = map(int, ij[q])
+        if (i, j) not in chosen:
+            chosen.add((i, j)); degree[i] += 1; degree[j] += 1
+    edges = np.array(sorted(chosen), int)
+    if len(edges) != 4 * n or degree.min() < 5:
+        raise RuntimeError('Wrong collagen edge budget or minimum degree')
+    vec = x[edges[:, 1]] - x[edges[:, 0]]
+    rest = np.linalg.norm(vec, axis=1)
+    unit = vec / rest[:, None]
+    fabric = unit.T @ unit / len(unit)
+    bins = np.minimum(3, (x / length * 4).astype(int))
+    occupancies = np.bincount(bins[:, 0] * 16 + bins[:, 1] * 4 + bins[:, 2], minlength=64)
+    grip_n = max(3, round(.05 * n))
+    idx = np.argsort(x[:, 0]); left = idx[:grip_n]; right = idx[-grip_n:]
+    interior = np.setdiff1d(np.arange(n), np.r_[left, right])
+    adapters = {}
+    arm_count = 4 * round(.25 * n / 4)
+    for role, valence in [('decorin_pair', 2), ('fibronectin_assembly', 4)]:
+        arng = np.random.default_rng(np.random.SeedSequence([seed, n, 300 + valence]))
+        groups = []
+        attempts = 0
+        seen = set()
+        while len(groups) < arm_count // valence:
+            attempts += 1
+            if attempts > 10000:
+                raise RuntimeError('Could not allocate adapter sites')
+            a = int(arng.choice(interior))
+            distances = np.linalg.norm(x[interior] - x[a], axis=1)
+            candidates = interior[(distances > .7) & (distances < 2.8)]
+            if len(candidates) < valence - 1:
+                continue
+            chosen_sites = [a] + arng.choice(candidates, valence - 1, replace=False).tolist()
+            signature = tuple(sorted(chosen_sites))
+            if signature in seen:
+                continue
+            center = x[chosen_sites].mean(axis=0)
+            if min(np.linalg.norm(x[chosen_sites] - center, axis=1)) < .15:
+                continue
+            seen.add(signature); groups.append(chosen_sites)
+        adapters[role] = groups
+    adjacency = coo_matrix((np.ones(len(edges)), (edges[:, 0], edges[:, 1])), shape=(n, n))
+    components = connected_components(adjacency + adjacency.T, directed=False)[0]
+    if components != 1:
+        raise RuntimeError('Disconnected candidate scaffold')
+    result = dict(id=graph_id(n, seed, clustered, aligned), n=n, seed=seed,
+        clustered=bool(clustered), aligned=bool(aligned), length=length,
+        x0=x.tolist(), edges=edges.tolist(), left=left.tolist(), right=right.tolist(),
+        adapters=adapters, metrics=dict(dimensions=3, nodes=n, edges=len(edges), mean_degree=float(degree.mean()), minimum_degree=int(degree.min()), components=int(components),
+        fabric_tensor=fabric.tolist(), axial_orientation_P2=float((3 * fabric[0, 0] - 1) / 2), occupancy_cv=float(occupancies.std() / occupancies.mean()),
+        mean_segment_length=float(rest.mean()), min_segment_length=float(rest.min()), total_segment_length=float(rest.sum()), collagen_volume=.12 * n,
+        cross_section_area=float(.12 * n / rest.sum()), grip_fraction=float(2 * grip_n / n), binding_arms=arm_count))
+    result['collagen_hash'] = digest({k: result[k] for k in ['x0', 'edges', 'left', 'right']})
+    result['adapter_hashes'] = {k: digest(v) for k, v in adapters.items()}
+    return result
+
+
+def build_model(graph, case):
+    n = graph['n']; x = np.array(graph['x0'], float)
+    edges = list(graph['edges']); role = case['role']
+    collagen_edges = len(edges)
+    if role != 'none':
+        groups = graph['adapters'][role]
+        centers = np.array([x[g].mean(axis=0) for g in groups])
+        x = np.vstack([x, centers])
+        for q, group in enumerate(groups):
+            edges.extend((i, n + q) for i in group)
+    edges = np.array(edges, int)
+    rest = np.linalg.norm(x[edges[:, 1]] - x[edges[:, 0]], axis=1)
+    kinds = np.zeros(len(edges), int)
+    if role != 'none':
+        kinds[collagen_edges:] = 1 if case['law'] == 'binding' else 2
+    mass = np.ones(len(x))
+    if len(x) > n:
+        mass[n:] = .05 * n / (len(x) - n)
+    else:
+        mass *= 1.05  # Match total mass/drag to adapter-containing specimens.
+    return dict(x0=x, edges=edges, rest=rest, kinds=kinds,
+        ea=50 * graph['metrics']['cross_section_area'], k=case.get('k', 0), D=case.get('D', 0),
+        mass=mass, left=np.array(graph['left']), right=np.array(graph['right']),
+        span=float(x[graph['right'], 0].mean() - x[graph['left'], 0].mean()),
+        n=n, area=graph['length'] ** 2, graph=graph, case=case)
+
+
+def evaluate(model, x, alive, hessian=False):
+    ids = np.flatnonzero(alive)
+    ij = model['edges'][ids]
+    delta = x[ij[:, 1]] - x[ij[:, 0]]
+    radius = np.linalg.norm(delta, axis=1)
+    if not np.all(radius > 1e-10):
+        raise FloatingPointError('Coincident bonded nodes')
+    direction = delta / radius[:, None]
+    extension = radius - model['rest'][ids]
+    kinds = model['kinds'][ids]
+    e = np.zeros(len(ids)); tension = e.copy(); curvature = e.copy()
+    c = kinds == 0
+    strain = extension[c] / model['rest'][ids[c]]
+    e[c] = model['ea'] * model['rest'][ids[c]] * (.5 * strain ** 2 + .5 * strain ** 4)
+    tension[c] = model['ea'] * (strain + 2 * strain ** 3)
+    curvature[c] = model['ea'] / model['rest'][ids[c]] * (1 + 6 * strain ** 2)
+    b = kinds == 1
+    if np.any(b):
+        alpha = math.sqrt(model['k'] / (2 * model['D']))
+        q = np.exp(-alpha * extension[b])
+        e[b] = model['D'] * (1 - q) ** 2
+        tension[b] = 2 * model['D'] * alpha * q * (1 - q)
+        curvature[b] = 2 * model['D'] * alpha ** 2 * (2 * q ** 2 - q)
+    locked = kinds == 2
+    e[locked] = .5 * model['k'] * extension[locked] ** 2
+    tension[locked] = model['k'] * extension[locked]
+    curvature[locked] = model['k']
+    gradient = np.zeros_like(x)
+    force_pair = tension[:, None] * direction
+    np.add.at(gradient, ij[:, 0], -force_pair)
+    np.add.at(gradient, ij[:, 1], force_pair)
+    energy = float(e.sum())
+    if not math.isfinite(energy) or not np.isfinite(gradient).all():
+        raise FloatingPointError('Nonfinite energy or gradient')
+    if not hessian:
+        return energy, gradient
+    transverse = tension / radius
+    block = (curvature - transverse)[:, None, None] * direction[:, :, None] * direction[:, None, :] + transverse[:, None, None] * np.eye(3)[None, :, :]
+    dofi = 3 * ij[:, 0, None] + np.arange(3)
+    dofj = 3 * ij[:, 1, None] + np.arange(3)
+    rr = []; cc = []; vv = []
+    for a, b, sign in [(dofi, dofi, 1), (dofj, dofj, 1), (dofi, dofj, -1), (dofj, dofi, -1)]:
+        rr.append(np.broadcast_to(a[:, :, None], block.shape).ravel())
+        cc.append(np.broadcast_to(b[:, None, :], block.shape).ravel())
+        vv.append(sign * block.ravel())
+    H = coo_matrix((np.concatenate(vv), (np.concatenate(rr), np.concatenate(cc))), shape=(3 * len(x), 3 * len(x))).tocsr()
+    return energy, gradient, H
+
+
+def equilibrium(model, x, alive, strain, deadline):
+    x = x.copy()
+    fixed = np.r_[model['left'], model['right']]
+    x[fixed] = model['x0'][fixed]
+    x[model['right'], 0] += model['span'] * strain
+    free = np.setdiff1d(np.arange(len(x)), fixed)
+    fdof = (3 * free[:, None] + np.arange(3)).ravel()
+    evaluations = 0
+    def objective(z):
+        nonlocal evaluations
+        evaluations += 1
+        if time.monotonic() > deadline or time.time() > ABSOLUTE_STOP:
+            raise TimeoutError('Case or absolute workload deadline')
+        xx = x.copy(); xx[free] = z.reshape(-1, 3)
+        e, g = evaluate(model, xx, alive)
+        if evaluations % 100 == 0 and 'folder' in model:
+            write_json(model['folder']/'progress.json',dict(stage='equilibrium',strain=float(strain),evaluations=evaluations,energy=e,residual=float(np.max(np.abs(g[free])))))
+        return e, g[free].ravel()
+    opt = minimize(objective, x[free].ravel(), jac=True, method='L-BFGS-B',
+        options=dict(gtol=1e-8, ftol=1e-14, maxiter=160, maxls=40, maxcor=20))
+    x[free] = opt.x.reshape(-1, 3)
+    for iteration in range(50):
+        if time.monotonic() > deadline:
+            raise TimeoutError('Newton polish deadline')
+        e, g, H = evaluate(model, x, alive, True)
+        gf = g[free].ravel(); residual = float(np.max(np.abs(gf)))
+        if residual <= FORCE_GATE:
+            break
+        Hf = H[fdof][:, fdof]
+        diag = max(1., float(np.max(np.abs(Hf.diagonal()))))
+        took_step = False
+        for relative_shift in [1e-10, 1e-7, 1e-4, .01, 1., 100.]:
+            direction = spsolve(Hf + relative_shift * diag * eye(len(fdof), format='csr'), -gf)
+            if not np.isfinite(direction).all() or np.dot(gf, direction) >= 0:
+                continue
+            norm = float(np.max(np.abs(direction)))
+            if norm > .5:
+                direction *= .5 / norm
+            descent = float(np.dot(gf, direction))
+            for backtrack in range(24):
+                step = .5 ** backtrack
+                trial = x.copy(); trial[free] += step * direction.reshape(-1, 3)
+                en, _ = evaluate(model, trial, alive)
+                if en <= e + 1e-4 * step * descent:
+                    x = trial; took_step = True; break
+            if took_step:
+                break
+        if not took_step:
+            break
+    energy, gradient = evaluate(model, x, alive)
+    residual = float(np.max(np.abs(gradient[free])))
+    if residual > FORCE_GATE:
+        cached_z = None
+        cached_h = None
+        def product(z, vector):
+            nonlocal cached_z, cached_h
+            if time.monotonic() > deadline or time.time() > ABSOLUTE_STOP:
+                raise TimeoutError('Trust-region deadline')
+            if cached_z is None or not np.array_equal(cached_z,z):
+                xx=x.copy();xx[free]=z.reshape(-1,3)
+                cached_h=evaluate(model,xx,alive,True)[2][fdof][:,fdof]
+                cached_z=z.copy()
+            return cached_h@vector
+        opt=minimize(objective,x[free].ravel(),jac=True,hessp=product,
+            method='trust-krylov',options=dict(gtol=1e-7,maxiter=600,
+                initial_trust_radius=.3,max_trust_radius=10.,inexact=True))
+        x[free]=opt.x.reshape(-1,3)
+        energy,gradient=evaluate(model,x,alive)
+        residual=float(np.max(np.abs(gradient[free])))
+    if residual > FORCE_GATE:
+        raise RuntimeError(f'Force residual {residual:.6g} exceeds {FORCE_GATE}; optimizer {opt.message}')
+    row = dict(strain=float(strain), force=float(gradient[model['right'], 0].sum()),
+        energy=energy, residual=residual, evaluations=evaluations)
+    return x, row
+
+
+def overloaded(model, x, alive):
+    lengths = np.linalg.norm(x[model['edges'][:, 1]] - x[model['edges'][:, 0]], axis=1)
+    extension = lengths - model['rest']
+    result = alive & (model['kinds'] == 0) & (extension > .35 * model['rest'])
+    if model['k']:
+        result |= alive & (model['kinds'] == 2) & (extension > math.sqrt(2 * model['D'] / model['k']))
+    return result
+
+
+def cascade(model, x, alive, strain, deadline):
+    new_c = 0; new_p = 0; released = 0.
+    for iteration in range(len(alive) + 1):
+        x, row = equilibrium(model, x, alive, strain, deadline)
+        broken = overloaded(model, x, alive)
+        if not broken.any():
+            break
+        before = row['energy']
+        new_c += int(np.sum(broken & (model['kinds'] == 0)))
+        new_p += int(np.sum(broken & (model['kinds'] == 2)))
+        alive[broken] = False
+        after = evaluate(model, x, alive)[0]
+        if before - after < -1e-9:
+            raise RuntimeError('Negative topology-deletion release')
+        released += before - after
+    else:
+        raise RuntimeError('Damage cascade did not terminate')
+    row.update(new_collagen_broken=new_c, new_contacts_broken=new_p,
+        collagen_broken=int(np.sum(~alive & (model['kinds'] == 0))),
+        contacts_broken=int(np.sum(~alive & (model['kinds'] == 2))), released_energy=float(released))
+    return x, row
+
+
+def tensile(model, folder, refined, deadline):
+    alive = np.ones(len(model['edges']), bool); x = model['x0'].copy()
+    x, row = cascade(model, x, alive, 0, deadline)
+    rows = [dict(row, stage='regular')]; events = []
+    csv_write(folder/'tensile.csv', rows)
+    strain = 0.; peak = 0.; onset_c = None; onset_any = None; loss = None
+    dstrain = .02 if refined else .04
+    tolerance = 5e-5 if refined else 1e-4
+    for advance in range(2500):
+        if strain >= TENSILE_LIMIT - 1e-10:
+            break
+        milestones=[v for v in [.01,.02,.05,.1,.15,TENSILE_LIMIT] if v>strain+1e-10]
+        target=min(TENSILE_LIMIT,strain+dstrain,min(milestones))
+        xt, rt = equilibrium(model, x, alive, target, deadline)
+        if overloaded(model, xt, alive).any():
+            lo, hi = strain, target; xh, rh = xt, rt
+            while hi - lo > tolerance:
+                mid = (lo + hi) / 2
+                xm, rm = equilibrium(model, x, alive, mid, deadline)
+                if overloaded(model, xm, alive).any():
+                    hi = mid; xh, rh = xm, rm
+                else:
+                    lo = mid
+            pre = dict(rh, stage='pre_damage', new_collagen_broken=0, new_contacts_broken=0,
+                collagen_broken=int(np.sum(~alive & (model['kinds'] == 0))), contacts_broken=int(np.sum(~alive & (model['kinds'] == 2))), released_energy=0.)
+            rows.append(pre); peak = max(peak, pre['force'])
+            x, row = cascade(model, xh, alive, hi, deadline)
+            row['stage'] = 'post_damage'; target = hi
+            if row['new_collagen_broken'] and onset_c is None:
+                onset_c = target
+            if (row['new_collagen_broken'] or row['new_contacts_broken']) and onset_any is None:
+                onset_any = target
+            events.append(dict(strain=float(target), bracket_width=float(hi-lo), pre_force=pre['force'],
+                collagen_broken=row['new_collagen_broken'], contacts_broken=row['new_contacts_broken'], released_energy=row['released_energy']))
+        else:
+            x = xt; row = dict(rt, stage='regular', new_collagen_broken=0, new_contacts_broken=0,
+                collagen_broken=int(np.sum(~alive & (model['kinds'] == 0))), contacts_broken=int(np.sum(~alive & (model['kinds'] == 2))), released_energy=0.)
+        rows.append(row); strain = target; peak = max(peak, row['force'])
+        csv_write(folder/'tensile.csv', rows)
+        if strain >= .1 and peak > 1e-10 and row['force'] < .2 * peak:
+            loss = strain; break
+    else:
+        raise RuntimeError('Tensile advance budget exceeded')
+    csv_write(folder/'tensile.csv', rows); write_json(folder/'events.json', events)
+    np.savez_compressed(folder/'tensile-final.npz', positions=x, alive=alive)
+    initial = [r for r in rows if r['strain'] <= .020001]
+    xs = np.array([r['strain'] for r in initial]); ys = np.array([r['force'] / model['area'] for r in initial])
+    modulus = float(np.dot(xs, ys) / np.dot(xs, xs))
+    return dict(peak_force=max(r['force'] for r in rows), peak_stress=max(r['force'] for r in rows)/model['area'],
+        stress_at_window_end=rows[-1]['force']/model['area'], prescribed_strain_window=TENSILE_LIMIT,
+        initial_modulus=modulus, first_collagen_damage=onset_c, first_any_damage=onset_any, load_loss_strain=loss,
+        collagen_damage_censored=onset_c is None, load_loss_censored=loss is None,
+        collagen_broken=rows[-1]['collagen_broken'], contacts_broken=rows[-1]['contacts_broken'],
+        last_strain=rows[-1]['strain'], worst_force_residual=max(r['residual'] for r in rows), tensile_samples=len(rows),
+        work_to_last_strain=float(np.trapezoid([r['force'] for r in rows], model['span']*np.array([r['strain'] for r in rows]))))
+
+
+def recoil(model, folder, refined, deadline):
+    alive = np.ones(len(model['edges']), bool); x = model['x0'].copy(); pre = []
+    for strain in np.linspace(0, .15, 7 if not refined else 13):
+        x, row = cascade(model, x, alive, float(strain), deadline); pre.append(row)
+        csv_write(folder/'preload.csv', pre)
+    csv_write(folder/'preload.csv', pre)
+    left = model['left']; right = model['right']
+    free = np.setdiff1d(np.arange(len(x)), left)
+    mass = model['mass'][:, None]
+    velocity = np.zeros_like(x)
+    initial_energy, gradient = evaluate(model, x, alive)
+    span_loaded = float(x[right, 0].mean()-x[left, 0].mean())
+    extension = span_loaded - model['span']
+    dt = .005 if refined else .01; T = 20.; rate = 1.
+    damping = math.exp(-rate*dt/2); dissipated = 0.
+    rows = []; frames = []
+    for step in range(round(T/dt)+1):
+        if step % 20 == 0 and time.monotonic() > deadline:
+            raise TimeoutError('Recoil deadline')
+        if step % round(.5/dt) == 0:
+            kinetic = float(.5*np.sum(mass*velocity**2))
+            span = float(x[right, 0].mean()-x[left, 0].mean())
+            rows.append(dict(time=step*dt, recoil_fraction=(span_loaded-span)/extension,
+                potential_energy=float(initial_energy if step==0 else energy), kinetic_energy=kinetic,
+                drag_dissipation=dissipated, energy_ledger_relative_error=abs((initial_energy if step==0 else energy)+kinetic+dissipated-initial_energy)/max(initial_energy,1e-12)))
+            frames.append(x.copy())
+        if step == round(T/dt):
+            break
+        before = float(.5*np.sum(mass*velocity**2)); velocity *= damping
+        dissipated += before - float(.5*np.sum(mass*velocity**2))
+        velocity[free] -= .5*dt*gradient[free]/mass[free]
+        x[free] += dt*velocity[free]
+        energy, gradient = evaluate(model, x, alive)
+        velocity[free] -= .5*dt*gradient[free]/mass[free]
+        before = float(.5*np.sum(mass*velocity**2)); velocity *= damping
+        dissipated += before - float(.5*np.sum(mass*velocity**2))
+    csv_write(folder/'recoil.csv', rows)
+    np.savez_compressed(folder/'recoil-frames.npz', positions=frames, alive=alive)
+    ledger = max(r['energy_ledger_relative_error'] for r in rows)
+    if not np.isfinite([r['recoil_fraction'] for r in rows]).all() or ledger > .01:
+        raise RuntimeError(f'Recoil finite/energy ledger gate failed: {ledger}')
+    return dict(recoil_fraction=rows[-1]['recoil_fraction'], recoil_T=T, recoil_dt=dt, recoil_energy_error=ledger,
+        preload_collagen_broken=pre[-1]['collagen_broken'], preload_contacts_broken=pre[-1]['contacts_broken'])
+
+
+def design():
+    cases=[]
+    for n, seed, clustered, aligned in itertools.product(SIZES, SEEDS, [False,True], [False,True]):
+        base=dict(n=n,seed=seed,clustered=clustered,aligned=aligned,graph=graph_id(n,seed,clustered,aligned))
+        variants=[dict(role='none',law='none',k=0.,D=0.)]
+        variants.extend(dict(role=role,law=law,k=k,D=D) for role,law,k,D in itertools.product(['decorin_pair','fibronectin_assembly'],['binding','locked'],[1.,4.],[.1,.4]))
+        for variant in variants:
+            c=dict(**base,**variant);c['id']=f"{c['graph']}_{c['role']}_{c['law']}_k{c['k']}_D{c['D']}";cases.append(c)
+    return cases
+
+
+@lru_cache(maxsize=12)
+def load_graph(path):
+    return json.loads(Path(path).read_text())
+
+
+def one_job(job):
+    case,root,refined=job;root=Path(root);folder=root/'cases'/case['id'];folder.mkdir(parents=True,exist_ok=False)
+    start=time.monotonic();deadline=min(start+300, start+max(0,ABSOLUTE_STOP-time.time()))
+    try:
+        graph=load_graph(str(root.parent/'graphs'/(case['graph']+'.json')))
+        model=build_model(graph,case)
+        model['folder']=folder
+        summary=dict(**case,**tensile(model,folder,refined,deadline),**recoil(model,folder,refined,deadline),
+            accepted=True,seconds=time.monotonic()-start,collagen_hash=graph['collagen_hash'],
+            adapter_hash=graph['adapter_hashes'].get(case['role']),total_nodes=len(model['x0']),
+            collagen_edges=4*case['n'],binding_arms=int(np.sum(model['kinds']>0)),
+            total_contact_stiffness=float(np.sum(model['kinds']>0)*case['k']),total_contact_energy=float(np.sum(model['kinds']>0)*case['D']),
+            total_adapter_mass=float(model['mass'][case['n']:].sum()),version=VERSION)
+    except Exception as exc:
+        summary=dict(**case,accepted=False,seconds=time.monotonic()-start,error=repr(exc),traceback=traceback.format_exc(),version=VERSION)
+    write_json(folder/'summary.json',summary)
+    return summary
+
+
+def pilot_cases(allcases):
+    output=[]
+    variants=[('none','none',0.,0.),('decorin_pair','binding',1.,.1),('decorin_pair','locked',4.,.4),('fibronectin_assembly','binding',4.,.1),('fibronectin_assembly','locked',1.,.4)]
+    for q,(n,seed,clustered,aligned) in enumerate(itertools.product(SIZES,[11,23],[False,True],[False,True])):
+        role,law,k,D=variants[q%len(variants)]
+        output.append(next(c for c in allcases if (c['n'],c['seed'],c['clustered'],c['aligned'],c['role'],c['law'],c['k'],c['D'])==(n,seed,clustered,aligned,role,law,k,D)))
+    return output
+
+
+def main():
+    parser=argparse.ArgumentParser();parser.add_argument('--root',default='study');parser.add_argument('--workers',type=int,default=4)
+    parser.add_argument('--pilot',action='store_true');parser.add_argument('--refine',action='store_true');parser.add_argument('--plan-only',action='store_true')
+    args=parser.parse_args();root=Path(args.root).resolve();root.mkdir(parents=True,exist_ok=True);graphs=root/'graphs';graphs.mkdir(exist_ok=True)
+    allcases=design()
+    if len(allcases)!=1088:raise RuntimeError('Design size')
+    for n,seed,cl,al in sorted({(c['n'],c['seed'],c['clustered'],c['aligned']) for c in allcases}):
+        target=graphs/(graph_id(n,seed,cl,al)+'.json')
+        if not target.exists():write_json(target,make_graph(n,seed,cl,al))
+    write_json(root/'full-design.json',allcases)
+    if args.plan_only:return
+    name='pilot-refined' if args.pilot and args.refine else ('pilot' if args.pilot else 'production')
+    out=root/name;out.mkdir(exist_ok=False);(out/'cases').mkdir()
+    cases=pilot_cases(allcases) if args.pilot else allcases.copy()
+    rng=np.random.default_rng(20261031);rng.shuffle(cases);write_json(out/'design.json',cases)
+    write_json(out/'status.json',dict(status='running',planned=len(cases),version=VERSION))
+    start=time.time();summaries=[]
+    with ProcessPoolExecutor(max_workers=args.workers) as pool:
+        pending=[pool.submit(one_job,(c,str(out),args.refine)) for c in cases]
+        for future in as_completed(pending):
+            result=future.result();summaries.append(result)
+            print(len(summaries),len(cases),result['accepted'],result.get('error',''),flush=True)
+    write_json(out/'summaries.json',summaries)
+    status=dict(status='completed',planned=len(cases),completed=len(summaries),accepted=sum(r['accepted'] for r in summaries),failed=sum(not r['accepted'] for r in summaries),elapsed_seconds=time.time()-start,version=VERSION)
+    write_json(out/'status.json',status);print(json.dumps(status),flush=True)
+
+
+if __name__=='__main__':main()
