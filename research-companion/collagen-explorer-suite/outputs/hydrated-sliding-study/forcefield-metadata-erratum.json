@@ -1,0 +1,9 @@
+{
+  "issue": "Native-case solvation.json labels use an obsolete case-name conditional and incorrectly say CHARMM36/CGenFF and CHARMM modified TIP3P.",
+  "executed_physics": "All six cases execute prepare(): if True -> amber_system(d); ff=None, then the ff-is-None solvation branch imports amber14/tip3p.xml solvent/ion parameters. The numerical solute terms are inherited Amber99/ColBuilder terms for every case.",
+  "effect": "Metadata-label correction only. No change to dynamics, coordinates, parameters, acceptance tests or measured curves. Original raw metadata is retained unchanged.",
+  "verification": "Static execution-path inspection plus prepared-model audit sources and final-system numerical archive. Native control GROMACS-reader cross-check uses amber99sb-star-ildnp.ff.",
+  "correct_force_field_family": "Amber99/ColBuilder",
+  "correct_solvent": "OpenMM amber14/tip3p.xml TIP3P and ion parameters",
+  "requested_salt_M": 0.15
+}

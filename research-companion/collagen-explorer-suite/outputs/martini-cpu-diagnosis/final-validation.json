@@ -1,0 +1,33 @@
+{
+  "checked_utc": "2026-10-31T22:49:52.953412+00:00",
+  "classification": "completed_cpu_replay_root_cause_unresolved",
+  "returncode": 0,
+  "last_step": 145455,
+  "last_time_ps": 800.0025,
+  "logged_energy_samples": 1456,
+  "temperature_range_K": [
+    300.833,
+    305.167
+  ],
+  "pressure_range_bar": [
+    -1522.3,
+    -1453.35
+  ],
+  "max_logged_constraint_rmsd": 2.17882e-05,
+  "finite_logged_energies_and_constraints": true,
+  "warnings": [],
+  "final_gro_atom_count": 243134,
+  "final_gro_finite": true,
+  "final_box_nm": [
+    14.67877,
+    14.67877,
+    107.64434
+  ],
+  "checkpoint_bytes": 5836880,
+  "final_checkpoint_step_in_log": 145455,
+  "container_absent_verified": true,
+  "wall_seconds": 2300.3124107910003,
+  "molecular_calibration_gate": "not_passed",
+  "root_cause": "unresolved",
+  "nonfinite_scan_note": "epsilon-rf=inf is an input dielectric setting; measured energies/constraints and final coordinates were checked separately"
+}

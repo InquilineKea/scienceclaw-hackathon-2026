@@ -1,0 +1,14 @@
+from pathlib import Path
+import difflib
+source=Path('work/martini-fibril/production_preconditioned_v002_supervisor.py');s=source.read_text();new=s.replace("out=p/'production-preconditioned-v002-45ns';out.mkdir(exist_ok=False)","attempt_id=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ');out=p/('production-'+attempt_id);out.mkdir(exist_ok=False)")
+new=new.replace("name='codex-martini-preconditioned-v002-'+case.lower()+'-'+stage","name='codex-martini-'+attempt_id.lower()+'-'+case.lower()+'-'+stage")
+new=new.replace("'--env','CUDA_CACHE_PATH=/tmp/cuda-cache'","'--env','CUDA_CACHE_PATH=/tmp/cuda-cache','--env','GMX_MAXCONSTRWARN=0'").replace("['--workdir','/input/'+case","['--workdir','/output/'+case")
+new=new.replace("txt=(out/case/'mdrun.log').read_text();record.update({'phase':'finished','returncode':rc,'end_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'warnings':[l for l in txt.splitlines() if any(s in l for s in ['WARNING','Fatal error','skipped'])]});save()", "txt=(out/case/'mdrun.log').read_text();mainlog=out/case/'pilot45.log'; scientific_log=mainlog.read_text(errors='replace') if mainlog.exists() else ''; warnings=[l for l in (txt+'\\n'+scientific_log).splitlines() if any(s in l for s in ['WARNING','Fatal error','skipped','File input/output error'])]; steps=re.findall(r'Step\\s+Time\\s*\\n\\s*(\\d+)\\s+([\\d.]+)',scientific_log);last_time=float(steps[-1][1]) if steps else None;phase='failed' if rc or warnings else ('completed' if last_time is not None and last_time>=44999.99 else 'incomplete');record.update({'phase':phase,'returncode':rc,'end_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'warnings':warnings,'last_logged_time_ps':last_time});save()")
+new=new.replace("'-cpt','5'","'-cpt','.2'")
+new=new.replace("(out/'supervisor-error.txt').write_text(traceback.format_exc());save();raise","(out/'supervisor-error.txt').write_text(traceback.format_exc());\n if reports:reports[-1]['phase']='failed';reports[-1]['supervisor_exception']=True\n save();raise")
+assert "'--workdir','/output/'" in new and "GMX_MAXCONSTRWARN=0" in new
+compile(new,'candidate-runner','exec')
+out=Path('outputs/martini-cpu-diagnosis');(out/'runner-reliability.patch').write_text(''.join(difflib.unified_diff(s.splitlines(True),new.splitlines(True),fromfile=source.name,tofile='candidate_runner.py')));(out/'candidate_runner.py').write_text(new)
+# Correct the estimate for any later CPU diagnostic; do not alter the executed source or rerun it.
+cpu=Path('outputs/martini-cpu-diagnosis/src/cpu_test.py').read_text().replace('if estimate*2>remaining*.9:','if estimate*(1+.0055/.002)>remaining*.9:');(out/'src/cpu_test_corrected_scheduler.py').write_text(cpu)
+print('Prepared non-executed runner patch; original executed scripts preserved. No GPU or cloud action.')

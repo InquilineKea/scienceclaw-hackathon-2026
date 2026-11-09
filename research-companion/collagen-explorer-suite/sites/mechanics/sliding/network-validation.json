@@ -1,0 +1,7 @@
+{
+  "rigid_translation_force_max": 4.544975507059235e-16,
+  "global_force_balance_max": 7.806255641895632e-17,
+  "energy_force_derivative_error": 3.967381978497997e-13,
+  "hessian_symmetry_max": 0.0,
+  "series_element_independent_energy_check": true
+}

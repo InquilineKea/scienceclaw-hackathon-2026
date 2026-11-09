@@ -1,0 +1,200 @@
+[
+  {
+    "counts": "3 plotted / 3 finite filtered / 3 table rows",
+    "error": "",
+    "models": 1,
+    "title": "Integrin α2 I-domain and collagen-mimetic recognition interface"
+  },
+  {
+    "counts": "44 plotted / 44 finite filtered / 44 table rows",
+    "error": "",
+    "models": 28,
+    "title": "Coupled stretch–rotation laws and conditional 3D adhesion forces"
+  },
+  {
+    "counts": "4 plotted / 4 finite filtered / 4 table rows",
+    "error": "",
+    "models": 2,
+    "title": "4-HNE candidate: failed historical gate, precision repair and bounded sampling"
+  },
+  {
+    "counts": "164 plotted / 164 finite filtered / 164 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Carbonyl damage: tissue turnover and lesion-location scenarios"
+  },
+  {
+    "counts": "0 records",
+    "error": "",
+    "models": 1,
+    "title": "Collagen triple-helix PPG reference geometry"
+  },
+  {
+    "counts": "11 plotted / 11 finite filtered / 11 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Comparative collagen evidence, missing measurements and proposed L9 design"
+  },
+  {
+    "counts": "3 plotted / 3 finite filtered / 3 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Equal Cartesian forces can still change the pressure ensemble"
+  },
+  {
+    "counts": "96 plotted / 96 finite filtered / 96 table rows",
+    "error": "",
+    "models": 24,
+    "title": "From9Cαgroups to4beads: training fit versus held-out transfer"
+  },
+  {
+    "counts": "3 plotted / 3 finite filtered / 3 table rows",
+    "error": "",
+    "models": 12,
+    "title": "Glucosepane and dityrosine: short paired structural pilots"
+  },
+  {
+    "counts": "9 plotted / 9 finite filtered / 9 table rows",
+    "error": "",
+    "models": 12,
+    "title": "Hydroxylation geometry and independent prestress mechanics"
+  },
+  {
+    "counts": "18 plotted / 18 finite filtered / 18 table rows",
+    "error": "",
+    "models": 36,
+    "title": "SNT-5382: actual ligand conformers and amine reach"
+  },
+  {
+    "counts": "8 plotted / 8 finite filtered / 8 table rows",
+    "error": "",
+    "models": 8,
+    "title": "Small-molecule geometry pilot and model disagreement"
+  },
+  {
+    "counts": "2 saved categorical records · evidence matrix (no numeric axis implied)",
+    "error": "",
+    "models": 0,
+    "title": "Study design, causal boundaries and model transfer gates"
+  },
+  {
+    "counts": "5 saved categorical records · evidence matrix (no numeric axis implied)",
+    "error": "",
+    "models": 0,
+    "title": "Which parameters and campaigns can be compared?"
+  },
+  {
+    "counts": "8 plotted / 8 finite filtered / 8 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Why hydrated-law transfer remains blocked"
+  },
+  {
+    "counts": "2 plotted / 2 finite filtered / 2 table rows",
+    "error": "",
+    "models": 1,
+    "title": "Why separated-component stability is not bound-interface mechanics"
+  },
+  {
+    "counts": "100 plotted / 100 finite filtered / 100 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Collagen aging and network topology: 500 preliminary simulations of sliding, stiffness and damage"
+  },
+  {
+    "counts": "171 plotted / 171 finite filtered / 171 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Collagen and elastin: does coupling strengthen the network, or do two gripped networks simply share the load?"
+  },
+  {
+    "counts": "32 plotted / 32 finite filtered / 32 table rows",
+    "error": "",
+    "models": 4,
+    "title": "Collagen moves: a controlled clustering test, weak bending and the limits of our spring model"
+  },
+  {
+    "counts": "324 plotted / 324 finite filtered / 324 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Collagen rigidity audit: 324 cases, independent load paths and a singular buckling branch"
+  },
+  {
+    "counts": "2 plotted / 2 finite filtered / 2 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Collagen, Resilience and Aging: What We’ve Learned and What to Test Next"
+  },
+  {
+    "counts": "382 plotted / 382 finite filtered / 384 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Collagen-network graph audit and largest-size controls: Gemini 4 Argon reviewed findings"
+  },
+  {
+    "counts": "8 plotted / 8 finite filtered / 8 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Collagen-only gripping reveals interface load transfer: a two-network LAMMPS pilot"
+  },
+  {
+    "counts": "32 plotted / 32 finite filtered / 32 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Controlled H100 results: junction geometry reshapes force fields and conditional YAP/gene activity"
+  },
+  {
+    "counts": "1344 plotted / 1344 finite filtered / 1344 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Controlled collagen-network CPU sweeps: connectivity, clustering, hub bias and Gemini 4 Argon review"
+  },
+  {
+    "counts": "4 plotted / 4 finite filtered / 4 table rows",
+    "error": "",
+    "models": 16,
+    "title": "Cross-link ownership and clumpiness: controlled mechanics and actual collagen density maps"
+  },
+  {
+    "counts": "34 plotted / 34 finite filtered / 34 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Designing collagen scaffolds for organoids: aligned fibres help sensing, layout does not buy toughness"
+  },
+  {
+    "counts": "48 plotted / 48 finite filtered / 48 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Finite attachment springs: when shell-versus-patch damage differences survive"
+  },
+  {
+    "counts": "16 plotted / 16 finite filtered / 16 table rows",
+    "error": "",
+    "models": 1,
+    "title": "GCP percolation and linear-spring rigidity: reviewed finite-FCC results"
+  },
+  {
+    "counts": "804 plotted / 804 finite filtered / 804 table rows",
+    "error": "",
+    "models": 4,
+    "title": "Nebius LAMMPS bonded-particle bundle pilot: contact, sliding and crosslink failure"
+  },
+  {
+    "counts": "2000 plotted / 2166 finite filtered / 2166 table rows",
+    "error": "",
+    "models": 0,
+    "title": "Negative model check: collagen stiffness “memory” follows a numerical bound"
+  },
+  {
+    "counts": "32 plotted / 32 finite filtered / 32 table rows",
+    "error": "",
+    "models": 4,
+    "title": "Same material, different connections: clustering, hubs and uniform-degree scaffolds on GCP"
+  },
+  {
+    "counts": "180 plotted / 180 finite filtered / 180 table rows",
+    "error": "",
+    "models": 1,
+    "title": "Shell versus patch damage around an organoid-like cavity: bending, compression softening and attachment-layer sensitivity"
+  }
+]

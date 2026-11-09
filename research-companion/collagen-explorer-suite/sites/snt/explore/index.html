@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Collagen Study Observatory</title>
+  <link rel="stylesheet" href="./observatory.css?v=20261101-r3i">
+<link rel="stylesheet" href="./spatial-viewer.css?v=20261101-r3g"></head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="Study Catalog">
+      <div class="brand">
+        <h1>Collagen Observatory</h1>
+        <p class="subtitle">Archived Spatial &amp; Scalar Records</p>
+      </div>
+      <div class="search-box">
+        <label for="study-search" class="sr-only">Search studies</label>
+        <input type="search" id="study-search" placeholder="Filter studies, tags, categories..." autocomplete="off">
+        <div class="filter-pills" id="category-filters" role="group" aria-label="Category filter"></div>
+      </div>
+      <div id="catalog-status" class="status-banner" hidden></div>
+      <nav id="study-list" class="study-list" aria-label="Studies"></nav>
+    </aside>
+
+    <main class="workspace" id="main-workspace">
+      <div id="live-status" class="sr-only" aria-live="polite" aria-atomic="true"></div>
+
+      <header class="study-header card" id="study-header">
+        <div class="header-top">
+          <div>
+            <div class="badge-row" id="study-badges"></div>
+            <h2 id="study-title">Loading catalog...</h2>
+          </div>
+          <div class="header-links" id="study-links"></div>
+        </div>
+        <p id="study-summary" class="study-summary"></p>
+        <div class="meta-grid">
+          <div class="meta-box limitations-box">
+            <h3>Persistent Limitations &amp; Scope</h3>
+            <ul id="study-limitations"></ul>
+          </div>
+          <div class="meta-box units-box">
+            <h3>Recorded Units &amp; Provenance</h3>
+            <div id="study-units" class="kv-list"></div>
+            <div id="study-sources" class="sources-list"></div>
+          </div>
+        </div>
+      </header>
+
+      <div id="error-banner" class="error-banner card" hidden>
+        <p id="error-message"></p>
+        <button type="button" id="retry-btn" class="btn btn-amber">Retry Load</button>
+      </div>
+
+      <section class="spatial-section card" id="spatial-section" aria-labelledby="spatial-heading">
+        <div class="section-bar">
+          <div>
+            <h3 id="spatial-heading">3D / Planar Saved Geometry Stage</h3>
+            <p id="spatial-binding-status" class="binding-note">Select a study to inspect saved coordinates.</p>
+          </div>
+          <div class="toolbar-group">
+            <button type="button" id="toggle-compare-btn" class="btn btn-outline" aria-pressed="false">Compare 2nd Model</button>
+            <button type="button" id="sync-cam-btn" class="btn btn-outline" hidden title="Copies camera angles/zoom; each view auto-fits its own model bounds unless sharing identical coordinate basis">Copy Left Camera to Right</button>
+          </div>
+        </div>
+
+        <div id="spatial-empty" class="empty-state" hidden>
+          <p><strong>No spatial coordinates archived for this study/table;</strong> use saved numeric plots and raw record tables below.</p>
+        </div>
+
+        <div id="spatial-stage-grid" class="stage-grid">
+          <div class="viewer-pane" id="pane-left" data-pane="0">
+            <div class="pane-toolbar">
+              <label>Model A: <select class="model-select" id="model-select-0"></select></label>
+              <div class="preset-btns" role="group" aria-label="Camera Presets Pane A">
+                <button type="button" class="btn-sm" data-preset="iso">Iso</button>
+                <button type="button" class="btn-sm" data-preset="xy">XY</button>
+                <button type="button" class="btn-sm" data-preset="xz">XZ</button>
+                <button type="button" class="btn-sm" data-preset="yz">YZ</button>
+                <button type="button" class="btn-sm" data-preset="reset">Fit</button>
+              </div>
+            </div>
+            <div class="pane-subbar" id="frame-bar-0" hidden>
+              <button type="button" class="btn-sm frame-prev" aria-label="Previous saved frame">&larr;</button>
+              <input type="range" class="frame-slider" min="0" max="0" value="0" aria-label="Saved frame index">
+              <button type="button" class="btn-sm frame-next" aria-label="Next saved frame">&rarr;</button>
+              <span class="frame-label">Frame 1/1</span>
+            </div>
+            <div class="canvas-host" id="canvas-host-0"></div>
+            <div class="pane-footer">
+              <span class="model-meta" id="model-meta-0"></span>
+              <label class="node-picker-label">Inspect Node: <select class="node-select" id="node-select-0"></select></label>
+            </div>
+          </div>
+
+          <div class="viewer-pane" id="pane-right" data-pane="1" hidden>
+            <div class="pane-toolbar">
+              <label>Model B: <select class="model-select" id="model-select-1"></select></label>
+              <div class="preset-btns" role="group" aria-label="Camera Presets Pane B">
+                <button type="button" class="btn-sm" data-preset="iso">Iso</button>
+                <button type="button" class="btn-sm" data-preset="xy">XY</button>
+                <button type="button" class="btn-sm" data-preset="xz">XZ</button>
+                <button type="button" class="btn-sm" data-preset="yz">YZ</button>
+                <button type="button" class="btn-sm" data-preset="reset">Fit</button>
+              </div>
+            </div>
+            <div class="pane-subbar" id="frame-bar-1" hidden>
+              <button type="button" class="btn-sm frame-prev" aria-label="Previous saved frame">&larr;</button>
+              <input type="range" class="frame-slider" min="0" max="0" value="0" aria-label="Saved frame index">
+              <button type="button" class="btn-sm frame-next" aria-label="Next saved frame">&rarr;</button>
+              <span class="frame-label">Frame 1/1</span>
+            </div>
+            <div class="canvas-host" id="canvas-host-1"></div>
+            <div class="pane-footer">
+              <span class="model-meta" id="model-meta-1"></span>
+              <label class="node-picker-label">Inspect Node: <select class="node-select" id="node-select-1"></select></label>
+            </div>
+          </div>
+        </div>
+
+        <div class="inspector-strip">
+          <div id="node-readout" class="readout-box">Click a 3D node/edge or use the Node dropdown to inspect exact unmagnified saved coordinates.</div>
+          <details class="fallback-details">
+            <summary>Accessible Node &amp; Edge Coordinate Table (Selected Model A)</summary>
+            <div class="table-scroll"><table id="geometry-fallback-table" class="data-table compact"></table></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="data-section" aria-label="Saved Scalar Plots and Records">
+        <div class="plot-card card">
+          <div class="section-bar">
+            <div class="table-chooser-wrap">
+              <label for="table-select"><strong>Archived Table:</strong></label>
+              <select id="table-select"></select>
+            </div>
+            <span id="plot-counts" class="count-badge">0 records</span>
+          </div>
+
+          <div class="plot-controls">
+            <label>X Axis <select id="x-col-select"></select></label>
+            <label>Y Axis <select id="y-col-select"></select></label>
+            <label>Color / Group <select id="color-col-select"></select></label>
+            <label>Filter Value <select id="filter-val-select"></select></label>
+            <label id="qual-filter-wrap" hidden>Qualification <select id="qual-filter-select">
+              <option value="all">All Records (incl. failed/gated)</option>
+              <option value="accepted">Accepted / Passed Only</option>
+            </select></label>
+          </div>
+          <div class="plot-toggles">
+            <label class="chk-label"><input type="checkbox" id="log-x-chk"> Log10 X</label>
+            <label class="chk-label"><input type="checkbox" id="log-y-chk"> Log10 Y</label>
+            <label class="chk-label"><input type="checkbox" id="connect-line-chk"> Connect sorted X</label>
+            <span id="plot-warnings" class="warning-text"></span>
+          </div>
+
+          <div class="svg-stage" id="svg-stage">
+            <svg id="scatter-svg" viewBox="0 0 680 360" role="img" aria-label="Saved records scatter plot"></svg>
+          </div>
+          <div id="legend-bar" class="legend-bar"></div>
+        </div>
+
+        <div class="record-card card">
+          <div class="section-bar">
+            <h3>Selected Saved Record Inspector</h3>
+            <label class="rec-jump">Row # <input type="number" id="record-index-input" min="0" step="1" value="0"></label>
+          </div>
+          <p class="method-note">Exact archived values; model residuals/error metrics reflect numerical fit or balance, not biological confidence intervals.</p>
+          <div id="record-readout" class="kv-grid"></div>
+        </div>
+      </section>
+
+      <section class="table-section card" aria-labelledby="raw-table-heading">
+        <div class="section-bar">
+          <div>
+            <h3 id="raw-table-heading">Raw Saved Table Rows</h3>
+            <span id="table-page-info" class="muted-note">Showing 0–0 of 0</span>
+          </div>
+          <div class="pagination-bar">
+            <button type="button" id="page-prev-btn" class="btn btn-outline">&larr; Prev 50</button>
+            <span id="page-num-label">Page 1</span>
+            <button type="button" id="page-next-btn" class="btn btn-outline">Next 50 &rarr;</button>
+          </div>
+        </div>
+        <div class="table-scroll">
+          <table id="raw-data-table" class="data-table"></table>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script type="module" src="./observatory.js?v=20261101-r3h"></script>
+</body>
+</html>

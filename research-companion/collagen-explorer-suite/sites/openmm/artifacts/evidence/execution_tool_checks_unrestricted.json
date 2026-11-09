@@ -1,0 +1,25 @@
+{
+  "recorded_utc": "2026-10-31T09:03:21.499511+00:00",
+  "effective_permissions": {
+    "sandbox_mode": "danger-full-access",
+    "network_access": "enabled",
+    "approval_policy": "never"
+  },
+  "hostname": "brev-enjgg7tq5",
+  "prior_sandbox_hostname": "brev-enjgg7tq5",
+  "same_hostname_as_prior_sandbox": true,
+  "checks": {
+    "gpu_visible": "NVIDIA L4",
+    "cuda_driver_init_passed": true,
+    "cuda_driver_device_count": 1,
+    "pypi_https_status": "HTTP/2 200"
+  },
+  "smoke_test_status": "pass",
+  "actual_platform": "CUDA",
+  "openmm_version": "8.6.1",
+  "smoke_result": "results/openmm_cuda_20261031T090236Z.json",
+  "execution_log": "evidence/openmm_cuda_20261031T090236Z.log",
+  "package_versions": "evidence/openmm_cuda_20261031T090236Z_packages.txt",
+  "prior_sandbox_evidence": "evidence/execution_tool_checks.json",
+  "conclusion": "With session sandbox restrictions removed, the same execution hostname exposes the NVIDIA L4, CUDA initializes, PyPI HTTPS succeeds, and the strict OpenMM CUDA harmonic-dimer smoke test passes."
+}

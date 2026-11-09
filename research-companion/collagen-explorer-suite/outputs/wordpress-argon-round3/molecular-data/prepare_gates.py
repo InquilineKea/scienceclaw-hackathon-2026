@@ -1,0 +1,45 @@
+from pathlib import Path
+import json,csv,math,hashlib
+R=Path(__file__).resolve().parent;D=R/'ready';POSTS={x['id']:x for x in json.loads((R/'source-posts.json').read_text())}
+def val(v):
+ if v=='':return None
+ try:x=float(v);return int(x) if x.is_integer() else x
+ except (ValueError,TypeError):return v
+
+def table(id,rows):
+ cols=[]
+ for r in rows:
+  for k,v in r.items():
+   if not isinstance(v,(dict,list)) and k not in cols:cols.append(k)
+ return {'id':id,'title':id,'columns':cols,'rows':[[r.get(c) for c in cols] for r in rows]}
+def write(d):
+ p=D/(d['id']+'.json');p.write_text(json.dumps(d,separators=(',',':'),allow_nan=False));print(d['id'],p.stat().st_size)
+def meta(id,title,posts,evidence,limits,units):return {'id':id,'title':title,'postIds':posts,'sourceURLs':[POSTS[p]['url'] for p in posts],'evidence':evidence,'limitations':limits,'units':units}
+# Current published HNE precision repair supersedes older 'sampling blocked' cachedpost31 status.
+b=Path('/path/to/Codex/2026-10-30/referenced-chatgpt-conversation-this-is-an/outputs/gaff2-periodic-fix-2026-11-01');results=b/'gcp-results/results';d=meta('hne-candidate-precision','4-HNE candidate: failed historical gate, precision repair and bounded sampling',[31],'Current1Nov2026 numerical conversion repair +single-seed candidate-monoadduct pilot',['Original mixed-precision solvent checks failed; tested double-precision CPU runtime subsequently passes unchanged numerical gates.','Candidate GAFF2/AM1-BCC models are not independent QM/experimental chemical validation or the recovered authors complete parameter set.','No collagen chain/fibril, intermolecular crosslink, reaction or mechanical-loading model.','Neutral lysine control matches formal charge, not the physiological lysine protonation population.','Adduct/control210/160ps total dynamics include fresh20ps samples after different conditioning; serially correlated frameSD is not replicate uncertainty.','AbsoluteHNE stereoisomer identity remains unassigned; no converged biological effect, tissue stiffness or mechanotransduction result.'],{'coordinates':'Å','energy_error':'kJ/mol','force_RMS_error':'kJ/mol/nm','time':'ps','Rg_RMSD_distance':'nm'})
+rows=[]
+for file,precision in [('precision-gmx.json','mixed2025.2'),('precision-gmx_d.json','double2025.2')]:
+ data=json.loads((results/file).read_text())
+ for state,v in data['states'].items():rows.append({'state':state,'runtime':precision,**{k:x for k,x in v.items() if not isinstance(x,(list,dict))}})
+validation=json.loads((results/'periodic-validation.json').read_text());vrows=[]
+for state,v in validation['states'].items():
+ for x in v.get('comparisons',[]):vrows.append({'state':state,**{k:y for k,y in x.items() if not isinstance(y,(list,dict))}})
+obs=[];thermo=[]
+for state,path in [('adduct','extended-pilot'),('control','relaxed-pilot')]:
+ for target,name in [(obs,'observables.csv'),(thermo,'thermo.csv')]:
+  with (results/state/path/name).open() as f:
+   for row in csv.DictReader(f):target.append({'state':state,**{k:val(v) for k,v in row.items()}})
+d['tables']=[table('matched-precision-diagnostic',rows),table('final-periodic-configurations',vrows),table('fresh-sample-observables',obs),table('fresh-sample-thermodynamics',thermo)];d['currentStatus']={'numerical_conversion_gates':'PASS','bounded_candidate_comparison':'COMPLETED','physical_or_chemical_accuracy_established':False,'updated_date':'2026-11-01'};d['savedSummary']=json.loads((results/'relaxed-comparison-summary.json').read_text());d['molecules']=[]
+for state,n in [('adduct',60),('control',33)]:
+ p=b/'preparation-provenance'/state/'model-neutral.mol2';lines=p.read_text().splitlines();a=lines.index('@<TRIPOS>ATOM')+1;end=lines.index('@<TRIPOS>BOND');records=[s.split() for s in lines[a:end] if s.strip()];assert len(records)==n;nodes=[[float(x) for x in v[2:5]] for v in records];labels=[{'atom':v[1],'type':v[5],'charge_e':float(v[-1])} for v in records];bonds=[]
+ for line in lines[end+1:]:
+  if line.startswith('@<TRIPOS>'):break
+  if line.strip():v=line.split();bonds.append([int(v[1])-1,int(v[2])-1,v[3]])
+ d['molecules'].append({'id':state,'name':state+' candidate minimized startingmodel','nodes':nodes,'labels':labels,'elements':[r[5].split('.')[0] for r in records],'bonds':bonds,'units':'Å','recordBinding':{'type':'fixed_candidate_starting_geometry','state':state},'note':'Minimized candidate startinggeometry; not the final solvent-conditioned trajectory or physical chemical validation.'})
+write(d)
+# Pressure/force equivalence diagnostic: exact source-reported numbers, no fabricated spatial coordinates.
+d=meta('martini-pulling-virial','Equal Cartesian forces can still change the pressure ensemble',[589],'15ps relative-pulling derivative feasibility test; published protocol reproduction blocked',['Single-triple-helix15ps derivative is not52.5ns reproduction, fullfibril mechanics or aging/crosslink study.','Relative coordinates retain endpoint forces but alter virial/pressure convention, so NPTensemble is not equivalent.','Sourcegro translation precision limits exact energy/pressure identity; no modulus inferred from startup extension.'],{'force':'kJ/mol/nm','virial':'kJ/mol','pressure':'bar','length':'nm','time':'ps'})
+d['tables']=[table('force-and-pressure-diagnostic',[{'metric':'max Cartesian force-component difference','value':0,'unit':'kJ/mol/nm','scope':'142932components at reported text precision'},{'metric':'wrapped40nm translation relative-coordinate change','value':.0001,'unit':'nm','scope':'criterion0.005nm'},{'metric':'relative-minus-absolute Vir-ZZ','value':-10836,'unit':'kJ/mol','scope':'same startingcoordinates'},{'metric':'relative-minus-absolute axial pressure','value':64.117096,'unit':'bar','scope':'same startingcoordinates'},{'metric':'predicted axial pressure shift F×40nm/V','value':64.117086,'unit':'bar','scope':'sourceforce/origin/volume relation'},{'metric':'relative-minus-absolute isotropic pressure','value':21.372364,'unit':'bar','scope':'same startingcoordinates'},{'metric':'potential-energy difference','value':-21672,'unit':'kJ/mol','scope':'same startingcoordinates'}]),table('bounded-run',[{'steps':1000,'time_ps':15,'saved_energy_samples':11,'temperature_min_K':301.23,'temperature_max_K':305.14,'temperature_sample_mean_K':302.92,'initial_cap_separation_nm':67.8737,'last_cap_separation_nm':69.132,'full_published_duration_ns':52.5,'source_reference_bead_index':206}])];d['conceptualDiagram']={'type':'protocol-comparison','absolute':'Two endpointgroups pull against separate fixed origins40nm apart','relative':'Two opposite relative coordinates share central reference bead206; central reference forces cancel','edgeMeaning':'Illustrative force/reference relation; no constructed molecular geometry.'};write(d)
+# Remaining conceptual recommendations: source-grounded fields; deliberately no numeric synthetic geometry.
+d=meta('cross-scale-provenance','Which parameters and campaigns can be compared?',[101,50,18,146],'Source-reported method/campaign crosswalk; conceptual diagram',['Legacyk_rel affects severalassumed network mechanisms and cannot be calibrated wholesale by one molecular curvature.','Welded2Dbeam,2Dcentral-force,3Dconstitutive and protein-structure models remain distinct.','NQO1branch is a separate protein study, not evidence forcollagenmechanics.'],{'network_parameters':'hypothetical dimensionless unless sourceexplicitlystates calibration'})
+d['tables']=[table('legacy-parameter-map',[{'legacy_input':'k_rel','mechanism':'crosslinkbridge stiffness','status':'assumed multiplier; requiresseparate calibration'},{'legacy_input':'k_rel','mechanism':'fiberstretching','status':'assumedmultiplier'},{'legacy_input':'k_rel','mechanism':'bending/junctionrotation','status':'assumedmultiplier'},{'legacy_input':'k_rel','mechanism':'locking','status':'assumedmultiplier'},{'legacy_input':'brittlenessrule','mechanism':'rupture threshold','status':'separateassumption; molecularcurvature is not rupturephysics'},{'legacy_input':'latercoupled law','mechanism':'axial/angular/mixedterms','status':'separateconditionaltransfergates; noadmissiblewetlaw'}]),table('model-boundaries',[{'campaign':'Topologyatlas','geometry':'2Dweldedbeamnetworks','data':'Branching/hierarchy/sparsebridgedeletions','limit':'Finitejunctioncompliance notvalidated'},{'campaign':'Originalmixedcollagen/NQO1pilot','geometry':'17×13central-forcespringnetworks;96runs','data':'Collagentopologyexperiment','limit':'NQO1confidenceanalysis isseparate'},{'campaign':'FractureAtlas','geometry':'2Dnonlinear fiber network','data':'450run frozenbenchmark','limit':'Unitless; no molecular/tissuecalibration'},{'campaign':'TransitionAtlas','geometry':'Independent2D/1D/ODE scalarmechanisms','data':'H100 savedcurves with excludedgaps','limit':'No3Dnodecoordinates incurve dataset'},{'campaign':'EvidenceAtlas','geometry':'Measured3Dfields + independent2Dnetworkcomparisons','data':'Versioned integrationofseparatecampaigns','limit':'Not asinglevalidatedmultiscalemodel'}])];write(d)

@@ -1,0 +1,23 @@
+{
+  "bondBreakage": {
+    "beforeBonds": "Geometry · 36 nodes · 42 edges",
+    "afterBonds": "Geometry · 36 nodes · 36 edges"
+  },
+  "mobileProof": {
+    "clientWidth": 375,
+    "controlsWidth": 325.8125,
+    "frame": "Frame 101/101 (Saved step 10000 · reduced time 4.0)",
+    "innerWidth": 390,
+    "scrollWidth": 375
+  },
+  "observedOtherChecks": {
+    "rigidityAccepted": 310,
+    "rigidityTotal": 324,
+    "sourceReplicaSDBars": 6,
+    "openmmFinalParticle1nm": 0.1193935,
+    "magnificationLeavesReadoutUnchanged": true,
+    "architectureJ1Fiber0Neighbor": "J12",
+    "allFourSitesApplicationConsoleErrors": 0,
+    "wordpressIndexLinkOpenedGallery": true
+  }
+}

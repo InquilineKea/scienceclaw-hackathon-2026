@@ -1,0 +1,44 @@
+<section id="matched-stiffness" class="h100-study" aria-labelledby="h100-title">
+  <div class="h100-heading"><div><div class="eyebrow">New · H100 study · 31 October 2026</div><h2 id="h100-title">Same initial stiffness.<br>Different relaxation.</h2></div><a href="#original-model">↑ Original adhesion model</a></div>
+  <p class="h100-lede">Compare uniform and spatially clustered fiber networks after matching their initial bulk shear stiffness. Explore the saved seed pairs, the uncertainty in their difference, and how the result depends on the assumed mechanics.</p>
+  <div class="h100-scope"><strong>A separate model, a new question.</strong> These are saved H100 results from a 2D diluted triangular network. They do not extend the adhesion model’s YAP proxy or establish biological aging effects. Stress and time use normalized model units.</div>
+  <div class="pane h100-control-panel">
+    <div class="inputs">
+      <label for="h100-size">Network size<select id="h100-size"><option value="576">576 nodes · primary study</option><option value="2304">2,304 nodes · size check</option></select></label>
+      <label for="h100-kappa">Bending / stretching ratio κ<select id="h100-kappa"><option value="0.03">0.03 · higher bending</option><option value="0.003">0.003 · lower bending</option></select></label>
+      <label for="h100-mechanism">Assumed relaxation mechanism<select id="h100-mechanism"><option value="0.5|10">r = 0.5, β = 10 · strain-sensitive</option><option value="0.5|0">r = 0.5, β = 0 · strain-independent</option><option value="0.8|10">r = 0.8, β = 10 · more persistent</option><option value="1|0">r = 1, β = 0 · elastic control</option></select></label>
+      <label for="h100-metric">Outcome<select id="h100-metric"><option value="stress_retention">Stress retained after hold</option><option value="initial_RMS_strain">Initial RMS segment strain</option></select></label>
+    </div>
+    <p class="note">r is the persistent fraction of axial elasticity; β controls the strain sensitivity of relaxation. These settings are effective assumptions, not measured properties of named crosslink chemistries.</p>
+    <div class="h100-stats" aria-live="polite" aria-atomic="true">
+      <div class="stat"><span>Uniform · paired mean</span><strong id="h100-uniform">—</strong></div>
+      <div class="stat"><span>Clustered · paired mean</span><strong id="h100-clustered">—</strong></div>
+      <div class="stat"><span>Clustered − uniform</span><strong id="h100-difference">—</strong><small id="h100-interval">95% interval</small></div>
+      <div class="stat"><span>Included seed pairs</span><strong id="h100-count">—</strong><small id="h100-excluded">Convergence selection</small></div>
+    </div>
+    <p id="h100-reading" class="h100-reading"></p>
+    <noscript><p>This comparison needs JavaScript. The <a href="h100/paired-contrasts.csv">comparison CSV</a> and <a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/matched-stiffness-collagen-network-relaxation-h100-results/">research article</a> remain available.</p></noscript>
+  </div>
+  <div class="h100-two">
+    <figure class="pane"><h3>Every included seed pair</h3><div id="h100-pairs-plot"></div><figcaption>Dots are individual graph realizations; connecting lines pair the same seed. Crossbars show means on those pairs, not confidence intervals.</figcaption></figure>
+    <figure class="pane"><h3>How uncertain is the difference?</h3><div id="h100-contrast-plot"></div><figcaption>The line shows a <strong>pointwise 95% paired seed-bootstrap interval</strong> for the mean difference. Zero means equal group means. Intervals describe variation within this model; they are not biological uncertainty and have no multiple-comparison correction.</figcaption><p id="h100-pair-rule" class="note"></p></figure>
+  </div>
+  <div class="h100-two h100-networks">
+    <figure class="pane"><h3><span class="h100-dot uniform"></span>Uniform dilution</h3><img id="h100-uniform-network" src="h100/network-576-uniform.svg" alt="Saved uniform network topology, seed 0, 576 nodes" width="520" height="320" loading="lazy"><figcaption>Retained segments are sampled across the lattice.</figcaption></figure>
+    <figure class="pane"><h3><span class="h100-dot clustered"></span>Clustered connectivity</h3><img id="h100-clustered-network" src="h100/network-576-clustered.svg" alt="Saved clustered network topology, seed 0, 576 nodes" width="520" height="320" loading="lazy"><figcaption>Spatially correlated dilution produces uneven connectivity.</figcaption></figure>
+  </div>
+  <p id="h100-topology-note" class="note">Saved seed-0 topologies, shown undeformed. Periodic edges crossing the displayed cell boundary are omitted from the drawing.</p>
+  <details class="pane h100-details"><summary>Inspect included and excluded pairs</summary><p class="note">Excluded values remain visible for audit but do not enter the charts or paired means. Changing outcomes can change the included set because initial-state and full-hold convergence use different flags.</p><div class="h100-table-wrap"><table><thead><tr><th>Seed</th><th>Uniform</th><th>Clustered</th><th>Difference</th><th>Selection</th></tr></thead><tbody id="h100-seed-table"></tbody></table></div></details>
+  <div class="h100-two h100-context">
+    <section class="pane"><h3>What matching stiffness means here</h3><p>Each specimen is scaled by its relaxed initial secant shear modulus G₀ at shear strain 0.001. This compensates microscopic modulus; it does not isolate architecture while holding fiber stiffness fixed.</p><p>Networks are equilibrated to 10% shear with sliding frozen, then held for five internal time units with rupture disabled. RMS segment strain is measured at the beginning of the hold.</p><p><strong>Exact negative control:</strong> scaling every energy term by the same relaxation function gives identical normalized retention for both architectures: 50.34% at time five. The differences above depend on selective axial relaxation with elastic bending.</p></section>
+    <section class="pane"><h3>What the evidence supports</h3><p>The higher-κ retention difference persists at both tested sizes. The primary lower-κ interval spans zero, and the primary RMS-strain comparison gives no consistent architecture ordering.</p><p>Hold refinement changed retention by less than 0.009 percentage points on shared complete cases; the initial loading ramp was not step-refined. Displacement nonaffinity differed by up to 60.5% between solvers, so it is not offered as a robust outcome here.</p><p>Later fracture paths remain resolution-sensitive. These comparisons do not establish a toughness or ultimate-strength winner, a named chemical effect, or a YAP/tissue prediction.</p></section>
+  </div>
+  <details class="pane h100-details"><summary>Data provenance, uncertainty and downloads</summary>
+    <p>The charts reproduce <strong>32 saved comparisons</strong> from the published summary workbook and matching CSV files: two sizes, two κ settings, four mechanisms and two outcomes. Only the improved-optimizer primary and larger hold batches are used. No new simulations or bootstrap intervals were generated for this explorer.</p>
+    <p>Intervals are the archived 2,000-resample paired-bootstrap bounds. Some bounds in the article’s narrative table differ slightly from the published workbook; this explorer uses the workbook/CSV values consistently. At the default setting, the interval is −3.98 to −1.48 percentage points.</p>
+    <p>Only pairs with both required convergence flags enter each contrast. Complete-case selection can affect the estimates; the size check is not an infinite-size limit. Across the full study, 1,600 saved trajectories include repeated mechanisms, solvers and refinements; they correspond to 50 distinct graph realizations, not 1,600 independent specimens.</p>
+    <p><a href="h100/paired-contrasts.csv" download>Download displayed comparisons (CSV)</a> · <a href="h100/case-summary.csv" download>Download hold cases and flags (CSV)</a> · <a href="h100/source-checksums.json" download>Source checksums</a></p>
+    <p><a href="https://humanavianaisymbiosis.wordpress.com/wp-content/uploads/2026/10/collagen-matched-stiffness-summary.xlsx">Published summary workbook</a> · <a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/matched-stiffness-collagen-network-relaxation-h100-results/">Full H100 article and five data/source workbooks</a> · <a href="https://humanavianaisymbiosis.wordpress.com/2026/10/31/collagen-resilience-aging-big-picture-overview/">Big-picture synthesis</a></p>
+  </details>
+  <p class="h100-back"><a href="#original-model">↑ Back to the original adhesion explorer</a> · <a href="original.html">Open the unchanged original HTML</a></p>
+</section>

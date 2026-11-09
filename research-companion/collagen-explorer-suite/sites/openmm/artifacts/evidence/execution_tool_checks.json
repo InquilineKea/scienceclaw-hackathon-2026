@@ -1,0 +1,130 @@
+{
+  "observed_utc": "2026-10-31T08:58:46.741924+00:00",
+  "executor": "functions.exec -> tools.exec_command, default sandbox",
+  "hostname": "brev-enjgg7tq5",
+  "ssh_user_report": {
+    "gpu": "NVIDIA L4 visible",
+    "cuda_initializes": true,
+    "pypi_https_reachable": true,
+    "hostname": "not supplied; requested from user"
+  },
+  "effective_permissions_from_session": {
+    "sandbox_mode": "workspace-write",
+    "writable_roots": [
+      "/home/ubuntu",
+      "/tmp"
+    ],
+    "network_access": "restricted",
+    "approval_policy": "granular",
+    "sandbox_approval": false,
+    "rules": false,
+    "skill_approval": false,
+    "mcp_elicitations": true,
+    "request_permissions": true
+  },
+  "proc_self_restrictions": [
+    "CapEff:\t0000000000000000",
+    "CapBnd:\t0000000000000000",
+    "NoNewPrivs:\t1",
+    "Seccomp:\t2",
+    "Seccomp_filters:\t1"
+  ],
+  "nvidia_device_nodes": [],
+  "kernel_gpu_metadata": {
+    "/proc/driver/nvidia/gpus/0000:00:03.0/information": "Model: \t\t NVIDIA L4\nIRQ:   \t\t 11\nGPU UUID: \t GPU-39ce8e40-b85b-b73f-3e9f-06f960239df7\nVideo BIOS: \t 95.04.29.00.07\nBus Type: \t PCI\nDMA Size: \t 47 bits\nDMA Mask: \t 0x7fffffffffff\nBus Location: \t 0000:00:03.0\nDevice Minor: \t 0\nGPU Firmware: \t 580.178.04\nGPU Excluded:\t No\n"
+  },
+  "cuda_driver_probe": {
+    "cuInit_returncode": 100,
+    "error_name": "CUDA_ERROR_NO_DEVICE",
+    "message": "no CUDA-capable device is detected"
+  },
+  "checks": [
+    {
+      "argv": [
+        "nvidia-smi",
+        "--query-gpu=name,uuid,driver_version,memory.total",
+        "--format=csv,noheader"
+      ],
+      "returncode": 9,
+      "stdout": "NVIDIA-SMI has failed because it couldn't communicate with the NVIDIA driver. Make sure that the latest NVIDIA driver is installed and running.\n\n",
+      "stderr": ""
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--connect-timeout",
+        "10",
+        "--max-time",
+        "20",
+        "https://pypi.org/simple/openmm/"
+      ],
+      "returncode": 6,
+      "stdout": "",
+      "stderr": "curl: (6) Could not resolve host: pypi.org\n"
+    },
+    {
+      "argv": [
+        "curl",
+        "--silent",
+        "--show-error",
+        "--head",
+        "--connect-timeout",
+        "10",
+        "--max-time",
+        "20",
+        "https://files.pythonhosted.org/"
+      ],
+      "returncode": 6,
+      "stdout": "",
+      "stderr": "curl: (6) Could not resolve host: files.pythonhosted.org\n"
+    },
+    {
+      "argv": [
+        "curl",
+        "--fail",
+        "--location",
+        "--silent",
+        "--show-error",
+        "--connect-timeout",
+        "10",
+        "--max-time",
+        "30",
+        "https://bootstrap.pypa.io/get-pip.py",
+        "--output",
+        "/home/ubuntu/workspace/collagen-md/downloads/get-pip.py"
+      ],
+      "returncode": 6,
+      "stderr": "curl: (6) Could not resolve host: bootstrap.pypa.io\n"
+    }
+  ],
+  "escalation_requests": [
+    {
+      "command": "nvidia-smi --query-gpu=name,uuid,driver_version,memory.total --format=csv,noheader",
+      "outcome": "Rejected before execution by approval policy: cannot ask for escalated permissions when sandbox_approval=false"
+    },
+    {
+      "command": "curl -I --connect-timeout 10 --max-time 20 https://pypi.org/simple/openmm/",
+      "outcome": "Rejected before execution by approval policy: cannot ask for escalated permissions when sandbox_approval=false"
+    },
+    {
+      "command": "curl --fail --location --silent --show-error --connect-timeout 10 --max-time 30 https://bootstrap.pypa.io/get-pip.py --output /home/ubuntu/workspace/collagen-md/downloads/get-pip.py",
+      "outcome": "Rejected before execution by approval policy: cannot ask for escalated permissions when sandbox_approval=false"
+    }
+  ],
+  "status_command": {
+    "type": "Codex interactive slash command",
+    "direct_inspection": "unavailable through provided tools; /status is not a filesystem path or shell subcommand",
+    "active_permissions_source": "session developer permissions and approval rejection"
+  },
+  "local_config_contains_sandbox_or_approval_overrides": false,
+  "cloud_environment_status_tool_available": false,
+  "network_policy_snapshot_present": false,
+  "smoke_test_result": "results/openmm_cuda_execution_tool.json",
+  "conclusion": "Execution sandbox sees L4 kernel metadata but lacks GPU device nodes and cannot resolve PyPI; host-shell usability must be evaluated separately. OpenMM smoke test blocked before CUDA context creation because openmm is not installed.",
+  "request_permissions_tool_available": false,
+  "resume_command": "bash /home/ubuntu/workspace/collagen-md/scripts/run_openmm_cuda_smoke.sh",
+  "resume_script_validation": "bash -n passed; CUDA/install execution remains blocked in this session"
+}

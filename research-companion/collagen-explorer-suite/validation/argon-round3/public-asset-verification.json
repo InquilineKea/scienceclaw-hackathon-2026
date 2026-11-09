@@ -1,0 +1,1271 @@
+[
+  {
+    "site": "architecture",
+    "file": "demo-inspector.css",
+    "status": 200,
+    "bytes": 2815,
+    "sha256": "002c7b84a98396084b441437cf521ca90467f57acfd4c2b5f7fab497e4818728",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "research-pipeline.zip",
+    "status": 200,
+    "bytes": 3187880,
+    "sha256": "bf2dd0628724c8cc318c0c7ef125aaeefbb53d35d558ad8c77004a88f1c32d26",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "index.html",
+    "status": 200,
+    "bytes": 200636,
+    "sha256": "f74f4ea2452529e9e21d44592db7a6a1d1db325bc83ec280c63cde24d0ae6d46",
+    "matches_candidate": false,
+    "hosted_html_matches_after_exact_cloudflare_challenge_removal": true,
+    "hosting_injected_scripts_removed": 1,
+    "injection_sha256": [
+      "0960e1e62e6acac22f7e63f9f27a965fa9c74d6085c3df86701de8b520e9549e"
+    ]
+  },
+  {
+    "site": "architecture",
+    "file": "demo.css",
+    "status": 200,
+    "bytes": 10649,
+    "sha256": "708a65205c7465cb94c44258310c51c94e1e7fa06df16a7f1a0eb740d1774fba",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "demo-model.js",
+    "status": 200,
+    "bytes": 1439,
+    "sha256": "afc15b5a96c807b76a30027dbeb58ea82e89aa1100fbd10ddf4af108deb47b3f",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "comparison.html",
+    "status": 200,
+    "bytes": 224564,
+    "sha256": "da9723684a9f00fcde13e697ae9127fa54f73dab9da74df92cf314698f60eb77",
+    "matches_candidate": false,
+    "hosted_html_matches_after_exact_cloudflare_challenge_removal": true,
+    "hosting_injected_scripts_removed": 1,
+    "injection_sha256": [
+      "9d2e2dfc8afb65a1f93276e98077685ab3205422b0e352b7beec114d294fd982"
+    ]
+  },
+  {
+    "site": "architecture",
+    "file": "demo.js",
+    "status": 200,
+    "bytes": 31583,
+    "sha256": "a618fef3337d3dd5b0264942eaa9736aeb32f2edb6d3c4ddb444c02460616ab4",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "demo-worker.js",
+    "status": 200,
+    "bytes": 23172,
+    "sha256": "d16a2e21d0e375bd30aba853a8d08595b24c0ffc6325fefdeda23ebc5fc4d368",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "collagen-demo.zip",
+    "status": 200,
+    "bytes": 4665063,
+    "sha256": "8221b25a987026cde980b5d3baf6cdb45d503fd00707905edd6083b48dda9e7e",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "demo.html",
+    "status": 200,
+    "bytes": 2220769,
+    "sha256": "a757a50ec366b08dbead0d54777b155f6a8090c459d06f4a3d9bb6952db97004",
+    "matches_candidate": false,
+    "hosted_html_matches_after_exact_cloudflare_challenge_removal": true,
+    "hosting_injected_scripts_removed": 1,
+    "injection_sha256": [
+      "9052fe5ce9e5408062c5c9a0f0fd61f32494ad960b92de8ed605947d90a750b2"
+    ]
+  },
+  {
+    "site": "architecture",
+    "file": "demo-inspector.js",
+    "status": 200,
+    "bytes": 18033,
+    "sha256": "0d4cc2d2c74a34f9cd023274ab0c1ee33d3b3e5ac5717cff45265e7e8e5784d9",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "vendor/three.module.js",
+    "status": 200,
+    "bytes": 603113,
+    "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "vendor/THREE-LICENSE.txt",
+    "status": 200,
+    "bytes": 1081,
+    "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "vendor/PINNED.json",
+    "status": 200,
+    "bytes": 722,
+    "sha256": "c2e8cb25b418ecce6d3d7c1d00454b24de6a935d46d605359c70413564f2e804",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "vendor/three.core.js",
+    "status": 200,
+    "bytes": 1403455,
+    "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+    "matches_candidate": true
+  },
+  {
+    "site": "architecture",
+    "file": "vendor/OrbitControls.js",
+    "status": 200,
+    "bytes": 38715,
+    "sha256": "06864a0fcb647730bfbc690b6c25a121199d716a3e299a40158509cbd247c3bf",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "index.html",
+    "status": 200,
+    "bytes": 12190186,
+    "sha256": "9f2b6b24c0f0ad5b7f8afba768855b103ff93b32830ed7e3c491b55def22e2ae",
+    "matches_candidate": false,
+    "hosted_html_matches_after_exact_cloudflare_challenge_removal": true,
+    "hosting_injected_scripts_removed": 1,
+    "injection_sha256": [
+      "a5214475414b732ca0956698631746d25ccc77f6727291938e55fd0cf049f598"
+    ]
+  },
+  {
+    "site": "mechanics",
+    "file": "spatial-viewer.css",
+    "status": 200,
+    "bytes": 4303,
+    "sha256": "cebd1f9bf0ac43e7bd8d22b817e0583021f481298a05e81cb7680c41b3370df8",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "mechanics-enhancements.js",
+    "status": 200,
+    "bytes": 26990,
+    "sha256": "2d4fcf4163937c0833cbc39db6241ef5ae54621ca8067639f87ac00e39db8d2c",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "mechanics-enhancements.css",
+    "status": 200,
+    "bytes": 6125,
+    "sha256": "c42ae87229da7153f36b534462f8a4e0c108981aa1753ad9b1033af8f87ca7a9",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "mechanics-bridge.js",
+    "status": 200,
+    "bytes": 390,
+    "sha256": "89cab3bc48cbe1a45589c61bf5c1a3f431a8e1c6eea45fb19fb00c80af85d16f",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "original.html",
+    "status": 200,
+    "bytes": 9165671,
+    "sha256": "64d2f622fcfdb3ee55caed9fc41ca6f44942792834c26acf9863ff094343fecc",
+    "matches_candidate": false,
+    "hosted_html_matches_after_exact_cloudflare_challenge_removal": true,
+    "hosting_injected_scripts_removed": 1,
+    "injection_sha256": [
+      "d4c2726bcef7b033eb40e0da7c42c555ab43c33c9e7134001398fd3071366500"
+    ]
+  },
+  {
+    "site": "mechanics",
+    "file": "spatial-viewer.js",
+    "status": 200,
+    "bytes": 38956,
+    "sha256": "340edb56635632b0827ee10d75705173c2d078cb06cda5d11d8ec82530a408b2",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "martini/failure-report.json",
+    "status": 200,
+    "bytes": 1707,
+    "sha256": "6faba9a6e0eccce702724a1b92253cbb46f1c0ecc7ea0c5c09a9a649bd6de18e",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "martini/REPORT.md",
+    "status": 200,
+    "bytes": 1746,
+    "sha256": "ccbfc0d35852811d0c59a3c20db99986cc875b610cc4c5faeb6fc3c1a635829c",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "martini/diagnostic-data.json",
+    "status": 200,
+    "bytes": 159827,
+    "sha256": "6b48cc45c49c0af50e8c42842a97ba045566c11bb91ba91513e3cd680f69dd63",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "martini/native-precursor-geometries.zip",
+    "status": 200,
+    "bytes": 227931,
+    "sha256": "4f7565ff9e21f3f35930aebc1b32df172c61c1471efeeeb7ed230c4fb884841f",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/network-2304-uniform.svg",
+    "status": 200,
+    "bytes": 162755,
+    "sha256": "be37e13129f8a5827b31dc2fc87240aee901e653262bea2e07d5064e2918aa38",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/network-576-clustered.svg",
+    "status": 200,
+    "bytes": 39663,
+    "sha256": "7a6075a7714f26ccc34add3825210b3cbd330453e6953a16fa2b01bcbced19ad",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/source-checksums.json",
+    "status": 200,
+    "bytes": 315,
+    "sha256": "f82bc24819445c478183fd871882a3abe53a6a8dc1ece7379f2c793030a2791b",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/results.json",
+    "status": 200,
+    "bytes": 61212,
+    "sha256": "28844ffcfeaa4241c875ba3286701ce0a67b9c2e4afe409d5ddf42b1a8c5acc5",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/network-2304-clustered.svg",
+    "status": 200,
+    "bytes": 162807,
+    "sha256": "92831dffc908884558fd084459d7fc829cc7764170f6768bca34a7aa7817934e",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/paired-contrasts.csv",
+    "status": 200,
+    "bytes": 7862,
+    "sha256": "8803217049112fa8ee73f7ef7b18023fd34b513a60a60a40ddba64f7990a7872",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/style.css",
+    "status": 200,
+    "bytes": 3448,
+    "sha256": "2fc953e9e00c2618f92b13e5b0752039f306f085ab0373d4ee72338f0924ba07",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/app.js",
+    "status": 200,
+    "bytes": 7223,
+    "sha256": "8eadf4e9541634ff81d6747350d0f3693cc903685680f47a9dac9f68ded335c8",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/network-576-uniform.svg",
+    "status": 200,
+    "bytes": 39850,
+    "sha256": "74934cff6249f8baf8c2f6f5b1011e3e58a4287ae51628c66559d30d721c89fd",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "h100/case-summary.csv",
+    "status": 200,
+    "bytes": 111514,
+    "sha256": "3b0273531347441a875025ec7759672bcfff3ed689d796c6ff74892550981014",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "network-sensitivity/summary.json",
+    "status": 200,
+    "bytes": 3033759,
+    "sha256": "2a2ed3cd0b28baca63c70060e25db18df5eb16832e9d73297c40868d5b4d7d0e",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "network-sensitivity/main-results.csv",
+    "status": 200,
+    "bytes": 1531068,
+    "sha256": "4205b4dda3c71ce06fae8086a4b75fcc0eb98bf9e8aed4112a31a60b27f4c9cf",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "network-sensitivity/explorer.html",
+    "status": 200,
+    "bytes": 226178,
+    "sha256": "6210ed6be6f648d823ad1e791f87c605e86bc4d6f1d323d5ef1798402ab656c2",
+    "matches_candidate": false,
+    "hosted_html_matches_after_exact_cloudflare_challenge_removal": true,
+    "hosting_injected_scripts_removed": 1,
+    "injection_sha256": [
+      "135d2c52efa12af74d758d3d0e14788523782c540ee675c80ab86fc45905cb75"
+    ]
+  },
+  {
+    "site": "mechanics",
+    "file": "network-sensitivity/REPORT.md",
+    "status": 200,
+    "bytes": 9810,
+    "sha256": "b73221044228a4f546f43c7ac7ed4a0ed874c617a1af0248bd28a99497eb08bb",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "network-sensitivity/paired-contrasts.csv",
+    "status": 200,
+    "bytes": 321359,
+    "sha256": "a46a353881242f189d531479bb611c8d4c6d246f56852836634caab31c8259ce",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "network-sensitivity/METHODS.md",
+    "status": 200,
+    "bytes": 5983,
+    "sha256": "96ad07a95ac42c8dfc81f12dd76788c850e6acd88600281acfa0bc51c1eb2ec6",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "network-sensitivity/design.json",
+    "status": 200,
+    "bytes": 3715,
+    "sha256": "7a980759bc61720e944e09c5b438b30373ff26bd801ac25213bf10506c1bc8b1",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "network-sensitivity/equal-stiffness-contrast.svg",
+    "status": 200,
+    "bytes": 3905,
+    "sha256": "0c99356df08093f95f060fc927890b1d0afd9eb5985012053d09f6ff9b1d3039",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/provenance.json",
+    "status": 200,
+    "bytes": 2042,
+    "sha256": "d72499a72ff87527419ae701adecf074360ae9597f4ba67ea8bbaf8be20f5676",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/results.json",
+    "status": 200,
+    "bytes": 2903715,
+    "sha256": "a6ffe43309c7538660bcd1b46369294b5638136a98136f94da8934255018bbcb",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/forcefield-metadata-erratum.json",
+    "status": 200,
+    "bytes": 945,
+    "sha256": "d6b1a7ec02d19cfe2a6fde79477ede07b98378c725fb2cc12f1932ace7482df3",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/network-validation.json",
+    "status": 200,
+    "bytes": 252,
+    "sha256": "2711cbc8598c61e13a2555d25fc188eb4998aea8bffb9aeb4d8717e3bdcc0fc9",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/network-results.json",
+    "status": 200,
+    "bytes": 37153,
+    "sha256": "f92f4e3cbdb185f06522c0b351acae341cebfec8db7ca707237655b4643cda35",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/study-source.zip",
+    "status": 200,
+    "bytes": 45675,
+    "sha256": "e5094264dce1184d7c00ec3835ecaec2d5efa4bec4d15340d817515c061a2b42",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/network-results.csv",
+    "status": 200,
+    "bytes": 72,
+    "sha256": "5543fcd2bcb86b09e628ef1e639378ba344bebf16a1ce0c763f3aed860b15077",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/benchmark-readiness.json",
+    "status": 200,
+    "bytes": 21491,
+    "sha256": "5c34ec89812b90047d4687a2cdae6fea2c10bf73499d8d123aad854cc79c64ca",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/molecular-summary.json",
+    "status": 200,
+    "bytes": 25400,
+    "sha256": "a03ebf56f49be624a840805a970bb5a594c4c114cdaa7370244e7963fdcc0a26",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "sliding/app.js",
+    "status": 200,
+    "bytes": 9036,
+    "sha256": "225f709c533e0debf5c2c0867da4ee42e1a60726310b337cccf4aae7cd7b5996",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "vendor/three.module.js",
+    "status": 200,
+    "bytes": 603113,
+    "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "vendor/THREE-LICENSE.txt",
+    "status": 200,
+    "bytes": 1081,
+    "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "vendor/PINNED.json",
+    "status": 200,
+    "bytes": 722,
+    "sha256": "c2e8cb25b418ecce6d3d7c1d00454b24de6a935d46d605359c70413564f2e804",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "vendor/three.core.js",
+    "status": 200,
+    "bytes": 1403455,
+    "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+    "matches_candidate": true
+  },
+  {
+    "site": "mechanics",
+    "file": "vendor/OrbitControls.js",
+    "status": 200,
+    "bytes": 38715,
+    "sha256": "06864a0fcb647730bfbc690b6c25a121199d716a3e299a40158509cbd247c3bf",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "molecular-preview-data.json",
+    "status": 200,
+    "bytes": 46126,
+    "sha256": "4d16cd839e412b1ab71507cab09e4e3062240a5c91ef940a139e9d6df086ec54",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "collagen_hydroxylation_tensegrity.zip",
+    "status": 200,
+    "bytes": 11205793,
+    "sha256": "2dfc7e9df9e7d9f2433146f0086d8722f5f6c4e2a9ec1c03c4359e50b49df068",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "index.html",
+    "status": 200,
+    "bytes": 5762,
+    "sha256": "01656b6b3c9e843c74d78f4f198cc74d2394662cc2f07ef094f585b3aa2410b9",
+    "matches_candidate": false,
+    "hosted_html_matches_after_exact_cloudflare_challenge_removal": true,
+    "hosting_injected_scripts_removed": 1,
+    "injection_sha256": [
+      "1ad8a37cd932bf97506291eb7e233b7ce5b143abc24c78ef21100b54e7cee90b"
+    ]
+  },
+  {
+    "site": "snt",
+    "file": "collagen_lammps_calibration.zip",
+    "status": 200,
+    "bytes": 8306479,
+    "sha256": "625f1ce665c9cdf1e041c1cdd264e7d6ca046baab8ff720d282beae8072cc2f5",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "molecular-bench.js",
+    "status": 200,
+    "bytes": 21171,
+    "sha256": "fc838e5b68330b65dddcd4380821d99a4b8bb5aea4232a3fa493c04501fa557f",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "molecular-bench.css",
+    "status": 200,
+    "bytes": 2021,
+    "sha256": "a0116de2e7600118551abf5d5ff2e281c9c432a8b99815c5ef93498d49e657a6",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "snt5382_atomistic_pilot.zip",
+    "status": 200,
+    "bytes": 6462983,
+    "sha256": "351834632d2b2b40729f132c1bac16e8902e9d030fe1367fb33fd7b1ee698c7a",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/index.html",
+    "status": 200,
+    "bytes": 11133,
+    "sha256": "e23b20cd4786153f618ded6c7c1067462e758fed0453d998f7340ecb943ce038",
+    "matches_candidate": false,
+    "hosted_html_matches_after_exact_cloudflare_challenge_removal": true,
+    "hosting_injected_scripts_removed": 1,
+    "injection_sha256": [
+      "d1168d045d72fb7099e30f25cc24f843a61a575d0d55d510ded478094d18f9fe"
+    ]
+  },
+  {
+    "site": "snt",
+    "file": "explore/spatial-viewer.css",
+    "status": 200,
+    "bytes": 4303,
+    "sha256": "cebd1f9bf0ac43e7bd8d22b817e0583021f481298a05e81cb7680c41b3370df8",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/observatory.js",
+    "status": 200,
+    "bytes": 47436,
+    "sha256": "41d2dc833615e0b4476ed6a85823c52eaa5e862a3632fec7223b1f2a6bff05df",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/catalog.json",
+    "status": 200,
+    "bytes": 2857,
+    "sha256": "f750685dc262f0f9b831c4f933b8a749003133bc7d63003b86001db1b60a5cee",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/observatory.css",
+    "status": 200,
+    "bytes": 12082,
+    "sha256": "ce74db2cf9644389b0c4e3f84d81c54f7b6e36f2486eb4f4e9442c5606b6988a",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/spatial-viewer.js",
+    "status": 200,
+    "bytes": 38956,
+    "sha256": "340edb56635632b0827ee10d75705173c2d078cb06cda5d11d8ec82530a408b2",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/data/snt-ligand-ensemble.json",
+    "status": 200,
+    "bytes": 6770537,
+    "sha256": "0212859beb7b0f296044923be3b6038ec52990f076e6cb4fed161e27b9ded352",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/data/four-bead-calibration.json",
+    "status": 200,
+    "bytes": 1510447,
+    "sha256": "94391adb848ecf5db1985ba56821d89ef0140214a7aeb4a9ce4c183555656782",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/data/hydroxylation-prestress.json",
+    "status": 200,
+    "bytes": 5924363,
+    "sha256": "1fd127b66cd8efc6b2077666fcc7425a6b90aa8c5e653b8f887e42833372c67b",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/data/reference-1dzi.json",
+    "status": 200,
+    "bytes": 31910,
+    "sha256": "d615f09daf6d503eafbcf5a6ece4b76ff160476327f604c701d1d724c725d938",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/data/reference-1k6f.json",
+    "status": 200,
+    "bytes": 20794,
+    "sha256": "2a83c729606262337826512991ba1108afaf6831860f58ad19bc1195c36ab0cd",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/vendor/three.module.js",
+    "status": 200,
+    "bytes": 603113,
+    "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/vendor/THREE-LICENSE.txt",
+    "status": 200,
+    "bytes": 1081,
+    "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/vendor/PINNED.json",
+    "status": 200,
+    "bytes": 722,
+    "sha256": "c2e8cb25b418ecce6d3d7c1d00454b24de6a935d46d605359c70413564f2e804",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/vendor/three.core.js",
+    "status": 200,
+    "bytes": 1403455,
+    "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+    "matches_candidate": true
+  },
+  {
+    "site": "snt",
+    "file": "explore/vendor/OrbitControls.js",
+    "status": 200,
+    "bytes": 38715,
+    "sha256": "06864a0fcb647730bfbc690b6c25a121199d716a3e299a40158509cbd247c3bf",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "index.html",
+    "status": 200,
+    "bytes": 20536,
+    "sha256": "67be25405dbc7c4132682cef32de432890bcd679b4af697f210bd740fbb20ddf",
+    "matches_candidate": false,
+    "hosted_html_matches_after_exact_cloudflare_challenge_removal": true,
+    "hosting_injected_scripts_removed": 1,
+    "injection_sha256": [
+      "f94ddeeaf152ed8e4217e76696e76feeceff64db0114de1d4f3098be41510cf5"
+    ]
+  },
+  {
+    "site": "openmm",
+    "file": "evidence-lens-data.json",
+    "status": 200,
+    "bytes": 3177,
+    "sha256": "26d4db7b75f5ea0913a7086097006965e00cdb7fc6e5926891d211e89fc9373b",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "spatial-viewer.css",
+    "status": 200,
+    "bytes": 4303,
+    "sha256": "cebd1f9bf0ac43e7bd8d22b817e0583021f481298a05e81cb7680c41b3370df8",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "evidence-lens.js",
+    "status": 200,
+    "bytes": 14875,
+    "sha256": "a945cbf79054b92efc64cc7e5a10db7a46ecc28f75346182c910b12d35c5aab6",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "evidence-lens.css",
+    "status": 200,
+    "bytes": 4738,
+    "sha256": "838ac75e32202e76402a1d42e7ec74344dda5a26c96bf79b2a5ac7da8c7941b7",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "spatial-viewer.js",
+    "status": 200,
+    "bytes": 38956,
+    "sha256": "340edb56635632b0827ee10d75705173c2d078cb06cda5d11d8ec82530a408b2",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/openmm_cuda_20261031T090236Z_bundle.zip.sha256",
+    "status": 200,
+    "bytes": 106,
+    "sha256": "122e6ce07c382f3019fe1e8248ec65fd87c2e5b0d43f3957b0134a55fc62f49a",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/publication_metadata.json",
+    "status": 200,
+    "bytes": 634,
+    "sha256": "453ba50c29be3c6ed2230f9cfe228a519b29e6157d1cdf0fd26804d6b9cab77a",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/openmm_cuda_20261031T090236Z_bundle.zip",
+    "status": 200,
+    "bytes": 14516,
+    "sha256": "d632827765ab25081f43b830c50870acab6a397e02562ee8f49399ba05672e08",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/manifest.json",
+    "status": 200,
+    "bytes": 1935,
+    "sha256": "7075330df529ad8183cfbe6c6e88d6b80d9129fb7725626ae1533df20a09f64b",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/README.txt",
+    "status": 200,
+    "bytes": 3290,
+    "sha256": "7332aa1bdeeef6d67a07417f8bd0c34d8769fddfbac59e089d8ffe67eccfc2c3",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/SHA256SUMS",
+    "status": 200,
+    "bytes": 1187,
+    "sha256": "a1085dcff5f1cf06367180e7dfb688d2ac452b7664a60c16443afffadac82765",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/requirements-lock.txt",
+    "status": 200,
+    "bytes": 253,
+    "sha256": "73abf458fe0eb4fc91d54b20b3e997020bdbced058d789b989b23cb101342025",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/evidence/openmm_cuda_20261031T090236Z.log",
+    "status": 200,
+    "bytes": 9988,
+    "sha256": "9960b3b13b2387f123847b2f024c5802123618b2c3a7686b08b05e1145876d57",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/evidence/execution_tool_checks_unrestricted.json",
+    "status": 200,
+    "bytes": 1050,
+    "sha256": "556249aa781a4cd568383a8ef12e2cf0466883156bfbeca0db49056e33ebede8",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/evidence/openmm_cuda_20261031T090236Z_packages.txt",
+    "status": 200,
+    "bytes": 253,
+    "sha256": "73abf458fe0eb4fc91d54b20b3e997020bdbced058d789b989b23cb101342025",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/evidence/execution_tool_checks.json",
+    "status": 200,
+    "bytes": 4828,
+    "sha256": "6f4a9c84dad7db41017e06e123243f9243c806efed6b4f2bd6a2302507d7cdc0",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/results/openmm_cuda_execution_tool.json",
+    "status": 200,
+    "bytes": 542,
+    "sha256": "7499c1086b93432ab8e054d4195edf7855701badce00475c8968195a0dcee92e",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/results/openmm_cuda_20261031T090236Z.json",
+    "status": 200,
+    "bytes": 2676,
+    "sha256": "125ba97ae704b4f2ebe42311bb21a6be0c63f653e24d4ff5e7f399b1da66155d",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/scripts/run_openmm_cuda_smoke.sh",
+    "status": 200,
+    "bytes": 2023,
+    "sha256": "58de92451540259320317ed7c445edff731485993741ca46cb441f360eb5d914",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "artifacts/scripts/openmm_cuda_smoke.py",
+    "status": 200,
+    "bytes": 4517,
+    "sha256": "84f0c4070472ffda9e18b7942589d687fdd60ff7a96ce751ca1583c4f9d9e26b",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "vendor/three.module.js",
+    "status": 200,
+    "bytes": 603113,
+    "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "vendor/THREE-LICENSE.txt",
+    "status": 200,
+    "bytes": 1081,
+    "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "vendor/PINNED.json",
+    "status": 200,
+    "bytes": 722,
+    "sha256": "c2e8cb25b418ecce6d3d7c1d00454b24de6a935d46d605359c70413564f2e804",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "vendor/three.core.js",
+    "status": 200,
+    "bytes": 1403455,
+    "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+    "matches_candidate": true
+  },
+  {
+    "site": "openmm",
+    "file": "vendor/OrbitControls.js",
+    "status": 200,
+    "bytes": 38715,
+    "sha256": "06864a0fcb647730bfbc690b6c25a121199d716a3e299a40158509cbd247c3bf",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "index.html",
+    "status": 200,
+    "bytes": 10019,
+    "sha256": "4d7d2d95388aa17e7589d6bc4ceb94ad0ce1134f0812c771fc9e6e2abf1e1ca0",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "spatial-viewer.css",
+    "status": 200,
+    "bytes": 4303,
+    "sha256": "cebd1f9bf0ac43e7bd8d22b817e0583021f481298a05e81cb7680c41b3370df8",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "observatory.js",
+    "status": 200,
+    "bytes": 47436,
+    "sha256": "41d2dc833615e0b4476ed6a85823c52eaa5e862a3632fec7223b1f2a6bff05df",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "catalog.json",
+    "status": 200,
+    "bytes": 20139,
+    "sha256": "f6467c4f53243066fede9d1b120bd3863ee4ea54782821fbbd8259f0a94f6cfd",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "observatory.css",
+    "status": 200,
+    "bytes": 12082,
+    "sha256": "ce74db2cf9644389b0c4e3f84d81c54f7b6e36f2486eb4f4e9442c5606b6988a",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "spatial-viewer.js",
+    "status": 200,
+    "bytes": 38956,
+    "sha256": "340edb56635632b0827ee10d75705173c2d078cb06cda5d11d8ec82530a408b2",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/rigidity-audit.json",
+    "status": 200,
+    "bytes": 17579559,
+    "sha256": "1b0bc1ff39df2ce9230d446e99c5c3d00158a4a0b83338ff0de4dbf90032749c",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/organoid-scaffold-pareto.json",
+    "status": 200,
+    "bytes": 539865,
+    "sha256": "9823fd5137ee92a8a7d2cf37ea759efe38358e61256411a49c30a795c69a66a4",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/historical-denominators.json",
+    "status": 200,
+    "bytes": 2621,
+    "sha256": "6e11a17f89e46aa819a15800f273847548d32ede4c326efda5f78b7a89c0aded",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/comparative-evidence-design.json",
+    "status": 200,
+    "bytes": 48933,
+    "sha256": "e5d30b34099e2c8e49d8b87342121e176582c5e070bd0b06422a59ea00f50b45",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/snt-ligand-ensemble.json",
+    "status": 200,
+    "bytes": 6770537,
+    "sha256": "0212859beb7b0f296044923be3b6038ec52990f076e6cb4fed161e27b9ded352",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/collagen-elastin-load-sharing.json",
+    "status": 200,
+    "bytes": 482019,
+    "sha256": "6268d25e7183a29fc85eb82fe99158776dfa657f249792637afd9df4b0fc4298",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/carbonyl-scenarios.json",
+    "status": 200,
+    "bytes": 2520579,
+    "sha256": "5e6bba36daf0911f71fd8c64d23303b6b7e80237eb0cb3e532d82bf1c999f59b",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/martini-pulling-virial.json",
+    "status": 200,
+    "bytes": 4505,
+    "sha256": "bd62b5c319b0ac52f327c254ada9450aaf70e4427d08ff8b13bbd3230b5641ae",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/four-bead-calibration.json",
+    "status": 200,
+    "bytes": 1510447,
+    "sha256": "94391adb848ecf5db1985ba56821d89ef0140214a7aeb4a9ce4c183555656782",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/hydroxylation-prestress.json",
+    "status": 200,
+    "bytes": 5924363,
+    "sha256": "1fd127b66cd8efc6b2077666fcc7425a6b90aa8c5e653b8f887e42833372c67b",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/bonded-particle-bundle.json",
+    "status": 200,
+    "bytes": 927042,
+    "sha256": "5d917a06941d865648b7b459ab0ff1a5f7f7c1b26ea445fb60ebedf6f7781fee",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/junction-angle-controlled.json",
+    "status": 200,
+    "bytes": 14986112,
+    "sha256": "7ab53b397ce78b66df5b74d98c0d1055953f03377daad811661ef3e69bff3c9e",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/cross-scale-provenance.json",
+    "status": 200,
+    "bytes": 3554,
+    "sha256": "035497e043644aa77a092993b4785427a81ee740778d93ac4683bcfc3c21ea57",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/reference-1dzi.json",
+    "status": 200,
+    "bytes": 31910,
+    "sha256": "d615f09daf6d503eafbcf5a6ece4b76ff160476327f604c701d1d724c725d938",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/study-design-and-gates.json",
+    "status": 200,
+    "bytes": 6566,
+    "sha256": "6a2f01ba67cacd0cebba34f37e14446b80e9805f65efd501958699bac267bf08",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/matched-budget-topologies.json",
+    "status": 200,
+    "bytes": 718571,
+    "sha256": "8538f4d6c60eea3ad9f88bad73f03b5eeb51aa83d4db598c0d2c1c3053628507",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/mace-fragments.json",
+    "status": 200,
+    "bytes": 110865,
+    "sha256": "e9be61caac0451fd75a27003e81786bba4ef1a42c87f9ae5ff806cb91ad286b3",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/interface-gripping.json",
+    "status": 200,
+    "bytes": 1246007,
+    "sha256": "b1c6c36fe2f8dd1357e9df865a97f517d38e53ed9b1aee596f17eea54a2a9940",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/setpoint-negative-control.json",
+    "status": 200,
+    "bytes": 4455143,
+    "sha256": "2b3ed267e54c0814cf476ebd9878c60aa6a07c1c97ea0b5cdd8a1002fda3be40",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/decorin-collagen-gag.json",
+    "status": 200,
+    "bytes": 101073,
+    "sha256": "4b07c4b04018259ff511022c0fa59881557be8a883b25a198c23da92ef5ad21a",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/short-crosslink-md.json",
+    "status": 200,
+    "bytes": 7107985,
+    "sha256": "afa4adb71d08084a0400eac24179643117e4f563e3311837c266b44c574d4304",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/degree-controlled-triangles.json",
+    "status": 200,
+    "bytes": 1112490,
+    "sha256": "af37a658d000d0ff27a6188a7ed8bb22a5c7539c9fce7b213906c432d91c158a",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/hne-candidate-precision.json",
+    "status": 200,
+    "bytes": 165733,
+    "sha256": "2152bd77116bc28664367bce00224c6231944fe2a5e2f136e3cea650cbf387dd",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/sliding-stiffness-damage.json",
+    "status": 200,
+    "bytes": 160341,
+    "sha256": "e651bc3f7951d082b2738487cc822d20174295454cf67a1bc88e46a27a84ff1e",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/graph-audit-largest-size-controls.json",
+    "status": 200,
+    "bytes": 288005,
+    "sha256": "669f4c35b15e238b83deeb25719f4f691d0038b30ebfb33593f7c5c05659a336",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/shell-patch-damage.json",
+    "status": 200,
+    "bytes": 5046878,
+    "sha256": "aac481213dbf921c1b07011cc2cc07676e7d617f30d0b6b41050f0a07574d60d",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/controlled-topology-cpu.json",
+    "status": 200,
+    "bytes": 1538555,
+    "sha256": "923afa9d48320798f8ebca01b25ffcd47e3409c8359efe67ee5e7be35501df57",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/finite-attachment.json",
+    "status": 200,
+    "bytes": 906436,
+    "sha256": "b4bfc4237ab1ab3e9c58a4fbe5bb1eca27d83e1c6740edd46761d8bf28f55279",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/coupled-3d-law.json",
+    "status": 200,
+    "bytes": 13902998,
+    "sha256": "9ddbc3406ab167a12268e795849f28034b3e8b3ebf1281aac1a2791df8b491e2",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/wet-transfer-gates.json",
+    "status": 200,
+    "bytes": 110270,
+    "sha256": "9b0cafada8367719efeff0ccb3181e953a19d275d5fc2ffa450d4b1c5f8caee8",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/percolation-rigidity.json",
+    "status": 200,
+    "bytes": 70385,
+    "sha256": "651c71382cb906e3724bfd65324a9c32be8f36d1518c14faec84234a0a4ebcfd",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/junction-ownership.json",
+    "status": 200,
+    "bytes": 394903,
+    "sha256": "564ed59d4618a08f8117b7b7cf7ed377d9d037ec2eef7590f6ddcd8f6f5dec45",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "data/reference-1k6f.json",
+    "status": 200,
+    "bytes": 20794,
+    "sha256": "2a83c729606262337826512991ba1108afaf6831860f58ad19bc1195c36ab0cd",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "vendor/three.module.js",
+    "status": 200,
+    "bytes": 603113,
+    "sha256": "c8211c69345d2e9949dc7a8ac969380497aa0600a5a8ac6a459c8cd02dd9cb8a",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "vendor/THREE-LICENSE.txt",
+    "status": 200,
+    "bytes": 1081,
+    "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "vendor/PINNED.json",
+    "status": 200,
+    "bytes": 722,
+    "sha256": "c2e8cb25b418ecce6d3d7c1d00454b24de6a935d46d605359c70413564f2e804",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "vendor/three.core.js",
+    "status": 200,
+    "bytes": 1403455,
+    "sha256": "eb077d2417f61d3e6d9264c317cabc4ea35769ed6b0ab533067292a550784c20",
+    "matches_candidate": true
+  },
+  {
+    "site": "collagen-studies",
+    "file": "vendor/OrbitControls.js",
+    "status": 200,
+    "bytes": 38715,
+    "sha256": "06864a0fcb647730bfbc690b6c25a121199d716a3e299a40158509cbd247c3bf",
+    "matches_candidate": true
+  }
+]

@@ -1,0 +1,965 @@
+[
+  {
+    "step": 0,
+    "time_ps": 0.0,
+    "kinetic_kJ_mol": 811265.0,
+    "total_energy_kJ_mol": -2634620.0,
+    "conserved_energy_kJ_mol": -2633230.0,
+    "temperature_K": 303.718,
+    "pressure_bar": -1473.46
+  },
+  {
+    "step": 1000,
+    "time_ps": 5.5,
+    "kinetic_kJ_mol": 812213.0,
+    "total_energy_kJ_mol": -2632800.0,
+    "conserved_energy_kJ_mol": -2632870.0,
+    "temperature_K": 304.073,
+    "pressure_bar": -1478.83
+  },
+  {
+    "step": 2000,
+    "time_ps": 11.0,
+    "kinetic_kJ_mol": 810263.0,
+    "total_energy_kJ_mol": -2632310.0,
+    "conserved_energy_kJ_mol": -2632690.0,
+    "temperature_K": 303.343,
+    "pressure_bar": -1476.92
+  },
+  {
+    "step": 3000,
+    "time_ps": 16.5,
+    "kinetic_kJ_mol": 808014.0,
+    "total_energy_kJ_mol": -2634670.0,
+    "conserved_energy_kJ_mol": -2631980.0,
+    "temperature_K": 302.501,
+    "pressure_bar": -1483.67
+  },
+  {
+    "step": 4000,
+    "time_ps": 22.0,
+    "kinetic_kJ_mol": 807356.0,
+    "total_energy_kJ_mol": -2633950.0,
+    "conserved_energy_kJ_mol": -2631710.0,
+    "temperature_K": 302.255,
+    "pressure_bar": -1480.91
+  },
+  {
+    "step": 5000,
+    "time_ps": 27.5,
+    "kinetic_kJ_mol": 808964.0,
+    "total_energy_kJ_mol": -2632580.0,
+    "conserved_energy_kJ_mol": -2632220.0,
+    "temperature_K": 302.857,
+    "pressure_bar": -1469.26
+  },
+  {
+    "step": 6000,
+    "time_ps": 33.0,
+    "kinetic_kJ_mol": 812482.0,
+    "total_energy_kJ_mol": -2629330.0,
+    "conserved_energy_kJ_mol": -2630630.0,
+    "temperature_K": 304.174,
+    "pressure_bar": -1467.59
+  },
+  {
+    "step": 7000,
+    "time_ps": 38.5,
+    "kinetic_kJ_mol": 809236.0,
+    "total_energy_kJ_mol": -2633140.0,
+    "conserved_energy_kJ_mol": -2630060.0,
+    "temperature_K": 302.959,
+    "pressure_bar": -1471.16
+  },
+  {
+    "step": 8000,
+    "time_ps": 44.0,
+    "kinetic_kJ_mol": 812376.0,
+    "total_energy_kJ_mol": -2629770.0,
+    "conserved_energy_kJ_mol": -2629860.0,
+    "temperature_K": 304.134,
+    "pressure_bar": -1482.83
+  },
+  {
+    "step": 9000,
+    "time_ps": 49.5,
+    "kinetic_kJ_mol": 810454.0,
+    "total_energy_kJ_mol": -2636730.0,
+    "conserved_energy_kJ_mol": -2630870.0,
+    "temperature_K": 303.415,
+    "pressure_bar": -1485.67
+  },
+  {
+    "step": 10000,
+    "time_ps": 55.0,
+    "kinetic_kJ_mol": 809735.0,
+    "total_energy_kJ_mol": -2635170.0,
+    "conserved_energy_kJ_mol": -2630970.0,
+    "temperature_K": 303.146,
+    "pressure_bar": -1476.78
+  },
+  {
+    "step": 11000,
+    "time_ps": 60.5,
+    "kinetic_kJ_mol": 811425.0,
+    "total_energy_kJ_mol": -2633980.0,
+    "conserved_energy_kJ_mol": -2631140.0,
+    "temperature_K": 303.778,
+    "pressure_bar": -1473.43
+  },
+  {
+    "step": 12000,
+    "time_ps": 66.0,
+    "kinetic_kJ_mol": 807662.0,
+    "total_energy_kJ_mol": -2633260.0,
+    "conserved_energy_kJ_mol": -2628800.0,
+    "temperature_K": 302.37,
+    "pressure_bar": -1497.21
+  },
+  {
+    "step": 13000,
+    "time_ps": 71.5,
+    "kinetic_kJ_mol": 811505.0,
+    "total_energy_kJ_mol": -2629590.0,
+    "conserved_energy_kJ_mol": -2628320.0,
+    "temperature_K": 303.808,
+    "pressure_bar": -1507.72
+  },
+  {
+    "step": 14000,
+    "time_ps": 77.0,
+    "kinetic_kJ_mol": 809479.0,
+    "total_energy_kJ_mol": -2627170.0,
+    "conserved_energy_kJ_mol": -2627950.0,
+    "temperature_K": 303.05,
+    "pressure_bar": -1497.38
+  },
+  {
+    "step": 15000,
+    "time_ps": 82.5,
+    "kinetic_kJ_mol": 810559.0,
+    "total_energy_kJ_mol": -2626740.0,
+    "conserved_energy_kJ_mol": -2627870.0,
+    "temperature_K": 303.454,
+    "pressure_bar": -1496.46
+  },
+  {
+    "step": 16000,
+    "time_ps": 88.0,
+    "kinetic_kJ_mol": 812300.0,
+    "total_energy_kJ_mol": -2631470.0,
+    "conserved_energy_kJ_mol": -2629960.0,
+    "temperature_K": 304.106,
+    "pressure_bar": -1476.73
+  },
+  {
+    "step": 17000,
+    "time_ps": 93.5,
+    "kinetic_kJ_mol": 808476.0,
+    "total_energy_kJ_mol": -2631870.0,
+    "conserved_energy_kJ_mol": -2628840.0,
+    "temperature_K": 302.674,
+    "pressure_bar": -1482.26
+  },
+  {
+    "step": 18000,
+    "time_ps": 99.0,
+    "kinetic_kJ_mol": 808764.0,
+    "total_energy_kJ_mol": -2639240.0,
+    "conserved_energy_kJ_mol": -2629660.0,
+    "temperature_K": 302.782,
+    "pressure_bar": -1478.26
+  },
+  {
+    "step": 19000,
+    "time_ps": 104.5,
+    "kinetic_kJ_mol": 809547.0,
+    "total_energy_kJ_mol": -2638190.0,
+    "conserved_energy_kJ_mol": -2629000.0,
+    "temperature_K": 303.075,
+    "pressure_bar": -1488.04
+  },
+  {
+    "step": 20000,
+    "time_ps": 110.0,
+    "kinetic_kJ_mol": 809618.0,
+    "total_energy_kJ_mol": -2634920.0,
+    "conserved_energy_kJ_mol": -2628270.0,
+    "temperature_K": 303.102,
+    "pressure_bar": -1491.19
+  },
+  {
+    "step": 21000,
+    "time_ps": 115.5,
+    "kinetic_kJ_mol": 809811.0,
+    "total_energy_kJ_mol": -2639080.0,
+    "conserved_energy_kJ_mol": -2629190.0,
+    "temperature_K": 303.174,
+    "pressure_bar": -1483.55
+  },
+  {
+    "step": 22000,
+    "time_ps": 121.0,
+    "kinetic_kJ_mol": 808857.0,
+    "total_energy_kJ_mol": -2637100.0,
+    "conserved_energy_kJ_mol": -2628520.0,
+    "temperature_K": 302.817,
+    "pressure_bar": -1487.11
+  },
+  {
+    "step": 23000,
+    "time_ps": 126.5,
+    "kinetic_kJ_mol": 808931.0,
+    "total_energy_kJ_mol": -2631800.0,
+    "conserved_energy_kJ_mol": -2627500.0,
+    "temperature_K": 302.845,
+    "pressure_bar": -1485.86
+  },
+  {
+    "step": 24000,
+    "time_ps": 132.0,
+    "kinetic_kJ_mol": 809769.0,
+    "total_energy_kJ_mol": -2627910.0,
+    "conserved_energy_kJ_mol": -2626360.0,
+    "temperature_K": 303.158,
+    "pressure_bar": -1493.51
+  },
+  {
+    "step": 25000,
+    "time_ps": 137.5,
+    "kinetic_kJ_mol": 812320.0,
+    "total_energy_kJ_mol": -2626390.0,
+    "conserved_energy_kJ_mol": -2625840.0,
+    "temperature_K": 304.114,
+    "pressure_bar": -1514.58
+  },
+  {
+    "step": 26000,
+    "time_ps": 143.0,
+    "kinetic_kJ_mol": 807658.0,
+    "total_energy_kJ_mol": -2632780.0,
+    "conserved_energy_kJ_mol": -2626750.0,
+    "temperature_K": 302.368,
+    "pressure_bar": -1497.63
+  },
+  {
+    "step": 27000,
+    "time_ps": 148.5,
+    "kinetic_kJ_mol": 810214.0,
+    "total_energy_kJ_mol": -2630080.0,
+    "conserved_energy_kJ_mol": -2627170.0,
+    "temperature_K": 303.325,
+    "pressure_bar": -1485.33
+  },
+  {
+    "step": 28000,
+    "time_ps": 154.0,
+    "kinetic_kJ_mol": 812341.0,
+    "total_energy_kJ_mol": -2628620.0,
+    "conserved_energy_kJ_mol": -2626760.0,
+    "temperature_K": 304.121,
+    "pressure_bar": -1496.62
+  },
+  {
+    "step": 29000,
+    "time_ps": 159.5,
+    "kinetic_kJ_mol": 810121.0,
+    "total_energy_kJ_mol": -2630300.0,
+    "conserved_energy_kJ_mol": -2627170.0,
+    "temperature_K": 303.29,
+    "pressure_bar": -1486.22
+  },
+  {
+    "step": 30000,
+    "time_ps": 165.0,
+    "kinetic_kJ_mol": 812715.0,
+    "total_energy_kJ_mol": -2628400.0,
+    "conserved_energy_kJ_mol": -2627610.0,
+    "temperature_K": 304.261,
+    "pressure_bar": -1487.23
+  },
+  {
+    "step": 31000,
+    "time_ps": 170.5,
+    "kinetic_kJ_mol": 809027.0,
+    "total_energy_kJ_mol": -2629900.0,
+    "conserved_energy_kJ_mol": -2626000.0,
+    "temperature_K": 302.881,
+    "pressure_bar": -1494.71
+  },
+  {
+    "step": 32000,
+    "time_ps": 176.0,
+    "kinetic_kJ_mol": 809162.0,
+    "total_energy_kJ_mol": -2629190.0,
+    "conserved_energy_kJ_mol": -2626680.0,
+    "temperature_K": 302.931,
+    "pressure_bar": -1483.66
+  },
+  {
+    "step": 33000,
+    "time_ps": 181.5,
+    "kinetic_kJ_mol": 810731.0,
+    "total_energy_kJ_mol": -2629190.0,
+    "conserved_energy_kJ_mol": -2625670.0,
+    "temperature_K": 303.519,
+    "pressure_bar": -1489.83
+  },
+  {
+    "step": 34000,
+    "time_ps": 187.0,
+    "kinetic_kJ_mol": 806557.0,
+    "total_energy_kJ_mol": -2635030.0,
+    "conserved_energy_kJ_mol": -2626270.0,
+    "temperature_K": 301.956,
+    "pressure_bar": -1487.26
+  },
+  {
+    "step": 35000,
+    "time_ps": 192.5,
+    "kinetic_kJ_mol": 807411.0,
+    "total_energy_kJ_mol": -2633240.0,
+    "conserved_energy_kJ_mol": -2625210.0,
+    "temperature_K": 302.276,
+    "pressure_bar": -1499.85
+  },
+  {
+    "step": 36000,
+    "time_ps": 198.0,
+    "kinetic_kJ_mol": 807864.0,
+    "total_energy_kJ_mol": -2636730.0,
+    "conserved_energy_kJ_mol": -2626750.0,
+    "temperature_K": 302.445,
+    "pressure_bar": -1489.64
+  },
+  {
+    "step": 37000,
+    "time_ps": 203.5,
+    "kinetic_kJ_mol": 810559.0,
+    "total_energy_kJ_mol": -2632500.0,
+    "conserved_energy_kJ_mol": -2626390.0,
+    "temperature_K": 303.454,
+    "pressure_bar": -1486.1
+  },
+  {
+    "step": 38000,
+    "time_ps": 209.0,
+    "kinetic_kJ_mol": 811230.0,
+    "total_energy_kJ_mol": -2628830.0,
+    "conserved_energy_kJ_mol": -2625380.0,
+    "temperature_K": 303.705,
+    "pressure_bar": -1487.46
+  },
+  {
+    "step": 39000,
+    "time_ps": 214.5,
+    "kinetic_kJ_mol": 809960.0,
+    "total_energy_kJ_mol": -2634680.0,
+    "conserved_energy_kJ_mol": -2626820.0,
+    "temperature_K": 303.23,
+    "pressure_bar": -1485.87
+  },
+  {
+    "step": 40000,
+    "time_ps": 220.0,
+    "kinetic_kJ_mol": 810291.0,
+    "total_energy_kJ_mol": -2630520.0,
+    "conserved_energy_kJ_mol": -2626030.0,
+    "temperature_K": 303.354,
+    "pressure_bar": -1476.68
+  },
+  {
+    "step": 41000,
+    "time_ps": 225.5,
+    "kinetic_kJ_mol": 809588.0,
+    "total_energy_kJ_mol": -2633700.0,
+    "conserved_energy_kJ_mol": -2626500.0,
+    "temperature_K": 303.091,
+    "pressure_bar": -1481.83
+  },
+  {
+    "step": 42000,
+    "time_ps": 231.0,
+    "kinetic_kJ_mol": 806936.0,
+    "total_energy_kJ_mol": -2633720.0,
+    "conserved_energy_kJ_mol": -2625560.0,
+    "temperature_K": 302.098,
+    "pressure_bar": -1494.13
+  },
+  {
+    "step": 43000,
+    "time_ps": 236.5,
+    "kinetic_kJ_mol": 810000.0,
+    "total_energy_kJ_mol": -2633210.0,
+    "conserved_energy_kJ_mol": -2626140.0,
+    "temperature_K": 303.245,
+    "pressure_bar": -1484.04
+  },
+  {
+    "step": 44000,
+    "time_ps": 242.0,
+    "kinetic_kJ_mol": 811018.0,
+    "total_energy_kJ_mol": -2634010.0,
+    "conserved_energy_kJ_mol": -2626420.0,
+    "temperature_K": 303.626,
+    "pressure_bar": -1489.39
+  },
+  {
+    "step": 45000,
+    "time_ps": 247.5,
+    "kinetic_kJ_mol": 805896.0,
+    "total_energy_kJ_mol": -2634200.0,
+    "conserved_energy_kJ_mol": -2625010.0,
+    "temperature_K": 301.709,
+    "pressure_bar": -1495.51
+  },
+  {
+    "step": 46000,
+    "time_ps": 253.0,
+    "kinetic_kJ_mol": 812691.0,
+    "total_energy_kJ_mol": -2632350.0,
+    "conserved_energy_kJ_mol": -2625620.0,
+    "temperature_K": 304.252,
+    "pressure_bar": -1485.06
+  },
+  {
+    "step": 47000,
+    "time_ps": 258.5,
+    "kinetic_kJ_mol": 810937.0,
+    "total_energy_kJ_mol": -2631580.0,
+    "conserved_energy_kJ_mol": -2624480.0,
+    "temperature_K": 303.596,
+    "pressure_bar": -1498.63
+  },
+  {
+    "step": 48000,
+    "time_ps": 264.0,
+    "kinetic_kJ_mol": 806821.0,
+    "total_energy_kJ_mol": -2632660.0,
+    "conserved_energy_kJ_mol": -2623450.0,
+    "temperature_K": 302.055,
+    "pressure_bar": -1497.75
+  },
+  {
+    "step": 49000,
+    "time_ps": 269.5,
+    "kinetic_kJ_mol": 807818.0,
+    "total_energy_kJ_mol": -2634680.0,
+    "conserved_energy_kJ_mol": -2624470.0,
+    "temperature_K": 302.428,
+    "pressure_bar": -1495.88
+  },
+  {
+    "step": 50000,
+    "time_ps": 275.0,
+    "kinetic_kJ_mol": 807422.0,
+    "total_energy_kJ_mol": -2636010.0,
+    "conserved_energy_kJ_mol": -2624710.0,
+    "temperature_K": 302.28,
+    "pressure_bar": -1483.91
+  },
+  {
+    "step": 51000,
+    "time_ps": 280.5,
+    "kinetic_kJ_mol": 810789.0,
+    "total_energy_kJ_mol": -2629220.0,
+    "conserved_energy_kJ_mol": -2624100.0,
+    "temperature_K": 303.54,
+    "pressure_bar": -1479.95
+  },
+  {
+    "step": 52000,
+    "time_ps": 286.0,
+    "kinetic_kJ_mol": 809810.0,
+    "total_energy_kJ_mol": -2630210.0,
+    "conserved_energy_kJ_mol": -2623830.0,
+    "temperature_K": 303.174,
+    "pressure_bar": -1484.91
+  },
+  {
+    "step": 53000,
+    "time_ps": 291.5,
+    "kinetic_kJ_mol": 810664.0,
+    "total_energy_kJ_mol": -2634390.0,
+    "conserved_energy_kJ_mol": -2625150.0,
+    "temperature_K": 303.493,
+    "pressure_bar": -1476.38
+  },
+  {
+    "step": 54000,
+    "time_ps": 297.0,
+    "kinetic_kJ_mol": 812848.0,
+    "total_energy_kJ_mol": -2628710.0,
+    "conserved_energy_kJ_mol": -2624900.0,
+    "temperature_K": 304.311,
+    "pressure_bar": -1468.34
+  },
+  {
+    "step": 55000,
+    "time_ps": 302.5,
+    "kinetic_kJ_mol": 811684.0,
+    "total_energy_kJ_mol": -2633980.0,
+    "conserved_energy_kJ_mol": -2625070.0,
+    "temperature_K": 303.875,
+    "pressure_bar": -1475.33
+  },
+  {
+    "step": 56000,
+    "time_ps": 308.0,
+    "kinetic_kJ_mol": 808131.0,
+    "total_energy_kJ_mol": -2640540.0,
+    "conserved_energy_kJ_mol": -2625880.0,
+    "temperature_K": 302.545,
+    "pressure_bar": -1468.89
+  },
+  {
+    "step": 57000,
+    "time_ps": 313.5,
+    "kinetic_kJ_mol": 806262.0,
+    "total_energy_kJ_mol": -2636210.0,
+    "conserved_energy_kJ_mol": -2623150.0,
+    "temperature_K": 301.845,
+    "pressure_bar": -1494.69
+  },
+  {
+    "step": 58000,
+    "time_ps": 319.0,
+    "kinetic_kJ_mol": 809410.0,
+    "total_energy_kJ_mol": -2631740.0,
+    "conserved_energy_kJ_mol": -2623070.0,
+    "temperature_K": 303.024,
+    "pressure_bar": -1498.03
+  },
+  {
+    "step": 59000,
+    "time_ps": 324.5,
+    "kinetic_kJ_mol": 809193.0,
+    "total_energy_kJ_mol": -2630700.0,
+    "conserved_energy_kJ_mol": -2623130.0,
+    "temperature_K": 302.943,
+    "pressure_bar": -1489.77
+  },
+  {
+    "step": 60000,
+    "time_ps": 330.0,
+    "kinetic_kJ_mol": 808050.0,
+    "total_energy_kJ_mol": -2631460.0,
+    "conserved_energy_kJ_mol": -2622230.0,
+    "temperature_K": 302.515,
+    "pressure_bar": -1498.58
+  },
+  {
+    "step": 61000,
+    "time_ps": 335.5,
+    "kinetic_kJ_mol": 807181.0,
+    "total_energy_kJ_mol": -2632170.0,
+    "conserved_energy_kJ_mol": -2622960.0,
+    "temperature_K": 302.19,
+    "pressure_bar": -1487.12
+  },
+  {
+    "step": 62000,
+    "time_ps": 341.0,
+    "kinetic_kJ_mol": 811007.0,
+    "total_energy_kJ_mol": -2632280.0,
+    "conserved_energy_kJ_mol": -2624140.0,
+    "temperature_K": 303.622,
+    "pressure_bar": -1476.68
+  },
+  {
+    "step": 63000,
+    "time_ps": 346.5,
+    "kinetic_kJ_mol": 808747.0,
+    "total_energy_kJ_mol": -2636610.0,
+    "conserved_energy_kJ_mol": -2624930.0,
+    "temperature_K": 302.776,
+    "pressure_bar": -1476.63
+  },
+  {
+    "step": 64000,
+    "time_ps": 352.0,
+    "kinetic_kJ_mol": 810334.0,
+    "total_energy_kJ_mol": -2633510.0,
+    "conserved_energy_kJ_mol": -2624120.0,
+    "temperature_K": 303.37,
+    "pressure_bar": -1484.2
+  },
+  {
+    "step": 65000,
+    "time_ps": 357.5,
+    "kinetic_kJ_mol": 807394.0,
+    "total_energy_kJ_mol": -2630650.0,
+    "conserved_energy_kJ_mol": -2622350.0,
+    "temperature_K": 302.269,
+    "pressure_bar": -1496.6
+  },
+  {
+    "step": 66000,
+    "time_ps": 363.0,
+    "kinetic_kJ_mol": 811179.0,
+    "total_energy_kJ_mol": -2628720.0,
+    "conserved_energy_kJ_mol": -2622350.0,
+    "temperature_K": 303.686,
+    "pressure_bar": -1505.64
+  },
+  {
+    "step": 67000,
+    "time_ps": 368.5,
+    "kinetic_kJ_mol": 811523.0,
+    "total_energy_kJ_mol": -2629620.0,
+    "conserved_energy_kJ_mol": -2622790.0,
+    "temperature_K": 303.815,
+    "pressure_bar": -1495.76
+  },
+  {
+    "step": 68000,
+    "time_ps": 374.0,
+    "kinetic_kJ_mol": 810410.0,
+    "total_energy_kJ_mol": -2635580.0,
+    "conserved_energy_kJ_mol": -2624070.0,
+    "temperature_K": 303.398,
+    "pressure_bar": -1489.78
+  },
+  {
+    "step": 69000,
+    "time_ps": 379.5,
+    "kinetic_kJ_mol": 807607.0,
+    "total_energy_kJ_mol": -2637370.0,
+    "conserved_energy_kJ_mol": -2623840.0,
+    "temperature_K": 302.349,
+    "pressure_bar": -1488.18
+  },
+  {
+    "step": 70000,
+    "time_ps": 385.0,
+    "kinetic_kJ_mol": 808302.0,
+    "total_energy_kJ_mol": -2633400.0,
+    "conserved_energy_kJ_mol": -2622440.0,
+    "temperature_K": 302.609,
+    "pressure_bar": -1493.0
+  },
+  {
+    "step": 71000,
+    "time_ps": 390.5,
+    "kinetic_kJ_mol": 811182.0,
+    "total_energy_kJ_mol": -2631780.0,
+    "conserved_energy_kJ_mol": -2623100.0,
+    "temperature_K": 303.687,
+    "pressure_bar": -1487.58
+  },
+  {
+    "step": 72000,
+    "time_ps": 396.0,
+    "kinetic_kJ_mol": 808004.0,
+    "total_energy_kJ_mol": -2635350.0,
+    "conserved_energy_kJ_mol": -2622820.0,
+    "temperature_K": 302.498,
+    "pressure_bar": -1493.02
+  },
+  {
+    "step": 73000,
+    "time_ps": 401.5,
+    "kinetic_kJ_mol": 808792.0,
+    "total_energy_kJ_mol": -2635320.0,
+    "conserved_energy_kJ_mol": -2622950.0,
+    "temperature_K": 302.793,
+    "pressure_bar": -1484.85
+  },
+  {
+    "step": 74000,
+    "time_ps": 407.0,
+    "kinetic_kJ_mol": 807015.0,
+    "total_energy_kJ_mol": -2637620.0,
+    "conserved_energy_kJ_mol": -2622990.0,
+    "temperature_K": 302.127,
+    "pressure_bar": -1491.93
+  },
+  {
+    "step": 75000,
+    "time_ps": 412.5,
+    "kinetic_kJ_mol": 806681.0,
+    "total_energy_kJ_mol": -2640100.0,
+    "conserved_energy_kJ_mol": -2623580.0,
+    "temperature_K": 302.002,
+    "pressure_bar": -1482.19
+  },
+  {
+    "step": 76000,
+    "time_ps": 418.0,
+    "kinetic_kJ_mol": 805089.0,
+    "total_energy_kJ_mol": -2640950.0,
+    "conserved_energy_kJ_mol": -2623830.0,
+    "temperature_K": 301.406,
+    "pressure_bar": -1477.95
+  },
+  {
+    "step": 77000,
+    "time_ps": 423.5,
+    "kinetic_kJ_mol": 811092.0,
+    "total_energy_kJ_mol": -2638970.0,
+    "conserved_energy_kJ_mol": -2625100.0,
+    "temperature_K": 303.654,
+    "pressure_bar": -1465.15
+  },
+  {
+    "step": 78000,
+    "time_ps": 429.0,
+    "kinetic_kJ_mol": 809501.0,
+    "total_energy_kJ_mol": -2640780.0,
+    "conserved_energy_kJ_mol": -2624270.0,
+    "temperature_K": 303.058,
+    "pressure_bar": -1474.24
+  },
+  {
+    "step": 79000,
+    "time_ps": 434.5,
+    "kinetic_kJ_mol": 810349.0,
+    "total_energy_kJ_mol": -2643410.0,
+    "conserved_energy_kJ_mol": -2625510.0,
+    "temperature_K": 303.375,
+    "pressure_bar": -1466.02
+  },
+  {
+    "step": 80000,
+    "time_ps": 440.0,
+    "kinetic_kJ_mol": 808518.0,
+    "total_energy_kJ_mol": -2643280.0,
+    "conserved_energy_kJ_mol": -2625240.0,
+    "temperature_K": 302.69,
+    "pressure_bar": -1466.75
+  },
+  {
+    "step": 81000,
+    "time_ps": 445.5,
+    "kinetic_kJ_mol": 807124.0,
+    "total_energy_kJ_mol": -2640090.0,
+    "conserved_energy_kJ_mol": -2623470.0,
+    "temperature_K": 302.168,
+    "pressure_bar": -1488.39
+  },
+  {
+    "step": 82000,
+    "time_ps": 451.0,
+    "kinetic_kJ_mol": 807920.0,
+    "total_energy_kJ_mol": -2635140.0,
+    "conserved_energy_kJ_mol": -2621650.0,
+    "temperature_K": 302.466,
+    "pressure_bar": -1508.12
+  },
+  {
+    "step": 83000,
+    "time_ps": 456.5,
+    "kinetic_kJ_mol": 807862.0,
+    "total_energy_kJ_mol": -2638420.0,
+    "conserved_energy_kJ_mol": -2622510.0,
+    "temperature_K": 302.444,
+    "pressure_bar": -1494.36
+  },
+  {
+    "step": 84000,
+    "time_ps": 462.0,
+    "kinetic_kJ_mol": 808394.0,
+    "total_energy_kJ_mol": -2643960.0,
+    "conserved_energy_kJ_mol": -2623400.0,
+    "temperature_K": 302.644,
+    "pressure_bar": -1493.15
+  },
+  {
+    "step": 85000,
+    "time_ps": 467.5,
+    "kinetic_kJ_mol": 810140.0,
+    "total_energy_kJ_mol": -2632870.0,
+    "conserved_energy_kJ_mol": -2622250.0,
+    "temperature_K": 303.297,
+    "pressure_bar": -1490.01
+  },
+  {
+    "step": 86000,
+    "time_ps": 473.0,
+    "kinetic_kJ_mol": 812570.0,
+    "total_energy_kJ_mol": -2631880.0,
+    "conserved_energy_kJ_mol": -2622170.0,
+    "temperature_K": 304.207,
+    "pressure_bar": -1494.33
+  },
+  {
+    "step": 87000,
+    "time_ps": 478.5,
+    "kinetic_kJ_mol": 811510.0,
+    "total_energy_kJ_mol": -2628400.0,
+    "conserved_energy_kJ_mol": -2621120.0,
+    "temperature_K": 303.81,
+    "pressure_bar": -1492.18
+  },
+  {
+    "step": 88000,
+    "time_ps": 484.0,
+    "kinetic_kJ_mol": 810660.0,
+    "total_energy_kJ_mol": -2628990.0,
+    "conserved_energy_kJ_mol": -2621300.0,
+    "temperature_K": 303.492,
+    "pressure_bar": -1481.21
+  },
+  {
+    "step": 89000,
+    "time_ps": 489.5,
+    "kinetic_kJ_mol": 809165.0,
+    "total_energy_kJ_mol": -2632530.0,
+    "conserved_energy_kJ_mol": -2621230.0,
+    "temperature_K": 302.932,
+    "pressure_bar": -1487.92
+  },
+  {
+    "step": 90000,
+    "time_ps": 495.0,
+    "kinetic_kJ_mol": 810567.0,
+    "total_energy_kJ_mol": -2632390.0,
+    "conserved_energy_kJ_mol": -2621980.0,
+    "temperature_K": 303.457,
+    "pressure_bar": -1486.33
+  },
+  {
+    "step": 91000,
+    "time_ps": 500.5,
+    "kinetic_kJ_mol": 812440.0,
+    "total_energy_kJ_mol": -2635270.0,
+    "conserved_energy_kJ_mol": -2623780.0,
+    "temperature_K": 304.158,
+    "pressure_bar": -1469.91
+  },
+  {
+    "step": 92000,
+    "time_ps": 506.0,
+    "kinetic_kJ_mol": 812246.0,
+    "total_energy_kJ_mol": -2634410.0,
+    "conserved_energy_kJ_mol": -2623670.0,
+    "temperature_K": 304.086,
+    "pressure_bar": -1472.07
+  },
+  {
+    "step": 93000,
+    "time_ps": 511.5,
+    "kinetic_kJ_mol": 810492.0,
+    "total_energy_kJ_mol": -2637940.0,
+    "conserved_energy_kJ_mol": -2623400.0,
+    "temperature_K": 303.429,
+    "pressure_bar": -1470.71
+  },
+  {
+    "step": 94000,
+    "time_ps": 517.0,
+    "kinetic_kJ_mol": 811317.0,
+    "total_energy_kJ_mol": -2638780.0,
+    "conserved_energy_kJ_mol": -2623540.0,
+    "temperature_K": 303.738,
+    "pressure_bar": -1480.65
+  },
+  {
+    "step": 95000,
+    "time_ps": 522.5,
+    "kinetic_kJ_mol": 812384.0,
+    "total_energy_kJ_mol": -2631710.0,
+    "conserved_energy_kJ_mol": -2622530.0,
+    "temperature_K": 304.137,
+    "pressure_bar": -1470.82
+  },
+  {
+    "step": 96000,
+    "time_ps": 528.0,
+    "kinetic_kJ_mol": 808745.0,
+    "total_energy_kJ_mol": -2635020.0,
+    "conserved_energy_kJ_mol": -2621520.0,
+    "temperature_K": 302.775,
+    "pressure_bar": -1487.22
+  },
+  {
+    "step": 97000,
+    "time_ps": 533.5,
+    "kinetic_kJ_mol": 812993.0,
+    "total_energy_kJ_mol": -2626280.0,
+    "conserved_energy_kJ_mol": -2619200.0,
+    "temperature_K": 304.365,
+    "pressure_bar": -1509.05
+  },
+  {
+    "step": 98000,
+    "time_ps": 539.0,
+    "kinetic_kJ_mol": 807965.0,
+    "total_energy_kJ_mol": -2632230.0,
+    "conserved_energy_kJ_mol": -2619960.0,
+    "temperature_K": 302.483,
+    "pressure_bar": -1492.3
+  },
+  {
+    "step": 99000,
+    "time_ps": 544.5,
+    "kinetic_kJ_mol": 810297.0,
+    "total_energy_kJ_mol": -2631960.0,
+    "conserved_energy_kJ_mol": -2619930.0,
+    "temperature_K": 303.356,
+    "pressure_bar": -1502.02
+  },
+  {
+    "step": 100000,
+    "time_ps": 550.0,
+    "kinetic_kJ_mol": 806422.0,
+    "total_energy_kJ_mol": -2634650.0,
+    "conserved_energy_kJ_mol": -2620330.0,
+    "temperature_K": 301.905,
+    "pressure_bar": -1488.66
+  },
+  {
+    "step": 101000,
+    "time_ps": 555.5,
+    "kinetic_kJ_mol": 810102.0,
+    "total_energy_kJ_mol": -2634180.0,
+    "conserved_energy_kJ_mol": -2616950.0,
+    "temperature_K": 303.283,
+    "pressure_bar": -1487.21
+  },
+  {
+    "step": 102000,
+    "time_ps": 561.0,
+    "kinetic_kJ_mol": 813712.0,
+    "total_energy_kJ_mol": -2628390.0,
+    "conserved_energy_kJ_mol": -2616780.0,
+    "temperature_K": 304.635,
+    "pressure_bar": -1485.97
+  },
+  {
+    "step": 103000,
+    "time_ps": 566.5,
+    "kinetic_kJ_mol": 810144.0,
+    "total_energy_kJ_mol": -2631420.0,
+    "conserved_energy_kJ_mol": -2616570.0,
+    "temperature_K": 303.299,
+    "pressure_bar": -1491.33
+  },
+  {
+    "step": 104000,
+    "time_ps": 572.0,
+    "kinetic_kJ_mol": 811756.0,
+    "total_energy_kJ_mol": -2641890.0,
+    "conserved_energy_kJ_mol": -2619600.0,
+    "temperature_K": 303.902,
+    "pressure_bar": -1469.35
+  },
+  {
+    "step": 105000,
+    "time_ps": 577.5,
+    "kinetic_kJ_mol": 810667.0,
+    "total_energy_kJ_mol": -2631330.0,
+    "conserved_energy_kJ_mol": -2614520.0,
+    "temperature_K": 303.495,
+    "pressure_bar": -1477.16
+  },
+  {
+    "step": 106000,
+    "time_ps": 583.0,
+    "kinetic_kJ_mol": 810762.0,
+    "total_energy_kJ_mol": -2629390.0,
+    "conserved_energy_kJ_mol": -2612750.0,
+    "temperature_K": 303.53,
+    "pressure_bar": -1501.63
+  }
+]

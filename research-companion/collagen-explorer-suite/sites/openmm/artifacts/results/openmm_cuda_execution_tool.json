@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-10-31T08:58:04.768938+00:00",
+  "status": "fail",
+  "test": "harmonic dimer: CUDA vs Reference, then 1000 NVE steps",
+  "biological_validation": false,
+  "fallback_allowed": false,
+  "error": "ModuleNotFoundError: No module named 'openmm'",
+  "traceback": "Traceback (most recent call last):\n  File \"/home/ubuntu/workspace/collagen-md/scripts/openmm_cuda_smoke.py\", line 21, in main\n    import openmm as mm\nModuleNotFoundError: No module named 'openmm'\n",
+  "finished_utc": "2026-10-31T08:58:04.769340+00:00"
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "local_atoms": [
+      462,
+      463
+    ],
+    "connected_constraint_atoms": [
+      462,
+      463
+    ],
+    "connected_constraint_count": 1
+  },
+  {
+    "local_atoms": [
+      883,
+      884
+    ],
+    "connected_constraint_atoms": [
+      883,
+      884
+    ],
+    "connected_constraint_count": 1
+  }
+]

@@ -1,0 +1,152 @@
+[
+  {
+    "site": "architecture",
+    "path": "research-pipeline.zip",
+    "unchanged": true
+  },
+  {
+    "site": "architecture",
+    "path": "demo-model.js",
+    "unchanged": true
+  },
+  {
+    "site": "architecture",
+    "path": "demo-worker.js",
+    "unchanged": true
+  },
+  {
+    "site": "architecture",
+    "path": "collagen-demo.zip",
+    "unchanged": true
+  },
+  {
+    "site": "architecture",
+    "path": "vendor/PINNED.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "original.html",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "martini/failure-report.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "martini/native-precursor-geometries.zip",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "h100/source-checksums.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "h100/results.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "network-sensitivity/summary.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "network-sensitivity/design.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "sliding/provenance.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "sliding/results.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "sliding/forcefield-metadata-erratum.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "sliding/network-validation.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "sliding/network-results.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "sliding/study-source.zip",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "sliding/benchmark-readiness.json",
+    "unchanged": true
+  },
+  {
+    "site": "mechanics",
+    "path": "sliding/molecular-summary.json",
+    "unchanged": true
+  },
+  {
+    "site": "snt",
+    "path": "collagen_hydroxylation_tensegrity.zip",
+    "unchanged": true
+  },
+  {
+    "site": "snt",
+    "path": "collagen_lammps_calibration.zip",
+    "unchanged": true
+  },
+  {
+    "site": "snt",
+    "path": "snt5382_atomistic_pilot.zip",
+    "unchanged": true
+  },
+  {
+    "site": "openmm",
+    "path": "artifacts/publication_metadata.json",
+    "unchanged": true
+  },
+  {
+    "site": "openmm",
+    "path": "artifacts/openmm_cuda_20261031T090236Z_bundle.zip",
+    "unchanged": true
+  },
+  {
+    "site": "openmm",
+    "path": "artifacts/manifest.json",
+    "unchanged": true
+  },
+  {
+    "site": "openmm",
+    "path": "artifacts/evidence/execution_tool_checks_unrestricted.json",
+    "unchanged": true
+  },
+  {
+    "site": "openmm",
+    "path": "artifacts/evidence/execution_tool_checks.json",
+    "unchanged": true
+  },
+  {
+    "site": "openmm",
+    "path": "artifacts/results/openmm_cuda_execution_tool.json",
+    "unchanged": true
+  },
+  {
+    "site": "openmm",
+    "path": "artifacts/results/openmm_cuda_20261031T090236Z.json",
+    "unchanged": true
+  }
+]

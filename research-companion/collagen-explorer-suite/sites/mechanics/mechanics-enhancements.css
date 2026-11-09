@@ -1,0 +1,351 @@
+:root {
+  --me-bg: #0f1d26;
+  --me-panel: #152733;
+  --me-panel-alt: #10202b;
+  --me-border: #294456;
+  --me-teal: #85d5c2;
+  --me-sand: #f3a467;
+  --me-text: #e2edf5;
+  --me-muted: #9aadc2;
+  --me-warn: #e8b574;
+  --me-danger: #e27c7c;
+}
+
+.me-evidence-strip {
+  background: var(--me-panel-alt);
+  border: 1px solid var(--me-border);
+  border-left: 4px solid var(--me-teal);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 0 0 1.25rem 0;
+  color: var(--me-text);
+  font-size: 0.86rem;
+}
+
+.me-strip-header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.me-strip-title {
+  font-weight: 600;
+  color: var(--me-teal);
+  letter-spacing: 0.02em;
+}
+
+.me-strip-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.me-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background: var(--me-panel);
+  border: 1px solid var(--me-border);
+  border-radius: 6px;
+  padding: 0.3rem 0.6rem;
+  color: var(--me-text);
+  text-decoration: none;
+  font-size: 0.8rem;
+  line-height: 1.25;
+  transition: border-color 0.15s ease;
+}
+
+.me-pill:hover,
+.me-pill:focus-visible {
+  border-color: var(--me-teal);
+  outline: none;
+}
+
+.me-badge {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+}
+
+.me-badge-hyp {
+  background: rgba(133, 213, 194, 0.16);
+  color: var(--me-teal);
+}
+
+.me-badge-warn {
+  background: rgba(243, 164, 103, 0.18);
+  color: var(--me-sand);
+}
+
+.me-badge-fail {
+  background: rgba(226, 124, 124, 0.2);
+  color: var(--me-danger);
+}
+
+.me-scope-details {
+  margin-top: 0.5rem;
+  border-top: 1px solid rgba(154, 173, 194, 0.15);
+  padding-top: 0.45rem;
+  color: var(--me-muted);
+}
+
+.me-scope-details summary {
+  cursor: pointer;
+  color: var(--me-sand);
+  font-weight: 500;
+  font-size: 0.81rem;
+}
+
+.me-scope-list {
+  margin: 0.4rem 0 0 1.1rem;
+  padding: 0;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.me-card {
+  background: var(--me-panel);
+  border: 1px solid var(--me-border);
+  border-radius: 10px;
+  padding: 1rem;
+  margin-top: 1.1rem;
+  color: var(--me-text);
+}
+
+.me-card-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.me-card-title {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--me-teal);
+}
+
+.me-card-sub {
+  margin: 0.2rem 0 0 0;
+  font-size: 0.83rem;
+  color: var(--me-muted);
+}
+
+.me-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  align-items: center;
+  margin-bottom: 0.85rem;
+}
+
+.me-control-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.78rem;
+  color: var(--me-muted);
+}
+
+.me-control-group select,
+.me-control-group input[type="range"] {
+  background: var(--me-bg);
+  color: var(--me-text);
+  border: 1px solid var(--me-border);
+  border-radius: 5px;
+  padding: 0.35rem 0.5rem;
+  font-size: 0.84rem;
+}
+
+.me-adhesion-grid {
+  display: grid;
+  grid-template-columns: 1.25fr 1fr;
+  gap: 1rem;
+  align-items: start;
+}
+
+.me-viewer-host {
+  width: 100%;
+  height: 330px;
+  background: var(--me-bg);
+  border: 1px solid var(--me-border);
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.me-readout-box {
+  background: var(--me-panel-alt);
+  border: 1px solid var(--me-border);
+  border-radius: 8px;
+  padding: 0.75rem;
+  font-size: 0.84rem;
+}
+
+.me-kv-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.45rem 0.75rem;
+  margin: 0.5rem 0;
+}
+
+.me-kv {
+  display: flex;
+  flex-direction: column;
+}
+
+.me-kv-label {
+  font-size: 0.74rem;
+  color: var(--me-muted);
+}
+
+.me-kv-val {
+  font-weight: 600;
+  color: var(--me-text);
+  font-variant-numeric: tabular-nums;
+}
+
+.me-bars-wrap {
+  margin-top: 0.75rem;
+  border-top: 1px solid var(--me-border);
+  padding-top: 0.65rem;
+}
+
+.me-bars-grid {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0.25rem;
+  align-items: end;
+  height: 110px;
+  padding-top: 0.5rem;
+}
+
+.me-bar-slot {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  padding: 2px;
+  cursor: pointer;
+  color: var(--me-muted);
+  font-size: 0.7rem;
+}
+
+.me-bar-slot[aria-pressed="true"] {
+  border-color: var(--me-teal);
+  background: rgba(133, 213, 194, 0.1);
+  color: var(--me-text);
+}
+
+.me-bar-slot.me-dimmed {
+  opacity: 0.28;
+}
+
+.me-bar-pair {
+  display: flex;
+  align-items: flex-end;
+  gap: 2px;
+  width: 100%;
+  height: 78px;
+  justify-content: center;
+}
+
+.me-bar-init {
+  width: 42%;
+  background: var(--me-teal);
+  border-radius: 2px 2px 0 0;
+}
+
+.me-bar-late {
+  width: 42%;
+  background: var(--me-sand);
+  border-radius: 2px 2px 0 0;
+}
+
+.me-sep-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin-top: 0.75rem;
+}
+
+.me-note-box {
+  background: var(--me-panel-alt);
+  border: 1px solid var(--me-border);
+  border-radius: 6px;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--me-muted);
+}
+
+.me-note-box strong {
+  color: var(--me-text);
+}
+
+.me-svg-wrap {
+  width: 100%;
+  background: var(--me-bg);
+  border: 1px solid var(--me-border);
+  border-radius: 8px;
+  padding: 0.5rem;
+  box-sizing: border-box;
+}
+
+.me-diag-svg {
+  width: 100%;
+  height: 250px;
+  display: block;
+}
+
+.me-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.81rem;
+  margin-top: 0.6rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.me-table th,
+.me-table td {
+  border: 1px solid var(--me-border);
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+}
+
+.me-table th {
+  background: var(--me-panel-alt);
+  color: var(--me-muted);
+}
+
+.me-error-box {
+  border: 1px solid var(--me-danger);
+  background: rgba(226, 124, 124, 0.1);
+  color: var(--me-text);
+  padding: 0.75rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 780px) {
+  .me-adhesion-grid,
+  .me-sep-grid {
+    grid-template-columns: 1fr;
+  }
+  .me-viewer-host {
+    height: 270px;
+  }
+}

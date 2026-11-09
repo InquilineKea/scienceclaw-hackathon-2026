@@ -1,0 +1,60 @@
+{
+  "baseline55fs": {
+    "last_step": 127273,
+    "last_time_ps": 700.0015,
+    "warnings": [],
+    "max_logged_constraint_rmsd": 2.55826e-06,
+    "runtime_neighbor_changes": [
+      "Changing nstlist from 20 to 50, rlist from 1.156 to 1.271"
+    ],
+    "sampled_final_constraints": [
+      {
+        "atoms": [
+          462,
+          463
+        ],
+        "target_nm": 0.292,
+        "final_GRO_distance_nm": 0.29225160393058564,
+        "precision_note": "GRO coordinates rounded to0.001nm"
+      },
+      {
+        "atoms": [
+          883,
+          884
+        ],
+        "target_nm": 0.27,
+        "final_GRO_distance_nm": 0.26938633966851394,
+        "precision_note": "GRO coordinates rounded to0.001nm"
+      }
+    ]
+  },
+  "conservative2fs": {
+    "last_step": 350000,
+    "last_time_ps": 700.0,
+    "warnings": [],
+    "max_logged_constraint_rmsd": 1.82438e-06,
+    "runtime_neighbor_changes": [
+      "Changing nstlist from 20 to 100, rlist from 1.117 to 1.22"
+    ],
+    "sampled_final_constraints": [
+      {
+        "atoms": [
+          462,
+          463
+        ],
+        "target_nm": 0.292,
+        "final_GRO_distance_nm": 0.29321152774063974,
+        "precision_note": "GRO coordinates rounded to0.001nm"
+      },
+      {
+        "atoms": [
+          883,
+          884
+        ],
+        "target_nm": 0.27,
+        "final_GRO_distance_nm": 0.27032757905918553,
+        "precision_note": "GRO coordinates rounded to0.001nm"
+      }
+    ]
+  }
+}

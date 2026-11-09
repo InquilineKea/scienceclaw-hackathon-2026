@@ -1,0 +1,42 @@
+--- production_preconditioned_v002_supervisor.py
++++ candidate_runner.py
+@@ -1,7 +1,7 @@
+ """Own bounded supervisor. Operates only containers carrying this study's exact label."""
+ import subprocess,json,time,datetime,threading,re,traceback
+ from pathlib import Path
+-p=Path('/tmp/codex-martini3-20261031-01a18fb8');project=p/'benchmark-project';setup=p/'preflight-v003';out=p/'production-preconditioned-v002-45ns';out.mkdir(exist_ok=False)
++p=Path('/tmp/codex-martini3-20261031-01a18fb8');project=p/'benchmark-project';setup=p/'preflight-v003';attempt_id=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%S%fZ');out=p/('production-'+attempt_id);out.mkdir(exist_ok=False)
+ image='nvcr.io/hpc/gromacs@sha256:04d5ac4416523624bbfcb36c85a63fd8a6ac8acf7c2eeb1af89dd03c60d45daf';label='codex.collagen-study=martini3-20261031-01a18fb8';deadline=datetime.datetime(2026,11,1,3,30,tzinfo=datetime.timezone.utc).timestamp();stop=threading.Event();reports=[]
+ def save():
+  (out/'status.json.tmp').write_text(json.dumps({'updated_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'hard_deadline_utc':'2026-11-01T03:30:00Z','requested_ns_per_case':45,'cases':reports,'budget_ceiling_usd':50},indent=2)+'\n');(out/'status.json.tmp').replace(out/'status.json')
+@@ -14,11 +14,11 @@
+    return
+ threading.Thread(target=guard,daemon=True).start()
+ def run(case,stage,args,gpu=False):
+- name='codex-martini-preconditioned-v002-'+case.lower()+'-'+stage
+- cmd=['sudo','-n','docker','create','--name',name,'--label',label,'--pull','never','--network','none','--read-only','--cap-drop','ALL','--security-opt','no-new-privileges','--user','1000:1000','--cpus','16','--memory','32g','--memory-swap','32g','--pids-limit','256','--env','CUDA_CACHE_PATH=/tmp/cuda-cache','--tmpfs','/tmp:rw,noexec,nosuid,nodev,size=1g,mode=1777']
++ name='codex-martini-'+attempt_id.lower()+'-'+case.lower()+'-'+stage
++ cmd=['sudo','-n','docker','create','--name',name,'--label',label,'--pull','never','--network','none','--read-only','--cap-drop','ALL','--security-opt','no-new-privileges','--user','1000:1000','--cpus','16','--memory','32g','--memory-swap','32g','--pids-limit','256','--env','CUDA_CACHE_PATH=/tmp/cuda-cache','--env','GMX_MAXCONSTRWARN=0','--tmpfs','/tmp:rw,noexec,nosuid,nodev,size=1g,mode=1777']
+  for src,dst,ro in [(project,'input',True),(setup,'setup',True),(p/'preconditioned-starts','starts',True),(out,'output',False)]:cmd+=['--mount',f'type=bind,src={src},dst=/{dst}'+(',readonly' if ro else '')]
+  if gpu:cmd+=['--gpus','device=0']
+- cmd+=['--workdir','/input/'+case,'--entrypoint','/usr/local/gromacs/avx_512/bin/gmx',image]+args;cid=subprocess.check_output(cmd,text=True).strip()
++ cmd+=['--workdir','/output/'+case,'--entrypoint','/usr/local/gromacs/avx_512/bin/gmx',image]+args;cid=subprocess.check_output(cmd,text=True).strip()
+  (out/case/(stage+'-container-inspect.json')).write_text(subprocess.check_output(['sudo','-n','docker','inspect',cid],text=True))
+  try:
+   with (out/case/(stage+'.log')).open('w') as f:
+@@ -44,10 +44,12 @@
+   (out/case/'pilot45.mdp').write_text(edit((setup/case/'relative-pairs.mdp').read_text(),changes))
+   rc=run(case,'grompp',['grompp','-f',f'/output/{case}/pilot45.mdp','-c',f'/starts/{case}/pre_1000pN.gro','-r',f'/starts/{case}/pre_1000pN.gro','-p',f'/input/{case}/system.top','-n',f'/setup/{case}/complete.ndx','-o',f'/output/{case}/pilot45.tpr','-po',f'/output/{case}/processed.mdp','-pp',f'/output/{case}/processed.top'])
+   assert rc==0,(case,'grompp failed');record['phase']='launching';save()
+-  rc=run(case,'mdrun',['mdrun','-s',f'/output/{case}/pilot45.tpr','-deffnm',f'/output/{case}/pilot45','-ntmpi','1','-ntomp','8','-nb','gpu','-bonded','gpu','-update','cpu','-maxh','3.35','-cpt','5','-pin','on'],gpu=True)
+-  txt=(out/case/'mdrun.log').read_text();record.update({'phase':'finished','returncode':rc,'end_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'warnings':[l for l in txt.splitlines() if any(s in l for s in ['WARNING','Fatal error','skipped'])]});save()
++  rc=run(case,'mdrun',['mdrun','-s',f'/output/{case}/pilot45.tpr','-deffnm',f'/output/{case}/pilot45','-ntmpi','1','-ntomp','8','-nb','gpu','-bonded','gpu','-update','cpu','-maxh','3.35','-cpt','.2','-pin','on'],gpu=True)
++  txt=(out/case/'mdrun.log').read_text();mainlog=out/case/'pilot45.log'; scientific_log=mainlog.read_text(errors='replace') if mainlog.exists() else ''; warnings=[l for l in (txt+'\n'+scientific_log).splitlines() if any(s in l for s in ['WARNING','Fatal error','skipped','File input/output error'])]; steps=re.findall(r'Step\s+Time\s*\n\s*(\d+)\s+([\d.]+)',scientific_log);last_time=float(steps[-1][1]) if steps else None;phase='failed' if rc or warnings else ('completed' if last_time is not None and last_time>=44999.99 else 'incomplete');record.update({'phase':phase,'returncode':rc,'end_utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'warnings':warnings,'last_logged_time_ps':last_time});save()
+   if rc or record['warnings']:break
+ except BaseException:
+- (out/'supervisor-error.txt').write_text(traceback.format_exc());save();raise
++ (out/'supervisor-error.txt').write_text(traceback.format_exc());
++ if reports:reports[-1]['phase']='failed';reports[-1]['supervisor_exception']=True
++ save();raise
+ finally:
+  stop.set();(out/'supervisor-finished.json').write_text(json.dumps({'utc':datetime.datetime.now(datetime.timezone.utc).isoformat(),'retrieval_and_vm_stop_required':True})+'\n')

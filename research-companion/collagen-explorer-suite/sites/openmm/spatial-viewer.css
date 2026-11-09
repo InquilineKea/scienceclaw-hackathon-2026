@@ -1,0 +1,38 @@
+.sv-root{box-sizing:border-box;width:100%;max-width:100%;min-width:0;background:#ffffff;border:1px solid #cbd5e1;border-radius:8px;overflow:hidden;font-family:inherit;font-size:14px;line-height:1.45;color:#0f172a;display:flex;flex-direction:column}
+.sv-root *,.sv-root *::before,.sv-root *::after{box-sizing:border-box}
+.sv-hidden{display:none!important}
+.sv-header{padding:10px 14px;background:#f8fafc;border-bottom:1px solid #e2e8f0;display:flex;flex-direction:column;gap:4px}
+.sv-title-row{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px}
+.sv-title{font-weight:600;font-size:15px;color:#0f172a}
+.sv-badges{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
+.sv-badge{font-size:12px;font-weight:600;padding:2px 8px;border-radius:999px;background:#ccfbf1;color:#115e59;border:1px solid #99f6e4}
+.sv-badge:empty{display:none}
+.sv-badge-warn{background:#fef3c7;color:#92400e;border-color:#fde68a}
+.sv-caveat{font-size:12.5px;color:#475569}
+.sv-stage{position:relative;width:100%;height:420px;min-height:380px;background:#f8fafc;overflow:hidden}
+@media (max-width:640px){.sv-stage{height:340px;min-height:320px}}
+.sv-canvas-wrap{position:absolute;inset:0;width:100%;height:100%;overflow:hidden}
+.sv-canvas{display:block;width:100%;height:100%;touch-action:none;outline:none}
+.sv-canvas:focus-visible{box-shadow:inset 0 0 0 3px #0d9488}
+.sv-fallback{display:flex;align-items:center;justify-content:center;min-height:220px;height:100%;padding:20px;text-align:center;color:#334155;background:#f1f5f9;font-size:14px;line-height:1.5}
+.sv-hud{position:absolute;inset:10px;pointer-events:none;display:flex;flex-direction:column;justify-content:space-between;gap:8px;z-index:2}
+.sv-toolbar,.sv-legend{pointer-events:auto;display:flex;flex-wrap:wrap;gap:5px;align-items:center;max-width:100%}
+.sv-toolbar{align-self:flex-start;background:rgba(255,255,255,0.92);padding:4px 6px;border-radius:6px;border:1px solid #cbd5e1;box-shadow:0 1px 2px rgba(15,23,42,0.06)}
+.sv-legend{align-self:flex-start;background:rgba(255,255,255,0.92);padding:4px 6px;border-radius:6px;border:1px solid #cbd5e1;max-height:110px;overflow-y:auto}
+.sv-legend:empty{display:none}
+.sv-btn,.sv-chip{appearance:none;font:inherit;font-size:13px;line-height:1.2;padding:5px 9px;border-radius:5px;border:1px solid #cbd5e1;background:#ffffff;color:#0f172a;cursor:pointer;display:inline-flex;align-items:center;gap:5px;transition:background-color 0.12s,border-color 0.12s}
+.sv-btn:hover,.sv-chip:hover{background:#f0fdfa;border-color:#0d9488}
+.sv-btn.sv-active{background:#0d9488;color:#ffffff;border-color:#0f766e;font-weight:600}
+.sv-chip.sv-chip-off{opacity:0.48;background:#f1f5f9;text-decoration:line-through}
+.sv-swatch{display:inline-block;width:10px;height:10px;border-radius:50%;flex-shrink:0}
+.sv-controls{padding:10px 14px;background:#ffffff;border-top:1px solid #e2e8f0;display:flex;flex-direction:column;gap:8px;min-width:0}
+.sv-row{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;min-width:0;max-width:100%}
+.sv-nav-row{justify-content:space-between}
+.sv-nav-group{display:flex;flex-wrap:wrap;align-items:center;gap:6px;min-width:0;max-width:100%}
+.sv-ctrl-label{display:inline-flex;flex-wrap:wrap;align-items:center;gap:6px;font-size:14px;color:#1e293b;font-weight:500;max-width:100%}
+.sv-range{width:105px;max-width:100%;accent-color:#0d9488;cursor:pointer;vertical-align:middle}
+.sv-select{font:inherit;font-size:14px;color:#0f172a;background:#ffffff;border:1px solid #cbd5e1;border-radius:5px;padding:4px 8px;max-width:100%;min-width:0;cursor:pointer}
+.sv-btn:focus-visible,.sv-chip:focus-visible,.sv-select:focus-visible,.sv-range:focus-visible,.sv-ctrl-label input:focus-visible{outline:2px solid #0d9488;outline-offset:2px}
+.sv-mono,.sv-slice-lbl,.sv-inspector{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,monospace;font-variant-numeric:tabular-nums}
+.sv-slice-lbl{font-size:13px;color:#0f766e;background:#f0fdfa;padding:2px 6px;border-radius:4px;border:1px solid #99f6e4;max-width:100%;overflow-wrap:anywhere}
+.sv-inspector{background:#f8fafc;border:1px solid #cbd5e1;border-left:4px solid #0d9488;border-radius:6px;padding:8px 12px;font-size:13px;line-height:1.45;color:#0f172a;white-space:pre-wrap;overflow-wrap:anywhere;min-height:46px;max-width:100%}

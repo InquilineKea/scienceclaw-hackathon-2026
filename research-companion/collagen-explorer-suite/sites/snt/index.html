@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SNT-5382 Research Downloads</title>
+  <meta name="description" content="Download source code, molecular structures and all 36 trajectories from the SNT-5382 ligand-only MD pilot.">
+  <style>
+    :root{color-scheme:light;font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:#153c39;background:#f5f7f3}
+    *{box-sizing:border-box}body{margin:0;padding:clamp(24px,6vw,80px);min-height:100vh;display:grid;place-items:center}
+    main{max-width:740px;padding:clamp(26px,5vw,56px);background:white;border:1px solid #dce5df;border-radius:20px;box-shadow:0 16px 60px #123b3210}
+    .eyebrow{font-size:.8rem;letter-spacing:.12em;text-transform:uppercase;color:#54766e;font-weight:700}
+    h1{font-size:clamp(2rem,5vw,3.2rem);line-height:1.08;letter-spacing:-.04em;margin:.65em 0}
+    p{line-height:1.65;color:#47635c}a{color:#0b6f62;text-underline-offset:4px}
+    .download{display:inline-block;background:#116f61;color:white;padding:16px 23px;border-radius:10px;font-weight:700;text-decoration:none;margin:12px 0}
+    .download:hover{background:#0b554a}.download:focus-visible{outline:3px solid #d39435;outline-offset:4px}
+    .facts{font-size:.9rem;color:#5d766f}.scope{padding:15px 18px;background:#f3f6f0;border-left:3px solid #b88b3f;border-radius:3px;font-size:.92rem;margin-top:24px}
+    code{overflow-wrap:anywhere;font-size:.75rem;display:block;line-height:1.5;color:#64756f}
+  </style>
+<link rel="stylesheet" href="./explore/spatial-viewer.css?v=20261101-r3g"><link rel="stylesheet" href="./molecular-bench.css?v=20261101-r3g"></head>
+<body><nav aria-label="Research explorer additions" style="padding:14px;background:#e7f4f2;color:#134e4a;display:flex;gap:20px;flex-wrap:wrap"><a href="https://inquilinekea.github.io/scienceclaw-hackathon-2026/collagen-studies/">33 saved-study dashboards &amp; 3D molecular viewer</a></nav>
+<main>
+  <div class="eyebrow">ScienceClaw · Reproducible research</div>
+  <h1>SNT-5382 molecular dynamics pilot</h1>
+  <p>The complete reproducibility bundle: simulation and analysis code, initial and final molecular structures, saved trajectories, observables, figures and numerical checks.</p>
+  <p class="facts">36 ligand-only runs · 720 ps total production · ZIP, 6.5 MB</p>
+  <a class="download" href="./snt5382_atomistic_pilot.zip" download>Download complete ZIP ↓</a>
+  <p><a href="https://humanavianaisymbiosis.wordpress.com/snt5382-molecular-dynamics-pilot-crosslink-inhibitors/">Read the public research report →</a></p>
+  <p class="scope">These short, isolated-ligand simulations test conformational sensitivity. They contain no enzyme, explicit water or reactive chemistry and do not predict crosslink inhibition.</p>
+  <p class="facts">SHA-256</p>
+  <code id="checksum">351834632d2b2b40729f132c1bac16e8902e9d030fe1367fb33fd7b1ee698c7a</code>
+<hr style="border:0;border-top:1px solid #dce5df;margin:32px 0">
+  <h2>Collagen hydroxylation &amp; prestress</h2>
+  <p>Explicit-water triple-helix hydroxylation comparisons and a separate tension-stabilized fiber-network benchmark.</p>
+  <p class="facts">12 molecular runs · 216 mechanical conditions · ZIP, 11.2 MB</p>
+  <a class="download" href="./collagen_hydroxylation_tensegrity.zip" download>Download hydroxylation &amp; prestress ZIP ↓</a>
+  <p class="scope">A short structural pilot and a normalized elastic network. The two models are not calibrated to one another; no melting temperature, toughness or tissue-health prediction is claimed.</p>
+  <p class="facts">SHA-256</p>
+  <code>2dfc7e9df9e7d9f2433146f0086d8722f5f6c4e2a9ec1c03c4359e50b49df068</code>
+<section style="margin-top:3rem;border-top:1px solid #ccd9d4;padding-top:2rem"><h2>Atomistic → LAMMPS calibration</h2><p>A first structural transfer from the collagen trajectories to a four-bead segment, with independent replica checks and model force–extension tests.</p><p>12 LAMMPS CPU models · 60 mechanical probes · ZIP, 8.3 MB</p><p><a href="./collagen_lammps_calibration.zip" download>Download LAMMPS calibration ZIP ↓</a></p><p><a href="https://humanavianaisymbiosis.wordpress.com/collagen-atomistic-lammps-calibration-pilot/">Read the calibration report →</a></p><p>Provisional fits from 20 ps atomistic reference windows. No validated fibril/tissue mechanics or Brev GPU execution is claimed.</p><p>SHA-256 <code>625f1ce665c9cdf1e041c1cdd264e7d6ca046baab8ff720d282beae8072cc2f5</code></p></section></main>
+<script type="module" src="./molecular-bench.js?v=20261101-r3g"></script></body>
+</html>

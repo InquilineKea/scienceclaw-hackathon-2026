@@ -1,0 +1,3 @@
+side,seed,density,bending,contrast,law,tau_ratio,cell,architecture,error
+9,4704,0.8,0.03,0,0,0,0,0,nonpositive constrained Hessian
+9,4708,0.8,0.03,0,0,0,0,0,nonpositive constrained Hessian
