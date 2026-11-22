@@ -1,0 +1,25 @@
+{
+ "ff": "ff19SB",
+ "system": "helix",
+ "water": "opc",
+ "n_atoms": 7440,
+ "n_solute": 360,
+ "box_nm": [
+  5.605399528543252,
+  3.297208367818291,
+  3.297208367818291
+ ],
+ "e_initial": -92114.9103530749,
+ "e_minimised": -104713.0344219736,
+ "dt_fs": 4.0,
+ "hydrogen_mass": 3.0,
+ "temperature": 300.0,
+ "charmm_lj_reencoding": null,
+ "save_ps": 0.2,
+ "equil_ps": 10.0,
+ "nonbonded": {
+  "nonbondedCutoff": "0.9 nm"
+ },
+ "openmm": "8.6.1",
+ "seed": 1
+}

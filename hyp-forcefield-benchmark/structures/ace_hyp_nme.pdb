@@ -1,0 +1,57 @@
+REMARK   1 CREATED WITH OPENMM 8.6.1, 2026-11-16
+HETATM    1  CH3 ACE A   1      55.322   4.546   5.856  1.00  0.00           C  
+HETATM    2  H1  ACE A   1      54.839   5.349   5.114  1.00  0.00           H  
+HETATM    3  H2  ACE A   1      54.453   3.726   5.934  1.00  0.00           H  
+HETATM    4  H3  ACE A   1      55.452   5.100   6.909  1.00  0.00           H  
+HETATM    5  C   ACE A   1      56.592   3.649   5.716  1.00  0.00           C  
+HETATM    6  O   ACE A   1      56.681   2.554   6.315  1.00  0.00           O  
+HETATM    7  N   HYP A  20      57.567   4.073   4.884  1.00  0.00           N  
+HETATM    8  CA  HYP A  20      58.779   3.269   4.704  1.00  0.00           C  
+HETATM    9  HA  HYP A  20      58.448   2.243   4.193  1.00  0.00           H  
+HETATM   10  C   HYP A  20      59.443   3.027   6.090  1.00  0.00           C  
+HETATM   11  O   HYP A  20      59.217   3.797   7.032  1.00  0.00           O  
+HETATM   12  CB  HYP A  20      59.645   4.132   3.832  1.00  0.00           C  
+HETATM   13  HB2 HYP A  20      60.285   3.485   3.054  1.00  0.00           H  
+HETATM   14  HB3 HYP A  20      60.495   4.775   4.374  1.00  0.00           H  
+HETATM   15  CG  HYP A  20      58.678   5.056   3.111  1.00  0.00           C  
+HETATM   16  HG  HYP A  20      59.196   6.058   2.717  1.00  0.00           H  
+HETATM   17  CD  HYP A  20      57.653   5.355   4.167  1.00  0.00           C  
+HETATM   18 HD22 HYP A  20      56.706   5.760   3.561  1.00  0.00           H  
+HETATM   19 HD23 HYP A  20      57.939   6.249   4.908  1.00  0.00           H  
+HETATM   20  OD1 HYP A  20      58.034   4.386   2.068  1.00  0.00           O  
+HETATM   21  HD1 HYP A  20      58.503   4.685   1.021  1.00  0.00           H  
+HETATM   22  N   NME A   3      60.250   1.970   6.184  1.00  0.00           N  
+HETATM   23  H   NME A   3      60.464   1.134   5.366  1.00  0.00           H  
+HETATM   24  C   NME A   3      60.989   1.757   7.390  1.00  0.00           C  
+HETATM   25  H1  NME A   3      61.936   2.489   7.444  1.00  0.00           H  
+HETATM   26  H2  NME A   3      60.366   1.850   8.408  1.00  0.00           H  
+HETATM   27  H3  NME A   3      61.438   0.647   7.450  1.00  0.00           H  
+TER      28      NME A   3
+CONECT    1    2    3    4    5
+CONECT    2    1
+CONECT    3    1
+CONECT    4    1
+CONECT    5    1    6    7
+CONECT    6    5
+CONECT    7    8   17    5
+CONECT    8    9    7   10   12
+CONECT    9    8
+CONECT   10    8   11   22
+CONECT   11   10
+CONECT   12   13   14    8   15
+CONECT   13   12
+CONECT   14   12
+CONECT   15   16   12   17   20
+CONECT   16   15
+CONECT   17   18   19   15    7
+CONECT   18   17
+CONECT   19   17
+CONECT   20   21   15
+CONECT   21   20
+CONECT   22   23   24   10
+CONECT   23   22
+CONECT   24   25   26   27   22
+CONECT   25   24
+CONECT   26   24
+CONECT   27   24
+END

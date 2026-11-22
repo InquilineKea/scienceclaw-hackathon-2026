@@ -1,0 +1,11 @@
+<Residues>
+ <Residue name="HYP">
+  <H name="HA" parent="CA"/>
+  <H name="HB2" parent="CB"/>
+  <H name="HB3" parent="CB"/>
+  <H name="HG" parent="CG"/>
+  <H name="HD22" parent="CD"/>
+  <H name="HD23" parent="CD"/>
+  <H name="HD1" parent="OD1"/>
+ </Residue>
+</Residues>

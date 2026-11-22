@@ -1,0 +1,145 @@
+[
+ {
+  "classes": [
+   "C",
+   "N",
+   "CP1",
+   "C",
+   "NH1"
+  ],
+  "old_map": 2,
+  "new_map": 24
+ },
+ {
+  "classes": [
+   "C",
+   "N",
+   "CP1",
+   "C",
+   "N"
+  ],
+  "old_map": 3,
+  "new_map": 25
+ },
+ {
+  "classes": [
+   "C",
+   "NH1",
+   "CT2",
+   "C",
+   "NH1"
+  ],
+  "old_map": 4,
+  "new_map": 26
+ },
+ {
+  "classes": [
+   "C",
+   "NH1",
+   "CT2",
+   "C",
+   "N"
+  ],
+  "old_map": 5,
+  "new_map": 27
+ },
+ {
+  "classes": [
+   "C",
+   "N",
+   "CT2",
+   "C",
+   "N"
+  ],
+  "old_map": 11,
+  "new_map": 28
+ },
+ {
+  "classes": [
+   "CG2O1",
+   "N",
+   "CP1",
+   "C",
+   "NH1"
+  ],
+  "old_map": 16,
+  "new_map": 29
+ },
+ {
+  "classes": [
+   "C",
+   "N",
+   "CP1",
+   "C",
+   "NG2S0"
+  ],
+  "old_map": 17,
+  "new_map": 30
+ },
+ {
+  "classes": [
+   "C",
+   "N",
+   "CP1",
+   "C",
+   "NG2S1"
+  ],
+  "old_map": 18,
+  "new_map": 31
+ },
+ {
+  "classes": [
+   "C",
+   "N",
+   "CP1",
+   "C",
+   "NG2D1"
+  ],
+  "old_map": 19,
+  "new_map": 32
+ },
+ {
+  "classes": [
+   "CG2O1",
+   "NH1",
+   "CT2",
+   "C",
+   "NH1"
+  ],
+  "old_map": 20,
+  "new_map": 33
+ },
+ {
+  "classes": [
+   "C",
+   "NH1",
+   "CT2",
+   "C",
+   "NG2S0"
+  ],
+  "old_map": 21,
+  "new_map": 34
+ },
+ {
+  "classes": [
+   "C",
+   "NH1",
+   "CT2",
+   "C",
+   "NG2S1"
+  ],
+  "old_map": 22,
+  "new_map": 35
+ },
+ {
+  "classes": [
+   "C",
+   "NH1",
+   "CT2",
+   "C",
+   "NG2D1"
+  ],
+  "old_map": 23,
+  "new_map": 36
+ }
+]

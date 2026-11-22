@@ -1,0 +1,194 @@
+{
+ "dft": [
+  {
+   "method": "B3LYP-D3BJ/def2-SVP",
+   "scan": "minimum",
+   "done": 2,
+   "planned": 2
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP",
+   "scan": "ohrot_endo",
+   "done": 2,
+   "planned": 2
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP",
+   "scan": "ohrot_exo",
+   "done": 2,
+   "planned": 2
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP",
+   "scan": "phi_endo",
+   "done": 0,
+   "planned": 8
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP",
+   "scan": "phi_exo",
+   "done": 0,
+   "planned": 7
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP",
+   "scan": "psi_endo",
+   "done": 0,
+   "planned": 12
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP",
+   "scan": "psi_exo",
+   "done": 6,
+   "planned": 12
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP",
+   "scan": "pucker",
+   "done": 13,
+   "planned": 13
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP/ddCOSMO(water)",
+   "scan": "minimum",
+   "done": 2,
+   "planned": 2
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP/ddCOSMO(water)",
+   "scan": "ohrot_endo",
+   "done": 2,
+   "planned": 2
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-SVP/ddCOSMO(water)",
+   "scan": "ohrot_exo",
+   "done": 2,
+   "planned": 2
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-TZVP",
+   "scan": "minimum",
+   "done": 2,
+   "planned": 2
+  },
+  {
+   "method": "B3LYP-D3BJ/def2-TZVP",
+   "scan": "pucker",
+   "done": 1,
+   "planned": 1
+  },
+  {
+   "method": "M06-2X/def2-SVP",
+   "scan": "minimum",
+   "done": 0,
+   "planned": 2
+  },
+  {
+   "method": "M06-2X/def2-SVP",
+   "scan": "pucker",
+   "done": 0,
+   "planned": 1
+  },
+  {
+   "method": "PBE0-D3BJ/def2-SVP",
+   "scan": "minimum",
+   "done": 2,
+   "planned": 2
+  },
+  {
+   "method": "PBE0-D3BJ/def2-SVP",
+   "scan": "pucker",
+   "done": 1,
+   "planned": 1
+  }
+ ],
+ "md": [
+  {
+   "run": "dipeptide_ff99SB",
+   "ps": 300.0,
+   "water": "tip3p",
+   "hyp_transitions": 14
+  },
+  {
+   "run": "dipeptide_ff14SB",
+   "ps": 300.0,
+   "water": "tip3p",
+   "hyp_transitions": 6
+  },
+  {
+   "run": "dipeptide_ff19SB",
+   "ps": 200.0,
+   "water": "opc",
+   "hyp_transitions": 2
+  },
+  {
+   "run": "dipeptide_C36m",
+   "ps": 200.0,
+   "water": "charmm-tip3p",
+   "hyp_transitions": 0
+  },
+  {
+   "run": "dipeptide_C36mGP",
+   "ps": 200.0,
+   "water": "charmm-tip3p",
+   "hyp_transitions": 0
+  },
+  {
+   "run": "dipeptide_endo_ff99SB",
+   "ps": 100.0,
+   "water": "tip3p",
+   "hyp_transitions": 4
+  },
+  {
+   "run": "dipeptide_endo_C36m",
+   "ps": 100.0,
+   "water": "charmm-tip3p",
+   "hyp_transitions": 1
+  },
+  {
+   "run": "helix_ff99SB",
+   "ps": 40.0,
+   "water": "tip3p",
+   "hyp_transitions": 11
+  },
+  {
+   "run": "helix_ff14SB",
+   "ps": 40.0,
+   "water": "tip3p",
+   "hyp_transitions": 2
+  },
+  {
+   "run": "helix_ff19SB",
+   "ps": 40.0,
+   "water": "opc",
+   "hyp_transitions": 1
+  },
+  {
+   "run": "helix_C36m",
+   "ps": 40.0,
+   "water": "charmm-tip3p",
+   "hyp_transitions": 0
+  },
+  {
+   "run": "helix_C36mGP",
+   "ps": 40.0,
+   "water": "charmm-tip3p",
+   "hyp_transitions": 1
+  }
+ ],
+ "proposed": [
+  "DFT B3LYP-D3BJ/def2-SVP phi_endo: 8 points",
+  "DFT B3LYP-D3BJ/def2-SVP phi_exo: 7 points",
+  "DFT B3LYP-D3BJ/def2-SVP psi_endo: 12 points",
+  "DFT B3LYP-D3BJ/def2-SVP psi_exo: 6 points",
+  "DFT M06-2X/def2-SVP minimum: 2 points",
+  "DFT M06-2X/def2-SVP pucker: 1 points",
+  "production MD",
+  "(POG)10",
+  "DFT-level geometries",
+  "wavefunction reference",
+  "C36mGP file comparison",
+  "NMR/SAXS observables"
+ ]
+}
