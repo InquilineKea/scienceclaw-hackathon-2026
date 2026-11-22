@@ -1,0 +1,23 @@
+; AMBER19SB (Amber ff19SB) protein
+;
+; If you are using this force field in GROMACS, please cite
+; Miletic, V. et al. J. Chem. Theory Comput. (2026).
+; <https://doi.org/10.1021/acs.jctc.6c01592>
+;
+; This force field requires the usage of GROMACS version 2026 or later
+;
+
+#define _FF_AMBER
+#define _FF_AMBER19SB
+
+; Enable reordering of atoms in dihedrals to match Amber LEaP
+#define _FF_AMBER_LEAP_ATOM_REORDERING
+
+[ defaults ]
+; nbfunc        comb-rule       gen-pairs       fudgeLJ fudgeQQ
+1 2 yes 0.5 0.83333333333333333
+
+; Include ff parameters
+#include "ffnonbonded.itp"
+#include "ffbonded.itp"
+#include "cmap.itp"

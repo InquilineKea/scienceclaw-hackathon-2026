@@ -1,0 +1,30 @@
+{
+ "ff": "C36m",
+ "system": "helix",
+ "water": "charmm-tip3p",
+ "n_atoms": 5937,
+ "n_solute": 360,
+ "box_nm": [
+  5.605399528543252,
+  3.297208367818291,
+  3.297208367818291
+ ],
+ "e_initial": -21412.397975147,
+ "e_minimised": -90699.36064479896,
+ "dt_fs": 4.0,
+ "hydrogen_mass": 3.0,
+ "temperature": 300.0,
+ "charmm_lj_reencoding": {
+  "n_lj_types_present": 21,
+  "max_rel_dev_from_LB": 2.542737645725613e-15,
+  "n_14_lj": 1011
+ },
+ "save_ps": 0.2,
+ "equil_ps": 10.0,
+ "nonbonded": {
+  "nonbondedCutoff": "1.2 nm",
+  "switchDistance": "1.0 nm"
+ },
+ "openmm": "8.6.1",
+ "seed": 1
+}

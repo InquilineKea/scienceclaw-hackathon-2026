@@ -1,0 +1,25 @@
+{
+ "ff": "ff19SB",
+ "system": "dipeptide",
+ "water": "opc",
+ "n_atoms": 2711,
+ "n_solute": 27,
+ "box_nm": [
+  2.8,
+  2.8,
+  2.8
+ ],
+ "e_initial": -26350.625490770126,
+ "e_minimised": -39394.72457428829,
+ "dt_fs": 4.0,
+ "hydrogen_mass": 3.0,
+ "temperature": 300.0,
+ "charmm_lj_reencoding": null,
+ "save_ps": 0.2,
+ "equil_ps": 10.0,
+ "nonbonded": {
+  "nonbondedCutoff": "0.9 nm"
+ },
+ "openmm": "8.6.1",
+ "seed": 1
+}

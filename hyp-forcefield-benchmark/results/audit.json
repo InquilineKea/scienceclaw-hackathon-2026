@@ -1,0 +1,3078 @@
+{
+ "ff99SB": {
+  "family": "amber",
+  "hyp_atoms": [
+   {
+    "name": "N",
+    "charge": -0.2548,
+    "sigma_nm": 0.325,
+    "eps_kj": 0.71128
+   },
+   {
+    "name": "CA",
+    "charge": 0.0047,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HA",
+    "charge": 0.077,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "C",
+    "charge": 0.5896,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.359824
+   },
+   {
+    "name": "O",
+    "charge": -0.5748,
+    "sigma_nm": 0.295992,
+    "eps_kj": 0.87864
+   },
+   {
+    "name": "CB",
+    "charge": 0.0203,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HB2",
+    "charge": 0.0426,
+    "sigma_nm": 0.264953,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "HB3",
+    "charge": 0.0426,
+    "sigma_nm": 0.264953,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "CG",
+    "charge": 0.04,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HG",
+    "charge": 0.0416,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "CD",
+    "charge": 0.0595,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HD22",
+    "charge": 0.07,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "HD23",
+    "charge": 0.07,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "OD1",
+    "charge": -0.6134,
+    "sigma_nm": 0.306647,
+    "eps_kj": 0.880314
+   },
+   {
+    "name": "HD1",
+    "charge": 0.3851,
+    "sigma_nm": 0.0,
+    "eps_kj": 0.0
+   }
+  ],
+  "hyp_template": {
+   "N": {
+    "type": "HYP99-N",
+    "cls": "N"
+   },
+   "CD": {
+    "type": "HYP99-CD",
+    "cls": "CT"
+   },
+   "HD22": {
+    "type": "HYP99-HD22",
+    "cls": "H1"
+   },
+   "HD23": {
+    "type": "HYP99-HD23",
+    "cls": "H1"
+   },
+   "CG": {
+    "type": "HYP99-CG",
+    "cls": "CT"
+   },
+   "HG": {
+    "type": "HYP99-HG",
+    "cls": "H1"
+   },
+   "OD1": {
+    "type": "HYP99-OD1",
+    "cls": "OH"
+   },
+   "HD1": {
+    "type": "HYP99-HD1",
+    "cls": "HO"
+   },
+   "CB": {
+    "type": "HYP99-CB",
+    "cls": "CT"
+   },
+   "HB2": {
+    "type": "HYP99-HB2",
+    "cls": "HC"
+   },
+   "HB3": {
+    "type": "HYP99-HB3",
+    "cls": "HC"
+   },
+   "CA": {
+    "type": "HYP99-CA",
+    "cls": "CT"
+   },
+   "HA": {
+    "type": "HYP99-HA",
+    "cls": "H1"
+   },
+   "C": {
+    "type": "HYP99-C",
+    "cls": "C"
+   },
+   "O": {
+    "type": "HYP99-O",
+    "cls": "O"
+   }
+  },
+  "net_charge_dipeptide": 0.0,
+  "net_charge_hyp_residue": 0.0,
+  "ring_torsion_terms": {
+   "ACE:C-N-CA-C": [
+    [
+     2,
+     0.0,
+     0.27
+    ],
+    [
+     3,
+     0.0,
+     0.42
+    ]
+   ],
+   "ACE:C-N-CA-CB": [
+    [
+     1,
+     0.0,
+     2.0
+    ],
+    [
+     2,
+     0.0,
+     2.0
+    ],
+    [
+     3,
+     0.0,
+     0.4
+    ]
+   ],
+   "ACE:C-N-CD-CG": [
+    [
+     1,
+     0.0,
+     2.0
+    ],
+    [
+     2,
+     0.0,
+     2.0
+    ],
+    [
+     3,
+     0.0,
+     0.4
+    ]
+   ],
+   "N-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "N-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "N-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CB-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HG-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "OD1-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CA-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CA-CB-CG-CD": [
+    [
+     1,
+     180.0,
+     0.2
+    ],
+    [
+     2,
+     180.0,
+     0.25
+    ],
+    [
+     3,
+     0.0,
+     0.18
+    ]
+   ],
+   "CA-CB-CG-OD1": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HA-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HA-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HA-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "C-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "C-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "C-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CB-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CB-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HB2-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HB2-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB2-CB-CG-OD1": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ],
+   "HB3-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HB3-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB3-CB-CG-OD1": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ],
+   "HG-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HG-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "OD1-CG-CD-HD22": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ],
+   "OD1-CG-CD-HD23": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ]
+  },
+  "psi_bond_torsion_terms": {
+   "N-CA-C-NME:N": [
+    [
+     1,
+     180.0,
+     0.45
+    ],
+    [
+     2,
+     180.0,
+     1.58
+    ],
+    [
+     3,
+     180.0,
+     0.55
+    ]
+   ],
+   "HA-CA-C-O": [
+    [
+     1,
+     0.0,
+     0.8
+    ],
+    [
+     3,
+     180.0,
+     0.08
+    ]
+   ],
+   "CB-CA-C-NME:N": [
+    [
+     1,
+     0.0,
+     0.2
+    ],
+    [
+     2,
+     0.0,
+     0.2
+    ],
+    [
+     3,
+     0.0,
+     0.4
+    ]
+   ]
+  },
+  "n_ring_torsion_terms": 37,
+  "n_improper_centres": 4,
+  "forces": [
+   "CMMotionRemover",
+   "HarmonicAngleForce",
+   "HarmonicBondForce",
+   "NonbondedForce",
+   "PeriodicTorsionForce"
+  ],
+  "exceptions": {
+   "n_excluded_pairs": 76,
+   "n_14_pairs": 63,
+   "coulomb14_scale_min": 0.8333329999999999,
+   "coulomb14_scale_max": 0.8333330000000001,
+   "lj14_eps_scale_min": 0.5,
+   "lj14_eps_scale_max": 0.5
+  },
+  "ring_pairs_fully_excluded": true,
+  "gromacs_crosscheck": {
+   "n_quartets": 68,
+   "n_mismatch": 0,
+   "max_charge_diff": 0.0,
+   "mismatches": []
+  },
+  "torsion_match_kind": {
+   "ACE:C-N-CA-HA": "wildcard",
+   "ACE:C-N-CA-C": "specific",
+   "ACE:C-N-CA-CB": "specific",
+   "ACE:C-N-CD-CG": "specific",
+   "ACE:C-N-CD-HD22": "wildcard",
+   "ACE:C-N-CD-HD23": "wildcard",
+   "N-CA-C-O": "wildcard",
+   "N-CA-C-NME:N": "specific",
+   "N-CA-CB-HB2": "wildcard",
+   "N-CA-CB-HB3": "wildcard",
+   "N-CA-CB-CG": "wildcard",
+   "CA-N-CD-CG": "wildcard",
+   "CA-N-CD-HD22": "wildcard",
+   "CA-N-CD-HD23": "wildcard",
+   "CA-CB-CG-HG": "wildcard",
+   "CA-CB-CG-CD": "specific",
+   "CA-CB-CG-OD1": "wildcard",
+   "HA-CA-C-O": "specific",
+   "HA-CA-C-NME:N": "wildcard",
+   "HA-CA-CB-HB2": "wildcard",
+   "HA-CA-CB-HB3": "wildcard",
+   "HA-CA-CB-CG": "wildcard",
+   "C-CA-CB-HB2": "wildcard",
+   "C-CA-CB-HB3": "wildcard",
+   "C-CA-CB-CG": "wildcard",
+   "CB-CA-C-O": "wildcard",
+   "CB-CA-C-NME:N": "specific",
+   "CB-CG-CD-N": "wildcard",
+   "CB-CG-CD-HD22": "wildcard",
+   "CB-CG-CD-HD23": "wildcard",
+   "CB-CG-OD1-HD1": "specific",
+   "HB2-CB-CG-HG": "wildcard",
+   "HB2-CB-CG-CD": "specific",
+   "HB2-CB-CG-OD1": "specific",
+   "HB3-CB-CG-HG": "wildcard",
+   "HB3-CB-CG-CD": "specific",
+   "HB3-CB-CG-OD1": "specific",
+   "HG-CG-CD-N": "wildcard",
+   "HG-CG-CD-HD22": "wildcard",
+   "HG-CG-CD-HD23": "wildcard",
+   "HG-CG-OD1-HD1": "wildcard",
+   "CD-N-CA-HA": "wildcard",
+   "CD-N-CA-C": "wildcard",
+   "CD-N-CA-CB": "wildcard",
+   "CD-CG-OD1-HD1": "specific",
+   "OD1-CG-CD-N": "wildcard",
+   "OD1-CG-CD-HD22": "specific",
+   "OD1-CG-CD-HD23": "specific"
+  }
+ },
+ "ff14SB": {
+  "family": "amber",
+  "hyp_atoms": [
+   {
+    "name": "N",
+    "charge": -0.2548,
+    "sigma_nm": 0.325,
+    "eps_kj": 0.71128
+   },
+   {
+    "name": "CA",
+    "charge": 0.0047,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HA",
+    "charge": 0.077,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "C",
+    "charge": 0.5896,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.359824
+   },
+   {
+    "name": "O",
+    "charge": -0.5748,
+    "sigma_nm": 0.295992,
+    "eps_kj": 0.87864
+   },
+   {
+    "name": "CB",
+    "charge": 0.0203,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HB2",
+    "charge": 0.0426,
+    "sigma_nm": 0.264953,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "HB3",
+    "charge": 0.0426,
+    "sigma_nm": 0.264953,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "CG",
+    "charge": 0.04,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HG",
+    "charge": 0.0416,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "CD",
+    "charge": 0.0595,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HD22",
+    "charge": 0.07,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "HD23",
+    "charge": 0.07,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "OD1",
+    "charge": -0.6134,
+    "sigma_nm": 0.306647,
+    "eps_kj": 0.880314
+   },
+   {
+    "name": "HD1",
+    "charge": 0.3851,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   }
+  ],
+  "hyp_template": {
+   "N": {
+    "type": "protein-N",
+    "cls": "N"
+   },
+   "CD": {
+    "type": "protein-CT",
+    "cls": "CT"
+   },
+   "HD22": {
+    "type": "protein-H1",
+    "cls": "H1"
+   },
+   "HD23": {
+    "type": "protein-H1",
+    "cls": "H1"
+   },
+   "CG": {
+    "type": "protein-CT",
+    "cls": "CT"
+   },
+   "HG": {
+    "type": "protein-H1",
+    "cls": "H1"
+   },
+   "OD1": {
+    "type": "protein-OH",
+    "cls": "OH"
+   },
+   "HD1": {
+    "type": "protein-HO",
+    "cls": "HO"
+   },
+   "CB": {
+    "type": "protein-CT",
+    "cls": "CT"
+   },
+   "HB2": {
+    "type": "protein-HC",
+    "cls": "HC"
+   },
+   "HB3": {
+    "type": "protein-HC",
+    "cls": "HC"
+   },
+   "CA": {
+    "type": "protein-CX",
+    "cls": "CX"
+   },
+   "HA": {
+    "type": "protein-H1",
+    "cls": "H1"
+   },
+   "C": {
+    "type": "protein-C",
+    "cls": "C"
+   },
+   "O": {
+    "type": "protein-O",
+    "cls": "O"
+   }
+  },
+  "net_charge_dipeptide": 0.0,
+  "net_charge_hyp_residue": 0.0,
+  "ring_torsion_terms": {
+   "ACE:C-N-CA-C": [
+    [
+     2,
+     0.0,
+     0.27
+    ],
+    [
+     3,
+     0.0,
+     0.42
+    ]
+   ],
+   "ACE:C-N-CA-CB": [
+    [
+     1,
+     0.0,
+     2.0
+    ],
+    [
+     2,
+     0.0,
+     1.8
+    ],
+    [
+     3,
+     0.0,
+     0.8
+    ]
+   ],
+   "ACE:C-N-CD-CG": [
+    [
+     1,
+     0.0,
+     2.0
+    ],
+    [
+     2,
+     0.0,
+     2.0
+    ],
+    [
+     3,
+     0.0,
+     0.4
+    ]
+   ],
+   "N-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "N-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "N-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CB-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HG-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "OD1-CG-CD-N": [
+    [
+     2,
+     0.0,
+     1.49
+    ],
+    [
+     3,
+     0.0,
+     0.156
+    ]
+   ],
+   "CA-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CA-CB-CG-CD": [
+    [
+     1,
+     180.0,
+     0.2
+    ],
+    [
+     2,
+     180.0,
+     0.25
+    ],
+    [
+     3,
+     0.0,
+     0.18
+    ]
+   ],
+   "CA-CB-CG-OD1": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HA-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HA-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HA-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "C-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "C-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "C-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CB-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CB-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HB2-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HB2-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB2-CB-CG-OD1": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ],
+   "HB3-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HB3-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB3-CB-CG-OD1": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ],
+   "HG-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HG-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "OD1-CG-CD-HD22": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ],
+   "OD1-CG-CD-HD23": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ]
+  },
+  "psi_bond_torsion_terms": {
+   "N-CA-C-NME:N": [
+    [
+     1,
+     180.0,
+     0.45
+    ],
+    [
+     2,
+     180.0,
+     1.58
+    ],
+    [
+     3,
+     180.0,
+     0.55
+    ]
+   ],
+   "HA-CA-C-O": [
+    [
+     1,
+     0.0,
+     0.8
+    ],
+    [
+     3,
+     180.0,
+     0.08
+    ]
+   ],
+   "CB-CA-C-NME:N": [
+    [
+     1,
+     0.0,
+     0.2
+    ],
+    [
+     2,
+     0.0,
+     0.2
+    ],
+    [
+     3,
+     0.0,
+     0.4
+    ]
+   ]
+  },
+  "n_ring_torsion_terms": 38,
+  "n_improper_centres": 4,
+  "forces": [
+   "CMMotionRemover",
+   "HarmonicAngleForce",
+   "HarmonicBondForce",
+   "NonbondedForce",
+   "PeriodicTorsionForce"
+  ],
+  "exceptions": {
+   "n_excluded_pairs": 76,
+   "n_14_pairs": 63,
+   "coulomb14_scale_min": 0.8333333333333333,
+   "coulomb14_scale_max": 0.8333333333333336,
+   "lj14_eps_scale_min": 0.5,
+   "lj14_eps_scale_max": 0.5
+  },
+  "ring_pairs_fully_excluded": true,
+  "gromacs_crosscheck": {
+   "n_quartets": 68,
+   "n_mismatch": 0,
+   "max_charge_diff": 0.0,
+   "mismatches": []
+  },
+  "torsion_match_kind": {
+   "ACE:C-N-CA-HA": "wildcard",
+   "ACE:C-N-CA-C": "specific",
+   "ACE:C-N-CA-CB": "specific",
+   "ACE:C-N-CD-CG": "specific",
+   "ACE:C-N-CD-HD22": "wildcard",
+   "ACE:C-N-CD-HD23": "wildcard",
+   "N-CA-C-O": "wildcard",
+   "N-CA-C-NME:N": "specific",
+   "N-CA-CB-HB2": "wildcard",
+   "N-CA-CB-HB3": "wildcard",
+   "N-CA-CB-CG": "wildcard",
+   "CA-N-CD-CG": "wildcard",
+   "CA-N-CD-HD22": "wildcard",
+   "CA-N-CD-HD23": "wildcard",
+   "CA-CB-CG-HG": "wildcard",
+   "CA-CB-CG-CD": "specific",
+   "CA-CB-CG-OD1": "wildcard",
+   "HA-CA-C-O": "specific",
+   "HA-CA-C-NME:N": "wildcard",
+   "HA-CA-CB-HB2": "wildcard",
+   "HA-CA-CB-HB3": "wildcard",
+   "HA-CA-CB-CG": "wildcard",
+   "C-CA-CB-HB2": "wildcard",
+   "C-CA-CB-HB3": "wildcard",
+   "C-CA-CB-CG": "wildcard",
+   "CB-CA-C-O": "wildcard",
+   "CB-CA-C-NME:N": "specific",
+   "CB-CG-CD-N": "wildcard",
+   "CB-CG-CD-HD22": "wildcard",
+   "CB-CG-CD-HD23": "wildcard",
+   "CB-CG-OD1-HD1": "specific",
+   "HB2-CB-CG-HG": "wildcard",
+   "HB2-CB-CG-CD": "specific",
+   "HB2-CB-CG-OD1": "specific",
+   "HB3-CB-CG-HG": "wildcard",
+   "HB3-CB-CG-CD": "specific",
+   "HB3-CB-CG-OD1": "specific",
+   "HG-CG-CD-N": "wildcard",
+   "HG-CG-CD-HD22": "wildcard",
+   "HG-CG-CD-HD23": "wildcard",
+   "HG-CG-OD1-HD1": "wildcard",
+   "CD-N-CA-HA": "wildcard",
+   "CD-N-CA-C": "wildcard",
+   "CD-N-CA-CB": "wildcard",
+   "CD-CG-OD1-HD1": "specific",
+   "OD1-CG-CD-N": "specific",
+   "OD1-CG-CD-HD22": "specific",
+   "OD1-CG-CD-HD23": "specific"
+  }
+ },
+ "ff19SB": {
+  "family": "amber",
+  "hyp_atoms": [
+   {
+    "name": "N",
+    "charge": -0.2548,
+    "sigma_nm": 0.325,
+    "eps_kj": 0.71128
+   },
+   {
+    "name": "CA",
+    "charge": 0.0047,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HA",
+    "charge": 0.077,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "C",
+    "charge": 0.5896,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.359824
+   },
+   {
+    "name": "O",
+    "charge": -0.5748,
+    "sigma_nm": 0.295992,
+    "eps_kj": 0.87864
+   },
+   {
+    "name": "CB",
+    "charge": 0.0203,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HB2",
+    "charge": 0.0426,
+    "sigma_nm": 0.264953,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "HB3",
+    "charge": 0.0426,
+    "sigma_nm": 0.264953,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "CG",
+    "charge": 0.04,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HG",
+    "charge": 0.0416,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "CD",
+    "charge": 0.0595,
+    "sigma_nm": 0.339967,
+    "eps_kj": 0.45773
+   },
+   {
+    "name": "HD22",
+    "charge": 0.07,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "HD23",
+    "charge": 0.07,
+    "sigma_nm": 0.247135,
+    "eps_kj": 0.065689
+   },
+   {
+    "name": "OD1",
+    "charge": -0.6134,
+    "sigma_nm": 0.306647,
+    "eps_kj": 0.880314
+   },
+   {
+    "name": "HD1",
+    "charge": 0.3851,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   }
+  ],
+  "hyp_template": {
+   "N": {
+    "type": "cmap-HYP-N",
+    "cls": "protein-N"
+   },
+   "CD": {
+    "type": "protein-CT",
+    "cls": "protein-CT"
+   },
+   "HD22": {
+    "type": "protein-H1",
+    "cls": "protein-H1"
+   },
+   "HD23": {
+    "type": "protein-H1",
+    "cls": "protein-H1"
+   },
+   "CG": {
+    "type": "protein-CT",
+    "cls": "protein-CT"
+   },
+   "HG": {
+    "type": "protein-H1",
+    "cls": "protein-H1"
+   },
+   "OD1": {
+    "type": "protein-OH",
+    "cls": "protein-OH"
+   },
+   "HD1": {
+    "type": "protein-HO",
+    "cls": "protein-HO"
+   },
+   "CB": {
+    "type": "protein-CT",
+    "cls": "protein-CT"
+   },
+   "HB2": {
+    "type": "protein-HC",
+    "cls": "protein-HC"
+   },
+   "HB3": {
+    "type": "protein-HC",
+    "cls": "protein-HC"
+   },
+   "CA": {
+    "type": "cmap-HYP-CA",
+    "cls": "protein-XC"
+   },
+   "HA": {
+    "type": "protein-H1",
+    "cls": "protein-H1"
+   },
+   "C": {
+    "type": "cmap-HYP-C",
+    "cls": "protein-C"
+   },
+   "O": {
+    "type": "protein-O",
+    "cls": "protein-O"
+   }
+  },
+  "net_charge_dipeptide": 0.0,
+  "net_charge_hyp_residue": 0.0,
+  "ring_torsion_terms": {
+   "ACE:C-N-CD-CG": [
+    [
+     1,
+     0.0,
+     2.0
+    ],
+    [
+     2,
+     0.0,
+     2.0
+    ],
+    [
+     3,
+     0.0,
+     0.4
+    ]
+   ],
+   "N-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "N-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "N-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CB-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HG-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "OD1-CG-CD-N": [
+    [
+     2,
+     0.0,
+     1.49
+    ],
+    [
+     3,
+     0.0,
+     0.156
+    ]
+   ],
+   "CA-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CA-CB-CG-CD": [
+    [
+     1,
+     180.0,
+     0.2
+    ],
+    [
+     2,
+     180.0,
+     0.25
+    ],
+    [
+     3,
+     0.0,
+     0.18
+    ]
+   ],
+   "CA-CB-CG-OD1": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HA-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HA-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HA-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "C-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "C-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "C-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CB-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "CB-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HB2-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HB2-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB2-CB-CG-OD1": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ],
+   "HB3-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HB3-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB3-CB-CG-OD1": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ],
+   "HG-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "HG-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.15556
+    ]
+   ],
+   "OD1-CG-CD-HD22": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ],
+   "OD1-CG-CD-HD23": [
+    [
+     1,
+     0.0,
+     0.25
+    ]
+   ]
+  },
+  "psi_bond_torsion_terms": {},
+  "n_ring_torsion_terms": 33,
+  "n_improper_centres": 4,
+  "forces": [
+   "CMAPTorsionForce",
+   "CMMotionRemover",
+   "HarmonicAngleForce",
+   "HarmonicBondForce",
+   "NonbondedForce",
+   "PeriodicTorsionForce"
+  ],
+  "cmap_torsions": [
+   {
+    "centre": "HYP:CA",
+    "map": 10,
+    "grid": 24,
+    "min": -1.9613599999999998,
+    "max": 6.49399,
+    "rms": 2.2803295797303575
+   }
+  ],
+  "exceptions": {
+   "n_excluded_pairs": 76,
+   "n_14_pairs": 63,
+   "coulomb14_scale_min": 0.8333333333333333,
+   "coulomb14_scale_max": 0.8333333333333336,
+   "lj14_eps_scale_min": 0.5,
+   "lj14_eps_scale_max": 0.5
+  },
+  "ring_pairs_fully_excluded": true,
+  "gromacs_crosscheck": {
+   "n_quartets": 68,
+   "n_mismatch": 0,
+   "max_charge_diff": 0.0,
+   "mismatches": []
+  },
+  "torsion_match_kind": {
+   "ACE:C-N-CA-HA": "wildcard",
+   "ACE:C-N-CA-C": "specific",
+   "ACE:C-N-CA-CB": "specific",
+   "ACE:C-N-CD-CG": "specific",
+   "ACE:C-N-CD-HD22": "wildcard",
+   "ACE:C-N-CD-HD23": "wildcard",
+   "N-CA-C-O": "wildcard",
+   "N-CA-C-NME:N": "specific",
+   "N-CA-CB-HB2": "wildcard",
+   "N-CA-CB-HB3": "wildcard",
+   "N-CA-CB-CG": "wildcard",
+   "CA-N-CD-CG": "wildcard",
+   "CA-N-CD-HD22": "wildcard",
+   "CA-N-CD-HD23": "wildcard",
+   "CA-CB-CG-HG": "wildcard",
+   "CA-CB-CG-CD": "specific",
+   "CA-CB-CG-OD1": "wildcard",
+   "HA-CA-C-O": "specific",
+   "HA-CA-C-NME:N": "wildcard",
+   "HA-CA-CB-HB2": "wildcard",
+   "HA-CA-CB-HB3": "wildcard",
+   "HA-CA-CB-CG": "wildcard",
+   "C-CA-CB-HB2": "wildcard",
+   "C-CA-CB-HB3": "wildcard",
+   "C-CA-CB-CG": "wildcard",
+   "CB-CA-C-O": "wildcard",
+   "CB-CA-C-NME:N": "specific",
+   "CB-CG-CD-N": "wildcard",
+   "CB-CG-CD-HD22": "wildcard",
+   "CB-CG-CD-HD23": "wildcard",
+   "CB-CG-OD1-HD1": "specific",
+   "HB2-CB-CG-HG": "wildcard",
+   "HB2-CB-CG-CD": "specific",
+   "HB2-CB-CG-OD1": "specific",
+   "HB3-CB-CG-HG": "wildcard",
+   "HB3-CB-CG-CD": "specific",
+   "HB3-CB-CG-OD1": "specific",
+   "HG-CG-CD-N": "wildcard",
+   "HG-CG-CD-HD22": "wildcard",
+   "HG-CG-CD-HD23": "wildcard",
+   "HG-CG-OD1-HD1": "wildcard",
+   "CD-N-CA-HA": "wildcard",
+   "CD-N-CA-C": "wildcard",
+   "CD-N-CA-CB": "wildcard",
+   "CD-CG-OD1-HD1": "specific",
+   "OD1-CG-CD-N": "specific",
+   "OD1-CG-CD-HD22": "specific",
+   "OD1-CG-CD-HD23": "specific"
+  }
+ },
+ "C36m": {
+  "family": "charmm",
+  "hyp_atoms": [
+   {
+    "name": "N",
+    "charge": -0.29,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "CA",
+    "charge": 0.02,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HA",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "C",
+    "charge": 0.51,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "O",
+    "charge": -0.51,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "CB",
+    "charge": -0.18,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HB2",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HB3",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "CG",
+    "charge": 0.14,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HG",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "CD",
+    "charge": 0.0,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HD22",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HD23",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "OD1",
+    "charge": -0.66,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HD1",
+    "charge": 0.43,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   }
+  ],
+  "hyp_template": {
+   "N": {
+    "type": "HYP-N",
+    "cls": "N"
+   },
+   "CD": {
+    "type": "HYP-CD",
+    "cls": "CP3"
+   },
+   "HD1": {
+    "type": "HYP-HD1",
+    "cls": "HA2"
+   },
+   "HD2": {
+    "type": "HYP-HD2",
+    "cls": "HA2"
+   },
+   "CA": {
+    "type": "HYP-CA",
+    "cls": "CP1"
+   },
+   "HA": {
+    "type": "HYP-HA",
+    "cls": "HB1"
+   },
+   "CB": {
+    "type": "HYP-CB",
+    "cls": "CP2"
+   },
+   "HB1": {
+    "type": "HYP-HB1",
+    "cls": "HA2"
+   },
+   "HB2": {
+    "type": "HYP-HB2",
+    "cls": "HA2"
+   },
+   "CG": {
+    "type": "HYP-CG",
+    "cls": "CP2"
+   },
+   "HG": {
+    "type": "HYP-HG",
+    "cls": "HA1"
+   },
+   "OE": {
+    "type": "HYP-OE",
+    "cls": "OH1"
+   },
+   "HE": {
+    "type": "HYP-HE",
+    "cls": "H"
+   },
+   "C": {
+    "type": "HYP-C",
+    "cls": "C"
+   },
+   "O": {
+    "type": "HYP-O",
+    "cls": "O"
+   }
+  },
+  "net_charge_dipeptide": -0.0,
+  "net_charge_hyp_residue": -0.0,
+  "ring_torsion_terms": {
+   "ACE:C-N-CA-HA": [
+    [
+     3,
+     0.0,
+     0.8
+    ]
+   ],
+   "ACE:C-N-CA-C": [
+    [
+     3,
+     0.0,
+     0.8
+    ]
+   ],
+   "ACE:C-N-CA-CB": [
+    [
+     3,
+     0.0,
+     0.8
+    ]
+   ],
+   "N-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "N-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "N-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "CB-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HG-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "OD1-CG-CD-N": [
+    [
+     1,
+     180.0,
+     2.01
+    ],
+    [
+     2,
+     0.0,
+     2.56
+    ],
+    [
+     3,
+     0.0,
+     2.39
+    ]
+   ],
+   "CA-N-CD-CG": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "CA-N-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "CA-N-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "CA-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "CA-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "CA-CB-CG-OD1": [
+    [
+     1,
+     0.0,
+     0.98
+    ],
+    [
+     2,
+     180.0,
+     0.97
+    ],
+    [
+     3,
+     180.0,
+     0.06
+    ]
+   ],
+   "CD-N-CA-HA": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "HA-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HA-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HA-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "CD-N-CA-C": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "C-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "C-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "C-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "CD-N-CA-CB": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "CB-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "CB-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HB2-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB2-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB2-CB-CG-OD1": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB3-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB3-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB3-CB-CG-OD1": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HG-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HG-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "OD1-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "OD1-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ]
+  },
+  "psi_bond_torsion_terms": {
+   "N-CA-C-O": [
+    [
+     4,
+     0.0,
+     -0.3
+    ]
+   ],
+   "N-CA-C-NME:N": [
+    [
+     1,
+     0.0,
+     0.3
+    ],
+    [
+     4,
+     0.0,
+     -0.3
+    ]
+   ],
+   "HA-CA-C-O": [
+    [
+     1,
+     0.0,
+     0.4
+    ],
+    [
+     2,
+     0.0,
+     0.6
+    ]
+   ],
+   "HA-CA-C-NME:N": [
+    [
+     1,
+     180.0,
+     0.4
+    ],
+    [
+     2,
+     0.0,
+     0.6
+    ]
+   ],
+   "CB-CA-C-O": [
+    [
+     1,
+     180.0,
+     0.4
+    ],
+    [
+     2,
+     0.0,
+     0.6
+    ]
+   ],
+   "CB-CA-C-NME:N": [
+    [
+     1,
+     0.0,
+     0.4
+    ],
+    [
+     2,
+     0.0,
+     0.6
+    ]
+   ]
+  },
+  "n_ring_torsion_terms": 40,
+  "n_improper_centres": 0,
+  "forces": [
+   "CMAPTorsionForce",
+   "CMMotionRemover",
+   "CustomBondForce",
+   "CustomNonbondedForce",
+   "CustomTorsionForce",
+   "HarmonicAngleForce",
+   "HarmonicBondForce",
+   "NonbondedForce",
+   "PeriodicTorsionForce"
+  ],
+  "cmap_torsions": [
+   {
+    "centre": "HYP:CA",
+    "map": 2,
+    "grid": 24,
+    "min": -1.2566,
+    "max": 12.1795,
+    "rms": 4.454222852124587
+   }
+  ],
+  "exceptions": {
+   "n_excluded_pairs": 83,
+   "n_14_pairs": 56,
+   "coulomb14_scale_min": 1.0,
+   "coulomb14_scale_max": 1.0,
+   "lj14_eps_scale_min": null,
+   "lj14_eps_scale_max": null
+  },
+  "ring_pairs_fully_excluded": true
+ },
+ "C36mGP": {
+  "family": "charmm",
+  "hyp_atoms": [
+   {
+    "name": "N",
+    "charge": -0.29,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "CA",
+    "charge": 0.02,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HA",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "C",
+    "charge": 0.51,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "O",
+    "charge": -0.51,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "CB",
+    "charge": -0.18,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HB2",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HB3",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "CG",
+    "charge": 0.14,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HG",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "CD",
+    "charge": 0.0,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HD22",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HD23",
+    "charge": 0.09,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "OD1",
+    "charge": -0.66,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   },
+   {
+    "name": "HD1",
+    "charge": 0.43,
+    "sigma_nm": 1.0,
+    "eps_kj": 0.0
+   }
+  ],
+  "hyp_template": {
+   "N": {
+    "type": "HYP-N",
+    "cls": "N"
+   },
+   "CD": {
+    "type": "HYP-CD",
+    "cls": "CP3"
+   },
+   "HD1": {
+    "type": "HYP-HD1",
+    "cls": "HA2"
+   },
+   "HD2": {
+    "type": "HYP-HD2",
+    "cls": "HA2"
+   },
+   "CA": {
+    "type": "HYP-CA",
+    "cls": "CP1"
+   },
+   "HA": {
+    "type": "HYP-HA",
+    "cls": "HB1"
+   },
+   "CB": {
+    "type": "HYP-CB",
+    "cls": "CP2"
+   },
+   "HB1": {
+    "type": "HYP-HB1",
+    "cls": "HA2"
+   },
+   "HB2": {
+    "type": "HYP-HB2",
+    "cls": "HA2"
+   },
+   "CG": {
+    "type": "HYP-CG",
+    "cls": "CP2"
+   },
+   "HG": {
+    "type": "HYP-HG",
+    "cls": "HA1"
+   },
+   "OE": {
+    "type": "HYP-OE",
+    "cls": "OH1"
+   },
+   "HE": {
+    "type": "HYP-HE",
+    "cls": "H"
+   },
+   "C": {
+    "type": "HYP-C",
+    "cls": "C"
+   },
+   "O": {
+    "type": "HYP-O",
+    "cls": "O"
+   }
+  },
+  "net_charge_dipeptide": -0.0,
+  "net_charge_hyp_residue": -0.0,
+  "ring_torsion_terms": {
+   "ACE:C-N-CA-HA": [
+    [
+     3,
+     0.0,
+     0.8
+    ]
+   ],
+   "ACE:C-N-CA-C": [
+    [
+     3,
+     0.0,
+     0.8
+    ]
+   ],
+   "ACE:C-N-CA-CB": [
+    [
+     3,
+     0.0,
+     0.8
+    ]
+   ],
+   "N-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "N-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "N-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "CB-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HG-CG-CD-N": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "OD1-CG-CD-N": [
+    [
+     1,
+     180.0,
+     2.01
+    ],
+    [
+     2,
+     0.0,
+     2.56
+    ],
+    [
+     3,
+     0.0,
+     2.39
+    ]
+   ],
+   "CA-N-CD-CG": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "CA-N-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "CA-N-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "CA-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "CA-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "CA-CB-CG-OD1": [
+    [
+     1,
+     0.0,
+     0.98
+    ],
+    [
+     2,
+     180.0,
+     0.97
+    ],
+    [
+     3,
+     180.0,
+     0.06
+    ]
+   ],
+   "CD-N-CA-HA": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "HA-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HA-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HA-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "CD-N-CA-C": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "C-CA-CB-HB2": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "C-CA-CB-HB3": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "C-CA-CB-CG": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "CD-N-CA-CB": [
+    [
+     3,
+     0.0,
+     0.1
+    ]
+   ],
+   "CB-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "CB-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HB2-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB2-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB2-CB-CG-OD1": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB3-CB-CG-HG": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB3-CB-CG-CD": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HB3-CB-CG-OD1": [
+    [
+     3,
+     0.0,
+     0.16
+    ]
+   ],
+   "HG-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "HG-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "OD1-CG-CD-HD22": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ],
+   "OD1-CG-CD-HD23": [
+    [
+     3,
+     0.0,
+     0.14
+    ]
+   ]
+  },
+  "psi_bond_torsion_terms": {
+   "N-CA-C-O": [
+    [
+     4,
+     0.0,
+     -0.3
+    ]
+   ],
+   "N-CA-C-NME:N": [
+    [
+     1,
+     0.0,
+     0.3
+    ],
+    [
+     4,
+     0.0,
+     -0.3
+    ]
+   ],
+   "HA-CA-C-O": [
+    [
+     1,
+     0.0,
+     0.4
+    ],
+    [
+     2,
+     0.0,
+     0.6
+    ]
+   ],
+   "HA-CA-C-NME:N": [
+    [
+     1,
+     180.0,
+     0.4
+    ],
+    [
+     2,
+     0.0,
+     0.6
+    ]
+   ],
+   "CB-CA-C-O": [
+    [
+     1,
+     180.0,
+     0.4
+    ],
+    [
+     2,
+     0.0,
+     0.6
+    ]
+   ],
+   "CB-CA-C-NME:N": [
+    [
+     1,
+     0.0,
+     0.4
+    ],
+    [
+     2,
+     0.0,
+     0.6
+    ]
+   ]
+  },
+  "n_ring_torsion_terms": 40,
+  "n_improper_centres": 0,
+  "forces": [
+   "CMAPTorsionForce",
+   "CMMotionRemover",
+   "CustomBondForce",
+   "CustomNonbondedForce",
+   "CustomTorsionForce",
+   "HarmonicAngleForce",
+   "HarmonicBondForce",
+   "NonbondedForce",
+   "PeriodicTorsionForce"
+  ],
+  "cmap_torsions": [
+   {
+    "centre": "HYP:CA",
+    "map": 24,
+    "grid": 24,
+    "min": -0.6283,
+    "max": 6.08975,
+    "rms": 2.2271114260622933
+   }
+  ],
+  "exceptions": {
+   "n_excluded_pairs": 83,
+   "n_14_pairs": 56,
+   "coulomb14_scale_min": 1.0,
+   "coulomb14_scale_max": 1.0,
+   "lj14_eps_scale_min": null,
+   "lj14_eps_scale_max": null
+  },
+  "ring_pairs_fully_excluded": true
+ },
+ "_charmm_cmap_comparison": [
+  {
+   "classes": [
+    "C",
+    "N",
+    "CP1",
+    "C",
+    "N"
+   ],
+   "max_abs_diff_c36_vs_c36m_kJ": 0.0,
+   "c36mGP_over_c36m": 0.5
+  },
+  {
+   "classes": [
+    "C",
+    "N",
+    "CP1",
+    "C",
+    "NH1"
+   ],
+   "max_abs_diff_c36_vs_c36m_kJ": 0.0,
+   "c36mGP_over_c36m": 0.5
+  },
+  {
+   "classes": [
+    "C",
+    "N",
+    "CT2",
+    "C",
+    "N"
+   ],
+   "max_abs_diff_c36_vs_c36m_kJ": 0.0,
+   "c36mGP_over_c36m": 0.5
+  },
+  {
+   "classes": [
+    "C",
+    "NH1",
+    "CT",
+    "C",
+    "NH1"
+   ],
+   "max_abs_diff_c36_vs_c36m_kJ": 13.24282024,
+   "c36mGP_over_c36m": 1.0
+  },
+  {
+   "classes": [
+    "C",
+    "NH1",
+    "CT1",
+    "C",
+    "N"
+   ],
+   "max_abs_diff_c36_vs_c36m_kJ": 7.351099720000002,
+   "c36mGP_over_c36m": 1.0
+  },
+  {
+   "classes": [
+    "C",
+    "NH1",
+    "CT1",
+    "C",
+    "NH1"
+   ],
+   "max_abs_diff_c36_vs_c36m_kJ": 7.351099720000002,
+   "c36mGP_over_c36m": 1.0
+  },
+  {
+   "classes": [
+    "C",
+    "NH1",
+    "CT2",
+    "C",
+    "N"
+   ],
+   "max_abs_diff_c36_vs_c36m_kJ": 0.0,
+   "c36mGP_over_c36m": 0.5
+  },
+  {
+   "classes": [
+    "C",
+    "NH1",
+    "CT2",
+    "C",
+    "NH1"
+   ],
+   "max_abs_diff_c36_vs_c36m_kJ": 0.0,
+   "c36mGP_over_c36m": 0.5
+  }
+ ],
+ "_charmm_hyp_charges_aug15_equals_jul24": true,
+ "_ff19sb_cmap_index": {
+  "ALA": 1,
+  "ARG": 8,
+  "ASH": 15,
+  "ASN": 5,
+  "ASP": 6,
+  "CYM": 10,
+  "CYS": 13,
+  "CYX": 10,
+  "GLH": 14,
+  "GLN": 12,
+  "GLU": 7,
+  "GLY": 0,
+  "HID": 10,
+  "HIE": 10,
+  "HIP": 10,
+  "HYP": 10,
+  "ILE": 4,
+  "LEU": 10,
+  "LYN": 9,
+  "LYS": 9,
+  "MET": 10,
+  "PHE": 10,
+  "PRO": 11,
+  "SER": 2,
+  "THR": 3,
+  "TRP": 10,
+  "TYR": 10,
+  "VAL": 4
+ },
+ "_ff19sb_hyp_cmap_shared_with": [
+  "CYM",
+  "CYX",
+  "HID",
+  "HIE",
+  "HIP",
+  "LEU",
+  "MET",
+  "PHE",
+  "TRP",
+  "TYR"
+ ],
+ "_water_models": {
+  "amber:tip3p": {
+   "file": "amber14/tip3p.xml",
+   "n_sites": 3,
+   "sites": [
+    {
+     "name": "O",
+     "charge": "-0.834",
+     "sigma": "0.31507524065751241",
+     "epsilon": "0.635968"
+    },
+    {
+     "name": "H1",
+     "charge": "0.417",
+     "sigma": "1",
+     "epsilon": "0"
+    },
+    {
+     "name": "H2",
+     "charge": "0.417",
+     "sigma": "1",
+     "epsilon": "0"
+    }
+   ],
+   "ions": [
+    "AL",
+    "Ag",
+    "BA",
+    "BR",
+    "Be",
+    "CA",
+    "CD",
+    "CE",
+    "CL",
+    "CO",
+    "CR",
+    "CS",
+    "CU",
+    "Ce",
+    "Cr",
+    "Dy",
+    "EU",
+    "EU3",
+    "Er",
+    "F",
+    "FE",
+    "FE2",
+    "GD3",
+    "HG",
+    "Hf",
+    "IN",
+    "IOD",
+    "K",
+    "LA",
+    "LI",
+    "LU",
+    "MG",
+    "MN",
+    "NA",
+    "NI",
+    "Nd",
+    "PB",
+    "PD",
+    "PR",
+    "PT",
+    "Pu",
+    "RB",
+    "Ra",
+    "SM",
+    "SR",
+    "Sm",
+    "Sn",
+    "TB",
+    "Th",
+    "Tl",
+    "Tm",
+    "U4+",
+    "V2+",
+    "Y",
+    "YB2",
+    "ZN",
+    "Zr"
+   ],
+   "source": [
+    "parm/frcmod.ionsjc_tip3p",
+    "parm/frcmod.ions234lm_126_tip3p",
+    "lib/atomic_ions.lib",
+    "tip3p.xml"
+   ],
+   "has_separate_LJ_force": false
+  },
+  "amber:opc": {
+   "file": "amber19/opc.xml",
+   "n_sites": 4,
+   "sites": [
+    {
+     "name": "O",
+     "charge": "0",
+     "sigma": "0.3166552081964338",
+     "epsilon": "0.8903586015920001"
+    },
+    {
+     "name": "H1",
+     "charge": "0.679142",
+     "sigma": "0.08908987181403394",
+     "epsilon": "0"
+    },
+    {
+     "name": "H2",
+     "charge": "0.679142",
+     "sigma": "0.08908987181403394",
+     "epsilon": "0"
+    },
+    {
+     "name": "M",
+     "charge": "-1.358284",
+     "sigma": "0.08908987181403394",
+     "epsilon": "0"
+    }
+   ],
+   "ions": [
+    "AG1",
+    "AL",
+    "Ag",
+    "BA",
+    "BR",
+    "Be",
+    "CA",
+    "CD",
+    "CE",
+    "CL",
+    "CO",
+    "CR",
+    "CS",
+    "CU",
+    "CU1",
+    "Ce",
+    "Cr",
+    "Dy",
+    "EU",
+    "EU3",
+    "Er",
+    "F",
+    "FE",
+    "FE2",
+    "GD3",
+    "HG",
+    "Hf",
+    "IN",
+    "IOD",
+    "K",
+    "LA",
+    "LI",
+    "LU",
+    "MG",
+    "MN",
+    "NA",
+    "NI",
+    "Nd",
+    "PB",
+    "PD",
+    "PR",
+    "PT",
+    "Pu",
+    "RB",
+    "Ra",
+    "SM",
+    "SR",
+    "Sm",
+    "Sn",
+    "TB",
+    "TL1",
+    "Th",
+    "Tl",
+    "Tm",
+    "U4+",
+    "V2+",
+    "Y",
+    "YB2",
+    "ZN",
+    "Zr"
+   ],
+   "source": [
+    "parm/frcmod.ionslm_126_opc",
+    "lib/atomic_ions.lib"
+   ],
+   "has_separate_LJ_force": false
+  },
+  "charmm:charmm-tip3p": {
+   "file": "charmm36_2024/water.xml",
+   "n_sites": 3,
+   "sites": [
+    {
+     "name": "OH2",
+     "charge": "-0.834",
+     "sigma": "1.0",
+     "epsilon": "0.0"
+    },
+    {
+     "name": "H1",
+     "charge": "0.417",
+     "sigma": "1.0",
+     "epsilon": "0.0"
+    },
+    {
+     "name": "H2",
+     "charge": "0.417",
+     "sigma": "1.0",
+     "epsilon": "0.0"
+    }
+   ],
+   "ions": [
+    "AG1P",
+    "AG2P",
+    "AL3P",
+    "AU1P",
+    "AU3P",
+    "BAR",
+    "BE2P",
+    "BI3P",
+    "CAL",
+    "CD2",
+    "CE3P",
+    "CES",
+    "CLA",
+    "CO2P",
+    "CO3P",
+    "CR2P",
+    "CR3P",
+    "CU1P",
+    "CU2P",
+    "DY3P",
+    "ER3P",
+    "EU2P",
+    "EU3P",
+    "FE2P",
+    "FE3P",
+    "GA3P",
+    "GD3P",
+    "H2O2",
+    "HG2P",
+    "HO3P",
+    "IN3P",
+    "LA3P",
+    "LIT",
+    "LU3P",
+    "MG",
+    "MN2P",
+    "MN3P",
+    "ND3P",
+    "NI2P",
+    "OH",
+    "PB2P",
+    "PD2P",
+    "PM3P",
+    "POT",
+    "PR3P",
+    "PT2P",
+    "PU3P",
+    "RA2P",
+    "RH3P",
+    "RUB",
+    "SC3P",
+    "SM2P",
+    "SM3P",
+    "SN2P",
+    "SOD",
+    "SR2P",
+    "TB3P",
+    "TI1P",
+    "TI3P",
+    "TL3P",
+    "U3P",
+    "V2P",
+    "V3P",
+    "Y3P",
+    "YB2P",
+    "YB3P",
+    "ZN2"
+   ],
+   "source": [
+    "toppar/toppar_water_ions.str",
+    "toppar/stream/misc/toppar_ions_won.str"
+   ],
+   "has_separate_LJ_force": true
+  }
+ },
+ "_solvent_policy": {
+  "ff99SB": {
+   "validated": [
+    "tip3p"
+   ],
+   "discouraged": [
+    "opc"
+   ]
+  },
+  "ff14SB": {
+   "validated": [
+    "tip3p"
+   ],
+   "discouraged": [
+    "opc"
+   ]
+  },
+  "ff19SB": {
+   "validated": [
+    "opc"
+   ],
+   "discouraged": [
+    "tip3p"
+   ]
+  },
+  "C36m": {
+   "validated": [
+    "charmm-tip3p"
+   ],
+   "discouraged": []
+  },
+  "C36mGP": {
+   "validated": [
+    "charmm-tip3p"
+   ],
+   "discouraged": []
+  }
+ },
+ "_stereo": {
+  "ace_hyp_nme": {
+   "HYP:CA": {
+    "S": 1
+   },
+   "HYP:CG": {
+    "R": 1
+   }
+  },
+  "pog3_triple_helix": {
+   "PRO:CA": {
+    "S": 9
+   },
+   "HYP:CA": {
+    "S": 9
+   },
+   "HYP:CG": {
+    "R": 9
+   }
+  }
+ }
+}

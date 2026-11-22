@@ -1,0 +1,25 @@
+{
+ "ff": "ff99SB",
+ "system": "helix",
+ "water": "tip3p",
+ "n_atoms": 5610,
+ "n_solute": 360,
+ "box_nm": [
+  5.605399528543252,
+  3.297208367818291,
+  3.297208367818291
+ ],
+ "e_initial": -29854.110322478133,
+ "e_minimised": -84448.32671977987,
+ "dt_fs": 4.0,
+ "hydrogen_mass": 3.0,
+ "temperature": 300.0,
+ "charmm_lj_reencoding": null,
+ "save_ps": 0.2,
+ "equil_ps": 10.0,
+ "nonbonded": {
+  "nonbondedCutoff": "0.9 nm"
+ },
+ "openmm": "8.6.1",
+ "seed": 1
+}

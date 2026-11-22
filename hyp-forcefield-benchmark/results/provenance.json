@@ -1,0 +1,100 @@
+{
+ "ff99SB": {
+  "cite": "Hornak 2006 (ff99SB); HYP residue as distributed in GROMACS amber99sb.ff",
+  "derived": true,
+  "derived_note": "HYP template re-encoded from GROMACS amber99sb.ff/aminoacids.rtp into OpenMM XML (OpenMM's amber99sb.xml has no HYP). Types/charges copied verbatim; bonded terms come from the ff99SB class tables. Equivalence to GROMACS ffbonded.itp is unit-tested.",
+  "files": [
+   {
+    "path": "<openmm-8.6.1>/app/data/amber99sb.xml",
+    "sha256": "186f8570413f2ad3efe923578fc53cc895006d50de4b612e9fc58977a914c092"
+   },
+   {
+    "path": "ff/derived/ff99SB_HYP_from_gromacs_rtp.xml",
+    "sha256": "efea42a94fa01279691df01a919cd3b1a1767ec3d22409c394383f12495cf7b9"
+   },
+   {
+    "path": "<openmm-8.6.1>/app/data/amber14/tip3p.xml",
+    "sha256": "3f4b188dbcb6c02863230eaca231e927fb6bf3307ce947d8a50d0f46f6dd83d9"
+   }
+  ],
+  "default_water": "tip3p"
+ },
+ "ff14SB": {
+  "cite": "Maier 2015; OpenMM conversion of AmberTools 17.6 leaprc.protein.ff14SB",
+  "derived": false,
+  "derived_note": null,
+  "files": [
+   {
+    "path": "<openmm-8.6.1>/app/data/amber14/protein.ff14SB.xml",
+    "sha256": "d9f9779c09d67cd5f8bc657692f174ffab14c469dfd06d560ac1899fa7e976b8"
+   },
+   {
+    "path": "<openmm-8.6.1>/app/data/amber14/tip3p.xml",
+    "sha256": "3f4b188dbcb6c02863230eaca231e927fb6bf3307ce947d8a50d0f46f6dd83d9"
+   }
+  ],
+  "default_water": "tip3p"
+ },
+ "ff19SB": {
+  "cite": "Tian 2020; OpenMM conversion of AmberTools 24.8 leaprc.protein.ff19SB",
+  "derived": false,
+  "derived_note": null,
+  "files": [
+   {
+    "path": "<openmm-8.6.1>/app/data/amber19/protein.ff19SB.xml",
+    "sha256": "086bfdb1c05e7d5cb1d330e6c39fab5056a95e89492cdbd3044c746db13e9d09"
+   },
+   {
+    "path": "<openmm-8.6.1>/app/data/amber19/opc.xml",
+    "sha256": "39d6fec3c760b79e36c1e1b8fa53b1c3ff10c343ebcd0729a629e548f792d101"
+   }
+  ],
+  "default_water": "opc"
+ },
+ "C36m": {
+  "cite": "Huang 2017; toppar_c36_jul24 conversions: OpenMM 8.6.1 charmm36_2024.xml (par_all36m_prot.prm) + HYP residue from openmmforcefields charmm36_d_modified.xml (toppar_all36_prot_modify_res.str)",
+  "derived": true,
+  "derived_note": "HYP <Residue> element copied verbatim out of charmm36_d_modified.xml into its own file. Loading the whole modified-residue file is not possible for peptides: it also defines graph-identical DPRO, HZP (hydroxyproline with CGenFF atom types) and an AMGY patch, which OpenMM cannot distinguish from PRO, HYP and ACE. No parameter values are changed; AllowPatch references to patches defined only in that file (AMGY, DMCT) are dropped.",
+  "files": [
+   {
+    "path": "<openmm-8.6.1>/app/data/charmm36_2024.xml",
+    "sha256": "8c004a18f6d4721634fdafdf8642fb735a0b3b6a249c37d751da6635daea35be"
+   },
+   {
+    "path": "ff/derived/charmm36m_HYP_only_from_d_modified.xml",
+    "sha256": "c9ab32da38009771913549ba973df23e3c3620f6725159ff7e42dce915b6a2c6"
+   },
+   {
+    "path": "<openmm-8.6.1>/app/data/charmm36_2024/water.xml",
+    "sha256": "0ba7d58e5f23550bc98197c4f8e3c1ba0507cf9b8863f7631200f4088aeefe98"
+   }
+  ],
+  "default_water": "charmm-tip3p"
+ },
+ "C36mGP": {
+  "cite": "Pantelopulos & Best 2025 definition applied to the C36m files above",
+  "derived": true,
+  "derived_note": "RECONSTRUCTION: CMAP grids whose central C-alpha class is CT2 (Gly) or CP1 (Pro/Hyp) multiplied by 0.5, per the published definition. The authors' own files (Zenodo 10.5281/zenodo.15354101) could not be downloaded here and were NOT compared.",
+  "files": [
+   {
+    "path": "ff/derived/charmm36mGP_protein_cmapGP_x0.5.xml",
+    "sha256": "d5d17688168551a40f56963be66a8625553e5ef33b2093bd3f3f9a27d35264b3"
+   },
+   {
+    "path": "ff/derived/charmm36m_HYP_only_from_d_modified.xml",
+    "sha256": "c9ab32da38009771913549ba973df23e3c3620f6725159ff7e42dce915b6a2c6"
+   },
+   {
+    "path": "<openmm-8.6.1>/app/data/charmm36_2024/water.xml",
+    "sha256": "0ba7d58e5f23550bc98197c4f8e3c1ba0507cf9b8863f7631200f4088aeefe98"
+   }
+  ],
+  "default_water": "charmm-tip3p"
+ },
+ "_structures": {
+  "source": "PDB 1CAG (two GitHub mirrors, coordinate records identical)",
+  "sha256": "d49c21b5e754b8ed2eb0355aa04d7895201b9358502657d923999b714aa9883f",
+  "ace_hyp_nme": "chain A Hyp20 + caps from Pro19/Gly21 backbone atoms",
+  "pog3_triple_helix": "chains A 19-27, B 49-57, C 79-87 (same sequence register) + caps"
+ }
+}

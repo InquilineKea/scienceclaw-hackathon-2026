@@ -1,0 +1,135 @@
+{
+ "criteria": {
+  "dft_pucker_scan_rmse_kcal": {
+   "ff99SB": 0.6638540702911324,
+   "ff14SB": 1.368260521942012,
+   "ff19SB": 1.4675423593161085,
+   "C36m": 2.543614347581549,
+   "C36mGP": 2.1672597472690813
+  },
+  "dft_six_conformer_rmse_kcal": {
+   "ff99SB": 0.8092102649310643,
+   "ff14SB": 0.8965548887247942,
+   "ff19SB": 1.0162224721548212,
+   "C36m": 1.6468295186373203,
+   "C36mGP": 1.3962210148300565
+  },
+  "hyp_endo_abs_err_dipeptide": {
+   "ff99SB": 0.5700000000000001,
+   "ff14SB": 0.03133333333333333,
+   "ff19SB": 0.049999999999999996,
+   "C36m": 0.06,
+   "C36mGP": 0.06
+  },
+  "hyp_endo_abs_err_helix": {
+   "ff99SB": 0.37333333333333335,
+   "ff14SB": 0.02944444444444444,
+   "ff19SB": 0.05111111111111111,
+   "C36m": 0.059444444444444446,
+   "C36mGP": 0.046111111111111144
+  },
+  "pro_endo_abs_err_helix": {
+   "ff99SB": 0.0411111111111111,
+   "ff14SB": 0.009444444444444589,
+   "ff19SB": 0.03555555555555556,
+   "C36m": 0.2933333333333332,
+   "C36mGP": 0.08444444444444438
+  },
+  "backbone_phi_psi_mad_deg_helix": {
+   "ff99SB": 1.9396364205073222,
+   "ff14SB": 1.852963563078821,
+   "ff19SB": 5.139639655022417,
+   "C36m": 11.257147807304099,
+   "C36mGP": 2.1081571415349694
+  }
+ },
+ "unranked": {
+  "dft_psi_scan_rmse_kcal": {
+   "ff99SB": 1.819188688758963,
+   "ff14SB": 1.992066385733313,
+   "ff19SB": 1.6056855712458444,
+   "C36m": 1.9801503585283249,
+   "C36mGP": 1.5733053035876061
+  }
+ },
+ "ranks": {
+  "dft_pucker_scan_rmse_kcal": {
+   "ff99SB": 1.0,
+   "ff14SB": 2.5,
+   "ff19SB": 2.5,
+   "C36mGP": 4.0,
+   "C36m": 5.0
+  },
+  "dft_six_conformer_rmse_kcal": {
+   "ff99SB": 1.5,
+   "ff14SB": 1.5,
+   "ff19SB": 3.0,
+   "C36mGP": 4.0,
+   "C36m": 5.0
+  },
+  "hyp_endo_abs_err_dipeptide": {
+   "ff14SB": 1.5,
+   "ff19SB": 1.5,
+   "C36m": 3.5,
+   "C36mGP": 3.5,
+   "ff99SB": 5.0
+  },
+  "hyp_endo_abs_err_helix": {
+   "ff14SB": 1.5,
+   "C36mGP": 1.5,
+   "ff19SB": 3.5,
+   "C36m": 3.5,
+   "ff99SB": 5.0
+  },
+  "pro_endo_abs_err_helix": {
+   "ff14SB": 1.0,
+   "ff19SB": 2.5,
+   "ff99SB": 2.5,
+   "C36mGP": 4.0,
+   "C36m": 5.0
+  },
+  "backbone_phi_psi_mad_deg_helix": {
+   "ff14SB": 2.0,
+   "ff99SB": 2.0,
+   "C36mGP": 2.0,
+   "ff19SB": 4.0,
+   "C36m": 5.0
+  }
+ },
+ "mean_rank": {
+  "ff99SB": 2.8333333333333335,
+  "ff14SB": 1.6666666666666667,
+  "ff19SB": 2.8333333333333335,
+  "C36m": 4.5,
+  "C36mGP": 3.1666666666666665
+ },
+ "mean_rank_dft_only": {
+  "ff99SB": 1.25,
+  "ff14SB": 2.0,
+  "ff19SB": 2.75,
+  "C36m": 5.0,
+  "C36mGP": 4.0
+ },
+ "mean_rank_experiment_only": {
+  "ff99SB": 3.625,
+  "ff14SB": 1.5,
+  "ff19SB": 2.875,
+  "C36m": 4.25,
+  "C36mGP": 2.75
+ },
+ "order": [
+  "ff14SB",
+  "ff99SB",
+  "ff19SB",
+  "C36mGP",
+  "C36m"
+ ],
+ "tie_tolerances": {
+  "dft_pucker_scan_rmse_kcal": 0.1,
+  "dft_six_conformer_rmse_kcal": 0.1,
+  "hyp_endo_abs_err_dipeptide": 0.02,
+  "hyp_endo_abs_err_helix": 0.02,
+  "pro_endo_abs_err_helix": 0.02,
+  "backbone_phi_psi_mad_deg_helix": 0.5
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "ff": "C36m",
+ "system": "dipeptide_endo",
+ "water": "charmm-tip3p",
+ "n_atoms": 2097,
+ "n_solute": 27,
+ "box_nm": [
+  2.8,
+  2.8,
+  2.8
+ ],
+ "e_initial": -10687.031233118489,
+ "e_minimised": -34371.81251400206,
+ "dt_fs": 4.0,
+ "hydrogen_mass": 3.0,
+ "temperature": 300.0,
+ "charmm_lj_reencoding": {
+  "n_lj_types_present": 15,
+  "max_rel_dev_from_LB": 2.542737645725613e-15,
+  "n_14_lj": 63
+ },
+ "save_ps": 0.2,
+ "equil_ps": 10.0,
+ "nonbonded": {
+  "nonbondedCutoff": "1.2 nm",
+  "switchDistance": "1.0 nm"
+ },
+ "openmm": "8.6.1",
+ "seed": 1
+}
