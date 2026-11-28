@@ -629,7 +629,7 @@ def run_ga(P, tag, seed, reps):
 BASELINE_Z = [3.2, 3.4, 3.6, 3.8]
 
 
-def run_reeval(src, P, tag, reps, only_front=True, baselines=True, max_designs=None):
+def run_reeval(src, P, tag, reps, only_front=True, baselines=True, max_designs=None, first_id=0):
     """Re-evaluate designs (default: the feasible non-dominated set) at another W / more realisations, plus
     plain uniform, unlocked baselines at the median front pore size (src_design = -1)."""
     band = load_band()
@@ -658,9 +658,9 @@ def run_reeval(src, P, tag, reps, only_front=True, baselines=True, max_designs=N
     t0 = time.time()
     pop = np.array([json.loads(s) for s in d["genes"]])
     with ProcessPoolExecutor(P["workers"]) as ex:
-        tasks_rows = evaluate(pop, -1, 0, P, ex, ecsv, t0, reps)
+        tasks_rows = evaluate(pop, -1, first_id, P, ex, ecsv, t0, reps)
     agg = aggregate(tasks_rows, band)
-    agg["src_design"] = d["design"].to_numpy()[agg["design"].to_numpy()]
+    agg["src_design"] = d["design"].to_numpy()[agg["design"].to_numpy() - first_id]
     agg["rank"] = nondominated_sort(objective_matrix(agg), agg["viol"].to_numpy())
     agg.to_csv(dcsv, index=False)
     print("wrote", dcsv, flush=True)
@@ -715,6 +715,8 @@ def main():
     ap.add_argument("--reeval", help="designs CSV whose rank-0 designs are re-evaluated")
     ap.add_argument("--linear-only", action="store_true", help="skip the rupture pull (quick checks)")
     ap.add_argument("--max-designs", type=int, help="re-evaluate at most this many front designs")
+    ap.add_argument("--no-baselines", action="store_true", help="do not append uniform baselines to --reeval")
+    ap.add_argument("--first-id", type=int, default=0, help="--reeval: first design id (sets realisation seeds)")
     a = ap.parse_args()
     if a.calibrate_yap:
         return calibrate_yap()
@@ -727,7 +729,8 @@ def main():
         P["fail"] = []
     tag = a.tag or a.profile
     if a.reeval:
-        return run_reeval(a.reeval, P, tag, a.reps, max_designs=a.max_designs)
+        return run_reeval(a.reeval, P, tag, a.reps, baselines=not a.no_baselines, max_designs=a.max_designs,
+                          first_id=a.first_id)
     run_ga(P, tag, a.seed, a.reps)
 
 

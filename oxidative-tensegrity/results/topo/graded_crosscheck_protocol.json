@@ -1,0 +1,37 @@
+{
+ "question": "Do pymoo's 2-realisation graded front designs survive 8 realisations at W=12 and W=16?",
+ "registered_before_running": "2026-11-01",
+ "protocol": "topo_opt.py --reeval, 8 realisations (4 pulled along x, 4 along y), same objectives/band as reeval_W12x8; W=12: graded + sanity + GA + baselines; W=16: graded + GA + baselines",
+ "rule_in_band": "8-rep mean G within the YAP band (viol == 0) at BOTH W=12 and W=16",
+ "rule_nondominated": "primary: on 8-rep MEANS (toughness_mean max, mean max_drop min, sensing max, D_radial max), an in-band graded design is non-dominated if no in-band comparator (GA designs + uniform baselines) at that W dominates it; reported per W, 'survives' = in band at both W and non-dominated at both W. secondary: same test on topo_opt's worst-case aggregate (min toughness, max drop over realisations)",
+ "graded_real_gradient": [
+  "pymoo-58",
+  "pymoo-128",
+  "pymoo-131",
+  "pymoo-164",
+  "pymoo-132",
+  "pymoo-159"
+ ],
+ "sanity": [
+  "pymoo-15",
+  "pymoo-32",
+  "pymoo-67",
+  "pymoo-134"
+ ],
+ "comparators": [
+  "ga-47",
+  "ga-92",
+  "ga-12",
+  "ga-99",
+  "ga-64",
+  "base-z3.4",
+  "base-z3.6"
+ ],
+ "amendment_before_W16": "W=12 tasks averaged 450-600 s, so the full W=16 set would exceed the ~45 min/run limit. Before running W=16 the comparator set at W=16 was reduced to ga-47 (best uniform), ga-99 (best aligned), base-z3.4, base-z3.6, and W=16 was split into run A (6 graded + ga-47, first_id 100) and run B (3 comparators, first_id 200) with non-overlapping seeds. The decision rule is unchanged; at W=16 domination is tested against these 4 comparators only.",
+ "comparators_W16": [
+  "ga-47",
+  "ga-99",
+  "base-z3.4",
+  "base-z3.6"
+ ]
+}

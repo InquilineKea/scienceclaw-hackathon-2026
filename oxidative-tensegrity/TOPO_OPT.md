@@ -151,9 +151,13 @@ the onset is as large as the band itself.
 - **Aligned + sparse crossing locks** is the one layout effect that survives every check. At the same stiffness band
   it transmits **~3.5× more bulk strain to the pore neighbourhood** (T_ring 0.14 ± 0.03 vs 0.040 ± 0.008 for the
   uniform baseline at z = 3.55, ≈ 3 standard errors). That equals the transmission of a uniform network at z = 3.82,
-  which is out of band. It is also the most reproducible in-band design (6/8). The cost is slightly lower transport
-  (D/D0 0.41 vs 0.42) and an earlier stress peak (0.18). T_ring is averaged over realisations pulled along x and y,
-  so this is not an artefact of the pull axis.
+  which is out of band. At W = 12 it is also the most reproducible in-band design (6/8). The cost is slightly lower
+  transport (D/D0 0.41 vs 0.42) and an earlier stress peak (0.18). T_ring is averaged over realisations pulled along x
+  and y, so this is not an artefact of the pull axis.
+  **Correction (2026-11-01, 8-realisation re-run at W = 16, section 6):** at W = 16 the same design (#99) has mean
+  G = 0.0031, just below the band's lower edge (0.00316), and is in band in only 2 of 8 builds. Its strain-transmission
+  advantage over the uniform-locked design #47 holds at W = 16 (T_ring 0.074 vs 0.028), but "same stiffness" and "most
+  reproducible" are W = 12 results only. Near the onset, band membership of every design tested depends on box size.
 - The sensing ranking transfers between runs (Spearman 0.86 at W = 16, 0.73 with 8 realisations); the stiffness and
   toughness rankings do not.
 - **LOX locking trades local strain for reach.** Controlling for z (partial Spearman over the 34 in-band GA designs),
@@ -172,9 +176,14 @@ lever (+0.05 D/D0). This objective needs a better model (GAG content, binding) b
 
 ### 5. Layouts that did not work
 
-- **Graded connectivity around the pore** never landed in the band (9 sampled). Concentrating bonds next to the
-  pore produced networks 5× too stiff at z ≈ 3.8 and 3× too soft at z ≈ 3.2; no graded design hit the narrow window in
-  between. This is "not found", not "impossible".
+- **Graded connectivity around the pore.** In this GA, none of 9 graded designs landed in the band (5× too stiff
+  at z ≈ 3.8, 3× too soft at z ≈ 3.2). An independent pymoo NSGA-II run (main session, 2 realisations, W = 12)
+  **did** find graded designs on its feasible front (56% of it). Re-run with 8 realisations at W = 12 and W = 16
+  (section 6), **none of the 6 real-gradient graded designs stays in band at both box sizes**. The two denser-near-pore
+  designs (#132, #159) have the highest sensing of anything tested, but are above the band at W = 12 and in band at
+  W = 16. The sparser-near-pore designs lose strain transmission at the pore entirely at W = 16 (T_ring ≈ 0).
+  Status: pymoo's 2-realisation graded front did not survive 8 realisations; "graded never lands in band" is too
+  strong, and "graded designs sit on the band edge and cross it with box size" is what the data show.
 - **High-contrast clustered** fields give the most variable networks (median G 0.0003, CV of G ≈ 2 over 8
   realisations): they leave poorly connected regions, and the pore can end up in one.
 - **Lock placement** is unresolved. Heavy locking near the pore or at crossings never reached the front, and
@@ -183,6 +192,41 @@ lever (+0.05 D/D0). This objective needs a better model (GAG content, binding) b
 - **Variance reduction by locking**, seen in the main session's finite-size data (CV 0.67–0.82 → 0.40 with
   full LOX locking, no pore), was not detectable here (lock fraction vs CV of G: ρ = 0.00 over 73 near-band
   designs, 2 realisations each). Unresolved, not contradicted.
+
+### 6. Cross-check against an independent optimiser (pymoo, 2026-11-01)
+
+The main session ran pymoo 0.6.2 NSGA-II (seed 77, 6 generations × 28 = 168 designs, 2 realisations, W = 12; `team/topo_pymoo.py`,
+`results/topo/pymoo_compare.json`) on the same encoding, objectives and band. Its front overlaps this GA's in z by 63%,
+has a larger hypervolume (0.110 vs 0.070) and is 56% graded where this GA's is 52% uniform. To decide whether the graded
+designs are real or 2-realisation luck, the 6 real-gradient graded designs (|amp| ≥ 0.45), 4 near-uniform "graded" designs
+(sanity group) and comparators (GA #47, #92, #12, #99, #64, uniform baselines) were re-run with 8 realisations each:
+136 tasks at W = 12 (46 min) and 80 tasks at W = 16 (two runs, 29 + 11 min). The decision rule was fixed in
+`results/topo/graded_crosscheck_protocol.json` before running. A graded design survives if its 8-realisation mean G is in
+band at both W and no in-band comparator dominates it on 8-realisation means. One amendment was made before W = 16 ran:
+for time, the W = 16 comparators were reduced to #47, #99 and the two baselines. Decision: `crosscheck_graded.py` →
+`results/topo/graded_crosscheck_summary.json`.
+
+| design | gradient | mean G, W = 12 (builds in band) | mean G, W = 16 (builds in band) | sensing W12 / W16 | T_ring W16 |
+|---|---|---|---|---|---|
+| pymoo #164 | sparser near pore (amp −0.82) | **0.0061** (2/8) | 0.0084 (3/8) | 0.04 / 0.00 | 0.000 |
+| pymoo #58, #128, #131 | sparser near pore (amp −0.80) | 0.016–0.018 (0–2/8) | 0.011–0.015 (0–1/8) | 0.03–0.08 / 0.00 | ≈ 0 |
+| pymoo #132 | denser near pore (amp +0.53) | 0.0085 (4/8) | **0.0069** (3/8) | 0.41 / 0.21 | 0.146 |
+| pymoo #159 | denser near pore (amp +0.45) | 0.0127 (3/8) | **0.0052** (1/8) | 0.42 / 0.22 | 0.094 |
+| GA #47 (uniform, 65 % locks) | – | **0.0040** (5/8) | **0.0053** (3/8) | 0.23 / 0.20 | 0.028 |
+| GA #99 (aligned, crossing locks) | – | **0.0065** (5/8) | 0.0031 (2/8) | 0.37 / 0.25 | 0.074 |
+
+Band: G 0.00316–0.00748; bold = mean in band. Results:
+- **No graded design survives** (in band at both W: 0 of 6). The registry entry is refuted.
+- At the one size where each is in band, no comparator dominates it (#164 at W = 12 by having the highest transport;
+  #132 and #159 at W = 16 by sensing). So graded designs are not worse when they land in band. They just do not land there
+  reliably.
+- The same box-size instability affects this GA's own best designs: #99 drops out of band at W = 16. Of all designs
+  re-run at both sizes, only #47 (uniform, heavy random locking) has its mean in band at both, and only 3/8 builds are
+  in band at W = 16. **The stiffness window sits on the rigidity onset, where finite-size effects are largest. Design
+  rankings by band membership at W ≤ 16 are not reliable, while the strain-transmission ranking (aligned and
+  denser-near-pore > uniform-locked > sparser-near-pore) holds at both sizes.**
+- The sanity group (near-uniform "graded", |amp| < 0.07) behaves like uniform networks. Only #67 is in band at W = 12,
+  and it is dominated by #47.
 
 ## Model assumptions vs results
 
@@ -194,7 +238,8 @@ lever (+0.05 D/D0). This objective needs a better model (GAG content, binding) b
 | Sensing metrics (T_ring, reach) | definitions chosen here; reach went through three versions (above) |
 | In-band designs are sub-isostatic, z 3.2–3.65 | result (GA + 8-realisation re-evaluation) |
 | Toughness at fixed stiffness not improved by layout | result, within ±0.3 ×10⁻³ (1 SE, 8 realisations) |
-| Aligned + sparse crossing locks: ~3.5× strain transmission at the same stiffness | result (W = 12, 8 realisations; consistent at W = 16) |
+| Aligned + sparse crossing locks: ~3.5× strain transmission at the same stiffness | result at W = 12 (8 realisations); at W = 16 the design falls just below the band (2/8 in band) while its transmission advantage over uniform-locked #47 persists |
+| Graded layouts (pymoo front) in band | refuted at 8 realisations: none in band at both W = 12 and 16 (registry `topo-graded-front-8rep-20261101`) |
 | Locking trades strain transmission for far-field reach and transport | result (association, partial correlation) |
 
 **Scope of the ranking: 2D only.** Every design was evaluated on the 2D diluted triangular lattice of
@@ -287,3 +332,9 @@ Published 2026-10-31 as WordPress post 538,
 subscriber email and social sharing off; featured image = media 544, `results/topo/ga_W12_pareto.png`).
 Body source: `results/topo/wp_topo_opt_draft.html`. Public page, image and all 8 internal links returned HTTP 200.
 No existing post was edited; source and data are not in the public GitHub snapshot.
+
+Corrected 2026-11-01 (user-approved, block-level edits; no other posts touched): an "Update · 1 November 2026" note in
+the summary box, result 1 (window membership depends on box size), result 3 ("most reproducible" and "same stiffness"
+are W = 12 only; #99 below band at W = 16), result 5 (graded wording), and a new section "Update, 1 November: a second
+optimiser and a bigger box" summarising section 6. `results/topo/wp_topo_opt_draft.html` matches the live post block
+for block; the pre-correction copy is not kept in the repo.
